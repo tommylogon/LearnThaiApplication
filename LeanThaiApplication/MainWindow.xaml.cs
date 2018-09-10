@@ -12,10 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using System.IO;
 using System.Diagnostics;
-
-			
+using System.Xml.Serialization;
 
 namespace LearnThaiApplication
 {
@@ -27,7 +26,7 @@ namespace LearnThaiApplication
 		List<Word> words = new List<Word>()
 		{
 			//page 8 and 9
-			new Word("", "", "Sit down", ""),
+			new Word("นั่ง", "nang", "Sit down", "The a is pronounced like bar, car or cut"),
 			new Word("", "", "Arm", ""),
 			new Word("", "", "Heart", ""),
 			new Word("", "", "Black", ""),
@@ -152,6 +151,10 @@ namespace LearnThaiApplication
 			txb_ThaiScript_Page2.Text = "";
 			lbl_Counter.Content = i;
 
+
+
+			System.Console.WriteLine(lib_LoadedWords.SelectedIndex.ToString());
+
 		}
 
 		private void btn_validate_Click(object sender, RoutedEventArgs e)
@@ -159,7 +162,7 @@ namespace LearnThaiApplication
 
 			if (rb_Conson.IsChecked == true)
 			{
-				if (consonants[i].EngPron == txt_Answear.Text)
+				if (consonants[i].ThaiFonet == txt_Answear.Text)
 				{
 					txb_Status_Page2.Text = "Correct!";
 				}
@@ -167,11 +170,11 @@ namespace LearnThaiApplication
 				{
 					txb_Status_Page2.Text = "Wrong...";
 				}
-				txb_Description_page2.Text = consonants[i].EngPron;
+				txb_Description_page2.Text = consonants[i].ThaiFonet;
 			}
 			else if(rb_Vowel.IsChecked == true)
 			{
-				if (vowels[i].EngPron == txt_Answear.Text)
+				if (vowels[i].ThaiFonet == txt_Answear.Text)
 				{
 					txb_Status_Page2.Text = "Correct!";
 				}
@@ -179,9 +182,9 @@ namespace LearnThaiApplication
 				{
 					txb_Status_Page2.Text = "Wrong...";
 
-					System.Console.WriteLine(vowels[i].EngPron);
+					System.Console.WriteLine(vowels[i].ThaiFonet);
 				}
-				txb_Description_page2.Text = vowels[i].EngPron;
+				txb_Description_page2.Text = vowels[i].ThaiFonet;
 			}
 
 
@@ -325,8 +328,7 @@ namespace LearnThaiApplication
 			lbl_Counter.Content = i;
 		}
 
-		
-
+	
 		public void clearFields()
 		{
 			txb_Status_Page2.Text = "";
@@ -334,6 +336,11 @@ namespace LearnThaiApplication
 			txb_ThaiScript_Page2.Text = "";
 			txt_Answear.Text = "";
 			txt_Answear_Page1.Text = "";
+			txt_NewThaiScript.Text = "";
+			txt_NewThaiFonet.Text = "";
+			txt_NewEnglish.Text = "";
+			txt_NewDescr.Text = "";
+
 		}
 
 		public void textChanger(string recievedText, TextBlock textBlock)
@@ -360,7 +367,117 @@ namespace LearnThaiApplication
 			isRandom = true;
 
 		}
+
+		private void btn_SubmitNewWord_Click(object sender, RoutedEventArgs e)
+		{
+			Word newWord = new Word(txt_NewThaiScript.Text, txt_NewThaiFonet.Text, txt_NewEnglish.Text, txt_NewDescr.Text);
+
+			bool existsInList = false;
+
+
+			foreach (Word oldWord in words)
+			{
+				if(newWord.ThaiScript == oldWord.ThaiScript && newWord.ThaiScript != "" || oldWord.EngWord == txt_NewEnglish.Text && newWord.EngWord != "")
+				{
+					System.Console.WriteLine("exists");
+					existsInList = true;
+					break;
+				}
+				else
+				{
+					System.Console.WriteLine("Does not exist");
+					existsInList = false;
+					
+				}
+			}
+
+			if (existsInList == false)
+			{
+				words.Add(newWord);
+				existsInList = true;
+				
+			}
+
+			foreach (Word oldWord in words)
+			{
+				System.Console.WriteLine(oldWord.ThaiScript + "; " + oldWord.ThaiFonet + "; " + oldWord.EngWord + "; " + oldWord.EngDesc);
+				if (oldWord.ThaiScript == txt_NewThaiScript.Text  || oldWord.EngWord == txt_NewEnglish.Text)
+				{
+
+					oldWord.ThaiScript = txt_NewThaiScript.Text ;
+					oldWord.ThaiFonet = txt_NewThaiFonet.Text ;
+					oldWord.EngWord = txt_NewEnglish.Text ;
+					oldWord.EngDesc = txt_NewDescr.Text ;
+					clearFields();
+					System.Console.WriteLine(oldWord.ThaiScript + "; " + oldWord.ThaiFonet + "; " + oldWord.EngWord + "; " + oldWord.EngDesc);
+					break;
+				}
+				
+			}
+
+			
+
+
+
+			XmlSerialization.WriteToXmlFile<List<Word>>("C:/Users/tommy/source/repos/LearnThaiApplication/Language_Files/Thai_Words.xml", words);
+			
+			
+		}
+
+		private void btn_LoadList_Click(object sender, RoutedEventArgs e)
+		{
+
+			
+			lib_LoadedWords.Items.Clear(); 
+			foreach (Word word in words)
+			{
+				if (word.ThaiScript == "")
+				{
+					lib_LoadedWords.Items.Add(word.EngWord);
+				}
+				else
+				{
+					lib_LoadedWords.Items.Add(word.ThaiScript);
+				}
+			}
+		}
+
+		private void lib_LoadedWords_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+		{
+			
+			string wordToLoad;
+			
+			if (lib_LoadedWords.SelectedIndex != -1)
+			{
+				wordToLoad = lib_LoadedWords.Items[lib_LoadedWords.SelectedIndex].ToString();
+				txb_Description_Page4.Text = wordToLoad;
+
+				foreach (Word word in words)
+				{
+					if (wordToLoad == word.ThaiScript || wordToLoad == word.EngWord)
+					{
+						txt_NewThaiScript.Text = word.ThaiScript;
+						txt_NewThaiFonet.Text = word.ThaiFonet;
+						txt_NewEnglish.Text = word.EngWord;
+						txt_NewDescr.Text = word.EngDesc;
+
+						txb_Description_Page4.Text = word.EngDesc;
+					}
+				}
+			}
+			
+			
+
+			
+			
+
+
+		}
 	}
+
+
+
+
 
 
 
@@ -400,21 +517,23 @@ namespace LearnThaiApplication
 			set { engWord = value; }
 		}
 	}
-
 	public class Word
 	{
 		string thaiScript;
-		string thaiHelpWord;
-		string engPron;
+		string thaiFonet;
+		string engWord;
 		string engDesc;
 
 
+		public Word()
+		{
 
-		public Word(string thaiWord, string thaiSpell, string engWord, string engDesc)
+		}
+		public Word(string thaiWord, string thaiFonet, string engWord, string engDesc)
 		{
 			this.thaiScript = thaiWord;
-			this.thaiHelpWord = thaiSpell;
-			this.thaiHelpWord = engWord;
+			this.thaiFonet = thaiFonet;
+			this.engWord = engWord;
 			this.engDesc = engDesc;
 		}
 		public string ThaiScript
@@ -422,16 +541,16 @@ namespace LearnThaiApplication
 			get { return thaiScript; }
 			set { thaiScript = value; }
 		}
-		public string ThaiHelpWord
+		public string ThaiFonet
 		{
-			get { return thaiHelpWord; }
-			set { thaiHelpWord = value; }
+			get { return thaiFonet; }
+			set { thaiFonet = value; }
 
 		}
-		public string EngPron
+		public string EngWord
 		{
-			get { return engPron; }
-			set { engPron = value; }
+			get { return engWord; }
+			set { engWord = value; }
 		}
 		public string EngDesc
 		{
@@ -444,15 +563,15 @@ namespace LearnThaiApplication
 		string thaiScript;
 		string thaiHelpWord;
 		
-		string engPron;
+		string thaiFonet;
 		string engDesc;
 		
 
-		public Consonant(string thaiSymbol, string thaiHelpWord, string englishPronounciation, string englishWord)
+		public Consonant(string thaiSymbol, string thaiHelpWord, string thaiFonetical, string englishWord)
 		{
 			this.thaiScript = thaiSymbol;
 			this.thaiHelpWord = thaiHelpWord;
-			this.engPron = englishPronounciation;
+			this.thaiFonet = thaiFonetical;
 			this.engDesc = englishWord;
 
 		}
@@ -467,10 +586,10 @@ namespace LearnThaiApplication
 			set { thaiHelpWord = value;}
 
 		}
-		public string EngPron
+		public string ThaiFonet
 		{
-			get { return engPron; }
-			set { engPron = value;}
+			get { return thaiFonet; }
+			set { thaiFonet = value;}
 		}
 		public string EngDesc
 		{
@@ -483,14 +602,14 @@ namespace LearnThaiApplication
 	{
 		string thaiScript;
 		string thaiHelpWord;	
-		string engPron;
+		string thaiFonet;
 		string engDesc;
 
-		public Vowel(string thaiSymbol, string thaiHelpWord, string englishPronounciation, string englishDescription)
+		public Vowel(string thaiSymbol, string thaiHelpWord, string thaiFonet, string englishDescription)
 		{
 			this.thaiScript = thaiSymbol;
 			this.thaiHelpWord = thaiHelpWord;
-			this.engPron = englishPronounciation;
+			this.thaiFonet = thaiFonet;
 			this.engDesc = englishDescription;
 		}
 		public string ThaiScript
@@ -506,10 +625,10 @@ namespace LearnThaiApplication
 
 		}
 
-		public string EngPron
+		public string ThaiFonet
 		{
-			get { return engPron; }
-			set { engPron = value; }
+			get { return thaiFonet; }
+			set { thaiFonet = value; }
 		}
 
 		public string EngDesc
@@ -519,4 +638,56 @@ namespace LearnThaiApplication
 		}
 	}
 
+	//http://blog.danskingdom.com/saving-and-loading-a-c-objects-data-to-an-xml-json-or-binary-file/
+	public static class XmlSerialization
+	{
+		/// <summary>
+		/// Writes the given object instance to an XML file.
+		/// <para>Only Public properties and variables will be written to the file. These can be any type though, even other classes.</para>
+		/// <para>If there are public properties/variables that you do not want written to the file, decorate them with the [XmlIgnore] attribute.</para>
+		/// <para>Object type must have a parameterless constructor.</para>
+		/// </summary>
+		/// <typeparam name="T">The type of object being written to the file.</typeparam>
+		/// <param name="filePath">The file path to write the object instance to.</param>
+		/// <param name="objectToWrite">The object instance to write to the file.</param>
+		/// <param name="append">If false the file will be overwritten if it already exists. If true the contents will be appended to the file.</param>
+		public static void WriteToXmlFile<T>(string filePath, T objectToWrite, bool append = false) where T : new()
+		{
+			TextWriter writer = null;
+			try
+			{
+				var serializer = new XmlSerializer(typeof(T));
+				writer = new StreamWriter(filePath, append);
+				serializer.Serialize(writer, objectToWrite);
+			}
+			finally
+			{
+				if (writer != null)
+					writer.Close();
+			}
+		}
+
+		/// <summary>
+		/// Reads an object instance from an XML file.
+		/// <para>Object type must have a parameterless constructor.</para>
+		/// </summary>
+		/// <typeparam name="T">The type of object to read from the file.</typeparam>
+		/// <param name="filePath">The file path to read the object instance from.</param>
+		/// <returns>Returns a new instance of the object read from the XML file.</returns>
+		public static T ReadFromXmlFile<T>(string filePath) where T : new()
+		{
+			TextReader reader = null;
+			try
+			{
+				var serializer = new XmlSerializer(typeof(T));
+				reader = new StreamReader(filePath);
+				return (T)serializer.Deserialize(reader);
+			}
+			finally
+			{
+				if (reader != null)
+					reader.Close();
+			}
+		}
+	}
 }
