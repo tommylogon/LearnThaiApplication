@@ -51,6 +51,17 @@
             </TabItem>
             <TabItem Header="Page 3">
                 <Grid Background="#FFE5E5E5" Margin="0,-1,-19,0">
+                    <TextBox x:Name="txt_NewThaiScript" HorizontalAlignment="Left" Height="23" Margin="303,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txt_NewThaiFonet" HorizontalAlignment="Left" Height="23" Margin="303,73,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txt_NewEnglish" HorizontalAlignment="Left" Height="23" Margin="303,101,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txt_NewDescr" HorizontalAlignment="Left" Height="23" Margin="303,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="lbl_ThaiScript_Insert" Content="Thai Script" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="233,42,0,0"/>
+                    <Label x:Name="lbl_ThaiFonet_Insert" Content="Thai Fonetical" HorizontalAlignment="Left" Margin="215,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.193,0.489"/>
+                    <Label x:Name="lbl_English_Insert" Content="English" HorizontalAlignment="Left" Margin="250,98,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_Desc_Insert" Content="Description" HorizontalAlignment="Left" Margin="228,125,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btn_SubmitNewWord" Content="Submit" HorizontalAlignment="Left" Margin="326,162,0,0" VerticalAlignment="Top" Width="76"/>
+                    <ListBox x:Name="lib_LoadedWords" HorizontalAlignment="Left" Height="325" Margin="10,10,0,0" VerticalAlignment="Top" Width="193"/>
+                    <TextBlock x:Name="txb_Description_Page4" HorizontalAlignment="Left" Margin="238,228,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Height="102" Width="292"/>
 
                 </Grid>
             </TabItem>
