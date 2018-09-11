@@ -23,7 +23,7 @@ namespace LearnThaiApplication
     /// </summary>
     public partial class MainWindow : Window
     {
-		List<Word> words = new List<Word>()
+		static List<Word> words = new List<Word>()
 		{
 			//page 8 and 9
 			new Word("นั่ง", "nang", "Sit down", "The a is pronounced like bar, car or cut"),
@@ -49,7 +49,7 @@ namespace LearnThaiApplication
 			//page 32 and 33
 
 		};
-		List<Consonant> consonants = new List<Consonant>()
+        static List<Consonant> consonants = new List<Consonant>()
 		{
 			new Consonant("ก","ไก่","gai","Chicken"),
 			new Consonant("ข","ไข่","kai",""),
@@ -96,9 +96,9 @@ namespace LearnThaiApplication
 			new Consonant("อ","อ่าง","aang",""),
 			new Consonant("ฮ","นกฮูก","nok hoog","Owl"),
 		};
-		List<Vowel> vowels = new List<Vowel>()
+        static List<Vowel> vowels = new List<Vowel>()
 		{
-			new Vowel("ั","กับ","gap","And"),
+			new Vowel("ั","กับ","gap","And, Also"),
 			new Vowel("-า","บาด","baad",""),
 			new Vowel("แ-ะ","แกะ","",""),
 			new Vowel("แ","แดง","",""),
@@ -138,9 +138,15 @@ namespace LearnThaiApplication
 			new Vowel("ิว","หิว","",""),
 			new Vowel("ุย","คุย","","")
 		};
-		
 
-		int i = 0;
+        List<List> listOfLists = new List<List>()
+        {
+            
+
+        };
+        
+        //<>
+        int i = 0;
 		bool isRandom;
 
 		public MainWindow()
@@ -419,7 +425,7 @@ namespace LearnThaiApplication
 
 
 
-			XmlSerialization.WriteToXmlFile<List<Word>>("C:/Users/tommy/source/repos/LearnThaiApplication/Language_Files/Thai_Words.xml", words);
+			XmlSerialization.WriteToXmlFile<List<Word>>("C:/LearnThaiApplication/Language_Files/Thai_Words.xml", words);
 			
 			
 		}
@@ -638,8 +644,9 @@ namespace LearnThaiApplication
 		}
 	}
 
-	//http://blog.danskingdom.com/saving-and-loading-a-c-objects-data-to-an-xml-json-or-binary-file/
-	public static class XmlSerialization
+    //http://blog.danskingdom.com/saving-and-loading-a-c-objects-data-to-an-xml-json-or-binary-file/
+
+    public static class XmlSerialization
 	{
 		/// <summary>
 		/// Writes the given object instance to an XML file.
