@@ -16,6 +16,7 @@ using System.IO;
 using System.Diagnostics;
 using System.Xml.Serialization;
 using System.Reflection;
+using Path = System.IO.Path;
 
 namespace LearnThaiApplication
 {
@@ -144,16 +145,19 @@ namespace LearnThaiApplication
         
         //<>
         int i = 0;
-		bool isRandom;
 
-		public MainWindow()
+        bool isRandom;
+
+        
+
+        public MainWindow()
         {
             InitializeComponent();
 
 			clearFields();
 
-			
-			lbl_Counter.Content = i;
+            System.Console.WriteLine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            lbl_Counter.Content = i;
             loadFiles<Word>(words);
             loadFiles<Consonant>(consonants);
             
@@ -268,7 +272,7 @@ namespace LearnThaiApplication
                         if (i < list.Count)
                         {
 
-                            textBlock.Text = list[i].GetType().GetProperty("ThaiScript").GetValue(T) ;// + " " + list[i].GetType().GetProperty("ThaiHelpWord").ToString();
+                            textBlock.Text = list[i].GetType().GetProperty("ThaiScript").ToString();// + " " + list[i].GetType().GetProperty("ThaiHelpWord").ToString();
 
                         }
                         else
