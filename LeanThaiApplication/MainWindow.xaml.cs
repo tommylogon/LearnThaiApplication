@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.IO;
 using System.Diagnostics;
 using System.Xml.Serialization;
+using System.Reflection;
 
 namespace LearnThaiApplication
 {
@@ -24,7 +25,7 @@ namespace LearnThaiApplication
     public partial class MainWindow : Window
     {
 		static List<Word> words = new List<Word>()
-		{
+		{/*
 			//page 8 and 9
 			new Word("นั่ง", "nang", "Sit down", "The a is pronounced like bar, car or cut"),
 			new Word("", "", "Arm", ""),
@@ -46,7 +47,7 @@ namespace LearnThaiApplication
 			new Word("", "", "Hand", ""),
 			new Word("", "", "City","")
 
-			//page 32 and 33
+			//page 32 and 33*/
 
 		};
         static List<Consonant> consonants = new List<Consonant>()
@@ -139,11 +140,7 @@ namespace LearnThaiApplication
 			new Vowel("ุย","คุย","","")
 		};
 
-        List<List> listOfLists = new List<List>()
-        {
-            
-
-        };
+        
         
         //<>
         int i = 0;
@@ -152,16 +149,15 @@ namespace LearnThaiApplication
 		public MainWindow()
         {
             InitializeComponent();
+
 			clearFields();
 
-			txb_ThaiScript_Page2.Text = "";
+			
 			lbl_Counter.Content = i;
-
-
-
-			System.Console.WriteLine(lib_LoadedWords.SelectedIndex.ToString());
-
-		}
+            loadFiles<Word>(words);
+            loadFiles<Consonant>(consonants);
+            
+        }
 
 		private void btn_validate_Click(object sender, RoutedEventArgs e)
 		{
@@ -202,69 +198,14 @@ namespace LearnThaiApplication
 			clearFields();
 			i++;
 
-			if (rb_Conson.IsChecked == true){
-				try
-				{
-					
-					if (i >= 0)
-					{
-						if (i < consonants.Count)
-						{
-
-							txb_ThaiScript_Page2.Text = consonants[i].ThaiScript + " " + consonants[i].ThaiHelpWord;
-							
-						}
-						else
-						{
-							i = 0;
-							txb_ThaiScript_Page2.Text = consonants[i].ThaiScript + " " + consonants[i].ThaiHelpWord;
-							
-						}
-					}
-					else
-					{
-						i = 0;
-						txb_ThaiScript_Page2.Text = consonants[i].ThaiScript + " " + consonants[i].ThaiHelpWord;
-					}
-
-				}
-				catch (System.ArgumentOutOfRangeException error)
-				{
-
-					System.Console.WriteLine(error.Message);
-				}
-				
+			if (rb_Conson.IsChecked == true)
+            {
+                textChanger<Consonant>(consonants, txb_ThaiScript_Page2, true);
 			}
 			else if (rb_Vowel.IsChecked == true)
 			{
-				try
-				{
-					if (i >= 0)
-					{
-						if (i < vowels.Count)
-						{
-							txb_ThaiScript_Page2.Text = vowels[i].ThaiScript + " " + vowels[i].ThaiHelpWord;
-						}
-						else
-						{
-							i = 0;
-							txb_ThaiScript_Page2.Text = vowels[i].ThaiScript + " " + vowels[i].ThaiHelpWord;
-						}
-					}
-					else
-					{
-						i = 0;
-						txb_ThaiScript_Page2.Text = vowels[i].ThaiScript + " " + vowels[i].ThaiHelpWord;
-					}
-
-				}
-				catch (System.ArgumentOutOfRangeException error)
-				{
-
-					System.Console.WriteLine(error.Message);
-				}
-				
-			}
+                textChanger<Vowel>(vowels, txb_ThaiScript_Page2, true);
+            }
 			else
 			{
 				txb_Information.Text += Environment.NewLine + "please select one or the other";
@@ -279,53 +220,13 @@ namespace LearnThaiApplication
 			clearFields();
 			if (rb_Conson.IsChecked == true)
 			{
-				try
-				{
-					i--;
-					if (i < 0)
-					{
-						i = consonants.Count - 1;
-						txb_ThaiScript_Page2.Text = consonants[i].ThaiScript + " " + consonants[i].ThaiHelpWord;
-					}
-					else if (i < consonants.Count)
-					{
+                textChanger<Consonant>(consonants, txb_ThaiScript_Page2, false);
 
-						txb_ThaiScript_Page2.Text = consonants[i].ThaiScript + " " + consonants[i].ThaiHelpWord;
-					}
-
-
-				}
-				catch (System.ArgumentOutOfRangeException error)
-				{
-
-					System.Console.WriteLine(error.Message);
-				}
-				
-			}
+            }
 			else if(rb_Vowel.IsChecked == true)
 			{
+                textChanger<Vowel>(vowels, txb_ThaiScript_Page2, false);
 				
-				try
-				{
-					i--;
-					if (i < 0)
-					{
-						i = vowels.Count - 1;
-						txb_ThaiScript_Page2.Text = vowels[i].ThaiScript + " " + vowels[i].ThaiHelpWord;
-					}
-					else if (i < vowels.Count)
-					{
-
-						txb_ThaiScript_Page2.Text = vowels[i].ThaiScript + " " + vowels[i].ThaiHelpWord;
-					}
-
-
-				}
-				catch (System.ArgumentOutOfRangeException error)
-				{
-
-					System.Console.WriteLine(error.Message);
-				}
 			}
 			else
 			{
@@ -333,7 +234,6 @@ namespace LearnThaiApplication
 			}
 			lbl_Counter.Content = i;
 		}
-
 	
 		public void clearFields()
 		{
@@ -349,10 +249,78 @@ namespace LearnThaiApplication
 
 		}
 
-		public void textChanger(string recievedText, TextBlock textBlock)
-		{
-			textBlock.Text = recievedText;
-		}
+		public void textChanger<T>(List<T> list, TextBlock textBlock, bool nextIsForward) where T : new()
+        {
+            //textBlock.Text = recievedText;
+            /*Type whatIsT = typeof(T);T whatKindOfObject
+           PropertyInfo propInf = whatIsT.GetProperty("ThaiScript");
+
+           if (whatIsT == typeof(Word))
+           {
+               */
+            if (nextIsForward)
+            {
+                try
+                {
+
+                    if (i >= 0)
+                    {
+                        if (i < list.Count)
+                        {
+
+                            textBlock.Text = list[i].GetType().GetProperty("ThaiScript").GetValue(T) ;// + " " + list[i].GetType().GetProperty("ThaiHelpWord").ToString();
+
+                        }
+                        else
+                        {
+                            i = 0;
+                            textBlock.Text = list[i].GetType().GetProperty("ThaiScript").ToString() + " " + list[i].GetType().GetProperty("ThaiHelpWord").ToString();
+
+                        }
+                    }
+                    else
+                    {
+                        i = 0;
+                        textBlock.Text = list[i].GetType().GetProperty("ThaiScript").ToString() + " " + list[i].GetType().GetProperty("ThaiHelpWord").ToString();
+                    }
+
+                }
+                catch (System.ArgumentOutOfRangeException error)
+                {
+
+                    System.Console.WriteLine(error.Message);
+                }
+            }
+            else
+            {
+                try
+                {
+                    i--;
+                    if (i < 0)
+                    {
+                        i = list.Count - 1;
+                        textBlock.Text = list[i].GetType().GetProperty("ThaiScript").ToString() + " " + list[i].GetType().GetProperty("ThaiHelpWord").ToString();
+                    }
+                    else if (i < consonants.Count)
+                    {
+
+                        textBlock.Text = list[i].GetType().GetProperty("ThaiScript").ToString() + " " + list[i].GetType().GetProperty("ThaiHelpWord").ToString();
+                    }
+
+
+                }
+                catch (System.ArgumentOutOfRangeException error)
+                {
+
+                    System.Console.WriteLine(error.Message);
+                }
+            }
+
+            
+                
+
+            
+        }
 
 		private void rb_Conson_Checked(object sender, RoutedEventArgs e)
 		{
@@ -399,17 +367,21 @@ namespace LearnThaiApplication
 
 			if (existsInList == false)
 			{
-				words.Add(newWord);
-				existsInList = true;
+                if(newWord.ThaiScript != "" || newWord.EngWord != "")
+                {
+                    words.Add(newWord);
+                    existsInList = true;
+                }
+                
 				
 			}
 
 			foreach (Word oldWord in words)
 			{
 				System.Console.WriteLine(oldWord.ThaiScript + "; " + oldWord.ThaiFonet + "; " + oldWord.EngWord + "; " + oldWord.EngDesc);
-				if (oldWord.ThaiScript == txt_NewThaiScript.Text  || oldWord.EngWord == txt_NewEnglish.Text)
+				if (oldWord.ThaiScript == txt_NewThaiScript.Text && txt_NewThaiScript.Text != "" || oldWord.EngWord == txt_NewEnglish.Text && txt_NewEnglish.Text != "")
 				{
-
+                    
 					oldWord.ThaiScript = txt_NewThaiScript.Text ;
 					oldWord.ThaiFonet = txt_NewThaiFonet.Text ;
 					oldWord.EngWord = txt_NewEnglish.Text ;
@@ -425,10 +397,79 @@ namespace LearnThaiApplication
 
 
 
-			XmlSerialization.WriteToXmlFile<List<Word>>("C:/LearnThaiApplication/Language_Files/Thai_Words.xml", words);
-			
-			
-		}
+			XmlSerialization.WriteToXmlFile<List<Word>>("C:/Users/tommy/source/repos/LearnThaiApplication/Language_Files/Thai_Words.xml", words);
+
+            XmlSerialization.WriteToXmlFile<List<Consonant>>("C:/Users/tommy/source/repos/LearnThaiApplication/Language_Files/Thai_Consonants.xml", consonants);
+
+            XmlSerialization.WriteToXmlFile<List<Vowel>>("C:/Users/tommy/source/repos/LearnThaiApplication/Language_Files/Thai_Vowels.xml", vowels);
+
+        }
+
+        public void loadFiles<T>(List<T> list ) where T : new()
+        {
+            Type whatIsT = typeof(T);
+            List<T> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<T>>("C:/Users/tommy/source/repos/LearnThaiApplication/Language_Files/Thai_" + whatIsT.Name +".xml");
+
+           
+
+            List<T> newWordToAdd = new List<T>();
+            /*Type whatIsT = typeof(T);T whatKindOfObject
+            PropertyInfo propInf = whatIsT.GetProperty("ThaiScript");
+            
+            if (whatIsT == typeof(Word))
+            {
+                */
+            foreach (T wordFoundInFile in wordsFromFIle)
+                {
+                PropertyInfo propInFile = wordFoundInFile.GetType().GetProperty("ThaiScript");
+                foreach (T WordAlreadyInList in list)
+                    {
+                        PropertyInfo propInList = WordAlreadyInList.GetType().GetProperty("ThaiScript");
+
+                        if (propInList == propInFile)
+                        {
+                            System.Console.WriteLine("found word in list");
+                            break;
+                        }
+                        else
+                        {
+                            System.Console.WriteLine("checking next");
+                        }
+                    }
+                    newWordToAdd.Add(wordFoundInFile);
+
+                }
+                list.AddRange(newWordToAdd);
+            //}
+
+            
+
+
+            /* List<Word> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<Word>>("C:/Users/tommy/source/repos/LearnThaiApplication/Language_Files/Thai_Words.xml");
+            
+
+
+            List<Word> newWordToAdd = new List<Word>();
+
+            foreach (Word wordFoundInFile in wordsFromFIle)
+            {
+                foreach (Word WordAlreadyInList in words)
+                {
+                    if (WordAlreadyInList.ThaiScript == wordFoundInFile.ThaiScript)
+                    {
+                        System.Console.WriteLine("found word in list");
+                        break;
+                    }
+                    else
+                    {
+                        System.Console.WriteLine("checking next");
+                    }
+                }
+                newWordToAdd.Add(wordFoundInFile);
+
+            }
+            words.AddRange(newWordToAdd);*/
+        }
 
 		private void btn_LoadList_Click(object sender, RoutedEventArgs e)
 		{
@@ -572,7 +613,10 @@ namespace LearnThaiApplication
 		string thaiFonet;
 		string engDesc;
 		
+        public Consonant()
+        {
 
+        }
 		public Consonant(string thaiSymbol, string thaiHelpWord, string thaiFonetical, string englishWord)
 		{
 			this.thaiScript = thaiSymbol;
@@ -611,6 +655,10 @@ namespace LearnThaiApplication
 		string thaiFonet;
 		string engDesc;
 
+        public Vowel()
+        {
+
+        }
 		public Vowel(string thaiSymbol, string thaiHelpWord, string thaiFonet, string englishDescription)
 		{
 			this.thaiScript = thaiSymbol;
