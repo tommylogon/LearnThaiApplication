@@ -2,230 +2,230 @@
 <ArrayOfVowel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Vowel>
     <ThaiScript>ั</ThaiScript>
-    <ThaiHelpWord>กับ</ThaiHelpWord>
     <ThaiFonet>gap</ThaiFonet>
-    <EngDesc>And, Also</EngDesc>
+    <EngWord>And, Also</EngWord>
+    <ThaiHelpWord>กับ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>-า</ThaiScript>
-    <ThaiHelpWord>บาด</ThaiHelpWord>
-    <ThaiFonet>baad</ThaiFonet>
-    <EngDesc />
+    <ThaiFonet>บาด</ThaiFonet>
+    <EngWord />
+    <ThaiHelpWord>baad</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>แ-ะ</ThaiScript>
-    <ThaiHelpWord>แกะ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>แกะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>แ</ThaiScript>
-    <ThaiHelpWord>แดง</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>แดง</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ-ะ</ThaiScript>
-    <ThaiHelpWord>เตะ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เตะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ-</ThaiScript>
-    <ThaiHelpWord>เพลง</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เพลง</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ิ</ThaiScript>
-    <ThaiHelpWord>คิด</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>คิด</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ี</ThaiScript>
-    <ThaiHelpWord>อีก</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>อีก</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>โ-ะ</ThaiScript>
-    <ThaiHelpWord>โต๊ะ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>โต๊ะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>โ-</ThaiScript>
-    <ThaiHelpWord>โชค</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>โชค</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ-าะ</ThaiScript>
-    <ThaiHelpWord>เกาะ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เกาะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>อ</ThaiScript>
-    <ThaiHelpWord>นอน</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>นอน</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ-อะ</ThaiScript>
-    <ThaiHelpWord>เยอะ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เยอะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ-อ</ThaiScript>
-    <ThaiHelpWord>เผลอ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เผลอ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ุ</ThaiScript>
-    <ThaiHelpWord>จุฬา</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>จุฬา</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ู</ThaiScript>
-    <ThaiHelpWord>ลูก</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>ลูก</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ึ</ThaiScript>
-    <ThaiHelpWord>รึ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>รึ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ื</ThaiScript>
-    <ThaiHelpWord>กลืน</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>กลืน</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ไ-</ThaiScript>
-    <ThaiHelpWord>ไม่</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>ไม่</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ใ-</ThaiScript>
-    <ThaiHelpWord>ใส่</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>ใส่</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ำ</ThaiScript>
-    <ThaiHelpWord>ทำ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>ทำ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ-า</ThaiScript>
-    <ThaiHelpWord>เรา</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เรา</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เียะ</ThaiScript>
-    <ThaiHelpWord>เดี๊ยะ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เดี๊ยะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เีย</ThaiScript>
-    <ThaiHelpWord>เมีย</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เมีย</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ัว</ThaiScript>
-    <ThaiHelpWord>ตัว</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>ตัว</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ัวะ</ThaiScript>
-    <ThaiHelpWord>ผลัวะ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>ผลัวะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เือะ</ThaiScript>
-    <ThaiHelpWord>เอือะ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เอือะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เือ</ThaiScript>
-    <ThaiHelpWord>เรือ</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เรือ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ฦ</ThaiScript>
-    <ThaiHelpWord>ฦาชา</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>ฦาชา</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ฦๅ</ThaiScript>
-    <ThaiHelpWord />
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord />
   </Vowel>
   <Vowel>
     <ThaiScript>ฤ</ThaiScript>
-    <ThaiHelpWord>ฤทธ์</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>ฤทธ์</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ฤๅ</ThaiScript>
-    <ThaiHelpWord>ฤๅษี</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>ฤๅษี</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>-อย</ThaiScript>
-    <ThaiHelpWord>บ่อย</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>บ่อย</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ็ว</ThaiScript>
-    <ThaiHelpWord>เร็ว</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เร็ว</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เียว</ThaiScript>
-    <ThaiHelpWord>เที่ยว</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เที่ยว</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เืยว</ThaiScript>
-    <ThaiHelpWord>เหนื่อย</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>เหนื่อย</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ิว</ThaiScript>
-    <ThaiHelpWord>หิว</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>หิว</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ุย</ThaiScript>
-    <ThaiHelpWord>คุย</ThaiHelpWord>
     <ThaiFonet />
-    <EngDesc />
+    <EngWord />
+    <ThaiHelpWord>คุย</ThaiHelpWord>
   </Vowel>
 </ArrayOfVowel>

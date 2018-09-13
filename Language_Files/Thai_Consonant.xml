@@ -2,266 +2,267 @@
 <ArrayOfConsonant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Consonant>
     <ThaiScript>ก</ThaiScript>
-    <ThaiHelpWord>ไก่</ThaiHelpWord>
     <ThaiFonet>gai</ThaiFonet>
-    <EngDesc>Chicken</EngDesc>
+    <EngWord>Chicken</EngWord>
+    <ThaiHelpWord>ไก่</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ข</ThaiScript>
-    <ThaiHelpWord>ไข่</ThaiHelpWord>
     <ThaiFonet>kai</ThaiFonet>
-    <EngDesc />
+    <EngWord>Egg</EngWord>
+    <ThaiHelpWord>ไข่</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฃ</ThaiScript>
-    <ThaiHelpWord>ขวด</ThaiHelpWord>
     <ThaiFonet>kuad</ThaiFonet>
-    <EngDesc />
+    <EngWord>Bottle</EngWord>
+    <ThaiHelpWord>ขวด</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ค</ThaiScript>
-    <ThaiHelpWord>ควาย</ThaiHelpWord>
     <ThaiFonet>kwaai</ThaiFonet>
-    <EngDesc />
+    <EngWord>Water buffalo</EngWord>
+    <ThaiHelpWord>ควาย</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฅ</ThaiScript>
-    <ThaiHelpWord>คน</ThaiHelpWord>
     <ThaiFonet>kon</ThaiFonet>
-    <EngDesc />
+    <EngWord>Person</EngWord>
+    <ThaiHelpWord>คน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฆ</ThaiScript>
-    <ThaiHelpWord>ระฆัง</ThaiHelpWord>
     <ThaiFonet>ra kang</ThaiFonet>
-    <EngDesc />
+    <EngWord>Bell</EngWord>
+    <ThaiHelpWord>ระฆัง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ง</ThaiScript>
-    <ThaiHelpWord>งู</ThaiHelpWord>
     <ThaiFonet>ngoo</ThaiFonet>
-    <EngDesc />
+    <EngWord>Snake</EngWord>
+    <ThaiHelpWord>งู</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>จ</ThaiScript>
-    <ThaiHelpWord>จาน</ThaiHelpWord>
     <ThaiFonet>jaan</ThaiFonet>
-    <EngDesc />
+    <EngWord>Plate</EngWord>
+    <ThaiHelpWord>จาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฉ</ThaiScript>
-    <ThaiHelpWord>ฉิ่ง</ThaiHelpWord>
     <ThaiFonet>ching</ThaiFonet>
-    <EngDesc />
+    <EngWord>Cymbals</EngWord>
+    <ThaiHelpWord>ฉิ่ง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ช</ThaiScript>
-    <ThaiHelpWord>ช้าง</ThaiHelpWord>
     <ThaiFonet>chaang</ThaiFonet>
-    <EngDesc />
+    <EngWord>Elephant</EngWord>
+    <ThaiHelpWord>ช้าง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ซ</ThaiScript>
-    <ThaiHelpWord>โซ่</ThaiHelpWord>
     <ThaiFonet>soo</ThaiFonet>
-    <EngDesc />
+    <EngWord>Chains</EngWord>
+    <ThaiHelpWord>โซ่</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฌ</ThaiScript>
-    <ThaiHelpWord>เฌอ</ThaiHelpWord>
     <ThaiFonet>chøø</ThaiFonet>
-    <EngDesc />
+    <EngWord>Thai tree</EngWord>
+    <ThaiHelpWord>เฌอ</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ญ</ThaiScript>
-    <ThaiHelpWord>ผู้หญิง</ThaiHelpWord>
-    <ThaiFonet>puu ying</ThaiFonet>
-    <EngDesc />
+    <ThaiFonet>ying</ThaiFonet>
+    <EngWord>Woman</EngWord>
+    <ThaiHelpWord>หญิง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฎ</ThaiScript>
-    <ThaiHelpWord>ชฎา</ThaiHelpWord>
     <ThaiFonet>cha daa</ThaiFonet>
-    <EngDesc />
+    <EngWord>headdress</EngWord>
+    <EngDesc>Type of headdress used in Thai classical dancing and theater</EngDesc>
+    <ThaiHelpWord>ชฎา</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฏ</ThaiScript>
-    <ThaiHelpWord>ปฏัก</ThaiHelpWord>
     <ThaiFonet>ba dag</ThaiFonet>
-    <EngDesc />
+    <EngWord>harpoon; spear; javelin</EngWord>
+    <ThaiHelpWord>ปฏัก</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฐ</ThaiScript>
-    <ThaiHelpWord>ฐาน</ThaiHelpWord>
     <ThaiFonet>taan</ThaiFonet>
-    <EngDesc />
+    <EngWord>Pedestal</EngWord>
+    <ThaiHelpWord>ฐาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฑ</ThaiScript>
-    <ThaiHelpWord>มณโฑ</ThaiHelpWord>
     <ThaiFonet>montoo</ThaiFonet>
-    <EngDesc />
+    <EngWord>the wife of a giant</EngWord>
+    <ThaiHelpWord>มณโฑ</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฒ</ThaiScript>
-    <ThaiHelpWord>ผู้เฒ่า</ThaiHelpWord>
     <ThaiFonet>puu tow</ThaiFonet>
-    <EngDesc />
+    <EngWord>Old person</EngWord>
+    <ThaiHelpWord>ผู้เฒ่า</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ณ</ThaiScript>
-    <ThaiHelpWord>เณร</ThaiHelpWord>
     <ThaiFonet>neen</ThaiFonet>
-    <EngDesc />
+    <EngWord>Novice monk</EngWord>
+    <ThaiHelpWord>เณร</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ด</ThaiScript>
-    <ThaiHelpWord>เด็ก</ThaiHelpWord>
     <ThaiFonet>deg</ThaiFonet>
-    <EngDesc />
+    <EngWord>Child</EngWord>
+    <ThaiHelpWord>เด็ก</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ต</ThaiScript>
-    <ThaiHelpWord>เต่า</ThaiHelpWord>
     <ThaiFonet>tow</ThaiFonet>
-    <EngDesc />
+    <EngWord>Turtle</EngWord>
+    <ThaiHelpWord>เต่า</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ถ</ThaiScript>
-    <ThaiHelpWord>ถุง</ThaiHelpWord>
     <ThaiFonet>tung</ThaiFonet>
-    <EngDesc />
+    <EngWord>Bag</EngWord>
+    <ThaiHelpWord>ถุง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ท</ThaiScript>
-    <ThaiHelpWord>ทหาร</ThaiHelpWord>
     <ThaiFonet>tahaan</ThaiFonet>
-    <EngDesc />
+    <EngWord>Soldier</EngWord>
+    <ThaiHelpWord>ทหาร</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ธ</ThaiScript>
-    <ThaiHelpWord>ธง</ThaiHelpWord>
     <ThaiFonet>tong</ThaiFonet>
-    <EngDesc />
+    <EngWord>Flag</EngWord>
+    <ThaiHelpWord>ธง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>น</ThaiScript>
-    <ThaiHelpWord>หนู</ThaiHelpWord>
     <ThaiFonet>nuu</ThaiFonet>
-    <EngDesc />
+    <EngWord>Mouse</EngWord>
+    <ThaiHelpWord>หนู</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>บ</ThaiScript>
-    <ThaiHelpWord>ใบไม้</ThaiHelpWord>
     <ThaiFonet>bai maai</ThaiFonet>
-    <EngDesc />
+    <EngWord>Leaf</EngWord>
+    <ThaiHelpWord>ใบไม้</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ป</ThaiScript>
-    <ThaiHelpWord>ปลา</ThaiHelpWord>
     <ThaiFonet>blaa</ThaiFonet>
-    <EngDesc />
+    <EngWord>Fish</EngWord>
+    <ThaiHelpWord>ปลา</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ผ</ThaiScript>
-    <ThaiHelpWord>ผึ้ง</ThaiHelpWord>
     <ThaiFonet>pung</ThaiFonet>
-    <EngDesc />
+    <EngWord>Bee</EngWord>
+    <ThaiHelpWord>ผึ้ง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฝ</ThaiScript>
-    <ThaiHelpWord>ฝา</ThaiHelpWord>
     <ThaiFonet>faa</ThaiFonet>
-    <EngDesc />
+    <EngWord>Lid</EngWord>
+    <ThaiHelpWord>ฝา</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>พ</ThaiScript>
-    <ThaiHelpWord>พาน</ThaiHelpWord>
     <ThaiFonet>paan</ThaiFonet>
-    <EngDesc />
+    <EngWord>Tray</EngWord>
+    <ThaiHelpWord>พาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฟ</ThaiScript>
-    <ThaiHelpWord>ฟัน</ThaiHelpWord>
     <ThaiFonet>fan</ThaiFonet>
-    <EngDesc />
+    <EngWord>Tooth</EngWord>
+    <ThaiHelpWord>ฟัน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ภ</ThaiScript>
-    <ThaiHelpWord>สำเภา</ThaiHelpWord>
     <ThaiFonet>sampow</ThaiFonet>
-    <EngDesc />
+    <EngWord>Sailboat</EngWord>
+    <ThaiHelpWord>สำเภา</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ม</ThaiScript>
-    <ThaiHelpWord>ม้า</ThaiHelpWord>
     <ThaiFonet>maa</ThaiFonet>
-    <EngDesc />
+    <EngWord>Horse</EngWord>
+    <ThaiHelpWord>ม้า</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ย</ThaiScript>
-    <ThaiHelpWord>ยักษ์</ThaiHelpWord>
     <ThaiFonet>yag</ThaiFonet>
-    <EngDesc />
+    <EngWord>Giant</EngWord>
+    <ThaiHelpWord>ยักษ์</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ร</ThaiScript>
-    <ThaiHelpWord>เรือ</ThaiHelpWord>
     <ThaiFonet>rua</ThaiFonet>
-    <EngDesc />
+    <EngWord>Boat</EngWord>
+    <ThaiHelpWord>เรือ</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ล</ThaiScript>
-    <ThaiHelpWord>ลิง</ThaiHelpWord>
     <ThaiFonet>ling</ThaiFonet>
-    <EngDesc />
+    <EngWord>Monkey</EngWord>
+    <ThaiHelpWord>ลิง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ว</ThaiScript>
-    <ThaiHelpWord>เเหาน</ThaiHelpWord>
     <ThaiFonet>wææn</ThaiFonet>
-    <EngDesc />
+    <EngWord>Ring</EngWord>
+    <ThaiHelpWord>เเหาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ศ</ThaiScript>
-    <ThaiHelpWord>ศาลา</ThaiHelpWord>
     <ThaiFonet>saalaa</ThaiFonet>
-    <EngDesc />
+    <EngWord>Pavilion</EngWord>
+    <ThaiHelpWord>ศาลา</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ษ</ThaiScript>
-    <ThaiHelpWord>ฦๅษี</ThaiHelpWord>
     <ThaiFonet>ruu see</ThaiFonet>
-    <EngDesc />
+    <EngWord>Hermit</EngWord>
+    <ThaiHelpWord>ฦๅษี</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ส</ThaiScript>
-    <ThaiHelpWord>เสือ</ThaiHelpWord>
     <ThaiFonet>sua</ThaiFonet>
-    <EngDesc />
+    <EngWord>Tiger</EngWord>
+    <ThaiHelpWord>เสือ</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ห</ThaiScript>
-    <ThaiHelpWord>หีบ</ThaiHelpWord>
     <ThaiFonet>heeb</ThaiFonet>
-    <EngDesc />
+    <EngWord>Chest</EngWord>
+    <ThaiHelpWord>หีบ</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฬ</ThaiScript>
-    <ThaiHelpWord>ขุฬา</ThaiHelpWord>
     <ThaiFonet>ju laa</ThaiFonet>
-    <EngDesc />
+    <EngWord>kite</EngWord>
+    <ThaiHelpWord>ขุฬา</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>อ</ThaiScript>
-    <ThaiHelpWord>อ่าง</ThaiHelpWord>
     <ThaiFonet>aang</ThaiFonet>
-    <EngDesc />
+    <EngWord>Basin</EngWord>
+    <ThaiHelpWord>อ่าง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ฮ</ThaiScript>
-    <ThaiHelpWord>นกฮูก</ThaiHelpWord>
     <ThaiFonet>nok hoog</ThaiFonet>
-    <EngDesc>Owl</EngDesc>
+    <EngWord>Owl</EngWord>
+    <ThaiHelpWord>นกฮูก</ThaiHelpWord>
   </Consonant>
 </ArrayOfConsonant>

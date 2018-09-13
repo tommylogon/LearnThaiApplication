@@ -11,12 +11,12 @@
             <TabItem Header="Page 1">
                 <Grid Background="#FFE5E5E5">
                     <TextBox x:Name="txt_Answear_Page1" HorizontalAlignment="Left" Height="28" Margin="329,133,0,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
-                    <Button x:Name="btn_validate_Page1" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="328.609,165.563,0,0" VerticalAlignment="Top" Width="89.588" Click="btn_validate_Click"/>
-                    <Button x:Name="btn_Next_Word_Page1" Content="Next" HorizontalAlignment="Left" Height="24" Margin="423,166,0,0" VerticalAlignment="Top" Width="35" Click="btn_Next_Word_Click"/>
-                    <Button x:Name="btn_Prev_Word_Page1" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="289,166,0,0" VerticalAlignment="Top" Width="35" Click="btn_Prev_Word_Click"/>
+                    <Button x:Name="btn_validate_Page1" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="328.609,165.563,0,0" VerticalAlignment="Top" Width="89.588" />
+                    <Button x:Name="btn_Next_Word_Page1" Content="Next" HorizontalAlignment="Left" Height="24" Margin="423,166,0,0" VerticalAlignment="Top" Width="35" Click="btn_Next_Word_Page1_Click" />
+                    <Button x:Name="btn_Prev_Word_Page1" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="289,166,0,0" VerticalAlignment="Top" Width="35" />
                     <Label x:Name="lbl_Counter_Page1" Content="123" HorizontalAlignment="Left" Margin="30,36,0,0" VerticalAlignment="Top" Height="26" Width="31"/>
-                    <RadioButton x:Name="rb_KeyToUnderstand"  Content="Key to understanding Thai" HorizontalAlignment="Left" Margin="16,85,0,0" VerticalAlignment="Top" Checked="rb_Conson_Checked"/>
-                    <RadioButton x:Name="rb_TonalLanguage"  Content="Tonal Language" HorizontalAlignment="Left" Margin="16,105,0,0" VerticalAlignment="Top" Checked="rb_Vowel_Checked"/>
+                    <RadioButton x:Name="rb_KeyToUnderstand"  Content="Key to understanding Thai" HorizontalAlignment="Left" Margin="16,85,0,0" VerticalAlignment="Top" />
+                    <RadioButton x:Name="rb_TonalLanguage"  Content="Tonal Language" HorizontalAlignment="Left" Margin="16,105,0,0" VerticalAlignment="Top" />
                     <TextBlock x:Name="txb_Information_Page1" HorizontalAlignment="Left" Margin="85,10,0,0" TextWrapping="Wrap" Text="Here you can select between consonants or vowels." VerticalAlignment="Top" Height="70" Width="207"/>
                     <CheckBox x:Name="ckb_Helpbox_Page1" Content="Description" HorizontalAlignment="Left" Margin="178,218,0,0" VerticalAlignment="Top"/>
                     <TextBlock x:Name="txb_Description_page1" HorizontalAlignment="Left" Margin="149,248,0,0" TextWrapping="Wrap" Text="This is some description" VerticalAlignment="Top" Height="87" Width="439"/>
@@ -24,7 +24,7 @@
                     <TextBlock x:Name="txb_ThaiScript_Page1" HorizontalAlignment="Left" Margin="329,36,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="48"/>
                     <TextBlock x:Name="txb_Status_Page1" HorizontalAlignment="Left" Margin="329,205,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="28" Width="110" FontSize="24"/>
                     <RadioButton x:Name="rb_SpecialPron" Content="Special pronunciations" HorizontalAlignment="Left" Margin="16,125,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="br_Noun" Content="Thai Nouns" HorizontalAlignment="Left" Margin="16,145,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="rb_Noun" Content="Thai Nouns" HorizontalAlignment="Left" Margin="16,145,0,0" VerticalAlignment="Top"/>
                     <RadioButton x:Name="rb_Numbers" Content="Numbers" HorizontalAlignment="Left" Margin="16,165,0,0" VerticalAlignment="Top"/>
                     <RadioButton x:Name="rb_Time" Content="Time and the year" HorizontalAlignment="Left" Margin="16,185,0,0" VerticalAlignment="Top"/>
                     <RadioButton x:Name="rb_Color" Content="Colors in Thai" HorizontalAlignment="Left" Margin="16,205,0,0" VerticalAlignment="Top"/>
@@ -51,15 +51,15 @@
             </TabItem>
             <TabItem Header="Page 3">
                 <Grid Background="#FFE5E5E5" Margin="0,-1,-19,0">
-                    <TextBox x:Name="txt_NewThaiScript" HorizontalAlignment="Left" Height="23" Margin="303,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <TextBox x:Name="txt_NewThaiFonet" HorizontalAlignment="Left" Height="23" Margin="303,73,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <TextBox x:Name="txt_NewEnglish" HorizontalAlignment="Left" Height="23" Margin="303,101,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <TextBox x:Name="txt_NewDescr" HorizontalAlignment="Left" Height="23" Margin="303,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <Label x:Name="lbl_ThaiScript_Insert" Content="Thai Script" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="233,42,0,0"/>
-                    <Label x:Name="lbl_ThaiFonet_Insert" Content="Thai Fonetical" HorizontalAlignment="Left" Margin="215,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.193,0.489"/>
-                    <Label x:Name="lbl_English_Insert" Content="English" HorizontalAlignment="Left" Margin="250,98,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="lbl_Desc_Insert" Content="Description" HorizontalAlignment="Left" Margin="228,125,0,0" VerticalAlignment="Top"/>
-                    <Button x:Name="btn_SubmitNewWord" Content="Submit" HorizontalAlignment="Left" Margin="326,185,0,0" VerticalAlignment="Top" Width="76" Click="btn_SubmitNewWord_Click"/>
+                    <TextBox x:Name="txt_FirstSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txt_SecondSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,73,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txt_ThirdSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,101,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txt_FourthSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="lbl_ThaiScript_Insert" Content="Thai Script" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="209,41,0,0"/>
+                    <Label x:Name="lbl_ThaiFonet_Insert" Content="Thai Fonetical" HorizontalAlignment="Left" Margin="209,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.193,0.489"/>
+                    <Label x:Name="lbl_English_Insert" Content="Thai help word" Margin="209,98,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center"/>
+                    <Label x:Name="lbl_Desc_Insert" Content="Description" HorizontalAlignment="Left" Margin="209,125,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btn_SubmitNewWord" Content="Submit" HorizontalAlignment="Left" Margin="362,185,0,0" VerticalAlignment="Top" Width="76" Click="btn_SubmitNewWord_Click"/>
                     <ListBox x:Name="lib_LoadedWords" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="193" SelectionChanged="lib_LoadedWords_SelectionChanged"/>
                     <TextBlock x:Name="txb_Description_Page4" HorizontalAlignment="Left" Margin="238,228,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Height="102" Width="292"/>
                     <Button x:Name="btn_LoadList" Content="Load List" HorizontalAlignment="Left" Margin="66,315,0,0" VerticalAlignment="Top" Width="75" Click="btn_LoadList_Click"/>
@@ -67,8 +67,8 @@
                     <RadioButton x:Name="rb_Conso_Page3" Content="Consonants" HorizontalAlignment="Left" Margin="531,84,0,0" VerticalAlignment="Top" Checked="rb_Conso_Page3_Checked"/>
                     <RadioButton x:Name="rb_Vowel_Page3" Content="Vowels" HorizontalAlignment="Left" Margin="531,104,0,0" VerticalAlignment="Top" Checked="rb_Vowel_Page3_Checked"/>
                     <Label Content="What kind of list do you want to load?" HorizontalAlignment="Left" Margin="531,37,0,0" VerticalAlignment="Top" Width="215"/>
-                    <TextBox x:Name="txt_NewChapter" HorizontalAlignment="Left" Height="23" Margin="303,157,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <Label x:Name="lbl_Chapter_Insert" Content="Chapter" HorizontalAlignment="Left" Margin="246,153,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txt_FifthSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,157,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="lbl_Chapter_Insert" Content="Chapter" HorizontalAlignment="Left" Margin="209,153,0,0" VerticalAlignment="Top"/>
 
                 </Grid>
             </TabItem>
