@@ -89,6 +89,7 @@
     <ThaiScript>ฏ</ThaiScript>
     <ThaiFonet>ba dag</ThaiFonet>
     <EngWord>harpoon; spear; javelin</EngWord>
+    <EngDesc />
     <ThaiHelpWord>ปฏัก</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -117,8 +118,9 @@
   </Consonant>
   <Consonant>
     <ThaiScript>ด</ThaiScript>
-    <ThaiFonet>deg</ThaiFonet>
+    <ThaiFonet>dek</ThaiFonet>
     <EngWord>Child</EngWord>
+    <EngDesc />
     <ThaiHelpWord>เด็ก</ThaiHelpWord>
   </Consonant>
   <Consonant>
