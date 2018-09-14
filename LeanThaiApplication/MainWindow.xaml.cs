@@ -186,7 +186,7 @@ namespace LearnThaiApplication
                 }
                 if (ckb_Helpbox_Page2.IsChecked == true)
                 {
-                    txb_Description_page2.Text = "(" + consonants[i].ThaiFonet + ") " + consonants[i].EngWord +": " + consonants[i].EngDesc;
+                    txb_Description_page2.Text = "(" + consonants[i].ThaiFonet + ") " + consonants[i].EngWord + ": " + consonants[i].EngDesc;
                 }
 
             }
@@ -222,12 +222,12 @@ namespace LearnThaiApplication
             if (rb_Conson_Page2.IsChecked == true)
             {
 
-                textChanger<Consonant>(consonants, txb_ThaiScript_Page2, txb_Description_page2,ckb_Randomized_Page2, true);
+                textChanger<Consonant>(consonants, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, true);
             }
             else if (rb_Vowel_Page2.IsChecked == true)
             {
 
-                textChanger<Vowel>(vowels, txb_ThaiScript_Page2, txb_Description_page2, ckb_Randomized_Page2, true);
+                textChanger<Vowel>(vowels, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, true);
             }
             else
             {
@@ -243,12 +243,12 @@ namespace LearnThaiApplication
 
             if (rb_Conson_Page2.IsChecked == true)
             {
-                textChanger<Consonant>(consonants, txb_ThaiScript_Page2, txb_Description_page2, ckb_Randomized_Page2, false);
+                textChanger<Consonant>(consonants, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, false);
 
             }
             else if (rb_Vowel_Page2.IsChecked == true)
             {
-                textChanger<Vowel>(vowels, txb_ThaiScript_Page2, txb_Description_page2, ckb_Randomized_Page2, false);
+                textChanger<Vowel>(vowels, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, false);
 
             }
             else
@@ -281,7 +281,7 @@ namespace LearnThaiApplication
 
         }
 
-        public void textChanger<T>(List<T> list, TextBlock textBlockForScript,TextBlock textBlockDescription , CheckBox checkBoxRandom, bool nextIsForward) where T : new()
+        public void textChanger<T>(List<T> list, TextBlock textBlockForScript, TextBlock textBlockDescription, CheckBox checkBoxDescription, CheckBox checkBoxRandom, bool nextIsForward) where T : new()
         {
             //textBlock.Text = recievedText;
             /*Type whatIsT = typeof(T);T whatKindOfObject
@@ -324,13 +324,17 @@ namespace LearnThaiApplication
 
                     if (list[i].GetType() == typeof(Word))
                     {
-                        
+
                         findWordChaptereProperty = list[i].GetType().GetProperty("Chapter");
                         propertyChapter = findWordChaptereProperty.GetValue(list[i]);
 
                         if ((int)propertyChapter == selectedChapter)
                         {
                             textBlockForScript.Text = (String)propertylistScript;
+                            if (checkBoxDescription.IsChecked == true)
+                            {
+
+                            }
                         }
 
                     }
@@ -361,12 +365,17 @@ namespace LearnThaiApplication
                         {
                             findWordChaptereProperty = list[i].GetType().GetProperty("Chapter");
                             propertyChapter = findWordChaptereProperty.GetValue(list[i]);
-                            
 
-                            if ((int) propertyChapter == selectedChapter)
+
+                            if ((int)propertyChapter == selectedChapter)
                             {
+
                                 textBlockForScript.Text = (String)propertylistScript;
-                                textBlockDescription.Text = propertyFonet + " " + propertyEngDesc ;
+                                if (checkBoxDescription.IsChecked == true)
+                                {
+                                    textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                }
+
                             }
 
                         }
@@ -378,11 +387,14 @@ namespace LearnThaiApplication
 
                                 propertyChapter = findWordChaptereProperty.GetValue(list[i]);
 
-                                if ((int) propertyChapter == selectedChapter)
+                                if ((int)propertyChapter == selectedChapter)
                                 {
                                     textBlockForScript.Text = (String)propertylistScript;
+                                    if (checkBoxDescription.IsChecked == true)
+                                    {
+                                        textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                    }
 
-                                    textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
                                 }
 
                             }
@@ -393,10 +405,10 @@ namespace LearnThaiApplication
 
                                 textBlockForScript.Text = propertylistScript + " " + propertylistWord;
                             }
-                            
+
                         }
-                    
-                        
+
+
 
 
                     }
@@ -420,8 +432,11 @@ namespace LearnThaiApplication
                             if ((int)propertyChapter == selectedChapter)
                             {
                                 textBlockForScript.Text = (String)propertylistScript;
+                                if (checkBoxDescription.IsChecked == true)
+                                {
+                                    textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                }
 
-                                textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
                             }
 
                         }
@@ -430,10 +445,13 @@ namespace LearnThaiApplication
                             findThaiHelpWordProperty = list[i].GetType().GetProperty("ThaiHelpWord");
 
                             propertylistWord = findThaiHelpWordProperty.GetValue(list[i]);
+                            if (checkBoxDescription.IsChecked == true)
+                            {
+                                textBlockForScript.Text = propertylistScript + " " + propertylistWord;
+                            }
 
-                            textBlockForScript.Text = propertylistScript + " " + propertylistWord;
                         }
-                        
+
                     }
                 }
 
@@ -459,9 +477,13 @@ namespace LearnThaiApplication
                         {
                             textBlockForScript.Text = (String)propertylistScript;
 
-                            textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                            if (checkBoxDescription.IsChecked == true)
+                            {
+                                textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                            }
+
                         }
-                        
+
                     }
                     else
                     {
@@ -470,7 +492,12 @@ namespace LearnThaiApplication
                         propertylistWord = findThaiHelpWordProperty.GetValue(list[i]);
 
                         textBlockForScript.Text = propertylistScript + " " + propertylistWord;
-                    }                                      
+
+                        if (checkBoxDescription.IsChecked == true)
+                        {
+                            textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                        }
+                    }
                 }
                 else
                 {
@@ -494,7 +521,10 @@ namespace LearnThaiApplication
                             {
 
                                 textBlockForScript.Text = (String)propertylistScript;
-                                textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                if (checkBoxDescription.IsChecked == true)
+                                {
+                                    textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                }
                             }
 
                         }
@@ -506,8 +536,13 @@ namespace LearnThaiApplication
                             propertylistWord = findThaiHelpWordProperty.GetValue(list[i]);
 
                             textBlockForScript.Text = propertylistScript + " " + propertylistWord;
+
+                            if (checkBoxDescription.IsChecked == true)
+                            {
+                                textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                            }
                         }
-                        
+
                     }
                     else if (i < list.Count)
                     {
@@ -528,7 +563,10 @@ namespace LearnThaiApplication
 
 
                                 textBlockForScript.Text = (String)propertylistScript;
-                                textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                if (checkBoxDescription.IsChecked == true)
+                                {
+                                    textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                }
                             }
 
                         }
@@ -539,8 +577,12 @@ namespace LearnThaiApplication
                             propertylistWord = findThaiHelpWordProperty.GetValue(list[i]);
 
                             textBlockForScript.Text = propertylistScript + " " + propertylistWord;
+                            if (checkBoxDescription.IsChecked == true)
+                            {
+                                textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                            }
                         }
-                        
+
                     }
                 }
 
@@ -705,8 +747,8 @@ namespace LearnThaiApplication
                 propertylistFonet = findThaiFonetProperty.GetValue(oldWord);
                 //propertylistHelp    = findThaiHelpWordProperty.GetValue(oldWord);
                 propertylistWord = findThaiEngWordProperty.GetValue(oldWord);
-                propertylistDescr = findEngDescrProperty.GetValue(oldWord);
-                //propertyChapter     = findChapterProperty.GetValue(oldWord);
+                //propertylistDescr = findEngDescrProperty.GetValue(oldWord);
+                propertyChapter = findChapterProperty.GetValue(oldWord);
 
                 if ((String)propertylistScript == txt_FirstSelectionProperty.Text && txt_FirstSelectionProperty.Text != "" || (String)propertylistWord == txt_ThirdSelectionProperty.Text && txt_ThirdSelectionProperty.Text != "")
                 {
@@ -720,14 +762,26 @@ namespace LearnThaiApplication
                         findThaiFonetProperty.SetValue(oldWord, txt_SecondSelectionProperty.Text, null);
                     }
 
-                    if (null != findThaiHelpWordProperty && findThaiHelpWordProperty.CanWrite)
+                    if (null != findThaiHelpWordProperty && findThaiHelpWordProperty.CanWrite && whatIsT.GetType() == typeof(Consonant) || whatIsT.GetType() == typeof(Vowel))
                     {
-                        findThaiHelpWordProperty.SetValue(oldWord, txt_ThirdSelectionProperty.Text, null);
+                        if (oldWord.GetType() == typeof(Consonant) || oldWord.GetType() == typeof(Vowel))
+                        {
+                            findThaiHelpWordProperty.SetValue(oldWord, txt_ThirdSelectionProperty.Text, null);
+                        }
+
                     }
 
                     if (null != findThaiEngWordProperty && findThaiEngWordProperty.CanWrite)
                     {
-                        findThaiEngWordProperty.SetValue(oldWord, txt_FourthSelectionProperty.Text, null);
+                        if (oldWord.GetType() == typeof(Word))
+                        {
+                            findThaiEngWordProperty.SetValue(oldWord, txt_ThirdSelectionProperty.Text, null);
+                        }
+                        else
+                        {
+                            findThaiEngWordProperty.SetValue(oldWord, txt_FourthSelectionProperty.Text, null);
+                        }
+
                     }
 
                     if (null != findChapterProperty && findChapterProperty.CanWrite)
@@ -748,7 +802,15 @@ namespace LearnThaiApplication
                     }
                     if (null != findEngDescrProperty && findEngDescrProperty.CanWrite)
                     {
-                        findEngDescrProperty.SetValue(oldWord, txt_FifthSelectionProperty.Text, null);
+                        if (oldWord.GetType() == typeof(Word))
+                        {
+                            findEngDescrProperty.SetValue(oldWord, txt_FourthSelectionProperty.Text, null);
+                        }
+                        else
+                        {
+                            findEngDescrProperty.SetValue(oldWord, txt_FifthSelectionProperty.Text, null);
+                        }
+
                     }
 
                     /*
@@ -871,8 +933,8 @@ namespace LearnThaiApplication
                         if (wordToLoad == vowel.ThaiScript || wordToLoad == vowel.EngWord)
                         {
                             txt_FirstSelectionProperty.Text = vowel.ThaiScript;
-                            txt_SecondSelectionProperty.Text = vowel.ThaiHelpWord;
-                            txt_ThirdSelectionProperty.Text = vowel.ThaiFonet;
+                            txt_SecondSelectionProperty.Text = vowel.ThaiFonet;
+                            txt_ThirdSelectionProperty.Text = vowel.ThaiHelpWord;
                             txt_FourthSelectionProperty.Text = vowel.EngWord;
                             txt_FifthSelectionProperty.Text = vowel.EngDesc;
                             txb_Description_Page4.Text = vowel.EngDesc;
@@ -959,7 +1021,19 @@ namespace LearnThaiApplication
             lbl_English_Insert.Content = "English";
             lbl_Desc_Insert.Content = "Description";
             lbl_Chapter_Insert.Content = "Chapter";
+            lib_LoadedWords.Items.Clear();
 
+            foreach (Word word in words)
+            {
+                if (word.ThaiScript == "")
+                {
+                    lib_LoadedWords.Items.Add(word.EngWord);
+                }
+                else
+                {
+                    lib_LoadedWords.Items.Add(word.ThaiScript);
+                }
+            }
 
         }
 
@@ -972,6 +1046,19 @@ namespace LearnThaiApplication
             lbl_Desc_Insert.Content = "English Word";
             lbl_Chapter_Insert.Content = "English Description";
 
+            lib_LoadedWords.Items.Clear();
+
+            foreach (Consonant conso in consonants)
+            {
+                if (conso.ThaiScript == "")
+                {
+                    lib_LoadedWords.Items.Add(conso.EngWord);
+                }
+                else
+                {
+                    lib_LoadedWords.Items.Add(conso.ThaiScript);
+                }
+            }
 
         }
 
@@ -985,14 +1072,24 @@ namespace LearnThaiApplication
 
             lbl_Chapter_Insert.Content = "English Description";
 
+            lib_LoadedWords.Items.Clear();
 
-
-
+            foreach (Vowel vowel in vowels)
+            {
+                if (vowel.ThaiScript == "")
+                {
+                    lib_LoadedWords.Items.Add(vowel.EngWord);
+                }
+                else
+                {
+                    lib_LoadedWords.Items.Add(vowel.ThaiScript);
+                }
+            }
 
         }
         public int CheckPage1RB()
         {
-            
+
             if (rb_KeyToUnderstand.IsChecked == true)
             {
                 return 0;
@@ -1017,15 +1114,15 @@ namespace LearnThaiApplication
             {
                 return 5;
             }
-            else if(rb_Color.IsChecked == true)
+            else if (rb_Color.IsChecked == true)
             {
                 return 6;
             }
-            else if(rb_words.IsChecked == true)
+            else if (rb_words.IsChecked == true)
             {
                 return 7;
             }
-            else if(rb_Body.IsChecked == true)
+            else if (rb_Body.IsChecked == true)
             {
                 return 8;
             }
@@ -1035,7 +1132,7 @@ namespace LearnThaiApplication
                 return 0;
             }
 
-                                                                                                                           
+
         }
 
         private void btn_Next_Word_Page1_Click(object sender, RoutedEventArgs e)
@@ -1044,15 +1141,16 @@ namespace LearnThaiApplication
 
             clearFields();
 
-            textChanger<Word>(words, txb_ThaiScript_Page1, txb_Description_page1, ckb_Randomized_Page1, true);
-                       
+            textChanger<Word>(words, txb_ThaiScript_Page1, txb_Description_page1, ckb_Helpbox_Page1, ckb_Randomized_Page1, true);
+
             lbl_Counter_Page1.Content = i;
         }
+        
 
         private void btn_Prev_Word_Page1_Click(object sender, RoutedEventArgs e)
         {
             CheckPage1RB();
-            textChanger<Word>(words, txb_ThaiScript_Page1, txb_Description_page1, ckb_Randomized_Page1, false);
+            textChanger<Word>(words, txb_ThaiScript_Page1, txb_Description_page1, ckb_Helpbox_Page1, ckb_Randomized_Page1, false);
             lbl_Counter_Page1.Content = i;
         }
 

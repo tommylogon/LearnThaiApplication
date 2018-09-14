@@ -10,64 +10,64 @@
   <Word>
     <ThaiScript>เป็ด</ThaiScript>
     <ThaiFonet>ped</ThaiFonet>
-    <EngWord>Like in get, jet, let</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Duck</EngWord>
+    <EngDesc>Like in get, jet, let</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>เบียร์</ThaiScript>
     <ThaiFonet>bea</ThaiFonet>
-    <EngWord>Like in beer, dear, gear</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Beer</EngWord>
+    <EngDesc>Like in beer, dear, gear</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>ตี</ThaiScript>
     <ThaiFonet>tee</ThaiFonet>
-    <EngWord>Like in bee, sea</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Hit</EngWord>
+    <EngDesc>Like in bee, sea</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>เพลง</ThaiScript>
     <ThaiFonet>pleeng</ThaiFonet>
-    <EngWord>Like in bread, dead</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Music</EngWord>
+    <EngDesc>Like in bread, dead</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>กา</ThaiScript>
     <ThaiFonet>gaa</ThaiFonet>
-    <EngWord>like in get, go, grand</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Crow</EngWord>
+    <EngDesc>like in get, go, grand</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>หงส์</ThaiScript>
     <ThaiFonet>hong</ThaiFonet>
-    <EngWord>Like in hand, hard</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Swan</EngWord>
+    <EngDesc>Like in hand, hard</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>ลิ้น</ThaiScript>
     <ThaiFonet>lin</ThaiFonet>
-    <EngWord>lite in bit, Italy, sit</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Tounge</EngWord>
+    <EngDesc>lite in bit, Italy, sit</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>โต๊ะ</ThaiScript>
     <ThaiFonet>to</ThaiFonet>
-    <EngWord>Like in hope, toe, tone</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Table</EngWord>
+    <EngDesc>Like in hope, toe, tone</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>เดิน</ThaiScript>
     <ThaiFonet>döön</ThaiFonet>
-    <EngWord>Like in Bird, Burn, term</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Walk</EngWord>
+    <EngDesc>Like in Bird, Burn, term</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
@@ -80,63 +80,57 @@
   <Word>
     <ThaiScript>คุก</ThaiScript>
     <ThaiFonet>kug</ThaiFonet>
-    <EngWord>like in butcher, put</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>jail</EngWord>
+    <EngDesc>like in butcher, put</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>โยน</ThaiScript>
     <ThaiFonet>yoon</ThaiFonet>
-    <EngWord>Like in year, yes</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Throw</EngWord>
+    <EngDesc>Like in year, yes</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>ตั๋ว</ThaiScript>
     <ThaiFonet>dua</ThaiFonet>
-    <EngWord>Like in toud, poor</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Ticket</EngWord>
+    <EngDesc>Like in toud, poor</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>มือ</ThaiScript>
     <ThaiFonet>müü</ThaiFonet>
-    <EngWord>Simplye has to be practiced with sound</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Hand</EngWord>
+    <EngDesc>Simply has to be practiced with sound</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>เมือง</ThaiScript>
     <ThaiFonet>müang</ThaiFonet>
-    <EngWord>Simplye has to be practised</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>City</EngWord>
+    <EngDesc>Simplye has to be practised</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>แขน</ThaiScript>
     <ThaiFonet>kææn</ThaiFonet>
-    <EngWord>Like in bag, care or Rabbit</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Arm</EngWord>
+    <EngDesc>Like in bag, care or Rabbit</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>หัวใจ</ThaiScript>
     <ThaiFonet>hua jai</ThaiFonet>
-    <EngWord>Like in die, eye or Thai</EngWord>
-    <EngDesc>0</EngDesc>
+    <EngWord>Heart</EngWord>
+    <EngDesc>0Like in die, eye or Thai</EngDesc>
     <Chapter>0</Chapter>
   </Word>
   <Word>
     <ThaiScript>สีดำ</ThaiScript>
     <ThaiFonet>see dam</ThaiFonet>
-    <EngWord>Like in rum</EngWord>
-    <EngDesc>0</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>เป็ด</ThaiScript>
-    <ThaiFonet>ped</ThaiFonet>
-    <EngWord>Duck</EngWord>
+    <EngWord>Black</EngWord>
+    <EngDesc>Like in rum</EngDesc>
     <Chapter>0</Chapter>
   </Word>
 </ArrayOfWord>
