@@ -39,14 +39,16 @@
                     <Button x:Name="btn_validate_Page2" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="328.609,165.563,-126.197,-11.277" VerticalAlignment="Top" Width="89.588" Click="btn_validate_Click"/>
                     <Button x:Name="btn_Next_Word_Page2" Content="Next" HorizontalAlignment="Left" Height="24" Margin="423,166,-166,-11" VerticalAlignment="Top" Width="35" Click="btn_Next_Word_Click"/>
                     <Button x:Name="btn_Prev_Word_Page2" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="289,166,-32,-11" VerticalAlignment="Top" Width="35" Click="btn_Prev_Word_Click"/>
-                    <RadioButton x:Name="rb_Conson_Page2"  Content="Consonants" HorizontalAlignment="Left" Margin="180,148,0,0" VerticalAlignment="Top" Checked="rb_Conson_Checked"/>
-                    <RadioButton x:Name="rb_Vowel_Page2"  Content="Vowels" HorizontalAlignment="Left" Margin="180,168,0,0" VerticalAlignment="Top" Checked="rb_Vowel_Checked"/>
+                    <RadioButton x:Name="rb_Conson_Page2"  Content="Consonants" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Checked="rb_Conson_Checked"/>
+                    <RadioButton x:Name="rb_Vowel_Page2"  Content="Vowels" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Checked="rb_Vowel_Checked"/>
                     <TextBlock x:Name="txb_Information_Page2" HorizontalAlignment="Left" Margin="120,25,0,0" TextWrapping="Wrap" Text="Here you can select between consonants or vowels." VerticalAlignment="Top" Height="118" Width="141"/>
                     <CheckBox x:Name="ckb_Helpbox_Page2" Content="Description" HorizontalAlignment="Left" Margin="178,218,0,0" VerticalAlignment="Top" />
                     <TextBlock x:Name="txb_Description_page2" HorizontalAlignment="Left" Margin="149,248,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="87" Width="439" FontSize="24"/>
                     <CheckBox x:Name="ckb_Randomized_Page2" Content="Randomize words" HorizontalAlignment="Left" Margin="178,198,0,0" VerticalAlignment="Top" />
                     <TextBlock x:Name="txb_ThaiScript_Page2" HorizontalAlignment="Left" Margin="329,36,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="48"/>
                     <TextBlock x:Name="txb_Status_Page2" HorizontalAlignment="Left" Margin="329,205,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="110" FontSize="24"/>
+                    <RadioButton x:Name="rb_Closing_Page2" Content="Closing sounds" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="rb_NumberSymbol_Page2" Content="Number symbols" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Page 3" HorizontalAlignment="Left" Margin="-1.667,-2,-2,0" Width="51">
@@ -73,6 +75,7 @@
                 </Grid>
             </TabItem>
         </TabControl>
+        <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

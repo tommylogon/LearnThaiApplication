@@ -586,7 +586,6 @@ namespace LearnThaiApplication
                     }*/
 
                     clearFields();
-                    //System.Console.WriteLine(oldWord.ThaiScript + "; " + oldWord.ThaiFonet + "; " + oldWord.EngWord + "; " + oldWord.EngDesc);
                     break;
                 }
 
@@ -720,16 +719,9 @@ namespace LearnThaiApplication
 
         public void loadFiles<T>(List<T> list) where T : new()
         {
-            /*Type whatIsT = typeof(T);
-
-            PropertyInfo findThaiScriptProperty = list[i].GetType().GetProperty("ThaiScript");
-            PropertyInfo findThaiHelpWordProperty = list[i].GetType().GetProperty("ThaiHelpWord");
-
-            Object propertylistScript = findThaiScriptProperty.GetValue(list[i]);
-            Object propertylistWord = findThaiHelpWordProperty.GetValue(list[i]);
             
-             */
             Type whatIsT = typeof(T);
+
             PropertyInfo propInFile;
             PropertyInfo propInList;
 
@@ -1009,10 +1001,24 @@ namespace LearnThaiApplication
             set { chapter = value; }
         }
     }
-    public class Consonant : ThaiToEnglish
+
+    public abstract class ThaiSymbol : ThaiToEnglish
+    {
+        string thaiHelpWord;
+
+
+        public string ThaiHelpWord
+        {
+            get { return thaiHelpWord; }
+            set { thaiHelpWord = value; }
+
+        }
+    }
+
+    public class Consonant : ThaiSymbol
     {
 
-        string thaiHelpWord;
+        
 
 
         public Consonant()
@@ -1036,22 +1042,12 @@ namespace LearnThaiApplication
             this.EngDesc = englishDescription;
 
         }
-
-        public string ThaiHelpWord
-        {
-            get { return thaiHelpWord; }
-            set { thaiHelpWord = value; }
-
-        }
-
-
+        
     }
-    public class Vowel : ThaiToEnglish
+
+    public class Vowel : ThaiSymbol
     {
-
-        string thaiHelpWord;
-
-
+        
         public Vowel()
         {
 
@@ -1072,13 +1068,29 @@ namespace LearnThaiApplication
             this.EngDesc = englishDescription;
         }
 
-        public string ThaiHelpWord
+
+    }
+    public class ThaiNumber : ThaiSymbol
+    {
+        public ThaiNumber()
         {
-            get { return thaiHelpWord; }
-            set { thaiHelpWord = value; }
 
         }
-
+        public ThaiNumber(string thaiSymbol, string thaiHelpWord, string thaiFonet, string englishWord)
+        {
+            this.ThaiScript = thaiSymbol;
+            this.ThaiHelpWord = thaiHelpWord;
+            this.ThaiFonet = thaiFonet;
+            this.EngWord = englishWord;
+        }
+        public ThaiNumber(string thaiSymbol, string thaiHelpWord, string thaiFonet, string englishWord, string englishDescription)
+        {
+            this.ThaiScript = thaiSymbol;
+            this.ThaiHelpWord = thaiHelpWord;
+            this.ThaiFonet = thaiFonet;
+            this.EngWord = englishWord;
+            this.EngDesc = englishDescription;
+        }
     }
 
     //http://blog.danskingdom.com/saving-and-loading-a-c-objects-data-to-an-xml-json-or-binary-file/
