@@ -312,28 +312,38 @@ namespace LearnThaiApplication
             Object propertyChapter;
 
 
+
+
+
             if (nextIsForward)
             {
                 if (checkBoxRandom.IsChecked == true)
                 {
 
                     i = random.Next(0, list.Count());
+
                     findThaiScriptProperty = list[i].GetType().GetProperty("ThaiScript");
+                    findThaiFonetProperty = list[i].GetType().GetProperty("ThaiFonet");
+                    findEngDescProperty = list[i].GetType().GetProperty("EngDesc");
 
                     propertylistScript = findThaiScriptProperty.GetValue(list[i]);
+                    propertyFonet = findThaiFonetProperty.GetValue(list[i]);
+                    propertyEngDesc = findEngDescProperty.GetValue(list[i]);
 
                     if (list[i].GetType() == typeof(Word))
                     {
 
                         findWordChaptereProperty = list[i].GetType().GetProperty("Chapter");
+
                         propertyChapter = findWordChaptereProperty.GetValue(list[i]);
 
                         if ((int)propertyChapter == selectedChapter)
                         {
                             textBlockForScript.Text = (String)propertylistScript;
+
                             if (checkBoxDescription.IsChecked == true)
                             {
-
+                                textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
                             }
                         }
 
@@ -344,6 +354,10 @@ namespace LearnThaiApplication
                         propertylistWord = findThaiHelpWordProperty.GetValue(list[i]);
 
                         textBlockForScript.Text = propertylistScript + " " + propertylistWord;
+                        if (checkBoxDescription.IsChecked == true)
+                        {
+                            textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
+                        }
                     }
                 }
                 else
@@ -373,7 +387,7 @@ namespace LearnThaiApplication
                                 textBlockForScript.Text = (String)propertylistScript;
                                 if (checkBoxDescription.IsChecked == true)
                                 {
-                                    textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                    textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
                                 }
 
                             }
@@ -392,7 +406,7 @@ namespace LearnThaiApplication
                                     textBlockForScript.Text = (String)propertylistScript;
                                     if (checkBoxDescription.IsChecked == true)
                                     {
-                                        textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                        textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
                                     }
 
                                 }
@@ -404,6 +418,10 @@ namespace LearnThaiApplication
                                 propertylistWord = findThaiHelpWordProperty.GetValue(list[i]);
 
                                 textBlockForScript.Text = propertylistScript + " " + propertylistWord;
+                                if (checkBoxDescription.IsChecked == true)
+                                {
+                                    textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
+                                }
                             }
 
                         }
@@ -434,7 +452,7 @@ namespace LearnThaiApplication
                                 textBlockForScript.Text = (String)propertylistScript;
                                 if (checkBoxDescription.IsChecked == true)
                                 {
-                                    textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                    textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
                                 }
 
                             }
@@ -479,7 +497,7 @@ namespace LearnThaiApplication
 
                             if (checkBoxDescription.IsChecked == true)
                             {
-                                textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
                             }
 
                         }
@@ -495,7 +513,7 @@ namespace LearnThaiApplication
 
                         if (checkBoxDescription.IsChecked == true)
                         {
-                            textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                            textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
                         }
                     }
                 }
@@ -523,7 +541,7 @@ namespace LearnThaiApplication
                                 textBlockForScript.Text = (String)propertylistScript;
                                 if (checkBoxDescription.IsChecked == true)
                                 {
-                                    textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                    textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
                                 }
                             }
 
@@ -539,7 +557,7 @@ namespace LearnThaiApplication
 
                             if (checkBoxDescription.IsChecked == true)
                             {
-                                textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
                             }
                         }
 
@@ -565,7 +583,7 @@ namespace LearnThaiApplication
                                 textBlockForScript.Text = (String)propertylistScript;
                                 if (checkBoxDescription.IsChecked == true)
                                 {
-                                    textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                    textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
                                 }
                             }
 
@@ -579,7 +597,7 @@ namespace LearnThaiApplication
                             textBlockForScript.Text = propertylistScript + " " + propertylistWord;
                             if (checkBoxDescription.IsChecked == true)
                             {
-                                textBlockDescription.Text = propertyFonet + " " + propertyEngDesc;
+                                textBlockDescription.Text = propertyFonet + "\r\n" + propertyEngDesc;
                             }
                         }
 
