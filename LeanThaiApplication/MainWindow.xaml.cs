@@ -142,15 +142,18 @@ namespace LearnThaiApplication
             new Vowel("ุย","คุย","","")*/
         };
 
+        static List<ThaiNumber> numbers = new List<ThaiNumber>();
+
 
         //<>
         int i = 0;
+        string languageFilePath;
+
         int selectedChapter;
 
-
         string whatListTLoad = "";
-        Random random = new Random();
 
+        Random random = new Random();
 
         public MainWindow()
         {
@@ -158,7 +161,6 @@ namespace LearnThaiApplication
 
             clearFields();
 
-            System.Console.WriteLine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
 
             lbl_Counter_Page2.Content = i;
 
@@ -167,94 +169,53 @@ namespace LearnThaiApplication
             loadFiles<Consonant>(consonants);
 
             loadFiles<Vowel>(vowels);
-
-            System.Console.WriteLine(consonants.Count());
         }
 
-        private void btn_validate_Click(object sender, RoutedEventArgs e)
+        public int CheckPage1RB()
         {
 
-            if (rb_Conson_Page2.IsChecked == true)
+            if (rb_KeyToUnderstand.IsChecked == true)
             {
-                if (consonants[i].ThaiFonet == txt_Answear_Page2.Text)
-                {
-                    txb_Status_Page2.Text = "Correct!";
-                }
-                else
-                {
-                    txb_Status_Page2.Text = "Wrong...";
-                }
-                if (ckb_Helpbox_Page2.IsChecked == true)
-                {
-                    txb_Description_page2.Text = "(" + consonants[i].ThaiFonet + ") " + consonants[i].EngWord + ": " + consonants[i].EngDesc;
-                }
-
+                return 0;
             }
-            else if (rb_Vowel_Page2.IsChecked == true)
+            else if (rb_TonalLanguage.IsChecked == true)
             {
-                if (vowels[i].ThaiFonet == txt_Answear_Page2.Text)
-                {
-                    txb_Status_Page2.Text = "Correct!";
-                }
-                else
-                {
-                    txb_Status_Page2.Text = "Wrong...";
-
-                    System.Console.WriteLine(vowels[i].ThaiFonet);
-                }
-                if (ckb_Helpbox_Page2.IsChecked == true)
-                {
-                    txb_Description_page2.Text = "(" + vowels[i].ThaiFonet + ") " + vowels[i].EngWord + ": " + vowels[i].EngDesc;
-                }
-
+                return 1;
             }
-
-
-            lbl_Counter_Page2.Content = i;
-        }
-
-        private void btn_Next_Word_Click(object sender, RoutedEventArgs e)
-        {
-            clearFields();
-            
-            if (rb_Conson_Page2.IsChecked == true)
+            else if (rb_SpecialPron.IsChecked == true)
             {
-
-                textChanger<Consonant>(consonants, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, true);
+                return 2;
             }
-            else if (rb_Vowel_Page2.IsChecked == true)
+            else if (rb_Noun.IsChecked == true)
             {
-
-                textChanger<Vowel>(vowels, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, true);
+                return 3;
+            }
+            else if (rb_Numbers.IsChecked == true)
+            {
+                return 4;
+            }
+            else if (rb_Time.IsChecked == true)
+            {
+                return 5;
+            }
+            else if (rb_Color.IsChecked == true)
+            {
+                return 6;
+            }
+            else if (rb_words.IsChecked == true)
+            {
+                return 7;
+            }
+            else if (rb_Body.IsChecked == true)
+            {
+                return 8;
             }
             else
             {
-                MessageBox.Show("please select one or the other");
-            }
-            lbl_Counter_Page2.Content = i;
-
-        }
-
-        private void btn_Prev_Word_Click(object sender, RoutedEventArgs e)
-        {
-            clearFields();
-
-            if (rb_Conson_Page2.IsChecked == true)
-            {
-                textChanger<Consonant>(consonants, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, false);
-
-            }
-            else if (rb_Vowel_Page2.IsChecked == true)
-            {
-                textChanger<Vowel>(vowels, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, false);
-
-            }
-            else
-            {
-                MessageBox.Show("please select one or the other");
+                MessageBox.Show("Select a chapter", "Chapter not selected");
+                return 0;
             }
 
-            lbl_Counter_Page2.Content = i;
 
         }
 
@@ -281,7 +242,7 @@ namespace LearnThaiApplication
 
         public void textChanger<T>(List<T> list, TextBlock textBlockForScript, TextBlock textBlockDescription, CheckBox checkBoxDescription, CheckBox checkBoxRandom, bool nextIsForward) where T : new()
         {
-            
+
 
             Type whatIsT = typeof(T);
 
@@ -322,7 +283,7 @@ namespace LearnThaiApplication
                     }
                 }
             }
-            
+
 
             findEngDescProperty = list[i].GetType().GetProperty("EngDesc");
             findThaiScriptProperty = list[i].GetType().GetProperty("ThaiScript");
@@ -357,45 +318,6 @@ namespace LearnThaiApplication
 
         }
 
-        private void rb_Conson_Checked(object sender, RoutedEventArgs e)
-        {
-            i = 0;
-            txb_ThaiScript_Page2.Text = consonants[i].ThaiScript + " " + consonants[i].ThaiHelpWord;
-            lbl_Counter_Page2.Content = i;
-        }
-
-        private void rb_Vowel_Checked(object sender, RoutedEventArgs e)
-        {
-            i = 0;
-            txb_ThaiScript_Page2.Text = vowels[i].ThaiScript + " " + vowels[i].ThaiHelpWord;
-            lbl_Counter_Page2.Content = i;
-        }
-
-
-
-        private void btn_SubmitNewWord_Click(object sender, RoutedEventArgs e)
-        {
-            if (rb_Conso_Page3.IsChecked == false && rb_Vowel_Page3.IsChecked == false && rb_words_Page3.IsChecked == false)
-            {
-                MessageBox.Show("Select a list to load from");
-                return;
-            }
-            else if (rb_Conso_Page3.IsChecked == true)
-            {
-                SubmitNewWord<Consonant>(consonants);
-            }
-            else if (rb_Vowel_Page3.IsChecked == true)
-            {
-                SubmitNewWord<Vowel>(vowels);
-            }
-            else
-            {
-                SubmitNewWord<Word>(words);
-            }
-
-
-        }
-
         public void SubmitNewWord<T>(List<T> list) where T : new()
         {
             Type whatIsT = typeof(T);
@@ -407,6 +329,7 @@ namespace LearnThaiApplication
 
 
             object newWord;
+
             object property_ThaiScript_Found_In_Word;
             object property_EngWord_Found_In_Word;
 
@@ -464,7 +387,7 @@ namespace LearnThaiApplication
             Object propertylistDescr;
             Object propertyChapter;
 
-
+            //try and combine both foreach somehow
             foreach (T oldWord in list)
             {
                 findThaiScriptProperty = oldWord.GetType().GetProperty("ThaiScript");
@@ -502,7 +425,7 @@ namespace LearnThaiApplication
 
             foreach (T oldWord in list)
             {
-                
+
                 findThaiScriptProperty = oldWord.GetType().GetProperty("ThaiScript");
                 findThaiFonetProperty = oldWord.GetType().GetProperty("ThaiFonet");
                 findThaiHelpWordProperty = oldWord.GetType().GetProperty("ThaiHelpWord");
@@ -595,6 +518,195 @@ namespace LearnThaiApplication
             saveFiles<T>(list);
         }
 
+        public void saveFiles<T>(List<T> list) where T : new()
+        {
+            Type whatIsT = typeof(T);
+
+            XmlSerialization.WriteToXmlFile<List<T>>("C:/Users/" + Environment.UserName + "/source/repos/LearnThaiApplication/Language_Files/Thai_" + whatIsT.Name + ".xml", list, false);
+        }
+
+        public void loadFiles<T>(List<T> list) where T : new()
+        {
+
+            Type whatIsT = typeof(T);
+
+            PropertyInfo propInFile;
+            PropertyInfo propInList;
+
+            Object propertyFromFile;
+            Object propertyFromList;
+
+            List<T> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<T>>("C:/Users/tommy/source/repos/LearnThaiApplication/Language_Files/Thai_" + whatIsT.Name + ".xml");
+
+            List<T> newWordToAdd = new List<T>();
+
+            bool foundInList = false;
+
+
+            //seee if i can get rid of duplicate code
+            foreach (T wordFoundInFile in wordsFromFIle)
+            {
+                propInFile = wordFoundInFile.GetType().GetProperty("ThaiScript");
+
+                propertyFromFile = propInFile.GetValue(wordFoundInFile);
+
+                foreach (T WordAlreadyInList in list)
+                {
+                    propInList = WordAlreadyInList.GetType().GetProperty("ThaiScript");
+
+                    propertyFromList = propInList.GetValue(WordAlreadyInList);
+
+                    if (propertyFromFile.ToString() == propertyFromList.ToString())
+                    {
+                        System.Console.WriteLine("found word in list");
+                        System.Console.WriteLine(propertyFromFile);
+                        foundInList = true;
+                        break;
+                    }
+                    else
+                    {
+                        System.Console.WriteLine("checking next");
+                    }
+                }
+                if (foundInList == false)
+                {
+                    newWordToAdd.Add(wordFoundInFile);
+                }
+
+
+
+            }
+            list.AddRange(newWordToAdd);
+
+
+        }
+
+
+
+        private void btn_validate_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (rb_Conson_Page2.IsChecked == true)
+            {
+                if (consonants[i].ThaiFonet == txt_Answear_Page2.Text)
+                {
+                    txb_Status_Page2.Text = "Correct!";
+                }
+                else
+                {
+                    txb_Status_Page2.Text = "Wrong...";
+                }
+                if (ckb_Helpbox_Page2.IsChecked == true)
+                {
+                    txb_Description_page2.Text = "(" + consonants[i].ThaiFonet + ") " + consonants[i].EngWord + ": " + consonants[i].EngDesc;
+                }
+
+            }
+            else if (rb_Vowel_Page2.IsChecked == true)
+            {
+                if (vowels[i].ThaiFonet == txt_Answear_Page2.Text)
+                {
+                    txb_Status_Page2.Text = "Correct!";
+                }
+                else
+                {
+                    txb_Status_Page2.Text = "Wrong...";
+
+            
+                }
+                if (ckb_Helpbox_Page2.IsChecked == true)
+                {
+                    txb_Description_page2.Text = "(" + vowels[i].ThaiFonet + ") " + vowels[i].EngWord + ": " + vowels[i].EngDesc;
+                }
+
+            }
+
+
+            lbl_Counter_Page2.Content = i;
+        }
+
+        private void btn_Next_Word_Click(object sender, RoutedEventArgs e)
+        {
+            clearFields();
+            
+            if (rb_Conson_Page2.IsChecked == true)
+            {
+
+                textChanger<Consonant>(consonants, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, true);
+            }
+            else if (rb_Vowel_Page2.IsChecked == true)
+            {
+
+                textChanger<Vowel>(vowels, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, true);
+            }
+            else
+            {
+                MessageBox.Show("please select one or the other");
+            }
+            lbl_Counter_Page2.Content = i;
+
+        }
+
+        private void btn_Prev_Word_Click(object sender, RoutedEventArgs e)
+        {
+            clearFields();
+
+            if (rb_Conson_Page2.IsChecked == true)
+            {
+                textChanger<Consonant>(consonants, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, false);
+
+            }
+            else if (rb_Vowel_Page2.IsChecked == true)
+            {
+                textChanger<Vowel>(vowels, txb_ThaiScript_Page2, txb_Description_page2, ckb_Helpbox_Page2, ckb_Randomized_Page2, false);
+
+            }
+            else
+            {
+                MessageBox.Show("please select one or the other");
+            }
+
+            lbl_Counter_Page2.Content = i;
+
+        }
+        
+        private void rb_Conson_Checked(object sender, RoutedEventArgs e)
+        {
+            i = 0;
+            txb_ThaiScript_Page2.Text = consonants[i].ThaiScript + " " + consonants[i].ThaiHelpWord;
+            lbl_Counter_Page2.Content = i;
+        }
+
+        private void rb_Vowel_Checked(object sender, RoutedEventArgs e)
+        {
+            i = 0;
+            txb_ThaiScript_Page2.Text = vowels[i].ThaiScript + " " + vowels[i].ThaiHelpWord;
+            lbl_Counter_Page2.Content = i;
+        }
+
+        private void btn_SubmitNewWord_Click(object sender, RoutedEventArgs e)
+        {
+            if (rb_Conso_Page3.IsChecked == false && rb_Vowel_Page3.IsChecked == false && rb_words_Page3.IsChecked == false)
+            {
+                MessageBox.Show("Select a list to load from");
+                return;
+            }
+            else if (rb_Conso_Page3.IsChecked == true)
+            {
+                SubmitNewWord<Consonant>(consonants);
+            }
+            else if (rb_Vowel_Page3.IsChecked == true)
+            {
+                SubmitNewWord<Vowel>(vowels);
+            }
+            else
+            {
+                SubmitNewWord<Word>(words);
+            }
+
+
+        }
+        
         private void btn_LoadList_Click(object sender, RoutedEventArgs e)
         {
             if (rb_Conso_Page3.IsChecked == false && rb_Vowel_Page3.IsChecked == false && rb_words_Page3.IsChecked == false)
@@ -647,12 +759,26 @@ namespace LearnThaiApplication
                     }
                 }
             }
+            else if(whatListTLoad == "ThaiNumber")
+            {
+                foreach (ThaiNumber number in numbers)
+                {
+                    if (number.ThaiScript == "")
+                    {
+                        lib_LoadedWords.Items.Add(number.EngWord);
+                    }
+                    else
+                    {
+                        lib_LoadedWords.Items.Add(number.ThaiScript);
+                    }
+                }
+            }
 
         }
 
         private void lib_LoadedWords_SelectionChanged(Object sender, SelectionChangedEventArgs e)
         {
-
+            //change into more generic method with gettype and typeof
             string wordToLoad;
 
             if (lib_LoadedWords.SelectedIndex != -1)
@@ -710,69 +836,9 @@ namespace LearnThaiApplication
             }
         }
 
-        public void saveFiles<T>(List<T> list) where T : new()
-        {
-            Type whatIsT = typeof(T);
-
-            XmlSerialization.WriteToXmlFile<List<T>>("C:/Users/" + Environment.UserName + "/source/repos/LearnThaiApplication/Language_Files/Thai_" + whatIsT.Name + ".xml", list, false);
-        }
-
-        public void loadFiles<T>(List<T> list) where T : new()
-        {
-            
-            Type whatIsT = typeof(T);
-
-            PropertyInfo propInFile;
-            PropertyInfo propInList;
-
-            Object propertyFromFile;
-            Object propertyFromList;
-
-            List<T> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<T>>("C:/Users/tommy/source/repos/LearnThaiApplication/Language_Files/Thai_" + whatIsT.Name + ".xml");
-
-            List<T> newWordToAdd = new List<T>();
-
-            bool foundInList = false;
-
-            foreach (T wordFoundInFile in wordsFromFIle)
-            {
-                propInFile = wordFoundInFile.GetType().GetProperty("ThaiScript");
-
-                propertyFromFile = propInFile.GetValue(wordFoundInFile);
-
-                foreach (T WordAlreadyInList in list)
-                {
-                    propInList = WordAlreadyInList.GetType().GetProperty("ThaiScript");
-
-                    propertyFromList = propInList.GetValue(WordAlreadyInList);
-
-                    if (propertyFromFile.ToString() == propertyFromList.ToString())
-                    {
-                        System.Console.WriteLine("found word in list");
-                        System.Console.WriteLine(propertyFromFile);
-                        foundInList = true;
-                        break;
-                    }
-                    else
-                    {
-                        System.Console.WriteLine("checking next");
-                    }
-                }
-                if (foundInList == false)
-                {
-                    newWordToAdd.Add(wordFoundInFile);
-                }
-
-
-
-            }
-            list.AddRange(newWordToAdd);
-
-
-        }
-
         private void rb_words_Page3_Checked(object sender, RoutedEventArgs e)
         {
+
             whatListTLoad = "Word";
             clearFields();
 
@@ -845,54 +911,7 @@ namespace LearnThaiApplication
             }
 
         }
-        public int CheckPage1RB()
-        {
-
-            if (rb_KeyToUnderstand.IsChecked == true)
-            {
-                return 0;
-            }
-            else if (rb_TonalLanguage.IsChecked == true)
-            {
-                return 1;
-            }
-            else if (rb_SpecialPron.IsChecked == true)
-            {
-                return 2;
-            }
-            else if (rb_Noun.IsChecked == true)
-            {
-                return 3;
-            }
-            else if (rb_Numbers.IsChecked == true)
-            {
-                return 4;
-            }
-            else if (rb_Time.IsChecked == true)
-            {
-                return 5;
-            }
-            else if (rb_Color.IsChecked == true)
-            {
-                return 6;
-            }
-            else if (rb_words.IsChecked == true)
-            {
-                return 7;
-            }
-            else if (rb_Body.IsChecked == true)
-            {
-                return 8;
-            }
-            else
-            {
-                MessageBox.Show("Select a chapter", "Chapter not selected");
-                return 0;
-            }
-
-
-        }
-
+        
         private void btn_Next_Word_Page1_Click(object sender, RoutedEventArgs e)
         {
             selectedChapter = CheckPage1RB();
@@ -904,7 +923,6 @@ namespace LearnThaiApplication
             lbl_Counter_Page1.Content = i;
         }
         
-
         private void btn_Prev_Word_Page1_Click(object sender, RoutedEventArgs e)
         {
             CheckPage1RB();
