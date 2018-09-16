@@ -36,7 +36,7 @@
                 <Grid Background="#FFE5E5E5" Margin="0,-1,-19,0">
                     <Label x:Name="lbl_Counter_Page2" Content="123" HorizontalAlignment="Left" Margin="30,36,0,0" VerticalAlignment="Top" Height="25" Width="31"/>
                     <TextBox x:Name="txt_Answear_Page2" HorizontalAlignment="Left" Height="28" Margin="329,133,-126,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
-                    <Button x:Name="btn_validate_Page2" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="328.609,165.563,-126.197,-11.277" VerticalAlignment="Top" Width="89.588" Click="btn_validate_Click"/>
+                    <Button x:Name="btn_validate_Page2" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="328.609,165.563,-126.197,-11.277" VerticalAlignment="Top" Width="89.588" Click="btn_validate_Page2_Click"/>
                     <Button x:Name="btn_Next_Word_Page2" Content="Next" HorizontalAlignment="Left" Height="24" Margin="423,166,-166,-11" VerticalAlignment="Top" Width="35" Click="btn_Next_Word_Click"/>
                     <Button x:Name="btn_Prev_Word_Page2" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="289,166,-32,-11" VerticalAlignment="Top" Width="35" Click="btn_Prev_Word_Click"/>
                     <RadioButton x:Name="rb_Conson_Page2"  Content="Consonants" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Checked="rb_Conson_Checked"/>

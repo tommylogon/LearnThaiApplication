@@ -154,7 +154,19 @@ namespace LearnThaiApplication
         string whatListTLoad = "";
 
         Random random = new Random();
+        /*
+        PropertyInfo findThaiScriptProperty;
+        PropertyInfo findThaiHelpWordProperty;
+        PropertyInfo findThaiFonetProperty;
+        PropertyInfo findEngDescProperty;
+        PropertyInfo findWordChaptereProperty;
 
+        Object propertylistScript;
+        Object propertyFonet;
+        Object propertylistWord;
+        Object propertyEngDesc;
+        Object propertyChapter;
+        */
         public MainWindow()
         {
             InitializeComponent();
@@ -581,48 +593,63 @@ namespace LearnThaiApplication
 
         }
 
-
-
-        private void btn_validate_Click(object sender, RoutedEventArgs e)
+        public void validateAnswear<T>(List<T> list, TextBox textboxAnswear, TextBlock textBlockStatus, TextBlock textBlockDesc, CheckBox checkBoxDesc)
         {
+            
+            PropertyInfo findThaiFonetProperty;
+            PropertyInfo findThaiEngWordProperty;
+            PropertyInfo findEngDescrProperty;
 
+            Object propertylistFonet;
+            Object propertylistWord;
+            Object propertylistDescr;
+
+            findThaiFonetProperty = list[i].GetType().GetProperty("ThaiFonet");
+            findThaiEngWordProperty = list[i].GetType().GetProperty("EngWord");
+            findEngDescrProperty = list[i].GetType().GetProperty("EngDesc");
+
+            propertylistFonet = findThaiFonetProperty.GetValue(list[i]);
+            propertylistWord = findThaiEngWordProperty.GetValue(list[i]);
+            propertylistDescr = findEngDescrProperty.GetValue(list[i]);
+
+            
+            if ((String) propertylistFonet == textboxAnswear.Text)
+            {
+                textBlockStatus.Text = "Correct!";
+            }
+            else
+            {
+                textBlockStatus.Text = "Wrong...";
+            }
+            if (checkBoxDesc.IsChecked == true)
+            {
+                textBlockDesc.Text = "(" + propertylistFonet + ") " + propertylistWord + ": " + propertylistDescr;
+            }
+                
+            
+            lbl_Counter_Page2.Content = i;
+        }
+
+        private void btn_validate_Page2_Click(object sender, RoutedEventArgs e)
+        {
             if (rb_Conson_Page2.IsChecked == true)
             {
-                if (consonants[i].ThaiFonet == txt_Answear_Page2.Text)
-                {
-                    txb_Status_Page2.Text = "Correct!";
-                }
-                else
-                {
-                    txb_Status_Page2.Text = "Wrong...";
-                }
-                if (ckb_Helpbox_Page2.IsChecked == true)
-                {
-                    txb_Description_page2.Text = "(" + consonants[i].ThaiFonet + ") " + consonants[i].EngWord + ": " + consonants[i].EngDesc;
-                }
+                validateAnswear<Consonant>(consonants,txt_Answear_Page2,txb_Status_Page2,txb_Description_page2, ckb_Helpbox_Page2);
 
             }
             else if (rb_Vowel_Page2.IsChecked == true)
             {
-                if (vowels[i].ThaiFonet == txt_Answear_Page2.Text)
-                {
-                    txb_Status_Page2.Text = "Correct!";
-                }
-                else
-                {
-                    txb_Status_Page2.Text = "Wrong...";
-
-            
-                }
-                if (ckb_Helpbox_Page2.IsChecked == true)
-                {
-                    txb_Description_page2.Text = "(" + vowels[i].ThaiFonet + ") " + vowels[i].EngWord + ": " + vowels[i].EngDesc;
-                }
-
+                validateAnswear<Vowel>(vowels, txt_Answear_Page2, txb_Status_Page2, txb_Description_page2, ckb_Helpbox_Page2);
             }
-
-
-            lbl_Counter_Page2.Content = i;
+            else if (rb_Closing_Page2.IsChecked == true)
+            {
+                //TODO
+            }
+            else
+            {
+                validateAnswear<ThaiNumber>(numbers, txt_Answear_Page2, txb_Status_Page2, txb_Description_page2, ckb_Helpbox_Page2);
+            }
+            
         }
 
         private void btn_Next_Word_Click(object sender, RoutedEventArgs e)
