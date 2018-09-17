@@ -141,12 +141,13 @@ namespace LearnThaiApplication
             new Vowel("ิว","หิว","",""),
             new Vowel("ุย","คุย","","")*/
         };
-
         static List<ThaiNumber> numbers = new List<ThaiNumber>();
 
 
         //<>
+
         int i = 0;
+
         string languageFilePath;
 
         int selectedChapter;
@@ -154,19 +155,21 @@ namespace LearnThaiApplication
         string whatListTLoad = "";
 
         Random random = new Random();
-        /*
-        PropertyInfo findThaiScriptProperty;
-        PropertyInfo findThaiHelpWordProperty;
-        PropertyInfo findThaiFonetProperty;
-        PropertyInfo findEngDescProperty;
-        PropertyInfo findWordChaptereProperty;
 
-        Object propertylistScript;
+        
+        PropertyInfo foundThaiScriptProperty;
+        PropertyInfo foundThaiHelpWordProperty;
+        PropertyInfo foundThaiFonetProperty;
+        PropertyInfo foundEngWordProperty;
+        PropertyInfo foundEngDescProperty;
+        PropertyInfo foundWordChapterProperty;
+
+        Object propertyScript;
         Object propertyFonet;
-        Object propertylistWord;
+        Object propertyEngWord;
         Object propertyEngDesc;
         Object propertyChapter;
-        */
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -255,29 +258,14 @@ namespace LearnThaiApplication
         public void textChanger<T>(List<T> list, TextBlock textBlockForScript, TextBlock textBlockDescription, CheckBox checkBoxDescription, CheckBox checkBoxRandom, bool nextIsForward) where T : new()
         {
 
-
             Type whatIsT = typeof(T);
-
-            PropertyInfo findThaiScriptProperty;
-            PropertyInfo findThaiHelpWordProperty;
-            PropertyInfo findThaiFonetProperty;
-            PropertyInfo findEngDescProperty;
-            PropertyInfo findWordChaptereProperty;
-
-            Object propertylistScript;
-            Object propertyFonet;
-            Object propertylistWord;
-            Object propertyEngDesc;
-            Object propertyChapter;
-
+            
             if (checkBoxRandom.IsChecked == true)
             {
-
                 i = random.Next(0, list.Count());
             }
             else
             {
-
                 if (nextIsForward)
                 {
                     i++;
@@ -296,31 +284,31 @@ namespace LearnThaiApplication
                 }
             }
 
+            foundEngDescProperty = list[i].GetType().GetProperty("EngDesc");
+            foundThaiScriptProperty = list[i].GetType().GetProperty("ThaiScript");
+            foundThaiFonetProperty = list[i].GetType().GetProperty("ThaiFonet");
 
-            findEngDescProperty = list[i].GetType().GetProperty("EngDesc");
-            findThaiScriptProperty = list[i].GetType().GetProperty("ThaiScript");
-            findThaiFonetProperty = list[i].GetType().GetProperty("ThaiFonet");
-
-            propertyFonet = findThaiFonetProperty.GetValue(list[i]);
-            propertylistScript = findThaiScriptProperty.GetValue(list[i]);
-            propertyEngDesc = findEngDescProperty.GetValue(list[i]);
+            propertyFonet = foundThaiFonetProperty.GetValue(list[i]);
+            propertyScript = foundThaiScriptProperty.GetValue(list[i]);
+            propertyEngDesc = foundEngDescProperty.GetValue(list[i]);
 
             if (list[i].GetType() == typeof(Word))
             {
-                findWordChaptereProperty = list[i].GetType().GetProperty("Chapter");
-                propertyChapter = findWordChaptereProperty.GetValue(list[i]);
+                foundWordChapterProperty = list[i].GetType().GetProperty("Chapter");
+
+                propertyChapter = foundWordChapterProperty.GetValue(list[i]);
 
                 if ((int)propertyChapter == selectedChapter)
                 {
-                    textBlockForScript.Text = (String)propertylistScript;
+                    textBlockForScript.Text = (String)propertyScript;
                 }
             }
             else
             {
-                findThaiHelpWordProperty = list[i].GetType().GetProperty("ThaiHelpWord");
-                propertylistWord = findThaiHelpWordProperty.GetValue(list[i]);
+                foundThaiHelpWordProperty = list[i].GetType().GetProperty("ThaiHelpWord");
+                propertyEngWord = foundThaiHelpWordProperty.GetValue(list[i]);
 
-                textBlockForScript.Text = propertylistScript + " " + propertylistWord;
+                textBlockForScript.Text = propertyScript + " " + propertyEngWord;
             }
 
             if (checkBoxDescription.IsChecked == true)
@@ -335,20 +323,14 @@ namespace LearnThaiApplication
             Type whatIsT = typeof(T);
             Type whatIsNewWord;
 
-            PropertyInfo find_NewWord_ThaiScript_Property;
-            PropertyInfo find_NewWord_EnglishWord_Property;
-
-
-
+            PropertyInfo foundNewWordThaiScriptProperty;
+            PropertyInfo foundNewWordEngWordProperty;
+            
             object newWord;
 
             object property_ThaiScript_Found_In_Word;
             object property_EngWord_Found_In_Word;
-
-
-
-
-
+            
             bool existsInList = false;
 
             if (whatIsT == typeof(Word))
@@ -372,43 +354,25 @@ namespace LearnThaiApplication
 
             }
 
-            find_NewWord_ThaiScript_Property = newWord.GetType().GetProperty("ThaiScript");
+            foundNewWordThaiScriptProperty = newWord.GetType().GetProperty("ThaiScript");
 
-            find_NewWord_EnglishWord_Property = newWord.GetType().GetProperty("EngDesc");
+            foundNewWordEngWordProperty = newWord.GetType().GetProperty("EngDesc");
 
-            property_ThaiScript_Found_In_Word = find_NewWord_ThaiScript_Property.GetValue(newWord);
+            property_ThaiScript_Found_In_Word = foundNewWordEngWordProperty.GetValue(newWord);
 
-            property_EngWord_Found_In_Word = find_NewWord_EnglishWord_Property.GetValue(newWord);
-
-
-
-
-            PropertyInfo findThaiScriptProperty;
-            PropertyInfo findThaiFonetProperty;
-            PropertyInfo findThaiHelpWordProperty;
-            PropertyInfo findThaiEngWordProperty;
-            PropertyInfo findEngDescrProperty;
-            PropertyInfo findChapterProperty;
-
-
-
-            Object propertylistScript;
-            Object propertylistFonet;
-            Object propertylistHelp;
-            Object propertylistWord;
-            Object propertylistDescr;
-            Object propertyChapter;
+            property_EngWord_Found_In_Word = foundNewWordEngWordProperty.GetValue(newWord);
+            
 
             //try and combine both foreach somehow
             foreach (T oldWord in list)
             {
-                findThaiScriptProperty = oldWord.GetType().GetProperty("ThaiScript");
-                findThaiEngWordProperty = oldWord.GetType().GetProperty("EngDesc");
+                foundThaiScriptProperty = oldWord.GetType().GetProperty("ThaiScript");
+                foundEngDescProperty = oldWord.GetType().GetProperty("EngDesc");
 
-                propertylistScript = findThaiScriptProperty.GetValue(oldWord);
-                propertylistWord = findThaiEngWordProperty.GetValue(oldWord);
+                propertyScript = foundThaiScriptProperty.GetValue(oldWord);
+                propertyEngWord = foundEngWordProperty.GetValue(oldWord);
 
-                if (property_ThaiScript_Found_In_Word == propertylistScript && (String)property_ThaiScript_Found_In_Word != "" || propertylistWord == property_EngWord_Found_In_Word && (String)property_EngWord_Found_In_Word != "")
+                if (property_ThaiScript_Found_In_Word == propertyScript && (String)property_ThaiScript_Found_In_Word != "" || propertyEngWord == property_EngWord_Found_In_Word && (String)property_EngWord_Found_In_Word != "")
                 {
                     System.Console.WriteLine("exists");
                     existsInList = true;
@@ -438,59 +402,59 @@ namespace LearnThaiApplication
             foreach (T oldWord in list)
             {
 
-                findThaiScriptProperty = oldWord.GetType().GetProperty("ThaiScript");
-                findThaiFonetProperty = oldWord.GetType().GetProperty("ThaiFonet");
-                findThaiHelpWordProperty = oldWord.GetType().GetProperty("ThaiHelpWord");
-                findThaiEngWordProperty = oldWord.GetType().GetProperty("EngWord");
-                findEngDescrProperty = oldWord.GetType().GetProperty("EngDesc");
-                findChapterProperty = oldWord.GetType().GetProperty("Chapter");
+                foundThaiScriptProperty = oldWord.GetType().GetProperty("ThaiScript");
+                foundThaiFonetProperty = oldWord.GetType().GetProperty("ThaiFonet");
+                foundThaiHelpWordProperty = oldWord.GetType().GetProperty("ThaiHelpWord");
+                foundEngWordProperty = oldWord.GetType().GetProperty("EngWord");
+                foundEngDescProperty = oldWord.GetType().GetProperty("EngDesc");
+                foundWordChapterProperty = oldWord.GetType().GetProperty("Chapter");
 
 
-                propertylistScript = findThaiScriptProperty.GetValue(oldWord);
-                propertylistFonet = findThaiFonetProperty.GetValue(oldWord);
-                propertylistWord = findThaiEngWordProperty.GetValue(oldWord);
-                propertyChapter = findChapterProperty.GetValue(oldWord);
+                propertyScript = foundThaiScriptProperty.GetValue(oldWord);
+                propertyFonet = foundThaiFonetProperty.GetValue(oldWord);
+                propertyEngWord = foundEngWordProperty.GetValue(oldWord);
+                propertyChapter = foundWordChapterProperty.GetValue(oldWord);
 
-                if ((String)propertylistScript == txt_FirstSelectionProperty.Text && txt_FirstSelectionProperty.Text != "" || (String)propertylistWord == txt_ThirdSelectionProperty.Text && txt_ThirdSelectionProperty.Text != "")
+                if ((String)propertyScript == txt_FirstSelectionProperty.Text && txt_FirstSelectionProperty.Text != "" || (String)propertyEngWord == txt_ThirdSelectionProperty.Text && txt_ThirdSelectionProperty.Text != "")
                 {
-                    if (null != findThaiScriptProperty && findThaiScriptProperty.CanWrite)
+                    if (null != foundThaiScriptProperty && foundThaiScriptProperty.CanWrite)
                     {
-                        findThaiScriptProperty.SetValue(oldWord, txt_FirstSelectionProperty.Text, null);
+                        foundThaiScriptProperty.SetValue(oldWord, txt_FirstSelectionProperty.Text, null);
                     }
 
-                    if (null != findThaiFonetProperty && findThaiFonetProperty.CanWrite)
+                    if (null != foundThaiFonetProperty && foundThaiFonetProperty.CanWrite)
                     {
-                        findThaiFonetProperty.SetValue(oldWord, txt_SecondSelectionProperty.Text, null);
+                        foundThaiFonetProperty.SetValue(oldWord, txt_SecondSelectionProperty.Text, null);
                     }
 
-                    if (null != findThaiHelpWordProperty && findThaiHelpWordProperty.CanWrite && whatIsT.GetType() == typeof(Consonant) || whatIsT.GetType() == typeof(Vowel))
+                    if (null != foundThaiHelpWordProperty && foundThaiHelpWordProperty.CanWrite && whatIsT.GetType() == typeof(Consonant) || whatIsT.GetType() == typeof(Vowel))
                     {
                         if (oldWord.GetType() == typeof(Consonant) || oldWord.GetType() == typeof(Vowel))
                         {
-                            findThaiHelpWordProperty.SetValue(oldWord, txt_ThirdSelectionProperty.Text, null);
+                            foundThaiHelpWordProperty.SetValue(oldWord, txt_ThirdSelectionProperty.Text, null);
                         }
 
                     }
 
-                    if (null != findThaiEngWordProperty && findThaiEngWordProperty.CanWrite)
+                    if (null != foundEngWordProperty && foundEngWordProperty.CanWrite)
                     {
                         if (oldWord.GetType() == typeof(Word))
                         {
-                            findThaiEngWordProperty.SetValue(oldWord, txt_ThirdSelectionProperty.Text, null);
+                            foundEngWordProperty.SetValue(oldWord, txt_ThirdSelectionProperty.Text, null);
                         }
                         else
                         {
-                            findThaiEngWordProperty.SetValue(oldWord, txt_FourthSelectionProperty.Text, null);
+                            foundEngWordProperty.SetValue(oldWord, txt_FourthSelectionProperty.Text, null);
                         }
 
                     }
 
-                    if (null != findChapterProperty && findChapterProperty.CanWrite)
+                    if (null != foundWordChapterProperty && foundWordChapterProperty.CanWrite)
                     {
 
                         try
                         {
-                            findChapterProperty.SetValue(oldWord, System.Convert.ToInt32(txt_FifthSelectionProperty.Text), null);
+                            foundWordChapterProperty.SetValue(oldWord, System.Convert.ToInt32(txt_FifthSelectionProperty.Text), null);
                         }
                         catch (FormatException)
                         {
@@ -501,15 +465,15 @@ namespace LearnThaiApplication
 
                         }
                     }
-                    if (null != findEngDescrProperty && findEngDescrProperty.CanWrite)
+                    if (null != foundEngDescProperty && foundEngDescProperty.CanWrite)
                     {
                         if (oldWord.GetType() == typeof(Word))
                         {
-                            findEngDescrProperty.SetValue(oldWord, txt_FourthSelectionProperty.Text, null);
+                            foundEngDescProperty.SetValue(oldWord, txt_FourthSelectionProperty.Text, null);
                         }
                         else
                         {
-                            findEngDescrProperty.SetValue(oldWord, txt_FifthSelectionProperty.Text, null);
+                            foundEngDescProperty.SetValue(oldWord, txt_FifthSelectionProperty.Text, null);
                         }
 
                     }
@@ -585,35 +549,27 @@ namespace LearnThaiApplication
                     newWordToAdd.Add(wordFoundInFile);
                 }
 
-
-
             }
+
             list.AddRange(newWordToAdd);
-
-
+            
         }
 
         public void validateAnswear<T>(List<T> list, TextBox textboxAnswear, TextBlock textBlockStatus, TextBlock textBlockDesc, CheckBox checkBoxDesc)
         {
             
-            PropertyInfo findThaiFonetProperty;
-            PropertyInfo findThaiEngWordProperty;
-            PropertyInfo findEngDescrProperty;
+           
 
-            Object propertylistFonet;
-            Object propertylistWord;
-            Object propertylistDescr;
+            foundThaiFonetProperty = list[i].GetType().GetProperty("ThaiFonet");
+            foundEngWordProperty = list[i].GetType().GetProperty("EngWord");
+            foundEngDescProperty = list[i].GetType().GetProperty("EngDesc");
 
-            findThaiFonetProperty = list[i].GetType().GetProperty("ThaiFonet");
-            findThaiEngWordProperty = list[i].GetType().GetProperty("EngWord");
-            findEngDescrProperty = list[i].GetType().GetProperty("EngDesc");
-
-            propertylistFonet = findThaiFonetProperty.GetValue(list[i]);
-            propertylistWord = findThaiEngWordProperty.GetValue(list[i]);
-            propertylistDescr = findEngDescrProperty.GetValue(list[i]);
+            propertyFonet = foundThaiFonetProperty.GetValue(list[i]);
+            propertyEngWord = foundEngWordProperty.GetValue(list[i]);
+            propertyEngDesc = foundEngDescProperty.GetValue(list[i]);
 
             
-            if ((String) propertylistFonet == textboxAnswear.Text)
+            if ((String) propertyFonet == textboxAnswear.Text)
             {
                 textBlockStatus.Text = "Correct!";
             }
@@ -623,7 +579,7 @@ namespace LearnThaiApplication
             }
             if (checkBoxDesc.IsChecked == true)
             {
-                textBlockDesc.Text = "(" + propertylistFonet + ") " + propertylistWord + ": " + propertylistDescr;
+                textBlockDesc.Text = "(" + propertyFonet + ") " + propertyEngWord + ": " + propertyEngDesc;
             }
                 
             
@@ -960,6 +916,7 @@ namespace LearnThaiApplication
         private void btn_validate_Page1_Click(object sender, RoutedEventArgs e)
         {
             CheckPage1RB();
+            validateAnswear<Word>(words, txt_Answear_Page1, txb_Status_Page1, txb_Description_page1, ckb_Helpbox_Page1);
         }
 
         private void rb_KeyToUnderstand_Checked(object sender, RoutedEventArgs e)

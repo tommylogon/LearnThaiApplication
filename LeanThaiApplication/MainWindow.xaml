@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TabControl HorizontalAlignment="Left" Height="372" VerticalAlignment="Top" Width="757" Margin="10,0,0,0">
-            <TabItem Header="Page 1">
+        <TabControl HorizontalAlignment="Stretch" Height="372" VerticalAlignment="Top" Width="757" Margin="10,0,0,0">
+            <TabItem Header="Learn the language">
                 <Grid Background="#FFE5E5E5">
                     <TextBox x:Name="txt_Answear_Page1" HorizontalAlignment="Left" Height="28" Margin="329,133,0,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
                     <Button x:Name="btn_validate_Page1" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="328.609,165.563,0,0" VerticalAlignment="Top" Width="89.588" Click="btn_validate_Page1_Click" />
@@ -21,8 +21,8 @@
                     <CheckBox x:Name="ckb_Helpbox_Page1" Content="Description" HorizontalAlignment="Left" Margin="178,218,0,0" VerticalAlignment="Top"/>
                     <TextBlock x:Name="txb_Description_page1" HorizontalAlignment="Left" Margin="149,248,0,0" TextWrapping="Wrap" Text="This is some description" VerticalAlignment="Top" Height="87" Width="439" FontSize="24"/>
                     <CheckBox x:Name="ckb_Randomized_Page1" Content="Randomize words" HorizontalAlignment="Left" Margin="178,198,0,0" VerticalAlignment="Top" />
-                    <TextBlock x:Name="txb_ThaiScript_Page1" HorizontalAlignment="Left" Margin="329,36,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="48"/>
-                    <TextBlock x:Name="txb_Status_Page1" HorizontalAlignment="Left" Margin="329,205,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="28" Width="110" FontSize="24"/>
+                    <TextBlock x:Name="txb_ThaiScript_Page1" HorizontalAlignment="Left" Margin="329,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="48"/>
+                    <TextBlock x:Name="txb_Status_Page1" HorizontalAlignment="Left" Margin="329,205,0,0" TextWrapping="Wrap" Text="Answear" VerticalAlignment="Top" Height="35" Width="113" FontSize="24"/>
                     <RadioButton x:Name="rb_SpecialPron" Content="Special pronunciations" HorizontalAlignment="Left" Margin="16,125,0,0" VerticalAlignment="Top"/>
                     <RadioButton x:Name="rb_Noun" Content="Thai Nouns" HorizontalAlignment="Left" Margin="16,145,0,0" VerticalAlignment="Top"/>
                     <RadioButton x:Name="rb_Numbers" Content="Numbers" HorizontalAlignment="Left" Margin="16,165,0,0" VerticalAlignment="Top"/>
@@ -32,7 +32,7 @@
                     <RadioButton x:Name="rb_Body" Content="The body" HorizontalAlignment="Left" Margin="16,245,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Page 2">
+            <TabItem Header="Train Symbols">
                 <Grid Background="#FFE5E5E5" Margin="0,-1,-19,0">
                     <Label x:Name="lbl_Counter_Page2" Content="123" HorizontalAlignment="Left" Margin="30,36,0,0" VerticalAlignment="Top" Height="25" Width="31"/>
                     <TextBox x:Name="txt_Answear_Page2" HorizontalAlignment="Left" Height="28" Margin="329,133,-126,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
@@ -51,7 +51,7 @@
                     <RadioButton x:Name="rb_NumberSymbol_Page2" Content="Number symbols" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Page 3" HorizontalAlignment="Left" Margin="-1.667,-2,-2,0" Width="51">
+            <TabItem Header="Add new content" HorizontalAlignment="Left" Margin="-1.667,-2,-47,0" Width="100">
                 <Grid Background="#FFE5E5E5" Margin="0,-1,-19,0">
                     <TextBox x:Name="txt_FirstSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txt_SecondSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,73,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
@@ -75,7 +75,11 @@
 
                 </Grid>
             </TabItem>
-        </TabControl>
+            <TabItem Header="Settings" HorizontalAlignment="Right" Margin="0,0,-227.333,-2" Width="100">
+                <Grid Background="#FFE5E5E5" Margin="0,-1,-19,0">
 
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
