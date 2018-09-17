@@ -4,133 +4,286 @@
     <ThaiScript>นั่ง</ThaiScript>
     <ThaiFonet>nang</ThaiFonet>
     <EngWord>Sit</EngWord>
-    <EngDesc>The a is pronounced like bar, car or cut</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>เป็ด</ThaiScript>
-    <ThaiFonet>ped</ThaiFonet>
-    <EngWord>Duck</EngWord>
-    <EngDesc>Like in get, jet, let</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>เบียร์</ThaiScript>
-    <ThaiFonet>bea</ThaiFonet>
-    <EngWord>Beer</EngWord>
-    <EngDesc>Like in beer, dear, gear</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>ตี</ThaiScript>
-    <ThaiFonet>tee</ThaiFonet>
-    <EngWord>Hit</EngWord>
-    <EngDesc>Like in bee, sea</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>เพลง</ThaiScript>
-    <ThaiFonet>pleeng</ThaiFonet>
-    <EngWord>Music</EngWord>
-    <EngDesc>Like in bread, dead</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>กา</ThaiScript>
-    <ThaiFonet>gaa</ThaiFonet>
-    <EngWord>Crow</EngWord>
-    <EngDesc>like in get, go, grand</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>หงส์</ThaiScript>
-    <ThaiFonet>hong</ThaiFonet>
-    <EngWord>Swan</EngWord>
-    <EngDesc>Like in hand, hard</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>ลิ้น</ThaiScript>
-    <ThaiFonet>lin</ThaiFonet>
-    <EngWord>Tounge</EngWord>
-    <EngDesc>lite in bit, Italy, sit</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>โต๊ะ</ThaiScript>
-    <ThaiFonet>to</ThaiFonet>
-    <EngWord>Table</EngWord>
-    <EngDesc>Like in hope, toe, tone</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>เดิน</ThaiScript>
-    <ThaiFonet>döön</ThaiFonet>
-    <EngWord>Walk</EngWord>
-    <EngDesc>Like in Bird, Burn, term</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript />
-    <ThaiFonet>jøø</ThaiFonet>
-    <EngWord>Screen</EngWord>
-    <EngDesc>like in aunt, ball, dog</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>คุก</ThaiScript>
-    <ThaiFonet>kug</ThaiFonet>
-    <EngWord>jail</EngWord>
-    <EngDesc>like in butcher, put</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>โยน</ThaiScript>
-    <ThaiFonet>yoon</ThaiFonet>
-    <EngWord>Throw</EngWord>
-    <EngDesc>Like in year, yes</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>ตั๋ว</ThaiScript>
-    <ThaiFonet>dua</ThaiFonet>
-    <EngWord>Ticket</EngWord>
-    <EngDesc>Like in toud, poor</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>มือ</ThaiScript>
-    <ThaiFonet>müü</ThaiFonet>
-    <EngWord>Hand</EngWord>
-    <EngDesc>Simply has to be practiced with sound</EngDesc>
-    <Chapter>0</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>เมือง</ThaiScript>
-    <ThaiFonet>müang</ThaiFonet>
-    <EngWord>City</EngWord>
-    <EngDesc>Simplye has to be practised</EngDesc>
-    <Chapter>0</Chapter>
+    <EngDesc>The a (ั) is pronounced like in bar, car or cut</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
     <ThaiScript>แขน</ThaiScript>
     <ThaiFonet>kææn</ThaiFonet>
     <EngWord>Arm</EngWord>
-    <EngDesc>Like in bag, care or Rabbit</EngDesc>
-    <Chapter>0</Chapter>
+    <EngDesc>The æ (แ) is pronounced like (british) bag, care or Rabbit</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
     <ThaiScript>หัวใจ</ThaiScript>
     <ThaiFonet>hua jai</ThaiFonet>
     <EngWord>Heart</EngWord>
-    <EngDesc>0Like in die, eye or Thai</EngDesc>
-    <Chapter>0</Chapter>
+    <EngDesc>The ai (ใ) is pronounced like in die, eye or Thai</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
     <ThaiScript>สีดำ</ThaiScript>
     <ThaiFonet>see dam</ThaiFonet>
     <EngWord>Black</EngWord>
-    <EngDesc>Like in rum</EngDesc>
-    <Chapter>0</Chapter>
+    <EngDesc>The am (ำ) is pronounced like in (british) rum</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เป็ด</ThaiScript>
+    <ThaiFonet>ped</ThaiFonet>
+    <EngWord>Duck</EngWord>
+    <EngDesc>The e is (เ) pronounced like in get, jet, let</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เบียร์</ThaiScript>
+    <ThaiFonet>bea</ThaiFonet>
+    <EngWord>Beer</EngWord>
+    <EngDesc>The ea (เีย) is pronounced like in beer, dear, gear.ร์ is not pronounced following the rules to closing sounds</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตี</ThaiScript>
+    <ThaiFonet>dtee</ThaiFonet>
+    <EngWord>Hit</EngWord>
+    <EngDesc>The ee ี is pronounced like in bee, sea</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เพลง</ThaiScript>
+    <ThaiFonet>pleeng</ThaiFonet>
+    <EngWord>Music</EngWord>
+    <EngDesc>The ee (เ) is pronounced like in bread, dead</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กา</ThaiScript>
+    <ThaiFonet>gaa</ThaiFonet>
+    <EngWord>Crow</EngWord>
+    <EngDesc>The g (ก) is pronounced like in get, go, grand</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หงส์</ThaiScript>
+    <ThaiFonet>hong</ThaiFonet>
+    <EngWord>Swan</EngWord>
+    <EngDesc>The h (ห) is pronounced like in hand, hard</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ลิ้น</ThaiScript>
+    <ThaiFonet>lin</ThaiFonet>
+    <EngWord>Tounge</EngWord>
+    <EngDesc>the i (ิ) is pronounced like in bit, Italy, sit</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>โต๊ะ</ThaiScript>
+    <ThaiFonet>dto</ThaiFonet>
+    <EngWord>Table</EngWord>
+    <EngDesc>The o (โ) is pronounced like in hope, toe, tone</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เดิน</ThaiScript>
+    <ThaiFonet>deern</ThaiFonet>
+    <EngWord>Walk</EngWord>
+    <EngDesc>The eer (เิ) is pronounced like in Bird, Burn, term, girl</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>จอ</ThaiScript>
+    <ThaiFonet>jaaw</ThaiFonet>
+    <EngWord>Screen</EngWord>
+    <EngDesc>The aaw (อ) is pronounced like in aunt, ball, dog</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>คุก</ThaiScript>
+    <ThaiFonet>khook</ThaiFonet>
+    <EngWord>jail</EngWord>
+    <EngDesc>The oo (ุ) is pronounced like in butcher, put</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>โยน</ThaiScript>
+    <ThaiFonet>yoon</ThaiFonet>
+    <EngWord>Throw</EngWord>
+    <EngDesc>The y is pronounced like in year, yes</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตั๋ว</ThaiScript>
+    <ThaiFonet>dtuaa</ThaiFonet>
+    <EngWord>Ticket</EngWord>
+    <EngDesc>The uaa (ัว) is pronounced like in tour, poor</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>มือ</ThaiScript>
+    <ThaiFonet>meuu</ThaiFonet>
+    <EngWord>Hand</EngWord>
+    <EngDesc>Simply has to be practiced with sound</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เมือง</ThaiScript>
+    <ThaiFonet>meuuang</ThaiFonet>
+    <EngWord>City</EngWord>
+    <EngDesc>Simplye has to be practised with sound</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ก จ ฎ ฏ ด ต บ ป อ</ThaiScript>
+    <ThaiFonet>go jo cho bo do dto bo bpo o</ThaiFonet>
+    <EngWord>Normal tone class</EngWord>
+    <EngDesc>These are the consonants with the normal tone class</EngDesc>
+    <Chapter>Thai alphabet</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ก ด บ</ThaiScript>
+    <ThaiFonet>go, do, bo,</ThaiFonet>
+    <EngWord>Stop sounds</EngWord>
+    <EngDesc>Thhere are 3 closing sounds called stop sounds</EngDesc>
+    <Chapter>Closing sounds of consonants</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ทาน</ThaiScript>
+    <ThaiFonet>taan</ThaiFonet>
+    <EngWord>eat, alms</EngWord>
+    <EngDesc>This า is pronounced as a long A.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ท่าน</ThaiScript>
+    <ThaiFonet>tan</ThaiFonet>
+    <EngWord>You, she, he, Ms, Mrs, Mr, sir</EngWord>
+    <EngDesc>This า is pronounced short, notice how simular it is to ทาน</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เกิน</ThaiScript>
+    <ThaiFonet>geern</ThaiFonet>
+    <EngWord>More than, over</EngWord>
+    <EngDesc>In most cases the long vowel เออ changes to เิ when followed by another consonant</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เสียง สามัญ</ThaiScript>
+    <ThaiFonet>siiang saa man</ThaiFonet>
+    <EngWord>Normal (First) Tone</EngWord>
+    <EngDesc>The normal tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เสียง เอก</ThaiScript>
+    <ThaiFonet>siiang aehk</ThaiFonet>
+    <EngWord>Low Tone</EngWord>
+    <EngDesc>The low tone. also know as the second tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ทรง</ThaiScript>
+    <ThaiFonet>song</ThaiFonet>
+    <EngWord>Form, Shape</EngWord>
+    <EngDesc>The letter combination ทร is usually pronounced as S</EngDesc>
+    <Chapter>Special pronounciation</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เด็ก</ThaiScript>
+    <ThaiFonet>dek</ThaiFonet>
+    <EngWord>Child</EngWord>
+    <EngDesc>This is how you say a child.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เด็ก เด็ก</ThaiScript>
+    <ThaiFonet>dek dek</ThaiFonet>
+    <EngWord>Children</EngWord>
+    <EngDesc>Thai nouns don't have a grametical gender, no articles and no plural forms. but there is a classifier system for the correct use of nouns</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ฉัน</ThaiScript>
+    <ThaiFonet>chan</ThaiFonet>
+    <EngWord>Me, I</EngWord>
+    <EngDesc>In Thai the gender of the speaking person is important. chan is used by women.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ฉัน</ThaiScript>
+    <ThaiFonet>chan</ThaiFonet>
+    <EngWord>Me, I</EngWord>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ครับ</ThaiScript>
+    <ThaiFonet>krap</ThaiFonet>
+    <EngWord>particle used by men</EngWord>
+    <EngDesc>In Thai particles are used to show emotion and politness to the one you are speaking too.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ค่ะ</ThaiScript>
+    <ThaiFonet>ka</ThaiFonet>
+    <EngWord>Particle used by women</EngWord>
+    <EngDesc>In Thai particles are used to show emotion and politness to the one you are speaking too. Ka is used by women.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>พัน</ThaiScript>
+    <ThaiFonet>pan</ThaiFonet>
+    <EngWord>thousand</EngWord>
+    <EngDesc>1000 is หนึ่งพัน (neung pan) and onwards untill 10 000.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เช้า</ThaiScript>
+    <ThaiFonet>chaao</ThaiFonet>
+    <EngWord>Morning</EngWord>
+    <EngDesc>06:00 untill 11:00</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>บ่าย</ThaiScript>
+    <ThaiFonet>baai</ThaiFonet>
+    <EngWord>Afternoon</EngWord>
+    <EngDesc>13:00 untill 15:00</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เย็น</ThaiScript>
+    <ThaiFonet>yen</ThaiFonet>
+    <EngWord>Late afternoon</EngWord>
+    <EngDesc>16:00 untill 18:00</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ทุ่ม</ThaiScript>
+    <ThaiFonet>thoom</ThaiFonet>
+    <EngWord>Evening</EngWord>
+    <EngDesc>19:00 untill 23:00</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+<Word>
+    <ThaiScript>ตี</ThaiScript>
+    <ThaiFonet>dtee</ThaiFonet>
+    <EngWord>After midnight</EngWord>
+    <EngDesc>Morning hours between 1:00 a.m. and 5:00 a.m.</EngDesc>
+    <Chapter>Key to understanding Thai</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กย</ThaiScript>
+    <ThaiFonet>gob</ThaiFonet>
+    <EngWord>Frog</EngWord>
+    <EngDesc>Normal tone and unwritten o.</EngDesc>
+    <Chapter>Easy words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีแดง</ThaiScript>
+    <ThaiFonet>see dææng</ThaiFonet>
+    <EngWord>Red</EngWord>
+    <EngDesc>สี (see) is the word for color. Traditionally wwomen used to dress in red on Sundays.</EngDesc>
+    <Chapter>Colors</Chapter>
   </Word>
 </ArrayOfWord>
