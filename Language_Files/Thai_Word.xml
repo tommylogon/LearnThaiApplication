@@ -130,7 +130,7 @@
     <ThaiScript>เมือง</ThaiScript>
     <ThaiFonet>meuuang</ThaiFonet>
     <EngWord>City</EngWord>
-    <EngDesc>Simplye has to be practised with sound</EngDesc>
+    <EngDesc>Simply has to be practised with sound</EngDesc>
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
@@ -144,7 +144,7 @@
     <ThaiScript>ก ด บ</ThaiScript>
     <ThaiFonet>go, do, bo,</ThaiFonet>
     <EngWord>Stop sounds</EngWord>
-    <EngDesc>Thhere are 3 closing sounds called stop sounds</EngDesc>
+    <EngDesc>There are 3 closing sounds called stop sounds</EngDesc>
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
@@ -165,7 +165,7 @@
     <ThaiScript>เกิน</ThaiScript>
     <ThaiFonet>geern</ThaiFonet>
     <EngWord>More than, over</EngWord>
-    <EngDesc>In most cases the long vowel เออ changes to เิ when followed by another consonant</EngDesc>
+    <EngDesc>In most cases the long vowel เออ changes to เิ when followed by another consonant. Therfor yuo should not write it as เกอน.</EngDesc>
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
@@ -208,12 +208,6 @@
     <ThaiFonet>chan</ThaiFonet>
     <EngWord>Me, I</EngWord>
     <EngDesc>In Thai the gender of the speaking person is important. chan is used by women.</EngDesc>
-    <Chapter>Nouns, people and particles</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>ฉัน</ThaiScript>
-    <ThaiFonet>chan</ThaiFonet>
-    <EngWord>Me, I</EngWord>
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
@@ -265,18 +259,18 @@
     <EngDesc>19:00 untill 23:00</EngDesc>
     <Chapter>Telling time</Chapter>
   </Word>
-<Word>
+  <Word>
     <ThaiScript>ตี</ThaiScript>
     <ThaiFonet>dtee</ThaiFonet>
     <EngWord>After midnight</EngWord>
     <EngDesc>Morning hours between 1:00 a.m. and 5:00 a.m.</EngDesc>
-    <Chapter>Key to understanding Thai</Chapter>
+    <Chapter>Telling time</Chapter>
   </Word>
   <Word>
     <ThaiScript>กย</ThaiScript>
     <ThaiFonet>gob</ThaiFonet>
     <EngWord>Frog</EngWord>
-    <EngDesc>Normal tone and unwritten o.</EngDesc>
+    <EngDesc>Low tone and unwritten o.</EngDesc>
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
@@ -285,5 +279,184 @@
     <EngWord>Red</EngWord>
     <EngDesc>สี (see) is the word for color. Traditionally wwomen used to dress in red on Sundays.</EngDesc>
     <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห</ThaiScript>
+    <ThaiFonet>ko ko cho to to po fo so so so ho</ThaiFonet>
+    <EngWord>High tone class</EngWord>
+    <EngDesc>These are the consonants with the High tone class</EngDesc>
+    <Chapter>Thai alphabet</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ</ThaiScript>
+    <ThaiFonet>ko ko ko ngo cho so cho yo to to no to to no po fo po mo  yo ro lo wo lo ho</ThaiFonet>
+    <EngWord>Low tone class</EngWord>
+    <EngDesc>These are the consonants with the Low tone class</EngDesc>
+    <Chapter>Thai alphabet</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ง น ม</ThaiScript>
+    <ThaiFonet>ngo no mo</ThaiFonet>
+    <EngWord>Nasal Sounds</EngWord>
+    <EngDesc>There are 3 closing sounds called stop sounds called Nasal sounds</EngDesc>
+    <Chapter>Closing sounds of consonants</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ย ว อ</ThaiScript>
+    <ThaiFonet>yo wo aaw</ThaiFonet>
+    <EngWord>Part of vowels</EngWord>
+    <EngDesc>These 3 letters are usually part of a Vowel</EngDesc>
+    <Chapter>Closing sounds of consonants</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ฉ ซ  ฌ ผ ฝ ฟ ห ฮ </ThaiScript>
+    <ThaiFonet>cho, so, cho, po. fo. fo. ho. ho </ThaiFonet>
+    <EngWord>Words never stop with any of these.</EngWord>
+    <EngDesc>These 8 letters never occure at the end of a word.</EngDesc>
+    <Chapter>Closing sounds of consonants</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ญ ร ล ฬ &gt; น</ThaiScript>
+    <ThaiFonet>yo, ro, lo, lo &gt; no</ThaiFonet>
+    <EngWord>Changes to N</EngWord>
+    <EngDesc>These 4 letters changes the sound น (no) if at the end of a word.</EngDesc>
+    <Chapter>Closing sounds of consonants</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ข ค ฆ &gt; ก</ThaiScript>
+    <ThaiFonet>kho, kho, kho &gt; k </ThaiFonet>
+    <EngWord>Stop sound k</EngWord>
+    <EngDesc>The three kho sounds changes into a K (The consonant ก changes sound from g to k at the end of a word).</EngDesc>
+    <Chapter>Closing sounds of consonants</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ผ พ  &gt; ภ</ThaiScript>
+    <ThaiFonet>pho, po, po</ThaiFonet>
+    <EngWord>Stop sound b</EngWord>
+    <EngDesc>The three sounds for ph- turns into pho or bo</EngDesc>
+    <Chapter>Closing sounds of consonants</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ฎ ฏ ด ต &gt; ต</ThaiScript>
+    <ThaiFonet>do, dto, do, dto &gt; dto</ThaiFonet>
+    <EngWord>d mostly keeps their sounds</EngWord>
+    <EngDesc>The four d sounds mostly keep their sound or turn into dt-</EngDesc>
+    <Chapter>Closing sounds of consonants</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>จ ช ฐ ฑ ฒ ถ ท ธ ศ ษ ส &gt; ต</ThaiScript>
+    <ThaiFonet>jo, cho, tho ,tho, tho ,tho ,tho, tho, so, so, so &gt; dto</ThaiFonet>
+    <EngWord>Stop sound dt-</EngWord>
+    <EngDesc>The letters with the sounds j, t, s, and ch turn into dt.</EngDesc>
+    <Chapter>Closing sounds of consonants</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เดิน</ThaiScript>
+    <ThaiFonet>deern</ThaiFonet>
+    <EngWord>Walk</EngWord>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เค็ด</ThaiScript>
+    <ThaiFonet>dek</ThaiFonet>
+    <EngWord>Child</EngWord>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ถนน</ThaiScript>
+    <ThaiFonet>ta non</ThaiFonet>
+    <EngWord>Road</EngWord>
+    <EngDesc>This word is hard to read for a foreigner as it only contains consonants, but in Thai ther are often a unwritten vowel with either the sound a or o.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กบ</ThaiScript>
+    <ThaiFonet>gob</ThaiFonet>
+    <EngWord>Frog</EngWord>
+    <EngDesc>To say this word (and many other words) you say an o between the consonants.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>คน</ThaiScript>
+    <ThaiFonet>kon</ThaiFonet>
+    <EngWord>Person</EngWord>
+    <EngDesc>To say this word (and many other words) you say an o between the consonants.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตลาด</ThaiScript>
+    <ThaiFonet>dta laad</ThaiFonet>
+    <EngWord>Market</EngWord>
+    <EngDesc>Sometimes you have to add an additional a between consonants.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สมอง</ThaiScript>
+    <ThaiFonet>sa maawng</ThaiFonet>
+    <EngWord>Brain</EngWord>
+    <EngDesc>Sometimes you have to add an additional a between consonants.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตะบอง</ThaiScript>
+    <ThaiFonet>dta baawng</ThaiFonet>
+    <EngWord>Club (stick)</EngWord>
+    <EngDesc>There are many words where thhe a is written.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สะอาด</ThaiScript>
+    <ThaiFonet>sa aat</ThaiFonet>
+    <EngWord>Clean</EngWord>
+    <EngDesc>There are many words where thhe a is written.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>จระเข็</ThaiScript>
+    <ThaiFonet>jaaw ra khaeh</ThaiFonet>
+    <EngWord>crocodile</EngWord>
+    <EngDesc>There are a few words with an additional aaw.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>บริษัท</ThaiScript>
+    <ThaiFonet>baaw ri sat</ThaiFonet>
+    <EngWord>Company, Firm</EngWord>
+    <EngDesc>There are a few words with an additional aaw</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เสียง โท</ThaiScript>
+    <ThaiFonet>siiang thhoo</ThaiFonet>
+    <EngWord>Falling tone</EngWord>
+    <EngDesc>The Falling tone. also know as the third tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เสียง ตรี</ThaiScript>
+    <ThaiFonet>siiang dtree</ThaiFonet>
+    <EngWord>High tone</EngWord>
+    <EngDesc>The high tone. also know as the Fourth tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เสียง จัตวา</ThaiScript>
+    <ThaiFonet>siiang jat dta waa</ThaiFonet>
+    <EngWord>Rising Tone</EngWord>
+    <EngDesc>The Rising tone. also know as the fifth tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กะ</ThaiScript>
+    <ThaiFonet>ga</ThaiFonet>
+    <EngWord>to, with, also</EngWord>
+    <EngDesc>Consonant is of the normal tone class and has a short vowel, making the word pronounced with a low tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กบ</ThaiScript>
+    <ThaiFonet>gob</ThaiFonet>
+    <EngWord>Frog</EngWord>
+    <Chapter>Tonal Language</Chapter>
   </Word>
 </ArrayOfWord>

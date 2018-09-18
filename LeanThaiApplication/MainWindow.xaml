@@ -5,22 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearnThaiApplication"
         mc:Ignorable="d"
-        Title="MainWindow" Height="576" Width="1002">
-    <Grid>
-        <TabControl HorizontalAlignment="Stretch" Height="468" VerticalAlignment="Top" Margin="36,0,40,0">
+        Title="MainWindow" Height="600" Width="1000">
+
+    <Viewbox>
+        <TabControl HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Margin="36,0,40,0" Height="512" Width="926" >
             <TabItem Header="Learn the language">
                 <Grid Background="#FFE5E5E5">
                     <Label x:Name="lbl_Counter_Page1" Content="123" HorizontalAlignment="Left" Margin="30,36,0,0" VerticalAlignment="Top" Height="26" Width="31"/>
-                    <TextBlock x:Name="txb_Information_Page1" HorizontalAlignment="Left" Margin="658,30,0,0" TextWrapping="Wrap" Text="Here you can select between consonants or vowels." VerticalAlignment="Top" Height="70" Width="207"/>
-                    <CheckBox x:Name="ckb_Helpbox_Page1" Content="Description" HorizontalAlignment="Left" Margin="159,301,0,0" VerticalAlignment="Top"/>
-                    <TextBlock x:Name="txb_Description_page1" HorizontalAlignment="Left" Margin="275,79,0,0" TextWrapping="Wrap" Text="This is some description" VerticalAlignment="Top" Height="169" Width="605" FontSize="24"/>
-                    <CheckBox x:Name="ckb_Randomized_Page1" Content="Randomize words" HorizontalAlignment="Left" Margin="159,281,0,0" VerticalAlignment="Top" />
-                    <TextBlock x:Name="txb_ThaiScript_Page1" HorizontalAlignment="Left" Margin="275,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="48"/>
-                    <TextBox x:Name="txt_Answear_Page1" HorizontalAlignment="Left" Height="28" Margin="338,260,0,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
-                    <Button x:Name="btn_validate_Page1" Content="Check" HorizontalAlignment="Left" Height="24" Margin="338,293,0,0" VerticalAlignment="Top" Width="89" Click="btn_validate_Page1_Click" />
-                    <Button x:Name="btn_Next_Word_Page1" Content="Next" HorizontalAlignment="Left" Height="24" Margin="432,293,0,0" VerticalAlignment="Top" Width="35" Click="btn_Next_Word_Page1_Click" />
-                    <Button x:Name="btn_Prev_Word_Page1" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="298,293,0,0" VerticalAlignment="Top" Width="35" Click="btn_Prev_Word_Page1_Click" />
-                    <TextBlock x:Name="txb_Status_Page1" HorizontalAlignment="Left" Margin="328,332,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top" Height="35" Width="113" FontSize="24"/>
+                    <CheckBox x:Name="ckb_Helpbox_Page1" Content="Description" HorizontalAlignment="Left" Margin="159,342,0,0" VerticalAlignment="Top" Checked="ckb_Helpbox_Page1_Checked"/>
+                    <TextBlock x:Name="txb_Description_page1" HorizontalAlignment="Left" Margin="275,127,0,0" TextWrapping="Wrap" Text="This is some description" VerticalAlignment="Top" Height="169" Width="627" FontSize="24"/>
+                    <CheckBox x:Name="ckb_Randomized_Page1" Content="Randomize words" HorizontalAlignment="Left" Margin="159,322,0,0" VerticalAlignment="Top" />
+                    <TextBlock x:Name="txb_ThaiScript_Page1" HorizontalAlignment="Left" Margin="275,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="48" Height="117" Width="627"/>
+                    <TextBox x:Name="txt_Answear_Page1" HorizontalAlignment="Left" Height="28" Margin="338,301,0,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
+                    <Button x:Name="btn_validate_Page1" Content="Check" HorizontalAlignment="Left" Height="24" Margin="338,334,0,0" VerticalAlignment="Top" Width="89" Click="btn_validate_Page1_Click" />
+                    <Button x:Name="btn_Next_Word_Page1" Content="Next" HorizontalAlignment="Left" Height="24" Margin="432,334,0,0" VerticalAlignment="Top" Width="35" Click="btn_Next_Word_Page1_Click" />
+                    <Button x:Name="btn_Prev_Word_Page1" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="298,334,0,0" VerticalAlignment="Top" Width="35" Click="btn_Prev_Word_Page1_Click" />
+                    <TextBlock x:Name="txb_Status_Page1" HorizontalAlignment="Left" Margin="328,373,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top" Height="35" Width="113" FontSize="24"/>
                     <ComboBox x:Name="cb_Chapter_Page1" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="155" SelectedValuePath="Content" SelectionChanged="ComboBox_SelectionChanged">
                         <ComboBoxItem Content="Key to understanding Thai"/>
                         <ComboBoxItem Content="Thai alphabet"/>
@@ -41,10 +41,11 @@
                         <ComboBoxItem Content="The body"/>
                     </ComboBox>
                     <Label x:Name="lbl_Chapter_Page1" Content="Chapter:" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="72"/>
+                    <Label x:Name="lbl_ChapterCount_Page1" Content="Words in chapter: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,116,0,0"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Train Symbols">
-                <Grid Background="#FFE5E5E5" Margin="0,-1,-19,-13">
+                <Grid Background="#FFE5E5E5">
                     <Label x:Name="lbl_Counter_Page2" Content="123" HorizontalAlignment="Left" Margin="30,36,0,0" VerticalAlignment="Top" Height="25" Width="31"/>
                     <TextBox x:Name="txt_Answear_Page2" HorizontalAlignment="Left" Height="28" Margin="329,133,-126,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
                     <Button x:Name="btn_validate_Page2" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="328.609,165.563,-126.197,-11.277" VerticalAlignment="Top" Width="89.588" Click="btn_validate_Page2_Click"/>
@@ -63,7 +64,7 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Add new content" HorizontalAlignment="Left" Margin="-2,-2,-8,0" Width="110">
-                <Grid Background="#FFE5E5E5" Margin="0,-1,-19,0">
+                <Grid Background="#FFE5E5E5" Margin="0,-1,0,0">
                     <TextBox x:Name="txt_FirstSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txt_SecondSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,73,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txt_ThirdSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,101,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
@@ -73,7 +74,7 @@
                     <Label x:Name="lbl_English_Insert" Content="Thai help word" Margin="209,98,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center"/>
                     <Label x:Name="lbl_Desc_Insert" Content="Description" HorizontalAlignment="Left" Margin="209,125,0,0" VerticalAlignment="Top"/>
                     <Button x:Name="btn_SubmitNewWord" Content="Submit" HorizontalAlignment="Left" Margin="339,203,0,0" VerticalAlignment="Top" Width="76" Click="btn_SubmitNewWord_Click"/>
-                    <ListBox x:Name="lib_LoadedWords" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="193" SelectionChanged="lib_LoadedWords_SelectionChanged"/>
+                    <ListBox x:Name="lib_LoadedWords" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="193" DisplayMemberPath="ThaiScript" SelectionChanged="lib_LoadedWords_SelectionChanged"/>
                     <TextBlock x:Name="txb_Description_Page4" HorizontalAlignment="Left" Margin="238,228,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Height="187" Width="634" FontSize="24"/>
                     <Button x:Name="btn_LoadList" Content="Load List" HorizontalAlignment="Left" Margin="66,315,0,0" VerticalAlignment="Top" Width="75" Click="btn_LoadList_Click"/>
                     <RadioButton x:Name="rb_words_Page3" Content="Words" HorizontalAlignment="Left" Margin="531,63,0,0" VerticalAlignment="Top" Checked="rb_words_Page3_Checked"/>
@@ -86,11 +87,16 @@
 
                 </Grid>
             </TabItem>
-            <TabItem Header="Settings" HorizontalAlignment="Right" Margin="0,0,-227.333,-2" Width="100">
-                <Grid Background="#FFE5E5E5" Margin="0,-1,-19,0">
-
+            <TabItem Header="Settings" HorizontalAlignment="Left" Margin="-2,-2,-8,0" Width="110">
+                <Grid Background="#FFE5E5E5" Margin="10,-1,12,0">
+                    <Label Content="Current Path to language files is:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                    <TextBlock x:Name="txb_FilePath_Settings" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="196,15,0,0"/>
+                    <Button x:Name="btn_ChangeSave_Settings" Content="Change Path" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="98,87,0,0"/>
+                    <TextBox x:Name="txt_NewSavePath_Settings" HorizontalAlignment="Left" Height="38" Margin="98,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="367"/>
+                    <Label Content="New Save Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,41,0,0"/>
                 </Grid>
             </TabItem>
         </TabControl>
-    </Grid>
+    </Viewbox>
+
 </Window>
