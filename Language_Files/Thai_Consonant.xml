@@ -16,6 +16,7 @@
     <ThaiScript>ฃ</ThaiScript>
     <ThaiFonet>kuad</ThaiFonet>
     <EngWord>Bottle</EngWord>
+    <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ข.</EngDesc>
     <ThaiHelpWord>ขวด</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -28,6 +29,7 @@
     <ThaiScript>ฅ</ThaiScript>
     <ThaiFonet>kon</ThaiFonet>
     <EngWord>Person</EngWord>
+    <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ค.</EngDesc>
     <ThaiHelpWord>คน</ThaiHelpWord>
   </Consonant>
   <Consonant>

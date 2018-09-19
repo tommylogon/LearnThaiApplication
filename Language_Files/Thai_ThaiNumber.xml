@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfThaiNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ThaiNumber>
+    <ThaiScript>๑</ThaiScript>
+    <ThaiFonet>neung</ThaiFonet>
+    <EngWord>One</EngWord>
+    <EngDesc>Thai digit one, 1</EngDesc>
+    <ThaiHelpWord>หนึ่ง</ThaiHelpWord>
+  </ThaiNumber>
+  <ThaiNumber>
+    <ThaiScript>๒</ThaiScript>
+    <ThaiFonet>saawng</ThaiFonet>
+    <EngWord>Two</EngWord>
+    <EngDesc>Thai digit two, 2</EngDesc>
+    <ThaiHelpWord>สอง</ThaiHelpWord>
+  </ThaiNumber>
+  <ThaiNumber>
+    <ThaiScript>๓</ThaiScript>
+    <ThaiFonet>saam</ThaiFonet>
+    <EngWord>Three</EngWord>
+    <EngDesc>Thai digit three, 3</EngDesc>
+    <ThaiHelpWord>สาม</ThaiHelpWord>
+  </ThaiNumber>
+  <ThaiNumber>
+    <ThaiScript>๔</ThaiScript>
+    <ThaiFonet>see</ThaiFonet>
+    <EngWord>Four</EngWord>
+    <EngDesc>Thai digit four, 4</EngDesc>
+    <ThaiHelpWord>สี่</ThaiHelpWord>
+  </ThaiNumber>
+  <ThaiNumber>
+    <ThaiScript>๕</ThaiScript>
+    <ThaiFonet>haa</ThaiFonet>
+    <EngWord>Five</EngWord>
+    <EngDesc>Thai digit five, 5</EngDesc>
+    <ThaiHelpWord>ฮ่า</ThaiHelpWord>
+  </ThaiNumber>
+  <ThaiNumber>
+    <ThaiScript>๖</ThaiScript>
+    <ThaiFonet>hook</ThaiFonet>
+    <EngWord>Six</EngWord>
+    <EngDesc>Thai digit six, 6</EngDesc>
+    <ThaiHelpWord>หก</ThaiHelpWord>
+  </ThaiNumber>
+  <ThaiNumber>
+    <ThaiScript>๗</ThaiScript>
+    <ThaiFonet>jet</ThaiFonet>
+    <EngWord>Seven</EngWord>
+    <EngDesc>Thai digit seven, 7</EngDesc>
+    <ThaiHelpWord>เจ็ด</ThaiHelpWord>
+  </ThaiNumber>
+  <ThaiNumber>
+    <ThaiScript>๘</ThaiScript>
+    <ThaiFonet>bpaaet</ThaiFonet>
+    <EngWord>Eight</EngWord>
+    <EngDesc>Thai digit eight, 8</EngDesc>
+    <ThaiHelpWord>แปด</ThaiHelpWord>
+  </ThaiNumber>
+  <ThaiNumber>
+    <ThaiScript>๙</ThaiScript>
+    <ThaiFonet>gao</ThaiFonet>
+    <EngWord>Nine</EngWord>
+    <EngDesc>Thai digit nine, 9</EngDesc>
+    <ThaiHelpWord>เก้า</ThaiHelpWord>
+  </ThaiNumber>
+  <ThaiNumber>
+    <ThaiScript>๐</ThaiScript>
+    <ThaiFonet>soon</ThaiFonet>
+    <EngWord>Two</EngWord>
+    <EngDesc>Thai digit zero, 0</EngDesc>
+    <ThaiHelpWord>สูน</ThaiHelpWord>
+  </ThaiNumber>
+</ArrayOfThaiNumber>
