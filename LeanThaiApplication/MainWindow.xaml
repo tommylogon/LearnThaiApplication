@@ -8,12 +8,12 @@
         Title="MainWindow" Height="600" Width="1000">
 
     <Viewbox>
-        <TabControl HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Margin="36,0,40,0" Height="512" Width="926" >
+        <TabControl HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Margin="36,0,40,0" Height="512" Width="926" Background="White" Foreground="Black" >
             <TabItem Header="Learn the language">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#FFD3D3FF">
                     <Label x:Name="lbl_Counter_Page1" Content="123" HorizontalAlignment="Left" Margin="30,36,0,0" VerticalAlignment="Top" Height="26" Width="31"/>
-                    <CheckBox x:Name="ckb_Helpbox_Page1" Content="Description" HorizontalAlignment="Left" Margin="159,342,0,0" VerticalAlignment="Top" Checked="ckb_Helpbox_Page1_Checked"/>
-                    <TextBlock x:Name="txb_Description_page1" HorizontalAlignment="Left" Margin="275,127,0,0" TextWrapping="Wrap" Text="This is some description" VerticalAlignment="Top" Height="169" Width="627" FontSize="24"/>
+                    <CheckBox x:Name="ckb_Helpbox_Page1" Content="Description" HorizontalAlignment="Left" Margin="159,342,0,0" VerticalAlignment="Top" />
+                    <TextBlock x:Name="txb_Description_page1" HorizontalAlignment="Left" Margin="275,127,0,0" TextWrapping="Wrap" Text="This is some description" VerticalAlignment="Top" Height="169" Width="627" FontSize="24" Foreground="Black"/>
                     <CheckBox x:Name="ckb_Randomized_Page1" Content="Randomize words" HorizontalAlignment="Left" Margin="159,322,0,0" VerticalAlignment="Top" />
                     <TextBlock x:Name="txb_ThaiScript_Page1" HorizontalAlignment="Left" Margin="275,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="48" Height="117" Width="627"/>
                     <TextBox x:Name="txt_Answear_Page1" HorizontalAlignment="Left" Height="28" Margin="338,301,0,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
@@ -45,7 +45,7 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Train Symbols">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#FFC1C1EC">
                     <Label x:Name="lbl_Counter_Page2" Content="123" HorizontalAlignment="Left" Margin="30,36,0,0" VerticalAlignment="Top" Height="25" Width="31"/>
                     <TextBox x:Name="txt_Answear_Page2" HorizontalAlignment="Left" Height="28" Margin="329,133,-126,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
                     <Button x:Name="btn_validate_Page2" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="328.609,165.563,-126.197,-11.277" VerticalAlignment="Top" Width="89.588" Click="btn_validate_Page2_Click"/>
@@ -64,7 +64,7 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Add new content" HorizontalAlignment="Left" Margin="-2,-2,-8,0" Width="110">
-                <Grid Background="#FFE5E5E5" Margin="0,-1,0,0">
+                <Grid Background="#FFD2D2F3" Margin="0,-1,0,0">
                     <TextBox x:Name="txt_FirstSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txt_SecondSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,73,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txt_ThirdSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,101,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
@@ -84,11 +84,12 @@
                     <TextBox x:Name="txt_FifthSelectionProperty" HorizontalAlignment="Left" Height="41" Margin="339,157,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="273"/>
                     <Label x:Name="lbl_Chapter_Insert" Content="Chapter" HorizontalAlignment="Left" Margin="209,153,0,0" VerticalAlignment="Top"/>
                     <RadioButton x:Name="rb_ThaiNumber_Page3" Content="Numbers (Symbols)" HorizontalAlignment="Left" Margin="531,124,0,0" VerticalAlignment="Top" Checked="rb_ThaiNumber_Page3_Checked"/>
+                    <Button x:Name="btn_DeleteSelected" Content="Delete selected" HorizontalAlignment="Left" Margin="35,433,0,0" VerticalAlignment="Top" Width="93" Click="btn_Delete_Click" Background="#FFEA7A7A" Height="33"/>
 
                 </Grid>
             </TabItem>
             <TabItem Header="Settings" HorizontalAlignment="Left" Margin="-2,-2,-8,0" Width="110">
-                <Grid Background="#FFE5E5E5" Margin="10,-1,12,0">
+                <Grid Background="#FFE5E5E5" Margin="0,-1,1,0">
                     <Label Content="Current Path to language files is:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
                     <TextBlock x:Name="txb_FilePath_Settings" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="196,15,0,0"/>
                     <Button x:Name="btn_ChangeSave_Settings" Content="Change Path" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="98,87,0,0"/>

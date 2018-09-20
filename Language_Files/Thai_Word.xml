@@ -267,7 +267,7 @@
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <ThaiScript>กย</ThaiScript>
+    <ThaiScript>กบ</ThaiScript>
     <ThaiFonet>gob</ThaiFonet>
     <EngWord>Frog</EngWord>
     <EngDesc>Low tone and unwritten o.</EngDesc>
@@ -354,12 +354,14 @@
     <ThaiScript>เดิน</ThaiScript>
     <ThaiFonet>deern</ThaiFonet>
     <EngWord>Walk</EngWord>
+    <EngDesc>In most cases the long vowel เออ changes to เิ when followed by another consonant. Therfor yuo should not write it as เดอน.</EngDesc>
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
     <ThaiScript>เค็ด</ThaiScript>
     <ThaiFonet>dek</ThaiFonet>
     <EngWord>Child</EngWord>
+    <EngDesc>This word has the symbol ็ above the consonant, and indicates that the vowel is short.</EngDesc>
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
@@ -457,6 +459,264 @@
     <ThaiScript>กบ</ThaiScript>
     <ThaiFonet>gob</ThaiFonet>
     <EngWord>Frog</EngWord>
+    <EngDesc>Consonant is of the normal tone class and has a stop sound, making the word pronounced with a low tone.</EngDesc>
     <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>็ = ไม้ ได่ คู้</ThaiScript>
+    <ThaiFonet>maai dai kuu</ThaiFonet>
+    <EngWord>None found</EngWord>
+    <EngDesc>This is the thai name of this symbol. It is placed above the consonant and indicates that the vowel has to be pronounced short.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>มก</ThaiScript>
+    <ThaiFonet>nok</ThaiFonet>
+    <EngWord>Bird</EngWord>
+    <EngDesc>To pronounce this word you need to add an additional o between ม and ก.</EngDesc>
+    <Chapter>Thai vowels</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กา</ThaiScript>
+    <ThaiFonet>gaa</ThaiFonet>
+    <EngWord>Crow</EngWord>
+    <EngDesc>Consonant is of the normal tone class and has a long vowel sound, making the word pronounced with a normal tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กัน</ThaiScript>
+    <ThaiFonet>gaa</ThaiFonet>
+    <EngWord>Together</EngWord>
+    <EngDesc>Consonant is of the normal tone class and has a nasal sound, making the word pronounced with a normal tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>คะ</ThaiScript>
+    <ThaiFonet>kha</ThaiFonet>
+    <EngWord>None</EngWord>
+    <EngDesc>[word added by a female speaker to the end of every question to convey politeness]  Consonant is of the low tone class and has a short vowel, making the word pronounced with a high tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สูท</ThaiScript>
+    <ThaiFonet>suudt</ThaiFonet>
+    <EngWord>Suit</EngWord>
+    <EngDesc>Thai transcription of the foreign loanword. Consonant is of the high tone class and has a stop  sound, making the word pronounced with a low tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สี</ThaiScript>
+    <ThaiFonet>see</ThaiFonet>
+    <EngWord>Color</EngWord>
+    <EngDesc>Consonant is of the high tone class and has a long vowel, making the word pronounced with a rising tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สัน</ThaiScript>
+    <ThaiFonet>san</ThaiFonet>
+    <EngWord>the long line of the back; backbone; knife edge</EngWord>
+    <EngDesc>Consonant is of the high tone class and has a nasal sound, making the word pronounced with a rising tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>คะ</ThaiScript>
+    <ThaiFonet>kha</ThaiFonet>
+    <EngWord>None</EngWord>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>คิด</ThaiScript>
+    <ThaiFonet>kid</ThaiFonet>
+    <EngWord>Think</EngWord>
+    <EngDesc>Consonant is of the low tone class and has a short vowel and a stop sound, making the word pronounced with a high tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>คีบ</ThaiScript>
+    <ThaiFonet>kheep</ThaiFonet>
+    <EngWord>to grip, to take up by means of forceps, tongs pincers or chopsticks, to nip</EngWord>
+    <EngDesc>Consonant is of the low tone class and has a long vowel and a stop sound, making the word pronounced with a falling tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>คือ</ThaiScript>
+    <ThaiFonet>kheuu</ThaiFonet>
+    <EngWord>namely; as follows; thus; as in; to wit; simply; that is</EngWord>
+    <EngDesc>Consonant is of the low tone class and has a long vowel, making the word pronounced with the normal tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>คัน</ThaiScript>
+    <ThaiFonet>khan</ThaiFonet>
+    <EngWord>to itch; or feel a need to scratch or sneeze</EngWord>
+    <EngDesc>Consonant is of the low tone class and has a nasal sound, making the word pronounced with the normal tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>่ = ไม้ เอก</ThaiScript>
+    <ThaiFonet>maai eek</ThaiFonet>
+    <EngWord>Low (Second) tone</EngWord>
+    <EngDesc>Name of the symbol for the low tone</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>้ = ไม้ โท</ThaiScript>
+    <ThaiFonet>maai too</ThaiFonet>
+    <EngWord>Falling (Third) tone</EngWord>
+    <EngDesc>Name of the symbol for the falling tone</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>๊ = ไม้ ดรี</ThaiScript>
+    <ThaiFonet>maai dree</ThaiFonet>
+    <EngWord>High (Fourth) tone</EngWord>
+    <EngDesc>Name of the symbol for the Hightone</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>๋ = ไม้ จัตวา</ThaiScript>
+    <ThaiFonet>maai jat dta waa</ThaiFonet>
+    <EngWord>Rising (Fourth) tone</EngWord>
+    <EngDesc>Name of the symbol for the rising tone</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>์</ThaiScript>
+    <ThaiFonet>None found</ThaiFonet>
+    <EngWord>Indicates silent Pronounciation</EngWord>
+    <EngDesc>This mark has two names and it indicates that the consonant is silent and not pronounced.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ๆ</ThaiScript>
+    <ThaiFonet>None found</ThaiFonet>
+    <EngWord>Indicates repetition</EngWord>
+    <EngDesc>This mark indicates repetition. The word is said twice which is important for the plkural or emphasize of things.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ฯ</ThaiScript>
+    <ThaiFonet>None found</ThaiFonet>
+    <EngWord>Indicates the same as quotation</EngWord>
+    <EngDesc>This mark indicates what should follow is understod. E.g. Bangkok, the 'City of Angels'.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ฯลฯ</ThaiScript>
+    <ThaiFonet>None found</ThaiFonet>
+    <EngWord>so on; et cetera</EngWord>
+    <EngDesc>This mark has the same meaning as so on or et cetera.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หญ้า</ThaiScript>
+    <ThaiFonet>yaa</ThaiFonet>
+    <EngWord>Grass</EngWord>
+    <EngDesc>The initial consonant is silent and only affect the tone. This word gets a falling tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หนู</ThaiScript>
+    <ThaiFonet>nuu</ThaiFonet>
+    <EngWord>Mouse; Mice; Rat</EngWord>
+    <EngDesc>The initial consonant is silent and only affect the tone. This word get a rising tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>อย่า</ThaiScript>
+    <ThaiFonet>yaa</ThaiFonet>
+    <EngWord>don't...; do not...; don't be...; doesn't</EngWord>
+    <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>อยาก</ThaiScript>
+    <ThaiFonet>yaak</ThaiFonet>
+    <EngWord>to want; desire; crave for</EngWord>
+    <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>อย่าง</ThaiScript>
+    <ThaiFonet>yaang</ThaiFonet>
+    <EngWord>variety; style; pattern; type; kind; sort; mode; manner; method</EngWord>
+    <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>อยู่</ThaiScript>
+    <ThaiFonet>yuu</ThaiFonet>
+    <EngWord>is (located at); to reside; to live (at); stay</EngWord>
+    <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
+    <Chapter>Tonal Language</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ทราย</ThaiScript>
+    <ThaiFonet>saai</ThaiFonet>
+    <EngWord>sand; granule; silica sand</EngWord>
+    <EngDesc>The letter combination ทร is usually pronounced as S</EngDesc>
+    <Chapter>Special pronounciation</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กรรไกร</ThaiScript>
+    <ThaiFonet>gan grai</ThaiFonet>
+    <EngWord>scissors</EngWord>
+    <EngDesc>The letter combination รร can be pronounced as "an" or "a".</EngDesc>
+    <Chapter>Special pronounciation</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ธรรมดา</ThaiScript>
+    <ThaiFonet>tham ma daa</ThaiFonet>
+    <EngWord>[is] usual; ordinary; normal; average; plain; regular; natural; common</EngWord>
+    <EngDesc>The letter combination รร can be pronounced as "an" or "a".</EngDesc>
+    <Chapter>Special pronounciation</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>พร</ThaiScript>
+    <ThaiFonet>phaawn</ThaiFonet>
+    <EngWord>blessing; good wishes; benediction; favor</EngWord>
+    <EngDesc>When ร is the closing sound it changes the vowel before it from an o (โอ) to an aaw (อ).</EngDesc>
+    <Chapter>Special pronounciations</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ศร</ThaiScript>
+    <ThaiFonet>saawn</ThaiFonet>
+    <EngWord>arrow</EngWord>
+    <EngDesc>When ร is the closing sound it changes the vowel before it from an o (โอ) to an aaw (อ).</EngDesc>
+    <Chapter>Special pronounciation</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตรง</ThaiScript>
+    <ThaiFonet>dtrohng</ThaiFonet>
+    <EngWord>[is] straight; direct; exactly; upright; vertical</EngWord>
+    <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
+    <Chapter>Special pronounciation</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>นรก</ThaiScript>
+    <ThaiFonet>na rohk</ThaiFonet>
+    <EngWord>Hell</EngWord>
+    <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
+    <Chapter>Special pronounciation</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ปลอม</ThaiScript>
+    <ThaiFonet>bplaawm</ThaiFonet>
+    <EngWord>[is] fake; counterfeit; forged; disguised; false; phony</EngWord>
+    <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
+    <Chapter>Special pronounciation</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตลาด</ThaiScript>
+    <ThaiFonet>dta laat</ThaiFonet>
+    <EngWord>market; marketplace</EngWord>
+    <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
+    <Chapter>Special pronounciation</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กบ</ThaiScript>
+    <ThaiFonet>gob</ThaiFonet>
+    <EngWord>Frog</EngWord>
+    <Chapter>Easy words</Chapter>
   </Word>
 </ArrayOfWord>
