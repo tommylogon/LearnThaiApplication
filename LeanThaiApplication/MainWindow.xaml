@@ -63,7 +63,7 @@
                     <RadioButton x:Name="rb_NumberSymbol_Page2" Content="Number symbols" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" Checked="rb_NumberSymbol_Page2_Checked"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Add new content" HorizontalAlignment="Left" Margin="-2,-2,-8,0" Width="110">
+            <TabItem Header="Add new content">
                 <Grid Background="#FFD2D2F3" Margin="0,-1,0,0">
                     <TextBox x:Name="txt_FirstSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txt_SecondSelectionProperty" HorizontalAlignment="Left" Height="23" Margin="339,73,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
@@ -88,7 +88,7 @@
 
                 </Grid>
             </TabItem>
-            <TabItem Header="Settings" HorizontalAlignment="Left" Margin="-2,-2,-8,0" Width="110">
+            <TabItem Header="Settings">
                 <Grid Background="#FFE5E5E5" Margin="0,-1,1,0">
                     <Label Content="Current Path to language files is:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
                     <TextBlock x:Name="txb_FilePath_Settings" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="196,15,0,0"/>
