@@ -57,10 +57,14 @@
                     <CheckBox x:Name="ckb_Helpbox_Page2" Content="Description" HorizontalAlignment="Left" Margin="178,218,0,0" VerticalAlignment="Top" />
                     <TextBlock x:Name="txb_Description_page2" HorizontalAlignment="Left" Margin="178,248,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="182" Width="529" FontSize="24"/>
                     <CheckBox x:Name="ckb_Randomized_Page2" Content="Randomize words" HorizontalAlignment="Left" Margin="178,198,0,0" VerticalAlignment="Top" />
-                    <TextBlock x:Name="txb_ThaiScript_Page2" HorizontalAlignment="Left" Margin="278,36,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="48"/>
+                    <TextBlock x:Name="txb_ThaiScript_Page2" HorizontalAlignment="Left" Margin="278,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48"><Run Text="TextBlock"/></TextBlock>
                     <TextBlock x:Name="txb_Status_Page2" HorizontalAlignment="Left" Margin="329,205,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="110" FontSize="24"/>
                     <RadioButton x:Name="rb_Closing_Page2" Content="Closing sounds" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top"/>
                     <RadioButton x:Name="rb_NumberSymbol_Page2" Content="Number symbols" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" Checked="rb_NumberSymbol_Page2_Checked"/>
+                    <Label x:Name="lbl_TrainWhat_Page2" Content="What to train" HorizontalAlignment="Left" Margin="11,248,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="rb_TrainScript_Page2" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,279,0,0" Checked="rb_TrainScript_Page2_Checked" GroupName="TrainWhat"/>
+                    <RadioButton x:Name="rb_TrainEngWords_Page2" Content="English meanings" HorizontalAlignment="Left" Margin="11,299,0,0" VerticalAlignment="Top" Checked="rb_TrainEngWords_Page2_Checked" GroupName="TrainWhat"/>
+                    <RadioButton x:Name="rb_TrainFonet_Page2" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,319,0,0" VerticalAlignment="Top" Checked="rb_TrainFonet_Page2_Checked" GroupName="TrainWhat"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Add new content">

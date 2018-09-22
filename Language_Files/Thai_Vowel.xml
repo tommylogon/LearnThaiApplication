@@ -3,13 +3,18 @@
   <Vowel>
     <ThaiScript>ั</ThaiScript>
     <ThaiFonet>gap</ThaiFonet>
+    <EngWords>
+      <string>And</string>
+      <string>   Also</string>
+    </EngWords>
     <EngWord>And</EngWord>
-    <EngDesc>ั is pronounced as an shor a. กับ also means also. </EngDesc>
+    <EngDesc>ั is pronounced as an shor a.</EngDesc>
     <ThaiHelpWord>กับ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>-า</ThaiScript>
     <ThaiFonet>baad</ThaiFonet>
+    <EngWords />
     <EngWord>to cut; to wound</EngWord>
     <EngDesc>-า is pronounced as a long a. [บาดใจ] [is] (feeling) hurt; grieve; offended</EngDesc>
     <ThaiHelpWord>บาด</ThaiHelpWord>
@@ -17,20 +22,35 @@
   <Vowel>
     <ThaiScript>แ-ะ</ThaiScript>
     <ThaiFonet>gae</ThaiFonet>
+    <EngWords>
+      <string>sheep</string>
+      <string> to carve in</string>
+      <string> to chisel out</string>
+      <string> to take out</string>
+      <string> to engrave</string>
+      <string> remove (a shell</string>
+      <string> e.g.) to trace</string>
+      <string> track</string>
+      <string> hunt down</string>
+    </EngWords>
     <EngWord>Multiple meanings.</EngWord>
-    <EngDesc>แ-ะ is pronounced like a short æ. แกะ has many meanings like: sheep; to carve in; to chisel out; to take out; to engrave; remove (a shell, e.g.) to trace; track; hunt down</EngDesc>
+    <EngDesc>แ-ะ is pronounced like a short æ.</EngDesc>
     <ThaiHelpWord>แกะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>แ</ThaiScript>
     <ThaiFonet>dæng</ThaiFonet>
+    <EngWords>
+      <string>[is] red</string>
+    </EngWords>
     <EngWord>Red</EngWord>
-    <EngDesc>Pronounced as a long æ. [is] red</EngDesc>
+    <EngDesc>Pronounced as a long æ. </EngDesc>
     <ThaiHelpWord>แดง</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ-ะ</ThaiScript>
     <ThaiFonet>dte</ThaiFonet>
+    <EngWords />
     <EngWord>to kick</EngWord>
     <EngDesc>เ-ะ is pronounced like a short e.</EngDesc>
     <ThaiHelpWord>เตะ</ThaiHelpWord>
@@ -38,34 +58,63 @@
   <Vowel>
     <ThaiScript>เ-</ThaiScript>
     <ThaiFonet>phleeng</ThaiFonet>
+    <EngWords>
+      <string>Song</string>
+      <string> Music</string>
+    </EngWords>
     <EngWord>Song</EngWord>
-    <EngDesc>เ- is pronounced as a long e. Also means  Music.</EngDesc>
+    <EngDesc>เ- is pronounced as a long e.</EngDesc>
     <ThaiHelpWord>เพลง</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ิ</ThaiScript>
     <ThaiFonet>khit</ThaiFonet>
+    <EngWords>
+      <string>to think</string>
+      <string>consider</string>
+      <string> imagine</string>
+      <string> to compute</string>
+      <string> to count</string>
+      <string> to wonder</string>
+    </EngWords>
     <EngWord>to think</EngWord>
-    <EngDesc>ิ is pronounced as a short i.  also means consider; imagine; to compute; to count; to wonder</EngDesc>
+    <EngDesc>ิ is pronounced as a short i.  </EngDesc>
     <ThaiHelpWord>คิด</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ี</ThaiScript>
     <ThaiFonet>eek</ThaiFonet>
+    <EngWords>
+      <string>Again</string>
+      <string> after a time</string>
+      <string> still</string>
+      <string> another</string>
+      <string> additional</string>
+      <string> more</string>
+    </EngWords>
     <EngWord>Again</EngWord>
-    <EngDesc>pronounced like a long i or e. อีก also means: after a time, still, another, additional, more</EngDesc>
+    <EngDesc>pronounced like a long i or e.</EngDesc>
     <ThaiHelpWord>อีก</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>โ-ะ</ThaiScript>
     <ThaiFonet>dto</ThaiFonet>
+    <EngWords>
+      <string>Table</string>
+      <string> counter</string>
+      <string> bar</string>
+      <string> workbench</string>
+      <string> work surface</string>
+      <string> altar.</string>
+    </EngWords>
     <EngWord>Table</EngWord>
-    <EngDesc>โ-ะ is pronounced as a shot o. โต๊ะ also means counter; bar; workbench; work surface; altar.</EngDesc>
+    <EngDesc>โ-ะ is pronounced as a shot o.</EngDesc>
     <ThaiHelpWord>โต๊ะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>โ-</ThaiScript>
     <ThaiFonet>chook</ThaiFonet>
+    <EngWords />
     <EngWord>Luck</EngWord>
     <EngDesc>โ- is pronounced as a long o.</EngDesc>
     <ThaiHelpWord>โชค</ThaiHelpWord>
@@ -73,48 +122,97 @@
   <Vowel>
     <ThaiScript>เ-าะ</ThaiScript>
     <ThaiFonet>gaw</ThaiFonet>
+    <EngWords>
+      <string>island</string>
+      <string>  to hold</string>
+      <string> cling</string>
+      <string> arrest</string>
+      <string> catch</string>
+      <string> grab</string>
+      <string> take</string>
+      <string> perch</string>
+    </EngWords>
     <EngWord>island</EngWord>
-    <EngDesc>เ-าะ is pronounced as a quick aw. word also means to hold; cling; arrest; catch; grab; take; perch</EngDesc>
+    <EngDesc>เ-าะ is pronounced as a quick aw.</EngDesc>
     <ThaiHelpWord>เกาะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>อ</ThaiScript>
     <ThaiFonet>naawn</ThaiFonet>
+    <EngWords>
+      <string>to sleep</string>
+      <string>  asleep</string>
+      <string> sleeping</string>
+      <string> lie down.</string>
+    </EngWords>
     <EngWord>to sleep</EngWord>
-    <EngDesc>อ is pronounced as a longer aaw. word also means asleep; sleeping, lie down.</EngDesc>
+    <EngDesc>อ is pronounced as a longer aaw</EngDesc>
     <ThaiHelpWord>นอน</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ-อะ</ThaiScript>
     <ThaiFonet>yöö</ThaiFonet>
+    <EngWords>
+      <string>a lot</string>
+      <string>many</string>
+      <string> plenty</string>
+      <string> much plentifully</string>
+      <string> abundantly</string>
+    </EngWords>
     <EngWord>a lot</EngWord>
-    <EngDesc>เ-อะ is pronounced as ø or ö. word also means many; plenty; much plentifully; abundantly;</EngDesc>
+    <EngDesc>เ-อะ is pronounced as ø or ö. </EngDesc>
     <ThaiHelpWord>เยอะ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ-อ</ThaiScript>
     <ThaiFonet>phlöör</ThaiFonet>
+    <EngWords>
+      <string>Reckless</string>
+      <string>incautious</string>
+      <string> rash</string>
+      <string> absent-minded</string>
+      <string> forgetful</string>
+      <string> unaware</string>
+      <string> off one's guard</string>
+      <string> error-prone</string>
+      <string> unintentional</string>
+    </EngWords>
     <EngWord>Reckless</EngWord>
-    <EngDesc>เ-อ is pronounced as a long ö, word also means incautious; rash; absent-minded; forgetful; unaware; off one's guard; error-prone; unintentional</EngDesc>
+    <EngDesc>เ-อ is pronounced as a long ö, </EngDesc>
     <ThaiHelpWord>เผลอ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ุ</ThaiScript>
     <ThaiFonet>joo laa</ThaiFonet>
+    <EngWords>
+      <string>kite</string>
+      <string>excellent</string>
+      <string> ravishing</string>
+      <string> beautiful</string>
+      <string> delicate</string>
+    </EngWords>
     <EngWord>kite</EngWord>
-    <EngDesc>ุ is pronounced as a low oo, word also means  excellent; ravishing; beautiful; delicate</EngDesc>
+    <EngDesc>ุ is pronounced as a low oo.</EngDesc>
     <ThaiHelpWord>จุฬา</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ู</ThaiScript>
     <ThaiFonet>luuk</ThaiFonet>
+    <EngWords>
+      <string>Child</string>
+      <string> offspring</string>
+      <string> son or daughter [including figurative usage for certain ideas]</string>
+      <string> cub</string>
+      <string> young animal</string>
+    </EngWords>
     <EngWord>Child</EngWord>
-    <EngDesc>ู is pronounced as  a falling uu. word also means offspring; son or daughter [including figurative usage for certain ideas]; cub; young animal</EngDesc>
+    <EngDesc>ู is pronounced as  a falling uu.  </EngDesc>
     <ThaiHelpWord>ลูก</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ึ</ThaiScript>
     <ThaiFonet>reu</ThaiFonet>
+    <EngWords />
     <EngWord>or</EngWord>
     <EngDesc>ึ is pronounced as a high eu</EngDesc>
     <ThaiHelpWord>รึ</ThaiHelpWord>
@@ -122,13 +220,18 @@
   <Vowel>
     <ThaiScript>ื</ThaiScript>
     <ThaiFonet>gleuun</ThaiFonet>
+    <EngWords>
+      <string>Swallow</string>
+      <string> blend</string>
+    </EngWords>
     <EngWord>Swallow</EngWord>
-    <EngDesc>ื pronounced as a normal tone uu. can also mean to blend.</EngDesc>
+    <EngDesc>ื pronounced as a normal tone uu.</EngDesc>
     <ThaiHelpWord>กลืน</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ไ-</ThaiScript>
     <ThaiFonet>mai</ThaiFonet>
+    <EngWords />
     <EngWord>no</EngWord>
     <EngDesc>ไ- is pronounced as ai, ไม่ is pronounced with a falling tone.</EngDesc>
     <ThaiHelpWord>ไม่</ThaiHelpWord>
@@ -136,27 +239,48 @@
   <Vowel>
     <ThaiScript>ใ-</ThaiScript>
     <ThaiFonet>sai</ThaiFonet>
+    <EngWords>
+      <string>add</string>
+      <string> to put in</string>
+      <string> to put on clothing</string>
+      <string> wear</string>
+      <string> encase</string>
+    </EngWords>
     <EngWord>add</EngWord>
-    <EngDesc>ใ- is pronounced as ai, ใส่ also means to put in; to put on clothing; wear; encase</EngDesc>
+    <EngDesc>ใ- is pronounced as ai.</EngDesc>
     <ThaiHelpWord>ใส่</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ำ</ThaiScript>
     <ThaiFonet>tam</ThaiFonet>
+    <EngWords>
+      <string>to do</string>
+      <string> perform an action</string>
+      <string> to cause or effect a result</string>
+      <string> to make</string>
+      <string> produce</string>
+      <string> or implement (i.e. something tangible)</string>
+    </EngWords>
     <EngWord>to do</EngWord>
-    <EngDesc>ำ is pronounced as am.  ทำ also means perform an action; to cause or effect a result, to make, produce, or implement (i.e. something tangible)</EngDesc>
+    <EngDesc>ำ is pronounced as am.</EngDesc>
     <ThaiHelpWord>ทำ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เ-า</ThaiScript>
     <ThaiFonet>rao</ThaiFonet>
+    <EngWords>
+      <string>we</string>
+      <string> us</string>
+      <string> our</string>
+    </EngWords>
     <EngWord>we</EngWord>
-    <EngDesc>เ-า is pronounced as ao. เรา also means us; our</EngDesc>
+    <EngDesc>เ-า is pronounced as ao.</EngDesc>
     <ThaiHelpWord>เรา</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เียะ</ThaiScript>
     <ThaiFonet>dia</ThaiFonet>
+    <EngWords />
     <EngWord>very straight</EngWord>
     <EngDesc>เียะ is pronounced as ia.</EngDesc>
     <ThaiHelpWord>เดี๊ยะ</ThaiHelpWord>
@@ -164,6 +288,7 @@
   <Vowel>
     <ThaiScript>เีย</ThaiScript>
     <ThaiFonet>miia</ThaiFonet>
+    <EngWords />
     <EngWord>Wife</EngWord>
     <EngDesc>เีย is pronounced as iia.</EngDesc>
     <ThaiHelpWord>เมีย</ThaiHelpWord>
@@ -171,13 +296,23 @@
   <Vowel>
     <ThaiScript>ัว</ThaiScript>
     <ThaiFonet>dtuaa</ThaiFonet>
+    <EngWords>
+      <string>Body</string>
+      <string>  [of a person] self</string>
+      <string>  himself</string>
+      <string>  herself</string>
+      <string>  yourself</string>
+      <string>  themselves</string>
+      <string>  [things] itself. also means animals or digits.</string>
+    </EngWords>
     <EngWord>Body</EngWord>
-    <EngDesc>ัว is pronounced as ua. also means [of a person] self; himself; herself; yourself; themselves; [things] itself. also means animals or digits.</EngDesc>
+    <EngDesc>ัว is pronounced as ua.</EngDesc>
     <ThaiHelpWord>ตัว</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ัวะ</ThaiScript>
     <ThaiFonet>phlua</ThaiFonet>
+    <EngWords />
     <EngWord>See description</EngWord>
     <EngDesc>ัวะ is pronounced as ua. ผลัวะ means[onomatopoeic sound of a rock thrown into a bush or a flock of birds flying from a thicket]</EngDesc>
     <ThaiHelpWord>ผลัวะ</ThaiHelpWord>
@@ -185,6 +320,7 @@
   <Vowel>
     <ThaiScript>เือะ</ThaiScript>
     <ThaiFonet>eua</ThaiFonet>
+    <EngWords />
     <EngWord>The sound of the vowel เือะ</EngWord>
     <EngDesc>เือะ is pronounced as eua. เอือะ is the Thai vowel sound.</EngDesc>
     <ThaiHelpWord>เอือะ</ThaiHelpWord>
@@ -192,20 +328,34 @@
   <Vowel>
     <ThaiScript>เือ</ThaiScript>
     <ThaiFonet>reuua</ThaiFonet>
+    <EngWords>
+      <string>boat</string>
+      <string> ship</string>
+      <string> barge</string>
+      <string> vessel</string>
+    </EngWords>
     <EngWord>boat</EngWord>
-    <EngDesc>เือ is pronounced as euua, and เรือ means boat; ship; barge; vessel</EngDesc>
+    <EngDesc>เือ is pronounced as euua.</EngDesc>
     <ThaiHelpWord>เรือ</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ฦ</ThaiScript>
     <ThaiFonet>leuu chaa</ThaiFonet>
+    <EngWords>
+      <string>well-known</string>
+      <string> [is] well-known</string>
+      <string> celebrated</string>
+      <string> renowned</string>
+      <string> famous</string>
+    </EngWords>
     <EngWord>well-known</EngWord>
-    <EngDesc>[ancient spelling of] ลือชา which means [is] well-known; celebrated; renowned; famous</EngDesc>
+    <EngDesc>[ancient spelling of] ลือชา.</EngDesc>
     <ThaiHelpWord>ฦาชา</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ฦๅ</ThaiScript>
     <ThaiFonet>lüü</ThaiFonet>
+    <EngWords />
     <EngWord>None Found</EngWord>
     <EngDesc>Uncommon vowel with  luu or lüü sound.</EngDesc>
     <ThaiHelpWord />
@@ -213,6 +363,7 @@
   <Vowel>
     <ThaiScript>ฤ</ThaiScript>
     <ThaiFonet>rit</ThaiFonet>
+    <EngWords />
     <EngWord>prosperous</EngWord>
     <EngDesc>ฤ is pronounced as rü. ฤทธ์ also means thriving; growing; rich; increasing</EngDesc>
     <ThaiHelpWord>ฤทธ์</ThaiHelpWord>
@@ -220,6 +371,7 @@
   <Vowel>
     <ThaiScript>ฤๅ</ThaiScript>
     <ThaiFonet>reuu see</ThaiFonet>
+    <EngWords />
     <EngWord>hermit</EngWord>
     <EngDesc>ฤๅ is pronoun as reuu.</EngDesc>
     <ThaiHelpWord>ฤๅษี</ThaiHelpWord>
@@ -227,6 +379,7 @@
   <Vowel>
     <ThaiScript>-อย</ThaiScript>
     <ThaiFonet>baawy</ThaiFonet>
+    <EngWords />
     <EngWord>often</EngWord>
     <EngDesc>-อย is pronounced as aawy or åi. </EngDesc>
     <ThaiHelpWord>บ่อย</ThaiHelpWord>
@@ -234,34 +387,62 @@
   <Vowel>
     <ThaiScript>เ็ว</ThaiScript>
     <ThaiFonet>reo</ThaiFonet>
+    <EngWords>
+      <string>quick</string>
+      <string> quickly</string>
+      <string> fast</string>
+    </EngWords>
     <EngWord>quick</EngWord>
-    <EngDesc>เ็ว is pronounced as eo. เร็ว also means quickly; fast</EngDesc>
+    <EngDesc>เ็ว is pronounced as eo.</EngDesc>
     <ThaiHelpWord>เร็ว</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เียว</ThaiScript>
     <ThaiFonet>thiaao</ThaiFonet>
+    <EngWords>
+      <string>vacation</string>
+      <string> trip</string>
+      <string> vacation</string>
+      <string> holiday</string>
+      <string> pleasure tour</string>
+    </EngWords>
     <EngWord>vacation</EngWord>
-    <EngDesc>เียว is prononounced as iow or iaao. เที่ยว also means a trip; vacation; holiday; pleasure tour</EngDesc>
+    <EngDesc>เียว is prononounced as iow or iaao.</EngDesc>
     <ThaiHelpWord>เที่ยว</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>เืยว</ThaiScript>
     <ThaiFonet>neuuay</ThaiFonet>
+    <EngWords>
+      <string>Tired</string>
+      <string> [is] fatigued</string>
+      <string> tired</string>
+      <string> exhausted</string>
+      <string> beat</string>
+    </EngWords>
     <EngWord>Tired</EngWord>
-    <EngDesc>เืยว is pronounced as üai or uuay. เหนื่อย also means [is] fatigued; tired; exhausted; beat</EngDesc>
+    <EngDesc>เืยว is pronounced as üai or uuay. </EngDesc>
     <ThaiHelpWord>เหนื่อย</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ิว</ThaiScript>
     <ThaiFonet>hiu</ThaiFonet>
+    <EngWords>
+      <string>[is] hungry</string>
+      <string> starved</string>
+      <string> starving</string>
+    </EngWords>
     <EngWord>hungry</EngWord>
-    <EngDesc>ิว is pronounced as iu. หิว also means [is] hungry; starved; starving</EngDesc>
+    <EngDesc>ิว is pronounced as iu.</EngDesc>
     <ThaiHelpWord>หิว</ThaiHelpWord>
   </Vowel>
   <Vowel>
     <ThaiScript>ุย</ThaiScript>
     <ThaiFonet>khuy</ThaiFonet>
+    <EngWords>
+      <string>to chat</string>
+      <string> talk</string>
+    </EngWords>
     <EngWord>to chat</EngWord>
     <EngDesc>ุย is pronounced as ui or uy. </EngDesc>
     <ThaiHelpWord>คุย</ThaiHelpWord>
