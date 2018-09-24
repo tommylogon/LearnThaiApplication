@@ -234,7 +234,7 @@
       <string> sir</string>
     </EngWords>
     <EngWord>You, she, he, Ms, Mrs, Mr, sir</EngWord>
-    <EngDesc>This า is pronounced short, notice how simular it is to ทาน</EngDesc>
+    <EngDesc>This า is pronounced short, notice how similar it is to ทาน</EngDesc>
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
@@ -587,7 +587,7 @@
       <string>Club (stick)</string>
     </EngWords>
     <EngWord>Club (stick)</EngWord>
-    <EngDesc>There are many words where thhe a is written.</EngDesc>
+    <EngDesc>There are many words where the a is written.</EngDesc>
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
@@ -1023,7 +1023,7 @@
     </EngWords>
     <EngWord>blessing; good wishes; benediction; favor</EngWord>
     <EngDesc>When ร is the closing sound it changes the vowel before it from an o (โอ) to an aaw (อ).</EngDesc>
-    <Chapter>Special pronounciations</Chapter>
+    <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
     <ThaiScript>ศร</ThaiScript>
@@ -1086,15 +1086,6 @@
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <ThaiScript>กบ</ThaiScript>
-    <ThaiFonet>gob</ThaiFonet>
-    <EngWords>
-      <string>Frog</string>
-    </EngWords>
-    <EngWord>Frog</EngWord>
-    <Chapter>Easy words</Chapter>
-  </Word>
-  <Word>
     <ThaiScript>ควาย</ThaiScript>
     <ThaiFonet>khwaai</ThaiFonet>
     <EngWords>
@@ -1129,18 +1120,18 @@
   </Word>
   <Word>
     <ThaiScript>คัน</ThaiScript>
-    <ThaiFonet>khohn</ThaiFonet>
+    <ThaiFonet>khan</ThaiFonet>
     <EngWords>
       <string>to itch</string>
-      <string> or feel a need to scratch or sneeze</string>
-      <string> ridge</string>
-      <string> earthen dyke</string>
-      <string> dike</string>
-      <string> berm</string>
-      <string> handle</string>
-      <string> rod</string>
-      <string> wand</string>
-      <string> pedal</string>
+      <string>  or feel a need to scratch or sneeze</string>
+      <string>  ridge</string>
+      <string>  earthen dyke</string>
+      <string>  dike</string>
+      <string>  berm</string>
+      <string>  handle</string>
+      <string>  rod</string>
+      <string>  wand</string>
+      <string>  pedal</string>
     </EngWords>
     <EngDesc>[numerical classifier for vehicles;  cars;  umbrellas;  etc.]</EngDesc>
     <Chapter>Nouns, people and particles</Chapter>
@@ -1189,18 +1180,293 @@
     <ThaiFonet>saai</ThaiFonet>
     <EngWords>
       <string>wire</string>
-      <string> line</string>
-      <string> rope</string>
-      <string> string</string>
-      <string> strap</string>
-      <string> connection</string>
-      <string> tie</string>
-      <string> line</string>
-      <string> lineage</string>
-      <string> contact (metiphorically)</string>
+      <string>  line</string>
+      <string>  rope</string>
+      <string>  string</string>
+      <string>  strap</string>
+      <string>  connection</string>
+      <string>  tie</string>
+      <string>  line</string>
+      <string>  lineage</string>
+      <string>  contact (metiphorically)</string>
+      <string />
+    </EngWords>
+    <EngDesc>[numerical classifier for roads, strings, wires, rivers, and other stringy things]; method; route; way; [of air] gust; [of rain] falling streaks; [of lightning] bolts; [of water in a stream] current.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>อัน</ThaiScript>
+    <ThaiFonet>an</ThaiFonet>
+    <EngWords>
+      <string>item</string>
+      <string> a small thing</string>
+      <string> piece</string>
+    </EngWords>
+    <EngDesc>[numerical classifier for small things]</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>การ</ThaiScript>
+    <ThaiFonet>gaan</ThaiFonet>
+    <EngWords>
+      <string>work</string>
+      <string> job</string>
+      <string> task</string>
+      <string> business</string>
+      <string> duty</string>
+    </EngWords>
+    <EngDesc>[placed before a verb or noun to create a noun which indicates a general activity, process, or state] the process of..., the activity of..., an enactment of..., the state of...</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ความ</ThaiScript>
+    <ThaiFonet>khwaam</ThaiFonet>
+    <EngWords>
+      <string>the affair</string>
+      <string>  subject</string>
+      <string>  substance</string>
+      <string>  or feeling of</string>
+      <string>  the topic or essential matter of</string>
+      <string>  facts</string>
+    </EngWords>
+    <EngDesc>[a prefix which converts an adjective or verb into a noun]</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>การเริ่ม</ThaiScript>
+    <ThaiFonet>gaan reerm</ThaiFonet>
+    <EngWords>
+      <string>to begin</string>
+      <string> to start</string>
+      <string> commence</string>
+    </EngWords>
+    <EngDesc>[placed before a verb or noun to create a noun which indicates a general activity, process, or state] the process of..., the activity of..., an enactment of..., the state of...</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ความคิด</ThaiScript>
+    <ThaiFonet>khwaam kid</ThaiFonet>
+    <EngWords>
+      <string>an idea</string>
+      <string>  thought</string>
+      <string>  notion</string>
+    </EngWords>
+    <EngDesc>[a prefix which converts an adjective or verb into a noun]</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ผม</ThaiScript>
+    <ThaiFonet>pom</ThaiFonet>
+    <EngWords>
+      <string>[used by male speakers] I</string>
+      <string> me</string>
+      <string> my</string>
+      <string> hair [of the head]</string>
+    </EngWords>
+    <EngDesc>[a prefix which conveys the gender of the speaker] Men says pom.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>พี่</ThaiScript>
+    <ThaiFonet>pee</ThaiFonet>
+    <EngWords>
+      <string>older sibling</string>
+      <string> older siblings</string>
       <string> </string>
     </EngWords>
-    <EngDesc>[numerical classifier for roads, strings, wires, rivers, and other stringy things]; method; route; way; [of air] gust; [of rain] falling streaks; [of lightning] bolts; [of water in a stream] current</EngDesc>
+    <EngDesc>[a polite pronoun for addressing an older sibling (including as oneself)] him; her; you; me</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>น้อง</ThaiScript>
+    <ThaiFonet>naawng</ThaiFonet>
+    <EngWords>
+      <string>younger sibling</string>
+      <string>  younger friend</string>
+      <string>  younger colleague</string>
+    </EngWords>
+    <EngDesc>[noun of direct address to a younger person, e.g., a waitress] Miss. When unsure of the other persons age it is best to use (พี่) pee instead of (น้อง) naawng.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ชาย</ThaiScript>
+    <ThaiFonet>chaai</ThaiFonet>
+    <EngWords>
+      <string>man</string>
+      <string> men</string>
+    </EngWords>
+    <EngDesc>This is how you adress another man or male.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สาว</ThaiScript>
+    <ThaiFonet>saao</ThaiFonet>
+    <EngWords>
+      <string>young woman</string>
+      <string> girl</string>
+      <string> unmarried woman</string>
+      <string> maiden</string>
+      <string> damsel</string>
+      <string> lass</string>
+      <string> lassie (informal)</string>
+      <string> maid</string>
+      <string> virgin</string>
+      <string> wench</string>
+    </EngWords>
+    <EngDesc>This is how you adress another woman or female.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ปู่</ThaiScript>
+    <ThaiFonet>bpuu</ThaiFonet>
+    <EngWords>
+      <string>grandfather</string>
+      <string> paternal grandfather</string>
+      <string> father's father</string>
+      <string> grandpa</string>
+    </EngWords>
+    <EngDesc>Grandfather of the fathers side.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตา</ThaiScript>
+    <ThaiFonet>dtaa</ThaiFonet>
+    <EngWords>
+      <string>maternal grandfather</string>
+    </EngWords>
+    <EngDesc>Grandfather of the mothers side.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ย่า</ThaiScript>
+    <ThaiFonet>dtaa</ThaiFonet>
+    <EngWords>
+      <string>paternal grandmother</string>
+    </EngWords>
+    <EngDesc>Grandmother of the fathers side.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ยาย</ThaiScript>
+    <ThaiFonet>yaai</ThaiFonet>
+    <EngWords>
+      <string>maternal grandmother</string>
+    </EngWords>
+    <EngDesc>Grandmother of the mothers side.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ลุง</ThaiScript>
+    <ThaiFonet>loong</ThaiFonet>
+    <EngWords>
+      <string>uncle</string>
+      <string>  elder uncle</string>
+      <string>  elder brother of a parent</string>
+      <string>  great uncle</string>
+    </EngWords>
+    <EngDesc>Elder  brother of either mother or father.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ป้า</ThaiScript>
+    <ThaiFonet>bpaa</ThaiFonet>
+    <EngWords>
+      <string>aunt</string>
+      <string>  elder sister of parents</string>
+    </EngWords>
+    <EngDesc>Elder  Sister of either mother or father.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>อา</ThaiScript>
+    <ThaiFonet>aa</ThaiFonet>
+    <EngWords>
+      <string>aunt</string>
+      <string> younger sister of father</string>
+      <string> uncle</string>
+      <string> younger brother of father</string>
+    </EngWords>
+    <EngDesc>younger sibling of father.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>น้า</ThaiScript>
+    <ThaiFonet>naa</ThaiFonet>
+    <EngWords>
+      <string>aunt</string>
+      <string> younger sister of mother</string>
+      <string> uncle</string>
+      <string> younger brother of mother</string>
+    </EngWords>
+    <EngDesc>younger sibling of mother.</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>คะ</ThaiScript>
+    <ThaiFonet>ka</ThaiFonet>
+    <EngWords>
+      <string>Indicates polite question</string>
+    </EngWords>
+    <EngDesc>[word added by a female speaker to the end of every question to convey politeness]</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ซิ</ThaiScript>
+    <ThaiFonet>si</ThaiFonet>
+    <EngWords>
+      <string>Indicates urgency</string>
+    </EngWords>
+    <EngDesc>[a particle which conveys urgency, adding an imperative quality] (this is the way it is or must be)</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>นะ</ThaiScript>
+    <ThaiFonet>na</ThaiFonet>
+    <EngWords>
+      <string>Indicates mild question</string>
+    </EngWords>
+    <EngDesc>[word added to the end of a sentence to soften it, make it polite, indicate pleading, disagreement, ordering, surprise or emphasis]</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>มั้ง</ThaiScript>
+    <ThaiFonet>mang</ThaiFonet>
+    <EngWords>
+      <string>"Could be"</string>
+      <string> "maybe so"</string>
+      <string> "I guess so"</string>
+      <string> "that’s just possible"</string>
+    </EngWords>
+    <EngDesc>[particle indicating perhaps; that could be; possibly that just mentioned see]</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ละ</ThaiScript>
+    <ThaiFonet>la</ThaiFonet>
+    <EngWords>
+      <string>Indicates a simple statement</string>
+    </EngWords>
+    <EngDesc>[a particle used at the end of a statement or question to add an imperative quality]</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ล่ะ</ThaiScript>
+    <ThaiFonet>la</ThaiFonet>
+    <EngWords>
+      <string>at the end of a question or command</string>
+    </EngWords>
+    <EngDesc>[informal, spoken pronunciation of ละ a particle used at the end of a statement or question to add an imperative quality]</EngDesc>
+    <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หรอก</ThaiScript>
+    <ThaiFonet>raawk</ThaiFonet>
+    <EngWords>
+      <string>surely (not)</string>
+      <string> of course (not)</string>
+      <string />
+    </EngWords>
+    <EngDesc>[word often used with statements of contradiction or negation]</EngDesc>
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
 </ArrayOfWord>

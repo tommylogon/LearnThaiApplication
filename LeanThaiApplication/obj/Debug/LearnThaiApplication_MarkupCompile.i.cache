@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\
+C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\
 LearnThaiApplication
 none
 false
 DEBUG;TRACE
-C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\App.xaml
-6666780440
+C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\App.xaml
+2161737354
 
-211975378422
+17-609634471
 131569487696
-ContentManagement.xaml;MainWindow.xaml;Menu.xaml;Language.xaml;Settings.xaml;Symbols.xaml;
+MainWindow.xaml;Menu.xaml;
 
-True
+False
 
