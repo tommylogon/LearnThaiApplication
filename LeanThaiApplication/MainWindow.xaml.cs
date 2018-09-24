@@ -1,22 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.IO;
-using System.Diagnostics;
-using System.Xml.Serialization;
-using System.Reflection;
-using Path = System.IO.Path;
 
 namespace LearnThaiApplication
 {
@@ -35,6 +22,8 @@ namespace LearnThaiApplication
         static List<Word> DisplayList = new List<Word>();
        
         int i = 0;
+
+        int correctPoints=0;
 
         string languageFilePath = "C:/Users/" + Environment.UserName + "/source/repos/LearnThaiApplication/Language_Files/";
 
@@ -546,22 +535,22 @@ namespace LearnThaiApplication
         {
 
             SetPropertyOfGenericObject(list[i]);
+            
+            
+            SelectedPropertyToValidate = SelectPropertyToValidate();
 
-
-            Object selectedProperty = SelectPropertyToValidate();
-
-            if(selectedProperty is List<String>)
+            if(SelectedPropertyToValidate is List<String>)
             {
                 List<String> answears = textboxAnswear.Text.Split(';', ',').ToList<String>();
 
-                foreach (String correctWord in selectedProperty as List<String>)
+                foreach (String correctWord in SelectedPropertyToValidate as List<String>)
                 {
                     foreach(String answear in answears)
                     {
                         if(answear == correctWord)
                         {
                             textBlockStatus.Text = "Correct!";
-                            
+                            correctPoints += 1;
                         }
                         else
                         {
@@ -571,9 +560,10 @@ namespace LearnThaiApplication
                 }
                 
             }
-            else if ((String)selectedProperty == textboxAnswear.Text)
+            else if ((String)SelectedPropertyToValidate == textboxAnswear.Text)
             {
                 textBlockStatus.Text = "Correct!";
+                correctPoints += 1;
             }
             else
             {
@@ -848,10 +838,14 @@ namespace LearnThaiApplication
 
             
         }
-
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public Object SelectPropertyToValidate()
         {
-            if(whatToTrain == "ThaiScript")
+            if (whatToTrain == "ThaiScript")
             {
                 return propertyScript;
             }
@@ -1161,264 +1155,41 @@ namespace LearnThaiApplication
             
         }
 
-        private void rb_TrainScript_Page2_Checked(object sender, RoutedEventArgs e)
+        private void rb_TrainScript_Checked(object sender, RoutedEventArgs e)
         {
-            whatToTrain = "ThaiHelpWord";
+            whatToTrain = "ThaiScript";
         }
 
-        private void rb_TrainEngWords_Page2_Checked(object sender, RoutedEventArgs e)
+        private void rb_TrainEngWords_Checked(object sender, RoutedEventArgs e)
         {
             whatToTrain = "EngWords";
         }
 
-        private void rb_TrainFonet_Page2_Checked(object sender, RoutedEventArgs e)
+        private void rb_TrainFonet_Checked(object sender, RoutedEventArgs e)
         {
             whatToTrain = "ThaiFonet";
         }
 
+        private void rb_TrainHelpWord_Checked(object sender, RoutedEventArgs e)
+        {
+            whatToTrain = "ThaiHelpWord";
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
         #endregion
 
-        public abstract class ThaiToEnglish
-        {
-            string thaiScript;
-            string thaiFonet;
-            List<String> engWords;
-            string engWord;
-            string engDesc;
 
-
-            public string ThaiScript
-            {
-                get { return thaiScript; }
-                set { thaiScript = value; }
-            }
-            public string ThaiFonet
-            {
-                get { return thaiFonet; }
-                set { thaiFonet = value; }
-            }
-            public List<String> EngWords
-            {
-                get { return engWords; }
-                set { engWords = value; }
-            }
-            public string EngWord
-            {
-                get { return engWord; }
-                set { engWord = value; }
-            }
-
-            public string EngDesc
-            {
-                get { return engDesc; }
-                set { engDesc = value; }
-            }
-        }
-
-        public class Word : ThaiToEnglish
-        {
-            string engDesc;
-            string chapter;
-   
-            public Word()
-            {
-
-            }
-            public Word(string thaiWord, string thaiFonet, List<String> engWords, string engDesc, string Chapter)
-            {
-                this.ThaiScript = thaiWord;
-                this.ThaiFonet = thaiFonet;
-                this.EngWords = engWords;
-
-                this.engDesc = engDesc;
-                this.chapter = Chapter;
-
-            }
-            public Word(string thaiWord, string thaiFonet, string engword, string engDesc, string Chapter)
-            {
-                this.ThaiScript = thaiWord;
-                this.ThaiFonet = thaiFonet;
-                this.EngWords = engword.Split(';',',').ToList<String>();
-                this.engDesc = engDesc;
-                this.chapter = Chapter;
-
-            }
-            
-            public string Chapter
-            {
-                get { return chapter; }
-                set { chapter = value; }
-            }
-        }
-
-        public abstract class ThaiSymbol : ThaiToEnglish
-        {
-            string thaiHelpWord;
-            
-            public string ThaiHelpWord
-            {
-                get { return thaiHelpWord; }
-                set { thaiHelpWord = value; }
-
-            }
-        }
-
-        public class Consonant : ThaiSymbol
-        {
-            public Consonant()
-            {
-
-            }
-            public Consonant(string thaiSymbol, string thaiFonetical, string thaiHelpWord, List<String> engWords)
-            {
-                this.ThaiScript = thaiSymbol;
-                this.ThaiHelpWord = thaiHelpWord;
-                this.ThaiFonet = thaiFonetical;
-                this.EngWords = engWords;
-
-            }
-            public Consonant(string thaiSymbol, string thaiFonetical, string thaiHelpWord, string engWord, string englishDescription)
-            {
-                this.ThaiScript = thaiSymbol;
-                this.ThaiHelpWord = thaiHelpWord;
-                this.ThaiFonet = thaiFonetical;
-                this.EngWord = engWord;
-                this.EngDesc = englishDescription;
-
-            }
-            public Consonant(string thaiSymbol, string thaiFonetical, string thaiHelpWord, List<String> engWords, string englishDescription)
-            {
-                this.ThaiScript = thaiSymbol;
-                this.ThaiHelpWord = thaiHelpWord;
-                this.ThaiFonet = thaiFonetical;
-                this.EngWords = engWords;
-                this.EngDesc = englishDescription;
-
-            }
-        }
-
-        public class Vowel : ThaiSymbol
-        {
-
-            public Vowel()
-            {
-
-            }
-            public Vowel(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords)
-            {
-                this.ThaiScript = thaiSymbol;
-                this.ThaiHelpWord = thaiHelpWord;
-                this.ThaiFonet = thaiFonet;
-                this.EngWords = engWords;
-            }
-            public Vowel(string thaiSymbol, string thaiFonet, string thaiHelpWord, string engWord, string englishDescription)
-            {
-                this.ThaiScript = thaiSymbol;
-                this.ThaiHelpWord = thaiHelpWord;
-                this.ThaiFonet = thaiFonet;
-                this.EngWord = engWord;
-                this.EngDesc = englishDescription;
-            }
-            public Vowel(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords, string englishDescription)
-            {
-                this.ThaiScript = thaiSymbol;
-                this.ThaiHelpWord = thaiHelpWord;
-                this.ThaiFonet = thaiFonet;
-                this.EngWords = engWords;
-                this.EngDesc = englishDescription;
-            }
-
-
-        }
-        public class ThaiNumber : ThaiSymbol
-        {
-            public ThaiNumber()
-            {
-
-            }
-            public ThaiNumber(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords)
-            {
-                this.ThaiScript = thaiSymbol;
-                this.ThaiHelpWord = thaiHelpWord;
-                this.ThaiFonet = thaiFonet;
-                this.EngWords = engWords;
-            }
-            public ThaiNumber(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords, string englishDescription)
-            {
-                this.ThaiScript = thaiSymbol;
-                this.ThaiHelpWord = thaiHelpWord;
-                this.ThaiFonet = thaiFonet;
-                this.EngWords = engWords;
-                this.EngDesc = englishDescription;
-            }
-            public ThaiNumber(string thaiSymbol, string thaiFonet, string thaiHelpWord, string engWord, string englishDescription)
-            {
-                this.ThaiScript = thaiSymbol;
-                this.ThaiHelpWord = thaiHelpWord;
-                this.ThaiFonet = thaiFonet;
-                this.EngWord = engWord;
-                this.EngDesc = englishDescription;
-            }
-        }
-
-        //http://blog.danskingdom.com/saving-and-loading-a-c-objects-data-to-an-xml-json-or-binary-file/
-
-        public static class XmlSerialization
-        {
-            /// <summary>
-            /// Writes the given object instance to an XML file.
-            /// <para>Only Public properties and variables will be written to the file. These can be any type though, even other classes.</para>
-            /// <para>If there are public properties/variables that you do not want written to the file, decorate them with the [XmlIgnore] attribute.</para>
-            /// <para>Object type must have a parameterless constructor.</para>
-            /// </summary>
-            /// <typeparam name="T">The type of object being written to the file.</typeparam>
-            /// <param name="filePath">The file path to write the object instance to.</param>
-            /// <param name="objectToWrite">The object instance to write to the file.</param>
-            /// <param name="append">If false the file will be overwritten if it already exists. If true the contents will be appended to the file.</param>
-            public static void WriteToXmlFile<T>(string filePath, T objectToWrite, bool append = false) where T : new()
-            {
-                TextWriter writer = null;
-                string message = "We have saved to the location: " + filePath;
-
-                try
-                {
-                    var serializer = new XmlSerializer(typeof(T));
-                    writer = new StreamWriter(filePath, append);
-                    serializer.Serialize(writer, objectToWrite);
-                }
-                finally
-                {
-                    if (writer != null)
-                        writer.Close();
-                }
-                MessageBox.Show(message, "Save file Location");
-            }
-
-            /// <summary>
-            /// Reads an object instance from an XML file.
-            /// <para>Object type must have a parameterless constructor.</para>
-            /// </summary>
-            /// <typeparam name="T">The type of object to read from the file.</typeparam>
-            /// <param name="filePath">The file path to read the object instance from.</param>
-            /// <returns>Returns a new instance of the object read from the XML file.</returns>
-            public static T ReadFromXmlFile<T>(string filePath) where T : new()
-            {
-                TextReader reader = null;
-                try
-                {
-                    var serializer = new XmlSerializer(typeof(T));
-                    reader = new StreamReader(filePath);
-                    return (T)serializer.Deserialize(reader);
-                }
-                finally
-                {
-                    if (reader != null)
-                        reader.Close();
-                }
-            }
-        }
-
-       
     }
 }
 

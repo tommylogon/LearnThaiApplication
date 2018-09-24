@@ -42,6 +42,10 @@
                     </ComboBox>
                     <Label x:Name="lbl_Chapter_Page1" Content="Chapter:" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="72"/>
                     <Label x:Name="lbl_ChapterCount_Page1" Content="Words in chapter: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,116,0,0"/>
+                    <Label x:Name="lbl_TrainWhat_Page2_Copy" Content="What to train" HorizontalAlignment="Left" Margin="11,275,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="rb_TrainScript_Page1" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,306,0,0" Checked="rb_TrainScript_Checked" GroupName="TrainWhat"/>
+                    <RadioButton x:Name="rb_TrainEngWords_Page1" Content="English meanings" HorizontalAlignment="Left" Margin="11,326,0,0" VerticalAlignment="Top" Checked="rb_TrainEngWords_Checked" GroupName="TrainWhat"/>
+                    <RadioButton x:Name="rb_TrainFonet_Page1" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,346,0,0" VerticalAlignment="Top" Checked="rb_TrainFonet_Checked" GroupName="TrainWhat"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Train Symbols">
@@ -62,9 +66,9 @@
                     <RadioButton x:Name="rb_Closing_Page2" Content="Closing sounds" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top"/>
                     <RadioButton x:Name="rb_NumberSymbol_Page2" Content="Number symbols" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" Checked="rb_NumberSymbol_Page2_Checked"/>
                     <Label x:Name="lbl_TrainWhat_Page2" Content="What to train" HorizontalAlignment="Left" Margin="11,248,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="rb_TrainScript_Page2" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,279,0,0" Checked="rb_TrainScript_Page2_Checked" GroupName="TrainWhat"/>
-                    <RadioButton x:Name="rb_TrainEngWords_Page2" Content="English meanings" HorizontalAlignment="Left" Margin="11,299,0,0" VerticalAlignment="Top" Checked="rb_TrainEngWords_Page2_Checked" GroupName="TrainWhat"/>
-                    <RadioButton x:Name="rb_TrainFonet_Page2" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,319,0,0" VerticalAlignment="Top" Checked="rb_TrainFonet_Page2_Checked" GroupName="TrainWhat"/>
+                    <RadioButton x:Name="rb_TrainScript_Page2" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,279,0,0" Checked="rb_TrainHelpWord_Checked" GroupName="TrainWhat"/>
+                    <RadioButton x:Name="rb_TrainEngWords_Page2" Content="English meanings" HorizontalAlignment="Left" Margin="11,299,0,0" VerticalAlignment="Top" Checked="rb_TrainEngWords_Checked" GroupName="TrainWhat"/>
+                    <RadioButton x:Name="rb_TrainFonet_Page2" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,319,0,0" VerticalAlignment="Top" Checked="rb_TrainFonet_Checked" GroupName="TrainWhat"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Add new content">
