@@ -1,0 +1,34 @@
+﻿<Page x:Class="LearnThaiApplication.Symbols"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LearnThaiApplication"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Symbols">
+
+    <Viewbox>
+        <Grid Background="#FF6DA5C4">
+            <Label x:Name="lbl_Counter_Page2" Content="123" HorizontalAlignment="Left" Margin="30,36,0,0" VerticalAlignment="Top" Height="25" Width="31"/>
+            <TextBox x:Name="txt_Answear_Page2" HorizontalAlignment="Left" Height="28" Margin="329,133,-126,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
+            <Button x:Name="btn_validate_Page2" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="328.609,165.563,-126.197,-11.277" VerticalAlignment="Top" Width="89.588" Click="btn_validate_Page2_Click"/>
+            <Button x:Name="btn_Next_Word_Page2" Content="Next" HorizontalAlignment="Left" Height="24" Margin="423,166,-166,-11" VerticalAlignment="Top" Width="35" Click="btn_Next_Word_Click"/>
+            <Button x:Name="btn_Prev_Word_Page2" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="289,166,-32,-11" VerticalAlignment="Top" Width="35" Click="btn_Prev_Word_Click"/>
+            <RadioButton x:Name="rb_Conson_Page2"  Content="Consonants" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Checked="rb_Conson_Checked"/>
+            <RadioButton x:Name="rb_Vowel_Page2"  Content="Vowels" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Checked="rb_Vowel_Checked"/>
+            <TextBlock x:Name="txb_Information_Page2" HorizontalAlignment="Left" Margin="636,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="229" Width="268" FontSize="16"><Run Text="Here you can select between consonants or vowels."/><Run Text=" "/><LineBreak/><Run Text="You can also learn and practise prenounciations and numbers."/></TextBlock>
+            <CheckBox x:Name="ckb_Helpbox_Page2" Content="Description" HorizontalAlignment="Left" Margin="178,218,0,0" VerticalAlignment="Top" />
+            <TextBlock x:Name="txb_Description_page2" HorizontalAlignment="Left" Margin="178,248,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="182" Width="529" FontSize="24"/>
+            <CheckBox x:Name="ckb_Randomized_Page2" Content="Randomize words" HorizontalAlignment="Left" Margin="178,198,0,0" VerticalAlignment="Top" />
+            <TextBlock x:Name="txb_ThaiScript_Page2" HorizontalAlignment="Left" Margin="278,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48"><Run Text="TextBlock"/></TextBlock>
+            <TextBlock x:Name="txb_Status_Page2" HorizontalAlignment="Left" Margin="329,205,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="110" FontSize="24"/>
+            <RadioButton x:Name="rb_Closing_Page2" Content="Closing sounds" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rb_NumberSymbol_Page2" Content="Number symbols" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" Checked="rb_NumberSymbol_Page2_Checked"/>
+            <Label x:Name="lbl_TrainWhat_Page2" Content="What to train" HorizontalAlignment="Left" Margin="11,248,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rb_TrainScript_Page2" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,279,0,0" Checked="rb_TrainHelpWord_Checked" GroupName="TrainWhat"/>
+            <RadioButton x:Name="rb_TrainEngWords_Page2" Content="English meanings" HorizontalAlignment="Left" Margin="11,299,0,0" VerticalAlignment="Top" Checked="rb_TrainEngWords_Checked" GroupName="TrainWhat"/>
+            <RadioButton x:Name="rb_TrainFonet_Page2" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,319,0,0" VerticalAlignment="Top" Checked="rb_TrainFonet_Checked" GroupName="TrainWhat"/>
+        </Grid>
+    </Viewbox>
+</Page>

@@ -1,20 +1,20 @@
-﻿LeanThaiApplication
+﻿LearnThaiApplication
 
 
 winexe
 C#
 .cs
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\
-LeanThaiApplication
+LearnThaiApplication
 none
 false
 DEBUG;TRACE
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\App.xaml
-11151548125
+6666780440
 
-152016538181
+211975378422
 131569487696
-MainWindow.xaml;
+ContentManagement.xaml;MainWindow.xaml;Menu.xaml;Language.xaml;Settings.xaml;Symbols.xaml;
 
-False
+True
 
