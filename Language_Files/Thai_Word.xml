@@ -1272,7 +1272,7 @@
     <EngWords>
       <string>older sibling</string>
       <string> older siblings</string>
-      <string> </string>
+      <string />
     </EngWords>
     <EngDesc>[a polite pronoun for addressing an older sibling (including as oneself)] him; her; you; me</EngDesc>
     <Chapter>Nouns, people and particles</Chapter>
@@ -1468,5 +1468,204 @@
     </EngWords>
     <EngDesc>[word often used with statements of contradiction or negation]</EngDesc>
     <Chapter>Nouns, people and particles</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หนึ่ง</ThaiScript>
+    <ThaiFonet>neung</ThaiFonet>
+    <EngWords>
+      <string>One</string>
+    </EngWords>
+    <EngDesc>the number or quantity one</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สอง</ThaiScript>
+    <ThaiFonet>saawng</ThaiFonet>
+    <EngWords>
+      <string>Two</string>
+      <string> 2</string>
+    </EngWords>
+    <EngDesc>the number or quantity two</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สาม</ThaiScript>
+    <ThaiFonet>saam</ThaiFonet>
+    <EngWords>
+      <string>Three</string>
+      <string> 3</string>
+    </EngWords>
+    <EngDesc>the number or quantity three</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สี่</ThaiScript>
+    <ThaiFonet>see</ThaiFonet>
+    <EngWords>
+      <string>Four</string>
+      <string> 4</string>
+    </EngWords>
+    <EngDesc>the number or quantity four.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ห้า</ThaiScript>
+    <ThaiFonet>haa</ThaiFonet>
+    <EngWords>
+      <string>Five</string>
+      <string> 5</string>
+    </EngWords>
+    <EngDesc>the number or quantity five.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หก</ThaiScript>
+    <ThaiFonet>hohk</ThaiFonet>
+    <EngWords>
+      <string>Six</string>
+      <string>  6</string>
+    </EngWords>
+    <EngDesc>the number or quantity six.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เจ็ด</ThaiScript>
+    <ThaiFonet>jet</ThaiFonet>
+    <EngWords>
+      <string>Seven</string>
+      <string> 7</string>
+    </EngWords>
+    <EngDesc>the number or quantity seven.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>แปด</ThaiScript>
+    <ThaiFonet>bpaaet</ThaiFonet>
+    <EngWords>
+      <string>Eight</string>
+      <string>  8</string>
+    </EngWords>
+    <EngDesc>the number or quantity eight.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เก้า</ThaiScript>
+    <ThaiFonet>gaao</ThaiFonet>
+    <EngWords>
+      <string>Nine</string>
+      <string> 9</string>
+    </EngWords>
+    <EngDesc>the number or quantity nine.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบ</ThaiScript>
+    <ThaiFonet>sip</ThaiFonet>
+    <EngWords>
+      <string>Ten</string>
+      <string>  10</string>
+    </EngWords>
+    <EngDesc>the number or quantity ten.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบเอ็ด</ThaiScript>
+    <ThaiFonet>sip et</ThaiFonet>
+    <EngWords>
+      <string>Eleven</string>
+      <string>   11</string>
+    </EngWords>
+    <EngDesc>the number or quantity Eleven. the sound for one turns from neung to ed after 10 untill 100</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบสอง</ThaiScript>
+    <ThaiFonet>sip saawng</ThaiFonet>
+    <EngWords>
+      <string>Twelve</string>
+      <string>  12</string>
+    </EngWords>
+    <EngDesc>the number or quantity twelve</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบสาม</ThaiScript>
+    <ThaiFonet>sip saam</ThaiFonet>
+    <EngWords>
+      <string>Thirteen</string>
+      <string>  13</string>
+    </EngWords>
+    <EngDesc>the number or quantity thirteen</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบสี่</ThaiScript>
+    <ThaiFonet>sib see</ThaiFonet>
+    <EngWords>
+      <string>Fourteen</string>
+      <string>  14</string>
+    </EngWords>
+    <EngDesc>the number or quantity fourteen.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบห้า</ThaiScript>
+    <ThaiFonet>sib haa</ThaiFonet>
+    <EngWords>
+      <string>Fifteen</string>
+      <string>  15</string>
+    </EngWords>
+    <EngDesc>the number or quantity fifteen.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบหก</ThaiScript>
+    <ThaiFonet>sip hohk</ThaiFonet>
+    <EngWords>
+      <string>Sixteen</string>
+      <string>    16</string>
+    </EngWords>
+    <EngDesc>the number or quantity sixteen.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบเจ็ด</ThaiScript>
+    <ThaiFonet>sib jet</ThaiFonet>
+    <EngWords>
+      <string>Seventeen</string>
+      <string>   17</string>
+    </EngWords>
+    <EngDesc>the number or quantity seventeen.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบแปด</ThaiScript>
+    <ThaiFonet>sip bpaaet</ThaiFonet>
+    <EngWords>
+      <string>Eighteen</string>
+      <string>     18</string>
+    </EngWords>
+    <EngDesc>the number or quantity eighteen.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบเก้า</ThaiScript>
+    <ThaiFonet>sip gaao</ThaiFonet>
+    <EngWords>
+      <string>Nineteen</string>
+      <string>  19</string>
+    </EngWords>
+    <EngDesc>the number or quantity nineteen.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ยี่สิบ</ThaiScript>
+    <ThaiFonet>yee sip</ThaiFonet>
+    <EngWords>
+      <string>Twenty</string>
+      <string> 20</string>
+    </EngWords>
+    <EngDesc>the number or quantity twenty.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
   </Word>
 </ArrayOfWord>

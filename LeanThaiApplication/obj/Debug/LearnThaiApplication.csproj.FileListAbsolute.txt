@@ -34,11 +34,7 @@ C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Deb
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.Properties.Resources.resources
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.exe
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.pdb
-C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\ContentManagement.g.cs
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Menu.g.cs
-C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Language.g.cs
-C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Settings.g.cs
-C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Symbols.g.cs
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\Menu.g.cs
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication_MarkupCompile.cache
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication_MarkupCompile.lref
@@ -50,3 +46,6 @@ C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\L
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\Menu.baml
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.g.resources
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.Properties.Resources.resources
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Learn.g.cs
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Menu.baml
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Learn.baml
