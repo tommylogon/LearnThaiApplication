@@ -49,3 +49,5 @@ C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\L
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Learn.g.cs
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Menu.baml
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Learn.baml
+C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\Learn.g.cs
+C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\Learn.baml

@@ -331,16 +331,6 @@
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <ThaiScript>พัน</ThaiScript>
-    <ThaiFonet>pan</ThaiFonet>
-    <EngWords>
-      <string>thousand</string>
-    </EngWords>
-    <EngWord>thousand</EngWord>
-    <EngDesc>1000 is หนึ่งพัน (neung pan) and onwards untill 10 000.</EngDesc>
-    <Chapter>Numbers and Counting</Chapter>
-  </Word>
-  <Word>
     <ThaiScript>เช้า</ThaiScript>
     <ThaiFonet>chaao</ThaiFonet>
     <EngWords>
@@ -1663,9 +1653,682 @@
     <ThaiFonet>yee sip</ThaiFonet>
     <EngWords>
       <string>Twenty</string>
-      <string> 20</string>
+      <string>   20</string>
     </EngWords>
     <EngDesc>the number or quantity twenty.</EngDesc>
     <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ยี่สิบเอ็ด</ThaiScript>
+    <ThaiFonet>yee sip et</ThaiFonet>
+    <EngWords>
+      <string>twenty one</string>
+      <string> 21</string>
+    </EngWords>
+    <EngDesc>the number or quantity twenty one.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ยี่สิบสอง</ThaiScript>
+    <ThaiFonet>yee sip saawng</ThaiFonet>
+    <EngWords>
+      <string>twenty two</string>
+      <string>  22</string>
+    </EngWords>
+    <EngDesc>the number or quantity twenty two.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ยี่สิบสาม</ThaiScript>
+    <ThaiFonet>yee sip saam</ThaiFonet>
+    <EngWords>
+      <string>twenty three</string>
+      <string>   23</string>
+    </EngWords>
+    <EngDesc>the number or quantity twenty three.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สามสิบ</ThaiScript>
+    <ThaiFonet>saam sip</ThaiFonet>
+    <EngWords>
+      <string>Thirty</string>
+      <string> 30</string>
+    </EngWords>
+    <EngDesc>the number or quantity thirty.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สี่สิบ</ThaiScript>
+    <ThaiFonet>see sib </ThaiFonet>
+    <EngWords>
+      <string>Fourty</string>
+      <string>   40</string>
+    </EngWords>
+    <EngDesc>the number or quantity fourty.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ห้าสิบ</ThaiScript>
+    <ThaiFonet>haa sib</ThaiFonet>
+    <EngWords>
+      <string>Fifty</string>
+      <string> 50</string>
+    </EngWords>
+    <EngDesc>the number or quantity fifty.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกสิบ</ThaiScript>
+    <ThaiFonet>hohk sip</ThaiFonet>
+    <EngWords>
+      <string>Sixty</string>
+      <string> 60</string>
+    </EngWords>
+    <EngDesc>the number or quantity sixty.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เจ็ดสิบ</ThaiScript>
+    <ThaiFonet>jetsib </ThaiFonet>
+    <EngWords>
+      <string>Seventy</string>
+      <string>    70</string>
+    </EngWords>
+    <EngDesc>the number or quantity seventy.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>แปดสิบ</ThaiScript>
+    <ThaiFonet>bpaaet sip </ThaiFonet>
+    <EngWords>
+      <string>Eighty</string>
+      <string> 80</string>
+    </EngWords>
+    <EngDesc>the number or quantity eighty.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เก้าสิบ</ThaiScript>
+    <ThaiFonet>gaao sip</ThaiFonet>
+    <EngWords>
+      <string>Ninety</string>
+      <string> 90</string>
+    </EngWords>
+    <EngDesc>the number or quantity ninety.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ร้อย</ThaiScript>
+    <ThaiFonet>raawy</ThaiFonet>
+    <EngWords>
+      <string>hundred</string>
+      <string> the number one hundred</string>
+      <string> 100</string>
+    </EngWords>
+    <EngDesc>the number or quantity one hundred.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>(หนึ่ง) ร้อย</ThaiScript>
+    <ThaiFonet>neung raawy</ThaiFonet>
+    <EngWords>
+      <string>hundred</string>
+      <string>   the number one hundred</string>
+      <string>   100</string>
+    </EngWords>
+    <EngDesc>the number or quantity one hundred.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ร้อยหนึ่ง</ThaiScript>
+    <ThaiFonet>raawy neung </ThaiFonet>
+    <EngWords>
+      <string>one hundred one</string>
+      <string> 101</string>
+    </EngWords>
+    <EngDesc>the number or quantity one hundred one.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ร้อยสอง</ThaiScript>
+    <ThaiFonet>raawy saawng</ThaiFonet>
+    <EngWords>
+      <string>one hundred two</string>
+      <string>one hundred and two</string>
+      <string>  102</string>
+    </EngWords>
+    <EngDesc>the number or quantity one hundred and two.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ร้อยสาม</ThaiScript>
+    <ThaiFonet>raawy saam</ThaiFonet>
+    <EngWords>
+      <string>one hundred three</string>
+      <string> one hundred and three</string>
+      <string>   103</string>
+    </EngWords>
+    <EngDesc>the number or quantity one hundred and three.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สองร้อย</ThaiScript>
+    <ThaiFonet>saawng raawy </ThaiFonet>
+    <EngWords>
+      <string>two hundred</string>
+      <string> 200</string>
+    </EngWords>
+    <EngDesc>the number or quantity two hundred.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สามร้อย</ThaiScript>
+    <ThaiFonet>saam raawy </ThaiFonet>
+    <EngWords>
+      <string>Three hundred</string>
+      <string>  300</string>
+    </EngWords>
+    <EngDesc>the number or quantity three hundred.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>พัน</ThaiScript>
+    <ThaiFonet>phan</ThaiFonet>
+    <EngWords>
+      <string>thousand</string>
+      <string>  the number one thousand</string>
+      <string>  1 000</string>
+    </EngWords>
+    <EngWord>thousand</EngWord>
+    <EngDesc>the number or quantity one thousand.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หมื่น</ThaiScript>
+    <ThaiFonet>meuun</ThaiFonet>
+    <EngWords>
+      <string>ten thousand</string>
+      <string>10 000</string>
+    </EngWords>
+    <EngDesc>the number or quantity ten thousand.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>แสน</ThaiScript>
+    <ThaiFonet>sææn</ThaiFonet>
+    <EngWords>
+      <string>hundred thousand</string>
+      <string> 100 000</string>
+    </EngWords>
+    <EngDesc>the number or quantity of a hundred thousand.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ล้าน</ThaiScript>
+    <ThaiFonet>laan</ThaiFonet>
+    <EngWords>
+      <string>million</string>
+      <string> the number one million</string>
+      <string> 1 000 000</string>
+    </EngWords>
+    <EngDesc>the number or quantity of a million.</EngDesc>
+    <Chapter>Numbers and Counting</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกนาฬิกา</ThaiScript>
+    <ThaiFonet>hog naa li gaa</ThaiFonet>
+    <EngWords>
+      <string>06:00</string>
+      <string> 6 a.m</string>
+    </EngWords>
+    <EngDesc>This is how you say what the clock is, you add the number and the word for clock.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เจ็ดนาฬิกา</ThaiScript>
+    <ThaiFonet>hog naa li gaa</ThaiFonet>
+    <EngWords>
+      <string>07:00</string>
+      <string>  7 a.m</string>
+    </EngWords>
+    <EngDesc>This is how you say what the clock is, you add the number and the word for clock.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วัน</ThaiScript>
+    <ThaiFonet>wan</ThaiFonet>
+    <EngWords>
+      <string>Day</string>
+    </EngWords>
+    <EngDesc>This is how you say day. [วัน ๆ] from day to day; day in and day out; each and every day</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>คืน</ThaiScript>
+    <ThaiFonet>kheuun</ThaiFonet>
+    <EngWords>
+      <string>Night</string>
+      <string> give back (to)</string>
+      <string> to return (to)</string>
+    </EngWords>
+    <EngDesc>This is how you say night. Can also be used as a verb to say give back (to); to return (to)</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กลาง</ThaiScript>
+    <ThaiFonet>glaang</ThaiFonet>
+    <EngWords>
+      <string>the middle</string>
+      <string> the center</string>
+      <string>[is] central</string>
+      <string> median</string>
+      <string> medium</string>
+      <string> [adj.] middle</string>
+      <string> in the center (of...)</string>
+      <string> at the center (of...)</string>
+      <string> halfway through...</string>
+    </EngWords>
+    <EngDesc>กลาง means during or in the middle of.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กลางวัน</ThaiScript>
+    <ThaiFonet>glaang wan</ThaiFonet>
+    <EngWords>
+      <string>daytime</string>
+      <string> During the day</string>
+      <string> The middle of the day</string>
+    </EngWords>
+    <EngDesc>Often means during the day.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กลางคืน</ThaiScript>
+    <ThaiFonet>glaang kheuun</ThaiFonet>
+    <EngWords>
+      <string>At night</string>
+      <string> During the night</string>
+    </EngWords>
+    <EngDesc>Often means during the night;</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตอน</ThaiScript>
+    <ThaiFonet>dtaawn</ThaiFonet>
+    <EngWords>
+      <string>a period of time</string>
+      <string> during...</string>
+      <string> an interval</string>
+      <string> when...</string>
+    </EngWords>
+    <EngDesc>Means when or a periode of time.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ช่วง</ThaiScript>
+    <ThaiFonet>chuaang</ThaiFonet>
+    <EngWords>
+      <string>period of time</string>
+      <string> portion</string>
+      <string> section</string>
+      <string> part</string>
+      <string> interval</string>
+      <string> distance</string>
+      <string> span</string>
+    </EngWords>
+    <EngDesc>Means when or a periode of time. Also has other meanings.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตอนเช้า</ThaiScript>
+    <ThaiFonet>dtaawn chaao</ThaiFonet>
+    <EngWords>
+      <string>[general] morning</string>
+      <string> morning-time</string>
+    </EngWords>
+    <EngDesc>Most often refers to the morning.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ช่วงเช้า</ThaiScript>
+    <ThaiFonet>dtaawn chaao</ThaiFonet>
+    <EngWords>
+      <string>[general] morning</string>
+      <string>  morning-time</string>
+    </EngWords>
+    <EngDesc>Most often refers to the morning.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สาย</ThaiScript>
+    <ThaiFonet>saai</ThaiFonet>
+    <EngWords>
+      <string>[is] late</string>
+      <string> delayed</string>
+    </EngWords>
+    <EngDesc>late morning hours between 9:00 a.m. and noon</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>นานเท่าไหร่</ThaiScript>
+    <ThaiFonet>naan thao rai</ThaiFonet>
+    <EngWords>
+      <string>How long will it take?</string>
+    </EngWords>
+    <EngDesc>When you want to know how long something takes or how much time is necessary.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กี่โมง(แล้ว)</ThaiScript>
+    <ThaiFonet>gee mohng (lææo)</ThaiFonet>
+    <EngWords>
+      <string>What time( is it)?</string>
+    </EngWords>
+    <EngDesc>Asking what the time is currently, to property say it you should add lææo.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เมื่อไร</ThaiScript>
+    <ThaiFonet>meuua rai</ThaiFonet>
+    <EngWords>
+      <string>[used in a question] </string>
+    </EngWords>
+    <EngDesc>Used in a question when you want to ask when.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เมื่อกี้</ThaiScript>
+    <ThaiFonet>meuua gee</ThaiFonet>
+    <EngWords>
+      <string>just now</string>
+      <string> a moment ago</string>
+    </EngWords>
+    <EngDesc>Used when you want to say that something just happend.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ชั่ว</ThaiScript>
+    <ThaiFonet>chuaa</ThaiFonet>
+    <EngWords>
+      <string>during</string>
+      <string>  throughout</string>
+    </EngWords>
+    <EngDesc>Used when you want to indicate that something happens during a time.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>โมง</ThaiScript>
+    <ThaiFonet>mohng</ThaiFonet>
+    <EngWords>
+      <string>hour</string>
+      <string> o'clock</string>
+    </EngWords>
+    <EngDesc>Used to indicate time or clock.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ชั่วโมง</ThaiScript>
+    <ThaiFonet>chuaa mohng</ThaiFonet>
+    <EngWords>
+      <string>hour</string>
+    </EngWords>
+    <EngDesc>[in time; of time] an hour (when used as a quantity)</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>นาที</ThaiScript>
+    <ThaiFonet>naa thee</ThaiFonet>
+    <EngWords>
+      <string>a minute</string>
+    </EngWords>
+    <EngDesc>Used to say minut, and by adding a number in front we get things like 1 minute.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ครึ่ง</ThaiScript>
+    <ThaiFonet>khreung</ThaiFonet>
+    <EngWords>
+      <string>half</string>
+      <string> midway</string>
+      <string> mid</string>
+      <string> ½</string>
+    </EngWords>
+    <EngDesc>Used to indicate a half of something.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>อีก</ThaiScript>
+    <ThaiFonet>eeg</ThaiFonet>
+    <EngWords>
+      <string>again</string>
+      <string> after a time</string>
+      <string> still</string>
+      <string> another</string>
+      <string> additional</string>
+      <string> more</string>
+    </EngWords>
+    <EngDesc>Used to indicate another or an additional.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เที่ยงคืน</ThaiScript>
+    <ThaiFonet>thiiang kheuun</ThaiFonet>
+    <EngWords>
+      <string>00:00</string>
+      <string>  12 a.m.</string>
+    </EngWords>
+    <EngDesc>Todo.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตีหนึ่ง</ThaiScript>
+    <ThaiFonet>dtee neung</ThaiFonet>
+    <EngWords>
+      <string>01:00</string>
+      <string> 1 a.m.</string>
+    </EngWords>
+    <EngDesc>The first hours of a day are very easy to say.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตีสอง</ThaiScript>
+    <ThaiFonet>dtee saawng</ThaiFonet>
+    <EngWords>
+      <string>02:00</string>
+      <string>  2 a.m.</string>
+    </EngWords>
+    <EngDesc>The first hours of a day are very easy to say.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตีสาม</ThaiScript>
+    <ThaiFonet>dtee saam</ThaiFonet>
+    <EngWords>
+      <string>03:00</string>
+      <string>   3 a.m.</string>
+    </EngWords>
+    <EngDesc>The first hours of a day are very easy to say.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตีสี่</ThaiScript>
+    <ThaiFonet>dtee see</ThaiFonet>
+    <EngWords>
+      <string>04:00</string>
+      <string>    4 a.m.</string>
+    </EngWords>
+    <EngDesc>The first hours of a day are very easy to say.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตีห้า</ThaiScript>
+    <ThaiFonet>dtee haa</ThaiFonet>
+    <EngWords>
+      <string>05:00</string>
+      <string>     5 a.m.</string>
+    </EngWords>
+    <EngDesc>The first hours of a day are very easy to say.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงเช้า</ThaiScript>
+    <ThaiFonet>hohk mohng chaao</ThaiFonet>
+    <EngWords>
+      <string>06:00</string>
+      <string>  6 a.m.</string>
+    </EngWords>
+    <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เจ็ดโมงเช้า</ThaiScript>
+    <ThaiFonet>jet mohng chaao</ThaiFonet>
+    <EngWords>
+      <string>07:00</string>
+      <string> 7 a.m.</string>
+    </EngWords>
+    <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>แปดโมงเช้า</ThaiScript>
+    <ThaiFonet>bpaaet mohng chaao</ThaiFonet>
+    <EngWords>
+      <string>08:00</string>
+      <string>  8 a.m.</string>
+    </EngWords>
+    <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เก้าโมงเช้า</ThaiScript>
+    <ThaiFonet>gaao mohng chaao</ThaiFonet>
+    <EngWords>
+      <string>09:00</string>
+      <string>   9 a.m.</string>
+    </EngWords>
+    <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบโมงเช้า</ThaiScript>
+    <ThaiFonet>sip mohng chaao</ThaiFonet>
+    <EngWords>
+      <string>10:00</string>
+      <string> 10 a.m.</string>
+    </EngWords>
+    <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิบเอ็ดโมงเช้า</ThaiScript>
+    <ThaiFonet>sip ed mohng chaao</ThaiFonet>
+    <EngWords>
+      <string>11:00</string>
+      <string>11 a.m.</string>
+    </EngWords>
+    <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เที่ยงวัน</ThaiScript>
+    <ThaiFonet>thiiang wan</ThaiFonet>
+    <EngWords>
+      <string>12:00</string>
+      <string>  12 p.m.</string>
+    </EngWords>
+    <EngDesc>Todo.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>บ่ายโมง</ThaiScript>
+    <ThaiFonet>baai mohng</ThaiFonet>
+    <EngWords>
+      <string>13:00</string>
+      <string>   1 p.m.</string>
+    </EngWords>
+    <EngDesc>บ่าย means the afternoon hours between 1:00 p.m. and 4:00 p.m.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>บ่ายสองโมง</ThaiScript>
+    <ThaiFonet>baai saawng mohng</ThaiFonet>
+    <EngWords>
+      <string>14:00</string>
+      <string>    2 p.m.</string>
+    </EngWords>
+    <EngDesc>บ่าย means the afternoon hours between 1:00 p.m. and 4:00 p.m.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>บ่ายสามโมง</ThaiScript>
+    <ThaiFonet>baai saam mohng</ThaiFonet>
+    <EngWords>
+      <string>15:00</string>
+      <string> 3 p.m.</string>
+    </EngWords>
+    <EngDesc>บ่าย means the afternoon hours between 1:00 p.m. and 4:00 p.m.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สี่โมงเย็น</ThaiScript>
+    <ThaiFonet>see mohng yen</ThaiFonet>
+    <EngWords>
+      <string>16:00</string>
+      <string>  4 p.m.</string>
+    </EngWords>
+    <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ห้าโมงเย็น</ThaiScript>
+    <ThaiFonet>haa mohng yen</ThaiFonet>
+    <EngWords>
+      <string>17:00</string>
+      <string>   5 p.m.</string>
+    </EngWords>
+    <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงเย็น</ThaiScript>
+    <ThaiFonet>hok mohng yen</ThaiFonet>
+    <EngWords>
+      <string>18:00</string>
+      <string>    6 p.m.</string>
+    </EngWords>
+    <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เจ็ดโมงเย็น</ThaiScript>
+    <ThaiFonet>jet mohng yen</ThaiFonet>
+    <EngWords>
+      <string>19:00</string>
+      <string>7 p.m.</string>
+    </EngWords>
+    <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>แปดโมงเย็น</ThaiScript>
+    <ThaiFonet>bpaaet mohng yen</ThaiFonet>
+    <EngWords>
+      <string>20:00</string>
+      <string> 8 p.m.</string>
+    </EngWords>
+    <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เก้าโมงเย็น</ThaiScript>
+    <ThaiFonet>gaao mohng yen</ThaiFonet>
+    <EngWords>
+      <string>21:00</string>
+      <string>  9 p.m.</string>
+    </EngWords>
+    <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
   </Word>
 </ArrayOfWord>

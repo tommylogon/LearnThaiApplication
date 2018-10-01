@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Chapter.cs" />
     <Compile Include="Consonant.cs" />
     <Compile Include="Learn.xaml.cs">
       <DependentUpon>Learn.xaml</DependentUpon>

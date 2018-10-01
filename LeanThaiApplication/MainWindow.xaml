@@ -12,9 +12,9 @@
             <TabItem Header="Learn the language">
                 <Grid Background="#FF6DA5C4">
                     <Label x:Name="lbl_Counter_Page1" Content="123" HorizontalAlignment="Left" Margin="99,142,0,0" VerticalAlignment="Top" Height="26" Width="31" Foreground="#FFE6F8FF"/>
-                    <CheckBox x:Name="ckb_Helpbox_Page1" Content="Description" HorizontalAlignment="Left" Margin="16,274,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="ckb_Helpbox_Page1_Checked" Unchecked="ckb_Helpbox_Page1_Checked" />
+                    <CheckBox x:Name="ckb_DescBox_Page1" Content="Description" HorizontalAlignment="Left" Margin="16,274,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
                     <TextBlock x:Name="txb_Description_page1" HorizontalAlignment="Left" Margin="146,254,0,0" TextWrapping="Wrap" Text="This is some description" VerticalAlignment="Top" Height="213" Width="743" FontSize="24" Foreground="#FFE6F8FF"/>
-                    <CheckBox x:Name="ckb_Randomized_Page1" Content="Randomize words" HorizontalAlignment="Left" Margin="16,254,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_Randomized_Page1" Content="Randomize words" HorizontalAlignment="Left" Margin="16,254,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
                     <TextBlock x:Name="txb_ThaiScript_Page1" HorizontalAlignment="Left" Margin="275,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="48" Height="117" Width="627" Foreground="#FFE6F8FF"/>
                     <TextBox x:Name="txt_Answear_Page1" HorizontalAlignment="Left" Height="28" Margin="318,150,0,0" TextWrapping="Wrap" Text="ANSWEAR" VerticalAlignment="Top" Width="89"/>
                     <Button x:Name="btn_validate_Page1" Content="Check" HorizontalAlignment="Left" Height="24" Margin="318,183,0,0" VerticalAlignment="Top" Width="89" Click="Btn_validate_Page1_Click" />
@@ -60,9 +60,9 @@
                     <RadioButton x:Name="rb_Conson_Page2"  Content="Consonants" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Checked="Rb_Conson_Checked" Foreground="#FFE6F8FF"/>
                     <RadioButton x:Name="rb_Vowel_Page2"  Content="Vowels" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Checked="Rb_Vowel_Checked" Foreground="#FFE6F8FF"/>
                     <TextBlock x:Name="txb_Information_Page2" HorizontalAlignment="Left" Margin="636,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="229" Width="268" FontSize="16" Foreground="#FFE6F8FF"><Run Text="Here you can select between consonants or vowels."/><Run Text=" "/><LineBreak/><Run Text="You can also learn and practise prenounciations and numbers."/></TextBlock>
-                    <CheckBox x:Name="ckb_Helpbox_Page2" Content="Description" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="ckb_Helpbox_Page2_Checked" Unchecked="ckb_Helpbox_Page1_Checked" />
+                    <CheckBox x:Name="ckb_DescBox_Page2" Content="Description" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
                     <TextBlock x:Name="txb_Description_page2" HorizontalAlignment="Left" Margin="178,248,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="182" Width="529" FontSize="24" Foreground="#FFE6F8FF"/>
-                    <CheckBox x:Name="ckb_Randomized_Page2" Content="Randomize words" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_Randomized_Page2" Content="Randomize words" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
                     <TextBlock x:Name="txb_ThaiScript_Page2" HorizontalAlignment="Left" Margin="278,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="#FFE6F8FF"><Run Text="TextBlock"/></TextBlock>
                     <TextBlock x:Name="txb_Status_Page2" HorizontalAlignment="Left" Margin="329,205,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="110" FontSize="24" Foreground="#FFE6F8FF"/>
                     <RadioButton x:Name="rb_Closing_Page2" Content="Closing sounds" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
@@ -96,6 +96,11 @@
                     <Label x:Name="lbl_Chapter_Insert" Content="Chapter" HorizontalAlignment="Left" Margin="209,153,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
                     <RadioButton x:Name="rb_ThaiNumber_Page3" Content="Numbers (Symbols)" HorizontalAlignment="Left" Margin="531,124,0,0" VerticalAlignment="Top" Checked="Rb_ThaiNumber_Page3_Checked" Foreground="#FFE6F8FF"/>
                     <Button x:Name="btn_DeleteSelected" Content="Delete selected" HorizontalAlignment="Left" Margin="35,433,0,0" VerticalAlignment="Top" Width="93" Click="Btn_Delete_Click" Background="#FFEA7A7A" Height="33"/>
+                    <Button x:Name="Btn_ListMoveUp" Content="5" HorizontalAlignment="Left" Margin="203,259,0,0" VerticalAlignment="Top" Width="28" Height="24" FontFamily="Marlett" FontSize="20" Click="Btn_ListMoveUp_Click"/>
+                    <Button x:Name="Btn_ListMoveDown" Content="6" HorizontalAlignment="Left" Margin="203,286,0,0" VerticalAlignment="Top" Width="28" Height="24" FontFamily="Marlett" FontSize="20" Click="Btn_ListMoveDown_Click"/>
+                    <RadioButton x:Name="rb_UpdateWord" Content="Update" HorizontalAlignment="Left" Margin="681,198,0,0" VerticalAlignment="Top" GroupName="SubmitStyle" Checked="SubmitStyleChecked"/>
+                    <RadioButton x:Name="rb_SubmitNew" Content="Submit new" HorizontalAlignment="Left" Margin="681,179,0,0" VerticalAlignment="Top" GroupName="SubmitStyle" Checked="SubmitStyleChecked"/>
+                    <Label Content="Submit style:" HorizontalAlignment="Left" Margin="681,151,0,0" VerticalAlignment="Top" Width="82"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Settings">
@@ -105,6 +110,7 @@
                     <Button x:Name="btn_ChangeSave_Settings" Content="Change Path" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="98,87,0,0"/>
                     <TextBox x:Name="txt_NewSavePath_Settings" HorizontalAlignment="Left" Height="38" Margin="98,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="367"/>
                     <Label Content="New Save Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,41,0,0" Foreground="#FFE6F8FF"/>
+                    <CheckBox x:Name="ckb_LoopChapter" Content="Loop chapter" HorizontalAlignment="Left" Margin="88,164,0,0" VerticalAlignment="Top" IsChecked="True" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked"/>
                 </Grid>
             </TabItem>
         </TabControl>
