@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LearnThaiApplication
+﻿namespace LearnThaiApplication
 {
     public class Chapter
     {
-        private string chapterName;
-
         public Chapter()
         {
-
         }
 
         public Chapter(string chapterName)
         {
-            this.chapterName = chapterName;
+            this.ChapterName = chapterName;
         }
+
+        public string ChapterName { get; set; }
     }
 }

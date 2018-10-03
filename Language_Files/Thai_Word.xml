@@ -214,8 +214,8 @@
     <ThaiScript>ทาน</ThaiScript>
     <ThaiFonet>taan</ThaiFonet>
     <EngWords>
-      <string>eat</string>
-      <string> alms</string>
+      <string>Eat</string>
+      <string>Alms</string>
     </EngWords>
     <EngWord>eat, alms</EngWord>
     <EngDesc>This า is pronounced as a long A.</EngDesc>
@@ -226,12 +226,12 @@
     <ThaiFonet>tan</ThaiFonet>
     <EngWords>
       <string>You</string>
-      <string> she</string>
-      <string> he</string>
-      <string> Ms</string>
-      <string> Mrs</string>
-      <string> Mr</string>
-      <string> sir</string>
+      <string>she</string>
+      <string>he</string>
+      <string>Ms</string>
+      <string>Mrs</string>
+      <string>Mr</string>
+      <string>sir</string>
     </EngWords>
     <EngWord>You, she, he, Ms, Mrs, Mr, sir</EngWord>
     <EngDesc>This า is pronounced short, notice how similar it is to ทาน</EngDesc>
@@ -379,26 +379,6 @@
     <EngWord>After midnight</EngWord>
     <EngDesc>Morning hours between 1:00 a.m. and 5:00 a.m.</EngDesc>
     <Chapter>Telling time</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>กบ</ThaiScript>
-    <ThaiFonet>gob</ThaiFonet>
-    <EngWords>
-      <string>Frog</string>
-    </EngWords>
-    <EngWord>Frog</EngWord>
-    <EngDesc>Low tone and unwritten o.</EngDesc>
-    <Chapter>Easy words</Chapter>
-  </Word>
-  <Word>
-    <ThaiScript>สีแดง</ThaiScript>
-    <ThaiFonet>see dææng</ThaiFonet>
-    <EngWords>
-      <string>Red</string>
-    </EngWords>
-    <EngWord>Red</EngWord>
-    <EngDesc>สี (see) is the word for color. Traditionally wwomen used to dress in red on Sundays.</EngDesc>
-    <Chapter>Colors</Chapter>
   </Word>
   <Word>
     <ThaiScript>ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห</ThaiScript>
@@ -2116,9 +2096,9 @@
     <ThaiFonet>thiiang kheuun</ThaiFonet>
     <EngWords>
       <string>00:00</string>
-      <string>  12 a.m.</string>
+      <string>12 a.m.</string>
     </EngWords>
-    <EngDesc>Todo.</EngDesc>
+    <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
@@ -2235,8 +2215,9 @@
     <ThaiScript>เที่ยงวัน</ThaiScript>
     <ThaiFonet>thiiang wan</ThaiFonet>
     <EngWords>
-      <string>12:00</string>
-      <string>  12 p.m.</string>
+      <string>12:00 h</string>
+      <string>12 p.m.</string>
+      <string>noon</string>
     </EngWords>
     <EngDesc>Todo.</EngDesc>
     <Chapter>Telling time</Chapter>
@@ -2246,7 +2227,7 @@
     <ThaiFonet>baai mohng</ThaiFonet>
     <EngWords>
       <string>13:00</string>
-      <string>   1 p.m.</string>
+      <string>1 p.m.</string>
     </EngWords>
     <EngDesc>บ่าย means the afternoon hours between 1:00 p.m. and 4:00 p.m.</EngDesc>
     <Chapter>Telling time</Chapter>
@@ -2256,7 +2237,7 @@
     <ThaiFonet>baai saawng mohng</ThaiFonet>
     <EngWords>
       <string>14:00</string>
-      <string>    2 p.m.</string>
+      <string>2 p.m.</string>
     </EngWords>
     <EngDesc>บ่าย means the afternoon hours between 1:00 p.m. and 4:00 p.m.</EngDesc>
     <Chapter>Telling time</Chapter>
@@ -2266,7 +2247,7 @@
     <ThaiFonet>baai saam mohng</ThaiFonet>
     <EngWords>
       <string>15:00</string>
-      <string> 3 p.m.</string>
+      <string>3 p.m.</string>
     </EngWords>
     <EngDesc>บ่าย means the afternoon hours between 1:00 p.m. and 4:00 p.m.</EngDesc>
     <Chapter>Telling time</Chapter>
@@ -2276,7 +2257,7 @@
     <ThaiFonet>see mohng yen</ThaiFonet>
     <EngWords>
       <string>16:00</string>
-      <string>  4 p.m.</string>
+      <string>4 p.m.</string>
     </EngWords>
     <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
     <Chapter>Telling time</Chapter>
@@ -2286,7 +2267,7 @@
     <ThaiFonet>haa mohng yen</ThaiFonet>
     <EngWords>
       <string>17:00</string>
-      <string>   5 p.m.</string>
+      <string>5 p.m.</string>
     </EngWords>
     <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
     <Chapter>Telling time</Chapter>
@@ -2296,39 +2277,631 @@
     <ThaiFonet>hok mohng yen</ThaiFonet>
     <EngWords>
       <string>18:00</string>
-      <string>    6 p.m.</string>
+      <string>6 p.m.</string>
     </EngWords>
     <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <ThaiScript>เจ็ดโมงเย็น</ThaiScript>
-    <ThaiFonet>jet mohng yen</ThaiFonet>
+    <ThaiScript>ทุ่มหนึ่ง</ThaiScript>
+    <ThaiFonet>thoom neung</ThaiFonet>
     <EngWords>
       <string>19:00</string>
       <string>7 p.m.</string>
     </EngWords>
-    <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
+    <EngDesc>To say the time you say the word for evening and a number. the evening is often said as one in the evening.</EngDesc>
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <ThaiScript>แปดโมงเย็น</ThaiScript>
-    <ThaiFonet>bpaaet mohng yen</ThaiFonet>
+    <ThaiScript>สองทุ่ม</ThaiScript>
+    <ThaiFonet>saawng thoom</ThaiFonet>
     <EngWords>
       <string>20:00</string>
-      <string> 8 p.m.</string>
+      <string>8 p.m.</string>
     </EngWords>
-    <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
+    <EngDesc>To say the time you say the number and then the word for evening. This is said like two in the evening.</EngDesc>
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <ThaiScript>เก้าโมงเย็น</ThaiScript>
+    <ThaiScript>สามทุ่ม</ThaiScript>
     <ThaiFonet>gaao mohng yen</ThaiFonet>
     <EngWords>
       <string>21:00</string>
-      <string>  9 p.m.</string>
+      <string>9 p.m.</string>
+    </EngWords>
+    <EngDesc>To say the time you say the number and then the word for evening. This is said like three in the evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สี่ทุ่ม</ThaiScript>
+    <ThaiFonet>see thoom</ThaiFonet>
+    <EngWords>
+      <string>22:00</string>
+      <string>10 p.m.</string>
+    </EngWords>
+    <EngDesc>To say the time you say the number and then the word for evening. This is said like four in the evening.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เที่ยงคืน</ThaiScript>
+    <ThaiFonet>see thoom</ThaiFonet>
+    <EngWords>
+      <string>00:00 h</string>
+      <string>12 a.m</string>
+      <string>midnight</string>
     </EngWords>
     <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
     <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงห้านาที</ThaiScript>
+    <ThaiFonet>hohk mohng haa naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:05</string>
+      <string>6.05 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 5 minutes. the format therfor is number, word for hour, number, word ofr minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงสิบนาที</ThaiScript>
+    <ThaiFonet>hohk mohng haa naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:10</string>
+      <string>6.10 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 5 minutes. the format therfor is number, word for hour, number, word ofr minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงสิบห้านาที</ThaiScript>
+    <ThaiFonet>hohk mohng sip haa naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:15</string>
+      <string>6.15 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 5 minutes. the format therfor is number, word for hour, number, word ofr minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงยี่สิบนาที</ThaiScript>
+    <ThaiFonet>hohk mohng yee sip naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:20</string>
+      <string>6.20 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 5 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงยี่สิบห้านาที</ThaiScript>
+    <ThaiFonet>hohk mohng yee sip haa naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:25</string>
+      <string>6.25 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 5 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงสามสิบนาที</ThaiScript>
+    <ThaiFonet>hohk mohng saam sip naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:30</string>
+      <string>6.30 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงครึ่ง</ThaiScript>
+    <ThaiFonet>hohk mohng khreung</ThaiFonet>
+    <EngWords>
+      <string>06:30</string>
+      <string>6.30 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock and half. The format therfor is number, word for hour and the word for half.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงสามสิบห้านาที</ThaiScript>
+    <ThaiFonet>hohk mohng saam sip haa naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:35</string>
+      <string>6.35 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงสี่สิบนาที</ThaiScript>
+    <ThaiFonet>hohk mohng see sip naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:40</string>
+      <string>6.40 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงสี่สิบห้านาที</ThaiScript>
+    <ThaiFonet>hohk mohng see sip haa naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:45</string>
+      <string>6.45 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>อีกสิบห้านาทีเจ็ดโมง </ThaiScript>
+    <ThaiFonet>eek sip haa naa tee jed mohng</ThaiFonet>
+    <EngWords>
+      <string>06:45</string>
+      <string>6.45 a.m.</string>
+    </EngWords>
+    <EngDesc>An alternative way to say the time.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงห้าสิบนาที</ThaiScript>
+    <ThaiFonet>hohk mohng haa sip naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:50</string>
+      <string>6.50 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>หกโมงห้าสิบห้านาที</ThaiScript>
+    <ThaiFonet>hohk mohng haa sip haa naa tee</ThaiFonet>
+    <EngWords>
+      <string>06:55</string>
+      <string>6.55 a.m.</string>
+    </EngWords>
+    <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันจันทร์</ThaiScript>
+    <ThaiFonet>wan jan</ThaiFonet>
+    <EngWords>
+      <string>Monday</string>
+    </EngWords>
+    <EngDesc>The thai days are named after the planets, monday is named after the moon. Simply translated monday in thai is day of the moon.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันอังคาร</ThaiScript>
+    <ThaiFonet>wan ang khaan</ThaiFonet>
+    <EngWords>
+      <string>Tuesday</string>
+    </EngWords>
+    <EngDesc>The thai days are named after the planets, tuesday is named after mars. Simply translated tuesday in thai is day of mars.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันพุธ</ThaiScript>
+    <ThaiFonet>wan phoot</ThaiFonet>
+    <EngWords>
+      <string>Wednesday</string>
+    </EngWords>
+    <EngDesc>The thai days are named after the planets, tuesday is named after Mercury . Simply translated wednesday in thai is day of Mercury .</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันพฤหัสบดี</ThaiScript>
+    <ThaiFonet>wan phreu hat sa baaw dee</ThaiFonet>
+    <EngWords>
+      <string>Thursday</string>
+    </EngWords>
+    <EngDesc>The thai days are named after the planets, thursday is named after Jupiter . Simply translated thursday in thai is day of Jupiter.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันศุกร์</ThaiScript>
+    <ThaiFonet>wan sook</ThaiFonet>
+    <EngWords>
+      <string>Friday</string>
+    </EngWords>
+    <EngDesc>The thai days are named after the planets, friday is named after venus. Simply translated friday in thai is day of Venus.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันเสาร์</ThaiScript>
+    <ThaiFonet>wan sao</ThaiFonet>
+    <EngWords>
+      <string>Saturday</string>
+    </EngWords>
+    <EngDesc>The thai days are named after the planets, saturday is named after Saturn. Simply translated saturday in thai is day of Saturn.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันอาทิตย์</ThaiScript>
+    <ThaiFonet>wan aa thit</ThaiFonet>
+    <EngWords>
+      <string>Sunday</string>
+    </EngWords>
+    <EngDesc>The thai days are named after the planets, Sunday is named after the sun. simply translated sunday in thai is day of the sun.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันที่</ThaiScript>
+    <ThaiFonet>wan tee</ThaiFonet>
+    <EngWords>
+      <string>Date</string>
+    </EngWords>
+    <EngDesc>The word for a date on a calendar.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันนี้</ThaiScript>
+    <ThaiFonet>wan nee</ThaiFonet>
+    <EngWords>
+      <string>Today</string>
+    </EngWords>
+    <EngDesc>Simple translation means "day this".</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันทำงาน</ThaiScript>
+    <ThaiFonet>wan tham ngaan</ThaiFonet>
+    <EngWords>
+      <string>weekday</string>
+      <string>work day</string>
+    </EngWords>
+    <EngDesc>Simplye translated into day to to work.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันหยุด</ThaiScript>
+    <ThaiFonet>wan yoot</ThaiFonet>
+    <EngWords>
+      <string>holiday</string>
+      <string>vacation</string>
+      <string>weekend</string>
+    </EngWords>
+    <EngDesc>Simplye translated into day to to stop.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันพระ</ThaiScript>
+    <ThaiFonet>wan phra</ThaiFonet>
+    <EngWords>
+      <string>Buddhist Sabbath</string>
+    </EngWords>
+    <EngDesc>The Buddhist Sabbath generally occurs once a week in accordance with the phases of the moon in the lunar calendar.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>มกราคม</ThaiScript>
+    <ThaiFonet>mohk ga raa khohm</ThaiFonet>
+    <EngWords>
+      <string>Januray</string>
+    </EngWords>
+    <EngDesc>The pronunciation of this word illustrates reduplication, where a single written consonant serves as the final consonant of a syllable and is then pronounced again as the initial consonant of the following syllable.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กุมภาพันธ์</ThaiScript>
+    <ThaiFonet>goom phaa phan</ThaiFonet>
+    <EngWords>
+      <string>February</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>มีนาคม</ThaiScript>
+    <ThaiFonet>mee naa khohm khohm</ThaiFonet>
+    <EngWords>
+      <string>March</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>เมษายน</ThaiScript>
+    <ThaiFonet>maeh saa yohn </ThaiFonet>
+    <EngWords>
+      <string>April</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>พฤษภาคม</ThaiScript>
+    <ThaiFonet>phreut sa phaa khohm</ThaiFonet>
+    <EngWords>
+      <string>May</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>มิถุนายน</ThaiScript>
+    <ThaiFonet>mi thoo naa yohn</ThaiFonet>
+    <EngWords>
+      <string>June</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กรกฎาคม</ThaiScript>
+    <ThaiFonet>ga ra ga daa khohm</ThaiFonet>
+    <EngWords>
+      <string>July</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สิงหาคม</ThaiScript>
+    <ThaiFonet>sing haa khohm</ThaiFonet>
+    <EngWords>
+      <string>August</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>กันยายน</ThaiScript>
+    <ThaiFonet>gan yaa yohn</ThaiFonet>
+    <EngWords>
+      <string>September</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ตุลาคม</ThaiScript>
+    <ThaiFonet>dtoo laa khohm</ThaiFonet>
+    <EngWords>
+      <string>October</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>พฤศจิกายน</ThaiScript>
+    <ThaiFonet>phreut sa ji gaa yohn</ThaiFonet>
+    <EngWords>
+      <string>November</string>
+    </EngWords>
+    <EngDesc>The pronunciation of this word illustrates reduplication, where a single written consonant serves as the final consonant of a syllable and is then pronounced again as the initial consonant of the following syllable.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>ธันวาคม</ThaiScript>
+    <ThaiFonet>than waa khohm</ThaiFonet>
+    <EngWords>
+      <string>December</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันขึ้นปีใหม่</ThaiScript>
+    <ThaiFonet>wan kheun bpee mai</ThaiFonet>
+    <EngWords>
+      <string>New Year's Day</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันมาฆบูชา</ThaiScript>
+    <ThaiFonet>wan maa kha buu chaa</ThaiFonet>
+    <EngWords>
+      <string>Magha Puja Day</string>
+      <string>Makabucha Day</string>
+    </EngWords>
+    <EngDesc>Held on the full moon of the third lunar month to commemorate the preaching of the Buddha to 1250 enlightened monks who came to hear him without prior summons</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันจักรี</ThaiScript>
+    <ThaiFonet>wan jak gree</ThaiFonet>
+    <EngWords>
+      <string>Day of Chakri</string>
+    </EngWords>
+    <EngDesc>King Rama I Day, commemorating the founder of the Chakri Dynasty, Rama I, on April 6</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันสงกรานต์</ThaiScript>
+    <ThaiFonet>wan sohng graan</ThaiFonet>
+    <EngWords>
+      <string>Songkran</string>
+      <string>the Thai New Year festival,</string>
+    </EngWords>
+    <EngDesc>Songkran has become a significant annual celebration in Thailand—around the country there are parades and people throw buckets of water on passers-by.</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันฉัตรมงคล</ThaiScript>
+    <ThaiFonet>wan chat dtra mohng khohn</ThaiFonet>
+    <EngWords>
+      <string>Coronation Day</string>
+    </EngWords>
+    <EngDesc>Coronation Day, a public holiday in Thailand on May 5, on which King and Queen commemorate their 1946 coronation</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันพืชมงคล</ThaiScript>
+    <ThaiFonet>wan pheuut mohng khohn</ThaiFonet>
+    <EngWords>
+      <string>Royal Ploughing Day</string>
+    </EngWords>
+    <EngDesc>Royal Ploughing Day, to start the official rice planting season on the second week of May</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันวิสาขบูชา</ThaiScript>
+    <ThaiFonet>wan wi saa kha buu chaa</ThaiFonet>
+    <EngWords>
+      <string>Wisakabucha Day</string>
+    </EngWords>
+    <EngDesc>The full moon in the 6th lunar month, which is considered the day of the Buddha’s birth, enlightenment and passing away</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันอาสาฬหบูชา</ThaiScript>
+    <ThaiFonet>wan aa saan ha buu chaa</ThaiFonet>
+    <EngWords>
+      <string>Asallha Puja</string>
+    </EngWords>
+    <EngDesc>Asallha Puja, the observance of the Buddha's first sermon over 2,500 years ago</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันแม่</ThaiScript>
+    <ThaiFonet>wan maae</ThaiFonet>
+    <EngWords>
+      <string>Mothers day</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>วันพ่อ</ThaiScript>
+    <ThaiFonet>wan phaaw</ThaiFonet>
+    <EngWords>
+      <string>Fathers day</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Telling time</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีแดง</ThaiScript>
+    <ThaiFonet>see dææng</ThaiFonet>
+    <EngWords>
+      <string>Red</string>
+    </EngWords>
+    <EngWord>Red</EngWord>
+    <EngDesc>สี (see) is the word for color. Traditionally women used to dress in red on Sundays.</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีเหลือง</ThaiScript>
+    <ThaiFonet>see leuuang</ThaiFonet>
+    <EngWords>
+      <string>Yellow</string>
+    </EngWords>
+    <EngDesc>สี (see) is the word for color. Traditionally women used to dress in yellow on mondays.</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีชมพู</ThaiScript>
+    <ThaiFonet>see chohm phuu</ThaiFonet>
+    <EngWords>
+      <string>Pink</string>
+    </EngWords>
+    <EngDesc>สี (see) is the word for color. Traditionally women used to dress in pink on Tuesday.</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีเขียว</ThaiScript>
+    <ThaiFonet>see khiaao</ThaiFonet>
+    <EngWords>
+      <string>Green</string>
+    </EngWords>
+    <EngDesc>สี (see) is the word for color. Traditionally women used to dress in green on wednesdays.</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีส้ม</ThaiScript>
+    <ThaiFonet>see som</ThaiFonet>
+    <EngWords>
+      <string>Orange</string>
+    </EngWords>
+    <EngDesc>สี (see) is the word for color. Traditionally women used to dress in orange on thursday.</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีฟ้า</ThaiScript>
+    <ThaiFonet>see faa</ThaiFonet>
+    <EngWords>
+      <string>the color light blue</string>
+      <string>sky blue</string>
+    </EngWords>
+    <EngDesc>สี (see) is the word for color. Traditionally women used to dress in light blue on fridays.</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีม่วง</ThaiScript>
+    <ThaiFonet>see muaang</ThaiFonet>
+    <EngWords>
+      <string>the color purple</string>
+    </EngWords>
+    <EngDesc>สี (see) is the word for color. Traditionally women used to dress in purple on saturday.</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีขาว</ThaiScript>
+    <ThaiFonet>see khaao</ThaiFonet>
+    <EngWords>
+      <string>the color white</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีดำ</ThaiScript>
+    <ThaiFonet>see dam</ThaiFonet>
+    <EngWords>
+      <string>the color black</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีน้ำเงิน</ThaiScript>
+    <ThaiFonet>see nam ngern</ThaiFonet>
+    <EngWords>
+      <string>the color dark blue</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีน้ำตาล</ThaiScript>
+    <ThaiFonet>see nam dtaan</ThaiFonet>
+    <EngWords>
+      <string>the color brown</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีน้ำตาลอ่อน</ThaiScript>
+    <ThaiFonet>see nam dtaan aawn</ThaiFonet>
+    <EngWords>
+      <string>the color tan</string>
+      <string>light brown</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>สีเทา</ThaiScript>
+    <ThaiFonet>see thao</ThaiFonet>
+    <EngWords>
+      <string>The color gray</string>
+    </EngWords>
+    <EngDesc>TODO</EngDesc>
+    <Chapter>Colors</Chapter>
+  </Word>
+  <Word>
+   <ThaiScript>กบ</ThaiScript>
+   <ThaiFonet>gob</ThaiFonet>
+   <EngWords>
+     <string>Frog</string>    
+   </EngWords>
+   <EngWord>Frog</EngWord>
+   <EngDesc>Low tone and unwritten o.</EngDesc>
+   <Chapter>Easy words</Chapter>
   </Word>
 </ArrayOfWord>

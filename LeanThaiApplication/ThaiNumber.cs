@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LearnThaiApplication
 {
@@ -10,8 +7,8 @@ namespace LearnThaiApplication
     {
         public ThaiNumber()
         {
-
         }
+
         public ThaiNumber(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords)
         {
             this.ThaiScript = thaiSymbol;
@@ -19,6 +16,7 @@ namespace LearnThaiApplication
             this.ThaiFonet = thaiFonet;
             this.EngWords = engWords;
         }
+
         public ThaiNumber(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords, string englishDescription)
         {
             this.ThaiScript = thaiSymbol;
@@ -27,6 +25,7 @@ namespace LearnThaiApplication
             this.EngWords = engWords;
             this.EngDesc = englishDescription;
         }
+
         public ThaiNumber(string thaiSymbol, string thaiFonet, string thaiHelpWord, string engWord, string englishDescription)
         {
             this.ThaiScript = thaiSymbol;
