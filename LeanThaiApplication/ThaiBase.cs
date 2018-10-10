@@ -11,8 +11,10 @@ namespace LearnThaiApplication
 
         public List<String> EngWords { get; set; }
 
-        public string EngWord { get; set; }
+        public string SoundPath { get; set; }
 
         public string EngDesc { get; set; }
+
+        public List<String> Tone { get; set; }
     }
 }

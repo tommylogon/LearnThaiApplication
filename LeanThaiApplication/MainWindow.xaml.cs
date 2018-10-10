@@ -1,10 +1,13 @@
-﻿using System;
+﻿using NAudio.Wave;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 
 namespace LearnThaiApplication
 {
@@ -24,6 +27,8 @@ namespace LearnThaiApplication
             txb_FilePath_Settings.Text = LanguageFilePath;
             txt_NewSavePath_Settings.Text = LanguageFilePath;
 
+            LoadFiles<Chapter>(Chapters);
+
             LoadFiles<Word>(Words);
 
             LoadFiles<Consonant>(Consonants);
@@ -32,11 +37,9 @@ namespace LearnThaiApplication
 
             LoadFiles<ThaiNumber>(Numbers);
 
-            LoadFiles<Chapter>(Chapters);
-
-            
-
             SetInitialStates();
+
+            GetImage();
         }
 
         #region auto properties
@@ -56,12 +59,13 @@ namespace LearnThaiApplication
         #region PropertyInfos
 
         public static PropertyInfo FoundEngDescProperty { get; set; }
-        public static PropertyInfo FoundEngWordProperty { get; set; }
+
         public static PropertyInfo FoundEngWordsProperty { get; set; }
         public static PropertyInfo FoundThaiFonetProperty { get; set; }
         public static PropertyInfo FoundThaiHelpWordProperty { get; set; }
         public static PropertyInfo FoundThaiScriptProperty { get; set; }
         public static PropertyInfo FoundWordChapterProperty { get; set; }
+        public static List<PropertyInfo> ListOfProperties { get; set; } = new List<PropertyInfo>();
         public static object PropertyChapter { get; set; }
         public static object PropertyEngDesc { get; set; }
         public static object PropertyEngWord { get; set; }
@@ -69,6 +73,7 @@ namespace LearnThaiApplication
         public static object PropertyHelpWord { get; set; }
         public static List<string> PropertyListEngWords { get; set; } = new List<String>();
         public static object PropertyScript { get; set; }
+        public static List<Object> ListOfValues { get; set; } = new List<Object>();
 
         #endregion PropertyInfos
 
@@ -76,9 +81,9 @@ namespace LearnThaiApplication
 
         public bool descriptionOn = true;
         public bool loopChapter = true;
-        public bool randomOn = false;
+        public bool randomOn;
         public String submitStyle;
-        public Type WhatTypeToUse = null;
+        public Type WhatTypeToUse;
         public Object wordToLoad;
         public static int CorrectPoints { get; set; } = 0;
         public static int CurrentFileIndex { get; set; } = 0;
@@ -91,7 +96,8 @@ namespace LearnThaiApplication
 
         #endregion activeProperties
 
-        private String chaptersName = "Key to understanding Thai; Thai alphabet; Closing sounds of consonants; Thai vowels; Tonal Language; Special pronounciation; Nouns, people and particles; Numbers and Counting; Telling time; Colors; Easy words; Homonyms; Homophones; Words in special contexts; 101 most used words; Small talk; The body";
+        public String chaptersName = "Key to understanding Thai; Thai alphabet; Closing sounds of consonants; Thai vowels; Tonal Language; Special pronounciation; Nouns, people and particles; Numbers and Counting; Telling time; Colors; Easy words; Homonyms; Homophones; Words in special contexts; 101 most used words; Small talk; The body";
+
         public Chapter NewChapter;
 
         #region Settings properties
@@ -102,19 +108,16 @@ namespace LearnThaiApplication
 
         #endregion auto properties
 
-        
-        
-
         /// <summary>
         /// Turns the induvidual words into one string to display
         /// </summary>
         /// <returns>String of words</returns>
-        public static String EngWordsString()
+        public static String EngWordsString(List<String> list)
         {
             String engwords = "";
-            foreach (String meaning in PropertyListEngWords)
+            foreach (String meaning in list)
             {
-                if (PropertyListEngWords.Last() == meaning)
+                if (list.Last() == meaning)
                 {
                     engwords += meaning;
                 }
@@ -133,62 +136,70 @@ namespace LearnThaiApplication
         public static void SetPropertyOfGenericObject(Object recived)
         {
             PropertyListEngWords.Clear();
-
-            FoundThaiScriptProperty = recived.GetType().GetProperty("ThaiScript");
-            FoundThaiFonetProperty = recived.GetType().GetProperty("ThaiFonet");
-            FoundThaiHelpWordProperty = recived.GetType().GetProperty("ThaiHelpWord");
-            FoundEngWordProperty = recived.GetType().GetProperty("EngWord");
-            FoundEngWordsProperty = recived.GetType().GetProperty("EngWords");
-            FoundEngDescProperty = recived.GetType().GetProperty("EngDesc");
-            FoundWordChapterProperty = recived.GetType().GetProperty("Chapter");
-
-            var item = FoundEngWordsProperty.GetValue(recived);
-
-            if (FoundThaiScriptProperty?.CanWrite == true)
+            ListOfProperties.Clear();
+            ListOfValues.Clear();
+            if (recived != null)
             {
-                PropertyScript = FoundThaiScriptProperty.GetValue(recived);
-            }
+                FoundThaiScriptProperty = recived.GetType().GetProperty("ThaiScript");
+                FoundThaiFonetProperty = recived.GetType().GetProperty("ThaiFonet");
+                FoundThaiHelpWordProperty = recived.GetType().GetProperty("ThaiHelpWord");
 
-            if (FoundThaiFonetProperty?.CanWrite == true)
-            {
-                PropertyFonet = FoundThaiFonetProperty.GetValue(recived);
-            }
+                FoundEngWordsProperty = recived.GetType().GetProperty("EngWords");
+                FoundEngDescProperty = recived.GetType().GetProperty("EngDesc");
+                FoundWordChapterProperty = recived.GetType().GetProperty("Chapter");
 
-            if (FoundThaiHelpWordProperty?.CanWrite == true)
-            {
-                PropertyHelpWord = FoundThaiHelpWordProperty.GetValue(recived);
-            }
-            if (item != null)
-            {
-                if ((item as List<String>)?.Count() == 0)
+                var item = FoundEngWordsProperty.GetValue(recived);
+
+                foreach (PropertyInfo prop in recived.GetType().GetProperties().ToList<PropertyInfo>())
                 {
-                    if (FoundEngWordProperty?.CanWrite == true)
+                    if (prop != null)
                     {
-                        String stringtosplit = (String)FoundEngWordProperty.GetValue(recived);
-
-                        PropertyListEngWords = Regex.Split(stringtosplit, @"[\s;,]{2,}").ToList<String>();
+                        ListOfProperties.Add(prop);
+                        ListOfValues.Add(prop.GetValue(recived));
                     }
                 }
-                else
+                
+
+                if (FoundThaiScriptProperty?.CanWrite == true)
+                {
+                    PropertyScript = FoundThaiScriptProperty.GetValue(recived);
+                    //ListOfValues.Add(PropertyScript);
+                }
+
+                if (FoundThaiFonetProperty?.CanWrite == true)
+                {
+                    PropertyFonet = FoundThaiFonetProperty.GetValue(recived);
+                    //ListOfValues.Add(PropertyFonet);
+                }
+
+                if (FoundThaiHelpWordProperty?.CanWrite == true)
+                {
+                    PropertyHelpWord = FoundThaiHelpWordProperty.GetValue(recived);
+                    //ListOfValues.Add(PropertyHelpWord);
+                }
+                if (item != null)
                 {
                     if (FoundEngWordsProperty?.CanWrite == true && item != null)
                     {
                         foreach (var listItem in item as List<String>)
                         {
                             PropertyListEngWords.Add(listItem);
+                            //ListOfValues.Add(PropertyListEngWords);
                         }
                     }
                 }
-            }
 
-            if (FoundEngDescProperty?.CanWrite == true)
-            {
-                PropertyEngDesc = FoundEngDescProperty.GetValue(recived);
-            }
+                if (FoundEngDescProperty?.CanWrite == true)
+                {
+                    PropertyEngDesc = FoundEngDescProperty.GetValue(recived);
+                    //ListOfValues.Add(PropertyEngDesc);
+                }
 
-            if (FoundWordChapterProperty?.CanWrite == true)
-            {
-                PropertyChapter = FoundWordChapterProperty.GetValue(recived);
+                if (FoundWordChapterProperty?.CanWrite == true)
+                {
+                    PropertyChapter = FoundWordChapterProperty.GetValue(recived);
+                    //ListOfValues.Add(PropertyChapter);
+                }
             }
         }
 
@@ -253,17 +264,6 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
-        /// test method to check contents of list to console.
-        /// </summary>
-        public void CheckList()
-        {
-            foreach (Word word in Words)
-            {
-                System.Console.WriteLine(word.ThaiScript + " " + word.ThaiFonet + " " + word.EngWord + " " + word.EngDesc + " " + word.Chapter);
-            }
-        }
-
-        /// <summary>
         /// Clears the textboxs and textblocks to make the application look clean.
         /// </summary>
         public void ClearFields()
@@ -278,12 +278,15 @@ namespace LearnThaiApplication
             txb_Description_page2.Text = "";
             txt_Answear_Page2.Text = "";
 
-            txt_FirstSelectionProperty.Text = "";
-            txt_SecondSelectionProperty.Text = "";
-            txt_ThirdSelectionProperty.Text = "";
-            txt_FourthSelectionProperty.Text = "";
+            if (ckb_AutoClean.IsChecked == true)
+            {
+                txt_FirstSelectionProperty.Text = "";
+                txt_SecondSelectionProperty.Text = "";
+                txt_ThirdSelectionProperty.Text = "";
+                txt_FourthSelectionProperty.Text = "";
 
-            txt_FifthSelectionProperty.Text = "";
+                txt_FifthSelectionProperty.Text = "";
+            }
         }
 
         /// <summary>
@@ -328,12 +331,29 @@ namespace LearnThaiApplication
 
             foreach (T wordFoundInFile in wordsFromFIle)
             {
-                SetPropertyOfGenericObject(wordFoundInFile);
+                if (whatIsT != typeof(Chapter))
+                {
+                    SetPropertyOfGenericObject(wordFoundInFile);
 
-                newWordToAdd.Add(wordFoundInFile);
+                    newWordToAdd.Add(wordFoundInFile);
+                }
             }
 
             list.AddRange(newWordToAdd);
+        }
+
+        public void GetImage()
+        {
+            Image img = new Image
+            {
+                Source = new BitmapImage(new Uri(@"C:\Users\tommy\source\repos\LearnThaiApplication\Icons\Speaker.png"))
+            };
+
+            StackPanel stackPnl = new StackPanel();
+            img.Width = 32;
+            stackPnl.Children.Add(img);
+
+            btn_Speaker_Page1.Content = stackPnl;
         }
 
         /// <summary>
@@ -349,7 +369,7 @@ namespace LearnThaiApplication
 
                 if (((String)PropertyScript)?.Length == 0)
                 {
-                    lib_LoadedWords.Items.Add(PropertyEngWord);
+                    lib_LoadedWords.Items.Add(PropertyListEngWords[0]);
                 }
                 else
                 {
@@ -420,7 +440,7 @@ namespace LearnThaiApplication
                 {
                     txt_FirstSelectionProperty.Text = (String)PropertyScript;
                     txt_SecondSelectionProperty.Text = (String)PropertyFonet;
-                    txt_ThirdSelectionProperty.Text = EngWordsString();
+                    txt_ThirdSelectionProperty.Text = EngWordsString(PropertyListEngWords);
                     txt_FourthSelectionProperty.Text = (String)PropertyEngDesc;
                     txt_FifthSelectionProperty.Text = (String)PropertyChapter;
                     txb_Description_Page4.Text = (String)PropertyEngDesc;
@@ -430,7 +450,7 @@ namespace LearnThaiApplication
                     txt_FirstSelectionProperty.Text = (String)PropertyScript;
                     txt_SecondSelectionProperty.Text = (String)PropertyFonet;
                     txt_ThirdSelectionProperty.Text = (String)PropertyHelpWord;
-                    txt_FourthSelectionProperty.Text = EngWordsString();
+                    txt_FourthSelectionProperty.Text = EngWordsString(PropertyListEngWords);
                     txt_FifthSelectionProperty.Text = (String)PropertyEngDesc;
                     txb_Description_Page4.Text = (String)PropertyEngDesc;
                 }
@@ -506,6 +526,8 @@ namespace LearnThaiApplication
         {
             ckb_DescBox_Page1.IsChecked = true;
             ckb_DescBox_Page2.IsChecked = true;
+            rb_SubmitNew.IsChecked = true;
+
             rb_TrainFonet_Page1.IsChecked = true;
             rb_Conson_Page2.IsChecked = true;
             cb_Chapter_Page1.SelectedIndex = 0;
@@ -581,20 +603,6 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
-        ///Test method that shows all properties in the console.
-        /// </summary>
-        public void ShowAllPropertiesFoundInConsole()
-        {
-            List<Word> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<Word>>(LanguageFilePath + "Thai_Word.xml");
-
-            foreach (Word word in wordsFromFIle)
-            {
-                Console.Write(word);
-                System.Console.WriteLine(word.ThaiScript + " " + word.ThaiFonet + " " + word.EngWord + " " + word.EngDesc + " " + word.Chapter);
-            }
-        }
-
-        /// <summary>
         /// Adds new words to the list.
         /// </summary>
         /// <typeparam name="T">What type to work with</typeparam>
@@ -642,6 +650,11 @@ namespace LearnThaiApplication
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
         public void SubmitUpdatedWord<T>(List<T> list) where T : new()
         {
             Type whatIsT = typeof(T);
@@ -699,7 +712,7 @@ namespace LearnThaiApplication
                 {
                     if (SelectedPropertyToDisplay is List<String>)
                     {
-                        textBlockForScript.Text = EngWordsString();
+                        textBlockForScript.Text = EngWordsString(PropertyListEngWords);
                     }
                     textBlockForScript.Text = (String)SelectedPropertyToDisplay;
                 }
@@ -716,7 +729,7 @@ namespace LearnThaiApplication
 
             if (descriptionOn)
             {
-                textBlockDescription.Text = PropertyFonet + "\r\n" + EngWordsString() + "\r\n" + PropertyEngDesc;
+                textBlockDescription.Text = PropertyFonet + "\r\n" + EngWordsString(PropertyListEngWords) + "\r\n" + PropertyEngDesc;
             }
         }
 
@@ -808,7 +821,7 @@ namespace LearnThaiApplication
 
             if (descriptionOn)
             {
-                textBlockDesc.Text = PropertyFonet + "\r\n" + EngWordsString() + "\r\n" + PropertyEngDesc;
+                textBlockDesc.Text = PropertyFonet + "\r\n" + EngWordsString(PropertyListEngWords) + "\r\n" + PropertyEngDesc;
             }
 
             lbl_Counter_Page2.Content = CurrentFileIndex;
@@ -930,6 +943,47 @@ namespace LearnThaiApplication
             lbl_Counter_Page1.Content = CurrentFileIndex;
         }
 
+        private void Btn_FormWindow(object sender, RoutedEventArgs e)
+        {
+            ContentMan window = new ContentMan();
+            StackPanel sp = new StackPanel();
+
+            SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
+            int i = 0;
+
+            foreach (PropertyInfo prop in ListOfProperties)
+            {
+                
+                sp.Children.Add(new Label { Content = prop.Name });
+                TextBox txt = new TextBox();
+                object txtContent = ListOfValues[i];
+
+                if (txtContent is List<String>)
+                {
+                    txt.Text = EngWordsString(txtContent as List<String>);
+                }
+                else
+                {
+                    txt.Text = (string)txtContent;
+                }
+                
+                
+                txt.Name = "txt_" + i;
+                i++;
+                sp.Children.Add(txt);
+            }
+
+            Button submitButton = new Button
+            {
+                Content = "Submit"
+            };
+            submitButton.Click += Btn_SubmitNewWord_Click;
+            sp.Children.Add(submitButton);
+            window.Content = sp;
+
+            window.ShowDialog();
+        }
+
         private void Btn_SubmitNewWord_Click(object sender, RoutedEventArgs e)
         {
             if (submitStyle == "Submit new")
@@ -1040,8 +1094,8 @@ namespace LearnThaiApplication
         {
             if ((sender as CheckBox)?.IsChecked == true)
             {
-                txb_Description_page1.Text = PropertyFonet + "\r\n" + EngWordsString() + "\r\n" + PropertyEngDesc;
-                txb_Description_page2.Text = PropertyFonet + "\r\n" + EngWordsString() + "\r\n" + PropertyEngDesc;
+                txb_Description_page1.Text = PropertyFonet + "\r\n" + EngWordsString(PropertyListEngWords) + "\r\n" + PropertyEngDesc;
+                txb_Description_page2.Text = PropertyFonet + "\r\n" + EngWordsString(PropertyListEngWords) + "\r\n" + PropertyEngDesc;
                 descriptionOn = true;
             }
             else
@@ -1168,6 +1222,7 @@ namespace LearnThaiApplication
             WhatTypeToUse = typeof(Vowel);
             ClearFields();
             UpdateListBox();
+
             lbl_English_Insert.Content = "Thai help word";
             lbl_Desc_Insert.Content = "English Word";
 
@@ -1194,6 +1249,15 @@ namespace LearnThaiApplication
 
         private void TabChanged(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+        }
+
+        private void Btn_Speaker_Page1_Click(object sender, RoutedEventArgs e)
+        {
+            var reader = new Mp3FileReader(@"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\P200149.mp3");
+
+            var waveOut = new WaveOut(); // or WaveOutEvent()
+            waveOut.Init(reader);
+            waveOut.Play();
         }
     }
 

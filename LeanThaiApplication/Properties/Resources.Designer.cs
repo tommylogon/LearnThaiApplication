@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LearnThaiApplication.Properties {
-    using System;
-    
-    
+namespace LearnThaiApplication.Properties
+{
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -57,6 +57,24 @@ namespace LearnThaiApplication.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\Language_Files.
+        /// </summary>
+        internal static string LanguageFolder {
+            get {
+                return ResourceManager.GetString("LanguageFolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;C:\Users\tommy\source\repos\LearnThaiApplication\Icons\Speaker.png&quot;.
+        /// </summary>
+        internal static string SpeakerIcon {
+            get {
+                return ResourceManager.GetString("SpeakerIcon", resourceCulture);
             }
         }
     }

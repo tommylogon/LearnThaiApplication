@@ -17,14 +17,7 @@ namespace LearnThaiApplication
             this.EngWords = engWords;
         }
 
-        public Vowel(string thaiSymbol, string thaiFonet, string thaiHelpWord, string engWord, string englishDescription)
-        {
-            this.ThaiScript = thaiSymbol;
-            this.ThaiHelpWord = thaiHelpWord;
-            this.ThaiFonet = thaiFonet;
-            this.EngWord = engWord;
-            this.EngDesc = englishDescription;
-        }
+        
 
         public Vowel(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords, string englishDescription)
         {

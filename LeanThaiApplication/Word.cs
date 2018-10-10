@@ -20,14 +20,6 @@ namespace LearnThaiApplication
             this.Chapter = Chapter;
         }
 
-        public Word(string thaiWord, string thaiFonet, string engword, string engDesc, string Chapter)
-        {
-            this.ThaiScript = thaiWord;
-            this.ThaiFonet = thaiFonet;
-            this.EngWords = engword.Split(';', ',').ToList<String>();
-            this.EngDesc = engDesc;
-            this.Chapter = Chapter;
-        }
 
         public string Chapter { get; set; }
     }

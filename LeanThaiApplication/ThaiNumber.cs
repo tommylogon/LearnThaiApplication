@@ -25,14 +25,6 @@ namespace LearnThaiApplication
             this.EngWords = engWords;
             this.EngDesc = englishDescription;
         }
-
-        public ThaiNumber(string thaiSymbol, string thaiFonet, string thaiHelpWord, string engWord, string englishDescription)
-        {
-            this.ThaiScript = thaiSymbol;
-            this.ThaiHelpWord = thaiHelpWord;
-            this.ThaiFonet = thaiFonet;
-            this.EngWord = engWord;
-            this.EngDesc = englishDescription;
-        }
+        
     }
 }
