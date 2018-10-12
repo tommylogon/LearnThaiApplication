@@ -102,10 +102,10 @@
                     <Button x:Name="btn_DeleteSelected" Content="Delete selected" HorizontalAlignment="Left" Margin="35,433,0,0" VerticalAlignment="Top" Width="93" Click="Btn_Delete_Click" Background="#FFEA7A7A" Height="33"/>
                     <Button x:Name="Btn_ListMoveUp" Content="5" HorizontalAlignment="Left" Margin="203,352,0,0" VerticalAlignment="Top" Width="28" Height="24" FontFamily="Marlett" FontSize="20" Click="Btn_ListMoveUp_Click"/>
                     <Button x:Name="Btn_ListMoveDown" Content="6" HorizontalAlignment="Left" Margin="203,379,0,0" VerticalAlignment="Top" Width="28" Height="24" FontFamily="Marlett" FontSize="20" Click="Btn_ListMoveDown_Click"/>
-                    <RadioButton x:Name="rb_UpdateWord" Content="Update" HorizontalAlignment="Left" Margin="681,198,0,0" VerticalAlignment="Top" GroupName="SubmitStyle" Checked="SubmitStyleChecked"/>
-                    <RadioButton x:Name="rb_SubmitNew" Content="Submit new" HorizontalAlignment="Left" Margin="681,179,0,0" VerticalAlignment="Top" GroupName="SubmitStyle" Checked="SubmitStyleChecked"/>
-                    <Label Content="Submit style:" HorizontalAlignment="Left" Margin="681,151,0,0" VerticalAlignment="Top" Width="82"/>
-                    <CheckBox x:Name="ckb_AutoClean" Content="Auto clear boxes" HorizontalAlignment="Left" Margin="434,234,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="rb_UpdateWord" Content="Update" HorizontalAlignment="Left" Margin="681,198,0,0" VerticalAlignment="Top" GroupName="SubmitStyle" Checked="SubmitStyleChecked" Foreground="#FFE6F8FF"/>
+                    <RadioButton x:Name="rb_SubmitNew" Content="Submit new" HorizontalAlignment="Left" Margin="681,179,0,0" VerticalAlignment="Top" GroupName="SubmitStyle" Checked="SubmitStyleChecked" Foreground="#FFE6F8FF"/>
+                    <Label Content="Submit style:" HorizontalAlignment="Left" Margin="681,151,0,0" VerticalAlignment="Top" Width="82" Foreground="#FFE6F8FF"/>
+                    <CheckBox x:Name="ckb_AutoClean" Content="Auto clear boxes" HorizontalAlignment="Left" Margin="434,234,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
                     <Button Content="FORM TEST" HorizontalAlignment="Left" Margin="231,251,0,0" VerticalAlignment="Top" Width="75" Click="Btn_FormWindow"/>
                 </Grid>
             </TabItem>
@@ -116,7 +116,7 @@
                     <Button x:Name="btn_ChangeSave_Settings" Content="Change Path" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="98,87,0,0"/>
                     <TextBox x:Name="txt_NewSavePath_Settings" HorizontalAlignment="Left" Height="38" Margin="98,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="367"/>
                     <Label Content="New Save Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,41,0,0" Foreground="#FFE6F8FF"/>
-                    <CheckBox x:Name="ckb_LoopChapter" Content="Loop chapter" HorizontalAlignment="Left" Margin="88,164,0,0" VerticalAlignment="Top" IsChecked="True" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked"/>
+                    <CheckBox x:Name="ckb_LoopChapter" Content="Loop chapter" HorizontalAlignment="Left" Margin="88,164,0,0" VerticalAlignment="Top" IsChecked="True" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF"/>
                 </Grid>
             </TabItem>
         </TabControl>
