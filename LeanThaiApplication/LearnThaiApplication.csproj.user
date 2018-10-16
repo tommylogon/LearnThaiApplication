@@ -3,4 +3,7 @@
   <PropertyGroup>
     <ReferencePath>C:\Users\tommy\source\repos\LearnThaiApplication\Language_Files\</ReferencePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+  </PropertyGroup>
 </Project>

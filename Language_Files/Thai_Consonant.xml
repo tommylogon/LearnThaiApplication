@@ -4,17 +4,24 @@
     <ThaiScript>ก</ThaiScript>
     <ThaiFonet>gai</ThaiFonet>
     <EngWords>
-      <string> Chicken</string>
+      <string>Chicken</string>
     </EngWords>
-    <EngWord />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ไก่</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <ThaiScript>ข</ThaiScript>
     <ThaiFonet>kai</ThaiFonet>
     <EngWords>
-      <string> Egg</string>
+      <string>Egg</string>
     </EngWords>
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ไข่</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -23,8 +30,8 @@
     <EngWords>
       <string> Bottle</string>
     </EngWords>
-    <EngWord>Bottle</EngWord>
     <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ข.</EngDesc>
+    <Tone />
     <ThaiHelpWord>ขวด</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -33,7 +40,7 @@
     <EngWords>
       <string> Water buffalo</string>
     </EngWords>
-    <EngWord>Water buffalo</EngWord>
+    <Tone />
     <ThaiHelpWord>ควาย</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -42,8 +49,8 @@
     <EngWords>
       <string> Person</string>
     </EngWords>
-    <EngWord>Person</EngWord>
     <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ค.</EngDesc>
+    <Tone />
     <ThaiHelpWord>คน</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -52,7 +59,7 @@
     <EngWords>
       <string>Bell</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ระฆัง</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -61,7 +68,7 @@
     <EngWords>
       <string>Snake</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>งู</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -70,7 +77,7 @@
     <EngWords>
       <string>Plate</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>จาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -79,7 +86,7 @@
     <EngWords>
       <string>Cymbals</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ฉิ่ง</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -88,7 +95,7 @@
     <EngWords>
       <string>Elephant</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ช้าง</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -97,7 +104,7 @@
     <EngWords>
       <string>Chains</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>โซ่</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -106,7 +113,7 @@
     <EngWords>
       <string>Thai tree</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>เฌอ</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -115,7 +122,7 @@
     <EngWords>
       <string>Woman</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>หญิง</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -124,8 +131,8 @@
     <EngWords>
       <string>headdress</string>
     </EngWords>
-    <EngWord />
     <EngDesc>Type of headdress used in Thai classical dancing and theater</EngDesc>
+    <Tone />
     <ThaiHelpWord>ชฎา</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -136,8 +143,8 @@
       <string>spear</string>
       <string>javelin</string>
     </EngWords>
-    <EngWord />
     <EngDesc />
+    <Tone />
     <ThaiHelpWord>ปฏัก</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -146,7 +153,7 @@
     <EngWords>
       <string>Pedestal</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ฐาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -155,7 +162,7 @@
     <EngWords>
       <string>The wife of a giant</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>มณโฑ</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -164,7 +171,7 @@
     <EngWords>
       <string>Old person</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ผู้เฒ่า</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -173,7 +180,7 @@
     <EngWords>
       <string>Novice monk</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>เณร</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -182,8 +189,8 @@
     <EngWords>
       <string>Child</string>
     </EngWords>
-    <EngWord />
     <EngDesc />
+    <Tone />
     <ThaiHelpWord>เด็ก</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -192,7 +199,7 @@
     <EngWords>
       <string>Turtle</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>เต่า</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -201,7 +208,7 @@
     <EngWords>
       <string>Bag</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ถุง</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -210,7 +217,7 @@
     <EngWords>
       <string>Soldier</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ทหาร</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -219,7 +226,7 @@
     <EngWords>
       <string>Flag</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ธง</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -228,7 +235,7 @@
     <EngWords>
       <string>Mouse</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>หนู</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -237,7 +244,7 @@
     <EngWords>
       <string>Leaf</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ใบไม้</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -246,7 +253,7 @@
     <EngWords>
       <string>Fish</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ปลา</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -255,7 +262,7 @@
     <EngWords>
       <string>Bee</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ผึ้ง</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -264,7 +271,7 @@
     <EngWords>
       <string>Lid</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ฝา</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -273,7 +280,7 @@
     <EngWords>
       <string>Tray</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>พาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -282,7 +289,7 @@
     <EngWords>
       <string>Tooth</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ฟัน</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -291,7 +298,7 @@
     <EngWords>
       <string>Sailboat</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>สำเภา</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -300,7 +307,7 @@
     <EngWords>
       <string>Horse</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ม้า</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -309,7 +316,7 @@
     <EngWords>
       <string>Giant</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ยักษ์</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -318,7 +325,7 @@
     <EngWords>
       <string>Boat</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>เรือ</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -327,7 +334,7 @@
     <EngWords>
       <string>Monkey</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ลิง</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -336,7 +343,7 @@
     <EngWords>
       <string>Ring</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>เเหาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -345,7 +352,7 @@
     <EngWords>
       <string>Hermit</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>ฦๅษี</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -354,7 +361,7 @@
     <EngWords>
       <string>Basin</string>
     </EngWords>
-    <EngWord />
+    <Tone />
     <ThaiHelpWord>อ่าง</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -363,8 +370,21 @@
     <EngWords>
       <string>Owl</string>
     </EngWords>
-    <EngWord />
     <EngDesc />
+    <Tone />
     <ThaiHelpWord>นกฮูก</ThaiHelpWord>
+  </Consonant>
+  <Consonant>
+    <ThaiScript>ก</ThaiScript>
+    <ThaiFonet>gai</ThaiFonet>
+    <EngWords>
+      <string>Chicken</string>
+    </EngWords>
+    <SoundPath />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
+    <ThaiHelpWord>ไก่</ThaiHelpWord>
   </Consonant>
 </ArrayOfConsonant>

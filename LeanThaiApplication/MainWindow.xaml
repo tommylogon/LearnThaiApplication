@@ -43,9 +43,9 @@
                     <Label x:Name="lbl_Chapter_Page1" Content="Chapter:" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="72" Foreground="#FFE6F8FF"/>
                     <Label x:Name="lbl_ChapterCount_Page1" Content="Words in chapter: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,116,0,0" Foreground="#FFE6F8FF"/>
                     <Label x:Name="lbl_TrainWhat_Page2_Copy" Content="What to train" HorizontalAlignment="Left" Margin="15,163,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
-                    <RadioButton x:Name="rb_TrainScript_Page1" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,194,0,0" Checked="Rb_TrainScript_Checked" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
-                    <RadioButton x:Name="rb_TrainEngWords_Page1" Content="English meanings" HorizontalAlignment="Left" Margin="15,214,0,0" VerticalAlignment="Top" Checked="Rb_TrainEngWords_Checked" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
-                    <RadioButton x:Name="rb_TrainFonet_Page1" Content="Pronounciations" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Checked="Rb_TrainFonet_Checked" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
+                    <RadioButton x:Name="rb_TrainScript_Page1" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,194,0,0" Checked="SelectWhatToTrain" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
+                    <RadioButton x:Name="rb_TrainEngWords_Page1" Content="English meanings" HorizontalAlignment="Left" Margin="15,214,0,0" VerticalAlignment="Top" Checked="SelectWhatToTrain" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
+                    <RadioButton x:Name="rb_TrainFonet_Page1" Content="Pronounciations" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Checked="SelectWhatToTrain" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
                     <Label x:Name="lbl_ChapterCount_Page1_Copy" Content="Current word:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,142,0,0" Foreground="#FFE6F8FF"/>
                     <Label x:Name="lbl_Points" Content="Points: 0" HorizontalAlignment="Left" Margin="11,27,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
                     <Button x:Name="btn_Speaker_Page1" Content="" Margin="463,0,0,277" Width="42" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="Btn_Speaker_Page1_Click"/>
@@ -58,8 +58,8 @@
                     <Button x:Name="btn_validate_Page2" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="328.609,165.563,-126.197,-11.277" VerticalAlignment="Top" Width="89.588" Click="Btn_validate_Page2_Click"/>
                     <Button x:Name="btn_Next_Word_Page2" Content="Next" HorizontalAlignment="Left" Height="24" Margin="423,166,-166,-11" VerticalAlignment="Top" Width="35" Click="Btn_Next_Word_Click"/>
                     <Button x:Name="btn_Prev_Word_Page2" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="289,166,-32,-11" VerticalAlignment="Top" Width="35" Click="Btn_Prev_Word_Click"/>
-                    <RadioButton x:Name="rb_Conson_Page2"  Content="Consonants" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Checked="Rb_Conson_Checked" Foreground="#FFE6F8FF"/>
-                    <RadioButton x:Name="rb_Vowel_Page2"  Content="Vowels" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Checked="Rb_Vowel_Checked" Foreground="#FFE6F8FF"/>
+                    <RadioButton x:Name="rb_Conson_Page2"  Content="Consonants" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Checked="SelectSymbolToUse" Foreground="#FFE6F8FF"/>
+                    <RadioButton x:Name="rb_Vowel_Page2"  Content="Vowels" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Checked="SelectSymbolToUse" Foreground="#FFE6F8FF"/>
                     <TextBlock x:Name="txb_Information_Page2" HorizontalAlignment="Left" Margin="636,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="229" Width="268" FontSize="16" Foreground="#FFE6F8FF"><Run Text="Here you can select between consonants or vowels."/><Run Text=" "/><LineBreak/><Run Text="You can also learn and practise prenounciations and numbers."/></TextBlock>
                     <CheckBox x:Name="ckb_DescBox_Page2" Content="Description" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
                     <TextBlock x:Name="txb_Description_page2" HorizontalAlignment="Left" Margin="178,248,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="182" Width="529" FontSize="24" Foreground="#FFE6F8FF"/>
@@ -67,11 +67,11 @@
                     <TextBlock x:Name="txb_ThaiScript_Page2" HorizontalAlignment="Left" Margin="278,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="#FFE6F8FF"><Run Text="TextBlock"/></TextBlock>
                     <TextBlock x:Name="txb_Status_Page2" HorizontalAlignment="Left" Margin="329,205,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="110" FontSize="24" Foreground="#FFE6F8FF"/>
                     <RadioButton x:Name="rb_Closing_Page2" Content="Closing sounds" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
-                    <RadioButton x:Name="rb_NumberSymbol_Page2" Content="Number symbols" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" Checked="Rb_NumberSymbol_Page2_Checked" Foreground="#FFE6F8FF"/>
+                    <RadioButton x:Name="rb_NumberSymbol_Page2" Content="Numbers" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" Checked="SelectSymbolToUse" Foreground="#FFE6F8FF"/>
                     <Label x:Name="lbl_TrainWhat_Page2" Content="What to train" HorizontalAlignment="Left" Margin="11,220,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
-                    <RadioButton x:Name="rb_TrainScript_Page2" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,251,0,0" Checked="Rb_TrainHelpWord_Checked" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
-                    <RadioButton x:Name="rb_TrainEngWords_Page2" Content="English meanings" HorizontalAlignment="Left" Margin="11,271,0,0" VerticalAlignment="Top" Checked="Rb_TrainEngWords_Checked" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
-                    <RadioButton x:Name="rb_TrainFonet_Page2" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,291,0,0" VerticalAlignment="Top" Checked="Rb_TrainFonet_Checked" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
+                    <RadioButton x:Name="rb_TrainScript_Page2" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,251,0,0" Checked="SelectWhatToTrain" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
+                    <RadioButton x:Name="rb_TrainEngWords_Page2" Content="English meanings" HorizontalAlignment="Left" Margin="11,271,0,0" VerticalAlignment="Top" Checked="SelectWhatToTrain" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
+                    <RadioButton x:Name="rb_TrainFonet_Page2" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,291,0,0" VerticalAlignment="Top" Checked="SelectWhatToTrain" GroupName="TrainWhat" Foreground="#FFE6F8FF"/>
                     <Label x:Name="lbl_Points_Page2" Content="Points: 0" HorizontalAlignment="Left" Margin="11,19,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
                 </Grid>
             </TabItem>
