@@ -752,15 +752,19 @@ namespace LearnThaiApplication
             if (descriptionOn)
             {
                 textBlockDescription.Text = "";
+
+
                 foreach (var value in ListOfValues)
                 {
                     if (value is List<string> x)
                     {
                         textBlockDescription.Text += EngWordsToString(x) + "\r\n";
+                        scrvr_Page1.Content += EngWordsToString(x) + "\r\n";
                     }
                     else
                     {
                         textBlockDescription.Text += value + "\r\n";
+                        scrvr_Page1.Content += value + "\r\n";
                     }
                 }
                 //textBlockDescription.Text = GetValueFromValueList("ThaiFonet") + "\r\n" + EngWordsToString(GetValueFromValueList("EngWords")) + "\r\n" + GetValueFromValueList("EngDesc");

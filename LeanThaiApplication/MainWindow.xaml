@@ -49,6 +49,8 @@
                     <Label x:Name="lbl_ChapterCount_Page1_Copy" Content="Current word:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,142,0,0" Foreground="#FFE6F8FF"/>
                     <Label x:Name="lbl_Points" Content="Points: 0" HorizontalAlignment="Left" Margin="11,27,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
                     <Button x:Name="btn_Speaker_Page1" Content="" Margin="463,0,0,277" Width="42" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="Btn_Speaker_Page1_Click"/>
+                    <ScrollViewer x:Name="scrvr_Description_page1" HorizontalAlignment="Left" Height="100" Margin="20,314,0,0" VerticalAlignment="Top" Width="100" Content="Test" Foreground="#FFE6F8FF"/>
+
                 </Grid>
             </TabItem>
             <TabItem Header="Train Symbols">
