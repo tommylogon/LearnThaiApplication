@@ -25,5 +25,18 @@ namespace LearnThaiApplication
         {
             InitializeComponent();
         }
+
+        private void Focused(object sender, EventArgs e)
+        {
+            this.Width = 350;
+            
+            this.Topmost = true;
+        }
+
+        private void LooseFocus(object sender, EventArgs e)
+        {
+            this.Topmost = true;
+            this.Activate();
+        }
     }
 }
