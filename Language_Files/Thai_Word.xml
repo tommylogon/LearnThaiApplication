@@ -6,11 +6,8 @@
     <EngWords>
       <string>Sit</string>
     </EngWords>
-    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\P200149.mp3</SoundPath>
     <EngDesc>The a (ั) is pronounced like in bar, car or cut</EngDesc>
-    <Tone>
-      <string>Falling</string>
-    </Tone>
+    <Tone />
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
