@@ -38,6 +38,9 @@
     <ApplicationIcon>Thailand.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.8.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.8.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="NAudio, Version=1.8.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NAudio.1.8.4\lib\net35\NAudio.dll</HintPath>
     </Reference>
@@ -78,6 +81,7 @@
     <Compile Include="ThaiSymbol.cs" />
     <Compile Include="Vowel.cs" />
     <Compile Include="Word.cs" />
+    <Compile Include="WordIDTEMP.cs" />
     <Compile Include="XmlSerialization.cs" />
     <Page Include="ContentMan.xaml">
       <SubType>Designer</SubType>

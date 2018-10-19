@@ -56,3 +56,6 @@ C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\N
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.csproj.CopyComplete
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\ContentMan.g.cs
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\ContentMan.baml
+C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\HtmlAgilityPack.dll
+C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\HtmlAgilityPack.xml

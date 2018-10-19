@@ -1,10 +1,12 @@
-﻿using NAudio.Wave;
+﻿using HtmlAgilityPack;
+using NAudio.Wave;
 using System;
 using System.Collections.Generic;
-
+using System.IO;
 using System.Linq;
-
+using System.Net;
 using System.Reflection;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
@@ -40,9 +42,24 @@ namespace LearnThaiApplication
 
             LoadFiles<ThaiNumber>(Numbers);
 
+            LoadFiles<WordIDTEMP>(TempList);
+
             SetInitialStates();
 
             GetImage();
+            string full = "";
+            foreach (Word word in Words)
+            {
+                full += word.ThaiScript + " " + word.SoundPath + "\r\n";
+            }
+            File.WriteAllText(LanguageFilePath + "words.txt", full);
+
+            //SoundDownloader();
+        }
+
+        private void WriteAllText()
+        {
+            throw new NotImplementedException();
         }
 
         #region auto properties
@@ -56,36 +73,21 @@ namespace LearnThaiApplication
         public static List<Vowel> Vowels { get; set; } = new List<Vowel>();
         public static Object WhatListTLoad { get; set; }
         public static List<Word> Words { get; set; } = new List<Word>();
+        public static List<WordIDTEMP> TempList { get; set; } = new List<WordIDTEMP>();
 
         #endregion lists
 
         #region PropertyInfos
 
-        /*
-        public static PropertyInfo FoundEngDescProperty { get; set; }
-
-        public static PropertyInfo FoundEngWordsProperty { get; set; }
-        public static PropertyInfo FoundThaiFonetProperty { get; set; }
-        public static PropertyInfo FoundThaiHelpWordProperty { get; set; }
-        public static PropertyInfo FoundThaiScriptProperty { get; set; }
-        public static PropertyInfo FoundWordChapterProperty { get; set; }*/
         public static List<TextBox> textboxList;
         public static List<PropertyInfo> ListOfProperties { get; set; } = new List<PropertyInfo>();
-        /*public static object PropertyChapter { get; set; }
-        public static object PropertyEngDesc { get; set; }
-        public static object PropertyEngWord { get; set; }
-        public static object PropertyFonet { get; set; }
-        public static object PropertyHelpWord { get; set; }*/
 
-        //public static object PropertyScript { get; set; }
         public static List<Object> ListOfValues { get; set; } = new List<Object>();
-
-        public static List<string> PropertyListEngWords { get; set; } = new List<String>();
 
         #endregion PropertyInfos
 
         #region activeProperties
-        
+
         public bool descriptionOn = true;
         public bool loopChapter = true;
         public bool randomOn;
@@ -149,7 +151,6 @@ namespace LearnThaiApplication
         /// <param name="recived">what object to find properties for</param>
         public void SetPropertyOfGenericObject(Object recived)
         {
-            PropertyListEngWords.Clear();
             ListOfProperties.Clear();
             ListOfValues.Clear();
             if (recived != null)
@@ -378,15 +379,8 @@ namespace LearnThaiApplication
             {
                 SetPropertyOfGenericObject(word);
 
-                if (((String)GetValueFromValueList("ThaiScript"))?.Length == 0)
-                {
-                    lib_LoadedWords.Items.Add(PropertyListEngWords[0]);
-                }
-                else
-                {
-                    lib_LoadedWords.ItemsSource = list;
-                    break;
-                }
+                lib_LoadedWords.ItemsSource = list;
+                break;
             }
         }
 
@@ -432,6 +426,29 @@ namespace LearnThaiApplication
             XmlSerialization.WriteToXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml", list, false);
         }
 
+        public void FillFormTextBoxes()
+        {
+            textboxList = FormTextboxes();
+
+            foreach (TextBox txt in textboxList)
+            {
+                foreach (PropertyInfo prop in ListOfProperties)
+                {
+                    if (txt.Name == "txt_" + prop.Name)
+                    {
+                        if (prop.GetValue(WordToLoad) is List<string> x)
+                        {
+                            txt.Text = EngWordsToString(x);
+                        }
+                        else
+                        {
+                            txt.Text = (String)prop.GetValue(WordToLoad);
+                        }
+                    }
+                }
+            }
+        }
+
         /// <summary>
         /// Handles the selection changes in the listbox
         /// </summary>
@@ -447,13 +464,7 @@ namespace LearnThaiApplication
 
                 SetPropertyOfGenericObject(WordToLoad);
 
-                
-                
-                
-                
-                   
-                
-                
+                FillFormTextBoxes();
 
                 if (WordToLoad.GetType() == typeof(Word))
                 {
@@ -533,42 +544,17 @@ namespace LearnThaiApplication
             {
                 foreach (PropertyInfo prop in ListOfProperties)
                 {
-                    if (prop.Name == "ThaiScript" && tb.Name == "txt_ThaiScript")
+                    if (tb.Name == "txt_" + prop.Name)
                     {
-                        prop.SetValue(oldWord, tb.Text, null);
-                    }
-
-                    if (prop.Name == "ThaiFonet" && tb.Name == "txt_ThaiFonet")
-                    {
-                        prop.SetValue(oldWord, tb.Text, null);
-                    }
-                    // && whatIsT.GetType() == typeof(Consonant)) || whatIsT.GetType() == typeof(Vowel)
-                    if (prop.Name == "Tone" && tb.Name == "txt_Tone")
-                    {
-                        prop.SetValue(oldWord, SplitStringToList(tb.Text), null);
-                    }
-
-                    if (prop.Name == "EngWords" && tb.Name == "txt_EngWords")
-                    {
-                        prop.SetValue(oldWord, SplitStringToList(tb.Text), null);
-                    }
-
-                    if (prop.Name == "Chapter" && tb.Name == "txt_Chapter")
-                    {
-                        try
+                        if (prop.GetValue(oldWord) is List<string> x)
+                        {
+                            prop.SetValue(oldWord, SplitStringToList(tb.Text), null);
+                        }
+                        else
                         {
                             prop.SetValue(oldWord, tb.Text, null);
                         }
-                        catch (FormatException)
-                        {
-                        }
-                        catch (OverflowException)
-                        {
-                        }
-                    }
-                    if (prop.Name == "EngDesc" && tb.Name == "txt_EngDesc")
-                    {
-                        prop.SetValue(oldWord, tb.Text, null);
+                        break;
                     }
                 }
             }
@@ -618,6 +604,7 @@ namespace LearnThaiApplication
                 }
 
                 textboxList = FormTextboxes();
+
                 foreach (TextBox txt in textboxList)
                 {
                     if (txt.Name == "txt_Chapter")
@@ -756,30 +743,27 @@ namespace LearnThaiApplication
 
                 //
             }
+            PopulateDescription(textBlockDescription);
+        }
 
+        public void PopulateDescription(TextBlock textBlockDescription)
+        {
             if (descriptionOn)
             {
-<<<<<<< HEAD
                 textBlockDescription.Text = "";
-
 
                 foreach (var value in ListOfValues)
                 {
                     if (value is List<string> x)
                     {
                         textBlockDescription.Text += EngWordsToString(x) + "\r\n";
-                        scrvr_Page1.Content += EngWordsToString(x) + "\r\n";
                     }
                     else
                     {
                         textBlockDescription.Text += value + "\r\n";
-                        scrvr_Page1.Content += value + "\r\n";
                     }
                 }
                 //textBlockDescription.Text = GetValueFromValueList("ThaiFonet") + "\r\n" + EngWordsToString(GetValueFromValueList("EngWords")) + "\r\n" + GetValueFromValueList("EngDesc");
-=======
-                textBlockDescription.Text = GetValueFromValueList("ThaiFonet") + "\r\n" + EngWordsToString(PropertyListEngWords) + "\r\n" + GetValueFromValueList("EngDesc");
->>>>>>> parent of 71f5a9d... DynamicForm works!
             }
         }
 
@@ -814,60 +798,55 @@ namespace LearnThaiApplication
             }
         }
 
-
         public void CreateFormWindow()
         {
-            
-                window = new ContentMan();
-                sp = new StackPanel();
+            window = new ContentMan();
+            sp = new StackPanel();
 
-                SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
-                int i = 0;
+            SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
+            int i = 0;
 
-                foreach (PropertyInfo prop in ListOfProperties)
+            foreach (PropertyInfo prop in ListOfProperties)
+            {
+                var bc = new BrushConverter();
+                Label lbl = new Label
                 {
-                    var bc = new BrushConverter();
-                    Label lbl = new Label
-                    {
-                        Content = prop.Name,
-                        Foreground = (Brush)bc.ConvertFrom("#FFE5E5E5")
-                    };
+                    Content = prop.Name,
+                    Foreground = (Brush)bc.ConvertFrom("#FFE5E5E5")
+                };
 
-                    sp.Children.Add(lbl);
-                    TextBox txt = new TextBox();
-                    object txtContent = ListOfValues[i];
+                sp.Children.Add(lbl);
+                TextBox txt = new TextBox();
+                object txtContent = ListOfValues[i];
 
-                    if (txtContent is List<String>)
-                    {
-                        txt.Text = EngWordsToString(txtContent as List<String>);
-                    }
-                    else
-                    {
-                        txt.Text = (string)txtContent;
-                    }
-
-                    txt.Name = "txt_" + prop.Name;
-                    txt.TextWrapping = TextWrapping.Wrap;
-                    txt.AcceptsReturn = true;
-
-                    i++;
-
-                    sp.Children.Add(txt);
+                if (txtContent is List<String>)
+                {
+                    txt.Text = EngWordsToString(txtContent as List<String>);
+                }
+                else
+                {
+                    txt.Text = (string)txtContent;
                 }
 
-                Button submitButton = new Button
-                {
-                    Content = "Submit"
-                };
-                submitButton.Click += Btn_SubmitNewWord_Click;
-                sp.Children.Add(submitButton);
-                window.Content = sp;
+                txt.Name = "txt_" + prop.Name;
+                txt.TextWrapping = TextWrapping.Wrap;
+                txt.AcceptsReturn = true;
 
-                window.Show();
-            
-            
+                i++;
+
+                sp.Children.Add(txt);
+            }
+
+            Button submitButton = new Button
+            {
+                Content = "Submit"
+            };
+            submitButton.Click += Btn_SubmitNewWord_Click;
+            sp.Children.Add(submitButton);
+            window.Content = sp;
+
+            window.Show();
         }
-
 
         /// <summary>
         /// Compares the written answear to the current words propterties.
@@ -884,54 +863,107 @@ namespace LearnThaiApplication
 
             SelectedPropertyToValidate = GetValueFromValueList(WhatToTrain);
 
-            bool somethingRight = false;
-
             int rightAnswears = 0;
+
+            List<String> answers = Regex.Split(textboxAnswear.Text, RegexSplitString).ToList<String>();
 
             if (SelectedPropertyToValidate is List<String>)
             {
-                List<String> answers = Regex.Split(textboxAnswear.Text, RegexSplitString).ToList<String>();
-
                 foreach (String correctWord in SelectedPropertyToValidate as List<String>)
                 {
                     foreach (String answer in answers)
                     {
                         if (String.Equals(correctWord, answer, StringComparison.OrdinalIgnoreCase))
                         {
-                            textBlockStatus.Text = "Correct!";
                             CorrectPoints++;
                             rightAnswears++;
-                            somethingRight = true;
-                        }
-                        else if (!somethingRight)
-                        {
-                            textBlockStatus.Text = "Wrong...";
+
+                            break;
                         }
                     }
-                }
-                if (rightAnswears == (SelectedPropertyToValidate as List<String>)?.Count && rightAnswears > 1)
-                {
-                    textBlockStatus.Text = "You got it all correct!";
                 }
             }
             else if (String.Equals(textboxAnswear.Text, (String)SelectedPropertyToValidate, StringComparison.OrdinalIgnoreCase))
             {
-                textBlockStatus.Text = "Correct!";
                 CorrectPoints++;
+            }
+
+            if (rightAnswears != 0)
+            {
+                textBlockStatus.Text = "You got " + rightAnswears + " of " + answers.Count + " correct!";
             }
             else
             {
-                textBlockStatus.Text = "Wrong...";
+                textBlockStatus.Text = "Sorry, try again!";
             }
 
-            if (descriptionOn)
-            {
-                textBlockDesc.Text = GetValueFromValueList("ThaiFonet") + "\r\n" + EngWordsToString(PropertyListEngWords) + "\r\n" + GetValueFromValueList("EngDesc");
-            }
+            PopulateDescription(textBlockDesc);
 
             lbl_Counter_Page2.Content = CurrentFileIndex;
             lbl_Points.Content = "Points: " + CorrectPoints;
             lbl_Points_Page2.Content = "Points: " + CorrectPoints;
+        }
+
+        //object sender, RoutedEventArgs e http://www.thai-language.com/id/131000
+        public void SoundDownloader()
+        {
+            int startValue = 0;
+
+            string url = "";
+            int counterRight = 0;
+            int counterError = 0;
+            string errorText = "";
+
+            List<WordIDTEMP> listOfCorrect = new List<WordIDTEMP>();
+            HtmlWeb web = new HtmlWeb();
+
+            url = @"C:\Users\tommy\Desktop\thai.html";
+            HtmlDocument doc = new HtmlDocument();
+            doc.Load(url, Encoding.UTF8);
+            //web.Load(url);
+            int endValue = doc.DocumentNode.SelectNodes("//td[@class = 'th']/a").Count;
+
+            for (int i = startValue; i < endValue; i++)
+            {
+                string wordID = doc.DocumentNode.SelectNodes("//td[@class = 'th']/a")[i].Attributes[0].Value;
+                var soundID = doc.DocumentNode.SelectNodes("//tbody/tr[7]/td/a");//*[@id="translateresults"]/table[1]/tbody/tr[7]/td[3]/a[2]
+                var correctText = doc.DocumentNode.SelectNodes("//td[@class = 'th']/a")[i].InnerHtml;
+                foreach (Word word in Words)
+                {
+                    if (correctText == word.ThaiScript)
+                    {
+                        string[] ID = wordID.Split('/');
+
+                        url = @"http://www.thai-language.com/mp3/E" + ID[4] + ".mp3";
+                        string path = @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\" + word.ThaiScript + ".mp3";
+                        using (var client = new WebClient())
+                        {
+                            
+                            if (!File.Exists(path))
+                            {
+                                try
+                                {
+                                    counterRight++;
+                                    client.DownloadFile(url, path);
+                                }
+                                catch (WebException ex)
+                                {
+                                    counterError++;
+                                    MessageBox.Show("Error: " + ex);
+                                }
+                            }
+                            
+                        }
+                        if (word.SoundPath == null)
+                        {
+                            word.SoundPath = path;
+                        }
+                        break;
+                    }
+                }
+            }
+            MessageBox.Show("Downloaded: " + counterRight + ", Errors: " + counterError);
+            SaveFiles<Word>(Words);
         }
 
         #region component interaction
@@ -1039,7 +1071,6 @@ namespace LearnThaiApplication
         private void Btn_FormWindow(object sender, RoutedEventArgs e)
         {
             CreateFormWindow();
-            
         }
 
         private void Btn_ListMoveDown_Click(object sender, RoutedEventArgs e)
@@ -1124,11 +1155,26 @@ namespace LearnThaiApplication
 
         private void Btn_Speaker_Page1_Click(object sender, RoutedEventArgs e)
         {
-            var reader = new Mp3FileReader(@"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\P200149.mp3");
+            foreach (PropertyInfo prop in ListOfProperties)
+            {
+                if (prop.Name == "SoundPath")
+                {
+                    try
+                    {
+                        var reader = new Mp3FileReader((string)GetValueFromValueList(prop.Name));
+                        var waveOut = new WaveOut(); // or WaveOutEvent()
+                        waveOut.Init(reader);
+                        waveOut.Play();
+                    }
+                    catch (ArgumentNullException ex)
+                    {
+                        MessageBox.Show("Error:" + ex);
+                    }
 
-            var waveOut = new WaveOut(); // or WaveOutEvent()
-            waveOut.Init(reader);
-            waveOut.Play();
+
+
+                }
+            }
         }
 
         private void Btn_SubmitNewWord_Click(object sender, RoutedEventArgs e)
@@ -1241,9 +1287,9 @@ namespace LearnThaiApplication
         {
             if ((sender as CheckBox)?.IsChecked == true)
             {
-                txb_Description_page1.Text = GetValueFromValueList("ThaiFonet") + "\r\n" + EngWordsToString(PropertyListEngWords) + "\r\n" + GetValueFromValueList("EngDesc");
-                txb_Description_page2.Text = GetValueFromValueList("ThaiFonet") + "\r\n" + EngWordsToString(PropertyListEngWords) + "\r\n" + GetValueFromValueList("EngDesc");
                 descriptionOn = true;
+                PopulateDescription(txb_Description_page1);
+                PopulateDescription(txb_Description_page2);
             }
             else
             {
@@ -1330,8 +1376,6 @@ namespace LearnThaiApplication
             lbl_Chapter_Insert.Content = "English Description";
         }
 
-       
-
         private void Rb_Vowel_Checked(object sender, RoutedEventArgs e)
         {
             CurrentFileIndex = 0;
@@ -1374,6 +1418,11 @@ namespace LearnThaiApplication
 
         private void TabChanged(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+        }
+
+        private void SoundDownloader(object sender, RoutedEventArgs e)
+        {
+            SoundDownloader();
         }
     }
 

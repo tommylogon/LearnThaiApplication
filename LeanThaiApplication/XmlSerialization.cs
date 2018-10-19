@@ -34,7 +34,7 @@ namespace LearnThaiApplication
                 if (writer != null)
                     writer.Close();
             }
-            MessageBox.Show(message, "Save file Location");
+            //MessageBox.Show(message, "Save file Location");
         }
 
         /// <summary>

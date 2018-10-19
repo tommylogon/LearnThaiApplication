@@ -6,8 +6,11 @@
     <EngWords>
       <string>Sit</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นั่ง.mp3</SoundPath>
     <EngDesc>The a (ั) is pronounced like in bar, car or cut</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
@@ -16,6 +19,7 @@
     <EngWords>
       <string>Arm</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แขน.mp3</SoundPath>
     <EngDesc>The æ (แ) is pronounced like (british) bag, care or Rabbit</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -46,6 +50,7 @@
     <EngWords>
       <string>Duck</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เป็ด.mp3</SoundPath>
     <EngDesc>The e is (เ) pronounced like in get, jet, let</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -56,6 +61,7 @@
     <EngWords>
       <string>Beer</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เบียร์.mp3</SoundPath>
     <EngDesc>The ea (เีย) is pronounced like in beer, dear, gear.ร์ is not pronounced following the rules to closing sounds</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -66,6 +72,7 @@
     <EngWords>
       <string>Hit</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตี.mp3</SoundPath>
     <EngDesc>The ee ี is pronounced like in bee, sea</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -76,6 +83,7 @@
     <EngWords>
       <string>Music</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เพลง.mp3</SoundPath>
     <EngDesc>The ee (เ) is pronounced like in bread, dead</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -86,6 +94,7 @@
     <EngWords>
       <string>Crow</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กา.mp3</SoundPath>
     <EngDesc>The g (ก) is pronounced like in get, go, grand</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -96,6 +105,7 @@
     <EngWords>
       <string>Swan</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หงส์.mp3</SoundPath>
     <EngDesc>The h (ห) is pronounced like in hand, hard</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -106,6 +116,7 @@
     <EngWords>
       <string>Tounge</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ลิ้น.mp3</SoundPath>
     <EngDesc>the i (ิ) is pronounced like in bit, Italy, sit</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -116,6 +127,7 @@
     <EngWords>
       <string>Table</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โต๊ะ.mp3</SoundPath>
     <EngDesc>The o (โ) is pronounced like in hope, toe, tone</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -126,6 +138,7 @@
     <EngWords>
       <string>Walk</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เดิน.mp3</SoundPath>
     <EngDesc>The eer (เิ) is pronounced like in Bird, Burn, term, girl</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -136,6 +149,7 @@
     <EngWords>
       <string>Screen</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\จอ.mp3</SoundPath>
     <EngDesc>The aaw (อ) is pronounced like in aunt, ball, dog</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -146,6 +160,7 @@
     <EngWords>
       <string>jail</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คุก.mp3</SoundPath>
     <EngDesc>The oo (ุ) is pronounced like in butcher, put</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -156,6 +171,7 @@
     <EngWords>
       <string>Throw</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โยน.mp3</SoundPath>
     <EngDesc>The y is pronounced like in year, yes</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -166,6 +182,7 @@
     <EngWords>
       <string>Ticket</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตั๋ว.mp3</SoundPath>
     <EngDesc>The uaa (ัว) is pronounced like in tour, poor</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -176,6 +193,7 @@
     <EngWords>
       <string>Hand</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มือ.mp3</SoundPath>
     <EngDesc>Simply has to be practiced with sound</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -186,6 +204,7 @@
     <EngWords>
       <string>City</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เมือง.mp3</SoundPath>
     <EngDesc>Simply has to be practised with sound</EngDesc>
     <Tone />
     <Chapter>Key to understanding Thai</Chapter>
@@ -217,6 +236,7 @@
       <string>Eat</string>
       <string>Alms</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทาน.mp3</SoundPath>
     <EngDesc>This า is pronounced as a long A.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -233,6 +253,7 @@
       <string>Mr</string>
       <string>sir</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ท่าน.mp3</SoundPath>
     <EngDesc>This า is pronounced short, notice how similar it is to ทาน</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -244,6 +265,7 @@
       <string>More than</string>
       <string> over</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เกิน.mp3</SoundPath>
     <EngDesc>In most cases the long vowel เออ changes to เิ when followed by another consonant. Therfor yuo should not write it as เกอน.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -275,6 +297,7 @@
       <string>Form</string>
       <string> Shape</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทรง.mp3</SoundPath>
     <EngDesc>The letter combination ทร is usually pronounced as S</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -285,6 +308,7 @@
     <EngWords>
       <string>Child</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เด็ก.mp3</SoundPath>
     <EngDesc>This is how you say a child.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -306,6 +330,7 @@
       <string>Me</string>
       <string> I</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฉัน.mp3</SoundPath>
     <EngDesc>In Thai the gender of the speaking person is important. chan is used by women.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -316,6 +341,7 @@
     <EngWords>
       <string>particle used by men</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ครับ.mp3</SoundPath>
     <EngDesc>In Thai particles are used to show emotion and politness to the one you are speaking too.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -326,6 +352,7 @@
     <EngWords>
       <string>Particle used by women</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ค่ะ.mp3</SoundPath>
     <EngDesc>In Thai particles are used to show emotion and politness to the one you are speaking too. Ka is used by women.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -336,6 +363,7 @@
     <EngWords>
       <string>Morning</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เช้า.mp3</SoundPath>
     <EngDesc>06:00 untill 11:00</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -346,6 +374,7 @@
     <EngWords>
       <string>Afternoon</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\บ่าย.mp3</SoundPath>
     <EngDesc>13:00 untill 15:00</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -356,6 +385,7 @@
     <EngWords>
       <string>Late afternoon</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เย็น.mp3</SoundPath>
     <EngDesc>16:00 untill 18:00</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -366,6 +396,7 @@
     <EngWords>
       <string>Evening</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทุ่ม.mp3</SoundPath>
     <EngDesc>19:00 untill 23:00</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -506,6 +537,7 @@
     <EngWords>
       <string>Road</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ถนน.mp3</SoundPath>
     <EngDesc>This word is hard to read for a foreigner as it only contains consonants, but in Thai ther are often a unwritten vowel with either the sound a or o.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -516,6 +548,7 @@
     <EngWords>
       <string>Frog</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กบ.mp3</SoundPath>
     <EngDesc>To say this word (and many other words) you say an o between the consonants.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -526,6 +559,7 @@
     <EngWords>
       <string>Person</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คน.mp3</SoundPath>
     <EngDesc>To say this word (and many other words) you say an o between the consonants.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -536,6 +570,7 @@
     <EngWords>
       <string>Market</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตลาด.mp3</SoundPath>
     <EngDesc>Sometimes you have to add an additional a between consonants.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -546,6 +581,7 @@
     <EngWords>
       <string>Brain</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สมอง.mp3</SoundPath>
     <EngDesc>Sometimes you have to add an additional a between consonants.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -556,6 +592,7 @@
     <EngWords>
       <string>Club (stick)</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตะบอง.mp3</SoundPath>
     <EngDesc>There are many words where the a is written.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -566,6 +603,7 @@
     <EngWords>
       <string>Clean</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สะอาด.mp3</SoundPath>
     <EngDesc>There are many words where thhe a is written.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -587,6 +625,7 @@
       <string>Company</string>
       <string> Firm</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\บริษัท.mp3</SoundPath>
     <EngDesc>There are a few words with an additional aaw</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -629,6 +668,7 @@
       <string> with</string>
       <string> also</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กะ.mp3</SoundPath>
     <EngDesc>Consonant is of the normal tone class and has a short vowel, making the word pronounced with a low tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -679,6 +719,7 @@
     <EngWords>
       <string>Together</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กัน.mp3</SoundPath>
     <EngDesc>Consonant is of the normal tone class and has a nasal sound, making the word pronounced with a normal tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -689,6 +730,7 @@
     <EngWords>
       <string>None</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คะ.mp3</SoundPath>
     <EngDesc>[word added by a female speaker to the end of every question to convey politeness]  Consonant is of the low tone class and has a short vowel, making the word pronounced with a high tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -699,6 +741,7 @@
     <EngWords>
       <string>Suit</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สูท.mp3</SoundPath>
     <EngDesc>Thai transcription of the foreign loanword. Consonant is of the high tone class and has a stop  sound, making the word pronounced with a low tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -709,6 +752,7 @@
     <EngWords>
       <string>Color</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สี.mp3</SoundPath>
     <EngDesc>Consonant is of the high tone class and has a long vowel, making the word pronounced with a rising tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -721,6 +765,7 @@
       <string> backbone</string>
       <string> knife edge</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สัน.mp3</SoundPath>
     <EngDesc>Consonant is of the high tone class and has a nasal sound, making the word pronounced with a rising tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -740,6 +785,7 @@
     <EngWords>
       <string>Think</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คิด.mp3</SoundPath>
     <EngDesc>Consonant is of the low tone class and has a short vowel and a stop sound, making the word pronounced with a high tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -753,6 +799,7 @@
       <string> tongs pincers or chopsticks</string>
       <string> to nip</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คีบ.mp3</SoundPath>
     <EngDesc>Consonant is of the low tone class and has a long vowel and a stop sound, making the word pronounced with a falling tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -769,6 +816,7 @@
       <string> simply</string>
       <string> that is</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คือ.mp3</SoundPath>
     <EngDesc>Consonant is of the low tone class and has a long vowel, making the word pronounced with the normal tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -780,6 +828,7 @@
       <string>to itch</string>
       <string> or feel a need to scratch or sneeze</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คัน.mp3</SoundPath>
     <EngDesc>Consonant is of the low tone class and has a nasal sound, making the word pronounced with the normal tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -870,6 +919,7 @@
     <EngWords>
       <string>Indicates the same as quotation</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฯ.mp3</SoundPath>
     <EngDesc>This mark indicates what should follow is understod. E.g. Bangkok, the 'City of Angels'.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -881,6 +931,7 @@
       <string>so on</string>
       <string> et cetera</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฯลฯ.mp3</SoundPath>
     <EngDesc>This mark has the same meaning as so on or et cetera.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -891,6 +942,7 @@
     <EngWords>
       <string>Grass</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หญ้า.mp3</SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word gets a falling tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -903,6 +955,7 @@
       <string> Mice</string>
       <string> Rat</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนู.mp3</SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word get a rising tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -916,6 +969,7 @@
       <string> don't be...</string>
       <string> doesn't</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อย่า.mp3</SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -928,6 +982,7 @@
       <string> desire</string>
       <string> crave for</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อยาก.mp3</SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -946,6 +1001,7 @@
       <string> manner</string>
       <string> method</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อย่าง.mp3</SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -959,6 +1015,7 @@
       <string> to live (at)</string>
       <string> stay</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อยู่.mp3</SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -971,6 +1028,7 @@
       <string> granule</string>
       <string> silica sand</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทราย.mp3</SoundPath>
     <EngDesc>The letter combination ทร is usually pronounced as S</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -981,6 +1039,7 @@
     <EngWords>
       <string>scissors</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กรรไกร.mp3</SoundPath>
     <EngDesc>The letter combination รร can be pronounced as "an" or "a".</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -998,6 +1057,7 @@
       <string> natural</string>
       <string> common</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ธรรมดา.mp3</SoundPath>
     <EngDesc>The letter combination รร can be pronounced as "an" or "a".</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -1011,6 +1071,7 @@
       <string> benediction</string>
       <string> favor</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พร.mp3</SoundPath>
     <EngDesc>When ร is the closing sound it changes the vowel before it from an o (โอ) to an aaw (อ).</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -1021,6 +1082,7 @@
     <EngWords>
       <string>arrow</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ศร.mp3</SoundPath>
     <EngDesc>When ร is the closing sound it changes the vowel before it from an o (โอ) to an aaw (อ).</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -1035,6 +1097,7 @@
       <string> upright</string>
       <string> vertical</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตรง.mp3</SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -1045,6 +1108,7 @@
     <EngWords>
       <string>Hell</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นรก.mp3</SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -1060,6 +1124,7 @@
       <string> false</string>
       <string> phony</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปลอม.mp3</SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -1081,6 +1146,7 @@
     <EngWords>
       <string>water buffalo</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ควาย.mp3</SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -1093,6 +1159,7 @@
       <string> shining</string>
       <string> illuminated</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สว่าง.mp3</SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
     <Chapter>Special pronounciation</Chapter>
@@ -1141,6 +1208,7 @@
       <string> themselves</string>
       <string> [things] itself</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตัว.mp3</SoundPath>
     <EngDesc>[numerical classifier for digits;  number;  bodies;  shirts;  pants;  suits;  animals;  fish;  germs;  chairs;  tables;  desks;  software title]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1156,6 +1224,7 @@
       <string> document</string>
       <string> blade</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ใบ.mp3</SoundPath>
     <EngDesc>[numerical classifier for bottles;  drinking glasses;  backpacks;  money;  leaves;  sheets;  hats;  cards and other flat objects;  eggs];  [colloquial classifier for eggs]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1168,6 +1237,7 @@
       <string> stalk</string>
       <string> body of a plant</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ลำ.mp3</SoundPath>
     <EngDesc>[numerical classifier for long curved objects such as ships, airplanes, bamboo, etc.]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1188,6 +1258,7 @@
       <string>  contact (metiphorically)</string>
       <string />
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สาย.mp3</SoundPath>
     <EngDesc>[numerical classifier for roads, strings, wires, rivers, and other stringy things]; method; route; way; [of air] gust; [of rain] falling streaks; [of lightning] bolts; [of water in a stream] current.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1200,6 +1271,7 @@
       <string> a small thing</string>
       <string> piece</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อัน.mp3</SoundPath>
     <EngDesc>[numerical classifier for small things]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1214,6 +1286,7 @@
       <string> business</string>
       <string> duty</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\การ.mp3</SoundPath>
     <EngDesc>[placed before a verb or noun to create a noun which indicates a general activity, process, or state] the process of..., the activity of..., an enactment of..., the state of...</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1229,6 +1302,7 @@
       <string>  the topic or essential matter of</string>
       <string>  facts</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ความ.mp3</SoundPath>
     <EngDesc>[a prefix which converts an adjective or verb into a noun]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1266,6 +1340,7 @@
       <string> my</string>
       <string> hair [of the head]</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ผม.mp3</SoundPath>
     <EngDesc>[a prefix which conveys the gender of the speaker] Men says pom.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1278,6 +1353,7 @@
       <string> older siblings</string>
       <string />
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พี่.mp3</SoundPath>
     <EngDesc>[a polite pronoun for addressing an older sibling (including as oneself)] him; her; you; me</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1290,6 +1366,7 @@
       <string>  younger friend</string>
       <string>  younger colleague</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\น้อง.mp3</SoundPath>
     <EngDesc>[noun of direct address to a younger person, e.g., a waitress] Miss. When unsure of the other persons age it is best to use (พี่) pee instead of (น้อง) naawng.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1301,6 +1378,7 @@
       <string>man</string>
       <string> men</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ชาย.mp3</SoundPath>
     <EngDesc>This is how you adress another man or male.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1320,6 +1398,7 @@
       <string> virgin</string>
       <string> wench</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สาว.mp3</SoundPath>
     <EngDesc>This is how you adress another woman or female.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1333,6 +1412,7 @@
       <string> father's father</string>
       <string> grandpa</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปู่.mp3</SoundPath>
     <EngDesc>Grandfather of the fathers side.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1343,6 +1423,7 @@
     <EngWords>
       <string>maternal grandfather</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตา.mp3</SoundPath>
     <EngDesc>Grandfather of the mothers side.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1353,6 +1434,7 @@
     <EngWords>
       <string>paternal grandmother</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ย่า.mp3</SoundPath>
     <EngDesc>Grandmother of the fathers side.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1363,6 +1445,7 @@
     <EngWords>
       <string>maternal grandmother</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ยาย.mp3</SoundPath>
     <EngDesc>Grandmother of the mothers side.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1376,6 +1459,7 @@
       <string>  elder brother of a parent</string>
       <string>  great uncle</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ลุง.mp3</SoundPath>
     <EngDesc>Elder  brother of either mother or father.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1387,6 +1471,7 @@
       <string>aunt</string>
       <string>  elder sister of parents</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ป้า.mp3</SoundPath>
     <EngDesc>Elder  Sister of either mother or father.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1400,6 +1485,7 @@
       <string> uncle</string>
       <string> younger brother of father</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อา.mp3</SoundPath>
     <EngDesc>younger sibling of father.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1413,6 +1499,7 @@
       <string> uncle</string>
       <string> younger brother of mother</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\น้า.mp3</SoundPath>
     <EngDesc>younger sibling of mother.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1433,6 +1520,7 @@
     <EngWords>
       <string>Indicates urgency</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ซิ.mp3</SoundPath>
     <EngDesc>[a particle which conveys urgency, adding an imperative quality] (this is the way it is or must be)</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1443,6 +1531,7 @@
     <EngWords>
       <string>Indicates mild question</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นะ.mp3</SoundPath>
     <EngDesc>[word added to the end of a sentence to soften it, make it polite, indicate pleading, disagreement, ordering, surprise or emphasis]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1456,6 +1545,7 @@
       <string> "I guess so"</string>
       <string> "that’s just possible"</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มั้ง.mp3</SoundPath>
     <EngDesc>[particle indicating perhaps; that could be; possibly that just mentioned see]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1466,6 +1556,7 @@
     <EngWords>
       <string>Indicates a simple statement</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ละ.mp3</SoundPath>
     <EngDesc>[a particle used at the end of a statement or question to add an imperative quality]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1476,6 +1567,7 @@
     <EngWords>
       <string>at the end of a question or command</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ล่ะ.mp3</SoundPath>
     <EngDesc>[informal, spoken pronunciation of ละ a particle used at the end of a statement or question to add an imperative quality]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1488,6 +1580,7 @@
       <string> of course (not)</string>
       <string />
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หรอก.mp3</SoundPath>
     <EngDesc>[word often used with statements of contradiction or negation]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -1498,6 +1591,7 @@
     <EngWords>
       <string>One</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนึ่ง.mp3</SoundPath>
     <EngDesc>the number or quantity one</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1509,6 +1603,7 @@
       <string>Two</string>
       <string> 2</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สอง.mp3</SoundPath>
     <EngDesc>the number or quantity two</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1520,6 +1615,7 @@
       <string>Three</string>
       <string> 3</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สาม.mp3</SoundPath>
     <EngDesc>the number or quantity three</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1531,6 +1627,7 @@
       <string>Four</string>
       <string> 4</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สี่.mp3</SoundPath>
     <EngDesc>the number or quantity four.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1542,6 +1639,7 @@
       <string>Five</string>
       <string> 5</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ห้า.mp3</SoundPath>
     <EngDesc>the number or quantity five.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1553,6 +1651,7 @@
       <string>Six</string>
       <string>  6</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หก.mp3</SoundPath>
     <EngDesc>the number or quantity six.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1564,6 +1663,7 @@
       <string>Seven</string>
       <string> 7</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เจ็ด.mp3</SoundPath>
     <EngDesc>the number or quantity seven.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1575,6 +1675,7 @@
       <string>Eight</string>
       <string>  8</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แปด.mp3</SoundPath>
     <EngDesc>the number or quantity eight.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1586,6 +1687,7 @@
       <string>Nine</string>
       <string> 9</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เก้า.mp3</SoundPath>
     <EngDesc>the number or quantity nine.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1597,6 +1699,7 @@
       <string>Ten</string>
       <string>  10</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สิบ.mp3</SoundPath>
     <EngDesc>the number or quantity ten.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1829,6 +1932,7 @@
       <string> the number one hundred</string>
       <string> 100</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ร้อย.mp3</SoundPath>
     <EngDesc>the number or quantity one hundred.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1910,6 +2014,7 @@
       <string>  the number one thousand</string>
       <string>  1 000</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พัน.mp3</SoundPath>
     <EngDesc>the number or quantity one thousand.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1921,6 +2026,7 @@
       <string>ten thousand</string>
       <string>10 000</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หมื่น.mp3</SoundPath>
     <EngDesc>the number or quantity ten thousand.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1932,6 +2038,7 @@
       <string>hundred thousand</string>
       <string> 100 000</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แสน.mp3</SoundPath>
     <EngDesc>the number or quantity of a hundred thousand.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1944,6 +2051,7 @@
       <string> the number one million</string>
       <string> 1 000 000</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ล้าน.mp3</SoundPath>
     <EngDesc>the number or quantity of a million.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -1976,6 +2084,7 @@
     <EngWords>
       <string>Day</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\วัน.mp3</SoundPath>
     <EngDesc>This is how you say day. [วัน ๆ] from day to day; day in and day out; each and every day</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -1988,6 +2097,7 @@
       <string> give back (to)</string>
       <string> to return (to)</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คืน.mp3</SoundPath>
     <EngDesc>This is how you say night. Can also be used as a verb to say give back (to); to return (to)</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2006,6 +2116,7 @@
       <string> at the center (of...)</string>
       <string> halfway through...</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กลาง.mp3</SoundPath>
     <EngDesc>กลาง means during or in the middle of.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2042,6 +2153,7 @@
       <string> an interval</string>
       <string> when...</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตอน.mp3</SoundPath>
     <EngDesc>Means when or a periode of time.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2058,6 +2170,7 @@
       <string> distance</string>
       <string> span</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ช่วง.mp3</SoundPath>
     <EngDesc>Means when or a periode of time. Also has other meanings.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2143,6 +2256,7 @@
       <string>during</string>
       <string>  throughout</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ชั่ว.mp3</SoundPath>
     <EngDesc>Used when you want to indicate that something happens during a time.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2154,6 +2268,7 @@
       <string>hour</string>
       <string> o'clock</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โมง.mp3</SoundPath>
     <EngDesc>Used to indicate time or clock.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2164,6 +2279,7 @@
     <EngWords>
       <string>hour</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ชั่วโมง.mp3</SoundPath>
     <EngDesc>[in time; of time] an hour (when used as a quantity)</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2174,6 +2290,7 @@
     <EngWords>
       <string>a minute</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นาที.mp3</SoundPath>
     <EngDesc>Used to say minut, and by adding a number in front we get things like 1 minute.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2187,6 +2304,7 @@
       <string> mid</string>
       <string> ½</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ครึ่ง.mp3</SoundPath>
     <EngDesc>Used to indicate a half of something.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2202,6 +2320,7 @@
       <string> additional</string>
       <string> more</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อีก.mp3</SoundPath>
     <EngDesc>Used to indicate another or an additional.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2744,6 +2863,7 @@
     <EngWords>
       <string>Januray</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มกราคม.mp3</SoundPath>
     <EngDesc>The pronunciation of this word illustrates reduplication, where a single written consonant serves as the final consonant of a syllable and is then pronounced again as the initial consonant of the following syllable.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2754,6 +2874,7 @@
     <EngWords>
       <string>February</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กุมภาพันธ์.mp3</SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2764,6 +2885,7 @@
     <EngWords>
       <string>March</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มีนาคม.mp3</SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2774,6 +2896,7 @@
     <EngWords>
       <string>April</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เมษายน.mp3</SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2784,6 +2907,7 @@
     <EngWords>
       <string>May</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พฤษภาคม.mp3</SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2794,6 +2918,7 @@
     <EngWords>
       <string>June</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มิถุนายน.mp3</SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2804,6 +2929,7 @@
     <EngWords>
       <string>July</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กรกฎาคม.mp3</SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2814,6 +2940,7 @@
     <EngWords>
       <string>August</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สิงหาคม.mp3</SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2824,6 +2951,7 @@
     <EngWords>
       <string>September</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กันยายน.mp3</SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2834,6 +2962,7 @@
     <EngWords>
       <string>October</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตุลาคม.mp3</SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2844,6 +2973,7 @@
     <EngWords>
       <string>November</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พฤศจิกายน.mp3</SoundPath>
     <EngDesc>The pronunciation of this word illustrates reduplication, where a single written consonant serves as the final consonant of a syllable and is then pronounced again as the initial consonant of the following syllable.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -2854,6 +2984,7 @@
     <EngWords>
       <string>December</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ธันวาคม.mp3</SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -3108,6 +3239,7 @@
     <EngWords>
       <string>Leg</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ขา.mp3</SoundPath>
     <EngDesc>Pronounced with a rising tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3124,6 +3256,7 @@
       <string>canny</string>
       <string>sharp-witted</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คม.mp3</SoundPath>
     <EngDesc>Pronounced with a rising tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3136,6 +3269,7 @@
       <string>puzzled</string>
       <string>taken aback</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\งง.mp3</SoundPath>
     <EngDesc>Pronounced with a normal tone and an additional o.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3151,6 +3285,7 @@
       <string>to</string>
       <string>till</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\จน.mp3</SoundPath>
     <EngDesc>Pronounced with a normal tone and an additional o.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3164,6 +3299,7 @@
       <string>to spray</string>
       <string>to squirt in</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฉีด.mp3</SoundPath>
     <EngDesc>Pronounced with a low tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3175,6 +3311,7 @@
       <string>to wash</string>
       <string>launder</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ซัก.mp3</SoundPath>
     <EngDesc>Pronounced with a high tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3191,6 +3328,7 @@
       <string>kingdom</string>
       <string>realm</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ดิน.mp3</SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3203,6 +3341,7 @@
       <string>to drop or pour down</string>
       <string>to fail</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตด.mp3</SoundPath>
     <EngDesc>Pronounced with a low tone and an additinal o.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3215,6 +3354,7 @@
       <string>to carry</string>
       <string>to hold together</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ถือ.mp3</SoundPath>
     <EngDesc>Pronounced with a rising tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3228,6 +3368,7 @@
       <string>put on lotion</string>
       <string>put on makeup</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทา.mp3</SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3238,6 +3379,7 @@
     <EngWords>
       <string>Bird</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นก.mp3</SoundPath>
     <EngDesc>Pronounced with a high tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3258,6 +3400,7 @@
     <EngWords>
       <string>to fly</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\บิน.mp3</SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3268,6 +3411,7 @@
     <EngWords>
       <string>Crab</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปู.mp3</SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3278,6 +3422,7 @@
     <EngWords>
       <string>Rain</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฝน.mp3</SoundPath>
     <EngDesc>Pronounced with a rising tone and an additional o.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3291,6 +3436,7 @@
       <string>[is] adequate</string>
       <string>enough</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พอ.mp3</SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3302,6 +3448,7 @@
       <string>angle</string>
       <string>[of a street or room] a corner</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มุม.mp3</SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3314,6 +3461,7 @@
       <string>vehicle</string>
       <string>bus</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\รถ.mp3</SoundPath>
     <EngDesc>Pronounced with a high tone and an aditional o.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3324,6 +3472,7 @@
     <EngWords>
       <string>circle</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\วง.mp3</SoundPath>
     <EngDesc>Pronounced with a medium tone and an aditional o.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3341,6 +3490,7 @@
       <string>blissful</string>
       <string>still</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สุข.mp3</SoundPath>
     <EngDesc>Pronounced with a low tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3353,6 +3503,7 @@
       <string>meat of the pig</string>
       <string>swine</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หมู.mp3</SoundPath>
     <EngDesc>Pronounced with a rising tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3363,6 +3514,7 @@
     <EngWords>
       <string>cast netting used for fishing</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แห.mp3</SoundPath>
     <EngDesc>Pronounced with a rising tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -3373,6 +3525,7 @@
     <EngWords>
       <string> to bake</string>
     </EngWords>
+    <SoundPath>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อบ.mp3</SoundPath>
     <EngDesc>Pronounced with a low tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>

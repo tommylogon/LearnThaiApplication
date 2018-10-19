@@ -11,7 +11,7 @@ namespace LearnThaiApplication
 
         public List<String> EngWords { get; set; }
 
-        public string SoundPath { get; set; }
+        public string @SoundPath { get; set; }
 
         public string EngDesc { get; set; }
 

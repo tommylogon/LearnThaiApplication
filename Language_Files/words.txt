@@ -1,0 +1,306 @@
+นั่ง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นั่ง.mp3
+แขน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แขน.mp3
+หัวใจ 
+สีดำ 
+เป็ด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เป็ด.mp3
+เบียร์ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เบียร์.mp3
+ตี C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตี.mp3
+เพลง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เพลง.mp3
+กา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กา.mp3
+หงส์ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หงส์.mp3
+ลิ้น C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ลิ้น.mp3
+โต๊ะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โต๊ะ.mp3
+เดิน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เดิน.mp3
+จอ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\จอ.mp3
+คุก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คุก.mp3
+โยน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โยน.mp3
+ตั๋ว C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตั๋ว.mp3
+มือ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มือ.mp3
+เมือง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เมือง.mp3
+ก จ ฎ ฏ ด ต บ ป อ 
+ก ด บ 
+ทาน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทาน.mp3
+ท่าน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ท่าน.mp3
+เกิน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เกิน.mp3
+เสียง สามัญ 
+เสียง เอก 
+ทรง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทรง.mp3
+เด็ก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เด็ก.mp3
+เด็ก เด็ก 
+ฉัน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฉัน.mp3
+ครับ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ครับ.mp3
+ค่ะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ค่ะ.mp3
+เช้า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เช้า.mp3
+บ่าย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\บ่าย.mp3
+เย็น C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เย็น.mp3
+ทุ่ม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทุ่ม.mp3
+ตี 
+ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห 
+ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ 
+ง น ม 
+ย ว อ 
+ฉ ซ  ฌ ผ ฝ ฟ ห ฮ  
+ญ ร ล ฬ > น 
+ข ค ฆ > ก 
+ผ พ  > ภ 
+ฎ ฏ ด ต > ต 
+จ ช ฐ ฑ ฒ ถ ท ธ ศ ษ ส > ต 
+เดิน 
+เค็ด 
+ถนน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ถนน.mp3
+กบ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กบ.mp3
+คน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คน.mp3
+ตลาด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตลาด.mp3
+สมอง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สมอง.mp3
+ตะบอง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตะบอง.mp3
+สะอาด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สะอาด.mp3
+จระเข็ 
+บริษัท C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\บริษัท.mp3
+เสียง โท 
+เสียง ตรี 
+เสียง จัตวา 
+กะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กะ.mp3
+กบ 
+็ = ไม้ ได่ คู้ 
+มก 
+กา 
+กัน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กัน.mp3
+คะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คะ.mp3
+สูท C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สูท.mp3
+สี C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สี.mp3
+สัน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สัน.mp3
+คะ 
+คิด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คิด.mp3
+คีบ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คีบ.mp3
+คือ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คือ.mp3
+คัน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คัน.mp3
+่ = ไม้ เอก 
+้ = ไม้ โท 
+๊ = ไม้ ดรี 
+๋ = ไม้ จัตวา 
+่ = ไม้ เอก 
+้ = ไม้ โท 
+์ 
+ๆ 
+ฯ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฯ.mp3
+ฯลฯ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฯลฯ.mp3
+หญ้า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หญ้า.mp3
+หนู C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนู.mp3
+อย่า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อย่า.mp3
+อยาก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อยาก.mp3
+อย่าง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อย่าง.mp3
+อยู่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อยู่.mp3
+ทราย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทราย.mp3
+กรรไกร C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กรรไกร.mp3
+ธรรมดา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ธรรมดา.mp3
+พร C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พร.mp3
+ศร C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ศร.mp3
+ตรง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตรง.mp3
+นรก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นรก.mp3
+ปลอม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปลอม.mp3
+ตลาด 
+ควาย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ควาย.mp3
+สว่าง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สว่าง.mp3
+คน 
+คัน 
+ตัว C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตัว.mp3
+ใบ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ใบ.mp3
+ลำ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ลำ.mp3
+สาย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สาย.mp3
+อัน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อัน.mp3
+การ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\การ.mp3
+ความ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ความ.mp3
+การเริ่ม 
+ความคิด 
+ผม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ผม.mp3
+พี่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พี่.mp3
+น้อง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\น้อง.mp3
+ชาย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ชาย.mp3
+สาว C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สาว.mp3
+ปู่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปู่.mp3
+ตา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตา.mp3
+ย่า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ย่า.mp3
+ยาย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ยาย.mp3
+ลุง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ลุง.mp3
+ป้า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ป้า.mp3
+อา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อา.mp3
+น้า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\น้า.mp3
+คะ 
+ซิ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ซิ.mp3
+นะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นะ.mp3
+มั้ง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มั้ง.mp3
+ละ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ละ.mp3
+ล่ะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ล่ะ.mp3
+หรอก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หรอก.mp3
+หนึ่ง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนึ่ง.mp3
+สอง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สอง.mp3
+สาม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สาม.mp3
+สี่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สี่.mp3
+ห้า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ห้า.mp3
+หก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หก.mp3
+เจ็ด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เจ็ด.mp3
+แปด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แปด.mp3
+เก้า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เก้า.mp3
+สิบ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สิบ.mp3
+สิบเอ็ด 
+สิบสอง 
+สิบสาม 
+สิบสี่ 
+สิบห้า 
+สิบหก 
+สิบเจ็ด 
+สิบแปด 
+สิบเก้า 
+ยี่สิบ 
+ยี่สิบเอ็ด 
+ยี่สิบสอง 
+ยี่สิบสาม 
+สามสิบ 
+สี่สิบ 
+ห้าสิบ 
+หกสิบ 
+เจ็ดสิบ 
+แปดสิบ 
+เก้าสิบ 
+ร้อย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ร้อย.mp3
+(หนึ่ง) ร้อย 
+ร้อยหนึ่ง 
+ร้อยสอง 
+ร้อยสาม 
+สองร้อย 
+สามร้อย 
+พัน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พัน.mp3
+หมื่น C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หมื่น.mp3
+แสน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แสน.mp3
+ล้าน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ล้าน.mp3
+หกนาฬิกา 
+เจ็ดนาฬิกา 
+วัน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\วัน.mp3
+คืน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คืน.mp3
+กลาง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กลาง.mp3
+กลางวัน 
+กลางคืน 
+ตอน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตอน.mp3
+ช่วง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ช่วง.mp3
+ตอนเช้า 
+ช่วงเช้า 
+สาย 
+นานเท่าไหร่ 
+กี่โมง(แล้ว) 
+เมื่อไร 
+เมื่อกี้ 
+ชั่ว C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ชั่ว.mp3
+โมง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โมง.mp3
+ชั่วโมง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ชั่วโมง.mp3
+นาที C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นาที.mp3
+ครึ่ง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ครึ่ง.mp3
+อีก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อีก.mp3
+เที่ยงคืน 
+ตีหนึ่ง 
+ตีสอง 
+ตีสาม 
+ตีสี่ 
+ตีห้า 
+หกโมงเช้า 
+เจ็ดโมงเช้า 
+แปดโมงเช้า 
+เก้าโมงเช้า 
+สิบโมงเช้า 
+สิบเอ็ดโมงเช้า 
+เที่ยงวัน 
+บ่ายโมง 
+บ่ายสองโมง 
+บ่ายสามโมง 
+สี่โมงเย็น 
+ห้าโมงเย็น 
+หกโมงเย็น 
+ทุ่มหนึ่ง 
+สองทุ่ม 
+สามทุ่ม 
+สี่ทุ่ม 
+เที่ยงคืน 
+หกโมงห้านาที 
+หกโมงสิบนาที 
+หกโมงสิบห้านาที 
+หกโมงยี่สิบนาที 
+หกโมงยี่สิบห้านาที 
+หกโมงสามสิบนาที 
+หกโมงครึ่ง 
+หกโมงสามสิบห้านาที 
+หกโมงสี่สิบนาที 
+หกโมงสี่สิบห้านาที 
+อีกสิบห้านาทีเจ็ดโมง  
+หกโมงห้าสิบนาที 
+หกโมงห้าสิบห้านาที 
+วันจันทร์ 
+วันอังคาร 
+วันพุธ 
+วันพฤหัสบดี 
+วันศุกร์ 
+วันเสาร์ 
+วันอาทิตย์ 
+วันที่ 
+วันนี้ 
+วันทำงาน 
+วันหยุด 
+วันพระ 
+มกราคม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มกราคม.mp3
+กุมภาพันธ์ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กุมภาพันธ์.mp3
+มีนาคม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มีนาคม.mp3
+เมษายน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เมษายน.mp3
+พฤษภาคม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พฤษภาคม.mp3
+มิถุนายน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มิถุนายน.mp3
+กรกฎาคม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กรกฎาคม.mp3
+สิงหาคม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สิงหาคม.mp3
+กันยายน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กันยายน.mp3
+ตุลาคม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตุลาคม.mp3
+พฤศจิกายน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พฤศจิกายน.mp3
+ธันวาคม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ธันวาคม.mp3
+วันขึ้นปีใหม่ 
+วันมาฆบูชา 
+วันจักรี 
+วันสงกรานต์ 
+วันฉัตรมงคล 
+วันพืชมงคล 
+วันวิสาขบูชา 
+วันอาสาฬหบูชา 
+วันแม่ 
+วันพ่อ 
+สีแดง 
+สีเหลือง 
+สีชมพู 
+สีเขียว 
+สีส้ม 
+สีฟ้า 
+สีม่วง 
+สีขาว 
+สีดำ 
+สีน้ำเงิน 
+สีน้ำตาล 
+สีน้ำตาลอ่อน 
+สีเทา 
+กบ 
+ขา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ขา.mp3
+คม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คม.mp3
+งง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\งง.mp3
+จน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\จน.mp3
+ฉีด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฉีด.mp3
+ซัก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ซัก.mp3
+ดิน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ดิน.mp3
+ตด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตด.mp3
+ถือ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ถือ.mp3
+ทา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทา.mp3
+นก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นก.mp3
+นก 
+บิน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\บิน.mp3
+ปู C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปู.mp3
+ฝน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฝน.mp3
+พอ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พอ.mp3
+มุม C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มุม.mp3
+รถ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\รถ.mp3
+วง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\วง.mp3
+สุข C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สุข.mp3
+หมู C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หมู.mp3
+แห C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แห.mp3
+อบ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อบ.mp3
+กัน 
