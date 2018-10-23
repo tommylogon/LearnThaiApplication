@@ -10,7 +10,7 @@ namespace LearnThaiApplication
         {
         }
 
-        public Word(string thaiWord, string thaiFonet, List<String> engWords, string engDesc, string Chapter)
+        public Word(List<string> thaiWord, List<string> thaiFonet, List<String> engWords, string engDesc, string Chapter)
         {
             this.ThaiScript = thaiWord;
             this.ThaiFonet = thaiFonet;

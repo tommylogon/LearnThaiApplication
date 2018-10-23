@@ -9,7 +9,7 @@ namespace LearnThaiApplication
         {
         }
 
-        public Vowel(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords)
+        public Vowel(List<string> thaiSymbol, List<string> thaiFonet, string thaiHelpWord, List<String> engWords)
         {
             this.ThaiScript = thaiSymbol;
             this.ThaiHelpWord = thaiHelpWord;
@@ -19,7 +19,7 @@ namespace LearnThaiApplication
 
         
 
-        public Vowel(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords, string englishDescription)
+        public Vowel(List<string> thaiSymbol, List<string> thaiFonet, string thaiHelpWord, List<String> engWords, string englishDescription)
         {
             this.ThaiScript = thaiSymbol;
             this.ThaiHelpWord = thaiHelpWord;

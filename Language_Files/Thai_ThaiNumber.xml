@@ -1,101 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfThaiNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ThaiNumber>
-    <ThaiScript>๑</ThaiScript>
-    <ThaiFonet>neung</ThaiFonet>
+    <Name>๑</Name>
+    <ThaiScript>
+      <string>๑</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>neung</string>
+    </ThaiFonet>
     <EngWords>
       <string>One</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนึ่ง.mp3</string>
+    </SoundPath>
     <EngDesc>Thai digit one, 1</EngDesc>
     <Tone />
     <ThaiHelpWord>หนึ่ง</ThaiHelpWord>
   </ThaiNumber>
   <ThaiNumber>
-    <ThaiScript>๒</ThaiScript>
-    <ThaiFonet>saawng</ThaiFonet>
+    <Name>๒</Name>
+    <ThaiScript>
+      <string>๒</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>saawng</string>
+    </ThaiFonet>
     <EngWords>
       <string>Two</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สอง.mp3</string>
+    </SoundPath>
     <EngDesc>Thai digit two, 2</EngDesc>
     <Tone />
     <ThaiHelpWord>สอง</ThaiHelpWord>
   </ThaiNumber>
   <ThaiNumber>
-    <ThaiScript>๓</ThaiScript>
-    <ThaiFonet>saam</ThaiFonet>
+    <Name>๓</Name>
+    <ThaiScript>
+      <string>๓</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>saam</string>
+    </ThaiFonet>
     <EngWords>
       <string>Three</string>
     </EngWords>
+    <SoundPath />
     <EngDesc>Thai digit three, 3</EngDesc>
     <Tone />
     <ThaiHelpWord>สาม</ThaiHelpWord>
   </ThaiNumber>
   <ThaiNumber>
-    <ThaiScript>๔</ThaiScript>
-    <ThaiFonet>see</ThaiFonet>
+    <Name>๔</Name>
+    <ThaiScript>
+      <string>๔</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>see</string>
+    </ThaiFonet>
     <EngWords>
       <string>Four</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สี่.mp3</string>
+    </SoundPath>
     <EngDesc>Thai digit four, 4</EngDesc>
     <Tone />
     <ThaiHelpWord>สี่</ThaiHelpWord>
   </ThaiNumber>
   <ThaiNumber>
-    <ThaiScript>๕</ThaiScript>
-    <ThaiFonet>haa</ThaiFonet>
+    <Name>๕</Name>
+    <ThaiScript>
+      <string>๕</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>haa</string>
+    </ThaiFonet>
     <EngWords>
       <string>Five</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฮ่า.mp3</string>
+    </SoundPath>
     <EngDesc>Thai digit five, 5</EngDesc>
     <Tone />
     <ThaiHelpWord>ฮ่า</ThaiHelpWord>
   </ThaiNumber>
   <ThaiNumber>
-    <ThaiScript>๖</ThaiScript>
-    <ThaiFonet>hook</ThaiFonet>
+    <Name>๖</Name>
+    <ThaiScript>
+      <string>๖</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>hook</string>
+    </ThaiFonet>
     <EngWords>
       <string>Six</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หก.mp3</string>
+    </SoundPath>
     <EngDesc>Thai digit six, 6</EngDesc>
     <Tone />
     <ThaiHelpWord>หก</ThaiHelpWord>
   </ThaiNumber>
   <ThaiNumber>
-    <ThaiScript>๗</ThaiScript>
-    <ThaiFonet>jet</ThaiFonet>
+    <Name>๗</Name>
+    <ThaiScript>
+      <string>๗</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>jet</string>
+    </ThaiFonet>
     <EngWords>
       <string>Seven</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เจ็ด.mp3</string>
+    </SoundPath>
     <EngDesc>Thai digit seven, 7</EngDesc>
     <Tone />
     <ThaiHelpWord>เจ็ด</ThaiHelpWord>
   </ThaiNumber>
   <ThaiNumber>
-    <ThaiScript>๘</ThaiScript>
-    <ThaiFonet>bpaaet</ThaiFonet>
+    <Name>๘</Name>
+    <ThaiScript>
+      <string>๘</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>bpaaet</string>
+    </ThaiFonet>
     <EngWords>
       <string>Eight</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แปด.mp3</string>
+    </SoundPath>
     <EngDesc>Thai digit eight, 8</EngDesc>
     <Tone />
     <ThaiHelpWord>แปด</ThaiHelpWord>
   </ThaiNumber>
   <ThaiNumber>
-    <ThaiScript>๙</ThaiScript>
-    <ThaiFonet>gao</ThaiFonet>
+    <Name>๙</Name>
+    <ThaiScript>
+      <string>๙</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gao</string>
+    </ThaiFonet>
     <EngWords>
       <string>Nine</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เก้า.mp3</string>
+    </SoundPath>
     <EngDesc>Thai digit nine, 9</EngDesc>
     <Tone />
     <ThaiHelpWord>เก้า</ThaiHelpWord>
   </ThaiNumber>
   <ThaiNumber>
-    <ThaiScript>๐</ThaiScript>
-    <ThaiFonet>soon</ThaiFonet>
+    <Name>๐</Name>
+    <ThaiScript>
+      <string>๐</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>soon</string>
+    </ThaiFonet>
     <EngWords>
       <string>Two</string>
     </EngWords>
+    <SoundPath />
     <EngDesc>Thai digit zero, 0</EngDesc>
     <Tone />
     <ThaiHelpWord>สูน</ThaiHelpWord>

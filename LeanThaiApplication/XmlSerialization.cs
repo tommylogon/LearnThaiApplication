@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Windows;
 using System.Xml.Serialization;
 
 namespace LearnThaiApplication
@@ -31,8 +30,7 @@ namespace LearnThaiApplication
             }
             finally
             {
-                if (writer != null)
-                    writer.Close();
+                writer?.Close();
             }
             //MessageBox.Show(message, "Save file Location");
         }
@@ -55,8 +53,7 @@ namespace LearnThaiApplication
             }
             finally
             {
-                if (reader != null)
-                    reader.Close();
+                reader?.Close();
             }
         }
     }

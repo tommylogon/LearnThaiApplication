@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfConsonant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Consonant>
-    <ThaiScript>ก</ThaiScript>
-    <ThaiFonet>gai</ThaiFonet>
+    <Name>ก</Name>
+    <ThaiScript>
+      <string>ก</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gai</string>
+    </ThaiFonet>
     <EngWords>
       <string>Chicken</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไก่.mp3</string>
+    </SoundPath>
     <EngDesc />
     <Tone>
       <string />
@@ -13,11 +21,19 @@
     <ThaiHelpWord>ไก่</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ข</ThaiScript>
-    <ThaiFonet>kai</ThaiFonet>
+    <Name>ข</Name>
+    <ThaiScript>
+      <string>ข</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>kai</string>
+    </ThaiFonet>
     <EngWords>
       <string>Egg</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไข่.mp3</string>
+    </SoundPath>
     <EngDesc />
     <Tone>
       <string />
@@ -25,366 +41,651 @@
     <ThaiHelpWord>ไข่</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฃ</ThaiScript>
-    <ThaiFonet>kuad</ThaiFonet>
+    <Name>ฃ</Name>
+    <ThaiScript>
+      <string>ฃ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>kuad</string>
+    </ThaiFonet>
     <EngWords>
       <string> Bottle</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ขวด.mp3</string>
+    </SoundPath>
     <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ข.</EngDesc>
     <Tone />
     <ThaiHelpWord>ขวด</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ค</ThaiScript>
-    <ThaiFonet>kwaai</ThaiFonet>
+    <Name>ค</Name>
+    <ThaiScript>
+      <string>ค</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>kwaai</string>
+    </ThaiFonet>
     <EngWords>
       <string> Water buffalo</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ควาย.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ควาย</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฅ</ThaiScript>
-    <ThaiFonet>kon</ThaiFonet>
+    <Name>ฅ</Name>
+    <ThaiScript>
+      <string>ฅ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>kon</string>
+    </ThaiFonet>
     <EngWords>
       <string> Person</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คน.mp3</string>
+    </SoundPath>
     <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ค.</EngDesc>
     <Tone />
     <ThaiHelpWord>คน</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฆ</ThaiScript>
-    <ThaiFonet>ra kang</ThaiFonet>
+    <Name>ฆ</Name>
+    <ThaiScript>
+      <string>ฆ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>ra kang</string>
+    </ThaiFonet>
     <EngWords>
       <string>Bell</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ระฆัง.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ระฆัง</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ง</ThaiScript>
-    <ThaiFonet>ngoo</ThaiFonet>
+    <Name>ง</Name>
+    <ThaiScript>
+      <string>ง</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>ngoo</string>
+    </ThaiFonet>
     <EngWords>
       <string>Snake</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\งู.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>งู</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>จ</ThaiScript>
-    <ThaiFonet>jaan</ThaiFonet>
+    <Name>จ</Name>
+    <ThaiScript>
+      <string>จ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>jaan</string>
+    </ThaiFonet>
     <EngWords>
       <string>Plate</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\จาน.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>จาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฉ</ThaiScript>
-    <ThaiFonet>ching</ThaiFonet>
+    <Name>ฉ</Name>
+    <ThaiScript>
+      <string>ฉ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>ching</string>
+    </ThaiFonet>
     <EngWords>
       <string>Cymbals</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฉิ่ง.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ฉิ่ง</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ช</ThaiScript>
-    <ThaiFonet>chaang</ThaiFonet>
+    <Name>ช</Name>
+    <ThaiScript>
+      <string>ช</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>chaang</string>
+    </ThaiFonet>
     <EngWords>
       <string>Elephant</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ช้าง.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ช้าง</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ซ</ThaiScript>
-    <ThaiFonet>soo</ThaiFonet>
+    <Name>ซ</Name>
+    <ThaiScript>
+      <string>ซ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>soo</string>
+    </ThaiFonet>
     <EngWords>
       <string>Chains</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โซ่.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>โซ่</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฌ</ThaiScript>
-    <ThaiFonet>chøø</ThaiFonet>
+    <Name>ฌ</Name>
+    <ThaiScript>
+      <string>ฌ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>chøø</string>
+    </ThaiFonet>
     <EngWords>
       <string>Thai tree</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เฌอ.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>เฌอ</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ญ</ThaiScript>
-    <ThaiFonet>ying</ThaiFonet>
+    <Name>ญ</Name>
+    <ThaiScript>
+      <string>ญ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>ying</string>
+    </ThaiFonet>
     <EngWords>
       <string>Woman</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หญิง.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>หญิง</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฎ</ThaiScript>
-    <ThaiFonet>cha daa</ThaiFonet>
+    <Name>ฎ</Name>
+    <ThaiScript>
+      <string>ฎ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>cha daa</string>
+    </ThaiFonet>
     <EngWords>
       <string>headdress</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ชฎา.mp3</string>
+    </SoundPath>
     <EngDesc>Type of headdress used in Thai classical dancing and theater</EngDesc>
     <Tone />
     <ThaiHelpWord>ชฎา</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฏ</ThaiScript>
-    <ThaiFonet>ba dag</ThaiFonet>
+    <Name>ฏ</Name>
+    <ThaiScript>
+      <string>ฏ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>ba dag</string>
+    </ThaiFonet>
     <EngWords>
       <string>harpoon</string>
       <string>spear</string>
       <string>javelin</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปฏัก.mp3</string>
+    </SoundPath>
     <EngDesc />
     <Tone />
     <ThaiHelpWord>ปฏัก</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฐ</ThaiScript>
-    <ThaiFonet>taan</ThaiFonet>
+    <Name>ฐ</Name>
+    <ThaiScript>
+      <string>ฐ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>taan</string>
+    </ThaiFonet>
     <EngWords>
       <string>Pedestal</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฐาน.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ฐาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฑ</ThaiScript>
-    <ThaiFonet>montoo</ThaiFonet>
+    <Name>ฑ</Name>
+    <ThaiScript>
+      <string>ฑ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>montoo</string>
+    </ThaiFonet>
     <EngWords>
       <string>The wife of a giant</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มณโฑ.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>มณโฑ</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฒ</ThaiScript>
-    <ThaiFonet>puu tow</ThaiFonet>
+    <Name>ฒ</Name>
+    <ThaiScript>
+      <string>ฒ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>puu tow</string>
+    </ThaiFonet>
     <EngWords>
       <string>Old person</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ผู้เฒ่า.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ผู้เฒ่า</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ณ</ThaiScript>
-    <ThaiFonet>neen</ThaiFonet>
+    <Name>ณ</Name>
+    <ThaiScript>
+      <string>ณ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>neen</string>
+    </ThaiFonet>
     <EngWords>
       <string>Novice monk</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เณร.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>เณร</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ด</ThaiScript>
-    <ThaiFonet>dek</ThaiFonet>
+    <Name>ด</Name>
+    <ThaiScript>
+      <string>ด</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>dek</string>
+    </ThaiFonet>
     <EngWords>
       <string>Child</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เด็ก.mp3</string>
+    </SoundPath>
     <EngDesc />
     <Tone />
     <ThaiHelpWord>เด็ก</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ต</ThaiScript>
-    <ThaiFonet>tow</ThaiFonet>
+    <Name>ต</Name>
+    <ThaiScript>
+      <string>ต</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>tow</string>
+    </ThaiFonet>
     <EngWords>
       <string>Turtle</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เต่า.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>เต่า</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ถ</ThaiScript>
-    <ThaiFonet>tung</ThaiFonet>
+    <Name>ถ</Name>
+    <ThaiScript>
+      <string>ถ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>tung</string>
+    </ThaiFonet>
     <EngWords>
       <string>Bag</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ถุง.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ถุง</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ท</ThaiScript>
-    <ThaiFonet>tahaan</ThaiFonet>
+    <Name>ท</Name>
+    <ThaiScript>
+      <string>ท</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>tahaan</string>
+    </ThaiFonet>
     <EngWords>
       <string>Soldier</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทหาร.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ทหาร</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ธ</ThaiScript>
-    <ThaiFonet>tong</ThaiFonet>
+    <Name>ธ</Name>
+    <ThaiScript>
+      <string>ธ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>tong</string>
+    </ThaiFonet>
     <EngWords>
       <string>Flag</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ธง.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ธง</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>น</ThaiScript>
-    <ThaiFonet>nuu</ThaiFonet>
+    <Name>น</Name>
+    <ThaiScript>
+      <string>น</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>nuu</string>
+    </ThaiFonet>
     <EngWords>
       <string>Mouse</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนู.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>หนู</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>บ</ThaiScript>
-    <ThaiFonet>bai maai</ThaiFonet>
+    <Name>บ</Name>
+    <ThaiScript>
+      <string>บ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>bai maai</string>
+    </ThaiFonet>
     <EngWords>
       <string>Leaf</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ใบไม้.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ใบไม้</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ป</ThaiScript>
-    <ThaiFonet>blaa</ThaiFonet>
+    <Name>ป</Name>
+    <ThaiScript>
+      <string>ป</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>blaa</string>
+    </ThaiFonet>
     <EngWords>
       <string>Fish</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปลา.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ปลา</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ผ</ThaiScript>
-    <ThaiFonet>pung</ThaiFonet>
+    <Name>ผ</Name>
+    <ThaiScript>
+      <string>ผ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>pung</string>
+    </ThaiFonet>
     <EngWords>
       <string>Bee</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ผึ้ง.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ผึ้ง</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฝ</ThaiScript>
-    <ThaiFonet>faa</ThaiFonet>
+    <Name>ฝ</Name>
+    <ThaiScript>
+      <string>ฝ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>faa</string>
+    </ThaiFonet>
     <EngWords>
       <string>Lid</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฝา.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ฝา</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>พ</ThaiScript>
-    <ThaiFonet>paan</ThaiFonet>
+    <Name>พ</Name>
+    <ThaiScript>
+      <string>พ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>paan</string>
+    </ThaiFonet>
     <EngWords>
       <string>Tray</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พาน.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>พาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฟ</ThaiScript>
-    <ThaiFonet>fan</ThaiFonet>
+    <Name>ฟ</Name>
+    <ThaiScript>
+      <string>ฟ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>fan</string>
+    </ThaiFonet>
     <EngWords>
       <string>Tooth</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฟัน.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ฟัน</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ภ</ThaiScript>
-    <ThaiFonet>sampow</ThaiFonet>
+    <Name>ภ</Name>
+    <ThaiScript>
+      <string>ภ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>sampow</string>
+    </ThaiFonet>
     <EngWords>
       <string>Sailboat</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สำเภา.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>สำเภา</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ม</ThaiScript>
-    <ThaiFonet>maa</ThaiFonet>
+    <Name>ม</Name>
+    <ThaiScript>
+      <string>ม</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>maa</string>
+    </ThaiFonet>
     <EngWords>
       <string>Horse</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ม้า.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ม้า</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ย</ThaiScript>
-    <ThaiFonet>yag</ThaiFonet>
+    <Name>ย</Name>
+    <ThaiScript>
+      <string>ย</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>yag</string>
+    </ThaiFonet>
     <EngWords>
       <string>Giant</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ยักษ์.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ยักษ์</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ร</ThaiScript>
-    <ThaiFonet>rua</ThaiFonet>
+    <Name>ร</Name>
+    <ThaiScript>
+      <string>ร</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>rua</string>
+    </ThaiFonet>
     <EngWords>
       <string>Boat</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เรือ.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>เรือ</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ล</ThaiScript>
-    <ThaiFonet>ling</ThaiFonet>
+    <Name>ล</Name>
+    <ThaiScript>
+      <string>ล</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>ling</string>
+    </ThaiFonet>
     <EngWords>
       <string>Monkey</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ลิง.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ลิง</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ว</ThaiScript>
-    <ThaiFonet>wææn</ThaiFonet>
+    <Name>ว</Name>
+    <ThaiScript>
+      <string>ว</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>wææn</string>
+    </ThaiFonet>
     <EngWords>
       <string>Ring</string>
     </EngWords>
+    <SoundPath />
     <Tone />
     <ThaiHelpWord>เเหาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ษ</ThaiScript>
-    <ThaiFonet>ruu see</ThaiFonet>
+    <Name>ษ</Name>
+    <ThaiScript>
+      <string>ษ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>ruu see</string>
+    </ThaiFonet>
     <EngWords>
       <string>Hermit</string>
     </EngWords>
+    <SoundPath />
     <Tone />
     <ThaiHelpWord>ฦๅษี</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>อ</ThaiScript>
-    <ThaiFonet>aang</ThaiFonet>
+    <Name>อ</Name>
+    <ThaiScript>
+      <string>อ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>aang</string>
+    </ThaiFonet>
     <EngWords>
       <string>Basin</string>
     </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อ่าง.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>อ่าง</ThaiHelpWord>
   </Consonant>
   <Consonant>
-    <ThaiScript>ฮ</ThaiScript>
-    <ThaiFonet>nok hoog</ThaiFonet>
+    <Name>ฮ</Name>
+    <ThaiScript>
+      <string>ฮ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>nok hoog</string>
+    </ThaiFonet>
     <EngWords>
       <string>Owl</string>
     </EngWords>
+    <SoundPath />
     <EngDesc />
     <Tone />
     <ThaiHelpWord>นกฮูก</ThaiHelpWord>
-  </Consonant>
-  <Consonant>
-    <ThaiScript>ก</ThaiScript>
-    <ThaiFonet>gai</ThaiFonet>
-    <EngWords>
-      <string>Chicken</string>
-    </EngWords>
-    <SoundPath />
-    <EngDesc />
-    <Tone>
-      <string />
-    </Tone>
-    <ThaiHelpWord>ไก่</ThaiHelpWord>
   </Consonant>
 </ArrayOfConsonant>

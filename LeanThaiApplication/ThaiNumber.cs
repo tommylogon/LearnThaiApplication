@@ -9,7 +9,7 @@ namespace LearnThaiApplication
         {
         }
 
-        public ThaiNumber(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords)
+        public ThaiNumber(List<string> thaiSymbol, List<string> thaiFonet, string thaiHelpWord, List<String> engWords)
         {
             this.ThaiScript = thaiSymbol;
             this.ThaiHelpWord = thaiHelpWord;
@@ -17,7 +17,7 @@ namespace LearnThaiApplication
             this.EngWords = engWords;
         }
 
-        public ThaiNumber(string thaiSymbol, string thaiFonet, string thaiHelpWord, List<String> engWords, string englishDescription)
+        public ThaiNumber(List<string> thaiSymbol, List<string> thaiFonet, string thaiHelpWord, List<String> engWords, string englishDescription)
         {
             this.ThaiScript = thaiSymbol;
             this.ThaiHelpWord = thaiHelpWord;

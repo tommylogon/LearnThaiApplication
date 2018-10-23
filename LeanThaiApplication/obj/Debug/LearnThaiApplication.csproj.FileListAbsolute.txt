@@ -13,7 +13,6 @@ C:\Users\tommy\source\repos\LeanThaiApplication\LeanThaiApplication\obj\Debug\Le
 C:\Users\tommy\source\repos\LeanThaiApplication\LeanThaiApplication\obj\Debug\LeanThaiApplication.Properties.Resources.resources
 C:\Users\tommy\source\repos\LeanThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.csproj.GenerateResource.cache
 C:\Users\tommy\source\repos\LeanThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.csproj.CoreCompileInputs.cache
-C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.csprojAssemblyReference.cache
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\MainWindow.g.cs
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\App.g.cs
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\MainWindow.baml
@@ -59,3 +58,4 @@ C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\C
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\HtmlAgilityPack.dll
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\HtmlAgilityPack.xml
+C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.csprojAssemblyReference.cache
