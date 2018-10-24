@@ -25,6 +25,5 @@ namespace LearnThaiApplication
             this.EngWords = engWords;
             this.EngDesc = englishDescription;
         }
-        
     }
 }

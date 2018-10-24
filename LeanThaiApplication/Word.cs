@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace LearnThaiApplication
 {
@@ -19,7 +18,6 @@ namespace LearnThaiApplication
             this.EngDesc = engDesc;
             this.Chapter = Chapter;
         }
-
 
         public string Chapter { get; set; }
     }

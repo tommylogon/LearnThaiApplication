@@ -115,11 +115,11 @@ namespace LearnThaiApplication
             int dosntHaveSound = 0;
             string fullText = "";
 
-            foreach(T word in list)
+            foreach (T word in list)
             {
                 SetPropertyOfGenericObject(word);
                 List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
-                foreach(string x in soundPaths)
+                foreach (string x in soundPaths)
                 {
                     if (string.IsNullOrEmpty(x))
                     {
@@ -137,16 +137,12 @@ namespace LearnThaiApplication
                         }
                     }
                 }
-                if(soundPaths.Count == 0)
+                if (soundPaths.Count == 0)
                 {
                     dosntHaveSound++;
                 }
-                
-
             }
 
-
-            
             fullText += hasSound + " " + typeof(T).Name + " has sound, and " + dosntHaveSound + " dont. \r\n";
             return fullText;
         }
@@ -370,7 +366,6 @@ namespace LearnThaiApplication
                 {
                     foreach (object obj in ListOfValues)
                     {
-
                     }
 
                     if ((string)ListOfValues[ListOfProperties.IndexOf(prop)] == valueToCompare)
@@ -422,7 +417,6 @@ namespace LearnThaiApplication
                 lib_LoadedWords.ItemsSource = list;
 
                 lib_LoadedWords.DisplayMemberPath = "Name";
-                
 
                 break;
             }
@@ -658,125 +652,130 @@ namespace LearnThaiApplication
             }
         }
 
-        public void TEMPNAME(List<string> XPATH, HtmlNode TableRow, int i, HtmlDocument doc)
+        public string CheckChildNode<T>(HtmlNode tableData, List<T> list) where T : new()
         {
-            string full = "";
-            var soundID = "";
-            var wordID = "";
-            var correctText = "";
-            string soundPath = "";
-            string savePath = "";
-            foreach (var value in TableRow.ChildNodes)
+            string attributeValue = "";
+
+            foreach (HtmlNode tableDataChild in tableData.ChildNodes)
             {
-                foreach (var subChild in value.ChildNodes)
+                HtmlAttributeCollection tableDataAttributes = tableData.Attributes;
+                foreach (HtmlAttribute attribute in tableDataAttributes)
                 {
-                    if (subChild.HasChildNodes)
+                    if (attribute.Value == "TH")
                     {
-                        var First = subChild.FirstChild;
-                        var Last = subChild.LastChild;
-                        string FirstVal = "";
-                        string LastVal = "";
-                        if (First.Name == "a" || Last.Name == "a")
+                        if (tableDataChild.Name == "a")
                         {
-                            if (First.Attributes.Count != 0)
+                            if (tableDataChild.Attributes.Count != 0)
                             {
-                                FirstVal = First.Attributes[0].Value;
-                            }
-                            if (Last.Attributes.Count != 0)
-                            {
-                                LastVal = subChild.LastChild.Attributes[0].Value;
-                            }
-                            if (FirstVal.Contains("mp3") || LastVal.Contains("mp3"))
-                            {
-                                XPATH.AddRange(subChild.ParentNode.XPath.Split('/').ToList<string>());
+                                attributeValue = tableDataChild.Attributes[0].Value;
 
-
-
-
-
-                                break;
-                            }
-                            else
-                            {
-                                break; ;
-                            }
-
-                        }
-                    }
-
-                }
-            }
-            if (XPATH.Count == 0 || XPATH == null)
-            {
-               // return null;
-            }
-            string trInXPATH = XPATH.Last<string>();
-
-            var NEWSoundIDNODES = doc.DocumentNode.SelectNodes("//*[@id='translateresults']/table/tbody/" + trInXPATH + "/td")[i];
-
-
-
-            var testerSoundID = doc.DocumentNode.SelectNodes("//*[@id='translateresults']/table/tbody/tr/td");
-
-            try
-            {
-
-
-                var WordIDNodes = doc.DocumentNode.SelectNodes("//td[@class = 'th']")[i].ChildNodes;
-
-                //doc.DocumentNode.SelectNodes("//*[@id='translateresults']/table/tbody/tr[7]/td")[i]
-
-                var SoundIDNodes = NEWSoundIDNODES.ChildNodes;
-
-                if (SoundIDNodes.Count() != 0 && WordIDNodes.Count() != 0)
-                {
-
-                    foreach (var child in WordIDNodes)
-                    {
-                        if (child.Name == "a")
-                        {
-                            wordID = child.Attributes[0].Value;
-                            correctText = child.InnerText;
-
-
-                        }
-                        else if (child.Name == "span")
-                        {
-                            foreach (var subchild in child.ChildNodes)
-                            {
-                                if (subchild.Name == "a")
+                                if (attributeValue.Contains("mp3"))
                                 {
-                                    wordID = subchild.Attributes[0].Value;
-                                    correctText = child.InnerText;
-
+                                    return attributeValue;
+                                }
+                                else if (attributeValue.Contains("id"))
+                                {
+                                    return tableDataChild.InnerText;
                                 }
                             }
                         }
-
-                    }
-
-                    foreach (var child in SoundIDNodes)
-                    {
-                        if (child.Name == "a" && child.Attributes[0].Value.Contains("mp3"))
+                        else if (tableDataChild.Name == "span")
                         {
-                            soundID = child.Attributes[0].Value;
-                            break;
+                            foreach (var subchild in tableDataChild.ChildNodes)
+                            {
+                                if (subchild.Name == "a")
+                                {
+                                    return tableDataChild.InnerText;
+                                }
+                            }
                         }
-                        
-
                     }
                 }
-                
             }
-            catch (Exception ex)
-            {
 
+            return null;
+
+            //if (tableDataChild.Name == "a")
+            //{
+            //    if (tableDataChild.Attributes.Count != 0)
+            //    {
+            //        value = tableDataChild.Attributes[0].Value;
+            //    }
+
+            //    if (value.Contains("mp3"))
+            //    {
+            //        soundPath = value;
+            //    }
+            //}
+        }
+
+        public void SelectNode<T>(string url, List<T> list) where T : new()
+        {
+            HtmlWeb web = new HtmlWeb();
+            HtmlDocument doc = new HtmlDocument();
+            doc.Load(url, Encoding.UTF8);
+
+            string full = "";
+            string soundID = "";
+            string wordID = "";
+            List<string> correctText = new List<string>();
+            List<string> soundPath = new List<string>();
+            string savePath = "";
+
+            int tableIndexMax = doc.DocumentNode.SelectNodes("//table/tbody").Count;
+
+            for (int tableIndex = 0; tableIndex < tableIndexMax; tableIndex++)
+            {
+                try
+                {
+                    HtmlNodeCollection tableRows = doc.DocumentNode.SelectNodes("//table/tbody")[tableIndex].ChildNodes;
+
+                    int tableRowIndexMax = tableRows.Count;
+
+                    // table1 tablerow1 tabledata1
+
+                    for (int tableRowIndex = 0; tableRowIndex < tableRowIndexMax; tableRowIndex++)
+                    {
+                        HtmlNodeCollection tableData = tableRows[tableRowIndex].ChildNodes;
+
+                        int tableDataIndexMax = tableData.Count;
+
+                        for (int tableDataIndex = 0; tableDataIndex < tableDataIndexMax; tableDataIndex++)
+                        {
+                            if (tableData[tableDataIndex].HasChildNodes)
+                            {
+                                CheckChildNode<T>(tableData[tableDataIndex], list);
+                            }
+                        }
+                    }
+                    //string value = "";
+
+                    //foreach (HtmlNode tableRow in tableNodeChildren)
+                    //{
+                    //    foreach (HtmlNode tableData in tableRow.ChildNodes)
+                    //    {
+                    //        if (tableData.HasChildNodes)
+                    //        {
+                    //            foreach (HtmlNode tableDataChild in tableData.ChildNodes)
+                    //            {
+                    //            }
+                    //        }
+                    //    }
+                    //}
+                    //var trIndex = doc.DocumentNode.SelectNodes("//*[@id='translateresults']/table/tbody/tr[7]/td");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
         }
-            
 
         public void SoundDownloader<T>(List<T> list, string url) where T : new()
         {
+            SelectNode<T>(url, list);
+
+            return;
             HtmlWeb web = new HtmlWeb();
             HtmlDocument doc = new HtmlDocument();
             doc.Load(url, Encoding.UTF8);
@@ -795,16 +794,13 @@ namespace LearnThaiApplication
             string soundPath = "";
             string savePath = "";
 
-
-
-
             for (int i = startValue; i < endValue; i++)
             {
                 if (i == 160)
                 {
                     Console.Write("BREAK"); //*[@id="translateresults"]/table[21]/tbody/tr[3]/td/a
                 }
-                
+
                 soundID = "";
                 wordID = "";
                 correctText = "";
@@ -814,35 +810,30 @@ namespace LearnThaiApplication
 
                 var testWordID = doc.DocumentNode.SelectNodes("//td[@class = 'th']");
                 var trIndex = doc.DocumentNode.SelectNodes("//*[@id='translateresults']/table/tbody/tr[7]/td")[i].ParentNode.ParentNode;
-                
 
                 foreach (var value in trIndex.ChildNodes)
                 {
-                    foreach(var subChild in value.ChildNodes)
+                    foreach (var subChild in value.ChildNodes)
                     {
                         if (subChild.HasChildNodes)
                         {
                             var First = subChild.FirstChild;
                             var Last = subChild.LastChild;
-                            string FirstVal="";
+                            string FirstVal = "";
                             string LastVal = "";
                             if (First.Name == "a" || Last.Name == "a")
                             {
-                                if(First.Attributes.Count != 0)
+                                if (First.Attributes.Count != 0)
                                 {
                                     FirstVal = First.Attributes[0].Value;
                                 }
-                                if(Last.Attributes.Count != 0)
+                                if (Last.Attributes.Count != 0)
                                 {
                                     LastVal = subChild.LastChild.Attributes[0].Value;
                                 }
-                                if(FirstVal.Contains("mp3") || LastVal.Contains("mp3"))
+                                if (FirstVal.Contains("mp3") || LastVal.Contains("mp3"))
                                 {
-                                     XPATH.AddRange(subChild.ParentNode.XPath.Split('/').ToList<string>());
-                                    
-                                        
-                                    
-
+                                    XPATH.AddRange(subChild.ParentNode.XPath.Split('/').ToList<string>());
 
                                     break;
                                 }
@@ -850,10 +841,8 @@ namespace LearnThaiApplication
                                 {
                                     break; ;
                                 }
-                                
                             }
                         }
-                        
                     }
                 }
                 if (XPATH.Count == 0 || XPATH == null)
@@ -862,45 +851,46 @@ namespace LearnThaiApplication
                 }
                 string trInXPATH = XPATH.Last<string>();
                 var NEWSoundIDNODESTEST = doc.DocumentNode.SelectNodes("//*[@id='translateresults']/table/tbody/" + trInXPATH + "/td");
-                var NEWSoundIDNODES = doc.DocumentNode.SelectNodes("//*[@id='translateresults']/table/tbody/"+ trInXPATH + "/td")[i];
+                foreach (var child in NEWSoundIDNODESTEST)
+                {
+                    if (child.Name == "a" && child.Attributes[0].Value.Contains("mp3"))
+                    {
+                        soundID = child.Attributes[0].Value;
+                        break;
+                    }
+                    //foreach(var parentchild in child.ParentNode.ParentNode)
+                }
 
-
+                var NEWSoundIDNODES = doc.DocumentNode.SelectNodes("//*[@id='translateresults']/table/tbody/" + trInXPATH + "/td")[i];
 
                 var testerSoundID = doc.DocumentNode.SelectNodes("//*[@id='translateresults']/table/tbody/tr/td");
-                
+
                 try
                 {
-                    
-
                     var WordIDNodes = doc.DocumentNode.SelectNodes("//td[@class = 'th']")[i].ChildNodes;
                     //doc.DocumentNode.SelectNodes("//*[@id='translateresults']/table/tbody/tr[7]/td")[i]
                     var SoundIDNodes = NEWSoundIDNODES.ChildNodes;
-                    
-                    if(SoundIDNodes.Count != 0 && WordIDNodes.Count != 0)
-                    {
 
+                    if (SoundIDNodes.Count != 0 && WordIDNodes.Count != 0)
+                    {
                         foreach (var child in WordIDNodes)
                         {
                             if (child.Name == "a")
                             {
                                 wordID = child.Attributes[0].Value;
                                 correctText = child.InnerText;
-                                
-
                             }
-                            else if(child.Name == "span")
+                            else if (child.Name == "span")
                             {
                                 foreach (var subchild in child.ChildNodes)
                                 {
-                                    if(subchild.Name == "a")
+                                    if (subchild.Name == "a")
                                     {
                                         wordID = subchild.Attributes[0].Value;
                                         correctText = child.InnerText;
-                                        
                                     }
                                 }
                             }
-
                         }
 
                         foreach (var child in SoundIDNodes)
@@ -911,10 +901,9 @@ namespace LearnThaiApplication
                                 break;
                             }
                             //foreach(var parentchild in child.ParentNode.ParentNode)
-
                         }
                     }
-                    if(soundID.Length == 0)
+                    if (soundID.Length == 0)
                     {
                         continue;
                     }
@@ -924,7 +913,6 @@ namespace LearnThaiApplication
                     full += correctText + "   " + soundID + "\r\n";
 
                     File.WriteAllText(LanguageFilePath + "soundpaths_" + typeof(T) + ".txt", full);
-                    
 
                     foreach (T word in list)
                     {
@@ -932,8 +920,6 @@ namespace LearnThaiApplication
 
                         if (((List<string>)GetValueFromValueList("ThaiScript")).Contains(correctText) || correctText == (string)GetValueFromValueList("ThaiHelpWord"))
                         {
-                            
-
                             string downloadUrl = soundID;
 
                             savePath = @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\" + correctText + ".mp3";
@@ -963,32 +949,28 @@ namespace LearnThaiApplication
                             else
                             {
                                 var listOfScript = (List<string>)GetValueFromValueList("ThaiScript");
-                                foreach(string value in listOfScript)
+                                foreach (string value in listOfScript)
                                 {
                                     soundPath = @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\" + value + ".mp3";
                                 }
-                                
                             }
                             var listOfPaths = (List<string>)GetValueFromValueList("SoundPath");
 
-                            
-                                if (listOfPaths.Count == 0)
-                                {
-                                    SetValueOfObject(soundPath, "SoundPath", word);
-                                }
-                                else
-                                {
-                                    counterAlready++;
-                                }
-                            
-                            
+                            if (listOfPaths.Count == 0)
+                            {
+                                SetValueOfObject(soundPath, "SoundPath", word);
+                            }
+                            else
+                            {
+                                counterAlready++;
+                            }
                         }
                     }
                 }
                 catch (Exception e)
                 {
-                     counterError++;
-                    MessageBox.Show("Error at wordID: " + wordID +", Exeption: " + e.Message);
+                    counterError++;
+                    MessageBox.Show("Error at wordID: " + wordID + ", Exeption: " + e.Message);
                 }
             }
 
@@ -1123,7 +1105,7 @@ namespace LearnThaiApplication
         {
             List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
             int tabIndex = SelectParentIndex(sender);
-            if(soundPaths.Count == 0)
+            if (soundPaths.Count == 0)
             {
                 if (tabIndex == 0)
                 {
@@ -1134,7 +1116,7 @@ namespace LearnThaiApplication
                     btn_Speaker_Page2.Background = Brushes.Red;
                 }
             }
-            foreach(string value in soundPaths)
+            foreach (string value in soundPaths)
             {
                 if (string.IsNullOrEmpty(value) && !File.Exists(value))
                 {
@@ -1160,7 +1142,6 @@ namespace LearnThaiApplication
                     }
                 }
             }
-            
         }
 
         /// <summary>
@@ -1381,12 +1362,11 @@ namespace LearnThaiApplication
         public void WriteWordToFile<T>(List<T> list) where T : new()
         {
             string full = "";
-            
+
             foreach (T word in list)
             {
                 SetPropertyOfGenericObject(word);
                 SetValueOfObject(((List<string>)GetValueFromValueList("ThaiScript"))[0], "Name", word);
-                
 
                 if (((List<string>)GetValueFromValueList("SoundPath")).Count != 0)
                 {
@@ -1401,24 +1381,21 @@ namespace LearnThaiApplication
                             full += s + " ";
                         }*/
                         full += (string)GetValueFromValueList("ThaiHelpWord") + " ";
-
                     }
                     else
                     {
-                        foreach(string s in (List<string>)GetValueFromValueList("ThaiScript"))
+                        foreach (string s in (List<string>)GetValueFromValueList("ThaiScript"))
                         {
                             full += s + " ";
                         }
-                        
                     }
-                    foreach(string path in (List<string>)GetValueFromValueList("SoundPath"))
+                    foreach (string path in (List<string>)GetValueFromValueList("SoundPath"))
                     {
                         full += path + " ";
                     }
                     full += "\r\n";
                     File.WriteAllText(LanguageFilePath + word.GetType() + ".txt", full);
                 }
-                
             }
         }
 
@@ -1619,7 +1596,6 @@ namespace LearnThaiApplication
                     waveOut.Init(reader);
                     waveOut.Play();
                 }
-                
             }
             catch (Exception ex)
             {
@@ -1720,9 +1696,9 @@ namespace LearnThaiApplication
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string fullText = CheckSoundStatus<Word>(Words);
-             fullText += CheckSoundStatus<Consonant>(Consonants);
-             fullText += CheckSoundStatus<Vowel>(Vowels);
-             fullText += CheckSoundStatus<ThaiNumber>(Numbers);
+            fullText += CheckSoundStatus<Consonant>(Consonants);
+            fullText += CheckSoundStatus<Vowel>(Vowels);
+            fullText += CheckSoundStatus<ThaiNumber>(Numbers);
 
             MessageBox.Show(fullText);
         }

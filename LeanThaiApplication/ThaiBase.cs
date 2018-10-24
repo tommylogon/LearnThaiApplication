@@ -18,7 +18,5 @@ namespace LearnThaiApplication
         public string EngDesc { get; set; }
 
         public List<String> Tone { get; set; }
-
-        
     }
 }
