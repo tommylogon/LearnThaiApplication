@@ -25,5 +25,21 @@ namespace LearnThaiApplication
         {
             InitializeComponent();
         }
+
+        private void WindowActivated(object sender, EventArgs e)
+        {
+            this.Topmost = true;
+        }
+
+        private void WindowDeactivated(object sender, EventArgs e)
+        {
+            this.Topmost = true;
+            this.Activate();
+        }
+
+        private void WindowSizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            ((Viewbox)this.Content).Width = this.Width;
+        }
     }
 }

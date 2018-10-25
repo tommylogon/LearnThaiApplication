@@ -347,25 +347,47 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>ก จ ฎ ฏ ด ต บ ป อ</Name>
+    <Name>ก</Name>
     <ThaiScript>
-      <string>ก จ ฎ ฏ ด ต บ ป อ</string>
+      <string>ก</string>
+      <string>จ</string>
+      <string>ฎ</string>
+      <string>ฏ</string>
+      <string>ด</string>
+      <string>ต</string>
+      <string>บ</string>
+      <string>ป</string>
+      <string>อ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>go jo cho bo do dto bo bpo o</string>
+      <string>go</string>
+      <string>jo</string>
+      <string>cho</string>
+      <string>bo</string>
+      <string>do</string>
+      <string>dto</string>
+      <string>bo</string>
+      <string>bpo</string>
+      <string>o,</string>
     </ThaiFonet>
     <EngWords>
       <string>Normal tone class</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อ.mp3</string>
+    </SoundPath>
     <EngDesc>These are the consonants with the normal tone class</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Thai alphabet</Chapter>
   </Word>
   <Word>
-    <Name>ก ด บ</Name>
+    <Name>ก</Name>
     <ThaiScript>
-      <string>ก ด บ</string>
+      <string>ก</string>
+      <string>ด</string>
+      <string>บ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>go</string>
@@ -375,9 +397,13 @@
     <EngWords>
       <string>Stop sounds</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\บ.mp3</string>
+    </SoundPath>
     <EngDesc>There are 3 closing sounds called stop sounds</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
@@ -416,7 +442,9 @@
       <string>Mr</string>
       <string>sir</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ท่าน.mp3</string>
+    </SoundPath>
     <EngDesc>This า is pronounced short, notice how similar it is to ทาน</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -441,9 +469,9 @@
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>เสียง สามัญ</Name>
+    <Name>เสียงสามัญ</Name>
     <ThaiScript>
-      <string>เสียง สามัญ</string>
+      <string>เสียงสามัญ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>siiang saa man</string>
@@ -451,15 +479,17 @@
     <EngWords>
       <string>Normal (First) Tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เสียงสามัญ.mp3</string>
+    </SoundPath>
     <EngDesc>The normal tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>เสียง เอก</Name>
+    <Name>เสียงเอก</Name>
     <ThaiScript>
-      <string>เสียง เอก</string>
+      <string>เสียงเอก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>siiang aehk</string>
@@ -467,7 +497,9 @@
     <EngWords>
       <string>Low Tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เสียงเอก.mp3</string>
+    </SoundPath>
     <EngDesc>The low tone. also know as the second tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -510,9 +542,9 @@
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>เด็ก เด็ก</Name>
+    <Name>เด็กเด็ก</Name>
     <ThaiScript>
-      <string>เด็ก เด็ก</string>
+      <string>เด็กเด็ก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>dek dek</string>
@@ -520,9 +552,13 @@
     <EngWords>
       <string>Children</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เด็ก เด็ก.mp3</string>
+    </SoundPath>
     <EngDesc>Thai nouns don't have a grametical gender, no articles and no plural forms. but there is a classifier system for the correct use of nouns</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
@@ -537,7 +573,9 @@
       <string>Me</string>
       <string> I</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฉัน.mp3</string>
+    </SoundPath>
     <EngDesc>In Thai the gender of the speaking person is important. chan is used by women.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -669,74 +707,164 @@
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห</Name>
+    <Name>ข</Name>
     <ThaiScript>
-      <string>ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห</string>
+      <string>ข</string>
+      <string>ฃ</string>
+      <string>ฉ</string>
+      <string>ฐ</string>
+      <string>ถ</string>
+      <string>ผ</string>
+      <string>ฝ</string>
+      <string>ศ</string>
+      <string>ษ</string>
+      <string>ส</string>
+      <string>ห</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>ko ko cho to to po fo so so so ho</string>
+      <string>ko</string>
+      <string>ko</string>
+      <string>cho</string>
+      <string>to</string>
+      <string>to</string>
+      <string>po</string>
+      <string>fo</string>
+      <string>so</string>
+      <string>so</string>
+      <string>so</string>
+      <string>ho,</string>
     </ThaiFonet>
     <EngWords>
       <string>High tone class</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ห.mp3</string>
+    </SoundPath>
     <EngDesc>These are the consonants with the High tone class</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Thai alphabet</Chapter>
   </Word>
   <Word>
-    <Name>ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ</Name>
+    <Name>ค</Name>
     <ThaiScript>
-      <string>ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ</string>
+      <string>ค</string>
+      <string>ฅ</string>
+      <string>ฆ</string>
+      <string>ง</string>
+      <string>ช</string>
+      <string>ซ</string>
+      <string>ฌ</string>
+      <string>ญ</string>
+      <string>ฑ</string>
+      <string>ฒ</string>
+      <string>ณ</string>
+      <string>ท</string>
+      <string>ธ</string>
+      <string>น</string>
+      <string>พ</string>
+      <string>ฟ</string>
+      <string>ภ</string>
+      <string>ม</string>
+      <string>ย</string>
+      <string>ร</string>
+      <string>ล</string>
+      <string>ว</string>
+      <string>ฬ</string>
+      <string>ฮ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>ko ko ko ngo cho so cho yo to to no to to no po fo po mo</string>
-      <string>yo ro lo wo lo ho</string>
+      <string>ko</string>
+      <string>ko</string>
+      <string>ko</string>
+      <string>ngo</string>
+      <string>cho</string>
+      <string>so</string>
+      <string>cho</string>
+      <string>yo</string>
+      <string>to</string>
+      <string>to</string>
+      <string>no</string>
+      <string>to</string>
+      <string>to</string>
+      <string>no</string>
+      <string>po</string>
+      <string>fo</string>
+      <string>po</string>
+      <string>mo</string>
+      <string>yo</string>
+      <string>ro</string>
+      <string>lo</string>
+      <string>wo</string>
+      <string>lo</string>
+      <string>ho</string>
     </ThaiFonet>
     <EngWords>
       <string>Low tone class</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฮ.mp3</string>
+    </SoundPath>
     <EngDesc>These are the consonants with the Low tone class</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Thai alphabet</Chapter>
   </Word>
   <Word>
-    <Name>ง น ม</Name>
+    <Name>ง</Name>
     <ThaiScript>
-      <string>ง น ม</string>
+      <string>ง</string>
+      <string>น</string>
+      <string>ม</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>ngo no mo</string>
+      <string>ngo</string>
+      <string>no</string>
+      <string>mo</string>
     </ThaiFonet>
     <EngWords>
       <string>Nasal Sounds</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ม.mp3</string>
+    </SoundPath>
     <EngDesc>There are 3 closing sounds called stop sounds called Nasal sounds</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ย ว อ</Name>
+    <Name>ย</Name>
     <ThaiScript>
-      <string>ย ว อ</string>
+      <string>ย</string>
+      <string>ว</string>
+      <string>อ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>yo wo aaw</string>
+      <string>yo</string>
+      <string>wo</string>
+      <string>aaw</string>
     </ThaiFonet>
     <EngWords>
       <string>Part of vowels</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อ.mp3</string>
+    </SoundPath>
     <EngDesc>These 3 letters are usually part of a Vowel</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฉ ซ</Name>
+    <Name>ฉ</Name>
     <ThaiScript>
-      <string>ฉ ซ</string>
+      <string>ฉ</string>
+      <string>ซ</string>
       <string>ฌ ผ ฝ ฟ ห ฮ </string>
     </ThaiScript>
     <ThaiFonet>
@@ -748,71 +876,100 @@
     <EngWords>
       <string>Words never stop with any of these.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฌ ผ ฝ ฟ ห ฮ .mp3</string>
+    </SoundPath>
     <EngDesc>These 8 letters never occure at the end of a word.</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ญ ร ล ฬ &gt; น</Name>
+    <Name>ญ</Name>
     <ThaiScript>
-      <string>ญ ร ล ฬ &gt; น</string>
+      <string>ญ</string>
+      <string>ร</string>
+      <string>ล</string>
+      <string>ฬ</string>
+      <string>&gt; น</string>
     </ThaiScript>
     <ThaiFonet>
       <string>yo</string>
       <string>ro</string>
       <string>lo</string>
-      <string>lo &gt; no</string>
+      <string>lo</string>
+      <string>&gt; no</string>
     </ThaiFonet>
     <EngWords>
       <string>Changes to N</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\&gt; น.mp3</string>
+    </SoundPath>
     <EngDesc>These 4 letters changes the sound น (no) if at the end of a word.</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ข ค ฆ &gt; ก</Name>
+    <Name>ข</Name>
     <ThaiScript>
-      <string>ข ค ฆ &gt; ก</string>
+      <string>ข</string>
+      <string>ค</string>
+      <string>ฆ</string>
+      <string>&gt; ก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>kho</string>
       <string>kho</string>
-      <string>kho &gt; k </string>
+      <string>kho</string>
+      <string>&gt; k </string>
     </ThaiFonet>
     <EngWords>
       <string>Stop sound k</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\&gt; ก.mp3</string>
+    </SoundPath>
     <EngDesc>The three kho sounds changes into a K (The consonant ก changes sound from g to k at the end of a word).</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ผ พ</Name>
+    <Name>ผ</Name>
     <ThaiScript>
-      <string>ผ พ</string>
+      <string>ผ</string>
+      <string>พ</string>
       <string>&gt; ภ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>pho</string>
-      <string>po</string>
-      <string>po</string>
+      <string>popo</string>
     </ThaiFonet>
     <EngWords>
       <string>Stop sound b</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\&gt; ภ.mp3</string>
+    </SoundPath>
     <EngDesc>The three sounds for ph- turns into pho or bo</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฎ ฏ ด ต &gt; ต</Name>
+    <Name>ฎ</Name>
     <ThaiScript>
-      <string>ฎ ฏ ด ต &gt; ต</string>
+      <string>ฎ</string>
+      <string>ฏ</string>
+      <string>ด</string>
+      <string>ต</string>
+      <string>&gt; ต</string>
     </ThaiScript>
     <ThaiFonet>
       <string>do</string>
@@ -823,15 +980,30 @@
     <EngWords>
       <string>d mostly keeps their sounds</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\&gt; ต.mp3</string>
+    </SoundPath>
     <EngDesc>The four d sounds mostly keep their sound or turn into dt-</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>จ ช ฐ ฑ ฒ ถ ท ธ ศ ษ ส &gt; ต</Name>
+    <Name>จ</Name>
     <ThaiScript>
-      <string>จ ช ฐ ฑ ฒ ถ ท ธ ศ ษ ส &gt; ต</string>
+      <string>จ</string>
+      <string>ช</string>
+      <string>ฐ</string>
+      <string>ฑ</string>
+      <string>ฒ</string>
+      <string>ถ</string>
+      <string>ท</string>
+      <string>ธ</string>
+      <string>ศ</string>
+      <string>ษ</string>
+      <string>ส</string>
+      <string>&gt; ต</string>
     </ThaiScript>
     <ThaiFonet>
       <string>jo</string>
@@ -844,14 +1016,19 @@
       <string>tho</string>
       <string>so</string>
       <string>so</string>
-      <string>so &gt; dto</string>
+      <string>so</string>
+      <string>&gt; dto</string>
     </ThaiFonet>
     <EngWords>
       <string>Stop sound dt-</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\&gt; ต.mp3</string>
+    </SoundPath>
     <EngDesc>The letters with the sounds j, t, s, and ch turn into dt.</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
@@ -883,7 +1060,9 @@
     <EngWords>
       <string>Child</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เค็ด.mp3</string>
+    </SoundPath>
     <EngDesc>This word has the symbol ็ above the consonant, and indicates that the vowel is short.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -1025,7 +1204,9 @@
     <EngWords>
       <string>crocodile</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\จระเข็.mp3</string>
+    </SoundPath>
     <EngDesc>There are a few words with an additional aaw.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -1042,15 +1223,17 @@
       <string>Company</string>
       <string> Firm</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\บริษัท.mp3</string>
+    </SoundPath>
     <EngDesc>There are a few words with an additional aaw</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>เสียง โท</Name>
+    <Name>เสียงโท</Name>
     <ThaiScript>
-      <string>เสียง โท</string>
+      <string>เสียงโท</string>
     </ThaiScript>
     <ThaiFonet>
       <string>siiang thhoo</string>
@@ -1058,15 +1241,17 @@
     <EngWords>
       <string>Falling tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เสียงโท.mp3</string>
+    </SoundPath>
     <EngDesc>The Falling tone. also know as the third tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>เสียง ตรี</Name>
+    <Name>เสียงตรี</Name>
     <ThaiScript>
-      <string>เสียง ตรี</string>
+      <string>เสียงตรี</string>
     </ThaiScript>
     <ThaiFonet>
       <string>siiang dtree</string>
@@ -1074,15 +1259,17 @@
     <EngWords>
       <string>High tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เสียงตรี.mp3</string>
+    </SoundPath>
     <EngDesc>The high tone. also know as the Fourth tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>เสียง จัตวา</Name>
+    <Name>เสียงจัตวา</Name>
     <ThaiScript>
-      <string>เสียง จัตวา</string>
+      <string>เสียงจัตวา</string>
     </ThaiScript>
     <ThaiFonet>
       <string>siiang jat dta waa</string>
@@ -1090,7 +1277,9 @@
     <EngWords>
       <string>Rising Tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เสียงจัตวา.mp3</string>
+    </SoundPath>
     <EngDesc>The Rising tone. also know as the fifth tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -1134,9 +1323,10 @@
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>็ = ไม้ ได่ คู้</Name>
+    <Name>็ =</Name>
     <ThaiScript>
-      <string>็ = ไม้ ได่ คู้</string>
+      <string>็ =</string>
+      <string>ไม้ได่คู้</string>
     </ThaiScript>
     <ThaiFonet>
       <string>maai dai kuu</string>
@@ -1144,9 +1334,13 @@
     <EngWords>
       <string>None found</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไม้ได่คู้.mp3</string>
+    </SoundPath>
     <EngDesc>This is the thai name of this symbol. It is placed above the consonant and indicates that the vowel has to be pronounced short.</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
@@ -1160,7 +1354,9 @@
     <EngWords>
       <string>Bird</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มก.mp3</string>
+    </SoundPath>
     <EngDesc>To pronounce this word you need to add an additional o between ม and ก.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -1230,7 +1426,9 @@
     <EngWords>
       <string>Suit</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สูท.mp3</string>
+    </SoundPath>
     <EngDesc>Thai transcription of the foreign loanword. Consonant is of the high tone class and has a stop  sound, making the word pronounced with a low tone.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -1373,9 +1571,10 @@
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>่ = ไม้ เอก</Name>
+    <Name>่ =</Name>
     <ThaiScript>
-      <string>่ = ไม้ เอก</string>
+      <string>่ =</string>
+      <string>ไม้เอก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>maai eek</string>
@@ -1383,15 +1582,20 @@
     <EngWords>
       <string>Low (Second) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไม้เอก.mp3</string>
+    </SoundPath>
     <EngDesc>Name of the symbol for the low tone</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>้ = ไม้ โท</Name>
+    <Name>้ =</Name>
     <ThaiScript>
-      <string>้ = ไม้ โท</string>
+      <string>้ =</string>
+      <string>ไม้โท</string>
     </ThaiScript>
     <ThaiFonet>
       <string>maai too</string>
@@ -1399,15 +1603,20 @@
     <EngWords>
       <string>Falling (Third) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไม้โท.mp3</string>
+    </SoundPath>
     <EngDesc>Name of the symbol for the falling tone</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>๊ = ไม้ ดรี</Name>
+    <Name>๊ =</Name>
     <ThaiScript>
-      <string>๊ = ไม้ ดรี</string>
+      <string>๊ =</string>
+      <string>ไม้ดรี</string>
     </ThaiScript>
     <ThaiFonet>
       <string>maai dree</string>
@@ -1415,15 +1624,20 @@
     <EngWords>
       <string>High (Fourth) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไม้ดรี.mp3</string>
+    </SoundPath>
     <EngDesc>Name of the symbol for the Hightone</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>๋ = ไม้ จัตวา</Name>
+    <Name>๋ =</Name>
     <ThaiScript>
-      <string>๋ = ไม้ จัตวา</string>
+      <string>๋ =</string>
+      <string>ไม้จัตวา</string>
     </ThaiScript>
     <ThaiFonet>
       <string>maai jat dta waa</string>
@@ -1431,15 +1645,20 @@
     <EngWords>
       <string>Rising (Fourth) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไม้จัตวา.mp3</string>
+    </SoundPath>
     <EngDesc>Name of the symbol for the rising tone</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>่ = ไม้ เอก</Name>
+    <Name>่ =</Name>
     <ThaiScript>
-      <string>่ = ไม้ เอก</string>
+      <string>่ =</string>
+      <string>ไม้เอก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>maai eek</string>
@@ -1447,15 +1666,20 @@
     <EngWords>
       <string>Falling (Third) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไม้เอก.mp3</string>
+    </SoundPath>
     <EngDesc>When the initial consonant is a low tone, the tone mark indicates this tone for the word.</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>้ = ไม้ โท</Name>
+    <Name>้ =</Name>
     <ThaiScript>
-      <string>้ = ไม้ โท</string>
+      <string>้ =</string>
+      <string>ไม้โท</string>
     </ThaiScript>
     <ThaiFonet>
       <string>maai too</string>
@@ -1463,9 +1687,13 @@
     <EngWords>
       <string>High (Fourth) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไม้โท.mp3</string>
+    </SoundPath>
     <EngDesc>This tone mark changes to the high tone instead of the falling tone when the consonant is a low tone.</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
@@ -1479,7 +1707,9 @@
     <EngWords>
       <string>Indicates silent Pronounciation</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\์.mp3</string>
+    </SoundPath>
     <EngDesc>This mark has two names and it indicates that the consonant is silent and not pronounced.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -1495,7 +1725,9 @@
     <EngWords>
       <string>Indicates repetition</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ๆ.mp3</string>
+    </SoundPath>
     <EngDesc>This mark indicates repetition. The word is said twice which is important for the plkural or emphasize of things.</EngDesc>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -2106,7 +2338,9 @@
       <string> to start</string>
       <string> commence</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\การเริ่ม.mp3</string>
+    </SoundPath>
     <EngDesc>[placed before a verb or noun to create a noun which indicates a general activity, process, or state] the process of..., the activity of..., an enactment of..., the state of...</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -2424,7 +2658,9 @@
     <EngWords>
       <string>Indicates urgency</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ซิ.mp3</string>
+    </SoundPath>
     <EngDesc>[a particle which conveys urgency, adding an imperative quality] (this is the way it is or must be)</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -2497,7 +2733,9 @@
     <EngWords>
       <string>at the end of a question or command</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ล่ะ.mp3</string>
+    </SoundPath>
     <EngDesc>[informal, spoken pronunciation of ละ a particle used at the end of a statement or question to add an imperative quality]</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -3112,9 +3350,9 @@
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>(หนึ่ง) ร้อย</Name>
+    <Name>หนึ่งร้อย</Name>
     <ThaiScript>
-      <string>(หนึ่ง) ร้อย</string>
+      <string>หนึ่งร้อย</string>
     </ThaiScript>
     <ThaiFonet>
       <string>neung raawy</string>
@@ -3124,7 +3362,9 @@
       <string>   the number one hundred</string>
       <string>   100</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนึ่งร้อย.mp3</string>
+    </SoundPath>
     <EngDesc>the number or quantity one hundred.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -3141,7 +3381,9 @@
       <string>one hundred one</string>
       <string> 101</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ร้อยหนึ่ง.mp3</string>
+    </SoundPath>
     <EngDesc>the number or quantity one hundred one.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -3159,7 +3401,9 @@
       <string>one hundred and two</string>
       <string>  102</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ร้อยสอง.mp3</string>
+    </SoundPath>
     <EngDesc>the number or quantity one hundred and two.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -3177,7 +3421,9 @@
       <string> one hundred and three</string>
       <string>   103</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ร้อยสาม.mp3</string>
+    </SoundPath>
     <EngDesc>the number or quantity one hundred and three.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -3310,7 +3556,9 @@
       <string>06:00</string>
       <string> 6 a.m</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกนาฬิกา.mp3</string>
+    </SoundPath>
     <EngDesc>This is how you say what the clock is, you add the number and the word for clock.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -3327,7 +3575,9 @@
       <string>07:00</string>
       <string>  7 a.m</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เจ็ดนาฬิกา.mp3</string>
+    </SoundPath>
     <EngDesc>This is how you say what the clock is, you add the number and the word for clock.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -3511,7 +3761,9 @@
       <string>[general] morning</string>
       <string>  morning-time</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ช่วงเช้า.mp3</string>
+    </SoundPath>
     <EngDesc>Most often refers to the morning.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -3554,17 +3806,19 @@
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>กี่โมง(แล้ว)</Name>
+    <Name>กี่โมงแล้ว</Name>
     <ThaiScript>
-      <string>กี่โมง(แล้ว)</string>
+      <string>กี่โมงแล้ว</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>gee mohng (lææo)</string>
+      <string>gee mohng lææo</string>
     </ThaiFonet>
     <EngWords>
-      <string>What time( is it)?</string>
+      <string>What time is it?</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กี่โมงแล้ว.mp3</string>
+    </SoundPath>
     <EngDesc>Asking what the time is currently, to property say it you should add lææo.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -3580,7 +3834,9 @@
     <EngWords>
       <string>[used in a question] </string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เมื่อไร.mp3</string>
+    </SoundPath>
     <EngDesc>Used in a question when you want to ask when.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -3867,7 +4123,9 @@
       <string>07:00</string>
       <string> 7 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เจ็ดโมงเช้า.mp3</string>
+    </SoundPath>
     <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -3941,7 +4199,9 @@
       <string>11:00</string>
       <string>11 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สิบเอ็ดโมงเช้า.mp3</string>
+    </SoundPath>
     <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4188,7 +4448,9 @@
       <string>06:05</string>
       <string>6.05 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงห้านาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 5 minutes. the format therfor is number, word for hour, number, word ofr minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4205,7 +4467,9 @@
       <string>06:10</string>
       <string>6.10 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงสิบนาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 5 minutes. the format therfor is number, word for hour, number, word ofr minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4222,7 +4486,9 @@
       <string>06:15</string>
       <string>6.15 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงสิบห้านาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 5 minutes. the format therfor is number, word for hour, number, word ofr minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4239,7 +4505,9 @@
       <string>06:20</string>
       <string>6.20 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงยี่สิบนาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 5 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4256,7 +4524,9 @@
       <string>06:25</string>
       <string>6.25 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงยี่สิบห้านาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 5 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4273,7 +4543,9 @@
       <string>06:30</string>
       <string>6.30 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงสามสิบนาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4309,7 +4581,9 @@
       <string>06:35</string>
       <string>6.35 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงสามสิบห้านาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4326,7 +4600,9 @@
       <string>06:40</string>
       <string>6.40 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงสี่สิบนาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4343,7 +4619,9 @@
       <string>06:45</string>
       <string>6.45 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงสี่สิบห้านาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4360,7 +4638,9 @@
       <string>06:45</string>
       <string>6.45 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อีกสิบห้านาทีเจ็ดโมง .mp3</string>
+    </SoundPath>
     <EngDesc>An alternative way to say the time.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4377,7 +4657,9 @@
       <string>06:50</string>
       <string>6.50 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงห้าสิบนาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4394,7 +4676,9 @@
       <string>06:55</string>
       <string>6.55 a.m.</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หกโมงห้าสิบห้านาที.mp3</string>
+    </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock, 30 minutes. the format therfor is number, word for hour, number, word of minut.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4864,7 +5148,9 @@
       <string>Magha Puja Day</string>
       <string>Makabucha Day</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\วันมาฆบูชา.mp3</string>
+    </SoundPath>
     <EngDesc>Held on the full moon of the third lunar month to commemorate the preaching of the Buddha to 1250 enlightened monks who came to hear him without prior summons</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4880,7 +5166,9 @@
     <EngWords>
       <string>Day of Chakri</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\วันจักรี.mp3</string>
+    </SoundPath>
     <EngDesc>King Rama I Day, commemorating the founder of the Chakri Dynasty, Rama I, on April 6</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4897,7 +5185,9 @@
       <string>Songkran</string>
       <string>the Thai New Year festival,</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\วันสงกรานต์.mp3</string>
+    </SoundPath>
     <EngDesc>Songkran has become a significant annual celebration in Thailand—around the country there are parades and people throw buckets of water on passers-by.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -4967,7 +5257,9 @@
     <EngWords>
       <string>Asallha Puja</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\วันอาสาฬหบูชา.mp3</string>
+    </SoundPath>
     <EngDesc>Asallha Puja, the observance of the Buddha's first sermon over 2,500 years ago</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -5073,7 +5365,9 @@
     <EngWords>
       <string>Green</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สีเขียว.mp3</string>
+    </SoundPath>
     <EngDesc>สี (see) is the word for color. Traditionally women used to dress in green on wednesdays.</EngDesc>
     <Tone />
     <Chapter>Colors</Chapter>
@@ -5656,7 +5950,9 @@
       <string>blissful</string>
       <string>still</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สุข.mp3</string>
+    </SoundPath>
     <EngDesc>Pronounced with a low tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -5710,7 +6006,9 @@
     <EngWords>
       <string> to bake</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อบ.mp3</string>
+    </SoundPath>
     <EngDesc>Pronounced with a low tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>

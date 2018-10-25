@@ -5,6 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearnThaiApplication"
         mc:Ignorable="d"
-        Title="ContentMan" Height="450" Width="800" Background="#FF6DA5C4">
-    <Grid/>
+        Title="ContentMan" Height="450" Width="800" Background="#FF6DA5C4" Activated="WindowActivated" Deactivated="WindowDeactivated" SizeChanged="WindowSizeChanged">
+    <Grid />
 </Window>

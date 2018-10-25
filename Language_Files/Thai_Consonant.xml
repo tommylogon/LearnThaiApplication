@@ -636,7 +636,9 @@
     <EngWords>
       <string>Ring</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เเหาน.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>เเหาน</ThaiHelpWord>
   </Consonant>
@@ -651,7 +653,9 @@
     <EngWords>
       <string>Hermit</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฦๅษี.mp3</string>
+    </SoundPath>
     <Tone />
     <ThaiHelpWord>ฦๅษี</ThaiHelpWord>
   </Consonant>
@@ -683,7 +687,9 @@
     <EngWords>
       <string>Owl</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นกฮูก.mp3</string>
+    </SoundPath>
     <EngDesc />
     <Tone />
     <ThaiHelpWord>นกฮูก</ThaiHelpWord>

@@ -346,7 +346,9 @@
       <string>reu</string>
     </ThaiFonet>
     <EngWords />
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\รึ.mp3</string>
+    </SoundPath>
     <EngDesc>ึ is pronounced as a high eu</EngDesc>
     <Tone />
     <ThaiHelpWord>รึ</ThaiHelpWord>
@@ -575,7 +577,9 @@
       <string> renowned</string>
       <string> famous</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฦาชา.mp3</string>
+    </SoundPath>
     <EngDesc>[ancient spelling of] ลือชา.</EngDesc>
     <Tone />
     <ThaiHelpWord>ฦาชา</ThaiHelpWord>
@@ -589,7 +593,9 @@
       <string>lüü</string>
     </ThaiFonet>
     <EngWords />
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\.mp3</string>
+    </SoundPath>
     <EngDesc>Uncommon vowel with  luu or lüü sound.</EngDesc>
     <Tone />
     <ThaiHelpWord />
@@ -655,7 +661,9 @@
       <string> quickly</string>
       <string> fast</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เร็ว.mp3</string>
+    </SoundPath>
     <EngDesc>เ็ว is pronounced as eo.</EngDesc>
     <Tone />
     <ThaiHelpWord>เร็ว</ThaiHelpWord>
@@ -675,7 +683,9 @@
       <string> holiday</string>
       <string> pleasure tour</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เที่ยว.mp3</string>
+    </SoundPath>
     <EngDesc>เียว is prononounced as iow or iaao.</EngDesc>
     <Tone />
     <ThaiHelpWord>เที่ยว</ThaiHelpWord>
@@ -695,7 +705,9 @@
       <string> exhausted</string>
       <string> beat</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เหนื่อย.mp3</string>
+    </SoundPath>
     <EngDesc>เืยว is pronounced as üai or uuay. </EngDesc>
     <Tone />
     <ThaiHelpWord>เหนื่อย</ThaiHelpWord>
@@ -713,7 +725,9 @@
       <string> starved</string>
       <string> starving</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หิว.mp3</string>
+    </SoundPath>
     <EngDesc>ิว is pronounced as iu.</EngDesc>
     <Tone />
     <ThaiHelpWord>หิว</ThaiHelpWord>
@@ -730,7 +744,9 @@
       <string>to chat</string>
       <string> talk</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คุย.mp3</string>
+    </SoundPath>
     <EngDesc>ุย is pronounced as ui or uy. </EngDesc>
     <Tone />
     <ThaiHelpWord>คุย</ThaiHelpWord>

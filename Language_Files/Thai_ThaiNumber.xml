@@ -47,7 +47,9 @@
     <EngWords>
       <string>Three</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สาม.mp3</string>
+    </SoundPath>
     <EngDesc>Thai digit three, 3</EngDesc>
     <Tone />
     <ThaiHelpWord>สาม</ThaiHelpWord>
@@ -171,7 +173,9 @@
     <EngWords>
       <string>Two</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สูน.mp3</string>
+    </SoundPath>
     <EngDesc>Thai digit zero, 0</EngDesc>
     <Tone />
     <ThaiHelpWord>สูน</ThaiHelpWord>
