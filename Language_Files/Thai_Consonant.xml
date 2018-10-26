@@ -4,6 +4,7 @@
     <Name>ก</Name>
     <ThaiScript>
       <string>ก</string>
+      <string>ไก่</string>
     </ThaiScript>
     <ThaiFonet>
       <string>gai</string>
@@ -24,6 +25,7 @@
     <Name>ข</Name>
     <ThaiScript>
       <string>ข</string>
+      <string>ไข่</string>
     </ThaiScript>
     <ThaiFonet>
       <string>kai</string>
@@ -44,59 +46,73 @@
     <Name>ฃ</Name>
     <ThaiScript>
       <string>ฃ</string>
+      <string>ขวด</string>
     </ThaiScript>
     <ThaiFonet>
       <string>kuad</string>
     </ThaiFonet>
     <EngWords>
-      <string> Bottle</string>
+      <string />
+      <string>Bottle</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ขวด.mp3</string>
     </SoundPath>
     <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ข.</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ขวด</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ค</Name>
     <ThaiScript>
       <string>ค</string>
+      <string>ควาย</string>
     </ThaiScript>
     <ThaiFonet>
       <string>kwaai</string>
     </ThaiFonet>
     <EngWords>
-      <string> Water buffalo</string>
+      <string />
+      <string>Water buffalo</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ควาย.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ควาย</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฅ</Name>
     <ThaiScript>
       <string>ฅ</string>
+      <string>คน</string>
     </ThaiScript>
     <ThaiFonet>
       <string>kon</string>
     </ThaiFonet>
     <EngWords>
-      <string> Person</string>
+      <string />
+      <string>Person</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คน.mp3</string>
     </SoundPath>
     <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ค.</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>คน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฆ</Name>
     <ThaiScript>
       <string>ฆ</string>
+      <string>ระฆัง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>ra kang</string>
@@ -107,13 +123,17 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ระฆัง.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ระฆัง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ง</Name>
     <ThaiScript>
       <string>ง</string>
+      <string>งู</string>
     </ThaiScript>
     <ThaiFonet>
       <string>ngoo</string>
@@ -124,13 +144,17 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\งู.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>งู</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>จ</Name>
     <ThaiScript>
       <string>จ</string>
+      <string>จาน</string>
     </ThaiScript>
     <ThaiFonet>
       <string>jaan</string>
@@ -141,13 +165,17 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\จาน.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>จาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฉ</Name>
     <ThaiScript>
       <string>ฉ</string>
+      <string>ฉิ่ง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>ching</string>
@@ -158,13 +186,17 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฉิ่ง.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ฉิ่ง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ช</Name>
     <ThaiScript>
       <string>ช</string>
+      <string>ช้าง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>chaang</string>
@@ -175,13 +207,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ช้าง.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ช้าง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ซ</Name>
     <ThaiScript>
-      <string>ซ</string>
+      <string>โซ่</string>
     </ThaiScript>
     <ThaiFonet>
       <string>soo</string>
@@ -199,6 +234,7 @@
     <Name>ฌ</Name>
     <ThaiScript>
       <string>ฌ</string>
+      <string>เฌอ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>chøø</string>
@@ -209,13 +245,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เฌอ.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>เฌอ</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ญ</Name>
     <ThaiScript>
-      <string>ญ</string>
+      <string>หญิง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>ying</string>
@@ -232,7 +271,7 @@
   <Consonant>
     <Name>ฎ</Name>
     <ThaiScript>
-      <string>ฎ</string>
+      <string>ชฎา</string>
     </ThaiScript>
     <ThaiFonet>
       <string>cha daa</string>
@@ -250,7 +289,7 @@
   <Consonant>
     <Name>ฏ</Name>
     <ThaiScript>
-      <string>ฏ</string>
+      <string>ปฏัก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>ba dag</string>
@@ -270,7 +309,7 @@
   <Consonant>
     <Name>ฐ</Name>
     <ThaiScript>
-      <string>ฐ</string>
+      <string>ฐาน</string>
     </ThaiScript>
     <ThaiFonet>
       <string>taan</string>
@@ -287,7 +326,7 @@
   <Consonant>
     <Name>ฑ</Name>
     <ThaiScript>
-      <string>ฑ</string>
+      <string>มณโฑ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>montoo</string>
@@ -304,7 +343,7 @@
   <Consonant>
     <Name>ฒ</Name>
     <ThaiScript>
-      <string>ฒ</string>
+      <string>ผู้เฒ่า</string>
     </ThaiScript>
     <ThaiFonet>
       <string>puu tow</string>
@@ -321,7 +360,7 @@
   <Consonant>
     <Name>ณ</Name>
     <ThaiScript>
-      <string>ณ</string>
+      <string>เณร</string>
     </ThaiScript>
     <ThaiFonet>
       <string>neen</string>
@@ -338,7 +377,7 @@
   <Consonant>
     <Name>ด</Name>
     <ThaiScript>
-      <string>ด</string>
+      <string>เด็ก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>dek</string>
@@ -356,7 +395,7 @@
   <Consonant>
     <Name>ต</Name>
     <ThaiScript>
-      <string>ต</string>
+      <string>เต่า</string>
     </ThaiScript>
     <ThaiFonet>
       <string>tow</string>
@@ -373,7 +412,7 @@
   <Consonant>
     <Name>ถ</Name>
     <ThaiScript>
-      <string>ถ</string>
+      <string>ถุง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>tung</string>
@@ -390,7 +429,7 @@
   <Consonant>
     <Name>ท</Name>
     <ThaiScript>
-      <string>ท</string>
+      <string>ทหาร</string>
     </ThaiScript>
     <ThaiFonet>
       <string>tahaan</string>
@@ -407,7 +446,7 @@
   <Consonant>
     <Name>ธ</Name>
     <ThaiScript>
-      <string>ธ</string>
+      <string>ธง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>tong</string>
@@ -424,7 +463,7 @@
   <Consonant>
     <Name>น</Name>
     <ThaiScript>
-      <string>น</string>
+      <string>หนู</string>
     </ThaiScript>
     <ThaiFonet>
       <string>nuu</string>
@@ -441,7 +480,7 @@
   <Consonant>
     <Name>บ</Name>
     <ThaiScript>
-      <string>บ</string>
+      <string>ใบไม้</string>
     </ThaiScript>
     <ThaiFonet>
       <string>bai maai</string>
@@ -458,7 +497,7 @@
   <Consonant>
     <Name>ป</Name>
     <ThaiScript>
-      <string>ป</string>
+      <string>ปลา</string>
     </ThaiScript>
     <ThaiFonet>
       <string>blaa</string>
@@ -475,7 +514,7 @@
   <Consonant>
     <Name>ผ</Name>
     <ThaiScript>
-      <string>ผ</string>
+      <string>ผึ้ง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>pung</string>
@@ -492,7 +531,7 @@
   <Consonant>
     <Name>ฝ</Name>
     <ThaiScript>
-      <string>ฝ</string>
+      <string>ฝา</string>
     </ThaiScript>
     <ThaiFonet>
       <string>faa</string>
@@ -509,7 +548,7 @@
   <Consonant>
     <Name>พ</Name>
     <ThaiScript>
-      <string>พ</string>
+      <string>พาน</string>
     </ThaiScript>
     <ThaiFonet>
       <string>paan</string>
@@ -526,7 +565,7 @@
   <Consonant>
     <Name>ฟ</Name>
     <ThaiScript>
-      <string>ฟ</string>
+      <string>ฟัน</string>
     </ThaiScript>
     <ThaiFonet>
       <string>fan</string>
@@ -543,7 +582,7 @@
   <Consonant>
     <Name>ภ</Name>
     <ThaiScript>
-      <string>ภ</string>
+      <string>สำเภา</string>
     </ThaiScript>
     <ThaiFonet>
       <string>sampow</string>
@@ -560,7 +599,7 @@
   <Consonant>
     <Name>ม</Name>
     <ThaiScript>
-      <string>ม</string>
+      <string>ม้า</string>
     </ThaiScript>
     <ThaiFonet>
       <string>maa</string>
@@ -577,7 +616,7 @@
   <Consonant>
     <Name>ย</Name>
     <ThaiScript>
-      <string>ย</string>
+      <string>ยักษ์</string>
     </ThaiScript>
     <ThaiFonet>
       <string>yag</string>
@@ -594,7 +633,7 @@
   <Consonant>
     <Name>ร</Name>
     <ThaiScript>
-      <string>ร</string>
+      <string>เรือ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>rua</string>
@@ -611,7 +650,7 @@
   <Consonant>
     <Name>ล</Name>
     <ThaiScript>
-      <string>ล</string>
+      <string>ลิง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>ling</string>
@@ -628,7 +667,7 @@
   <Consonant>
     <Name>ว</Name>
     <ThaiScript>
-      <string>ว</string>
+      <string>เเหวน</string>
     </ThaiScript>
     <ThaiFonet>
       <string>wææn</string>
@@ -640,12 +679,12 @@
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เเหาน.mp3</string>
     </SoundPath>
     <Tone />
-    <ThaiHelpWord>เเหาน</ThaiHelpWord>
+    <ThaiHelpWord>เเหวน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ษ</Name>
     <ThaiScript>
-      <string>ษ</string>
+      <string>ฦๅษี</string>
     </ThaiScript>
     <ThaiFonet>
       <string>ruu see</string>
@@ -662,7 +701,7 @@
   <Consonant>
     <Name>อ</Name>
     <ThaiScript>
-      <string>อ</string>
+      <string>อ่าง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>aang</string>
@@ -679,7 +718,7 @@
   <Consonant>
     <Name>ฮ</Name>
     <ThaiScript>
-      <string>ฮ</string>
+      <string>นกฮูก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>nok hoog</string>

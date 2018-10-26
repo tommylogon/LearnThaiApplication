@@ -3,7 +3,7 @@
   <ThaiNumber>
     <Name>๑</Name>
     <ThaiScript>
-      <string>๑</string>
+      <string>หนึ่ง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>neung</string>
@@ -21,7 +21,7 @@
   <ThaiNumber>
     <Name>๒</Name>
     <ThaiScript>
-      <string>๒</string>
+      <string>สอง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>saawng</string>
@@ -39,7 +39,7 @@
   <ThaiNumber>
     <Name>๓</Name>
     <ThaiScript>
-      <string>๓</string>
+      <string>สาม</string>
     </ThaiScript>
     <ThaiFonet>
       <string>saam</string>
@@ -57,7 +57,7 @@
   <ThaiNumber>
     <Name>๔</Name>
     <ThaiScript>
-      <string>๔</string>
+      <string>สี่</string>
     </ThaiScript>
     <ThaiFonet>
       <string>see</string>
@@ -75,7 +75,7 @@
   <ThaiNumber>
     <Name>๕</Name>
     <ThaiScript>
-      <string>๕</string>
+      <string>ฮ่า</string>
     </ThaiScript>
     <ThaiFonet>
       <string>haa</string>
@@ -93,7 +93,7 @@
   <ThaiNumber>
     <Name>๖</Name>
     <ThaiScript>
-      <string>๖</string>
+      <string>หก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>hook</string>
@@ -111,7 +111,7 @@
   <ThaiNumber>
     <Name>๗</Name>
     <ThaiScript>
-      <string>๗</string>
+      <string>เจ็ด</string>
     </ThaiScript>
     <ThaiFonet>
       <string>jet</string>
@@ -129,7 +129,7 @@
   <ThaiNumber>
     <Name>๘</Name>
     <ThaiScript>
-      <string>๘</string>
+      <string>แปด</string>
     </ThaiScript>
     <ThaiFonet>
       <string>bpaaet</string>
@@ -147,7 +147,7 @@
   <ThaiNumber>
     <Name>๙</Name>
     <ThaiScript>
-      <string>๙</string>
+      <string>เก้า</string>
     </ThaiScript>
     <ThaiFonet>
       <string>gao</string>
@@ -165,7 +165,7 @@
   <ThaiNumber>
     <Name>๐</Name>
     <ThaiScript>
-      <string>๐</string>
+      <string>สูน</string>
     </ThaiScript>
     <ThaiFonet>
       <string>soon</string>

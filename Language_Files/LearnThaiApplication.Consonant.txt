@@ -1,40 +1,43 @@
-ไก่ 
-ไข่ 
-ขวด 
-ควาย 
-คน 
-ระฆัง 
-งู 
-จาน 
-ฉิ่ง 
-ช้าง 
-โซ่ 
-เฌอ 
-หญิง 
-ชฎา 
-ปฏัก 
-ฐาน 
-มณโฑ 
-ผู้เฒ่า 
-เณร 
-เด็ก 
-เต่า 
-ถุง 
-ทหาร 
-ธง 
-หนู 
-ใบไม้ 
-ปลา 
-ผึ้ง 
-ฝา 
-พาน 
-ฟัน 
-สำเภา 
-ม้า 
-ยักษ์ 
-เรือ 
-ลิง 
-เเหาน 
+ไก่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไก่.mp3 
+ไข่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไข่.mp3 
+ขวด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ขวด.mp3 
+ควาย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ควาย.mp3 
+คน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คน.mp3 
+ระฆัง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ระฆัง.mp3 
+งู C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\งู.mp3 
+จาน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\จาน.mp3 
+ฉิ่ง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฉิ่ง.mp3 
+ช้าง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ช้าง.mp3 
+โซ่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โซ่.mp3 
+เฌอ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เฌอ.mp3 
+หญิง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หญิง.mp3 
+ชฎา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ชฎา.mp3 
+ปฏัก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปฏัก.mp3 
+ฐาน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฐาน.mp3 
+มณโฑ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มณโฑ.mp3 
+ผู้เฒ่า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ผู้เฒ่า.mp3 
+เณร C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เณร.mp3 
+เด็ก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เด็ก.mp3 
+เต่า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เต่า.mp3 
+ถุง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ถุง.mp3 
+ทหาร C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทหาร.mp3 
+ธง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ธง.mp3 
+หนู C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนู.mp3 
+ใบไม้ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ใบไม้.mp3 
+ปลา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปลา.mp3 
+ผึ้ง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ผึ้ง.mp3 
+ฝา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฝา.mp3 
+พาน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พาน.mp3 
+ฟัน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฟัน.mp3 
+สำเภา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สำเภา.mp3 
+ม้า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ม้า.mp3 
+ยักษ์ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ยักษ์.mp3 
+เรือ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เรือ.mp3 
+ลิง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ลิง.mp3 
+เเหวน 
 ฦๅษี 
-อ่าง 
+อ่าง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อ่าง.mp3 
 นกฮูก 
+ไก่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไก่.mp3 
+ไข่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไข่.mp3 
+ขวด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ขวด.mp3 

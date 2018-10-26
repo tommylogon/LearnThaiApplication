@@ -59,13 +59,13 @@ namespace LearnThaiApplication
         /// <param name="textBlockForScript">textblock to use for display</param>
         public void CheckCurrentFileSize<T>(List<T> list, int nextValueToAdd, TextBlock textBlockForScript)
         {
-            if (randomOn)
+            if (RandomOn)
             {
                 CurrentFileIndex = RandomIndex.Next(0, list.Count);
             }
             else
             {
-                if (loopChapter)
+                if (LoopChapter)
                 {
                     if (nextValueToAdd > 0)
                     {
@@ -103,7 +103,15 @@ namespace LearnThaiApplication
                         CurrentFileIndex--;
                         if (CurrentFileIndex < 0)
                         {
-                            cb_Chapter_Page1.SelectedIndex--;
+                            if (cb_Chapter_Page1.SelectedIndex == 0)
+                            {
+                                cb_Chapter_Page1.SelectedIndex = cb_Chapter_Page1.Items.Count - 1;
+                            }
+                            else
+                            {
+                                cb_Chapter_Page1.SelectedIndex--;
+                                CurrentFileIndex = list.Count - 1;
+                            }
                         }
                     }
                 }
@@ -153,7 +161,7 @@ namespace LearnThaiApplication
         /// </summary>
         public void ClearFields(object sender)
         {
-            int tabIndex = SelectParentIndex(sender);
+            int tabIndex = MainWindow_tabController.TabIndex; //SelectParentIndex(sender);
 
             if (tabIndex == 0)
             {
@@ -185,8 +193,10 @@ namespace LearnThaiApplication
         public void CreateFormWindow()
         {
             window = new ContentMan();
-            Viewbox wb = new Viewbox();
-            wb.Width = window.Width;
+            Viewbox wb = new Viewbox
+            {
+                Width = window.Width
+            };
             sp = new StackPanel();
 
             SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
@@ -457,21 +467,33 @@ namespace LearnThaiApplication
 
         public void PopulateDescription(TextBlock textBlockDescription)
         {
-            if (descriptionOn)
+            if (DescriptionOn)
             {
                 textBlockDescription.Text = "";
-
-                foreach (var value in ListOfValues)
+                if (DisplayAllPropertiesInDescription)
                 {
-                    if (value is List<string> x)
+                    foreach (var value in ListOfValues)
                     {
-                        textBlockDescription.Text += ListToString(x) + "\r\n";
-                    }
-                    else
-                    {
-                        textBlockDescription.Text += value + "\r\n";
+                        if (value is List<string> x)
+                        {
+                            textBlockDescription.Text += ListToString(x) + "\r\n";
+                        }
+                        else
+                        {
+                            textBlockDescription.Text += value + "\r\n";
+                        }
                     }
                 }
+                else
+                {
+                    string descriptionText = ListToString((List<string>)GetValueFromValueList("ThaiScript")) + "\r\n";
+                    descriptionText += ListToString((List<string>)GetValueFromValueList("ThaiFonet")) + "\r\n";
+                    descriptionText += ListToString((List<string>)GetValueFromValueList("EngWords")) + "\r\n";
+                    descriptionText += (string)GetValueFromValueList("EngDesc");
+
+                    textBlockDescription.Text = descriptionText;
+                }
+
                 //textBlockDescription.Text = GetValueFromValueList("ThaiFonet") + "\r\n" + EngWordsToString(GetValueFromValueList("EngWords")) + "\r\n" + GetValueFromValueList("EngDesc");
             }
         }
@@ -724,7 +746,7 @@ namespace LearnThaiApplication
                 {
                     for (int listIndex = 0; listIndex < soundID.Count; listIndex++)
                     {
-                        if (soundID[listIndex] == "")
+                        if (soundID[listIndex].Length == 0)
                         {
                             continue;
                         }
@@ -791,12 +813,15 @@ namespace LearnThaiApplication
             }
 
             var listOfPaths = (List<string>)GetValueFromValueList("SoundPath");
-
-            if (listOfPaths.Count == 0)
+            if (File.Exists(soundPath))
             {
-                SetValueOfObject(soundPath, "SoundPath", word);
-                return false;
+                if (listOfPaths.Count == 0)
+                {
+                    SetValueOfObject(soundPath, "SoundPath", word);
+                    return false;
+                }
             }
+
             return true;
         }
 
@@ -839,7 +864,7 @@ namespace LearnThaiApplication
                         {
                             if (tableData[tableDataIndex].HasChildNodes)
                             {
-                                if (tableData[tableDataIndex].InnerHtml.Contains("id") && TableDataAttributeExists(tableData[tableDataIndex].Attributes, "Class", "th") || TableDataAttributeExists(tableData[tableDataIndex].Attributes, "Class", "th") && tableData[tableDataIndex].FirstChild.Name.Contains("#text"))
+                                if ((tableData[tableDataIndex].InnerHtml.Contains("id") && TableDataAttributeExists(tableData[tableDataIndex].Attributes, "Class", "th")) || (TableDataAttributeExists(tableData[tableDataIndex].Attributes, "Class", "th") && tableData[tableDataIndex].FirstChild.Name.Contains("#text")))
                                 {
                                     string value = CheckChildNode(tableData[tableDataIndex], true);
                                     if (!string.IsNullOrEmpty(value))
@@ -1070,19 +1095,38 @@ namespace LearnThaiApplication
         /// <param name="nextValueToAdd">to move forward, backwards or stay in place in the list</param>
         public void TextChanger<T>(List<T> list, TextBlock textBlockForScript, TextBlock textBlockDescription, int nextValueToAdd) where T : new()
         {
-            Type whatIsT = typeof(T);
-
-            CheckCurrentFileSize<T>(list, nextValueToAdd, textBlockForScript);
-
-            SetPropertyOfGenericObject(list[CurrentFileIndex]);
-
-            SelectedPropertyToDisplay = GetValueFromValueList(WhatToDisplay);
-
-            if (list[CurrentFileIndex].GetType() == typeof(Word))
+            try
             {
-                string retrivedChapter = (string)GetValueFromValueList("Chapter", SelectedChapter);
+                Type whatIsT = typeof(T);
 
-                if (retrivedChapter == SelectedChapter)
+                CheckCurrentFileSize<T>(list, nextValueToAdd, textBlockForScript);
+
+                SetPropertyOfGenericObject(list[CurrentFileIndex]);
+
+                SelectedPropertyToDisplay = GetValueFromValueList(WhatToDisplay);
+
+                if (list[CurrentFileIndex].GetType() == typeof(Word))
+                {
+                    string retrivedChapter = (string)GetValueFromValueList("Chapter", SelectedChapter);
+
+                    if (retrivedChapter == SelectedChapter)
+                    {
+                        if (SelectedPropertyToDisplay is List<String> propertyIsList)
+                        {
+                            textBlockForScript.Text = ListToString(propertyIsList);
+                        }
+                        else
+                        {
+                            textBlockForScript.Text = (String)SelectedPropertyToDisplay;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("There are no content with chapter" + SelectedChapter + " available right now.");
+                        return;
+                    }
+                }
+                else
                 {
                     if (SelectedPropertyToDisplay is List<String> propertyIsList)
                     {
@@ -1090,29 +1134,17 @@ namespace LearnThaiApplication
                     }
                     else
                     {
-                        textBlockForScript.Text = (String)SelectedPropertyToDisplay;
+                        textBlockForScript.Text = GetValueFromValueList("ThaiScript") + " " + GetValueFromValueList("ThaiHelpWord");
                     }
-                }
-                else
-                {
-                    MessageBox.Show("There are no content with chapter" + SelectedChapter + " available right now.");
-                    return;
-                }
-            }
-            else
-            {
-                if (SelectedPropertyToDisplay is List<String> propertyIsList)
-                {
-                    textBlockForScript.Text = ListToString(propertyIsList);
-                }
-                else
-                {
-                    textBlockForScript.Text = GetValueFromValueList("ThaiScript") + " " + GetValueFromValueList("ThaiHelpWord");
-                }
 
-                //
+                    //
+                }
+                PopulateDescription(textBlockDescription);
             }
-            PopulateDescription(textBlockDescription);
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         /// <summary>
@@ -1162,13 +1194,14 @@ namespace LearnThaiApplication
             SelectedPropertyToValidate = GetValueFromValueList(WhatToTrain);
 
             int rightAnswears = 0;
-
-            List<String> answers = Regex.Split(textboxAnswear.Text, RegexSplitString).ToList<String>();
+            int totalAnswears = 0;
+            List<string> answers = Regex.Split(textboxAnswear.Text, RegexSplitString).ToList<string>();
 
             if (SelectedPropertyToValidate is List<String>)
             {
-                foreach (String correctWord in SelectedPropertyToValidate as List<String>)
+                foreach (String correctWord in SelectedPropertyToValidate as List<string>)
                 {
+                    totalAnswears = ((List<string>)SelectedPropertyToValidate).Count;
                     foreach (String answer in answers)
                     {
                         if (String.Equals(correctWord, answer, StringComparison.OrdinalIgnoreCase))
@@ -1181,13 +1214,14 @@ namespace LearnThaiApplication
             }
             else if (String.Equals(textboxAnswear.Text, (String)SelectedPropertyToValidate, StringComparison.OrdinalIgnoreCase))
             {
+                totalAnswears = 1;
                 CorrectPoints++;
                 rightAnswears++;
             }
 
             if (rightAnswears != 0)
             {
-                textBlockStatus.Text = "You got " + rightAnswears + " of " + answers.Count + " correct!";
+                textBlockStatus.Text = "You got " + rightAnswears + " of " + totalAnswears + " correct!";
             }
             else
             {
@@ -1203,7 +1237,7 @@ namespace LearnThaiApplication
 
         public void WriteAllToFile()
         {
-            WriteWordToFile<Word>(Words);
+            //WriteWordToFile<Word>(Words);
             WriteWordToFile<Consonant>(Consonants);
             WriteWordToFile<Vowel>(Vowels);
             WriteWordToFile<ThaiNumber>(Numbers);
@@ -1237,9 +1271,10 @@ namespace LearnThaiApplication
 
         #region activeProperties
 
-        public static bool descriptionOn = true;
-        public static bool loopChapter = true;
-        public static bool randomOn;
+        public static bool DescriptionOn { get; set; } = true;
+        public static bool LoopChapter { get; set; } = true;
+        public static bool RandomOn { get; set; }
+        public static bool DisplayAllPropertiesInDescription { get; set; }
         public static int CorrectPoints { get; set; } = 0;
         public static int CurrentFileIndex { get; set; } = 0;
         public static Random RandomIndex { get; set; } = new Random();
@@ -1250,15 +1285,15 @@ namespace LearnThaiApplication
         public static string SelectedSymbolTypeToUse { get; set; }
         public static string WhatToDisplay { get; set; }
         public static string WhatToTrain { get; set; }
-        public String SubmitStyle { get; set; }
-        public Type WhatTypeToUse { get; set; }
-        public Object WordToLoad { get; set; }
+        public static string SubmitStyle { get; set; }
+        public static Type WhatTypeToUse { get; set; }
+        public static Object WordToLoad { get; set; }
 
         #endregion activeProperties
 
-        public String chaptersName = "Key to understanding Thai; Thai alphabet; Closing sounds of consonants; Thai vowels; Tonal Language; Special pronounciation; Nouns, people and particles; Numbers and Counting; Telling time; Colors; Easy words; Homonyms; Homophones; Words in special contexts; 101 most used words; Small talk; The body";
+        public static string chaptersName = "Key to understanding Thai; Thai alphabet; Closing sounds of consonants; Thai vowels; Tonal Language; Special pronounciation; Nouns, people and particles; Numbers and Counting; Telling time; Colors; Easy words; Homonyms; Homophones; Words in special contexts; 101 most used words; Small talk; The body";
 
-        public Chapter NewChapter;
+        public static Chapter NewChapter;
 
         #region Settings properties
 
@@ -1280,36 +1315,39 @@ namespace LearnThaiApplication
             foreach (T word in list)
             {
                 SetPropertyOfGenericObject(word);
-                SetValueOfObject(((List<string>)GetValueFromValueList("ThaiScript"))[0], "Name", word);
 
-                if (((List<string>)GetValueFromValueList("SoundPath")).Count != 0)
+                List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
+                string helpword = (string)GetValueFromValueList("ThaiHelpWord");
+
+                if (script.Count == 1)
                 {
-                    continue;
+                    SetValueOfObject(helpword, "ThaiScript", word);
                 }
-                else
-                {
-                    if (ListOfProperties.Exists(e => e.Name == "ThaiHelpWord"))
-                    {
-                        /*foreach(string s in (List<string>)GetValueFromValueList("ThaiHelpWord"))
-                        {
-                            full += s + " ";
-                        }*/
-                        full += (string)GetValueFromValueList("ThaiHelpWord") + " ";
-                    }
-                    else
-                    {
-                        foreach (string s in (List<string>)GetValueFromValueList("ThaiScript"))
-                        {
-                            full += s + " ";
-                        }
-                    }
-                    foreach (string path in (List<string>)GetValueFromValueList("SoundPath"))
-                    {
-                        full += path + " ";
-                    }
-                    full += "\r\n";
-                    File.WriteAllText(LanguageFilePath + word.GetType() + ".txt", full);
-                }
+
+                //    if (ListOfProperties.Exists(e => e.Name == "ThaiHelpWord"))
+                //    {
+                //        /*foreach(string s in (List<string>)GetValueFromValueList("ThaiHelpWord"))
+                //        {
+                //            full += s + " ";
+                //        }*/
+                //        full += (string)GetValueFromValueList("ThaiHelpWord") + " ";
+                //    }
+                //    else
+                //    {
+                //        foreach (string s in (List<string>)GetValueFromValueList("ThaiScript"))
+                //        {
+                //            full += s + " ";
+                //        }
+                //    }
+                //    foreach (string path in (List<string>)GetValueFromValueList("SoundPath"))
+                //    {
+                //        if (File.Exists(path))
+                //        {
+                //            full += path + " ";
+                //        }
+                //    }
+                //    full += "\r\n";
+                //    File.WriteAllText(LanguageFilePath + word.GetType() + ".txt", full);
             }
         }
 
@@ -1642,7 +1680,7 @@ namespace LearnThaiApplication
         {
             if ((sender as CheckBox)?.IsChecked == true)
             {
-                descriptionOn = true;
+                DescriptionOn = true;
                 PopulateDescription(txb_Description_page1);
                 PopulateDescription(txb_Description_page2);
             }
@@ -1650,7 +1688,7 @@ namespace LearnThaiApplication
             {
                 txb_Description_page1.Text = "";
                 txb_Description_page2.Text = "";
-                descriptionOn = false;
+                DescriptionOn = false;
             }
         }
 
@@ -1680,12 +1718,12 @@ namespace LearnThaiApplication
 
         private void LoopChapter_Checked(object sender, RoutedEventArgs e)
         {
-            loopChapter = (sender as CheckBox)?.IsChecked == true;
+            LoopChapter = (sender as CheckBox)?.IsChecked == true;
         }
 
         private void Randomized_Checked(object sender, RoutedEventArgs e)
         {
-            randomOn = (sender as CheckBox)?.IsChecked == true;
+            RandomOn = (sender as CheckBox)?.IsChecked == true;
         }
 
         private void Rb_Conso_Page3_Checked(object sender, RoutedEventArgs e)
@@ -1796,6 +1834,18 @@ namespace LearnThaiApplication
                 word.SoundPath.Clear();
             }
             SaveAll();
+        }
+
+        private void FullDesc_Checked(object sender, RoutedEventArgs e)
+        {
+            if (((CheckBox)sender).IsChecked == true)
+            {
+                DisplayAllPropertiesInDescription = true;
+            }
+            else
+            {
+                DisplayAllPropertiesInDescription = false;
+            }
         }
     }
 

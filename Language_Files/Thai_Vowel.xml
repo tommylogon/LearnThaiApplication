@@ -3,7 +3,7 @@
   <Vowel>
     <Name>ั</Name>
     <ThaiScript>
-      <string>ั</string>
+      <string>กับ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>gap</string>
@@ -22,7 +22,7 @@
   <Vowel>
     <Name>-า</Name>
     <ThaiScript>
-      <string>-า</string>
+      <string>บาด</string>
     </ThaiScript>
     <ThaiFonet>
       <string>baad</string>
@@ -38,7 +38,7 @@
   <Vowel>
     <Name>แ-ะ</Name>
     <ThaiScript>
-      <string>แ-ะ</string>
+      <string>แกะ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>gae</string>
@@ -64,7 +64,7 @@
   <Vowel>
     <Name>แ</Name>
     <ThaiScript>
-      <string>แ</string>
+      <string>แดง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>dæng</string>
@@ -82,7 +82,7 @@
   <Vowel>
     <Name>เ-ะ</Name>
     <ThaiScript>
-      <string>เ-ะ</string>
+      <string>เตะ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>dte</string>
@@ -98,7 +98,7 @@
   <Vowel>
     <Name>เ-</Name>
     <ThaiScript>
-      <string>เ-</string>
+      <string>เพลง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>phleeng</string>
@@ -117,7 +117,7 @@
   <Vowel>
     <Name>ิ</Name>
     <ThaiScript>
-      <string>ิ</string>
+      <string>คิด</string>
     </ThaiScript>
     <ThaiFonet>
       <string>khit</string>
@@ -140,7 +140,7 @@
   <Vowel>
     <Name>ี</Name>
     <ThaiScript>
-      <string>ี</string>
+      <string>อีก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>eek</string>
@@ -163,7 +163,7 @@
   <Vowel>
     <Name>โ-ะ</Name>
     <ThaiScript>
-      <string>โ-ะ</string>
+      <string>โต๊ะ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>dto</string>
@@ -186,7 +186,7 @@
   <Vowel>
     <Name>โ-</Name>
     <ThaiScript>
-      <string>โ-</string>
+      <string>โชค</string>
     </ThaiScript>
     <ThaiFonet>
       <string>chook</string>
@@ -202,7 +202,7 @@
   <Vowel>
     <Name>เ-าะ</Name>
     <ThaiScript>
-      <string>เ-าะ</string>
+      <string>เกาะ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>gaw</string>
@@ -227,7 +227,7 @@
   <Vowel>
     <Name>อ</Name>
     <ThaiScript>
-      <string>อ</string>
+      <string>นอน</string>
     </ThaiScript>
     <ThaiFonet>
       <string>naawn</string>
@@ -248,7 +248,7 @@
   <Vowel>
     <Name>เ-อะ</Name>
     <ThaiScript>
-      <string>เ-อะ</string>
+      <string>เยอะ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>yöö</string>
@@ -270,7 +270,7 @@
   <Vowel>
     <Name>เ-อ</Name>
     <ThaiScript>
-      <string>เ-อ</string>
+      <string>เผลอ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>phlöör</string>
@@ -296,7 +296,7 @@
   <Vowel>
     <Name>ุ</Name>
     <ThaiScript>
-      <string>ุ</string>
+      <string>จุฬา</string>
     </ThaiScript>
     <ThaiFonet>
       <string>joo laa</string>
@@ -318,7 +318,7 @@
   <Vowel>
     <Name>ู</Name>
     <ThaiScript>
-      <string>ู</string>
+      <string>ลูก</string>
     </ThaiScript>
     <ThaiFonet>
       <string>luuk</string>
@@ -340,7 +340,7 @@
   <Vowel>
     <Name>ึ</Name>
     <ThaiScript>
-      <string>ึ</string>
+      <string>รึ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>reu</string>
@@ -356,7 +356,7 @@
   <Vowel>
     <Name>ื</Name>
     <ThaiScript>
-      <string>ื</string>
+      <string>กลืน</string>
     </ThaiScript>
     <ThaiFonet>
       <string>gleuun</string>
@@ -375,7 +375,7 @@
   <Vowel>
     <Name>ไ-</Name>
     <ThaiScript>
-      <string>ไ-</string>
+      <string>ไม่</string>
     </ThaiScript>
     <ThaiFonet>
       <string>mai</string>
@@ -391,7 +391,7 @@
   <Vowel>
     <Name>ใ-</Name>
     <ThaiScript>
-      <string>ใ-</string>
+      <string>ใส่</string>
     </ThaiScript>
     <ThaiFonet>
       <string>sai</string>
@@ -413,7 +413,7 @@
   <Vowel>
     <Name>ำ</Name>
     <ThaiScript>
-      <string>ำ</string>
+      <string>ทำ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>tam</string>
@@ -436,7 +436,7 @@
   <Vowel>
     <Name>เ-า</Name>
     <ThaiScript>
-      <string>เ-า</string>
+      <string>เรา</string>
     </ThaiScript>
     <ThaiFonet>
       <string>rao</string>
@@ -456,7 +456,7 @@
   <Vowel>
     <Name>เียะ</Name>
     <ThaiScript>
-      <string>เียะ</string>
+      <string>เดี๊ยะ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>dia</string>
@@ -472,7 +472,7 @@
   <Vowel>
     <Name>เีย</Name>
     <ThaiScript>
-      <string>เีย</string>
+      <string>เมีย</string>
     </ThaiScript>
     <ThaiFonet>
       <string>miia</string>
@@ -488,7 +488,7 @@
   <Vowel>
     <Name>ัว</Name>
     <ThaiScript>
-      <string>ัว</string>
+      <string>ตัว</string>
     </ThaiScript>
     <ThaiFonet>
       <string>dtuaa</string>
@@ -512,7 +512,7 @@
   <Vowel>
     <Name>ัวะ</Name>
     <ThaiScript>
-      <string>ัวะ</string>
+      <string>ผลัวะ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>phlua</string>
@@ -528,7 +528,7 @@
   <Vowel>
     <Name>เือะ</Name>
     <ThaiScript>
-      <string>เือะ</string>
+      <string>เอือะ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>eua</string>
@@ -544,7 +544,7 @@
   <Vowel>
     <Name>เือ</Name>
     <ThaiScript>
-      <string>เือ</string>
+      <string>เรือ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>reuua</string>
@@ -565,7 +565,7 @@
   <Vowel>
     <Name>ฦ</Name>
     <ThaiScript>
-      <string>ฦ</string>
+      <string>ฦาชา</string>
     </ThaiScript>
     <ThaiFonet>
       <string>leuu chaa</string>
@@ -587,7 +587,7 @@
   <Vowel>
     <Name>ฦๅ</Name>
     <ThaiScript>
-      <string>ฦๅ</string>
+      <string />
     </ThaiScript>
     <ThaiFonet>
       <string>lüü</string>
@@ -603,7 +603,7 @@
   <Vowel>
     <Name>ฤ</Name>
     <ThaiScript>
-      <string>ฤ</string>
+      <string>ฤทธ์</string>
     </ThaiScript>
     <ThaiFonet>
       <string>rit</string>
@@ -619,7 +619,7 @@
   <Vowel>
     <Name>ฤๅ</Name>
     <ThaiScript>
-      <string>ฤๅ</string>
+      <string>ฤๅษี</string>
     </ThaiScript>
     <ThaiFonet>
       <string>reuu see</string>
@@ -635,7 +635,7 @@
   <Vowel>
     <Name>-อย</Name>
     <ThaiScript>
-      <string>-อย</string>
+      <string>บ่อย</string>
     </ThaiScript>
     <ThaiFonet>
       <string>baawy</string>
@@ -651,7 +651,7 @@
   <Vowel>
     <Name>เ็ว</Name>
     <ThaiScript>
-      <string>เ็ว</string>
+      <string>เร็ว</string>
     </ThaiScript>
     <ThaiFonet>
       <string>reo</string>
@@ -671,7 +671,7 @@
   <Vowel>
     <Name>เียว</Name>
     <ThaiScript>
-      <string>เียว</string>
+      <string>เที่ยว</string>
     </ThaiScript>
     <ThaiFonet>
       <string>thiaao</string>
@@ -693,7 +693,7 @@
   <Vowel>
     <Name>เืยว</Name>
     <ThaiScript>
-      <string>เืยว</string>
+      <string>เหนื่อย</string>
     </ThaiScript>
     <ThaiFonet>
       <string>neuuay</string>
@@ -715,7 +715,7 @@
   <Vowel>
     <Name>ิว</Name>
     <ThaiScript>
-      <string>ิว</string>
+      <string>หิว</string>
     </ThaiScript>
     <ThaiFonet>
       <string>hiu</string>
@@ -735,7 +735,7 @@
   <Vowel>
     <Name>ุย</Name>
     <ThaiScript>
-      <string>ุย</string>
+      <string>คุย</string>
     </ThaiScript>
     <ThaiFonet>
       <string>khuy</string>

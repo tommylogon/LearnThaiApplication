@@ -8,7 +8,7 @@
         Title="MainWindow" Height="600" Width="1000">
 
     <Viewbox>
-        <TabControl HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Margin="0" Height="512" Width="928" Background="White" Foreground="Black" SelectionChanged="TabChanged">
+        <TabControl x:Name="MainWindow_tabController" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Margin="0" Height="512" Width="928" Background="White" Foreground="Black" SelectionChanged="TabChanged">
             <TabItem Header="Learn the language">
                 <Grid Background="#FF6DA5C4">
                     <Label x:Name="lbl_Counter_Page1" Content="123" HorizontalAlignment="Left" Margin="99,142,0,0" VerticalAlignment="Top" Height="26" Width="31" Foreground="#FFE6F8FF" />
@@ -125,7 +125,7 @@
                     <Button x:Name="btn_ChangeSave_Settings" Content="Change Path" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="98,87,0,0" />
                     <TextBox x:Name="txt_NewSavePath_Settings" HorizontalAlignment="Left" Height="38" Margin="98,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="367" />
                     <Label Content="New Save Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,41,0,0" Foreground="#FFE6F8FF" />
-                    <CheckBox x:Name="ckb_LoopChapter" Content="Loop chapter" HorizontalAlignment="Left" Margin="196,171,0,0" VerticalAlignment="Top" IsChecked="True" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_LoopChapter" Content="Loop chapter" HorizontalAlignment="Left" Margin="196,171,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <Button Content="Find sound files" HorizontalAlignment="Left" Margin="135,292,0,0" VerticalAlignment="Top" Width="90" Click="SoundDownloader" RenderTransformOrigin="1.152,0.697" />
                     <Button Content="Check sound status" HorizontalAlignment="Left" Margin="133,317,0,0" VerticalAlignment="Top" Width="112" Click="Button_Click" />
                     <ComboBox x:Name="cbx_SelectList" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Width="120" />
@@ -136,6 +136,7 @@
                     <RadioButton x:Name="rb_TrainEngWords_Setting" Content="English meanings" HorizontalAlignment="Left" Margin="25,183,0,0" VerticalAlignment="Top" Checked="SelectWhatToTrain" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
                     <RadioButton x:Name="rb_TrainFonet_Setting" Content="Pronounciations" HorizontalAlignment="Left" Margin="25,203,0,0" VerticalAlignment="Top" Checked="SelectWhatToTrain" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
                     <Button Content="Delete sound paths and sounds." HorizontalAlignment="Left" Margin="140,355,0,0" VerticalAlignment="Top" Width="231" Click="RemoveSoundPath" />
+                    <CheckBox x:Name="ckb_FullDesc" Content="Full description?" HorizontalAlignment="Left" Margin="196,203,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="FullDesc_Checked" Unchecked="FullDesc_Checked" />
                 </Grid>
             </TabItem>
         </TabControl>
