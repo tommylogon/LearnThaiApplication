@@ -52,7 +52,6 @@
       <string>kuad</string>
     </ThaiFonet>
     <EngWords>
-      <string />
       <string>Bottle</string>
     </EngWords>
     <SoundPath>
@@ -74,7 +73,6 @@
       <string>kwaai</string>
     </ThaiFonet>
     <EngWords>
-      <string />
       <string>Water buffalo</string>
     </EngWords>
     <SoundPath>
@@ -96,7 +94,6 @@
       <string>kon</string>
     </ThaiFonet>
     <EngWords>
-      <string />
       <string>Person</string>
     </EngWords>
     <SoundPath>
@@ -216,6 +213,7 @@
   <Consonant>
     <Name>ซ</Name>
     <ThaiScript>
+      <string>ซ</string>
       <string>โซ่</string>
     </ThaiScript>
     <ThaiFonet>
@@ -227,7 +225,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โซ่.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>โซ่</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -254,6 +255,7 @@
   <Consonant>
     <Name>ญ</Name>
     <ThaiScript>
+      <string>ญ</string>
       <string>หญิง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -265,12 +267,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หญิง.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>หญิง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฎ</Name>
     <ThaiScript>
+      <string>ฎ</string>
       <string>ชฎา</string>
     </ThaiScript>
     <ThaiFonet>
@@ -283,12 +289,15 @@
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ชฎา.mp3</string>
     </SoundPath>
     <EngDesc>Type of headdress used in Thai classical dancing and theater</EngDesc>
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ชฎา</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฏ</Name>
     <ThaiScript>
+      <string>ฏ</string>
       <string>ปฏัก</string>
     </ThaiScript>
     <ThaiFonet>
@@ -303,12 +312,15 @@
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปฏัก.mp3</string>
     </SoundPath>
     <EngDesc />
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ปฏัก</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฐ</Name>
     <ThaiScript>
+      <string>ฐ</string>
       <string>ฐาน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -320,12 +332,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฐาน.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ฐาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฑ</Name>
     <ThaiScript>
+      <string>ฑ</string>
       <string>มณโฑ</string>
     </ThaiScript>
     <ThaiFonet>
@@ -337,12 +353,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มณโฑ.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>มณโฑ</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฒ</Name>
     <ThaiScript>
+      <string>ฒ</string>
       <string>ผู้เฒ่า</string>
     </ThaiScript>
     <ThaiFonet>
@@ -354,12 +374,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ผู้เฒ่า.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ผู้เฒ่า</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ณ</Name>
     <ThaiScript>
+      <string>ณ</string>
       <string>เณร</string>
     </ThaiScript>
     <ThaiFonet>
@@ -371,12 +395,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เณร.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>เณร</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ด</Name>
     <ThaiScript>
+      <string>ด</string>
       <string>เด็ก</string>
     </ThaiScript>
     <ThaiFonet>
@@ -389,12 +417,15 @@
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เด็ก.mp3</string>
     </SoundPath>
     <EngDesc />
-    <Tone />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>เด็ก</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ต</Name>
     <ThaiScript>
+      <string>ต</string>
       <string>เต่า</string>
     </ThaiScript>
     <ThaiFonet>
@@ -406,12 +437,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เต่า.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>เต่า</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ถ</Name>
     <ThaiScript>
+      <string>ถ</string>
       <string>ถุง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -423,12 +458,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ถุง.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ถุง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ท</Name>
     <ThaiScript>
+      <string>ท</string>
       <string>ทหาร</string>
     </ThaiScript>
     <ThaiFonet>
@@ -440,12 +479,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทหาร.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ทหาร</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ธ</Name>
     <ThaiScript>
+      <string>ธ</string>
       <string>ธง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -457,12 +500,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ธง.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ธง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>น</Name>
     <ThaiScript>
+      <string>น</string>
       <string>หนู</string>
     </ThaiScript>
     <ThaiFonet>
@@ -474,12 +521,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนู.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>หนู</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>บ</Name>
     <ThaiScript>
+      <string>บ</string>
       <string>ใบไม้</string>
     </ThaiScript>
     <ThaiFonet>
@@ -491,7 +542,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ใบไม้.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>ใบไม้</ThaiHelpWord>
   </Consonant>
   <Consonant>
@@ -678,7 +732,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เเหาน.mp3</string>
     </SoundPath>
-    <Tone />
+    <EngDesc />
+    <Tone>
+      <string />
+    </Tone>
     <ThaiHelpWord>เเหวน</ThaiHelpWord>
   </Consonant>
   <Consonant>

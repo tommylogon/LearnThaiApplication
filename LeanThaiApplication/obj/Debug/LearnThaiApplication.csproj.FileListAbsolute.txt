@@ -45,9 +45,7 @@ C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\L
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\Menu.baml
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.g.resources
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.Properties.Resources.resources
-C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Learn.g.cs
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Menu.baml
-C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\Learn.baml
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\NAudio.dll
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\NAudio.xml
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.csproj.CopyComplete
@@ -59,3 +57,13 @@ C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\H
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.csprojAssemblyReference.cache
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\System.ValueTuple.dll
 C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\System.ValueTuple.xml
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\bin\Debug\HtmlAgilityPack.dll
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\bin\Debug\NAudio.dll
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\bin\Debug\System.ValueTuple.dll
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\bin\Debug\HtmlAgilityPack.xml
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\bin\Debug\NAudio.xml
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\bin\Debug\System.ValueTuple.xml
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\ContentMan.g.cs
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\ContentMan.baml
+C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LeanThaiApplication\obj\Debug\LearnThaiApplication.csproj.CopyComplete

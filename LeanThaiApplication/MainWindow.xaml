@@ -97,7 +97,7 @@
                     <Label x:Name="lbl_Desc_Insert" Content="Description" HorizontalAlignment="Left" Margin="209,153,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                     <Button x:Name="btn_SubmitNewWord" Content="Submit" HorizontalAlignment="Left" Margin="339,231,0,0" VerticalAlignment="Top" Width="76" Click="Btn_SubmitNewWord_Click" />
                     <ListBox x:Name="lib_LoadedWords" HorizontalAlignment="Left" Height="393" Margin="10,10,0,0" VerticalAlignment="Top" Width="193"  SelectionChanged="Lib_LoadedWords_SelectionChanged" />
-                    <Button x:Name="btn_LoadList" Content="Load List" HorizontalAlignment="Left" Margin="35,408,0,0" VerticalAlignment="Top" Width="75" Click="Btn_LoadList_Click" />
+                    <Button x:Name="btn_UpdateAll" Content="Load List" HorizontalAlignment="Left" Margin="35,408,0,0" VerticalAlignment="Top" Width="75" Click="CycleListboxItems" />
                     <RadioButton x:Name="rb_words_Page3" Content="Words" HorizontalAlignment="Left" Margin="681,63,0,0" VerticalAlignment="Top" Checked="Rb_words_Page3_Checked" Foreground="#FFE6F8FF" />
                     <RadioButton x:Name="rb_Conso_Page3" Content="Consonants" HorizontalAlignment="Left" Margin="681,84,0,0" VerticalAlignment="Top" Checked="Rb_Conso_Page3_Checked" Foreground="#FFE6F8FF" />
                     <RadioButton x:Name="rb_Vowel_Page3" Content="Vowels" HorizontalAlignment="Left" Margin="681,104,0,0" VerticalAlignment="Top" Checked="Rb_Vowel_Page3_Checked" Foreground="#FFE6F8FF" />

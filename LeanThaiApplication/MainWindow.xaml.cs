@@ -8,6 +8,7 @@ using System.Net;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -34,7 +35,7 @@ namespace LearnThaiApplication
 
             GetImage();
 
-            WriteAllToFile();
+            //WriteAllToFile();
         }
 
         public void LoadAllFiles()
@@ -159,9 +160,9 @@ namespace LearnThaiApplication
         /// <summary>
         /// Clears the textboxs and textblocks to make the application look clean.
         /// </summary>
-        public void ClearFields(object sender)
+        public void ClearFields()
         {
-            int tabIndex = MainWindow_tabController.TabIndex; //SelectParentIndex(sender);
+            int tabIndex = MainWindow_tabController.SelectedIndex; //SelectParentIndex(sender);
 
             if (tabIndex == 0)
             {
@@ -190,7 +191,7 @@ namespace LearnThaiApplication
             }
         }
 
-        public void CreateFormWindow()
+        public void CreateFormWindow(bool continious)
         {
             window = new ContentMan();
             Viewbox wb = new Viewbox
@@ -238,7 +239,15 @@ namespace LearnThaiApplication
                 Content = "Submit",
                 Name = "FormWindowButton"
             };
-            submitButton.Click += Btn_SubmitNewWord_Click;
+            if (continious)
+            {
+
+                //submitButton.Click += SubmitNextWord;
+            }
+            else
+            {
+                submitButton.Click += Btn_SubmitNewWord_Click;
+            }
             sp.Children.Add(submitButton);
             wb.Child = sp;
             window.Content = wb;
@@ -256,6 +265,40 @@ namespace LearnThaiApplication
             MessageBox.Show("tried to remove element " + list[lib_LoadedWords.SelectedIndex].ToString());
             list.RemoveAt(lib_LoadedWords.SelectedIndex);
         }
+
+        public bool SubmitFromForm<T>(List<T> list) where T:new()
+        {
+            Type whatIsT = typeof(T);
+
+            textboxList = FormTextboxes();
+
+            foreach (T oldWord in list)
+            {
+                if (WordToLoad.Equals(oldWord))
+                {
+                    SetPropertyOfGenericObject(oldWord);
+
+                    if (oldWord.GetType() == typeof(Word))
+                    {
+                        SetNewValuesFromForm(oldWord, textboxList);
+                        //SetNewValuesToOldWord(oldWord, whatIsT, txt_FirstSelectionProperty.Text, txt_SecondSelectionProperty.Text, txt_ThirdSelectionProperty.Text, txt_FourthSelectionProperty.Text, txt_FifthSelectionProperty.Text);
+                        return true;
+                    }
+                    else
+                    {
+                        SetNewValuesFromForm(oldWord, textboxList);
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        //public bool SubmitNextWordFromForm(object sender, RoutedEventArgs e)
+        //{
+        //    SubmitFromForm<T>(list);
+        //    SaveFiles<T>(list);
+        //}
 
         /// <summary>
         /// Turns the induvidual words into one string to display
@@ -532,11 +575,11 @@ namespace LearnThaiApplication
         /// </summary>
         /// <typeparam name="T">What type to work with</typeparam>
         /// <param name="list">What list to work with</param>
-        public void SelectionChanged<T>()
+        public void SelectionChanged<T>(int selectedIndex)
         {
             Type whatIsT = typeof(T);
 
-            if (lib_LoadedWords.SelectedIndex != -1)
+            if (selectedIndex != -1)
             {
                 WordToLoad = lib_LoadedWords.SelectedItem;
 
@@ -1040,10 +1083,10 @@ namespace LearnThaiApplication
             SaveFiles<T>(list);
         }
 
-        public void SpeakerStatus(object sender)
+        public void SpeakerStatus()
         {
             List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
-            int tabIndex = SelectParentIndex(sender);
+            int tabIndex = MainWindow_tabController.SelectedIndex;
             if (soundPaths.Count == 0)
             {
                 if (tabIndex == 0)
@@ -1057,7 +1100,7 @@ namespace LearnThaiApplication
             }
             foreach (string value in soundPaths)
             {
-                if (string.IsNullOrEmpty(value) && !File.Exists(value))
+                if (string.IsNullOrEmpty(value) || !File.Exists(value))
                 {
                     if (tabIndex == 0)
                     {
@@ -1222,6 +1265,7 @@ namespace LearnThaiApplication
             if (rightAnswears != 0)
             {
                 textBlockStatus.Text = "You got " + rightAnswears + " of " + totalAnswears + " correct!";
+                
             }
             else
             {
@@ -1233,6 +1277,7 @@ namespace LearnThaiApplication
             lbl_Counter_Page2.Content = CurrentFileIndex;
             lbl_Points.Content = "Points: " + CorrectPoints;
             lbl_Points_Page2.Content = "Points: " + CorrectPoints;
+            
         }
 
         public void WriteAllToFile()
@@ -1404,7 +1449,7 @@ namespace LearnThaiApplication
             {
                 MessageBox.Show("Please select what to train", "ERROR");
             }
-            PreTextChanger(0, sender);
+            PreTextChanger(0);
         }
 
         public void UpdateWhenSymbolTypeSelected()
@@ -1462,7 +1507,7 @@ namespace LearnThaiApplication
 
         private void Btn_FormWindow(object sender, RoutedEventArgs e)
         {
-            CreateFormWindow();
+            CreateFormWindow(false);
         }
 
         private void Btn_ListMoveDown_Click(object sender, RoutedEventArgs e)
@@ -1479,20 +1524,30 @@ namespace LearnThaiApplication
             SelectWhatToMove(newIndex);
         }
 
-        private void Btn_LoadList_Click(object sender, RoutedEventArgs e)
+        private void CycleListboxItems(object sender, RoutedEventArgs e)
         {
+            CreateFormWindow(true);
+
+            foreach (object item in lib_LoadedWords.Items)
+            {
+                SetPropertyOfGenericObject(item);
+                
+                FillFormTextBoxes();
+
+            }
+
             UpdateListBox();
         }
 
-        public void PreTextChanger(int change, object sender)
+        public void PreTextChanger(int change)
         {
-            int tabIndex = SelectParentIndex(sender);
+            int tabIndex = MainWindow_tabController.SelectedIndex;
 
             if (tabIndex == 0)
             {
                 TextChanger<Word>(DisplayList, txb_ThaiScript_Page1, txb_Description_page1, change);
                 lbl_Counter_Page1.Content = CurrentFileIndex;
-                SpeakerStatus(sender);
+                SpeakerStatus();
             }
             if (tabIndex == 1)
             {
@@ -1517,26 +1572,26 @@ namespace LearnThaiApplication
                     MessageBox.Show("please select a category");
                 }
                 lbl_Counter_Page2.Content = CurrentFileIndex;
-                SpeakerStatus(sender);
+                SpeakerStatus();
             }
         }
 
         public void NextWord(object sender, RoutedEventArgs e)
         {
-            ClearFields(sender);
-            PreTextChanger(1, sender);
+            ClearFields();
+            PreTextChanger(1);
         }
 
         public void PrevWord(object sender, RoutedEventArgs e)
         {
-            ClearFields(sender);
-            PreTextChanger(-1, sender);
+            ClearFields();
+            PreTextChanger(-1);
         }
 
         private void PlaySound(object sender, RoutedEventArgs e)
         {
             int TabIndex = SelectParentIndex(sender);
-            PreTextChanger(0, sender);
+            PreTextChanger(0);
 
             try
             {
@@ -1609,12 +1664,12 @@ namespace LearnThaiApplication
             }
 
             UpdateListBox();
-            ClearFields(sender);
+            ClearFields();
         }
 
         public void ValidateAnswear(object sender, RoutedEventArgs e)
         {
-            int tabIndex = SelectParentIndex(sender);
+            int tabIndex = MainWindow_tabController.SelectedIndex;
 
             if (tabIndex == 0)
             {
@@ -1643,6 +1698,7 @@ namespace LearnThaiApplication
                     MessageBox.Show("Please select a category.");
                 }
             }
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -1696,19 +1752,19 @@ namespace LearnThaiApplication
         {
             if (WhatTypeToUse == typeof(Word))
             {
-                SelectionChanged<Word>();
+                SelectionChanged<Word>(lib_LoadedWords.SelectedIndex);
             }
             else if (WhatTypeToUse == typeof(Consonant))
             {
-                SelectionChanged<Consonant>();
+                SelectionChanged<Consonant>(lib_LoadedWords.SelectedIndex);
             }
             else if (WhatTypeToUse == typeof(Vowel))
             {
-                SelectionChanged<Vowel>();
+                SelectionChanged<Vowel>(lib_LoadedWords.SelectedIndex);
             }
             else if (WhatTypeToUse == typeof(ThaiNumber))
             {
-                SelectionChanged<ThaiNumber>();
+                SelectionChanged<ThaiNumber>(lib_LoadedWords.SelectedIndex);
             }
             else
             {
@@ -1730,7 +1786,7 @@ namespace LearnThaiApplication
         {
             WhatListTLoad = Consonants;
             WhatTypeToUse = typeof(Consonant);
-            ClearFields(sender);
+            ClearFields();
             UpdateListBox();
 
             lbl_English_Insert.Content = "Thai help word";
@@ -1742,7 +1798,7 @@ namespace LearnThaiApplication
         {
             WhatListTLoad = Numbers;
             WhatTypeToUse = typeof(ThaiNumber);
-            ClearFields(sender);
+            ClearFields();
             UpdateListBox();
             lbl_English_Insert.Content = "Thai help word";
             lbl_Desc_Insert.Content = "English Word";
@@ -1754,7 +1810,7 @@ namespace LearnThaiApplication
         {
             WhatListTLoad = Vowels;
             WhatTypeToUse = typeof(Vowel);
-            ClearFields(sender);
+            ClearFields();
             UpdateListBox();
 
             lbl_English_Insert.Content = "Thai help word";
@@ -1768,7 +1824,7 @@ namespace LearnThaiApplication
             WhatListTLoad = Words;
             WhatTypeToUse = typeof(Word);
 
-            ClearFields(sender);
+            ClearFields();
             UpdateListBox();
 
             lbl_English_Insert.Content = "English";
@@ -1804,7 +1860,7 @@ namespace LearnThaiApplication
         {
             CurrentFileIndex = 0;
 
-            PreTextChanger(0, sender);
+            PreTextChanger(0);
         }
 
         private void OnEnterKeyUp(object sender, System.Windows.Input.KeyEventArgs e)
