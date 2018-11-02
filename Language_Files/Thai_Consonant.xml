@@ -15,11 +15,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไก่.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[slang] women</EngDesc>
     <Tone>
-      <string />
+      <string>low</string>
     </Tone>
-    <ThaiHelpWord>ไก่</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ข</Name>
@@ -28,7 +27,7 @@
       <string>ไข่</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>kai</string>
+      <string>khai</string>
     </ThaiFonet>
     <EngWords>
       <string>Egg</string>
@@ -36,11 +35,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไข่.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[sexual or colloquial slang] a man's testicle (ball)</EngDesc>
     <Tone>
-      <string />
+      <string>Low</string>
     </Tone>
-    <ThaiHelpWord>ไข่</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฃ</Name>
@@ -49,7 +47,7 @@
       <string>ขวด</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>kuad</string>
+      <string>khuaat</string>
     </ThaiFonet>
     <EngWords>
       <string>Bottle</string>
@@ -57,11 +55,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ขวด.mp3</string>
     </SoundPath>
-    <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ข.</EngDesc>
+    <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ข. [numerical classifier for bottles and bottled substances]</EngDesc>
     <Tone>
-      <string />
+      <string>Low</string>
     </Tone>
-    <ThaiHelpWord>ขวด</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ค</Name>
@@ -70,7 +67,7 @@
       <string>ควาย</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>kwaai</string>
+      <string>khwaai</string>
     </ThaiFonet>
     <EngWords>
       <string>Water buffalo</string>
@@ -78,11 +75,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ควาย.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[slang] bufoon; ignoramus, Moron</EngDesc>
     <Tone>
-      <string />
+      <string>Middle</string>
     </Tone>
-    <ThaiHelpWord>ควาย</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฅ</Name>
@@ -91,19 +87,22 @@
       <string>คน</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>kon</string>
+      <string>khohn</string>
     </ThaiFonet>
     <EngWords>
-      <string>Person</string>
+      <string>person</string>
+      <string>guy</string>
+      <string>people</string>
+      <string>man</string>
+      <string>human being</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คน.mp3</string>
     </SoundPath>
-    <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ค.</EngDesc>
+    <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ค. [numerical classifier for persons/occupations], to stir; scramble; mix</EngDesc>
     <Tone>
-      <string />
+      <string>Middle</string>
     </Tone>
-    <ThaiHelpWord>คน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฆ</Name>
@@ -120,11 +119,11 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ระฆัง.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>a large bell</EngDesc>
     <Tone>
-      <string />
+      <string>High</string>
+      <string>Middle</string>
     </Tone>
-    <ThaiHelpWord>ระฆัง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ง</Name>
@@ -143,9 +142,8 @@
     </SoundPath>
     <EngDesc />
     <Tone>
-      <string />
+      <string>Middle</string>
     </Tone>
-    <ThaiHelpWord>งู</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>จ</Name>
@@ -157,16 +155,16 @@
       <string>jaan</string>
     </ThaiFonet>
     <EngWords>
-      <string>Plate</string>
+      <string>plate</string>
+      <string>dish</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\จาน.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[numerical classifier for dishes (including satellite)]</EngDesc>
     <Tone>
-      <string />
+      <string>Middle</string>
     </Tone>
-    <ThaiHelpWord>จาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฉ</Name>
@@ -183,11 +181,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฉิ่ง.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[a type of] small cymbal used in East and Southeast Asian music</EngDesc>
     <Tone>
-      <string />
+      <string>Low</string>
     </Tone>
-    <ThaiHelpWord>ฉิ่ง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ช</Name>
@@ -204,11 +201,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ช้าง.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[numerical classifier for royally enrolled elephants]</EngDesc>
     <Tone>
-      <string />
+      <string>High</string>
     </Tone>
-    <ThaiHelpWord>ช้าง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ซ</Name>
@@ -220,16 +216,16 @@
       <string>soo</string>
     </ThaiFonet>
     <EngWords>
-      <string>Chains</string>
+      <string>chain</string>
+      <string>motorcycle chain</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โซ่.mp3</string>
     </SoundPath>
     <EngDesc />
     <Tone>
-      <string />
+      <string>Fallling</string>
     </Tone>
-    <ThaiHelpWord>โซ่</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฌ</Name>
@@ -238,7 +234,7 @@
       <string>เฌอ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>chøø</string>
+      <string>chuuhr</string>
     </ThaiFonet>
     <EngWords>
       <string>Thai tree</string>
@@ -246,11 +242,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เฌอ.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[a type of] small tree or bush</EngDesc>
     <Tone>
-      <string />
+      <string>Middle</string>
     </Tone>
-    <ThaiHelpWord>เฌอ</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ญ</Name>
@@ -263,15 +258,16 @@
     </ThaiFonet>
     <EngWords>
       <string>Woman</string>
+      <string>Female</string>
+      <string>Women</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หญิง.mp3</string>
     </SoundPath>
     <EngDesc />
     <Tone>
-      <string />
+      <string>Rising</string>
     </Tone>
-    <ThaiHelpWord>หญิง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฎ</Name>
@@ -288,11 +284,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ชฎา.mp3</string>
     </SoundPath>
-    <EngDesc>Type of headdress used in Thai classical dancing and theater</EngDesc>
+    <EngDesc>headress used in Thai classical dancing and theater</EngDesc>
     <Tone>
-      <string />
+      <string>High</string>
     </Tone>
-    <ThaiHelpWord>ชฎา</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฏ</Name>
@@ -301,7 +296,7 @@
       <string>ปฏัก</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>ba dag</string>
+      <string>bpa dtak</string>
     </ThaiFonet>
     <EngWords>
       <string>harpoon</string>
@@ -313,9 +308,8 @@
     </SoundPath>
     <EngDesc />
     <Tone>
-      <string />
+      <string>Low</string>
     </Tone>
-    <ThaiHelpWord>ปฏัก</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฐ</Name>
@@ -324,19 +318,28 @@
       <string>ฐาน</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>taan</string>
+      <string>thaan</string>
     </ThaiFonet>
     <EngWords>
-      <string>Pedestal</string>
+      <string>base</string>
+      <string>foot</string>
+      <string>pedestal</string>
+      <string>position</string>
+      <string>ground</string>
+      <string>place</string>
+      <string>station</string>
+      <string>platform</string>
+      <string>cause</string>
+      <string>reason</string>
+      <string>basis;</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฐาน.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[linguistics] origin of alphabet/consonants, [adv] on the basis of</EngDesc>
     <Tone>
-      <string />
+      <string>Rising</string>
     </Tone>
-    <ThaiHelpWord>ฐาน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฑ</Name>
@@ -345,7 +348,8 @@
       <string>มณโฑ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>montoo</string>
+      <string>mohn</string>
+      <string>thoh</string>
     </ThaiFonet>
     <EngWords>
       <string>The wife of a giant</string>
@@ -353,11 +357,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\มณโฑ.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[a character in the Ramanyana epic,] the wife of a giant</EngDesc>
     <Tone>
-      <string />
+      <string>Middle</string>
     </Tone>
-    <ThaiHelpWord>มณโฑ</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ฒ</Name>
@@ -370,15 +373,15 @@
     </ThaiFonet>
     <EngWords>
       <string>Old person</string>
+      <string>Elder</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ผู้เฒ่า.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc> elder, respected old and wise person</EngDesc>
     <Tone>
-      <string />
+      <string>Falling</string>
     </Tone>
-    <ThaiHelpWord>ผู้เฒ่า</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ณ</Name>
@@ -387,7 +390,7 @@
       <string>เณร</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>neen</string>
+      <string>naehn</string>
     </ThaiFonet>
     <EngWords>
       <string>Novice monk</string>
@@ -395,11 +398,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เณร.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc> [typically] below the age of twenty; title used to refer to a novice</EngDesc>
     <Tone>
-      <string />
+      <string>Middle</string>
     </Tone>
-    <ThaiHelpWord>เณร</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ด</Name>
@@ -416,11 +418,11 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เด็ก.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[fig.] a young person working in a subservient occupation</EngDesc>
     <Tone>
+      <string>Low</string>
       <string />
     </Tone>
-    <ThaiHelpWord>เด็ก</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ต</Name>
@@ -429,7 +431,7 @@
       <string>เต่า</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>tow</string>
+      <string>dtow</string>
     </ThaiFonet>
     <EngWords>
       <string>Turtle</string>
@@ -437,11 +439,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เต่า.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[adv] slowly; at a leisurely pace</EngDesc>
     <Tone>
-      <string />
+      <string>Low</string>
     </Tone>
-    <ThaiHelpWord>เต่า</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ถ</Name>
@@ -450,19 +451,20 @@
       <string>ถุง</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>tung</string>
+      <string>thoong</string>
     </ThaiFonet>
     <EngWords>
-      <string>Bag</string>
+      <string>bag</string>
+      <string>pouch</string>
+      <string>tube-like sack</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ถุง.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc> [numerical classifier for condoms, cysts, bags, pouches]</EngDesc>
     <Tone>
-      <string />
+      <string>Rising</string>
     </Tone>
-    <ThaiHelpWord>ถุง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ท</Name>
@@ -471,19 +473,22 @@
       <string>ทหาร</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>tahaan</string>
+      <string>tha</string>
+      <string>haan</string>
     </ThaiFonet>
     <EngWords>
-      <string>Soldier</string>
+      <string>military</string>
+      <string>army</string>
+      <string>soldier</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทหาร.mp3</string>
     </SoundPath>
     <EngDesc />
     <Tone>
-      <string />
+      <string>High</string>
+      <string>Rising</string>
     </Tone>
-    <ThaiHelpWord>ทหาร</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ธ</Name>
@@ -492,7 +497,7 @@
       <string>ธง</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>tong</string>
+      <string>thohng</string>
     </ThaiFonet>
     <EngWords>
       <string>Flag</string>
@@ -502,9 +507,8 @@
     </SoundPath>
     <EngDesc />
     <Tone>
-      <string />
+      <string>Middle</string>
     </Tone>
-    <ThaiHelpWord>ธง</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>น</Name>
@@ -516,16 +520,21 @@
       <string>nuu</string>
     </ThaiFonet>
     <EngWords>
-      <string>Mouse</string>
+      <string>mouse</string>
+      <string>mice</string>
+      <string>rat</string>
+      <string>tiny</string>
+      <string>petite little thing</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนู.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>[fairly impolite 2nd person pronoun used to call over a waitress in a restaurant and a girl or woman working in a nightclub, café or escort business] you, [1st person pronoun that a little girl, daughter or grown-up woman uses to refer to herself in a cute way, usually when speaking to her parents or elder relatives] I, myself, [2nd person pronoun used for calling a little girl or boy (usually หนู + the child's nickname) and implying the speaker's tender feeling towards the child] you, little boy, little girl, [1st person pronoun that a female servant and country girl or woman uses to to refer to herself when speaking to anyone] I, myself
+ 
+</EngDesc>
     <Tone>
-      <string />
+      <string>Rising</string>
     </Tone>
-    <ThaiHelpWord>หนู</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>บ</Name>
@@ -542,11 +551,11 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ใบไม้.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>leaf of a tree</EngDesc>
     <Tone>
-      <string />
+      <string>Middle</string>
+      <string>High</string>
     </Tone>
-    <ThaiHelpWord>ใบไม้</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ป</Name>
@@ -554,7 +563,7 @@
       <string>ปลา</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>blaa</string>
+      <string>pblaa</string>
     </ThaiFonet>
     <EngWords>
       <string>Fish</string>
@@ -562,8 +571,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ปลา.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>ปลา</ThaiHelpWord>
+    <EngDesc>[n, prop.n, colloq] year or zodiac sign of the Fish</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>ผ</Name>
@@ -571,7 +582,7 @@
       <string>ผึ้ง</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>pung</string>
+      <string>pheung</string>
     </ThaiFonet>
     <EngWords>
       <string>Bee</string>
@@ -579,8 +590,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ผึ้ง.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>ผึ้ง</ThaiHelpWord>
+    <EngDesc />
+    <Tone>
+      <string>Falling</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>ฝ</Name>
@@ -592,33 +605,42 @@
     </ThaiFonet>
     <EngWords>
       <string>Lid</string>
+      <string>wall</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฝา.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>ฝา</ThaiHelpWord>
+    <EngDesc>lid or cover of a pot or bowl; cap, interior wall</EngDesc>
+    <Tone>
+      <string>Rising</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>พ</Name>
     <ThaiScript>
+      <string>พ</string>
       <string>พาน</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>paan</string>
+      <string>phaan</string>
     </ThaiFonet>
     <EngWords>
       <string>Tray</string>
+      <string>rather</string>
+      <string>near</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\พาน.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>พาน</ThaiHelpWord>
+    <EngDesc> tray on which items are offered to a Buddhist monk,  to foul by entangling; to lasso; to scrape up against; to interact with</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>ฟ</Name>
     <ThaiScript>
+      <string>ฟ</string>
       <string>ฟัน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -626,20 +648,29 @@
     </ThaiFonet>
     <EngWords>
       <string>Tooth</string>
+      <string>cog</string>
+      <string>notch</string>
+      <string>gear tooth</string>
+      <string>to overcharge</string>
+      <string>scam</string>
+      <string>rip off</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฟัน.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>ฟัน</ThaiHelpWord>
+    <EngDesc> to cut with downward blow, as with an axe or other sharp object, to struggle against or contend with, to work at doing something in order to get something accomplished or fix the situation, to overcharge; scam; rip off</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>ภ</Name>
     <ThaiScript>
+      <string>ภ</string>
       <string>สำเภา</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>sampow</string>
+      <string>sam phao</string>
     </ThaiFonet>
     <EngWords>
       <string>Sailboat</string>
@@ -647,12 +678,16 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สำเภา.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>สำเภา</ThaiHelpWord>
+    <EngDesc> [certain type of] small sailing vessel used in Asia and Southeast Asia; junk; argosy</EngDesc>
+    <Tone>
+      <string>Rising</string>
+      <string>Middle</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>ม</Name>
     <ThaiScript>
+      <string>ม</string>
       <string>ม้า</string>
     </ThaiScript>
     <ThaiFonet>
@@ -664,46 +699,71 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ม้า.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>ม้า</ThaiHelpWord>
+    <EngDesc />
+    <Tone>
+      <string>High</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>ย</Name>
     <ThaiScript>
+      <string>ย</string>
       <string>ยักษ์</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>yag</string>
+      <string>yak</string>
     </ThaiFonet>
     <EngWords>
-      <string>Giant</string>
+      <string>giant</string>
+      <string>ogre</string>
+      <string>colossus</string>
+      <string>monster</string>
+      <string>titan</string>
+      <string>[is] huge</string>
+      <string>colossal</string>
+      <string>enormous</string>
+      <string>gargantuan</string>
+      <string>gigantic</string>
+      <string>immense</string>
+      <string>mammoth</string>
+      <string>titanic</string>
+      <string>vast</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ยักษ์.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>ยักษ์</ThaiHelpWord>
+    <EngDesc>[a character from the Ramayana epic, a] giant [or] demon</EngDesc>
+    <Tone>
+      <string>High</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>ร</Name>
     <ThaiScript>
+      <string>ร</string>
       <string>เรือ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>rua</string>
+      <string>reuua</string>
     </ThaiFonet>
     <EngWords>
-      <string>Boat</string>
+      <string>boat</string>
+      <string>ship</string>
+      <string>barge</string>
+      <string>vessel</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เรือ.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>เรือ</ThaiHelpWord>
+    <EngDesc>[chess] the rook</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>ล</Name>
     <ThaiScript>
+      <string>ล</string>
       <string>ลิง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -715,12 +775,15 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ลิง.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>ลิง</ThaiHelpWord>
+    <EngDesc />
+    <Tone>
+      <string>Middle</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>ว</Name>
     <ThaiScript>
+      <string>ว</string>
       <string>เเหวน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -730,21 +793,21 @@
       <string>Ring</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เเหาน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เเหวน.mp3</string>
     </SoundPath>
-    <EngDesc />
+    <EngDesc>a ring (worn on the finger), a circular metal washer</EngDesc>
     <Tone>
-      <string />
+      <string>Rising</string>
     </Tone>
-    <ThaiHelpWord>เเหวน</ThaiHelpWord>
   </Consonant>
   <Consonant>
     <Name>ษ</Name>
     <ThaiScript>
-      <string>ฦๅษี</string>
+      <string>ษ</string>
+      <string>ฤๅษี</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>ruu see</string>
+      <string>reuu see</string>
     </ThaiFonet>
     <EngWords>
       <string>Hermit</string>
@@ -752,29 +815,40 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฦๅษี.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>ฦๅษี</ThaiHelpWord>
+    <EngDesc>ascetic; meditating recluse or hermit</EngDesc>
+    <Tone>
+      <string>Middle</string>
+      <string>Rising</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>อ</Name>
     <ThaiScript>
+      <string>อ</string>
       <string>อ่าง</string>
     </ThaiScript>
     <ThaiFonet>
       <string>aang</string>
     </ThaiFonet>
     <EngWords>
-      <string>Basin</string>
+      <string>basin</string>
+      <string>hand basin</string>
+      <string>bowl</string>
+      <string>bathtub</string>
+      <string>sink</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อ่าง.mp3</string>
     </SoundPath>
-    <Tone />
-    <ThaiHelpWord>อ่าง</ThaiHelpWord>
+    <EngDesc>[of speech] [is] stuttering; stammering, [numerical classifier for sinks, basins, bathtubs],  [sound of a] bullfrog</EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
   </Consonant>
   <Consonant>
     <Name>ฮ</Name>
     <ThaiScript>
+      <string>ฮ</string>
       <string>นกฮูก</string>
     </ThaiScript>
     <ThaiFonet>
@@ -786,8 +860,10 @@
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นกฮูก.mp3</string>
     </SoundPath>
-    <EngDesc />
-    <Tone />
-    <ThaiHelpWord>นกฮูก</ThaiHelpWord>
+    <EngDesc>oriental barn owl</EngDesc>
+    <Tone>
+      <string>High</string>
+      <string>Falling</string>
+    </Tone>
   </Consonant>
 </ArrayOfConsonant>

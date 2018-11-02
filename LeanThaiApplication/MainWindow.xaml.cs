@@ -8,8 +8,6 @@ using System.Net;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -38,18 +36,107 @@ namespace LearnThaiApplication
             //WriteAllToFile();
         }
 
-        public void LoadAllFiles()
+        #region Variables and properties
+
+        #region lists
+
+        public static List<TextBox> textboxList;
+        public static List<Chapter> Chapters { get; set; } = new List<Chapter>();
+        public static List<Consonant> Consonants { get; set; } = new List<Consonant>();
+        public static List<Word> DisplayList { get; set; } = new List<Word>();
+        public static List<PropertyInfo> ListOfProperties { get; set; } = new List<PropertyInfo>();
+        public static List<Object> ListOfValues { get; set; } = new List<Object>();
+        public static List<ThaiNumber> Numbers { get; set; } = new List<ThaiNumber>();
+        public static List<WordIDTEMP> TempList { get; set; } = new List<WordIDTEMP>();
+        public static List<Vowel> Vowels { get; set; } = new List<Vowel>();
+
+        public static List<Word> Words { get; set; } = new List<Word>();
+
+        #endregion lists
+
+        public static string chaptersName = "Key to understanding Thai; Thai alphabet; Closing sounds of consonants; Thai vowels; Tonal Language; Special pronounciation; Nouns, people and particles; Numbers and Counting; Telling time; Colors; Easy words; Homonyms; Homophones; Words in special contexts; 101 most used words; Small talk; The body";
+        public static Chapter NewChapter;
+        private static ContentMan window;
+        private StackPanel sp = new StackPanel();
+        public static int CorrectPoints { get; set; } = 0;
+        public static int CurrentFileIndex { get; set; } = 0;
+        public static int CurrentListBoxIndex { get; set; } = -1;
+        public static bool DescriptionOn { get; set; } = true;
+        public static bool DisplayAllPropertiesInDescription { get; set; }
+        public static bool IsContinious { get; set; }
+        public static string LanguageFilePath { get; set; } = "C:/Users/" + Environment.UserName + "/source/repos/LearnThaiApplication/Language_Files/";
+        public static bool LoopChapter { get; set; } = true;
+        public static Random RandomIndex { get; set; } = new Random();
+        public static bool RandomOn { get; set; }
+        public static string RegexSplitString { get; set; } = @"^\s|[\s;,]{2,}";
+        public static string SelectedChapter { get; set; }
+        public static object SelectedPropertyToDisplay { get; set; }
+        public static object SelectedPropertyToValidate { get; set; }
+        public static string SelectedSymbolTypeToUse { get; set; }
+        public static bool SubmitStyle { get; set; }
+        public static object WhatListTLoad { get; set; }
+        public static string WhatToDisplay { get; set; }
+        public static string WhatToTrain { get; set; }
+        public static Type WhatTypeToUse { get; set; }
+        public static object WordToLoad { get; set; }
+        public IEnumerable<Window> Windows { get; set; }
+
+        #endregion Variables and properties
+
+        #region TestMethods
+
+        /// <summary>
+        ///
+        /// </summary>
+        public void WriteAllToFile()
         {
-            LoadFiles<Chapter>(Chapters);
+            //WriteWordToFile<Word>(Words);
+            WriteWordToFile<Consonant>(Consonants);
+            WriteWordToFile<Vowel>(Vowels);
+            WriteWordToFile<ThaiNumber>(Numbers);
 
-            LoadFiles<Word>(Words);
-
-            LoadFiles<Consonant>(Consonants);
-
-            LoadFiles<Vowel>(Vowels);
-
-            LoadFiles<ThaiNumber>(Numbers);
+            SaveAll();
         }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        public void WriteWordToFile<T>(List<T> list) where T : new()
+        {
+            foreach (T word in list)
+            {
+                SetPropertyOfGenericObject(word);
+
+                List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
+                string helpword = (string)GetValueFromValueList("ThaiHelpWord");
+
+                if (script.Count == 1)
+                {
+                    SetValueOfObject(helpword, "ThaiScript", word);
+                }
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string fullText = CheckSoundStatus<Word>(Words);
+            fullText += CheckSoundStatus<Consonant>(Consonants);
+            fullText += CheckSoundStatus<Vowel>(Vowels);
+            fullText += CheckSoundStatus<ThaiNumber>(Numbers);
+
+            MessageBox.Show(fullText);
+        }
+
+        #endregion TestMethods
+
+        #region Main
 
         /// <summary>
         ///Checks and changes the current file index.
@@ -119,232 +206,6 @@ namespace LearnThaiApplication
             }
         }
 
-        public string CheckSoundStatus<T>(List<T> list)
-        {
-            int hasSound = 0;
-            int dosntHaveSound = 0;
-            string fullText = "";
-
-            foreach (T word in list)
-            {
-                SetPropertyOfGenericObject(word);
-                List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
-                foreach (string x in soundPaths)
-                {
-                    if (string.IsNullOrEmpty(x))
-                    {
-                        dosntHaveSound++;
-                    }
-                    else
-                    {
-                        if (File.Exists(x))
-                        {
-                            hasSound++;
-                        }
-                        else
-                        {
-                            dosntHaveSound++;
-                        }
-                    }
-                }
-                if (soundPaths.Count == 0)
-                {
-                    dosntHaveSound++;
-                }
-            }
-
-            fullText += hasSound + " " + typeof(T).Name + " has sound, and " + dosntHaveSound + " dont. \r\n";
-            return fullText;
-        }
-
-        /// <summary>
-        /// Clears the textboxs and textblocks to make the application look clean.
-        /// </summary>
-        public void ClearFields()
-        {
-            int tabIndex = MainWindow_tabController.SelectedIndex; //SelectParentIndex(sender);
-
-            if (tabIndex == 0)
-            {
-                txb_Description_page1.Text = "";
-                txb_ThaiScript_Page1.Text = "";
-                txb_Status_Page1.Text = "";
-                txt_Answear_Page1.Text = "";
-            }
-            else if (tabIndex == 1)
-            {
-                txb_ThaiScript_Page2.Text = "";
-                txb_Status_Page2.Text = "";
-                txb_Description_page2.Text = "";
-                txt_Answear_Page2.Text = "";
-            }
-            else if (tabIndex == 2)
-            {
-                if (ckb_AutoClean.IsChecked == true)
-                {
-                    txt_FirstSelectionProperty.Text = "";
-                    txt_SecondSelectionProperty.Text = "";
-                    txt_ThirdSelectionProperty.Text = "";
-                    txt_FourthSelectionProperty.Text = "";
-                    txt_FifthSelectionProperty.Text = "";
-                }
-            }
-        }
-
-        public void CreateFormWindow(bool continious)
-        {
-            window = new ContentMan();
-            Viewbox wb = new Viewbox
-            {
-                Width = window.Width
-            };
-            sp = new StackPanel();
-
-            SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
-            int i = 0;
-
-            foreach (PropertyInfo prop in ListOfProperties)
-            {
-                var bc = new BrushConverter();
-                Label lbl = new Label
-                {
-                    Content = prop.Name,
-                    Foreground = (Brush)bc.ConvertFrom("#FFE5E5E5")
-                };
-
-                sp.Children.Add(lbl);
-                TextBox txt = new TextBox();
-                object txtContent = ListOfValues[i];
-
-                if (txtContent is List<String>)
-                {
-                    txt.Text = ListToString(txtContent as List<String>);
-                }
-                else
-                {
-                    txt.Text = (string)txtContent;
-                }
-
-                txt.Name = "txt_" + prop.Name;
-                txt.TextWrapping = TextWrapping.Wrap;
-                txt.AcceptsReturn = true;
-
-                i++;
-
-                sp.Children.Add(txt);
-            }
-
-            Button submitButton = new Button
-            {
-                Content = "Submit",
-                Name = "FormWindowButton"
-            };
-            if (continious)
-            {
-
-                //submitButton.Click += SubmitNextWord;
-            }
-            else
-            {
-                submitButton.Click += Btn_SubmitNewWord_Click;
-            }
-            sp.Children.Add(submitButton);
-            wb.Child = sp;
-            window.Content = wb;
-
-            window.Show();
-        }
-
-        /// <summary>
-        /// Deletes the selected word from
-        /// </summary>
-        /// <typeparam name="T">What type to use</typeparam>
-        /// <param name="list">What list to delete from</param>
-        public void DeleteSelected<T>(List<T> list)
-        {
-            MessageBox.Show("tried to remove element " + list[lib_LoadedWords.SelectedIndex].ToString());
-            list.RemoveAt(lib_LoadedWords.SelectedIndex);
-        }
-
-        public bool SubmitFromForm<T>(List<T> list) where T:new()
-        {
-            Type whatIsT = typeof(T);
-
-            textboxList = FormTextboxes();
-
-            foreach (T oldWord in list)
-            {
-                if (WordToLoad.Equals(oldWord))
-                {
-                    SetPropertyOfGenericObject(oldWord);
-
-                    if (oldWord.GetType() == typeof(Word))
-                    {
-                        SetNewValuesFromForm(oldWord, textboxList);
-                        //SetNewValuesToOldWord(oldWord, whatIsT, txt_FirstSelectionProperty.Text, txt_SecondSelectionProperty.Text, txt_ThirdSelectionProperty.Text, txt_FourthSelectionProperty.Text, txt_FifthSelectionProperty.Text);
-                        return true;
-                    }
-                    else
-                    {
-                        SetNewValuesFromForm(oldWord, textboxList);
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
-
-        //public bool SubmitNextWordFromForm(object sender, RoutedEventArgs e)
-        //{
-        //    SubmitFromForm<T>(list);
-        //    SaveFiles<T>(list);
-        //}
-
-        /// <summary>
-        /// Turns the induvidual words into one string to display
-        /// </summary>
-        /// <param name="list">The list to use</param>
-        /// <returns>String of words</returns>
-        public String ListToString(List<String> list)
-        {
-            String combinedStrings = null;
-            foreach (String text in list)
-            {
-                if (list.Last() == text)
-                {
-                    combinedStrings += text;
-                }
-                else
-                {
-                    combinedStrings += text + "; ";
-                }
-            }
-            return combinedStrings;
-        }
-
-        public void FillFormTextBoxes()
-        {
-            textboxList = FormTextboxes();
-
-            foreach (TextBox txt in textboxList)
-            {
-                foreach (PropertyInfo prop in ListOfProperties)
-                {
-                    if (txt.Name == "txt_" + prop.Name)
-                    {
-                        if (prop.GetValue(WordToLoad) is List<string> x)
-                        {
-                            txt.Text = ListToString(x);
-                        }
-                        else
-                        {
-                            txt.Text = (String)prop.GetValue(WordToLoad);
-                        }
-                    }
-                }
-            }
-        }
-
         /// <summary>
         /// Find all words in a chapter and add to displayList
         /// </summary>
@@ -361,19 +222,9 @@ namespace LearnThaiApplication
             }
         }
 
-        public List<TextBox> FormTextboxes()
-        {
-            List<TextBox> list = new List<TextBox>();
-            foreach (var element in sp.Children)
-            {
-                if (element is TextBox textBox)
-                {
-                    list.Add((TextBox)element);
-                }
-            }
-            return list;
-        }
-
+        /// <summary>
+        ///
+        /// </summary>
         public void GetImage()
         {
             Image img1 = new Image
@@ -398,6 +249,11 @@ namespace LearnThaiApplication
             btn_Speaker_Page2.Content = stackPnl2;
         }
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="valueToGet"></param>
+        /// <returns></returns>
         public object GetValueFromValueList(string valueToGet)
         {
             object returnValue;
@@ -412,6 +268,12 @@ namespace LearnThaiApplication
             return null;
         }
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="valueToGet"></param>
+        /// <param name="valueToCompare"></param>
+        /// <returns></returns>
         public object GetValueFromValueList(string valueToGet, string valueToCompare)
         {
             object returnValue;
@@ -434,63 +296,25 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
-        /// Load files to lists.
+        /// Turns the induvidual words into one string to display
         /// </summary>
-        /// <typeparam name="T">What type to load</typeparam>
-        /// <param name="list">What list to load into</param>
-        public void LoadFiles<T>(List<T> list) where T : new()
+        /// <param name="list">The list to use</param>
+        /// <returns>String of words</returns>
+        public string ListToString(List<string> list)
         {
-            Type whatIsT = typeof(T);
-
-            List<T> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml");
-
-            List<T> newWordToAdd = new List<T>();
-
-            foreach (T wordFoundInFile in wordsFromFIle)
+            string combinedStrings = null;
+            foreach (string text in list)
             {
-                if (whatIsT != typeof(Chapter))
+                if (list.Last().Equals(text))
                 {
-                    SetPropertyOfGenericObject(wordFoundInFile);
-
-                    newWordToAdd.Add(wordFoundInFile);
+                    combinedStrings += text;
+                }
+                else
+                {
+                    combinedStrings += text + "; ";
                 }
             }
-
-            list.AddRange(newWordToAdd);
-        }
-
-        /// <summary>
-        /// Loads the content from the list into the listbox
-        /// </summary>
-        /// <typeparam name="T">What type to use</typeparam>
-        /// <param name="list">What list to use</param>
-        public void LoadObjectsToLib<T>(List<T> list)
-        {
-            foreach (T word in list)
-            {
-                SetPropertyOfGenericObject(word);
-
-                lib_LoadedWords.ItemsSource = list;
-
-                lib_LoadedWords.DisplayMemberPath = "Name";
-
-                break;
-            }
-        }
-
-        /// <summary>
-        /// Moves the object in the selected list
-        /// </summary>
-        /// <typeparam name="T">What type to use</typeparam>
-        /// <param name="list">What list to use</param>
-        /// <param name="oldIndex">The old index of the selected word</param>
-        /// <param name="newIndex">the new index of the selected word</param>
-        public void MoveObjectInList<T>(List<T> list, int oldIndex, int newIndex)
-        {
-            T item = list[lib_LoadedWords.SelectedIndex];
-
-            list.RemoveAt(oldIndex);
-            list.Insert(newIndex, item);
+            return combinedStrings;
         }
 
         /// <summary>
@@ -508,6 +332,21 @@ namespace LearnThaiApplication
             }
         }
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void NextWord(object sender, RoutedEventArgs e)
+        {
+            ClearFields();
+            PreTextChanger(1);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="textBlockDescription"></param>
         public void PopulateDescription(TextBlock textBlockDescription)
         {
             if (DescriptionOn)
@@ -541,33 +380,56 @@ namespace LearnThaiApplication
             }
         }
 
-        public bool SaveAll()
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="change"></param>
+        public void PreTextChanger(int change)
         {
-            try
+            int tabIndex = MainWindow_tabController.SelectedIndex;
+
+            if (tabIndex == 0)
             {
-                SaveFiles<Word>(Words);
-                SaveFiles<Consonant>(Consonants);
-                SaveFiles<Vowel>(Vowels);
-                SaveFiles<ThaiNumber>(Numbers);
-                return true;
+                TextChanger<Word>(DisplayList, txb_ThaiScript_Page1, txb_Description_page1, change);
+                lbl_Counter_Page1.Content = CurrentFileIndex;
+                SpeakerStatus();
             }
-            catch (Exception ex)
+            if (tabIndex == 1)
             {
-                MessageBox.Show("Error: " + ex.Message);
-                return false;
+                if (SelectedSymbolTypeToUse == "Consonants")
+                {
+                    TextChanger<Consonant>(Consonants, txb_ThaiScript_Page2, txb_Description_page2, change);
+                }
+                else if (SelectedSymbolTypeToUse == "Vowels")
+                {
+                    TextChanger<Vowel>(Vowels, txb_ThaiScript_Page2, txb_Description_page2, change);
+                }
+                else if (SelectedSymbolTypeToUse == "Numbers")
+                {
+                    TextChanger<ThaiNumber>(Numbers, txb_ThaiScript_Page2, txb_Description_page2, change);
+                }
+                else if (SelectedSymbolTypeToUse == "Closing sounds")
+                {
+                    //TextChanger<ClosingSound>(ClosingSounds, txb_ThaiScript_Page2, txb_Description_page2, change);
+                }
+                else
+                {
+                    MessageBox.Show("please select a category");
+                }
+                lbl_Counter_Page2.Content = CurrentFileIndex;
+                SpeakerStatus();
             }
         }
 
         /// <summary>
-        /// Saves the content of list to file
+        ///
         /// </summary>
-        /// <typeparam name="T">What type to work with</typeparam>
-        /// <param name="list">What list to work with</param>
-        public void SaveFiles<T>(List<T> list) where T : new()
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void PrevWord(object sender, RoutedEventArgs e)
         {
-            Type whatIsT = typeof(T);
-
-            XmlSerialization.WriteToXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml", list, false);
+            ClearFields();
+            PreTextChanger(-1);
         }
 
         /// <summary>
@@ -609,6 +471,849 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void SelectWhatToTrain(object sender, RoutedEventArgs e)
+        {
+            if ((string)((RadioButton)sender).Content == "Writhing Thai")
+            {
+                WhatToTrain = "ThaiScript";
+                WhatToDisplay = "EngWords";
+            }
+            else if ((string)((RadioButton)sender).Content == "Pronounciations")
+            {
+                WhatToTrain = "ThaiFonet";
+                WhatToDisplay = "ThaiScript";
+            }
+            else if ((string)((RadioButton)sender).Content == "English meanings")
+            {
+                WhatToTrain = "EngWords";
+                WhatToDisplay = "ThaiScript";
+            }
+            else
+            {
+                MessageBox.Show("Please select what to train", "ERROR");
+            }
+            PreTextChanger(0);
+        }
+
+        /// <summary>
+        ///Sets the properties of the object it recives.
+        /// </summary>
+        /// <param name="recived">what object to find properties for</param>
+        public void SetPropertyOfGenericObject(Object recived)
+        {
+            ListOfProperties.Clear();
+            ListOfValues.Clear();
+            if (recived != null)
+            {
+                foreach (PropertyInfo prop in recived.GetType().GetProperties().ToList<PropertyInfo>())
+                {
+                    if (prop != null)
+                    {
+                        ListOfProperties.Add(prop);
+
+                        ListOfValues.Add(prop.GetValue(recived));
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="newValue"></param>
+        /// <param name="nameOfPropertyToChange"></param>
+        /// <param name="objectToChange"></param>
+        public void SetValueOfObject(object newValue, string nameOfPropertyToChange, object objectToChange)
+        {
+            foreach (PropertyInfo prop in ListOfProperties)
+            {
+                if (prop.Name == nameOfPropertyToChange)
+                {
+                    if (prop.PropertyType == typeof(List<string>))
+                    {
+                        prop.SetValue(objectToChange, SplitStringToList((string)newValue), null);
+                    }
+                    else
+                    {
+                        prop.SetValue(objectToChange, newValue, null);
+                    }
+                    break;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Turns a string into a list of strings.
+        /// </summary>
+        /// <param name="textToSplit">String to split</param>
+        /// <returns></returns>
+        public List<String> SplitStringToList(String textToSplit)
+        {
+            return Regex.Split(textToSplit, RegexSplitString).ToList<String>();
+        }
+
+        /// <summary>
+        /// Changes the content of textblocks tot he next or previous value.
+        /// </summary>
+        /// <typeparam name="T">What type of object to handle</typeparam>
+        /// <param name="list">What list to work with</param>
+        /// <param name="textBlockForScript">What textblock to write the thai script too</param>
+        /// <param name="textBlockDescription">What textblock to write the description too</param>
+        /// <param name="checkBoxDescription">What checkbox to use</param>
+        /// <param name="checkBoxRandom">what checkbox to use</param>
+        /// <param name="nextValueToAdd">to move forward, backwards or stay in place in the list</param>
+        public void TextChanger<T>(List<T> list, TextBlock textBlockForScript, TextBlock textBlockDescription, int nextValueToAdd) where T : new()
+        {
+            try
+            {
+                Type whatIsT = typeof(T);
+
+                CheckCurrentFileSize<T>(list, nextValueToAdd, textBlockForScript);
+
+                SetPropertyOfGenericObject(list[CurrentFileIndex]);
+
+                SelectedPropertyToDisplay = GetValueFromValueList(WhatToDisplay);
+
+                if (list[CurrentFileIndex].GetType() == typeof(Word))
+                {
+                    string retrivedChapter = (string)GetValueFromValueList("Chapter", SelectedChapter);
+
+                    if (retrivedChapter == SelectedChapter)
+                    {
+                        if (SelectedPropertyToDisplay is List<String> propertyIsList)
+                        {
+                            textBlockForScript.Text = ListToString(propertyIsList);
+                        }
+                        else
+                        {
+                            textBlockForScript.Text = (String)SelectedPropertyToDisplay;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("There are no content with chapter" + SelectedChapter + " available right now.");
+                        return;
+                    }
+                }
+                else
+                {
+                    if (SelectedPropertyToDisplay is List<String> propertyIsList)
+                    {
+                        textBlockForScript.Text = ListToString(propertyIsList);
+                    }
+                    else
+                    {
+                        textBlockForScript.Text = GetValueFromValueList("ThaiScript") + " " + GetValueFromValueList("ThaiHelpWord");
+                    }
+
+                    //
+                }
+                PopulateDescription(textBlockDescription);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public void UpdateWhenSymbolTypeSelected()
+        {
+            if (SelectedSymbolTypeToUse == "Consonants")
+            {
+                TextChanger<Consonant>(Consonants, txb_ThaiScript_Page2, txb_Description_page2, 0);
+            }
+            else if (SelectedSymbolTypeToUse == "Vowels")
+            {
+                TextChanger<Vowel>(Vowels, txb_ThaiScript_Page2, txb_Description_page2, 0);
+            }
+            else if (SelectedSymbolTypeToUse == "Closing sounds")
+            {
+                //TextChanger<ClosingSound>(ClosingSounds, txb_ThaiScript_Page2, txb_Description_page2, 0);
+            }
+            else if (SelectedSymbolTypeToUse == "Numbers")
+            {
+                TextChanger<ThaiNumber>(Numbers, txb_ThaiScript_Page2, txb_Description_page2, 0);
+            }
+            else
+            {
+                MessageBox.Show("No symbole type selected", "ERROR");
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void ValidateAnswear(object sender, RoutedEventArgs e)
+        {
+            int tabIndex = MainWindow_tabController.SelectedIndex;
+
+            if (tabIndex == 0)
+            {
+                ValidateAnswer<Word>(DisplayList, txt_Answear_Page1, txb_Status_Page1, txb_Description_page1);
+            }
+            else if (tabIndex == 1)
+            {
+                if (SelectedSymbolTypeToUse == "Consonants")
+                {
+                    ValidateAnswer<Consonant>(Consonants, txt_Answear_Page2, txb_Status_Page2, txb_Description_page2);
+                }
+                else if (SelectedSymbolTypeToUse == "Vowels")
+                {
+                    ValidateAnswer<Vowel>(Vowels, txt_Answear_Page2, txb_Status_Page2, txb_Description_page2);
+                }
+                else if (SelectedSymbolTypeToUse == "Closing sounds")
+                {
+                    //ValidateAnswer<ClosingSound>(ClosingSounds, txb_ThaiScript_Page2, txb_Description_page2, 0);
+                }
+                else if (SelectedSymbolTypeToUse == "Numbers")
+                {
+                    ValidateAnswer<ThaiNumber>(Numbers, txt_Answear_Page2, txb_Status_Page2, txb_Description_page2);
+                }
+                else
+                {
+                    MessageBox.Show("Please select a category.");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Compares the written answear to the current words propterties.
+        /// </summary>
+        /// <typeparam name="T">What kind of object</typeparam>
+        /// <param name="list">What list to load</param>
+        /// <param name="textboxAnswear">What textbox to use for answears</param>
+        /// <param name="textBlockStatus">What textblock to use for right or worng</param>
+        /// <param name="textBlockDesc">What textblock to use for description</param>
+        /// <param name="checkBoxDesc">What checkbox to use to check if description is on</param>
+        public void ValidateAnswer<T>(List<T> list, TextBox textboxAnswear, TextBlock textBlockStatus, TextBlock textBlockDesc)
+        {
+            SetPropertyOfGenericObject(list[CurrentFileIndex]);
+
+            SelectedPropertyToValidate = GetValueFromValueList(WhatToTrain);
+
+            int rightAnswears = 0;
+            int totalAnswears = 0;
+            List<string> answers = Regex.Split(textboxAnswear.Text, RegexSplitString).ToList<string>();
+
+            if (SelectedPropertyToValidate is List<String>)
+            {
+                foreach (String correctWord in SelectedPropertyToValidate as List<string>)
+                {
+                    totalAnswears = ((List<string>)SelectedPropertyToValidate).Count;
+                    foreach (String answer in answers)
+                    {
+                        if (String.Equals(correctWord, answer, StringComparison.OrdinalIgnoreCase))
+                        {
+                            CorrectPoints++;
+                            rightAnswears++;
+                        }
+                    }
+                }
+            }
+            else if (String.Equals(textboxAnswear.Text, (String)SelectedPropertyToValidate, StringComparison.OrdinalIgnoreCase))
+            {
+                totalAnswears = 1;
+                CorrectPoints++;
+                rightAnswears++;
+            }
+
+            if (rightAnswears != 0)
+            {
+                textBlockStatus.Text = "You got " + rightAnswears + " of " + totalAnswears + " correct!";
+            }
+            else
+            {
+                textBlockStatus.Text = "Sorry, try again!";
+            }
+
+            PopulateDescription(textBlockDesc);
+
+            lbl_Counter_Page2.Content = CurrentFileIndex;
+            lbl_Points.Content = "Points: " + CorrectPoints;
+            lbl_Points_Page2.Content = "Points: " + CorrectPoints;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            CurrentFileIndex = 0;
+            SelectedChapter = cb_Chapter_Page1.SelectedValue.ToString();
+
+            FindWordWithChapter();
+
+            lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
+
+            if (DisplayList.Count > 0)
+            {
+                TextChanger<Word>(DisplayList, txb_ThaiScript_Page1, txb_Description_page1, 0);
+            }
+            else
+            {
+                MessageBox.Show("There are no words in that category yet");
+            }
+
+            lbl_Counter_Page1.Content = CurrentFileIndex;
+        }
+
+        #endregion Main
+
+        #region Settings
+
+        /// <summary>
+        /// Clears the textboxs and textblocks to make the application look clean.
+        /// </summary>
+        public void ClearFields()
+        {
+            int tabIndex = MainWindow_tabController.SelectedIndex; //SelectParentIndex(sender);
+
+            if (tabIndex == 0)
+            {
+                txb_Description_page1.Text = "";
+                txb_ThaiScript_Page1.Text = "";
+                txb_Status_Page1.Text = "";
+                txt_Answear_Page1.Text = "";
+            }
+            else if (tabIndex == 1)
+            {
+                txb_ThaiScript_Page2.Text = "";
+                txb_Status_Page2.Text = "";
+                txb_Description_page2.Text = "";
+                txt_Answear_Page2.Text = "";
+            }
+            else if (tabIndex == 2)
+            {
+                if (ckb_AutoClean.IsChecked == true)
+                {
+                    txt_FirstSelectionProperty.Text = "";
+                    txt_SecondSelectionProperty.Text = "";
+                    txt_ThirdSelectionProperty.Text = "";
+                    txt_FourthSelectionProperty.Text = "";
+                    txt_FifthSelectionProperty.Text = "";
+                }
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public void LoadAllFiles()
+        {
+            LoadFiles<Chapter>(Chapters);
+
+            LoadFiles<Word>(Words);
+
+            LoadFiles<Consonant>(Consonants);
+
+            LoadFiles<Vowel>(Vowels);
+
+            LoadFiles<ThaiNumber>(Numbers);
+        }
+
+        /// <summary>
+        /// Load files to lists.
+        /// </summary>
+        /// <typeparam name="T">What type to load</typeparam>
+        /// <param name="list">What list to load into</param>
+        public void LoadFiles<T>(List<T> list) where T : new()
+        {
+            Type whatIsT = typeof(T);
+
+            List<T> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml");
+
+            List<T> newWordToAdd = new List<T>();
+
+            foreach (T wordFoundInFile in wordsFromFIle)
+            {
+                if (whatIsT != typeof(Chapter))
+                {
+                    SetPropertyOfGenericObject(wordFoundInFile);
+
+                    newWordToAdd.Add(wordFoundInFile);
+                }
+            }
+
+            list.AddRange(newWordToAdd);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <returns></returns>
+        public bool SaveAll()
+        {
+            try
+            {
+                SaveFiles<Word>(Words);
+                SaveFiles<Consonant>(Consonants);
+                SaveFiles<Vowel>(Vowels);
+                SaveFiles<ThaiNumber>(Numbers);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Saves the content of list to file
+        /// </summary>
+        /// <typeparam name="T">What type to work with</typeparam>
+        /// <param name="list">What list to work with</param>
+        public void SaveFiles<T>(List<T> list) where T : new()
+        {
+            Type whatIsT = typeof(T);
+
+            XmlSerialization.WriteToXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml", list, false);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <returns></returns>
+        public int SelectParentIndex(object sender)
+        {
+            int tabIndex;
+            try
+            {
+                if (sender is TabControl tabcontrol)
+                {
+                    tabIndex = tabcontrol.SelectedIndex;
+                }
+                else
+                {
+                    tabIndex = ((TabControl)((TabItem)((Grid)((FrameworkElement)sender).Parent).Parent).Parent).SelectedIndex;
+                }
+
+                return tabIndex;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+                return -1;
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void SelectSymbolToUse(object sender, RoutedEventArgs e)
+        {
+            SelectedSymbolTypeToUse = (string)((RadioButton)sender).Content;
+
+            UpdateWhenSymbolTypeSelected();
+        }
+
+        /// <summary>
+        /// Sets the initial states for checkboxes and the combobox.
+        /// </summary>
+        public void SetInitialStates()
+        {
+            lbl_Counter_Page2.Content = CurrentFileIndex;
+            lbl_Counter_Page1.Content = CurrentFileIndex;
+            txb_FilePath_Settings.Text = LanguageFilePath;
+            txt_NewSavePath_Settings.Text = LanguageFilePath;
+
+            ckb_DescBox_Page1.IsChecked = true;
+            ckb_DescBox_Page2.IsChecked = true;
+            rb_SubmitNew.IsChecked = true;
+
+            rb_TrainFonet_Page1.IsChecked = true;
+            rb_Conson_Page2.IsChecked = true;
+            cb_Chapter_Page1.SelectedIndex = 0;
+
+            lib_LoadedWords.DisplayMemberPath = "Thaiscript";
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DescriptionBox_Checked(object sender, RoutedEventArgs e)
+        {
+            if ((sender as CheckBox)?.IsChecked == true)
+            {
+                DescriptionOn = true;
+                PopulateDescription(txb_Description_page1);
+                PopulateDescription(txb_Description_page2);
+            }
+            else
+            {
+                txb_Description_page1.Text = "";
+                txb_Description_page2.Text = "";
+                DescriptionOn = false;
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FullDesc_Checked(object sender, RoutedEventArgs e)
+        {
+            DisplayAllPropertiesInDescription = ((CheckBox)sender).IsChecked == true;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LoopChapter_Checked(object sender, RoutedEventArgs e)
+        {
+            LoopChapter = (sender as CheckBox)?.IsChecked == true;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnEnterKeyUp(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter)
+            {
+                if (TabIndex == 0 || TabIndex == 1)
+                {
+                    ValidateAnswear(sender, e);
+                }
+                else if (TabIndex == 2)
+                {
+                    SubmitNewWordQuick(sender, e);
+                }
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Randomized_Checked(object sender, RoutedEventArgs e)
+        {
+            RandomOn = (sender as CheckBox)?.IsChecked == true;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TabChanged(object sender, SelectionChangedEventArgs e)
+        {
+            CurrentFileIndex = 0;
+
+            PreTextChanger(0);
+        }
+
+        #endregion Settings
+
+        #region Submit
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="continious"></param>
+        public void CreateFormWindow(bool continious)
+        {
+            window = new ContentMan();
+            Viewbox wb = new Viewbox
+            {
+                Width = window.Width
+            };
+            sp = new StackPanel();
+
+            SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
+            int i = 0;
+
+            foreach (PropertyInfo prop in ListOfProperties)
+            {
+                var bc = new BrushConverter();
+                Label lbl = new Label
+                {
+                    Content = prop.Name,
+                    Foreground = (Brush)bc.ConvertFrom("#FFE5E5E5")
+                };
+
+                sp.Children.Add(lbl);
+                TextBox txt = new TextBox();
+                object txtContent = ListOfValues[i];
+
+                if (txtContent is List<String>)
+                {
+                    txt.Text = ListToString(txtContent as List<String>);
+                }
+                else
+                {
+                    txt.Text = (string)txtContent;
+                }
+
+                txt.Name = "txt_" + prop.Name;
+                txt.TextWrapping = TextWrapping.Wrap;
+                txt.AcceptsReturn = true;
+                txt.Width = 280;
+                txt.KeyUp += OnEnterKeyUpForm;
+
+                i++;
+
+                sp.Children.Add(txt);
+            }
+
+            Button submitButton = new Button
+            {
+                Content = "Submit",
+                Name = "FormWindowButton"
+            };
+            if (continious)
+            {
+                submitButton.Click += SubmitAndContinue;
+            }
+            else
+            {
+                submitButton.Click += SubmitNewWordFull;
+            }
+
+            sp.Children.Add(submitButton);
+            wb.Child = sp;
+            window.Content = wb;
+
+            window.Show();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void CycleListboxItems(object sender, RoutedEventArgs e)
+        {
+            IsContinious = true;
+            CreateFormWindow(IsContinious);
+        }
+
+        /// <summary>
+        /// Deletes the selected word from
+        /// </summary>
+        /// <typeparam name="T">What type to use</typeparam>
+        /// <param name="list">What list to delete from</param>
+        public void DeleteSelected<T>(List<T> list)
+        {
+            MessageBox.Show("tried to remove element " + list[lib_LoadedWords.SelectedIndex].ToString());
+            list.RemoveAt(lib_LoadedWords.SelectedIndex);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public void FillFormTextBoxes()
+        {
+            textboxList = FormTextboxes();
+
+            foreach (TextBox txt in textboxList)
+            {
+                foreach (PropertyInfo prop in ListOfProperties)
+                {
+                    if (txt.Name == "txt_" + prop.Name)
+                    {
+                        if (prop.GetValue(WordToLoad) is List<string> x)
+                        {
+                            txt.Text = ListToString(x);
+                        }
+                        else
+                        {
+                            txt.Text = (String)prop.GetValue(WordToLoad);
+                        }
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <returns></returns>
+        public List<TextBox> FormTextboxes()
+        {
+            List<TextBox> list = new List<TextBox>();
+            foreach (var element in sp.Children)
+            {
+                if (element is TextBox textBox)
+                {
+                    list.Add((TextBox)element);
+                }
+            }
+            return list;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="newWord"></param>
+        public void FullSubmitNewWord(object newWord)
+        {
+            textboxList = FormTextboxes();
+
+            foreach (TextBox txt in textboxList)
+            {
+                foreach (PropertyInfo prop in ListOfProperties)
+                {
+                    if (txt.Name == "txt_" + prop.Name)
+                    {
+                        SetValueOfObject(txt.Text, prop.Name, newWord);
+                        break;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="isQuick"></param>
+        public void HowToSubmit(bool isQuick)
+        {
+            if (SubmitStyle)
+            {
+                if (WhatTypeToUse == typeof(Consonant))
+                {
+                    SubmitNewWord<Consonant>(Consonants, isQuick);
+                }
+                else if (WhatTypeToUse == typeof(Vowel))
+                {
+                    SubmitNewWord<Vowel>(Vowels, isQuick);
+                }
+                else if (WhatTypeToUse == typeof(Word))
+                {
+                    SubmitNewWord<Word>(Words, isQuick);
+                }
+                else if (WhatTypeToUse == typeof(ThaiNumber))
+                {
+                    SubmitNewWord<ThaiNumber>(Numbers, isQuick);
+                }
+                else
+                {
+                    MessageBox.Show("Select a list to load from");
+                }
+            }
+            else if (!SubmitStyle)
+            {
+                if (WhatTypeToUse == typeof(Consonant))
+                {
+                    SubmitUpdatedWord<Consonant>(Consonants);
+                }
+                else if (WhatTypeToUse == typeof(Vowel))
+                {
+                    SubmitUpdatedWord<Vowel>(Vowels);
+                }
+                else if (WhatTypeToUse == typeof(Word))
+                {
+                    SubmitUpdatedWord<Word>(Words);
+                }
+                else if (WhatTypeToUse == typeof(ThaiNumber))
+                {
+                    SubmitUpdatedWord<ThaiNumber>(Numbers);
+                }
+                else
+                {
+                    MessageBox.Show("Select a list to load from");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Select what you want to do");
+            }
+
+            UpdateListBox();
+            ClearFields();
+        }
+
+        /// <summary>
+        /// Loads the content from the list into the listbox
+        /// </summary>
+        /// <typeparam name="T">What type to use</typeparam>
+        /// <param name="list">What list to use</param>
+        public void LoadObjectsToLib<T>(List<T> list)
+        {
+            foreach (T word in list)
+            {
+                SetPropertyOfGenericObject(word);
+
+                lib_LoadedWords.ItemsSource = list;
+
+                lib_LoadedWords.DisplayMemberPath = "Name";
+
+                break;
+            }
+        }
+
+        /// <summary>
+        /// Moves the object in the selected list
+        /// </summary>
+        /// <typeparam name="T">What type to use</typeparam>
+        /// <param name="list">What list to use</param>
+        /// <param name="oldIndex">The old index of the selected word</param>
+        /// <param name="newIndex">the new index of the selected word</param>
+        public void MoveObjectInList<T>(List<T> list, int oldIndex, int newIndex)
+        {
+            T item = list[lib_LoadedWords.SelectedIndex];
+
+            list.RemoveAt(oldIndex);
+            list.Insert(newIndex, item);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void OnEnterKeyUpForm(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter)
+            {
+                if (IsContinious)
+                {
+                    SubmitAndContinue(sender, e);
+                }
+                else
+                {
+                    SubmitNewWordFull(sender, e);
+                }
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="newWord"></param>
+        public void QuickSubmit(object newWord)
+        {
+            ((ThaiBase)newWord).ThaiScript = SplitStringToList(txt_FirstSelectionProperty.Text);
+            ((ThaiBase)newWord).ThaiFonet = SplitStringToList(txt_SecondSelectionProperty.Text);
+            ((ThaiBase)newWord).EngWords = SplitStringToList(txt_ThirdSelectionProperty.Text);
+            ((ThaiBase)newWord).EngDesc = txt_FourthSelectionProperty.Text;
+            ((ThaiBase)newWord).Tone = SplitStringToList(txt_FifthSelectionProperty.Text);
+        }
+
+        /// <summary>
         /// Selects what to move and sends the object to be moved.
         /// </summary>
         /// <param name="newIndex">The new index for the selected word</param>
@@ -641,27 +1346,6 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
-        /// Sets the initial states for checkboxes and the combobox.
-        /// </summary>
-        public void SetInitialStates()
-        {
-            lbl_Counter_Page2.Content = CurrentFileIndex;
-            lbl_Counter_Page1.Content = CurrentFileIndex;
-            txb_FilePath_Settings.Text = LanguageFilePath;
-            txt_NewSavePath_Settings.Text = LanguageFilePath;
-
-            ckb_DescBox_Page1.IsChecked = true;
-            ckb_DescBox_Page2.IsChecked = true;
-            rb_SubmitNew.IsChecked = true;
-
-            rb_TrainFonet_Page1.IsChecked = true;
-            rb_Conson_Page2.IsChecked = true;
-            cb_Chapter_Page1.SelectedIndex = 0;
-
-            lib_LoadedWords.DisplayMemberPath = "Thaiscript";
-        }
-
-        /// <summary>
         /// sets the new values to the old words that already can be found in list
         /// </summary>
         /// <param name="oldWord">What word to change or add values</param>
@@ -688,47 +1372,383 @@ namespace LearnThaiApplication
             }
         }
 
-        public void SetValueOfObject(object newValue, object propertyToChange, object objectToChange)
+        /// <summary>
+        ///
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <returns></returns>
+        public bool SubmitFromForm<T>(List<T> list) where T : new()
         {
-            foreach (PropertyInfo prop in ListOfProperties)
+            Type whatIsT = typeof(T);
+
+            textboxList = FormTextboxes();
+
+            foreach (T oldWord in list)
             {
-                if (prop.Name == (string)propertyToChange)
+                if (WordToLoad.Equals(oldWord))
                 {
-                    if (prop.GetValue(objectToChange) is List<string> x)
+                    SetPropertyOfGenericObject(oldWord);
+
+                    if (oldWord.GetType() == typeof(Word))
                     {
-                        prop.SetValue(objectToChange, SplitStringToList((string)newValue), null);
+                        SetNewValuesFromForm(oldWord, textboxList);
+                        //SetNewValuesToOldWord(oldWord, whatIsT, txt_FirstSelectionProperty.Text, txt_SecondSelectionProperty.Text, txt_ThirdSelectionProperty.Text, txt_FourthSelectionProperty.Text, txt_FifthSelectionProperty.Text);
+                        return true;
                     }
                     else
                     {
-                        prop.SetValue(objectToChange, newValue, null);
+                        SetNewValuesFromForm(oldWord, textboxList);
+                        return true;
                     }
-                    break;
                 }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Adds new words to the list.
+        /// </summary>
+        /// <typeparam name="T">What type to work with</typeparam>
+        /// <param name="list">What list to work with</param>
+        public void SubmitNewWord<T>(List<T> list, bool isQuick) where T : new()
+        {
+            Type whatIsT = typeof(T);
+
+            object newWord = null;
+
+            if (WhatTypeToUse == typeof(Word))
+            {
+                newWord = new Word();
+            }
+            else if (WhatTypeToUse == typeof(Consonant))
+            {
+                newWord = new Consonant();
+            }
+            else if (WhatTypeToUse == typeof(Vowel))
+            {
+                newWord = new Vowel();
+            }
+            else if (WhatTypeToUse == typeof(ThaiNumber))
+            {
+                newWord = new ThaiNumber();
+            }
+            else
+            {
+                MessageBox.Show("No Valid Type selected");
+            }
+
+            SetPropertyOfGenericObject(newWord);
+
+            if (isQuick)
+            {
+                QuickSubmit(newWord);
+            }
+            else
+            {
+                FullSubmitNewWord(newWord);
+            }
+
+            list.Add((T)newWord);
+
+            SaveFiles<T>(list);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void SubmitNewWordQuick(object sender, RoutedEventArgs e)
+        {
+            HowToSubmit(true);
+        }
+
+        /// <summary>
+        /// The first part of the process to update old words
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        public void SubmitUpdatedWord<T>(List<T> list) where T : new()
+        {
+            Type whatIsT = typeof(T);
+
+            textboxList = FormTextboxes();
+
+            foreach (T oldWord in list)
+            {
+                if (WordToLoad.Equals(oldWord))
+                {
+                    SetPropertyOfGenericObject(oldWord);
+
+                    if (oldWord.GetType() == typeof(Word))
+                    {
+                        SetNewValuesFromForm(oldWord, textboxList);
+                        //SetNewValuesToOldWord(oldWord, whatIsT, txt_FirstSelectionProperty.Text, txt_SecondSelectionProperty.Text, txt_ThirdSelectionProperty.Text, txt_FourthSelectionProperty.Text, txt_FifthSelectionProperty.Text);
+                        break;
+                    }
+                    else
+                    {
+                        SetNewValuesFromForm(oldWord, textboxList);
+                        break;
+                    }
+                }
+            }
+
+            SaveFiles<T>(list);
+        }
+
+        /// <summary>
+        /// Checks what list to load and loads it.
+        /// </summary>
+        public void UpdateListBox()
+        {
+            if (WhatTypeToUse == null)
+            {
+                MessageBox.Show("Select a list to load from");
+                return;
+            }
+
+            lib_LoadedWords.ItemsSource = null;
+
+            if (WhatTypeToUse == typeof(Word))
+            {
+                LoadObjectsToLib<Word>(Words);
+            }
+            else if (WhatTypeToUse == typeof(Consonant))
+            {
+                LoadObjectsToLib<Consonant>(Consonants);
+            }
+            else if (WhatTypeToUse == typeof(Vowel))
+            {
+                LoadObjectsToLib<Vowel>(Vowels);
+            }
+            else if (WhatTypeToUse == typeof(ThaiNumber))
+            {
+                LoadObjectsToLib<ThaiNumber>(Numbers);
             }
         }
 
         /// <summary>
-        ///Sets the properties of the object it recives.
+        ///
         /// </summary>
-        /// <param name="recived">what object to find properties for</param>
-        public void SetPropertyOfGenericObject(Object recived)
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_Delete_Click(object sender, RoutedEventArgs e)
         {
-            ListOfProperties.Clear();
-            ListOfValues.Clear();
-            if (recived != null)
+            if (MessageBox.Show("Are you sure you want to delete the selected word?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
-                foreach (PropertyInfo prop in recived.GetType().GetProperties().ToList<PropertyInfo>())
+                if (WhatTypeToUse == typeof(Word))
                 {
-                    if (prop != null)
-                    {
-                        ListOfProperties.Add(prop);
-
-                        ListOfValues.Add(prop.GetValue(recived));
-                    }
+                    DeleteSelected<Word>(Words);
                 }
+                else if (WhatTypeToUse == typeof(Consonant))
+                {
+                    DeleteSelected<Consonant>(Consonants);
+                }
+                else if (WhatTypeToUse == typeof(Vowel))
+                {
+                    DeleteSelected<Vowel>(Vowels);
+                }
+                else if (WhatTypeToUse == typeof(ThaiNumber))
+                {
+                    DeleteSelected<ThaiNumber>(Numbers);
+                }
+                else
+                {
+                    MessageBox.Show("Please select a list first");
+                }
+                SaveAll();
+            }
+            UpdateListBox();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_FormWindow(object sender, RoutedEventArgs e)
+        {
+            IsContinious = false;
+            CreateFormWindow(IsContinious);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_ListMoveDown_Click(object sender, RoutedEventArgs e)
+        {
+            int newIndex = lib_LoadedWords.SelectedIndex + 1;
+
+            SelectWhatToMove(newIndex);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_ListMoveUp_Click(object sender, RoutedEventArgs e)
+        {
+            int newIndex = lib_LoadedWords.SelectedIndex - 1;
+
+            SelectWhatToMove(newIndex);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Lib_LoadedWords_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+        {
+            if (lib_LoadedWords.SelectedIndex != -1)
+            {
+                CurrentListBoxIndex = lib_LoadedWords.SelectedIndex;
+            }
+
+            if (WhatTypeToUse == typeof(Word))
+            {
+                SelectionChanged<Word>(lib_LoadedWords.SelectedIndex);
+            }
+            else if (WhatTypeToUse == typeof(Consonant))
+            {
+                SelectionChanged<Consonant>(lib_LoadedWords.SelectedIndex);
+            }
+            else if (WhatTypeToUse == typeof(Vowel))
+            {
+                SelectionChanged<Vowel>(lib_LoadedWords.SelectedIndex);
+            }
+            else if (WhatTypeToUse == typeof(ThaiNumber))
+            {
+                SelectionChanged<ThaiNumber>(lib_LoadedWords.SelectedIndex);
+            }
+            else
+            {
+                MessageBox.Show("Please select a list to load", "List not choosen");
             }
         }
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Rb_Conso_Page3_Checked(object sender, RoutedEventArgs e)
+        {
+            WhatListTLoad = Consonants;
+            WhatTypeToUse = typeof(Consonant);
+            ClearFields();
+            UpdateListBox();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Rb_ThaiNumber_Page3_Checked(object sender, RoutedEventArgs e)
+        {
+            WhatListTLoad = Numbers;
+            WhatTypeToUse = typeof(ThaiNumber);
+            ClearFields();
+            UpdateListBox();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Rb_Vowel_Page3_Checked(object sender, RoutedEventArgs e)
+        {
+            WhatListTLoad = Vowels;
+            WhatTypeToUse = typeof(Vowel);
+            ClearFields();
+            UpdateListBox();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Rb_words_Page3_Checked(object sender, RoutedEventArgs e)
+        {
+            WhatListTLoad = Words;
+            WhatTypeToUse = typeof(Word);
+
+            ClearFields();
+            UpdateListBox();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SubmitAndContinue(object sender, RoutedEventArgs e)
+        {
+            HowToSubmit(false);
+
+            if (lib_LoadedWords.SelectedIndex != -1 && lib_LoadedWords.Items.Count != 0)
+            {
+                CurrentListBoxIndex = lib_LoadedWords.SelectedIndex;
+            }
+            CurrentListBoxIndex++;
+            lib_LoadedWords.SelectedIndex = CurrentListBoxIndex;
+
+            SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
+
+            FillFormTextBoxes();
+
+            UpdateListBox();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SubmitNewWordFull(object sender, RoutedEventArgs e)
+        {
+            HowToSubmit(false);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SubmitStyleChecked(object sender, RoutedEventArgs e)
+        {
+            if ((string)(sender as RadioButton)?.Content == "Submit new")
+            {
+                SubmitStyle = true;
+            }
+            else if ((string)(sender as RadioButton)?.Content == "Update")
+            {
+                SubmitStyle = false;
+            }
+            else
+            {
+                MessageBox.Show("Error: No submit style selected");
+            }
+        }
+
+        #endregion Submit
+
+        #region Sound
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="tableData"></param>
+        /// <param name="isScript"></param>
+        /// <returns></returns>
         public string CheckChildNode(HtmlNode tableData, bool isScript)
         {
             string attributeValue = "";
@@ -763,111 +1783,56 @@ namespace LearnThaiApplication
             return null;
         }
 
-        public bool TableDataAttributeExists(HtmlAttributeCollection attributesFromNode, string searchForName, string searchForValue)
+        /// <summary>
+        ///
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <returns></returns>
+        public string CheckSoundStatus<T>(List<T> list)
         {
-            foreach (HtmlAttribute attribute in attributesFromNode)
-            {
-                if (attribute.Name.Contains(searchForName) || attribute.Value.Contains(searchForValue))
-                {
-                    return true;
-                }
-            }
+            int hasSound = 0;
+            int dosntHaveSound = 0;
+            string fullText = "";
 
-            return false;
-        }
-
-        public bool SoundDownloadCompare<T>(List<string> correctText, List<string> soundID, List<T> list) where T : new()
-        {
-            if (soundID.Count != correctText.Count)
+            foreach (T word in list)
             {
-                MessageBox.Show("Error: soundID and correcText is not the same size!", "Error");
-                return false;
-            }
-            else
-            {
-                try
+                SetPropertyOfGenericObject(word);
+                List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
+                foreach (string x in soundPaths)
                 {
-                    for (int listIndex = 0; listIndex < soundID.Count; listIndex++)
+                    if (string.IsNullOrEmpty(x))
                     {
-                        if (soundID[listIndex].Length == 0)
+                        dosntHaveSound++;
+                    }
+                    else
+                    {
+                        if (File.Exists(x))
                         {
-                            continue;
+                            hasSound++;
                         }
-                        foreach (T word in list)
+                        else
                         {
-                            SetPropertyOfGenericObject(word);
-                            List<string> ThaiScriptList = (List<string>)GetValueFromValueList("ThaiScript");
-                            bool result = ThaiScriptList.Contains(correctText[listIndex]);
-
-                            if (result || correctText[listIndex] == (string)GetValueFromValueList("ThaiHelpWord"))
-                            {
-                                bool DownloadOK = SoundDownloader(correctText[listIndex], soundID[listIndex]);
-                            }
-                            bool alreadyHasSoundPath = SetSoundPathToWord(word);
+                            dosntHaveSound++;
                         }
                     }
                 }
-                catch (Exception ex)
+                if (soundPaths.Count == 0)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    dosntHaveSound++;
                 }
-                return true;
             }
+
+            fullText += hasSound + " " + typeof(T).Name + " has sound, and " + dosntHaveSound + " dont. \r\n";
+            return fullText;
         }
 
-        public bool SoundDownloader(string correctText, string soundDownloadPath)
-        {
-            string savePath = @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\" + correctText + ".mp3";
-
-            using (var client = new WebClient())
-            {
-                if (!File.Exists(savePath))
-                {
-                    try
-                    {
-                        client.DownloadFile(soundDownloadPath, savePath);
-                        return true;
-                    }
-                    catch (WebException wex)
-                    {
-                        MessageBox.Show("Error: " + wex);
-                    }
-                }
-            }
-            return false;
-        }
-
-        public bool SetSoundPathToWord(object word)
-        {
-            string soundPath = "";
-
-            if (word.GetType() != typeof(Word))
-            {
-                var value = (string)GetValueFromValueList("ThaiHelpWord");
-                soundPath = @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\" + value + ".mp3";
-            }
-            else
-            {
-                var listOfScript = (List<string>)GetValueFromValueList("ThaiScript");
-                foreach (string value in listOfScript)
-                {
-                    soundPath = @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\" + value + ".mp3";
-                }
-            }
-
-            var listOfPaths = (List<string>)GetValueFromValueList("SoundPath");
-            if (File.Exists(soundPath))
-            {
-                if (listOfPaths.Count == 0)
-                {
-                    SetValueOfObject(soundPath, "SoundPath", word);
-                    return false;
-                }
-            }
-
-            return true;
-        }
-
+        /// <summary>
+        ///
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <param name="url"></param>
         public void DownloadSoundProcess<T>(List<T> list, string url) where T : new()
         {
             HtmlWeb web = new HtmlWeb();
@@ -963,126 +1928,117 @@ namespace LearnThaiApplication
         /// <summary>
         ///
         /// </summary>
-        /// <param name="textToSplit"></param>
+        /// <param name="word"></param>
         /// <returns></returns>
-        public List<String> SplitStringToList(String textToSplit)
+        public bool SetSoundPathToWord(object word)
         {
-            return Regex.Split(textToSplit, RegexSplitString).ToList<String>();
-        }
+            string soundPath = "";
 
-        /// <summary>
-        /// Adds new words to the list.
-        /// </summary>
-        /// <typeparam name="T">What type to work with</typeparam>
-        /// <param name="list">What list to work with</param>
-        public void SubmitNewWord<T>(List<T> list) where T : new()
-        {
-            Type whatIsT = typeof(T);
-
-            object newWord = null;
-            List<String> ListFromTextBox;
-
-            if (txt_FirstSelectionProperty.Text != "" && txt_SecondSelectionProperty.Text != "" && txt_ThirdSelectionProperty.Text != "" && txt_FourthSelectionProperty.Text != "")
+            if (word.GetType() != typeof(Word))
             {
-                if (whatIsT == typeof(Word))
-                {
-                    newWord = new Word();
-                }
-                else if (whatIsT == typeof(Consonant))
-                {
-                    newWord = new Consonant();
-                }
-                else if (whatIsT == typeof(Vowel))
-                {
-                    newWord = new Vowel();
-                }
-                else
-                {
-                    newWord = new ThaiNumber();
-                }
-
-                textboxList = FormTextboxes();
-
-                foreach (TextBox txt in textboxList)
-                {
-                    if (txt.Name == "txt_Chapter")
-                    {
-                        ((Word)newWord).Chapter = txt.Text;
-                    }
-                    if (txt.Name == "txt_ThaiScript")
-                    {
-                        ((ThaiBase)newWord).ThaiScript = SplitStringToList(txt.Text);
-                    }
-                    if (txt.Name == "txt_ThaiFonet")
-                    {
-                        ((ThaiBase)newWord).ThaiFonet = SplitStringToList(txt.Text);
-                    }
-                    if (txt.Name == "txt_ThaiHelpWord")
-                    {
-                        ((ThaiSymbol)newWord).ThaiHelpWord = txt.Text;
-                    }
-                    if (txt.Name == "txt_EngWords")
-                    {
-                        ListFromTextBox = SplitStringToList(txt.Text);
-                        ((ThaiBase)newWord).EngWords = ListFromTextBox;
-                    }
-                    if (txt.Name == "txt_EngDesc")
-                    {
-                        ((ThaiBase)newWord).EngDesc = txt.Text;
-                    }
-                    if (txt.Name == "txt_Tone")
-                    {
-                        ListFromTextBox = SplitStringToList(txt.Text);
-                        ((ThaiBase)newWord).Tone = ListFromTextBox;
-                    }
-                    if (txt.Name == "txt_SoundPath")
-                    {
-                        ((ThaiBase)newWord).SoundPath = SplitStringToList(txt.Text);
-                    }
-                    Console.WriteLine(txt.Name);
-                    Console.WriteLine(txt.Text);
-                }
-
-                list.Add((T)newWord);
-
-                SaveFiles<T>(list);
+                var value = (string)GetValueFromValueList("ThaiHelpWord");
+                soundPath = @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\" + value + ".mp3";
             }
+            else
+            {
+                var listOfScript = (List<string>)GetValueFromValueList("ThaiScript");
+                foreach (string value in listOfScript)
+                {
+                    soundPath = @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\" + value + ".mp3";
+                }
+            }
+
+            var listOfPaths = (List<string>)GetValueFromValueList("SoundPath");
+            if (File.Exists(soundPath))
+            {
+                if (listOfPaths.Count == 0)
+                {
+                    SetValueOfObject(soundPath, "SoundPath", word);
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         /// <summary>
-        /// The first part of the process to update old words
+        ///
         /// </summary>
         /// <typeparam name="T"></typeparam>
+        /// <param name="correctText"></param>
+        /// <param name="soundID"></param>
         /// <param name="list"></param>
-        public void SubmitUpdatedWord<T>(List<T> list) where T : new()
+        /// <returns></returns>
+        public bool SoundDownloadCompare<T>(List<string> correctText, List<string> soundID, List<T> list) where T : new()
         {
-            Type whatIsT = typeof(T);
-
-            textboxList = FormTextboxes();
-
-            foreach (T oldWord in list)
+            if (soundID.Count != correctText.Count)
             {
-                if (WordToLoad.Equals(oldWord))
+                MessageBox.Show("Error: soundID and correcText is not the same size!", "Error");
+                return false;
+            }
+            else
+            {
+                try
                 {
-                    SetPropertyOfGenericObject(oldWord);
+                    for (int listIndex = 0; listIndex < soundID.Count; listIndex++)
+                    {
+                        if (soundID[listIndex].Length == 0)
+                        {
+                            continue;
+                        }
+                        foreach (T word in list)
+                        {
+                            SetPropertyOfGenericObject(word);
+                            List<string> ThaiScriptList = (List<string>)GetValueFromValueList("ThaiScript");
+                            bool result = ThaiScriptList.Contains(correctText[listIndex]);
 
-                    if (oldWord.GetType() == typeof(Word))
-                    {
-                        SetNewValuesFromForm(oldWord, textboxList);
-                        //SetNewValuesToOldWord(oldWord, whatIsT, txt_FirstSelectionProperty.Text, txt_SecondSelectionProperty.Text, txt_ThirdSelectionProperty.Text, txt_FourthSelectionProperty.Text, txt_FifthSelectionProperty.Text);
-                        break;
+                            if (result || correctText[listIndex] == (string)GetValueFromValueList("ThaiHelpWord"))
+                            {
+                                bool DownloadOK = SoundDownloader(correctText[listIndex], soundID[listIndex]);
+                            }
+                            bool alreadyHasSoundPath = SetSoundPathToWord(word);
+                        }
                     }
-                    else
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                return true;
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="correctText"></param>
+        /// <param name="soundDownloadPath"></param>
+        /// <returns></returns>
+        public bool SoundDownloader(string correctText, string soundDownloadPath)
+        {
+            string savePath = @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\" + correctText + ".mp3";
+
+            using (var client = new WebClient())
+            {
+                if (!File.Exists(savePath))
+                {
+                    try
                     {
-                        SetNewValuesFromForm(oldWord, textboxList);
-                        break;
+                        client.DownloadFile(soundDownloadPath, savePath);
+                        return true;
+                    }
+                    catch (WebException wex)
+                    {
+                        MessageBox.Show("Error: " + wex);
                     }
                 }
             }
-
-            SaveFiles<T>(list);
+            return false;
         }
 
+        /// <summary>
+        /// Checks if the current word has a sound, and if not turns the button red.
+        /// </summary>
         public void SpeakerStatus()
         {
             List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
@@ -1127,467 +2083,30 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
-        /// Changes the content of textblocks tot he next or previous value.
+        ///
         /// </summary>
-        /// <typeparam name="T">What type of object to handle</typeparam>
-        /// <param name="list">What list to work with</param>
-        /// <param name="textBlockForScript">What textblock to write the thai script too</param>
-        /// <param name="textBlockDescription">What textblock to write the description too</param>
-        /// <param name="checkBoxDescription">What checkbox to use</param>
-        /// <param name="checkBoxRandom">what checkbox to use</param>
-        /// <param name="nextValueToAdd">to move forward, backwards or stay in place in the list</param>
-        public void TextChanger<T>(List<T> list, TextBlock textBlockForScript, TextBlock textBlockDescription, int nextValueToAdd) where T : new()
+        /// <param name="attributesFromNode"></param>
+        /// <param name="searchForName"></param>
+        /// <param name="searchForValue"></param>
+        /// <returns></returns>
+        public bool TableDataAttributeExists(HtmlAttributeCollection attributesFromNode, string searchForName, string searchForValue)
         {
-            try
+            foreach (HtmlAttribute attribute in attributesFromNode)
             {
-                Type whatIsT = typeof(T);
-
-                CheckCurrentFileSize<T>(list, nextValueToAdd, textBlockForScript);
-
-                SetPropertyOfGenericObject(list[CurrentFileIndex]);
-
-                SelectedPropertyToDisplay = GetValueFromValueList(WhatToDisplay);
-
-                if (list[CurrentFileIndex].GetType() == typeof(Word))
+                if (attribute.Name.Contains(searchForName) || attribute.Value.Contains(searchForValue))
                 {
-                    string retrivedChapter = (string)GetValueFromValueList("Chapter", SelectedChapter);
-
-                    if (retrivedChapter == SelectedChapter)
-                    {
-                        if (SelectedPropertyToDisplay is List<String> propertyIsList)
-                        {
-                            textBlockForScript.Text = ListToString(propertyIsList);
-                        }
-                        else
-                        {
-                            textBlockForScript.Text = (String)SelectedPropertyToDisplay;
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("There are no content with chapter" + SelectedChapter + " available right now.");
-                        return;
-                    }
+                    return true;
                 }
-                else
-                {
-                    if (SelectedPropertyToDisplay is List<String> propertyIsList)
-                    {
-                        textBlockForScript.Text = ListToString(propertyIsList);
-                    }
-                    else
-                    {
-                        textBlockForScript.Text = GetValueFromValueList("ThaiScript") + " " + GetValueFromValueList("ThaiHelpWord");
-                    }
+            }
 
-                    //
-                }
-                PopulateDescription(textBlockDescription);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
+            return false;
         }
 
         /// <summary>
-        /// Checks what list to load and loads it.
+        ///
         /// </summary>
-        public void UpdateListBox()
-        {
-            if (WhatTypeToUse == null)
-            {
-                MessageBox.Show("Select a list to load from");
-                return;
-            }
-
-            lib_LoadedWords.ItemsSource = null;
-
-            if (WhatTypeToUse == typeof(Word))
-            {
-                LoadObjectsToLib<Word>(Words);
-            }
-            else if (WhatTypeToUse == typeof(Consonant))
-            {
-                LoadObjectsToLib<Consonant>(Consonants);
-            }
-            else if (WhatTypeToUse == typeof(Vowel))
-            {
-                LoadObjectsToLib<Vowel>(Vowels);
-            }
-            else if (WhatTypeToUse == typeof(ThaiNumber))
-            {
-                LoadObjectsToLib<ThaiNumber>(Numbers);
-            }
-        }
-
-        /// <summary>
-        /// Compares the written answear to the current words propterties.
-        /// </summary>
-        /// <typeparam name="T">What kind of object</typeparam>
-        /// <param name="list">What list to load</param>
-        /// <param name="textboxAnswear">What textbox to use for answears</param>
-        /// <param name="textBlockStatus">What textblock to use for right or worng</param>
-        /// <param name="textBlockDesc">What textblock to use for description</param>
-        /// <param name="checkBoxDesc">What checkbox to use to check if description is on</param>
-        public void ValidateAnswer<T>(List<T> list, TextBox textboxAnswear, TextBlock textBlockStatus, TextBlock textBlockDesc)
-        {
-            SetPropertyOfGenericObject(list[CurrentFileIndex]);
-
-            SelectedPropertyToValidate = GetValueFromValueList(WhatToTrain);
-
-            int rightAnswears = 0;
-            int totalAnswears = 0;
-            List<string> answers = Regex.Split(textboxAnswear.Text, RegexSplitString).ToList<string>();
-
-            if (SelectedPropertyToValidate is List<String>)
-            {
-                foreach (String correctWord in SelectedPropertyToValidate as List<string>)
-                {
-                    totalAnswears = ((List<string>)SelectedPropertyToValidate).Count;
-                    foreach (String answer in answers)
-                    {
-                        if (String.Equals(correctWord, answer, StringComparison.OrdinalIgnoreCase))
-                        {
-                            CorrectPoints++;
-                            rightAnswears++;
-                        }
-                    }
-                }
-            }
-            else if (String.Equals(textboxAnswear.Text, (String)SelectedPropertyToValidate, StringComparison.OrdinalIgnoreCase))
-            {
-                totalAnswears = 1;
-                CorrectPoints++;
-                rightAnswears++;
-            }
-
-            if (rightAnswears != 0)
-            {
-                textBlockStatus.Text = "You got " + rightAnswears + " of " + totalAnswears + " correct!";
-                
-            }
-            else
-            {
-                textBlockStatus.Text = "Sorry, try again!";
-            }
-
-            PopulateDescription(textBlockDesc);
-
-            lbl_Counter_Page2.Content = CurrentFileIndex;
-            lbl_Points.Content = "Points: " + CorrectPoints;
-            lbl_Points_Page2.Content = "Points: " + CorrectPoints;
-            
-        }
-
-        public void WriteAllToFile()
-        {
-            //WriteWordToFile<Word>(Words);
-            WriteWordToFile<Consonant>(Consonants);
-            WriteWordToFile<Vowel>(Vowels);
-            WriteWordToFile<ThaiNumber>(Numbers);
-
-            SaveAll();
-        }
-
-        #region auto properties
-
-        #region lists
-
-        public static List<Chapter> Chapters { get; set; } = new List<Chapter>();
-        public static List<Consonant> Consonants { get; set; } = new List<Consonant>();
-        public static List<Word> DisplayList { get; set; } = new List<Word>();
-        public static List<ThaiNumber> Numbers { get; set; } = new List<ThaiNumber>();
-        public static List<WordIDTEMP> TempList { get; set; } = new List<WordIDTEMP>();
-        public static List<Vowel> Vowels { get; set; } = new List<Vowel>();
-        public static Object WhatListTLoad { get; set; }
-        public static List<Word> Words { get; set; } = new List<Word>();
-
-        #endregion lists
-
-        #region PropertyInfos
-
-        public static List<TextBox> textboxList;
-        public static List<PropertyInfo> ListOfProperties { get; set; } = new List<PropertyInfo>();
-
-        public static List<Object> ListOfValues { get; set; } = new List<Object>();
-
-        #endregion PropertyInfos
-
-        #region activeProperties
-
-        public static bool DescriptionOn { get; set; } = true;
-        public static bool LoopChapter { get; set; } = true;
-        public static bool RandomOn { get; set; }
-        public static bool DisplayAllPropertiesInDescription { get; set; }
-        public static int CorrectPoints { get; set; } = 0;
-        public static int CurrentFileIndex { get; set; } = 0;
-        public static Random RandomIndex { get; set; } = new Random();
-        public static string RegexSplitString { get; set; } = @"^\s|[\s;,]{2,}";
-        public static string SelectedChapter { get; set; }
-        public static object SelectedPropertyToDisplay { get; set; }
-        public static object SelectedPropertyToValidate { get; set; }
-        public static string SelectedSymbolTypeToUse { get; set; }
-        public static string WhatToDisplay { get; set; }
-        public static string WhatToTrain { get; set; }
-        public static string SubmitStyle { get; set; }
-        public static Type WhatTypeToUse { get; set; }
-        public static Object WordToLoad { get; set; }
-
-        #endregion activeProperties
-
-        public static string chaptersName = "Key to understanding Thai; Thai alphabet; Closing sounds of consonants; Thai vowels; Tonal Language; Special pronounciation; Nouns, people and particles; Numbers and Counting; Telling time; Colors; Easy words; Homonyms; Homophones; Words in special contexts; 101 most used words; Small talk; The body";
-
-        public static Chapter NewChapter;
-
-        #region Settings properties
-
-        public static string LanguageFilePath { get; set; } = "C:/Users/" + Environment.UserName + "/source/repos/LearnThaiApplication/Language_Files/";
-
-        public IEnumerable<Window> Windows { get; set; }
-
-        #endregion Settings properties
-
-        private static ContentMan window;
-        private StackPanel sp = new StackPanel();
-
-        #endregion auto properties
-
-        public void WriteWordToFile<T>(List<T> list) where T : new()
-        {
-            string full = "";
-
-            foreach (T word in list)
-            {
-                SetPropertyOfGenericObject(word);
-
-                List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
-                string helpword = (string)GetValueFromValueList("ThaiHelpWord");
-
-                if (script.Count == 1)
-                {
-                    SetValueOfObject(helpword, "ThaiScript", word);
-                }
-
-                //    if (ListOfProperties.Exists(e => e.Name == "ThaiHelpWord"))
-                //    {
-                //        /*foreach(string s in (List<string>)GetValueFromValueList("ThaiHelpWord"))
-                //        {
-                //            full += s + " ";
-                //        }*/
-                //        full += (string)GetValueFromValueList("ThaiHelpWord") + " ";
-                //    }
-                //    else
-                //    {
-                //        foreach (string s in (List<string>)GetValueFromValueList("ThaiScript"))
-                //        {
-                //            full += s + " ";
-                //        }
-                //    }
-                //    foreach (string path in (List<string>)GetValueFromValueList("SoundPath"))
-                //    {
-                //        if (File.Exists(path))
-                //        {
-                //            full += path + " ";
-                //        }
-                //    }
-                //    full += "\r\n";
-                //    File.WriteAllText(LanguageFilePath + word.GetType() + ".txt", full);
-            }
-        }
-
-        #region component interaction
-
-        public void SelectSymbolToUse(object sender, RoutedEventArgs e)
-        {
-            SelectedSymbolTypeToUse = (string)((RadioButton)sender).Content;
-
-            UpdateWhenSymbolTypeSelected();
-        }
-
-        public int SelectParentIndex(object sender)
-        {
-            int tabIndex;
-            try
-            {
-                if (sender is TabControl tabcontrol)
-                {
-                    tabIndex = tabcontrol.SelectedIndex;
-                }
-                else
-                {
-                    tabIndex = ((TabControl)((TabItem)((Grid)((FrameworkElement)sender).Parent).Parent).Parent).SelectedIndex;
-                }
-
-                return tabIndex;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex);
-                return -1;
-            }
-        }
-
-        public void SelectWhatToTrain(object sender, RoutedEventArgs e)
-        {
-            if ((string)((RadioButton)sender).Content == "Writhing Thai")
-            {
-                WhatToTrain = "ThaiScript";
-                WhatToDisplay = "EngWords";
-            }
-            else if ((string)((RadioButton)sender).Content == "Pronounciations")
-            {
-                WhatToTrain = "ThaiFonet";
-                WhatToDisplay = "ThaiScript";
-            }
-            else if ((string)((RadioButton)sender).Content == "English meanings")
-            {
-                WhatToTrain = "EngWords";
-                WhatToDisplay = "ThaiScript";
-            }
-            else
-            {
-                MessageBox.Show("Please select what to train", "ERROR");
-            }
-            PreTextChanger(0);
-        }
-
-        public void UpdateWhenSymbolTypeSelected()
-        {
-            if (SelectedSymbolTypeToUse == "Consonants")
-            {
-                TextChanger<Consonant>(Consonants, txb_ThaiScript_Page2, txb_Description_page2, 0);
-            }
-            else if (SelectedSymbolTypeToUse == "Vowels")
-            {
-                TextChanger<Vowel>(Vowels, txb_ThaiScript_Page2, txb_Description_page2, 0);
-            }
-            else if (SelectedSymbolTypeToUse == "Closing sounds")
-            {
-                //TextChanger<ClosingSound>(ClosingSounds, txb_ThaiScript_Page2, txb_Description_page2, 0);
-            }
-            else if (SelectedSymbolTypeToUse == "Numbers")
-            {
-                TextChanger<ThaiNumber>(Numbers, txb_ThaiScript_Page2, txb_Description_page2, 0);
-            }
-            else
-            {
-                MessageBox.Show("No symbole type selected", "ERROR");
-            }
-        }
-
-        private void Btn_Delete_Click(object sender, RoutedEventArgs e)
-        {
-            if (MessageBox.Show("Are you sure you want to delete the selected word?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
-            {
-                if (WhatTypeToUse == typeof(Word))
-                {
-                    DeleteSelected<Word>(Words);
-                }
-                else if (WhatTypeToUse == typeof(Consonant))
-                {
-                    DeleteSelected<Consonant>(Consonants);
-                }
-                else if (WhatTypeToUse == typeof(Vowel))
-                {
-                    DeleteSelected<Vowel>(Vowels);
-                }
-                else if (WhatTypeToUse == typeof(ThaiNumber))
-                {
-                    DeleteSelected<ThaiNumber>(Numbers);
-                }
-                else
-                {
-                    MessageBox.Show("Please select a list first");
-                }
-                SaveAll();
-            }
-            UpdateListBox();
-        }
-
-        private void Btn_FormWindow(object sender, RoutedEventArgs e)
-        {
-            CreateFormWindow(false);
-        }
-
-        private void Btn_ListMoveDown_Click(object sender, RoutedEventArgs e)
-        {
-            int newIndex = lib_LoadedWords.SelectedIndex + 1;
-
-            SelectWhatToMove(newIndex);
-        }
-
-        private void Btn_ListMoveUp_Click(object sender, RoutedEventArgs e)
-        {
-            int newIndex = lib_LoadedWords.SelectedIndex - 1;
-
-            SelectWhatToMove(newIndex);
-        }
-
-        private void CycleListboxItems(object sender, RoutedEventArgs e)
-        {
-            CreateFormWindow(true);
-
-            foreach (object item in lib_LoadedWords.Items)
-            {
-                SetPropertyOfGenericObject(item);
-                
-                FillFormTextBoxes();
-
-            }
-
-            UpdateListBox();
-        }
-
-        public void PreTextChanger(int change)
-        {
-            int tabIndex = MainWindow_tabController.SelectedIndex;
-
-            if (tabIndex == 0)
-            {
-                TextChanger<Word>(DisplayList, txb_ThaiScript_Page1, txb_Description_page1, change);
-                lbl_Counter_Page1.Content = CurrentFileIndex;
-                SpeakerStatus();
-            }
-            if (tabIndex == 1)
-            {
-                if (SelectedSymbolTypeToUse == "Consonants")
-                {
-                    TextChanger<Consonant>(Consonants, txb_ThaiScript_Page2, txb_Description_page2, change);
-                }
-                else if (SelectedSymbolTypeToUse == "Vowels")
-                {
-                    TextChanger<Vowel>(Vowels, txb_ThaiScript_Page2, txb_Description_page2, change);
-                }
-                else if (SelectedSymbolTypeToUse == "Numbers")
-                {
-                    TextChanger<ThaiNumber>(Numbers, txb_ThaiScript_Page2, txb_Description_page2, change);
-                }
-                else if (SelectedSymbolTypeToUse == "Closing sounds")
-                {
-                    //TextChanger<ClosingSound>(ClosingSounds, txb_ThaiScript_Page2, txb_Description_page2, change);
-                }
-                else
-                {
-                    MessageBox.Show("please select a category");
-                }
-                lbl_Counter_Page2.Content = CurrentFileIndex;
-                SpeakerStatus();
-            }
-        }
-
-        public void NextWord(object sender, RoutedEventArgs e)
-        {
-            ClearFields();
-            PreTextChanger(1);
-        }
-
-        public void PrevWord(object sender, RoutedEventArgs e)
-        {
-            ClearFields();
-            PreTextChanger(-1);
-        }
-
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PlaySound(object sender, RoutedEventArgs e)
         {
             int TabIndex = SelectParentIndex(sender);
@@ -1610,267 +2129,11 @@ namespace LearnThaiApplication
             }
         }
 
-        private void Btn_SubmitNewWord_Click(object sender, RoutedEventArgs e)
-        {
-            if (SubmitStyle == "Submit new")
-            {
-                if (WhatTypeToUse == typeof(Consonant))
-                {
-                    SubmitNewWord<Consonant>(Consonants);
-                }
-                else if (WhatTypeToUse == typeof(Vowel))
-                {
-                    SubmitNewWord<Vowel>(Vowels);
-                }
-                else if (WhatTypeToUse == typeof(Word))
-                {
-                    SubmitNewWord<Word>(Words);
-                }
-                else if (WhatTypeToUse == typeof(ThaiNumber))
-                {
-                    SubmitNewWord<ThaiNumber>(Numbers);
-                }
-                else
-                {
-                    MessageBox.Show("Select a list to load from");
-                }
-            }
-            else if (SubmitStyle == "Update")
-            {
-                if (WhatTypeToUse == typeof(Consonant))
-                {
-                    SubmitUpdatedWord<Consonant>(Consonants);
-                }
-                else if (WhatTypeToUse == typeof(Vowel))
-                {
-                    SubmitUpdatedWord<Vowel>(Vowels);
-                }
-                else if (WhatTypeToUse == typeof(Word))
-                {
-                    SubmitUpdatedWord<Word>(Words);
-                }
-                else if (WhatTypeToUse == typeof(ThaiNumber))
-                {
-                    SubmitUpdatedWord<ThaiNumber>(Numbers);
-                }
-                else
-                {
-                    MessageBox.Show("Select a list to load from");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Select what you want to do");
-            }
-
-            UpdateListBox();
-            ClearFields();
-        }
-
-        public void ValidateAnswear(object sender, RoutedEventArgs e)
-        {
-            int tabIndex = MainWindow_tabController.SelectedIndex;
-
-            if (tabIndex == 0)
-            {
-                ValidateAnswer<Word>(DisplayList, txt_Answear_Page1, txb_Status_Page1, txb_Description_page1);
-            }
-            else if (tabIndex == 1)
-            {
-                if (SelectedSymbolTypeToUse == "Consonants")
-                {
-                    ValidateAnswer<Consonant>(Consonants, txt_Answear_Page2, txb_Status_Page2, txb_Description_page2);
-                }
-                else if (SelectedSymbolTypeToUse == "Vowels")
-                {
-                    ValidateAnswer<Vowel>(Vowels, txt_Answear_Page2, txb_Status_Page2, txb_Description_page2);
-                }
-                else if (SelectedSymbolTypeToUse == "Closing sounds")
-                {
-                    //ValidateAnswer<ClosingSound>(ClosingSounds, txb_ThaiScript_Page2, txb_Description_page2, 0);
-                }
-                else if (SelectedSymbolTypeToUse == "Numbers")
-                {
-                    ValidateAnswer<ThaiNumber>(Numbers, txt_Answear_Page2, txb_Status_Page2, txb_Description_page2);
-                }
-                else
-                {
-                    MessageBox.Show("Please select a category.");
-                }
-            }
-            
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            string fullText = CheckSoundStatus<Word>(Words);
-            fullText += CheckSoundStatus<Consonant>(Consonants);
-            fullText += CheckSoundStatus<Vowel>(Vowels);
-            fullText += CheckSoundStatus<ThaiNumber>(Numbers);
-
-            MessageBox.Show(fullText);
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            CurrentFileIndex = 0;
-            SelectedChapter = cb_Chapter_Page1.SelectedValue.ToString();
-
-            FindWordWithChapter();
-
-            lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
-
-            if (DisplayList.Count > 0)
-            {
-                TextChanger<Word>(DisplayList, txb_ThaiScript_Page1, txb_Description_page1, 0);
-            }
-            else
-            {
-                MessageBox.Show("There are no words in that category yet");
-            }
-
-            lbl_Counter_Page1.Content = CurrentFileIndex;
-        }
-
-        private void DescriptionBox_Checked(object sender, RoutedEventArgs e)
-        {
-            if ((sender as CheckBox)?.IsChecked == true)
-            {
-                DescriptionOn = true;
-                PopulateDescription(txb_Description_page1);
-                PopulateDescription(txb_Description_page2);
-            }
-            else
-            {
-                txb_Description_page1.Text = "";
-                txb_Description_page2.Text = "";
-                DescriptionOn = false;
-            }
-        }
-
-        private void Lib_LoadedWords_SelectionChanged(Object sender, SelectionChangedEventArgs e)
-        {
-            if (WhatTypeToUse == typeof(Word))
-            {
-                SelectionChanged<Word>(lib_LoadedWords.SelectedIndex);
-            }
-            else if (WhatTypeToUse == typeof(Consonant))
-            {
-                SelectionChanged<Consonant>(lib_LoadedWords.SelectedIndex);
-            }
-            else if (WhatTypeToUse == typeof(Vowel))
-            {
-                SelectionChanged<Vowel>(lib_LoadedWords.SelectedIndex);
-            }
-            else if (WhatTypeToUse == typeof(ThaiNumber))
-            {
-                SelectionChanged<ThaiNumber>(lib_LoadedWords.SelectedIndex);
-            }
-            else
-            {
-                MessageBox.Show("Please select a list to load", "List not choosen");
-            }
-        }
-
-        private void LoopChapter_Checked(object sender, RoutedEventArgs e)
-        {
-            LoopChapter = (sender as CheckBox)?.IsChecked == true;
-        }
-
-        private void Randomized_Checked(object sender, RoutedEventArgs e)
-        {
-            RandomOn = (sender as CheckBox)?.IsChecked == true;
-        }
-
-        private void Rb_Conso_Page3_Checked(object sender, RoutedEventArgs e)
-        {
-            WhatListTLoad = Consonants;
-            WhatTypeToUse = typeof(Consonant);
-            ClearFields();
-            UpdateListBox();
-
-            lbl_English_Insert.Content = "Thai help word";
-            lbl_Desc_Insert.Content = "English Word";
-            lbl_Chapter_Insert.Content = "English Description";
-        }
-
-        private void Rb_ThaiNumber_Page3_Checked(object sender, RoutedEventArgs e)
-        {
-            WhatListTLoad = Numbers;
-            WhatTypeToUse = typeof(ThaiNumber);
-            ClearFields();
-            UpdateListBox();
-            lbl_English_Insert.Content = "Thai help word";
-            lbl_Desc_Insert.Content = "English Word";
-
-            lbl_Chapter_Insert.Content = "English Description";
-        }
-
-        private void Rb_Vowel_Page3_Checked(object sender, RoutedEventArgs e)
-        {
-            WhatListTLoad = Vowels;
-            WhatTypeToUse = typeof(Vowel);
-            ClearFields();
-            UpdateListBox();
-
-            lbl_English_Insert.Content = "Thai help word";
-            lbl_Desc_Insert.Content = "English Word";
-
-            lbl_Chapter_Insert.Content = "English Description";
-        }
-
-        private void Rb_words_Page3_Checked(object sender, RoutedEventArgs e)
-        {
-            WhatListTLoad = Words;
-            WhatTypeToUse = typeof(Word);
-
-            ClearFields();
-            UpdateListBox();
-
-            lbl_English_Insert.Content = "English";
-            lbl_Desc_Insert.Content = "Description";
-            lbl_Chapter_Insert.Content = "Chapter";
-        }
-
-        private void SoundDownloader(object sender, RoutedEventArgs e)
-        {
-            DownloadSoundProcess<Word>(Words, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Words.html");
-            DownloadSoundProcess<Word>(Words, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Words1.html");
-            DownloadSoundProcess<Word>(Words, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Words2.html");
-            DownloadSoundProcess<Word>(Words, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Words3.html");
-
-            DownloadSoundProcess<Consonant>(Consonants, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Consonants.html");
-            DownloadSoundProcess<Consonant>(Consonants, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Consonants1.html");
-
-            DownloadSoundProcess<Vowel>(Vowels, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Vowel.html");
-            DownloadSoundProcess<Vowel>(Vowels, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Vowel1.html");
-
-            DownloadSoundProcess<ThaiNumber>(Numbers, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Numbers.html");
-            DownloadSoundProcess<ThaiNumber>(Numbers, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Numbers1.html");
-
-            Button_Click(sender, e);
-        }
-
-        private void SubmitStyleChecked(object sender, RoutedEventArgs e)
-        {
-            SubmitStyle = (string)(sender as RadioButton)?.Content;
-        }
-
-        private void TabChanged(object sender, SelectionChangedEventArgs e)
-        {
-            CurrentFileIndex = 0;
-
-            PreTextChanger(0);
-        }
-
-        private void OnEnterKeyUp(object sender, System.Windows.Input.KeyEventArgs e)
-        {
-            if (e.Key == System.Windows.Input.Key.Enter)
-            {
-                ValidateAnswear(sender, e);
-            }
-        }
-
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RemoveSoundPath(object sender, RoutedEventArgs e)
         {
             foreach (Word word in Words)
@@ -1892,18 +2155,30 @@ namespace LearnThaiApplication
             SaveAll();
         }
 
-        private void FullDesc_Checked(object sender, RoutedEventArgs e)
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SoundDownloader(object sender, RoutedEventArgs e)
         {
-            if (((CheckBox)sender).IsChecked == true)
-            {
-                DisplayAllPropertiesInDescription = true;
-            }
-            else
-            {
-                DisplayAllPropertiesInDescription = false;
-            }
-        }
-    }
+            DownloadSoundProcess<Word>(Words, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Words.html");
+            DownloadSoundProcess<Word>(Words, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Words1.html");
+            DownloadSoundProcess<Word>(Words, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Words2.html");
+            DownloadSoundProcess<Word>(Words, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Words3.html");
 
-    #endregion component interaction
+            DownloadSoundProcess<Consonant>(Consonants, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Consonants.html");
+            DownloadSoundProcess<Consonant>(Consonants, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Consonants1.html");
+
+            DownloadSoundProcess<Vowel>(Vowels, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Vowel.html");
+            DownloadSoundProcess<Vowel>(Vowels, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Vowel1.html");
+
+            DownloadSoundProcess<ThaiNumber>(Numbers, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Numbers.html");
+            DownloadSoundProcess<ThaiNumber>(Numbers, @"C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\website files\Numbers1.html");
+
+            Button_Click(sender, e);
+        }
+
+        #endregion Sound
+    }
 }

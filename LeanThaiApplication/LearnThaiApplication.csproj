@@ -78,7 +78,6 @@
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
     <Compile Include="ThaiNumber.cs" />
-    <Compile Include="ThaiSymbol.cs" />
     <Compile Include="Vowel.cs" />
     <Compile Include="Word.cs" />
     <Compile Include="WordIDTEMP.cs" />
