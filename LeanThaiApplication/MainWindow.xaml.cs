@@ -54,24 +54,50 @@ namespace LearnThaiApplication
 
         #endregion lists
 
-        public static string chaptersName = "Key to understanding Thai; Thai alphabet; Closing sounds of consonants; Thai vowels; Tonal Language; Special pronounciation; Nouns, people and particles; Numbers and Counting; Telling time; Colors; Easy words; Homonyms; Homophones; Words in special contexts; 101 most used words; Small talk; The body";
-        public static Chapter NewChapter;
-        private static ContentMan window;
-        private StackPanel sp = new StackPanel();
-        public static int CorrectPoints { get; set; } = 0;
-        public static int CurrentFileIndex { get; set; } = 0;
-        public static int CurrentListBoxIndex { get; set; } = -1;
+        #region bools
+
         public static bool DescriptionOn { get; set; } = true;
         public static bool DisplayAllPropertiesInDescription { get; set; }
         public static bool IsContinious { get; set; }
+
+        #endregion bools
+
+        #region strings
+
+        public static string chaptersName = "Key to understanding Thai; Thai alphabet; Closing sounds of consonants; Thai vowels; Tonal Language; Special pronounciation; Nouns, people and particles; Numbers and Counting; Telling time; Colors; Easy words; Homonyms; Homophones; Words in special contexts; 101 most used words; Small talk; The body";
+
+        #endregion strings
+
+        #region ints
+
+        public static int CorrectPoints { get; set; } = 0;
+        public static int CurrentFileIndex { get; set; } = 0;
+        public static int CurrentListBoxIndex { get; set; } = -1;
+
+        #endregion ints
+
+        #region objects
+
+        public static object SelectedPropertyToDisplay { get; set; }
+        public static object SelectedPropertyToValidate { get; set; }
+
+        #endregion objects
+
+        #region others
+
+        public static Chapter NewChapter;
+        private static ContentMan window;
+        private StackPanel sp = new StackPanel();
+
+        #endregion others
+
         public static string LanguageFilePath { get; set; } = "C:/Users/" + Environment.UserName + "/source/repos/LearnThaiApplication/Language_Files/";
         public static bool LoopChapter { get; set; } = true;
         public static Random RandomIndex { get; set; } = new Random();
         public static bool RandomOn { get; set; }
         public static string RegexSplitString { get; set; } = @"^\s|[\s;,]{2,}";
         public static string SelectedChapter { get; set; }
-        public static object SelectedPropertyToDisplay { get; set; }
-        public static object SelectedPropertyToValidate { get; set; }
+
         public static string SelectedSymbolTypeToUse { get; set; }
         public static bool SubmitStyle { get; set; }
         public static object WhatListTLoad { get; set; }
