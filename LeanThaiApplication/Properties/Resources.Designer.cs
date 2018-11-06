@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LearnThaiApplication.Properties
-{
-
-
+namespace LearnThaiApplication.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,7 +22,7 @@ namespace LearnThaiApplication.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace LearnThaiApplication.Properties
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LearnThaiApplication.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace LearnThaiApplication.Properties
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,20 +61,68 @@ namespace LearnThaiApplication.Properties
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\Language_Files.
+        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Language.
         /// </summary>
-        internal static string LanguageFolder {
+        public static string LanguageFolder {
             get {
                 return ResourceManager.GetString("LanguageFolder", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;C:\Users\tommy\source\repos\LearnThaiApplication\Icons\Speaker.png&quot;.
+        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Sound.
         /// </summary>
-        internal static string SpeakerIcon {
+        public static string SoundPath {
+            get {
+                return ResourceManager.GetString("SoundPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Speaker {
+            get {
+                object obj = ResourceManager.GetObject("Speaker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Icon.
+        /// </summary>
+        public static string SpeakerIcon {
             get {
                 return ResourceManager.GetString("SpeakerIcon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        public static System.Drawing.Icon Thailand {
+            get {
+                object obj = ResourceManager.GetObject("Thailand", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Thailand1 {
+            get {
+                object obj = ResourceManager.GetObject("Thailand1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Website.
+        /// </summary>
+        public static string WebsitePath {
+            get {
+                return ResourceManager.GetString("WebsitePath", resourceCulture);
             }
         }
     }

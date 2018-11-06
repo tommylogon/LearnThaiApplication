@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfChapter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Chapter>
+    <ChapterName>Key to understanding Thai</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName> Thai alphabet</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName> Closing sounds of consonants</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName> Thai vowels</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName> Tonal Language</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Special pronounciation</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Nouns, people and particles</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Numbers and Counting</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Telling time</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Colors</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Easy words</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Homonyms</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Homophones</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Words in special contexts</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>101 most used words</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Small talk</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>The body</ChapterName>
+  </Chapter>
+</ArrayOfChapter>

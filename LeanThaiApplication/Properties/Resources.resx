@@ -118,9 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="LanguageFolder" xml:space="preserve">
-    <value>C:\Users\tommy\source\repos\LearnThaiApplication\Language_Files</value>
+    <value>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Language</value>
+  </data>
+  <data name="SoundPath" xml:space="preserve">
+    <value>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Sound</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Speaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Files\Media\Icon\Speaker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SpeakerIcon" xml:space="preserve">
-    <value>"C:\Users\tommy\source\repos\LearnThaiApplication\Icons\Speaker.png"</value>
+    <value>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Icon</value>
+  </data>
+  <data name="Thailand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Files\Media\Icon\Thailand.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thailand1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Files\Media\Icon\Thailand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WebsitePath" xml:space="preserve">
+    <value>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Website</value>
   </data>
 </root>

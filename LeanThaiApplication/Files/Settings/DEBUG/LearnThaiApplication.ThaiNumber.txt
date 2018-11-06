@@ -1,0 +1,10 @@
+หนึ่ง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หนึ่ง.mp3 
+สอง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สอง.mp3 
+สาม 
+สี่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\สี่.mp3 
+ฮ่า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฮ่า.mp3 
+หก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หก.mp3 
+เจ็ด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เจ็ด.mp3 
+แปด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แปด.mp3 
+เก้า C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เก้า.mp3 
+สูน 

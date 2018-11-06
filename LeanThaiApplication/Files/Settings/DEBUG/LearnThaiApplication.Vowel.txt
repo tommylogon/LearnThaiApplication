@@ -1,0 +1,38 @@
+กับ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กับ.mp3 
+บาด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\บาด.mp3 
+แกะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แกะ.mp3 
+แดง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\แดง.mp3 
+เตะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เตะ.mp3 
+เพลง C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เพลง.mp3 
+คิด C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คิด.mp3 
+อีก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อีก.mp3 
+โต๊ะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โต๊ะ.mp3 
+โชค C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\โชค.mp3 
+เกาะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เกาะ.mp3 
+นอน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\นอน.mp3 
+เยอะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เยอะ.mp3 
+เผลอ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เผลอ.mp3 
+จุฬา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\จุฬา.mp3 
+ลูก C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ลูก.mp3 
+รึ 
+กลืน C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\กลืน.mp3 
+ไม่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ไม่.mp3 
+ใส่ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ใส่.mp3 
+ทำ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ทำ.mp3 
+เรา C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เรา.mp3 
+เดี๊ยะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เดี๊ยะ.mp3 
+เมีย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เมีย.mp3 
+ตัว C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ตัว.mp3 
+ผลัวะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ผลัวะ.mp3 
+เอือะ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เอือะ.mp3 
+เรือ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เรือ.mp3 
+ฦาชา 
+ 
+ฤทธ์ C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฤทธ์.mp3 
+ฤๅษี C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฤๅษี.mp3 
+บ่อย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\บ่อย.mp3 
+เร็ว C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เร็ว.mp3 
+เที่ยว C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เที่ยว.mp3 
+เหนื่อย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\เหนื่อย.mp3 
+หิว C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\หิว.mp3 
+คุย C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\คุย.mp3 
