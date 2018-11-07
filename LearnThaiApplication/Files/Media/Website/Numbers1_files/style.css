@@ -1,0 +1,746 @@
+html
+{
+overflow-y:scroll;
+}
+body
+{
+margin:0px;
+background-color:white;
+font-family:verdana,arial,helvetica,helv;
+font-size:small;
+}
+#bannerimg
+{
+opacity:1.0;
+}
+#tl-left-column
+{
+position:absolute;
+width:153px;
+padding-left:10px;
+padding-right:12px;
+margin-top:0px;
+}
+#tl-content
+{
+position:relative;
+left:0px;
+margin-left:178px;
+margin-right:10px;
+}
+#lc-paypal
+{
+margin-left:9px;
+margin-bottom:5px;
+}
+#navtab-underline
+{
+min-width:592px;
+width:100%;
+height:3px;
+background-color:#337499;
+}
+#cplx
+{
+position:relative;
+left:0px;
+width:100%;
+}
+#dict-title
+{
+margin-bottom:15px;
+}
+div.ltab
+{
+position:relative;
+background-color:#c0c4ca;
+width:70px;
+color:Black;
+cursor:pointer;
+}
+div.ltab a:focus
+{
+outline:0;
+}
+div.ltab-sel
+{
+background-color:#dcdee2;
+}
+div.ltab:hover
+{
+background-color:#ccdee2;
+}
+span.ltab-top, span.ltab-bottom, span.ltab-bottom span
+{
+font-size: 1px;
+line-height: 1px;
+display: block;
+background-repeat: no-repeat;
+}
+span.ltab-top
+{
+height: 13px;
+background-image: url("http://img0.thai-language.net/schemes/lt-left.gif");
+background-position: 0 0;
+}
+span.ltab-bottom {
+background-image: url("http://img0.thai-language.net/schemes/lt-bc.gif");
+background-position: 0 100%;
+background-repeat: repeat-x;
+}
+span.ltab-bottom span {
+height: 23px;
+background-image: url("http://img0.thai-language.net/schemes/lt-left.gif");
+background-position: 0 100%;
+}
+dl.ltab-content
+{
+margin:0;
+display:block;
+padding: 0px 9px 0px 5px;
+white-space:nowrap;
+}
+div.rtab
+{
+position:relative;
+top:-370px;
+background-color:#dcdee2;
+margin-left:70px;
+background-image: url("http://img0.thai-language.net/schemes/lt-rc.gif");
+background-repeat: repeat-y;
+background-position: 100% 0;
+color:Black;
+min-width:528px;
+}
+span.rtab-top, span.rtab-bottom, span.rtab-bottom span, span.rtab-bottom span span
+{
+font-size: 1px;
+line-height: 1px;
+display: block;
+background-repeat: no-repeat;
+}
+span.rtab-top
+{
+height: 13px;
+background-image: url("http://img0.thai-language.net/schemes/lt-right.gif");
+background-position: 100% 0;
+}
+div.rtab-content
+{
+position:relative;
+min-height:525px;
+margin-left:25px;
+margin-right:30px;
+}
+.rtab-page h3
+{
+position:relative;
+margin-top:4px;
+}
+div.rtab-page
+{
+position:absolute;
+top:0;
+width:100%;
+}
+span.rtab-bottom {
+background-image: url("http://img0.thai-language.net/schemes/lt-bc.gif");
+background-position: 0 100%;
+background-repeat: repeat-x;
+}
+span.rtab-bottom span {
+background-image: url("http://img0.thai-language.net/schemes/lt-right.gif");
+background-position: 100% 100%;
+}
+span.rtab-bottom span span
+{
+height: 23px;
+background-image: url("http://img0.thai-language.net/schemes/lt-left.gif");
+background-position: 0 100%;
+}
+#ehk
+{
+position:absolute;
+top:385px;
+visibility:hidden;
+}
+#ehk-sb-arrow
+{
+position:absolute;
+top:335px;
+left:110px;
+visibility:hidden;
+}
+#ehk-speech
+{
+position:absolute;
+top:410px;
+left:180px;
+background-color:#e1e86a;
+background-image: url("http://img2.thai-language.net/anime/sb-rc.png");
+background-repeat: repeat-y;
+background-position: 100% 0;
+visibility:hidden;
+}
+span.sb-top, span.sb-top span, span.sb-bottom, span.sb-bottom span, span.sb-bottom span span
+{
+font-size: 1px;
+line-height: 1px;
+display: block;
+background-repeat: no-repeat;
+}
+span.sb-top
+{
+height: 13px;
+background-image: url("http://img2.thai-language.net/anime/sb-left.png");
+background-position: 0 0;
+}
+span.sb-top span
+{
+height: 13px;
+background-image: url("http://img2.thai-language.net/anime/sb-right.png");
+background-position: 100% 0;
+}
+div.sb-content
+{
+padding-left:8px;
+padding-right:20px;
+min-height:120px;
+}
+#pfx-search-text
+{
+font-family:georgia, calibri;
+font-size:medium;
+}
+#pfx-search-text p
+{
+margin-top:0px;
+margin-bottom:8px;
+padding-top:0px;
+padding-bottom:0px;
+}
+span.sb-bottom {
+background-image: url("http://img2.thai-language.net/anime/sb-bc.png");
+background-position: 0 100%;
+background-repeat: repeat-x;
+}
+span.sb-bottom span {
+background-image: url("http://img2.thai-language.net/anime/sb-right.png");
+background-position: 100% 100%;
+}
+span.sb-bottom span span
+{
+height:19px;
+background-image: url("http://img2.thai-language.net/anime/sb-left.png");
+background-position: 0 100%;
+}
+#pfx-results
+{
+display:block;
+background-color:white;
+overflow-x:hidden;
+overflow-y:auto;
+padding:3px;
+visibility:hidden;
+white-space:nowrap;
+border:1px solid #c0c0c0;
+margin-right:5px;
+}
+#pfx-results dl
+{
+float:left;
+width:100%;
+margin:0;
+height:1.6em;
+}
+#pfx-results dd
+{
+padding-left:3px;
+margin:0;
+overflow-x:hidden;
+border-left:2px solid #c0c0c0;
+height:1.6em;
+}
+#pfx-results dd.i
+{
+float:left;
+width:15px;
+border-left:0;
+}
+#pfx-results dd.x
+{
+float:left;
+width:16%;
+}
+#pfx-results dt
+{
+float:left;
+font-size:1.4em;
+margin:0;
+width:19%;
+overflow-x:hidden;
+padding-right:4px;
+}
+#pfx-results a:link,#pfx-results a:visited
+{
+text-decoration:none;
+}
+#pfx-results dl:hover, #pfx-results dl.sel
+{
+background-color:#c0e0f0;
+cursor:default;
+}
+#pfx-search
+{
+font-size:1.6em;
+width:99%;
+margin:0px;
+}
+.tl-go-but
+{
+outline:0;
+margin:0px;
+}
+.inp-tab
+{
+width:100%;
+border-collapse:collapse;
+}
+.inp-tab tr
+{
+border-collapse:collapse;
+padding:0px;
+margin:0px;
+}
+.inp-tab td
+{
+border-collapse:collapse;
+padding:0px;
+margin:0px;
+}
+div.dsb
+{
+background-color:#337499;
+margin-bottom: 10px;
+color:White;
+background-image: url("http://img1.thai-language.net/schemes/-rc.gif");
+background-repeat: repeat-y;
+background-position: 100% 0;
+}
+span.dsb-top, span.dsb-bottom, span.dsb-top span, span.dsb-bottom span, span.dsb-bottom span span {
+font-size: 1px;
+line-height: 1px;
+display: block;
+background-repeat: no-repeat;
+}
+span.dsb-top {
+background-image: url("http://img1.thai-language.net/schemes/-left.gif");
+background-position: 0 0;
+}
+span.dsb-top span {
+height: 11px;
+background-image: url("http://img1.thai-language.net/schemes/-right.gif");
+background-position: 100% 0;
+}
+span.dsb-bottom {
+background-image: url("http://img1.thai-language.net/schemes/-bc.gif");
+background-position: 0 100%;
+background-repeat: repeat-x;
+}
+span.dsb-bottom span {
+background-image: url("http://img1.thai-language.net/schemes/-right.gif");
+background-position: 100% 100%;
+}
+span.dsb-bottom span span
+{
+height: 17px;
+background-image: url("http://img1.thai-language.net/schemes/-left.gif");
+background-position: 0 100%;
+}
+dl.dsb-content
+{
+margin:0;
+display:block;
+padding: 0px 9px 0px 5px;
+white-space:nowrap;
+}
+.dsb-content a:link, .dsb-content a:visited, .dsb-content a:hover
+{
+color:White;
+text-decoration:none;
+}
+dl.dsb-content dt
+{
+clear:both;
+}
+dl.dsb-content .space
+{
+height:4px;
+}
+dl.dsb-content .c
+{
+text-align:center;
+}
+dl.dsb-content .s
+{
+font-size:x-small;
+}
+dl.dsb-content .b
+{
+font-weight:bold;
+}
+dl.dsb-content .ra
+{
+text-align:right;
+}
+dl.dsb-content .l
+{
+float:left;
+clear:left;
+}
+dl.dsb-content .r
+{
+text-align:right;
+}
+dl.dsb-content p
+{
+margin-top:0;
+font-size:x-small;
+white-space:normal;
+margin-right:0px;
+margin-left:2px;
+}
+dl.dsb-content p a:link, .dsb-content p a:visited, .dsb-content p a:hover
+{
+text-decoration:underline;
+}
+#menu
+{
+font-family:Arial,helv,sans;
+color:White;
+font-weight:bold;
+}
+#menu-tab
+{
+width:80%;
+text-align:center;
+background-color:#686868;
+border-collapse:collapse;
+}
+#menu-tab td
+{
+vertical-align:middle;
+width:8%;
+cursor:pointer;
+background-image: url("http://img1.thai-language.net/schemes/gutter.gif");
+background-repeat: repeat-y;
+background-position: 100% 0;
+}
+#menu-tab td.no-sel
+{
+background-color:#337499;
+}
+#menu-tab td.sel:hover
+{
+background-color:#A0D0F0;
+}
+#menu-tab a
+{
+text-decoration:none;
+color:inherit;
+outline:0;
+}
+.menu-but
+{
+display:block;
+width:100%;
+padding-top:.4em;
+padding-bottom:.4em;
+}
+div.lc-text
+{
+padding-left:8px;
+padding-bottom:10px;
+}
+div.lc-text p
+{
+font-size:x-small;
+margin-top:0px;
+margin-bottom:6px;
+}
+div.lc-text dl
+{
+font-size:x-small;
+margin-top:0px;
+margin-bottom:6px;
+}
+div.lc-text dt
+{
+margin-bottom:2px;
+}
+div.lc-text dt:before
+{
+content: "•  ";
+}
+#browse-table
+{
+font-size:18pt;
+width:100%;
+text-align:center;
+border-collapse:collapse;
+}
+#browse-table tr td
+{
+width:20%;
+padding:0;
+margin:0;
+line-height:21pt;
+cursor:default;
+}
+#browse-table tr td div
+{
+margin-left:2px;
+margin-right:2px;
+background-color:#A0D0F0;
+}
+#nav-tabs
+{
+border:0;
+}
+:lang(th)
+{
+font-size:large;
+text-decoration:none;
+}
+:lang(th) a:hover
+{
+background-color:#FFEE00;
+}
+.tl-xlit
+{
+color:#337499;
+}
+.def-group
+{
+margin:0px;
+padding:0px;
+font-family:Palatino, Palatino Linotype, Calibri, Verdana, Arial, Sans;
+}
+.def-group dd
+{
+/*	margin-left:2.7em;
+text-indent:-2.7em;*/
+margin-left:26px;
+text-indent:-26px;
+margin-bottom:4px;
+}
+.def-group dd span.dgo
+{
+margin-right:.4em;
+color:#808080;
+border:1px solid #808080;
+padding-left:2px;
+padding-right:2px;
+padding-bottom:1px;
+font-size:80%;
+}
+.def-group dd span.var
+{
+margin-right:.4em;
+font-size:125%;
+}
+.def-group dd span.var:before
+{
+content:"[";
+}
+.def-group dd span.var:after
+{
+content:"]";
+}
+/*.def-group dd span
+{
+margin-right:.4em;
+color:Red;
+font-size:99%;
+}*/
+.def-group dd p .pos
+{
+color:#337499;
+font-size:80%;
+}
+.def-group dd p
+{
+display:inline;
+font-size:110%;
+}
+.gridtable
+{
+border-top:2px solid #d0d0d0;
+background-color:#f0f0f0;
+border-right:2px solid #d0d0d0;
+}
+.gridtable td, .gridtable th
+{
+border-bottom:2px solid #d0d0d0;
+border-left:2px solid #d0d0d0;
+padding:2px 5px 2px 5px;
+}
+.gridtable td:last-child
+{
+background-color:White;
+}
+.page-nav
+{
+margin-bottom:10px;
+}
+.page-nav form
+{
+display:inline;
+}
+.page-nav input
+{
+width:28px;
+margin-right:9px;
+margin-bottom:9px;
+padding:0px;
+}
+.page-nav form input.sel
+{
+font-weight:bold;
+text-decoration:underline;
+}
+.cs-box
+{
+border:2px solid #d0d0d0;
+background-color:#f0f0f0;
+margin-bottom:7px;
+padding:4px;
+}
+.igt
+{
+background-color:#f0f0f0;
+border:1px solid #c0c0c0;
+padding:3px;
+}
+.igt-phrase
+{
+font-family:Cambria,Palatino,Baskerville,"Book Antiqua","Nimbus Roman No9 L",FreeSerif,Georgia,"Palatino Linotype","Times New Roman",serif;
+font-size:109%;
+margin-bottom:7px;
+}
+.igt-phrase hr
+{
+margin-top:0px;
+margin-bottom:0px;
+margin-left:-3px;
+}
+.igt-phrase .g
+{
+border-bottom:1px solid #909090;
+padding-bottom:4px;
+min-height:18px;
+}
+.igt-phrase div
+{
+margin-bottom:4px;
+}
+.igt-phrase div span
+{
+font-size:70%;
+}
+.igt-phrase div:lang(th) a
+{
+color:#337499;
+}
+.igt-phrase table
+{
+border-collapse:collapse;
+display:inline-table;
+margin-bottom:2px;
+}
+.igt-phrase table tbody tr td
+{
+padding-left:5px;
+text-align:center;
+}
+.igt-phrase table tbody tr.tag-row td>div
+{
+height:17px;
+line-height:15px;
+}
+.igt-phrase .en
+{
+color:#337499;
+padding:1px;
+margin-top:3px;
+}
+.ident-tag
+{
+text-align:center;
+display:inline-table;
+font-family:Helvetica, Arial, sans-serif;
+background-color:#fafafa;
+font-size:63%;
+border:1px solid black;
+min-width:14px;
+cursor:pointer;
+padding-left:2px;
+padding-right:2px;
+border-collapse:separate;
+border-spacing:0px;
+margin-right:5px;
+}
+.mid-line
+{
+background-repeat:repeat-x;
+background-position:center;
+margin-left:2px;
+}
+.mid-line.c-0 { background-image:url("http://img0.thai-language.net/img/1px-black.png"); }
+.mid-line.c-1 { background-image:url("http://img0.thai-language.net/img/1px-red.png"); }
+.mid-line.c-2 { background-image:url("http://img0.thai-language.net/img/1px-yellow.png"); }
+.mid-line.c-3 { background-image:url("http://img0.thai-language.net/img/1px-blue.png"); }
+.mid-line.c-4 { background-image:url("http://img0.thai-language.net/img/1px-green.png"); }
+.igt-commentary
+{
+font-size:110%;
+font-family:Cambria,Palatino,Baskerville,"Book Antiqua","Nimbus Roman No9 L",FreeSerif,Georgia,"Palatino Linotype","Times New Roman",serif;
+margin-bottom:8px;
+}
+#new-content
+{
+font-family:Cambria,Palatino,Baskerville,"Book Antiqua","Nimbus Roman No9 L",FreeSerif,Georgia,"Palatino Linotype","Times New Roman",serif;
+font-size:1.2em;
+max-width:8.5in;
+min-width:592px;
+margin-right:10px;
+text-align:justify;
+margin-bottom:20px;
+margin-top:16px;
+}
+#old-content
+{
+width:100%;
+margin-top:16px;
+margin-bottom:20px;
+}
+#tooltip
+{
+max-width:370px;
+font-size:105%;
+font-family:Cambria,Palatino,Baskerville,"Book Antiqua","Nimbus Roman No9 L",FreeSerif,Georgia,"Palatino Linotype","Times New Roman",serif;
+font-weight:normal;
+position: absolute;
+z-index: 3000;
+border: 1px solid #111;
+background-color: #eee;
+padding: 5px;
+}
+#tooltip h3 { margin:0; }
+.browse-tooltip-title
+{
+font-size:125%;
+margin-bottom:5px;
+}
+.xf {font-family:"Charis SIL","Doulos SIL","Arial Unicode MS","Lucida Sans Unicode";font-size:10.9pt;}
+.ipa {font-variant:normal; font-family:"Charis SIL","Doulos SIL","Arial Unicode MS","Lucida Sans Unicode";font-size:10.9pt;}

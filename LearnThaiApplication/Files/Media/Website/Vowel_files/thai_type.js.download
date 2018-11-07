@@ -1,0 +1,159 @@
+﻿var force_shift = false;
+var CurrentEnglish = false;
+
+function Translate(display,e) {
+	//var kc=e.keyCode||e.which;
+	if (e.altKey||e.ctrlKey)
+		return true;
+	var kc=e.charCode||e.which;
+	if (kc<32)
+		return true;
+	var c=String.fromCharCode(kc);
+	if (CurrentEnglish) {
+		if (c=='`') {
+			CurrentEnglish=false;
+			if (display!=null) display.value='ไทย';
+			return false;//event.keyCode=0;
+		}
+		return true;
+	}
+	if ('ก'<=c&&c<='๛')
+		return true;
+	if (force_shift) {
+		if ('a'<=c&&c<='z')
+			c=String.fromCharCode(kc-32);
+		else switch (c) {
+			case ',': { c='<';break; }
+			case '.': { c='>';break; }
+			case '/': { c='?';break; }
+			case ';': { c=':';break; }
+			case '\'': { c='\"';break; }
+			case '[': { c='{';break; }
+			case ']': { c='}';break; }
+			case '\\': { c='|';break; }
+			case '1': { c='!';break; }
+			case '2': { c='@';break; }
+			case '3': { c='#';break; }
+			case '4': { c='$';break; }
+			case '5': { c='%';break; }
+			case '6': { c='^';break; }
+			case '7': { c='&';break; }
+			case '8': { c='*';break; }
+			case '9': { c='(';break; }
+			case '0': { c=')';break; }
+			case '-': { c='_';break; }
+			case '=': { c='+';break; }
+		}
+	}
+	switch (c) {
+		case '1': { c='ๅ';break; }
+		case '2': { c='/';break; }
+		case '3': { c='-';break; }
+		case '4': { c='ภ';break; }
+		case '5': { c='ถ';break; }
+		case '6': { c='ุ';break; }
+		case '7': { c='ึ';break; }
+		case '8': { c='ค';break; }
+		case '9': { c='ต';break; }
+		case '0': { c='จ';break; }
+		case '-': { c='ข';break; }
+		case '=': { c='ช';break; }
+		case '!': { c='+';break; }
+		case '@': { c='๑';break; }
+		case '#': { c='๒';break; }
+		case '$': { c='๓';break; }
+		case '%': { c='๔';break; }
+		case '^': { c='ู';break; }
+		case '&': { c='฿';break; }
+		case '*': { c='๕';break; }
+		case '(': { c='๖';break; }
+		case ')': { c='๗';break; }
+		case '_': { c='๘';break; }
+		case '+': { c='๙';break; }
+		case 'q': { c='ๆ';break; }
+		case 'w': { c='ไ';break; }
+		case 'e': { c='ำ';break; }
+		case 'r': { c='พ';break; }
+		case 't': { c='ะ';break; }
+		case 'y': { c='ั';break; }
+		case 'u': { c='ี';break; }
+		case 'i': { c='ร';break; }
+		case 'o': { c='น';break; }
+		case 'p': { c='ย';break; }
+		case '[': { c='บ';break; }
+		case ']': { c='ล';break; }
+		case '\\': { c='ฃ';break; }
+		case 'Q': { c='๐';break; }
+		case 'W': { c='"';break; }
+		case 'E': { c='ฎ';break; }
+		case 'R': { c='ฑ';break; }
+		case 'T': { c='ธ';break; }
+		case 'Y': { c='ํ';break; }
+		case 'U': { c='๊';break; }
+		case 'I': { c='ณ';break; }
+		case 'O': { c='ฯ';break; }
+		case 'P': { c='ญ';break; }
+		case '{': { c='ฐ';break; }
+		case '}': { c='\'';break; }
+		case '|': { c='ฅ';break; }
+		case 'a': { c='ฟ';break; }
+		case 's': { c='ห';break; }
+		case 'd': { c='ก';break; }
+		case 'f': { c='ด';break; }
+		case 'g': { c='เ';break; }
+		case 'h': { c='้';break; }
+		case 'j': { c='่';break; }
+		case 'k': { c='า';break; }
+		case 'l': { c='ส';break; }
+		case ';': { c='ว';break; }
+		case "'": { c='ง';break; }
+		case 'A': { c='ฤ';break; }
+		case 'S': { c='ฆ';break; }
+		case 'D': { c='ฏ';break; }
+		case 'F': { c='โ';break; }
+		case 'G': { c='ฌ';break; }
+		case 'H': { c='็';break; }
+		case 'J': { c='๋';break; }
+		case 'K': { c='ษ';break; }
+		case 'L': { c='ศ';break; }
+		case ':': { c='ซ';break; }
+		case '"': { c='.';break; }
+		case 'z': { c='ผ';break; }
+		case 'x': { c='ป';break; }
+		case 'c': { c='แ';break; }
+		case 'v': { c='อ';break; }
+		case 'b': { c='ิ';break; }
+		case 'n': { c='ื';break; }
+		case 'm': { c='ท';break; }
+		case ',': { c='ม';break; }
+		case '.': { c='ใ';break; }
+		case '/': { c='ฝ';break; }
+		case 'Z': { c='(';break; }
+		case 'X': { c=')';break; }
+		case 'C': { c='ฉ';break; }
+		case 'V': { c='ฮ';break; }
+		case 'B': { c='ฺ';break; }
+		case 'N': { c='์';break; }
+		case 'M': { c='?';break; }
+		case '<': { c='ฒ';break; }
+		case '>': { c='ฬ';break; }
+		case '?': { c='ฦ';break; }
+		case ' ': { c=' ';break; }
+		case '`': 
+			{
+				CurrentEnglish=true;
+				if (display!=null) display.value='English';
+				c=String.fromCharCode(0);
+			}
+	}
+	if (window.event)
+		event.keyCode=c.charCodeAt(0);	// IE allows changing the key in-flight
+	else {
+		var tb=$$('xlate');			// Firefox doesn't.
+		insertString(tb,c);
+		return false;
+	}
+}
+
+function space(){ insertString($$('xlate')," "); }
+function tab(){ insertString($$('xlate'),"\t"); }
