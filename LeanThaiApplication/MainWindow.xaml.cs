@@ -1066,7 +1066,7 @@ namespace LearnThaiApplication
 
                 txt.Name = "txt_" + prop.Name;
                 txt.TextWrapping = TextWrapping.Wrap;
-                txt.AcceptsReturn = true;
+
                 txt.Width = 280;
                 txt.KeyUp += OnEnterKeyUpForm;
 
