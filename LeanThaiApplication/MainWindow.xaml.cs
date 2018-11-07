@@ -901,7 +901,11 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void SelectSymbolToUse(object sender, RoutedEventArgs e)
         {
-            SelectedSymbolTypeToUse = (string)((RadioButton)sender).Content;
+            if (SelectedSymbolTypeToUse != (string)((RadioButton)sender).Content)
+            {
+                SelectedSymbolTypeToUse = (string)((RadioButton)sender).Content;
+                CurrentFileIndex = 0;
+            }
 
             UpdateWhenSymbolTypeSelected();
         }
