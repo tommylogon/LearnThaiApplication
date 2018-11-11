@@ -1,4 +1,5 @@
 ﻿using HtmlAgilityPack;
+using LearnThaiApplication.Classes;
 using NAudio.Wave;
 using System;
 using System.Collections.Generic;
@@ -24,13 +25,17 @@ namespace LearnThaiApplication
         {
             InitializeComponent();
 
-            //ClearFields();
+            LoadSettings();
 
             LoadAllFiles();
 
             SetInitialStates();
 
             GetImage();
+
+            Loaded += MainWindow_Loaded;
+
+            AddNewChapters();
 
             //WriteAllToFile();*/
         }
@@ -41,7 +46,7 @@ namespace LearnThaiApplication
 
         private List<TextBox> textboxList;
         private List<Chapter> Chapters { get; set; } = new List<Chapter>();
-
+        private List<UserSetting> UserSettings { get; set; } = new List<UserSetting>();
         private List<Word> DisplayList { get; set; } = new List<Word>();
         private List<PropertyInfo> ListOfProperties { get; set; } = new List<PropertyInfo>();
         private List<object> ListOfValues { get; set; } = new List<object>();
@@ -54,21 +59,24 @@ namespace LearnThaiApplication
         private bool DescriptionOn { get; set; } = true;
         private bool DisplayAllPropertiesInDescription { get; set; }
         private bool IsContinious { get; set; }
+        private bool LoopChapter { get; set; } = true;
         private bool RandomOn { get; set; }
         private bool SubmitionIsNew { get; set; }
-        private bool LoopChapter { get; set; } = true;
+        private bool SkipIntro { get; set; }
 
         #endregion bools
 
         #region strings
 
-        private string RegexSplitString { get; set; } = @"^\s|[\s;,]{2,}";
-        private string SelectedChapter { get; set; }
+        private string ImageFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Icon\";
         private string LanguageFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Language\";
+        private string SettingsFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Settings\";
+        private string RegexSplitString { get; set; } = @" ^\s|[\s;,]{2,}";
+        private string SelectedChapter { get; set; }
+        private string UserName { get; set; } = "Default";
+        private string SelectedSymbolTypeToUse { get; set; }
         private string SoundFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Sound\";
         private string WebFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Website\";
-        private string ImageFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Icon\";
-        private string SelectedSymbolTypeToUse { get; set; }
         private string WhatToDisplay { get; set; }
         private string WhatToTrain { get; set; }
 
@@ -86,25 +94,37 @@ namespace LearnThaiApplication
 
         private object SelectedPropertyToDisplay { get; set; }
         private object SelectedPropertyToValidate { get; set; }
-        private object WordToLoad { get; set; }
         private object WhatListTLoad { get; set; }
+        private object WordToLoad { get; set; }
 
         #endregion objects
 
         #region others
 
-        private Chapter NewChapter;
-        private ContentMan window;
         private StackPanel sp = new StackPanel();
-        private Type WhatTypeToUse { get; set; }
+        private ContentMan window;
         private Random RandomIndex { get; set; } = new Random();
+        private Type WhatTypeToUse { get; set; }
         private IEnumerable<Window> Windows { get; set; }
+        private UserSetting settings = new UserSetting();
 
         #endregion others
 
         #endregion Variables and properties
 
         #region TestMethods
+
+        /// <summary>
+        /// Cycles trough all lists of words and then displays the result in a messagebox
+        /// </summary>
+        /// <param name="sender">The object that initiated the method</param>
+        /// <param name="e"></param>
+        private void CheckAllSoundStatuses(object sender, RoutedEventArgs e)
+        {
+            string fullText = CheckSoundStatus<Word>(Words);
+
+            MessageBox.Show(fullText);
+        }
 
         /// <summary>
         /// Testmethod writing values from the lists to file.
@@ -127,21 +147,102 @@ namespace LearnThaiApplication
             }
         }
 
-        /// <summary>
-        /// Cycles trough all lists of words and then displays the result in a messagebox
-        /// </summary>
-        /// <param name="sender">The object that initiated the method</param>
-        /// <param name="e"></param>
-        private void CheckAllSoundStatuses(object sender, RoutedEventArgs e)
+
+        private void AddNewChapters()
         {
-            string fullText = CheckSoundStatus<Word>(Words);
+            bool alreadyExists;
+            foreach(Word word in Words)
+            {
+                Chapter newChapter = new Chapter(word.Chapter);
 
-            MessageBox.Show(fullText);
+                alreadyExists = false;
+
+                foreach (Chapter chap in Chapters)
+                {
+                    if(chap.ChapterName == word.Chapter)
+                    {
+                        alreadyExists = true;
+                        break;
+                    }
+
+                }
+                if (!alreadyExists)
+                {
+                    Chapters.Add(newChapter);
+                }
+                    
+                
+
+                
+            }
+            SaveFiles<Chapter>(Chapters);
         }
-
         #endregion TestMethods
 
         #region Main
+
+        /// <summary>
+        /// Handles the combobox selection and updates the displayed data when a new chapter is selected.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ChapterChanged(object sender, SelectionChangedEventArgs e)
+        {
+            CurrentFileIndex = 0;
+            if (((ComboBox)sender).SelectedItem == null)
+            {
+
+            }
+            else if (((ComboBox)sender).SelectedItem is string)
+            {
+                SelectedChapter = (string)((ComboBox)sender).SelectedItem;
+            }
+            else if (((ComboBox)sender).SelectedItem is Chapter chap)
+            {
+                SelectedChapter = chap.ChapterName;
+            }
+            else if(((ComboBox)sender).SelectedItem is ComboBoxItem)
+            {
+                SelectedChapter = (string)((ComboBoxItem)((ComboBox)sender).SelectedItem).Content;
+            }
+
+            FindWordWithChapter();
+
+            if (TabIndex == 0)
+            {
+                lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
+
+                if (DisplayList.Count > 0)
+                {
+                    TextChanger<Word>(DisplayList, txb_ThaiScript_Page1, txb_Description_page1, 0);
+                }
+                else
+                {
+                    MessageBox.Show("There are no words in that category yet");
+                }
+
+                lbl_Counter_Page1.Content = CurrentFileIndex;
+            }
+            else if (TabIndex == 1)
+            {
+                lbl_ChapterCount_Page2.Content = "Words in chapter: " + DisplayList.Count.ToString();
+
+                if (DisplayList.Count > 0)
+                {
+                    TextChanger<Word>(DisplayList, txb_ThaiScript_Page2, txb_Description_page2, 0);
+                }
+                else
+                {
+                    MessageBox.Show("There are no words in that category yet");
+                }
+
+                lbl_Counter_Page2.Content = CurrentFileIndex;
+            }
+            else if (TabIndex == 2)
+            {
+                UpdateListBox();
+            }
+        }
 
         /// <summary>
         ///Checks and changes the current file index.
@@ -384,8 +485,6 @@ namespace LearnThaiApplication
         /// <param name="change">how many places the index is going to change</param>
         private void PreTextChanger(int change)
         {
-            TabIndex = MainWindow_tabController.SelectedIndex;
-
             if (TabIndex == 0)
             {
                 TextChanger<Word>(DisplayList, txb_ThaiScript_Page1, txb_Description_page1, change);
@@ -448,6 +547,7 @@ namespace LearnThaiApplication
             {
                 WhatToTrain = "ThaiScript";
                 WhatToDisplay = "EngWords";
+
             }
             else if ((string)((RadioButton)sender).Content == "Pronounciations")
             {
@@ -463,6 +563,7 @@ namespace LearnThaiApplication
             {
                 MessageBox.Show("Please select what to train", "ERROR");
             }
+            SetSettings();
             PreTextChanger(0);
         }
 
@@ -535,6 +636,10 @@ namespace LearnThaiApplication
         /// <param name="nextValueToAdd">to move forward, backwards or stay in place in the list</param>
         private void TextChanger<T>(List<T> list, TextBlock textBlockForScript, TextBlock textBlockDescription, int nextValueToAdd) where T : new()
         {
+            if (list.Count == 0)
+            {
+                return;
+            }
             try
             {
                 Type whatIsT = typeof(T);
@@ -581,8 +686,6 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void ValidateAnswear(object sender, RoutedEventArgs e)
         {
-            TabIndex = MainWindow_tabController.SelectedIndex;
-
             if (TabIndex == 0)
             {
                 ValidateAnswer<Word>(DisplayList, txt_Answear_Page1, txb_Status_Page1, txb_Description_page1);
@@ -652,53 +755,6 @@ namespace LearnThaiApplication
             txt_Answear_Page2.Text = "";
         }
 
-        /// <summary>
-        /// Handles the combobox selection and updates the displayed data when a new chapter is selected.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            CurrentFileIndex = 0;
-            SelectedChapter = (string)((ComboBoxItem)((ComboBox)sender).SelectedItem).Content;
-
-            FindWordWithChapter();
-
-            if (TabIndex == 0)
-            {
-                lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
-
-                if (DisplayList.Count > 0)
-                {
-                    TextChanger<Word>(DisplayList, txb_ThaiScript_Page1, txb_Description_page1, 0);
-                }
-                else
-                {
-                    MessageBox.Show("There are no words in that category yet");
-                }
-
-                lbl_Counter_Page1.Content = CurrentFileIndex;
-            }
-            else if (TabIndex == 1)
-            {
-                lbl_ChapterCount_Page2.Content = "Words in chapter: " + DisplayList.Count.ToString();
-
-                if (DisplayList.Count > 0)
-                {
-                    TextChanger<Word>(DisplayList, txb_ThaiScript_Page2, txb_Description_page2, 0);
-                }
-                else
-                {
-                    MessageBox.Show("There are no words in that category yet");
-                }
-
-                lbl_Counter_Page2.Content = CurrentFileIndex;
-            }
-            else
-            {
-            }
-        }
-
         #endregion Main
 
         #region Settings
@@ -708,8 +764,6 @@ namespace LearnThaiApplication
         /// </summary>
         private void ClearFields()
         {
-            TabIndex = MainWindow_tabController.SelectedIndex; //SelectParentIndex(sender);
-
             if (TabIndex == 0)
             {
                 txb_Description_page1.Text = "";
@@ -746,6 +800,40 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
+        /// Checks if the descriptionCheckbox is checked and then populate descripton
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DescriptionBox_Checked(object sender, RoutedEventArgs e)
+        {
+            if ((sender as CheckBox)?.IsChecked == true)
+            {
+                DescriptionOn = true;
+                PopulateDescription(txb_Description_page1);
+                PopulateDescription(txb_Description_page2);
+            }
+            else
+            {
+                txb_Description_page1.Text = "";
+                txb_Description_page2.Text = "";
+                DescriptionOn = false;
+            }
+            SetSettings();
+        }
+
+        /// <summary>
+        /// Checks if the full debug description is true and then displays all proeprties.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FullDesc_Checked(object sender, RoutedEventArgs e)
+        {
+            DisplayAllPropertiesInDescription = ((CheckBox)sender).IsChecked == true;
+            DescriptionBox_Checked(sender, e);
+            SetSettings();
+        }
+
+        /// <summary>
         /// Loads all the files from storage
         /// </summary>
         private void LoadAllFiles()
@@ -753,6 +841,35 @@ namespace LearnThaiApplication
             LoadFiles<Chapter>(Chapters);
 
             LoadFiles<Word>(Words);
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void LoadSettings()
+        {
+            if (File.Exists(SettingsFilePath + "settings.xml"))
+            {
+                settings = XmlSerialization.ReadFromXmlFile<UserSetting>(SettingsFilePath + "Settings.xml");
+                
+
+                DescriptionOn = settings.DescriptionOn;
+                LoopChapter = settings.LoopChapter;
+                DisplayAllPropertiesInDescription = settings.DisplayAllPropertiesInDescription;
+                RandomOn = settings.RandomOn;
+                SkipIntro = settings.SkipIntro;
+                WhatToDisplay = settings.WhatToDisplay;
+                WhatToTrain = settings.WhatToTrain;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void SaveSetting()
+        {
+            XmlSerialization.WriteToXmlFile<UserSetting>(SettingsFilePath + "Settings.xml", settings, false);
         }
 
         /// <summary>
@@ -774,11 +891,108 @@ namespace LearnThaiApplication
                 {
                     SetPropertyOfGenericObject(wordFoundInFile);
 
-                    newWordToAdd.Add(wordFoundInFile);
+                    
                 }
+                newWordToAdd.Add(wordFoundInFile);
             }
 
             list.AddRange(newWordToAdd);
+        }
+
+        /// <summary>
+        /// Sets loopChapter to true or false and allows the user to continiue to the next chaper automaticaly at the end of the last chapter.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LoopChapter_Checked(object sender, RoutedEventArgs e)
+        {
+            LoopChapter = (sender as CheckBox)?.IsChecked == true;
+            SetSettings();
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Welcome to Learn Thai!\r\nHere you can learn some of the basics of thai, including how to approximately pronounce thai words, what the thai words mean and the sounds they make with the help of audio clips.", "สวัสดีครับ");
+        }
+
+        /// <summary>
+        /// checks if the enterkey is released on textboxes to validate or submit new word.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnKeyUp(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter)
+            {
+                if (TabIndex == 0 || TabIndex == 1)
+                {
+                    ValidateAnswear(sender, e);
+                }
+                else if (TabIndex == 2)
+                {
+                    SubmitNewWordQuick(sender, e);
+                }
+            }
+            else if (e.Key == System.Windows.Input.Key.Right)
+            {
+                ClearFields();
+                PreTextChanger(1);
+            }
+            else if (e.Key == System.Windows.Input.Key.Left)
+            {
+                ClearFields();
+                PreTextChanger(-1);
+            }
+        }
+
+        /// <summary>
+        /// When the user changes tabs it sets the file index to 0 and updates the display data.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnTabChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (TabIndex != MainWindow_tabController.SelectedIndex)
+            {
+                TabIndex = MainWindow_tabController.SelectedIndex;
+                CurrentFileIndex = 0;
+                ResetChapter();
+
+                PreTextChanger(0);
+            }
+        }
+
+        /// <summary>
+        /// Check if random number is on, if on randomly jump around in the chapter. also disables loop chapter.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Randomized_Checked(object sender, RoutedEventArgs e)
+        {
+            RandomOn = (sender as CheckBox)?.IsChecked == true;
+            ckb_LoopChapter.IsChecked = false;
+            SetSettings();
+        }
+
+        private void ResetChapter()
+        {
+            if (TabIndex == 0)
+            {
+                cb_Chapter_Page1.SelectedIndex = 0;
+                SelectedChapter = (string)((ComboBoxItem)cb_Chapter_Page1.SelectedItem).Content;
+            }
+            else if (TabIndex == 1)
+            {
+                cb_SymbolChapters.SelectedIndex = 0;
+                SelectedChapter = (string)((ComboBoxItem)cb_SymbolChapters.SelectedItem).Content;
+            }
+            else if (TabIndex == 2)
+            {
+                rb_words_Page3.IsChecked = true;
+                cb_ManageOnChapter.SelectedIndex = 0;
+                SelectedChapter = ((Chapter)cb_ManageOnChapter.SelectedItem).ChapterName;
+            }
+            FindWordWithChapter();
         }
 
         /// <summary>
@@ -817,115 +1031,68 @@ namespace LearnThaiApplication
         /// </summary>
         private void SetInitialStates()
         {
-            lbl_Counter_Page2.Content = CurrentFileIndex;
-            lbl_Counter_Page1.Content = CurrentFileIndex;
-            txb_FilePath_Settings.Text = LanguageFilePath;
-            txt_NewSavePath_Settings.Text = LanguageFilePath;
-
-            ckb_DescBox_Page1.IsChecked = true;
-            ckb_DescBox_Page2.IsChecked = true;
-            rb_SubmitNew.IsChecked = true;
-
-            rb_TrainFonet_Page1.IsChecked = true;
-
-            cb_Chapter_Page1.SelectedIndex = 0;
-
-            lib_LoadedWords.DisplayMemberPath = "Thaiscript";
-        }
-
-        /// <summary>
-        /// Checks if the descriptionCheckbox is checked and then populate descripton
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void DescriptionBox_Checked(object sender, RoutedEventArgs e)
-        {
-            if ((sender as CheckBox)?.IsChecked == true)
+            if (UserSettings.Count != 0)
             {
-                DescriptionOn = true;
-                PopulateDescription(txb_Description_page1);
-                PopulateDescription(txb_Description_page2);
+
             }
             else
             {
-                txb_Description_page1.Text = "";
-                txb_Description_page2.Text = "";
-                DescriptionOn = false;
-            }
-        }
+                lbl_Counter_Page2.Content = CurrentFileIndex;
+                lbl_Counter_Page1.Content = CurrentFileIndex;
 
-        /// <summary>
-        /// Checks if the full debug description is true and then displays all proeprties.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void FullDesc_Checked(object sender, RoutedEventArgs e)
-        {
-            DisplayAllPropertiesInDescription = ((CheckBox)sender).IsChecked == true;
-            DescriptionBox_Checked(sender, e);
-        }
-
-        /// <summary>
-        /// Sets loopChapter to true or false and allows the user to continiue to the next chaper automaticaly at the end of the last chapter.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void LoopChapter_Checked(object sender, RoutedEventArgs e)
-        {
-            LoopChapter = (sender as CheckBox)?.IsChecked == true;
-        }
-
-        /// <summary>
-        /// checks if the enterkey is released on textboxes to validate or submit new word.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void OnKeyUp(object sender, System.Windows.Input.KeyEventArgs e)
-        {
-            if (e.Key == System.Windows.Input.Key.Enter)
-            {
-                if (TabIndex == 0 || TabIndex == 1)
+                if (DescriptionOn)
                 {
-                    ValidateAnswear(sender, e);
+                    ckb_DescBox_Page1.IsChecked = true;
+                    ckb_DescBox_Page2.IsChecked = true;
                 }
-                else if (TabIndex == 2)
+                
+
+                rb_SubmitNew.IsChecked = true;
+                if(WhatToTrain == "ThaiFonet")
                 {
-                    SubmitNewWordQuick(sender, e);
+                    rb_TrainFonet_Page1.IsChecked = true;
+                    rb_TrainFonet_Page2.IsChecked = true;
                 }
+                else if(WhatToTrain == "ThaiScript")
+                {
+                    rb_TrainScript_Page1.IsChecked = true;
+                    rb_TrainScript_Page2.IsChecked = true;
+                }
+                else if(WhatToTrain == "EngWords")
+                {
+                    rb_TrainEngWords_Page1.IsChecked = true;
+                    rb_TrainEngWords_Page2.IsChecked = true;
+                }
+                
+
+                PopulateManageChapterCB();
+
+                cb_SymbolChapters.SelectedIndex = 0;
+                cb_Chapter_Page1.SelectedIndex = 0;
+
+                
             }
-            else if (e.Key == System.Windows.Input.Key.Right)
-            {
-                ClearFields();
-                PreTextChanger(1);
-            }
-            else if (e.Key == System.Windows.Input.Key.Left)
-            {
-                ClearFields();
-                PreTextChanger(-1);
-            }
+
+
+            lib_LoadedWords.DisplayMemberPath = "Name";
+            cb_ManageOnChapter.DisplayMemberPath = "ChapterName";
+            SetSettings();
         }
 
-        /// <summary>
-        /// Check if random number is on, if on randomly jump around in the chapter. also disables loop chapter.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Randomized_Checked(object sender, RoutedEventArgs e)
+        private void SetSettings()
         {
-            RandomOn = (sender as CheckBox)?.IsChecked == true;
-            ckb_LoopChapter.IsChecked = false;
-        }
+            
+            
+                settings.DescriptionOn = DescriptionOn;
+                settings.RandomOn = RandomOn;
+                settings.LoopChapter = LoopChapter;
+                settings.WhatToDisplay = WhatToDisplay;
+                settings.WhatToTrain = WhatToTrain;
+                settings.SkipIntro = SkipIntro;
+                settings.DisplayAllPropertiesInDescription = DisplayAllPropertiesInDescription;
 
-        /// <summary>
-        /// When the user changes tabs it sets the file index to 0 and updates the display data.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void OnTabChanged(object sender, SelectionChangedEventArgs e)
-        {
-            CurrentFileIndex = 0;
-            TabIndex = MainWindow_tabController.SelectedIndex;
-            PreTextChanger(0);
+            SaveSetting();
+            
         }
 
         #endregion Settings
@@ -1000,41 +1167,6 @@ namespace LearnThaiApplication
             window.Content = wb;
 
             window.Show();
-        }
-
-        /// <summary>
-        /// Creates a continious submit update form.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CycleListboxItems(object sender, RoutedEventArgs e)
-        {
-            IsContinious = true;
-            SubmitStyleChanger(false);
-            CreateFormWindow(IsContinious);
-        }
-
-        private void SubmitStyleChanger(bool isNew)
-        {
-            if (isNew)
-            {
-                rb_SubmitNew.IsChecked = true;
-            }
-            else
-            {
-                rb_UpdateWord.IsChecked = true;
-            }
-        }
-
-        /// <summary>
-        /// Deletes the selected word from
-        /// </summary>
-        /// <typeparam name="T">What type to use</typeparam>
-        /// <param name="list">What list to delete from</param>
-        private void DeleteSelected<T>(List<T> list)
-        {
-            MessageBox.Show("tried to remove element " + list[lib_LoadedWords.SelectedIndex].ToString());
-            list.RemoveAt(lib_LoadedWords.SelectedIndex);
         }
 
         /// <summary>
@@ -1121,41 +1253,9 @@ namespace LearnThaiApplication
             }
 
             UpdateListBox();
+            PopulateManageChapterCB();
+
             ClearFields();
-        }
-
-        /// <summary>
-        /// Loads the content from the list into the listbox
-        /// </summary>
-        /// <typeparam name="T">What type to use</typeparam>
-        /// <param name="list">What list to use</param>
-        private void LoadObjectsToLib<T>(List<T> list)
-        {
-            foreach (T word in list)
-            {
-                SetPropertyOfGenericObject(word);
-
-                lib_LoadedWords.ItemsSource = list;
-
-                lib_LoadedWords.DisplayMemberPath = "Name";
-
-                break;
-            }
-        }
-
-        /// <summary>
-        /// Moves the object in the selected list
-        /// </summary>
-        /// <typeparam name="T">What type to use</typeparam>
-        /// <param name="list">What list to use</param>
-        /// <param name="oldIndex">The old index of the selected word</param>
-        /// <param name="newIndex">the new index of the selected word</param>
-        private void MoveObjectInList<T>(List<T> list, int oldIndex, int newIndex)
-        {
-            T item = list[lib_LoadedWords.SelectedIndex];
-
-            list.RemoveAt(oldIndex);
-            list.Insert(newIndex, item);
         }
 
         /// <summary>
@@ -1176,31 +1276,6 @@ namespace LearnThaiApplication
                     SubmitNewWordFull(sender, e);
                 }
             }
-        }
-
-        /// <summary>
-        /// Sets the values of the new word from the quickForm
-        /// </summary>
-        /// <param name="newWord"></param>
-        private void QuickSubmit(object newWord)
-        {
-            ((ThaiBase)newWord).ThaiScript = SplitStringToList(txt_FirstSelectionProperty.Text);
-            ((ThaiBase)newWord).ThaiFonet = SplitStringToList(txt_SecondSelectionProperty.Text);
-            ((ThaiBase)newWord).EngWords = SplitStringToList(txt_ThirdSelectionProperty.Text);
-            ((ThaiBase)newWord).EngDesc = txt_FourthSelectionProperty.Text;
-            ((ThaiBase)newWord).Tone = SplitStringToList(txt_FifthSelectionProperty.Text);
-        }
-
-        /// <summary>
-        /// Selects what to move and sends the object to be moved.
-        /// </summary>
-        /// <param name="newIndex">The new index for the selected word</param>
-        private void SelectWhatToMove(int newIndex)
-        {
-            MoveObjectInList<Word>(Words, lib_LoadedWords.SelectedIndex, newIndex);
-
-            UpdateListBox();
-            lib_LoadedWords.SelectedIndex = newIndex;
         }
 
         /// <summary>
@@ -1265,6 +1340,188 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
+        /// Select a object to delete and then save the remaining objects to file.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_Delete_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete the selected word?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                DeleteSelected<Word>(Words);
+
+                SaveAll();
+            }
+            UpdateListBox();
+        }
+
+        /// <summary>
+        /// Creates a non-continious form window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_FormWindow(object sender, RoutedEventArgs e)
+        {
+            IsContinious = false;
+            CreateFormWindow(IsContinious);
+        }
+
+        /// <summary>
+        /// Moves a object up or down the list.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_ListMoveDown_Click(object sender, RoutedEventArgs e)
+        {
+            int newIndex = lib_LoadedWords.SelectedIndex + 1;
+
+            SelectWhatToMove(newIndex);
+        }
+
+        /// <summary>
+        /// Moves a object up or down the list.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_ListMoveUp_Click(object sender, RoutedEventArgs e)
+        {
+            int newIndex = lib_LoadedWords.SelectedIndex - 1;
+
+            SelectWhatToMove(newIndex);
+        }
+
+        /// <summary>
+        /// Creates a continious submit update form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CycleListboxItems(object sender, RoutedEventArgs e)
+        {
+            IsContinious = true;
+            SubmitStyleChanger(false);
+            CreateFormWindow(IsContinious);
+        }
+
+        /// <summary>
+        /// Deletes the selected word from
+        /// </summary>
+        /// <typeparam name="T">What type to use</typeparam>
+        /// <param name="list">What list to delete from</param>
+        private void DeleteSelected<T>(List<T> list)
+        {
+            MessageBox.Show("tried to remove element " + list[lib_LoadedWords.SelectedIndex].ToString());
+            list.RemoveAt(lib_LoadedWords.SelectedIndex);
+        }
+
+        /// <summary>
+        /// Changes the textboxes for the content management to the selected object from the listbox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Lib_LoadedWords_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+        {
+            if (lib_LoadedWords.SelectedIndex != -1)
+            {
+                CurrentListBoxIndex = lib_LoadedWords.SelectedIndex;
+            }
+
+            if (WhatTypeToUse == typeof(Word))
+            {
+                SelectionChanged<Word>(lib_LoadedWords.SelectedIndex);
+            }
+        }
+
+        /// <summary>
+        /// Loads the content from the list into the listbox
+        /// </summary>
+        /// <typeparam name="T">What type to use</typeparam>
+        /// <param name="list">What list to use</param>
+        private void LoadObjectsToLib<T>(List<T> list)
+        {
+            foreach (T word in list)
+            {
+                SetPropertyOfGenericObject(word);
+
+                lib_LoadedWords.ItemsSource = list;
+
+                lib_LoadedWords.DisplayMemberPath = "Name";
+
+                break;
+            }
+        }
+
+        /// <summary>
+        /// Moves the object in the selected list
+        /// </summary>
+        /// <typeparam name="T">What type to use</typeparam>
+        /// <param name="list">What list to use</param>
+        /// <param name="oldIndex">The old index of the selected word</param>
+        /// <param name="newIndex">the new index of the selected word</param>
+        private void MoveObjectInList<T>(List<T> list, int oldIndex, int newIndex)
+        {
+            T item = list[lib_LoadedWords.SelectedIndex];
+
+            list.RemoveAt(oldIndex);
+            list.Insert(newIndex, item);
+        }
+
+        private void PopulateManageChapterCB()
+        {
+            cb_ManageOnChapter.ItemsSource = null;
+
+            cb_ManageOnChapter.ItemsSource = Chapters;
+
+        }
+
+        /// <summary>
+        /// Sets the values of the new word from the quickForm
+        /// </summary>
+        /// <param name="newWord"></param>
+        private void QuickSubmit(object newWord)
+        {
+            ((ThaiBase)newWord).ThaiScript = SplitStringToList(txt_FirstSelectionProperty.Text);
+            ((ThaiBase)newWord).ThaiFonet = SplitStringToList(txt_SecondSelectionProperty.Text);
+            ((ThaiBase)newWord).EngWords = SplitStringToList(txt_ThirdSelectionProperty.Text);
+            ((ThaiBase)newWord).EngDesc = txt_FourthSelectionProperty.Text;
+            ((ThaiBase)newWord).Tone = SplitStringToList(txt_FifthSelectionProperty.Text);
+        }
+
+        /// <summary>
+        /// Selects what to move and sends the object to be moved.
+        /// </summary>
+        /// <param name="newIndex">The new index for the selected word</param>
+        private void SelectWhatToMove(int newIndex)
+        {
+            MoveObjectInList<Word>(Words, lib_LoadedWords.SelectedIndex, newIndex);
+
+            UpdateListBox();
+            lib_LoadedWords.SelectedIndex = newIndex;
+        }
+
+        /// <summary>
+        /// Submits a full word and then continiues to the next word, updating the full form textboxes.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SubmitAndContinue(object sender, RoutedEventArgs e)
+        {
+            HowToSubmit(false);
+
+            if (lib_LoadedWords.SelectedIndex != -1 && lib_LoadedWords.Items.Count != 0)
+            {
+                CurrentListBoxIndex = lib_LoadedWords.SelectedIndex;
+            }
+            CurrentListBoxIndex++;
+            lib_LoadedWords.SelectedIndex = CurrentListBoxIndex;
+
+            SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
+
+            FillFormTextBoxes();
+
+            UpdateListBox();
+        }
+
+        /// <summary>
         /// Adds new words to the list.
         /// </summary>
         /// <typeparam name="T">What type to work with</typeparam>
@@ -1288,9 +1545,21 @@ namespace LearnThaiApplication
                 FullSubmitNewWord(newWord);
             }
 
+            AddNewChapters();
+
             list.Add((T)newWord);
 
             SaveFiles<T>(list);
+        }
+
+        /// <summary>
+        /// Submits all of the properties from the full form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SubmitNewWordFull(object sender, RoutedEventArgs e)
+        {
+            HowToSubmit(false);
         }
 
         /// <summary>
@@ -1301,6 +1570,39 @@ namespace LearnThaiApplication
         private void SubmitNewWordQuick(object sender, RoutedEventArgs e)
         {
             HowToSubmit(true);
+        }
+
+        private void SubmitStyleChanger(bool isNew)
+        {
+            if (isNew)
+            {
+                rb_SubmitNew.IsChecked = true;
+            }
+            else
+            {
+                rb_UpdateWord.IsChecked = true;
+            }
+        }
+
+        /// <summary>
+        /// Checks if supposed to submit a new or update a old word.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SubmitStyleChecked(object sender, RoutedEventArgs e)
+        {
+            if ((string)(sender as RadioButton)?.Content == "Submit new")
+            {
+                SubmitionIsNew = true;
+            }
+            else if ((string)(sender as RadioButton)?.Content == "Update")
+            {
+                SubmitionIsNew = false;
+            }
+            else
+            {
+                MessageBox.Show("Error: No submit style selected");
+            }
         }
 
         /// <summary>
@@ -1357,78 +1659,13 @@ namespace LearnThaiApplication
 
             lib_LoadedWords.ItemsSource = null;
 
-            if (WhatTypeToUse == typeof(Word))
+            if (SelectedChapter == "All")
             {
                 LoadObjectsToLib<Word>(Words);
             }
-        }
-
-        /// <summary>
-        /// Select a object to delete and then save the remaining objects to file.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Delete_Click(object sender, RoutedEventArgs e)
-        {
-            if (MessageBox.Show("Are you sure you want to delete the selected word?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            else
             {
-                DeleteSelected<Word>(Words);
-
-                SaveAll();
-            }
-            UpdateListBox();
-        }
-
-        /// <summary>
-        /// Creates a non-continious form window.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_FormWindow(object sender, RoutedEventArgs e)
-        {
-            IsContinious = false;
-            CreateFormWindow(IsContinious);
-        }
-
-        /// <summary>
-        /// Moves a object up or down the list.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_ListMoveDown_Click(object sender, RoutedEventArgs e)
-        {
-            int newIndex = lib_LoadedWords.SelectedIndex + 1;
-
-            SelectWhatToMove(newIndex);
-        }
-
-        /// <summary>
-        /// Moves a object up or down the list.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_ListMoveUp_Click(object sender, RoutedEventArgs e)
-        {
-            int newIndex = lib_LoadedWords.SelectedIndex - 1;
-
-            SelectWhatToMove(newIndex);
-        }
-
-        /// <summary>
-        /// Changes the textboxes for the content management to the selected object from the listbox.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Lib_LoadedWords_SelectionChanged(Object sender, SelectionChangedEventArgs e)
-        {
-            if (lib_LoadedWords.SelectedIndex != -1)
-            {
-                CurrentListBoxIndex = lib_LoadedWords.SelectedIndex;
-            }
-
-            if (WhatTypeToUse == typeof(Word))
-            {
-                SelectionChanged<Word>(lib_LoadedWords.SelectedIndex);
+                LoadObjectsToLib<Word>(DisplayList);
             }
         }
 
@@ -1444,60 +1681,6 @@ namespace LearnThaiApplication
 
             ClearFields();
             UpdateListBox();
-        }
-
-        /// <summary>
-        /// Submits a full word and then continiues to the next word, updating the full form textboxes.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void SubmitAndContinue(object sender, RoutedEventArgs e)
-        {
-            HowToSubmit(false);
-
-            if (lib_LoadedWords.SelectedIndex != -1 && lib_LoadedWords.Items.Count != 0)
-            {
-                CurrentListBoxIndex = lib_LoadedWords.SelectedIndex;
-            }
-            CurrentListBoxIndex++;
-            lib_LoadedWords.SelectedIndex = CurrentListBoxIndex;
-
-            SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
-
-            FillFormTextBoxes();
-
-            UpdateListBox();
-        }
-
-        /// <summary>
-        /// Submits all of the properties from the full form.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void SubmitNewWordFull(object sender, RoutedEventArgs e)
-        {
-            HowToSubmit(false);
-        }
-
-        /// <summary>
-        /// Checks if supposed to submit a new or update a old word.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void SubmitStyleChecked(object sender, RoutedEventArgs e)
-        {
-            if ((string)(sender as RadioButton)?.Content == "Submit new")
-            {
-                SubmitionIsNew = true;
-            }
-            else if ((string)(sender as RadioButton)?.Content == "Update")
-            {
-                SubmitionIsNew = false;
-            }
-            else
-            {
-                MessageBox.Show("Error: No submit style selected");
-            }
         }
 
         #endregion Submit
@@ -1685,6 +1868,45 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
+        /// Plays the sound from the soundpath of the current word
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PlaySound(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
+                foreach (string soundpath in soundPaths)
+                {
+                    var reader = new Mp3FileReader(soundpath);
+                    var waveOut = new WaveOut();
+                    waveOut.Init(reader);
+                    waveOut.Play();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
+            }
+        }
+
+        /// <summary>
+        /// Removes the soundpaths of all words.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RemoveSoundPath(object sender, RoutedEventArgs e)
+        {
+            foreach (Word word in Words)
+            {
+                word.SoundPath.Clear();
+            }
+
+            SaveAll();
+        }
+
+        /// <summary>
         /// Sets the soundpath to the current word
         /// </summary>
         /// <param name="word">What word to add sound path too.</param>
@@ -1790,12 +2012,36 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
+        /// Starts looking for the soundpaths in the html files.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SoundDownloader(object sender, RoutedEventArgs e)
+        {
+            DownloadSoundProcess<Word>(Words, WebFilePath + "Words.html");
+            DownloadSoundProcess<Word>(Words, WebFilePath + "Words1.html");
+            DownloadSoundProcess<Word>(Words, WebFilePath + "Words2.html");
+            DownloadSoundProcess<Word>(Words, WebFilePath + "Words3.html");
+
+            DownloadSoundProcess<Word>(Words, WebFilePath + "Consonants.html");
+            DownloadSoundProcess<Word>(Words, WebFilePath + "Consonants1.html");
+
+            DownloadSoundProcess<Word>(Words, WebFilePath + "Vowel.html");
+            DownloadSoundProcess<Word>(Words, WebFilePath + "Vowel1.html");
+
+            DownloadSoundProcess<Word>(Words, WebFilePath + "Numbers.html");
+            DownloadSoundProcess<Word>(Words, WebFilePath + "Numbers1.html");
+
+            CheckAllSoundStatuses(sender, e);
+        }
+
+        /// <summary>
         /// Checks if the current word has a sound, and if not turns the button red.
         /// </summary>
         private void SpeakerStatus()
         {
             List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
-            TabIndex = MainWindow_tabController.SelectedIndex;
+
             if (soundPaths.Count == 0)
             {
                 if (TabIndex == 0)
@@ -1855,77 +2101,11 @@ namespace LearnThaiApplication
             return false;
         }
 
-        /// <summary>
-        /// Plays the sound from the soundpath of the current word
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void PlaySound(object sender, RoutedEventArgs e)
-        {
-            int TabIndex = MainWindow_tabController.SelectedIndex;
-            //PreTextChanger(0);
-
-            try
-            {
-                List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
-                foreach (string soundpath in soundPaths)
-                {
-                    var reader = new Mp3FileReader(soundpath);
-                    var waveOut = new WaveOut();
-                    waveOut.Init(reader);
-                    waveOut.Play();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error:" + ex);
-            }
-        }
-
-        /// <summary>
-        /// Removes the soundpaths of all words.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void RemoveSoundPath(object sender, RoutedEventArgs e)
-        {
-            foreach (Word word in Words)
-            {
-                word.SoundPath.Clear();
-            }
-
-            SaveAll();
-        }
-
-        /// <summary>
-        /// Starts looking for the soundpaths in the html files.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void SoundDownloader(object sender, RoutedEventArgs e)
-        {
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Words.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Words1.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Words2.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Words3.html");
-
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Consonants.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Consonants1.html");
-
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Vowel.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Vowel1.html");
-
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Numbers.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Numbers1.html");
-
-            CheckAllSoundStatuses(sender, e);
-        }
-
         #endregion Sound
 
-        private void SymbolChapterChanged(object sender, SelectionChangedEventArgs e)
+        private void SaveSettings_Click(object sender, RoutedEventArgs e)
         {
-            SelectedChapter = (string)((ComboBoxItem)((ComboBox)sender).SelectedItem).Content;
+            SaveSetting();
         }
     }
 }

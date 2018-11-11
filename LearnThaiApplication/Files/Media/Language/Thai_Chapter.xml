@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfChapter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Chapter>
+    <ChapterName>All</ChapterName>
+  </Chapter>
+  <Chapter>
     <ChapterName>Key to understanding Thai</ChapterName>
   </Chapter>
   <Chapter>
-    <ChapterName> Thai alphabet</ChapterName>
+    <ChapterName>Thai alphabet</ChapterName>
   </Chapter>
   <Chapter>
-    <ChapterName> Closing sounds of consonants</ChapterName>
+    <ChapterName>Closing sounds of consonants</ChapterName>
   </Chapter>
   <Chapter>
-    <ChapterName> Thai vowels</ChapterName>
+    <ChapterName>Thai vowels</ChapterName>
   </Chapter>
   <Chapter>
-    <ChapterName> Tonal Language</ChapterName>
+    <ChapterName>Tonal Language</ChapterName>
   </Chapter>
   <Chapter>
     <ChapterName>Special pronounciation</ChapterName>
@@ -50,5 +53,17 @@
   </Chapter>
   <Chapter>
     <ChapterName>The body</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Consonants</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Closing sounds of consonantss</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Vowels</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Numbers</ChapterName>
   </Chapter>
 </ArrayOfChapter>

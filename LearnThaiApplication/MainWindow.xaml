@@ -19,7 +19,7 @@
                     <Button x:Name="btn_Next_Word_Page1" Content="Next" HorizontalAlignment="Left" Height="24" Margin="412,183,0,0" VerticalAlignment="Top" Width="35" Click="NextWord" />
                     <Button x:Name="btn_Prev_Word_Page1" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="278,183,0,0" VerticalAlignment="Top" Width="35" Click="PrevWord" />
                     <TextBlock x:Name="txb_Status_Page1" HorizontalAlignment="Left" Margin="278,222,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top" Height="35" Width="245" FontSize="24" Foreground="#FFE6F8FF" />
-                    <ComboBox x:Name="cb_Chapter_Page1" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="172" SelectedValuePath="Content" SelectionChanged="ComboBox_SelectionChanged">
+                    <ComboBox x:Name="cb_Chapter_Page1" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="172" SelectedValuePath="Content" SelectionChanged="ChapterChanged">
                         <ComboBoxItem Content="Key to understanding Thai" />
                         <ComboBoxItem Content="Thai alphabet" />
                         <ComboBoxItem Content="Closing sounds of consonants" />
@@ -41,9 +41,9 @@
                     <Label x:Name="lbl_Chapter_Page1" Content="Chapter:" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="72" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_ChapterCount_Page1" Content="Words in chapter: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,116,0,0" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_TrainWhat_Page2_Copy" Content="What to train" HorizontalAlignment="Left" Margin="15,163,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainScript_Page1" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,194,0,0" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainEngWords_Page1" Content="English meanings" HorizontalAlignment="Left" Margin="15,214,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainFonet_Page1" Content="Pronounciations" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainScript_Page1" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,194,0,0" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page1" Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainEngWords_Page1" Content="English meanings" HorizontalAlignment="Left" Margin="15,214,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page1" Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainFonet_Page1" Content="Pronounciations" HorizontalAlignment="Left" Margin="15,234,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page1" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_ChapterCount_Page1_Copy" Content="Current word:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,142,0,0" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_Points" Content="Points: 0" HorizontalAlignment="Left" Margin="11,27,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                     <Button x:Name="btn_Speaker_Page1" Content="" Margin="463,0,0,272" Width="42" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="PlaySound" />
@@ -67,15 +67,15 @@
                     <TextBlock x:Name="txb_ThaiScript_Page2" HorizontalAlignment="Left" Margin="278,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="#FFE6F8FF"><Run Text="TextBlock" /></TextBlock>
                     <TextBlock x:Name="txb_Status_Page2" HorizontalAlignment="Left" Margin="289,205,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="245" FontSize="24" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_TrainWhat_Page2" Content="What to train" HorizontalAlignment="Left" Margin="11,220,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainScript_Page2" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,251,0,0" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainEngWords_Page2" Content="English meanings" HorizontalAlignment="Left" Margin="11,271,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainFonet_Page2" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,291,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainScript_Page2" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,251,0,0" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page2" Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainEngWords_Page2" Content="English meanings" HorizontalAlignment="Left" Margin="11,271,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page2" Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainFonet_Page2" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,291,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page2" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_Points_Page2" Content="Points: 0" HorizontalAlignment="Left" Margin="11,19,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                     <ScrollViewer HorizontalAlignment="Left" Height="163" Margin="253,278,0,0" VerticalAlignment="Top" Width="380">
                         <TextBlock x:Name="txb_Description_page2" TextWrapping="Wrap" Text="TextBlock" Foreground="#FFE6F8FF" FontSize="24" />
                     </ScrollViewer>
                     <Button x:Name="btn_Speaker_Page2" Content="" Margin="463,0,0,294" Width="42" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="PlaySound" />
-                    <ComboBox x:Name="cb_SymbolChapters" HorizontalAlignment="Left" Margin="11,78,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="SymbolChapterChanged">
+                    <ComboBox x:Name="cb_SymbolChapters" HorizontalAlignment="Left" Margin="11,78,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ChapterChanged">
                         <ComboBoxItem Content="Consonants" />
                         <ComboBoxItem Content="Vowels" />
                         <ComboBoxItem Content="Numbers" />
@@ -119,27 +119,26 @@
                     <ScrollViewer HorizontalAlignment="Left" Height="179" Margin="310,287,0,0" VerticalAlignment="Top" Width="493">
                         <TextBlock x:Name="txb_Description_Page4" TextWrapping="Wrap" Text="TextBlock" Foreground="#FFE6F8FF" FontSize="24" />
                     </ScrollViewer>
+                    <ComboBox x:Name="cb_ManageOnChapter" HorizontalAlignment="Left" Margin="683,83,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ChapterChanged" />
                 </Grid>
             </TabItem>
             <TabItem Header="Settings">
                 <Grid Background="#FF6DA5C4" Margin="0,-1,1,0">
                     <Label Content="Current Path to language files is:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Foreground="#FFE6F8FF" />
                     <TextBlock x:Name="txb_FilePath_Settings" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="196,15,0,0" Foreground="#FFE6F8FF" />
-                    <Button x:Name="btn_ChangeSave_Settings" Content="Change Path" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="98,87,0,0" />
-                    <TextBox x:Name="txt_NewSavePath_Settings" HorizontalAlignment="Left" Height="38" Margin="98,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="367" />
-                    <Label Content="New Save Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,41,0,0" Foreground="#FFE6F8FF" />
-                    <CheckBox x:Name="ckb_LoopChapter" Content="Loop chapter" HorizontalAlignment="Left" Margin="196,171,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_LoopChapter" Content="Loop chapter" HorizontalAlignment="Left" Margin="171,71,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <Button Content="Find sound files" HorizontalAlignment="Left" Margin="135,292,0,0" VerticalAlignment="Top" Width="90" Click="SoundDownloader" RenderTransformOrigin="1.152,0.697" />
-                    <Button Content="Check sound status" HorizontalAlignment="Left" Margin="133,317,0,0" VerticalAlignment="Top" Width="112" Click="CheckAllSoundStatuses" />
+                    <Button Content="Check sound status" HorizontalAlignment="Left" Margin="135,317,0,0" VerticalAlignment="Top" Width="112" Click="CheckAllSoundStatuses" />
                     <ComboBox x:Name="cbx_SelectList" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Width="120" />
-                    <CheckBox x:Name="ckb_DescBox_Setting" Content="Description" HorizontalAlignment="Left" Margin="26,243,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
-                    <CheckBox x:Name="ckb_Randomized_Setting" Content="Randomize words" HorizontalAlignment="Left" Margin="26,223,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
-                    <Label x:Name="lbl_TrainWhat_Page2_Copy1" Content="What to train" HorizontalAlignment="Left" Margin="25,132,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainScript_Setting" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,163,0,0" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainEngWords_Setting" Content="English meanings" HorizontalAlignment="Left" Margin="25,183,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainFonet_Setting" Content="Pronounciations" HorizontalAlignment="Left" Margin="25,203,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
-                    <Button Content="Delete sound paths and sounds." HorizontalAlignment="Left" Margin="140,355,0,0" VerticalAlignment="Top" Width="231" Click="RemoveSoundPath" />
-                    <CheckBox x:Name="ckb_FullDesc" Content="Full description?" HorizontalAlignment="Left" Margin="196,203,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="FullDesc_Checked" Unchecked="FullDesc_Checked" />
+                    <CheckBox x:Name="ckb_DescBox_Setting" Content="Description" HorizontalAlignment="Left" Margin="171,128,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
+                    <CheckBox x:Name="ckb_Randomized_Setting" Content="Randomize words" HorizontalAlignment="Left" Margin="171,108,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
+                    <Label x:Name="lbl_TrainWhat_Page2_Copy1" Content="What to train" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainScript_Setting" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,71,0,0" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainEngWords_Setting" Content="English meanings" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainFonet_Setting" Content="Pronounciations" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
+                    <Button Content="Delete sound paths" HorizontalAlignment="Left" Margin="135,342,0,0" VerticalAlignment="Top" Width="112" Click="RemoveSoundPath" />
+                    <CheckBox x:Name="ckb_FullDesc" Content="Full description?" HorizontalAlignment="Left" Margin="171,91,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="FullDesc_Checked" Unchecked="FullDesc_Checked" />
+                    <Button x:Name="btn_SaveSettings" Content="Save settings" HorizontalAlignment="Left" Margin="811,447,0,0" VerticalAlignment="Top" Width="75" Click="SaveSettings_Click"/>
                 </Grid>
             </TabItem>
         </TabControl>
