@@ -3,12 +3,13 @@ using LearnThaiApplication.Classes;
 using NAudio.Wave;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
-using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -35,7 +36,7 @@ namespace LearnThaiApplication
 
             Loaded += MainWindow_Loaded;
 
-            AddNewChapters();
+            ReadWebsiteFiles();
 
             //WriteAllToFile();*/
         }
@@ -77,6 +78,7 @@ namespace LearnThaiApplication
         private string SelectedSymbolTypeToUse { get; set; }
         private string SoundFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Sound\";
         private string WebFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Website\";
+        private string DebugFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Settings\DEBUG\";
         private string WhatToDisplay { get; set; }
         private string WhatToTrain { get; set; }
 
@@ -114,17 +116,7 @@ namespace LearnThaiApplication
 
         #region TestMethods
 
-        /// <summary>
-        /// Cycles trough all lists of words and then displays the result in a messagebox
-        /// </summary>
-        /// <param name="sender">The object that initiated the method</param>
-        /// <param name="e"></param>
-        private void CheckAllSoundStatuses(object sender, RoutedEventArgs e)
-        {
-            string fullText = CheckSoundStatus<Word>(Words);
-
-            MessageBox.Show(fullText);
-        }
+        
 
         /// <summary>
         /// Testmethod writing values from the lists to file.
@@ -147,11 +139,13 @@ namespace LearnThaiApplication
             }
         }
 
-
+        /// <summary>
+        ///
+        /// </summary>
         private void AddNewChapters()
         {
             bool alreadyExists;
-            foreach(Word word in Words)
+            foreach (Word word in Words)
             {
                 Chapter newChapter = new Chapter(word.Chapter);
 
@@ -159,24 +153,20 @@ namespace LearnThaiApplication
 
                 foreach (Chapter chap in Chapters)
                 {
-                    if(chap.ChapterName == word.Chapter)
+                    if (chap.ChapterName == word.Chapter)
                     {
                         alreadyExists = true;
                         break;
                     }
-
                 }
                 if (!alreadyExists)
                 {
                     Chapters.Add(newChapter);
                 }
-                    
-                
-
-                
             }
             SaveFiles<Chapter>(Chapters);
         }
+
         #endregion TestMethods
 
         #region Main
@@ -191,7 +181,6 @@ namespace LearnThaiApplication
             CurrentFileIndex = 0;
             if (((ComboBox)sender).SelectedItem == null)
             {
-
             }
             else if (((ComboBox)sender).SelectedItem is string)
             {
@@ -201,7 +190,7 @@ namespace LearnThaiApplication
             {
                 SelectedChapter = chap.ChapterName;
             }
-            else if(((ComboBox)sender).SelectedItem is ComboBoxItem)
+            else if (((ComboBox)sender).SelectedItem is ComboBoxItem)
             {
                 SelectedChapter = (string)((ComboBoxItem)((ComboBox)sender).SelectedItem).Content;
             }
@@ -547,7 +536,6 @@ namespace LearnThaiApplication
             {
                 WhatToTrain = "ThaiScript";
                 WhatToDisplay = "EngWords";
-
             }
             else if ((string)((RadioButton)sender).Content == "Pronounciations")
             {
@@ -843,16 +831,14 @@ namespace LearnThaiApplication
             LoadFiles<Word>(Words);
         }
 
-
         /// <summary>
-        /// 
+        ///
         /// </summary>
         private void LoadSettings()
         {
             if (File.Exists(SettingsFilePath + "settings.xml"))
             {
                 settings = XmlSerialization.ReadFromXmlFile<UserSetting>(SettingsFilePath + "Settings.xml");
-                
 
                 DescriptionOn = settings.DescriptionOn;
                 LoopChapter = settings.LoopChapter;
@@ -865,7 +851,7 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         private void SaveSetting()
         {
@@ -890,8 +876,6 @@ namespace LearnThaiApplication
                 if (whatIsT != typeof(Chapter))
                 {
                     SetPropertyOfGenericObject(wordFoundInFile);
-
-                    
                 }
                 newWordToAdd.Add(wordFoundInFile);
             }
@@ -1033,7 +1017,6 @@ namespace LearnThaiApplication
         {
             if (UserSettings.Count != 0)
             {
-
             }
             else
             {
@@ -1045,54 +1028,59 @@ namespace LearnThaiApplication
                     ckb_DescBox_Page1.IsChecked = true;
                     ckb_DescBox_Page2.IsChecked = true;
                 }
-                
 
                 rb_SubmitNew.IsChecked = true;
-                if(WhatToTrain == "ThaiFonet")
+                if (WhatToTrain == "ThaiFonet")
                 {
                     rb_TrainFonet_Page1.IsChecked = true;
                     rb_TrainFonet_Page2.IsChecked = true;
                 }
-                else if(WhatToTrain == "ThaiScript")
+                else if (WhatToTrain == "ThaiScript")
                 {
                     rb_TrainScript_Page1.IsChecked = true;
                     rb_TrainScript_Page2.IsChecked = true;
                 }
-                else if(WhatToTrain == "EngWords")
+                else if (WhatToTrain == "EngWords")
                 {
                     rb_TrainEngWords_Page1.IsChecked = true;
                     rb_TrainEngWords_Page2.IsChecked = true;
                 }
-                
 
                 PopulateManageChapterCB();
 
                 cb_SymbolChapters.SelectedIndex = 0;
                 cb_Chapter_Page1.SelectedIndex = 0;
-
-                
             }
-
 
             lib_LoadedWords.DisplayMemberPath = "Name";
             cb_ManageOnChapter.DisplayMemberPath = "ChapterName";
             SetSettings();
         }
 
+        /// <summary>
+        ///
+        /// </summary>
         private void SetSettings()
         {
-            
-            
-                settings.DescriptionOn = DescriptionOn;
-                settings.RandomOn = RandomOn;
-                settings.LoopChapter = LoopChapter;
-                settings.WhatToDisplay = WhatToDisplay;
-                settings.WhatToTrain = WhatToTrain;
-                settings.SkipIntro = SkipIntro;
-                settings.DisplayAllPropertiesInDescription = DisplayAllPropertiesInDescription;
+            settings.DescriptionOn = DescriptionOn;
+            settings.RandomOn = RandomOn;
+            settings.LoopChapter = LoopChapter;
+            settings.WhatToDisplay = WhatToDisplay;
+            settings.WhatToTrain = WhatToTrain;
+            settings.SkipIntro = SkipIntro;
+            settings.DisplayAllPropertiesInDescription = DisplayAllPropertiesInDescription;
 
             SaveSetting();
-            
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SaveSettings_Click(object sender, RoutedEventArgs e)
+        {
+            SaveSetting();
         }
 
         #endregion Settings
@@ -1470,7 +1458,6 @@ namespace LearnThaiApplication
             cb_ManageOnChapter.ItemsSource = null;
 
             cb_ManageOnChapter.ItemsSource = Chapters;
-
         }
 
         /// <summary>
@@ -1721,6 +1708,17 @@ namespace LearnThaiApplication
                     {
                         return attributeValue;
                     }
+                    else if (attributeValue.Contains("wma"))
+                    {
+                        var lstring = attributeValue.Split('\'');
+                        foreach (string s in lstring)
+                        {
+                            if (s.Contains("wma"))
+                            {
+                                return s;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -1778,16 +1776,25 @@ namespace LearnThaiApplication
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
         /// <param name="url"></param>
-        private void DownloadSoundProcess<T>(List<T> list, string url) where T : new()
+        private void DownloadSoundProcess(List<Word> list, string url)
         {
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = new HtmlDocument();
-            doc.Load(url, Encoding.UTF8);
+
+            HtmlDocument doc = web.Load(url);
+
+            //HtmlDocument doc = new HtmlDocument();
+
+            //doc.Load(url, Encoding.UTF8);
 
             List<string> correctText = new List<string>();
+
             List<string> soundPathList = new List<string>();
 
-            int tableIndexMax = doc.DocumentNode.SelectNodes("//table/tbody").Count;
+            // var tableIndexTEST = webdoc.DocumentNode.SelectNodes("//table");
+
+            // var tabletest = doc.DocumentNode.SelectNodes("//table/tbody");
+
+            int tableIndexMax = doc.DocumentNode.SelectNodes("//table").Count;
 
             for (int tableIndex = 0; tableIndex < tableIndexMax; tableIndex++)
             {
@@ -1796,7 +1803,7 @@ namespace LearnThaiApplication
 
                 try
                 {
-                    HtmlNodeCollection tableRows = doc.DocumentNode.SelectNodes("//table/tbody")[tableIndex].ChildNodes;
+                    HtmlNodeCollection tableRows = doc.DocumentNode.SelectNodes("//table")[tableIndex].ChildNodes;
 
                     int tableRowIndexMax = tableRows.Count;
 
@@ -1822,12 +1829,16 @@ namespace LearnThaiApplication
                                     string value = CheckChildNode(tableData[tableDataIndex], true);
                                     if (!string.IsNullOrEmpty(value))
                                     {
+                                        if(value== "นั่ง")
+                                        {
+                                            bool test =false;
+                                        }
                                         correctText.Add(value);
                                         continue;
                                     }
                                 }
 
-                                if (tableData[tableDataIndex].InnerHtml.Contains("mp3"))
+                                if (tableData[tableDataIndex].InnerHtml.Contains("mp3") || tableData[tableDataIndex].InnerHtml.Contains("wma"))
                                 {
                                     string value = CheckChildNode(tableData[tableDataIndex], false);
 
@@ -1855,7 +1866,7 @@ namespace LearnThaiApplication
                         }
                         if (correctText.Count != 0 && soundPathList.Count != 0)
                         {
-                            bool CompareOK = SoundDownloadCompare<T>(correctText, soundPathList, list);
+                            bool CompareOK = SoundDownloadCompare(correctText, soundPathList, list);
                         }
                     }
                 }
@@ -1911,25 +1922,27 @@ namespace LearnThaiApplication
         /// </summary>
         /// <param name="word">What word to add sound path too.</param>
         /// <returns>returns a true if successfull</returns>
-        private bool SetSoundPathToWord(object word)
+        private bool SetSoundPathToWord(Word word)
         {
             string soundPath = "";
 
-            var listOfScript = (List<string>)GetValueFromValueList("ThaiScript");
-            foreach (string value in listOfScript)
+            
+            foreach (string value in word.ThaiScript)
             {
-                soundPath = SoundFilePath + value + ".mp3";
-            }
+                soundPath = SoundFilePath + value + ".wma";
 
-            var listOfPaths = (List<string>)GetValueFromValueList("SoundPath");
-            if (File.Exists(soundPath))
-            {
-                if (listOfPaths.Count == 0)
+                if (File.Exists(soundPath))
                 {
-                    SetValueOfObject(soundPath, "SoundPath", word);
-                    return false;
+                    if (word.SoundPath.Count == 0)
+                    {
+                        word.SoundPath.Add(soundPath);
+                        return false;
+                    }
                 }
             }
+
+            
+            
 
             return true;
         }
@@ -1942,7 +1955,7 @@ namespace LearnThaiApplication
         /// <param name="soundID">the list of soundpaths</param>
         /// <param name="list">list of words.</param>
         /// <returns>returns true if succesfull</returns>
-        private bool SoundDownloadCompare<T>(List<string> correctText, List<string> soundID, List<T> list) where T : new()
+        private bool SoundDownloadCompare(List<string> correctText, List<string> soundID, List<Word> list)
         {
             if (soundID.Count != correctText.Count)
             {
@@ -1959,7 +1972,7 @@ namespace LearnThaiApplication
                         {
                             continue;
                         }
-                        foreach (T word in list)
+                        foreach (Word word in list)
                         {
                             SetPropertyOfGenericObject(word);
 
@@ -1991,7 +2004,8 @@ namespace LearnThaiApplication
         /// <returns></returns>
         private bool SoundDownloader(string correctText, string soundDownloadPath)
         {
-            string savePath = SoundFilePath + correctText + ".mp3";
+            string savePath = SoundFilePath + correctText + ".wma";
+            string FullSoundPath = "http://www.thai-language.com" + soundDownloadPath;
 
             using (var client = new WebClient())
             {
@@ -1999,12 +2013,12 @@ namespace LearnThaiApplication
                 {
                     try
                     {
-                        client.DownloadFile(soundDownloadPath, savePath);
+                        client.DownloadFile(FullSoundPath, savePath);
                         return true;
                     }
                     catch (WebException wex)
                     {
-                        MessageBox.Show("Error: " + wex);
+                        MessageBox.Show("Error: " + wex.Message);
                     }
                 }
             }
@@ -2018,21 +2032,43 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void SoundDownloader(object sender, RoutedEventArgs e)
         {
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Words.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Words1.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Words2.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Words3.html");
+            BackgroundWorker worker = new BackgroundWorker();
+            worker.WorkerReportsProgress = true;
+            worker.DoWork += worker_DoWork;
+            worker.ProgressChanged += worker_ProgressChanged;
 
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Consonants.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Consonants1.html");
+            worker.RunWorkerAsync();
+            //List<string> websiteUrls = new List<string>();
+            //string line;
+            //StreamReader file = new StreamReader(WebFilePath + "Websites.txt");
+            //while ((line = file.ReadLine()) != null)
+            //{
+            //    websiteUrls.Add(line);
+            //}
+            //file.Close();
 
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Vowel.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Vowel1.html");
+            //foreach (string s in websiteUrls)
+            //{
 
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Numbers.html");
-            DownloadSoundProcess<Word>(Words, WebFilePath + "Numbers1.html");
 
-            CheckAllSoundStatuses(sender, e);
+            //DownloadSoundProcess(Words, s);
+            //}
+            //DownloadSoundProcess<Word>(Words, WebFilePath + "Consonants.html");
+
+            //DownloadSoundProcess<Word>(Words, WebFilePath + "Words.html");
+            //DownloadSoundProcess<Word>(Words, WebFilePath + "Words1.html");
+            //DownloadSoundProcess<Word>(Words, WebFilePath + "Words2.html");
+            //DownloadSoundProcess<Word>(Words, WebFilePath + "Words3.html");
+
+            //DownloadSoundProcess<Word>(Words, WebFilePath + "Consonants1.html");
+
+            //DownloadSoundProcess<Word>(Words, WebFilePath + "Vowel.html");
+            //DownloadSoundProcess<Word>(Words, WebFilePath + "Vowel1.html");
+
+            //DownloadSoundProcess<Word>(Words, WebFilePath + "Numbers.html");
+            //DownloadSoundProcess<Word>(Words, WebFilePath + "Numbers1.html");
+
+            CheckAllSoundStatuses();
         }
 
         /// <summary>
@@ -2101,11 +2137,110 @@ namespace LearnThaiApplication
             return false;
         }
 
+
+
+        /// <summary>
+        /// Cycles trough all lists of words and then displays the result in a messagebox
+        /// </summary>
+        /// <param name="sender">The object that initiated the method</param>
+        /// <param name="e"></param>
+        private void CheckAllSoundStatuses()
+        {
+            string fullText = CheckSoundStatus<Word>(Words);
+
+            MessageBox.Show(fullText);
+        }
+
         #endregion Sound
 
-        private void SaveSettings_Click(object sender, RoutedEventArgs e)
+        private void ReadWebsiteFiles()
         {
-            SaveSetting();
+            List<string> websiteUrls = new List<string>();
+            string line;
+            StreamReader file = new StreamReader(WebFilePath + "Websites.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                websiteUrls.Add(line);
+            }
+            file.Close();
+
+            foreach (string s in websiteUrls)
+            {
+                Console.WriteLine(s);
+            }
+        }
+
+        private void SetSoundPath_clicked(object sender, RoutedEventArgs e)
+        {
+            foreach (Word word in Words)
+            {
+                SetSoundPathToWord(word);
+            }
+        }
+
+        private void PrintAllWordsToFile(object sender, RoutedEventArgs e)
+        {
+            string fullText = "";
+
+            
+            foreach (Word word in Words)
+            {
+                SetPropertyOfGenericObject(word);
+
+                if(word.SoundPath.Count == 0)
+                {
+                    List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
+
+                    foreach (String s in script)
+                    {
+                        fullText += s + "\r\n";
+
+
+
+                    }
+                }
+                
+            }
+
+            File.WriteAllText(DebugFilePath + "File.txt", fullText);
+        }
+
+
+        
+
+        void worker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            List<string> websiteUrls = new List<string>();
+            string line;
+            StreamReader file = new StreamReader(WebFilePath + "Websites.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                websiteUrls.Add(line);
+            }
+
+            file.Close();
+            double length = websiteUrls.Count;
+            double current = 0;
+            foreach (string s in websiteUrls)
+            {
+                DownloadSoundProcess(Words, s);
+                current++;
+                double done = (current / length)*100;
+                (sender as BackgroundWorker).ReportProgress((int)done);
+                
+            }
+
+            CheckAllSoundStatuses();
+        }
+
+        void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            pbStatus.Value = e.ProgressPercentage;
+        }
+
+        private void CheckSoundStatus_Clicked(object sender, RoutedEventArgs e)
+        {
+            CheckAllSoundStatuses();
         }
     }
 }

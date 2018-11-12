@@ -12,7 +12,7 @@
       <string>Sit</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นั่ง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นั่ง.wma</string>
     </SoundPath>
     <EngDesc>The a (ั) is pronounced like in bar, car or cut</EngDesc>
     <Tone>
@@ -32,7 +32,7 @@
       <string>Arm</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แขน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แขน.wma</string>
     </SoundPath>
     <EngDesc>The æ (แ) is pronounced like (british) bag, care or Rabbit</EngDesc>
     <Tone>
@@ -52,7 +52,7 @@
       <string>Heart</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หัวใจ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หัวใจ.wma</string>
     </SoundPath>
     <EngDesc>The ai (ใ) is pronounced like in die, eye or Thai</EngDesc>
     <Tone>
@@ -72,7 +72,7 @@
       <string>Black</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีดำ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีดำ.wma</string>
     </SoundPath>
     <EngDesc>The am (ำ) is pronounced like in (british) rum</EngDesc>
     <Tone>
@@ -92,7 +92,7 @@
       <string>Duck</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เป็ด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เป็ด.wma</string>
     </SoundPath>
     <EngDesc>The e is (เ) pronounced like in get, jet, let</EngDesc>
     <Tone>
@@ -112,7 +112,7 @@
       <string>Beer</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เบียร์.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เบียร์.wma</string>
     </SoundPath>
     <EngDesc>The ea (เีย) is pronounced like in beer, dear, gear.ร์ is not pronounced following the rules to closing sounds</EngDesc>
     <Tone>
@@ -132,7 +132,7 @@
       <string>Hit</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตี.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตี.wma</string>
     </SoundPath>
     <EngDesc>The ee ี is pronounced like in bee, sea</EngDesc>
     <Tone>
@@ -153,7 +153,7 @@
       <string>Music</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เพลง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เพลง.wma</string>
     </SoundPath>
     <EngDesc>The ee (เ) is pronounced like in bread, dead</EngDesc>
     <Tone>
@@ -173,7 +173,7 @@
       <string>Crow</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กา.wma</string>
     </SoundPath>
     <EngDesc>The g (ก) is pronounced like in get, go, grand</EngDesc>
     <Tone />
@@ -191,7 +191,7 @@
       <string>Swan</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หงส์.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หงส์.wma</string>
     </SoundPath>
     <EngDesc>The h (ห) is pronounced like in hand, hard</EngDesc>
     <Tone />
@@ -209,7 +209,7 @@
       <string>Tounge</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลิ้น.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลิ้น.wma</string>
     </SoundPath>
     <EngDesc>the i (ิ) is pronounced like in bit, Italy, sit</EngDesc>
     <Tone />
@@ -227,7 +227,7 @@
       <string>Table</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โต๊ะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โต๊ะ.wma</string>
     </SoundPath>
     <EngDesc>The o (โ) is pronounced like in hope, toe, tone</EngDesc>
     <Tone />
@@ -245,7 +245,7 @@
       <string>Walk</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เดิน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เดิน.wma</string>
     </SoundPath>
     <EngDesc>The eer (เิ) is pronounced like in Bird, Burn, term, girl</EngDesc>
     <Tone />
@@ -263,7 +263,7 @@
       <string>Screen</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จอ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จอ.wma</string>
     </SoundPath>
     <EngDesc>The aaw (อ) is pronounced like in aunt, ball, dog</EngDesc>
     <Tone />
@@ -281,7 +281,7 @@
       <string>jail</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คุก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คุก.wma</string>
     </SoundPath>
     <EngDesc>The oo (ุ) is pronounced like in butcher, put</EngDesc>
     <Tone />
@@ -299,7 +299,7 @@
       <string>Throw</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โยน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โยน.wma</string>
     </SoundPath>
     <EngDesc>The y is pronounced like in year, yes</EngDesc>
     <Tone />
@@ -317,7 +317,7 @@
       <string>Ticket</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตั๋ว.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตั๋ว.wma</string>
     </SoundPath>
     <EngDesc>The uaa (ัว) is pronounced like in tour, poor</EngDesc>
     <Tone />
@@ -335,7 +335,7 @@
       <string>Hand</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มือ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มือ.wma</string>
     </SoundPath>
     <EngDesc>Simply has to be practiced with sound</EngDesc>
     <Tone />
@@ -353,7 +353,7 @@
       <string>City</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เมือง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เมือง.wma</string>
     </SoundPath>
     <EngDesc>Simply has to be practised with sound</EngDesc>
     <Tone>
@@ -389,7 +389,7 @@
       <string>Normal tone class</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\อ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อ.wma</string>
     </SoundPath>
     <EngDesc>These are the consonants with the normal tone class</EngDesc>
     <Tone>
@@ -428,9 +428,7 @@
     <EngWords>
       <string>High tone class</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ห.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>These are the consonants with the High tone class</EngDesc>
     <Tone>
       <string />
@@ -495,7 +493,7 @@
       <string>Low tone class</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\Sounds\mp3\ฮ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธ.wma</string>
     </SoundPath>
     <EngDesc>These are the consonants with the Low tone class</EngDesc>
     <Tone>
@@ -518,7 +516,7 @@
       <string>Chicken</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไก่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไก่.wma</string>
     </SoundPath>
     <EngDesc>[slang] women</EngDesc>
     <Tone>
@@ -540,7 +538,7 @@
       <string>Egg</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไข่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไข่.wma</string>
     </SoundPath>
     <EngDesc>[sexual or colloquial slang] a man's testicle (ball)</EngDesc>
     <Tone>
@@ -563,7 +561,7 @@
       <string>Bottle</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ขวด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ขวด.wma</string>
     </SoundPath>
     <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ข. [numerical classifier for bottles and bottled substances]</EngDesc>
     <Tone>
@@ -586,7 +584,7 @@
       <string>Water buffalo</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ควาย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ควาย.wma</string>
     </SoundPath>
     <EngDesc>[slang] bufoon; ignoramus, Moron</EngDesc>
     <Tone>
@@ -613,7 +611,7 @@
       <string>human being</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คน.wma</string>
     </SoundPath>
     <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ค. [numerical classifier for persons/occupations], to stir; scramble; mix</EngDesc>
     <Tone>
@@ -636,7 +634,7 @@
       <string>Bell</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ระฆัง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ระฆัง.wma</string>
     </SoundPath>
     <EngDesc>a large bell</EngDesc>
     <Tone>
@@ -660,7 +658,7 @@
       <string>Snake</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\งู.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\งู.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -684,7 +682,7 @@
       <string>dish</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จาน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จาน.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for dishes (including satellite)]</EngDesc>
     <Tone>
@@ -706,7 +704,7 @@
       <string>Cymbals</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฉิ่ง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฉิ่ง.wma</string>
     </SoundPath>
     <EngDesc>[a type of] small cymbal used in East and Southeast Asian music</EngDesc>
     <Tone>
@@ -729,7 +727,7 @@
       <string>Elephant</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ช้าง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ช้าง.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for royally enrolled elephants]</EngDesc>
     <Tone>
@@ -752,7 +750,7 @@
       <string>motorcycle chain</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โซ่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โซ่.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -775,7 +773,7 @@
       <string>Thai tree</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เฌอ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เฌอ.wma</string>
     </SoundPath>
     <EngDesc>[a type of] small tree or bush</EngDesc>
     <Tone>
@@ -799,7 +797,7 @@
       <string>Women</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หญิง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หญิง.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -822,7 +820,7 @@
       <string>headdress</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชฎา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชฎา.wma</string>
     </SoundPath>
     <EngDesc>headress used in Thai classical dancing and theater</EngDesc>
     <Tone>
@@ -847,7 +845,7 @@
       <string>javelin</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปฏัก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปฏัก.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -880,7 +878,7 @@
       <string>basis;</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฐาน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฐาน.wma</string>
     </SoundPath>
     <EngDesc>[linguistics] origin of alphabet/Words, [adv] on the basis of</EngDesc>
     <Tone>
@@ -903,7 +901,7 @@
       <string>The wife of a giant</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มณโฑ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มณโฑ.wma</string>
     </SoundPath>
     <EngDesc>[a character in the Ramanyana epic,] the wife of a giant</EngDesc>
     <Tone>
@@ -927,7 +925,7 @@
       <string>Elder</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผู้เฒ่า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผู้เฒ่า.wma</string>
     </SoundPath>
     <EngDesc> elder, respected old and wise person</EngDesc>
     <Tone>
@@ -950,7 +948,7 @@
       <string>Novice monk</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เณร.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เณร.wma</string>
     </SoundPath>
     <EngDesc> [typically] below the age of twenty; title used to refer to a novice</EngDesc>
     <Tone>
@@ -972,7 +970,7 @@
       <string>Child</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เด็ก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เด็ก.wma</string>
     </SoundPath>
     <EngDesc>[fig.] a young person working in a subservient occupation</EngDesc>
     <Tone>
@@ -996,7 +994,7 @@
       <string>Turtle</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เต่า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เต่า.wma</string>
     </SoundPath>
     <EngDesc>[adv] slowly; at a leisurely pace</EngDesc>
     <Tone>
@@ -1021,7 +1019,7 @@
       <string>tube-like sack</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ถุง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ถุง.wma</string>
     </SoundPath>
     <EngDesc> [numerical classifier for condoms, cysts, bags, pouches]</EngDesc>
     <Tone>
@@ -1047,7 +1045,7 @@
       <string>soldier</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทหาร.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทหาร.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -1071,7 +1069,7 @@
       <string>Flag</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธง.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -1098,7 +1096,7 @@
       <string>petite little thing</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนู.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนู.wma</string>
     </SoundPath>
     <EngDesc>[fairly impolite 2nd person pronoun used to call over a waitress in a restaurant and a girl or woman working in a nightclub, café or escort business] you, [1st person pronoun that a little girl, daughter or grown-up woman uses to refer to herself in a cute way, usually when speaking to her parents or elder relatives] I, myself, [2nd person pronoun used for calling a little girl or boy (usually หนู + the child's nickname) and implying the speaker's tender feeling towards the child] you, little boy, little girl, [1st person pronoun that a female servant and country girl or woman uses to to refer to herself when speaking to anyone] I, myself
  
@@ -1123,7 +1121,7 @@
       <string>Leaf</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ใบไม้.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ใบไม้.wma</string>
     </SoundPath>
     <EngDesc>leaf of a tree</EngDesc>
     <Tone>
@@ -1146,7 +1144,7 @@
       <string>Fish</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปลา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปลา.wma</string>
     </SoundPath>
     <EngDesc>[n, prop.n, colloq] year or zodiac sign of the Fish</EngDesc>
     <Tone>
@@ -1168,7 +1166,7 @@
       <string>Bee</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผึ้ง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผึ้ง.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -1191,7 +1189,7 @@
       <string>wall</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฝา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฝา.wma</string>
     </SoundPath>
     <EngDesc>lid or cover of a pot or bowl; cap, interior wall</EngDesc>
     <Tone>
@@ -1216,7 +1214,7 @@
       <string>near</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พาน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พาน.wma</string>
     </SoundPath>
     <EngDesc> tray on which items are offered to a Buddhist monk,  to foul by entangling; to lasso; to scrape up against; to interact with</EngDesc>
     <Tone>
@@ -1244,7 +1242,7 @@
       <string>rip off</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฟัน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฟัน.wma</string>
     </SoundPath>
     <EngDesc> to cut with downward blow, as with an axe or other sharp object, to struggle against or contend with, to work at doing something in order to get something accomplished or fix the situation, to overcharge; scam; rip off</EngDesc>
     <Tone>
@@ -1267,7 +1265,7 @@
       <string>Sailboat</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สำเภา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สำเภา.wma</string>
     </SoundPath>
     <EngDesc> [certain type of] small sailing vessel used in Asia and Southeast Asia; junk; argosy</EngDesc>
     <Tone>
@@ -1291,7 +1289,7 @@
       <string>Horse</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ม้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ม้า.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -1326,7 +1324,7 @@
       <string>vast</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยักษ์.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยักษ์.wma</string>
     </SoundPath>
     <EngDesc>[a character from the Ramayana epic, a] giant [or] demon</EngDesc>
     <Tone>
@@ -1352,7 +1350,7 @@
       <string>vessel</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เรือ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เรือ.wma</string>
     </SoundPath>
     <EngDesc>[chess] the rook</EngDesc>
     <Tone>
@@ -1374,7 +1372,7 @@
       <string>Monkey</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลิง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลิง.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -1396,9 +1394,7 @@
     <EngWords>
       <string>Ring</string>
     </EngWords>
-    <SoundPath>
-      <string />
-    </SoundPath>
+    <SoundPath />
     <EngDesc>a ring (worn on the finger), a circular metal washer</EngDesc>
     <Tone>
       <string>Rising</string>
@@ -1421,7 +1417,7 @@
       <string>open-air gazebo</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ศาลา.wma</string>
     </SoundPath>
     <EngDesc>meeting hall (in a temple)</EngDesc>
     <Tone>
@@ -1445,7 +1441,7 @@
       <string>Hermit</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฤๅษี.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฤๅษี.wma</string>
     </SoundPath>
     <EngDesc>ascetic; meditating recluse or hermit</EngDesc>
     <Tone>
@@ -1469,7 +1465,7 @@
       <string>Tiger</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เสือ.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -1494,7 +1490,7 @@
       <string>trunk</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หีบ.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -1517,7 +1513,7 @@
       <string>the male kite</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จุฬา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จุฬา.wma</string>
     </SoundPath>
     <EngDesc>excellent; ravishing; beautiful; delicate
 </EngDesc>
@@ -1546,7 +1542,7 @@
       <string>sink</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อ่าง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อ่าง.wma</string>
     </SoundPath>
     <EngDesc>[of speech] [is] stuttering; stammering, [numerical classifier for sinks, basins, bathtubs],  [sound of a] bullfrog</EngDesc>
     <Tone>
@@ -1568,9 +1564,7 @@
     <EngWords>
       <string>Owl</string>
     </EngWords>
-    <SoundPath>
-      <string />
-    </SoundPath>
+    <SoundPath />
     <EngDesc>oriental barn owl</EngDesc>
     <Tone>
       <string>High</string>
@@ -1593,9 +1587,7 @@
     <EngWords>
       <string>Stop sounds</string>
     </EngWords>
-    <SoundPath>
-      <string />
-    </SoundPath>
+    <SoundPath />
     <EngDesc>There are 3 closing sounds called stop sounds</EngDesc>
     <Tone>
       <string />
@@ -1626,7 +1618,7 @@
       <string>in person</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กับ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กับ.wma</string>
     </SoundPath>
     <EngDesc>ั is pronounced as an short a. </EngDesc>
     <Tone>
@@ -1649,7 +1641,7 @@
       <string>to wound</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บาด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บาด.wma</string>
     </SoundPath>
     <EngDesc>-า is pronounced as a long a.</EngDesc>
     <Tone>
@@ -1679,7 +1671,7 @@
       <string>hunt down</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แกะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แกะ.wma</string>
     </SoundPath>
     <EngDesc>แ-ะ is pronounced like a short æ.</EngDesc>
     <Tone>
@@ -1701,7 +1693,7 @@
       <string>red</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แดง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แดง.wma</string>
     </SoundPath>
     <EngDesc>Pronounced as a long æ. </EngDesc>
     <Tone>
@@ -1723,7 +1715,7 @@
       <string>kick</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เตะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เตะ.wma</string>
     </SoundPath>
     <EngDesc>เ-ะ is pronounced like a short e.</EngDesc>
     <Tone>
@@ -1746,7 +1738,7 @@
       <string>Music</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เพลง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เพลง.wma</string>
     </SoundPath>
     <EngDesc>เ- is pronounced as a long e. [numerical classifier for songs]</EngDesc>
     <Tone>
@@ -1774,7 +1766,7 @@
       <string>to wonder</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คิด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คิด.wma</string>
     </SoundPath>
     <EngDesc>ิ is pronounced as a short i.  to think (that...),  to charge (a price)</EngDesc>
     <Tone>
@@ -1799,7 +1791,7 @@
       <string />
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อีก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อีก.wma</string>
     </SoundPath>
     <EngDesc>pronounced like a long i or e. after a time; still, another; additional; more, against; next to, any more</EngDesc>
     <Tone>
@@ -1826,7 +1818,7 @@
       <string>altar.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โต๊ะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โต๊ะ.wma</string>
     </SoundPath>
     <EngDesc>โ-ะ is pronounced as a shot o.</EngDesc>
     <Tone>
@@ -1848,7 +1840,7 @@
       <string>Luck</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โชค.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โชค.wma</string>
     </SoundPath>
     <EngDesc>โ- is pronounced as a long o.</EngDesc>
     <Tone>
@@ -1877,7 +1869,7 @@
       <string>perch</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เกาะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เกาะ.wma</string>
     </SoundPath>
     <EngDesc>เ-าะ is pronounced as a quick aw.</EngDesc>
     <Tone>
@@ -1903,7 +1895,7 @@
       <string>lie down.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นอน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นอน.wma</string>
     </SoundPath>
     <EngDesc>อ is pronounced as a longer aaw, [is] prone</EngDesc>
     <Tone>
@@ -1929,7 +1921,7 @@
       <string>abundantly</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เยอะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เยอะ.wma</string>
     </SoundPath>
     <EngDesc>เ-อะ is pronounced as ø or ö. </EngDesc>
     <Tone>
@@ -1959,7 +1951,7 @@
       <string>unintentional</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เผลอ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เผลอ.wma</string>
     </SoundPath>
     <EngDesc>เ-อ is pronounced as a long ö, o forget; make a mistake</EngDesc>
     <Tone>
@@ -1984,7 +1976,7 @@
       <string>delicate</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จุฬา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จุฬา.wma</string>
     </SoundPath>
     <EngDesc>ุ is pronounced as a low oo.</EngDesc>
     <Tone>
@@ -2007,7 +1999,7 @@
       <string>offspring;</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลูก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลูก.wma</string>
     </SoundPath>
     <EngDesc>ู is pronounced as  a falling uu.  child; offspring; son or daughter [including figurative usage for certain ideas]; cub; young animal, small ball; bulbous object; small round object; shortened form of ลูกบอล [e.g. football or football shot]</EngDesc>
     <Tone>
@@ -2048,7 +2040,7 @@
       <string>blend</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กลืน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กลืน.wma</string>
     </SoundPath>
     <EngDesc>ื pronounced as a normal tone uu.</EngDesc>
     <Tone>
@@ -2070,7 +2062,7 @@
       <string>no</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม่.wma</string>
     </SoundPath>
     <EngDesc>ไ- is pronounced as ai, ไม่ is pronounced with a falling tone. [auxiliary verb] does not; has not; is not</EngDesc>
     <Tone>
@@ -2097,7 +2089,7 @@
       <string>toward</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ใส่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ใส่.wma</string>
     </SoundPath>
     <EngDesc>ใ- is pronounced as ai.</EngDesc>
     <Tone>
@@ -2119,7 +2111,7 @@
       <string>Make</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทำ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทำ.wma</string>
     </SoundPath>
     <EngDesc>ำ is pronounced as am. to do or perform an action; to cause or effect a result, to make, produce, or implement (i.e. something tangible)</EngDesc>
     <Tone>
@@ -2142,7 +2134,7 @@
       <string>our</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เรา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เรา.wma</string>
     </SoundPath>
     <EngDesc>เ-า is pronounced as ao. [the singular pronoun] I, me [see examples], [the second person pronoun] you [see example]</EngDesc>
     <Tone>
@@ -2163,7 +2155,7 @@
       <string>very straight</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เดี๊ยะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เดี๊ยะ.wma</string>
     </SoundPath>
     <EngDesc>เียะ is pronounced as ia.</EngDesc>
     <Tone>
@@ -2185,7 +2177,7 @@
       <string>Wife</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เมีย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เมีย.wma</string>
     </SoundPath>
     <EngDesc>เีย is pronounced as iia.</EngDesc>
     <Tone>
@@ -2209,7 +2201,7 @@
       <string>digit</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตัว.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตัว.wma</string>
     </SoundPath>
     <EngDesc>ัว is pronounced as ua. [of a person] self; himself; herself; yourself; themselves; [things] itself
 [of an insect or animal, or of a human carnally] a body
@@ -2238,7 +2230,7 @@ one (generic word [e.g. the small one])
       <string />
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผลัวะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผลัวะ.wma</string>
     </SoundPath>
     <EngDesc>ัวะ is pronounced as ua. ผลัวะ means[onomatopoeic sound of a rock thrown into a bush or a flock of birds flying from a thicket]</EngDesc>
     <Tone>
@@ -2259,7 +2251,7 @@ one (generic word [e.g. the small one])
       <string />
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เอือะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เอือะ.wma</string>
     </SoundPath>
     <EngDesc>เือะ is pronounced as eua. เอือะ is the Thai vowel sound.</EngDesc>
     <Tone>
@@ -2283,7 +2275,7 @@ one (generic word [e.g. the small one])
       <string>vessel</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เรือ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เรือ.wma</string>
     </SoundPath>
     <EngDesc>เือ is pronounced as euua.</EngDesc>
     <Tone>
@@ -2349,7 +2341,7 @@ one (generic word [e.g. the small one])
       <string>increasing</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฤทธ์.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฤทธ์.wma</string>
     </SoundPath>
     <EngDesc>ฤ is pronounced as rü. ฤทธ์ also means thriving; growing; rich; increasing</EngDesc>
     <Tone>
@@ -2372,7 +2364,7 @@ one (generic word [e.g. the small one])
       <string>hermit</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฤๅษี.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฤๅษี.wma</string>
     </SoundPath>
     <EngDesc>ฤๅ is pronoun as reuu.</EngDesc>
     <Tone>
@@ -2394,7 +2386,7 @@ one (generic word [e.g. the small one])
       <string>often</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่อย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่อย.wma</string>
     </SoundPath>
     <EngDesc>-อย is pronounced as aawy or åi. </EngDesc>
     <Tone>
@@ -2417,7 +2409,7 @@ one (generic word [e.g. the small one])
       <string>fast</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เร็ว.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เร็ว.wma</string>
     </SoundPath>
     <EngDesc>เ็ว is pronounced as eo. [is] early</EngDesc>
     <Tone>
@@ -2442,7 +2434,7 @@ one (generic word [e.g. the small one])
       <string>pleasure tour</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เที่ยว.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เที่ยว.wma</string>
     </SoundPath>
     <EngDesc>เียว is prononounced as iow or iaao. [is] early,  turn to do something, to party; to go out partying, [numerical classifier for trips]</EngDesc>
     <Tone>
@@ -2466,7 +2458,7 @@ one (generic word [e.g. the small one])
       <string>beat</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เหนื่อย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เหนื่อย.wma</string>
     </SoundPath>
     <EngDesc>เืยว is pronounced as üai or uuay. </EngDesc>
     <Tone>
@@ -2489,7 +2481,7 @@ one (generic word [e.g. the small one])
       <string>starving</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หิว.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หิว.wma</string>
     </SoundPath>
     <EngDesc>ิว is pronounced as iu. [is] hungry.</EngDesc>
     <Tone>
@@ -2511,7 +2503,7 @@ one (generic word [e.g. the small one])
       <string>talk</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คุย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คุย.wma</string>
     </SoundPath>
     <EngDesc>ุย is pronounced as ui or uy. </EngDesc>
     <Tone>
@@ -2532,7 +2524,7 @@ one (generic word [e.g. the small one])
       <string>Alms</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทาน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทาน.wma</string>
     </SoundPath>
     <EngDesc>This า is pronounced as a long A.</EngDesc>
     <Tone />
@@ -2555,9 +2547,7 @@ one (generic word [e.g. the small one])
       <string>Mr</string>
       <string>sir</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ท่าน.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>This า is pronounced short, notice how similar it is to ทาน</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
@@ -2575,7 +2565,7 @@ one (generic word [e.g. the small one])
       <string> over</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เกิน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เกิน.wma</string>
     </SoundPath>
     <EngDesc>In most cases the long vowel เออ changes to เิ when followed by another consonant. Therfor yuo should not write it as เกอน.</EngDesc>
     <Tone />
@@ -2593,7 +2583,7 @@ one (generic word [e.g. the small one])
       <string>Normal (First) Tone</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เสียงสามัญ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เสียงสามัญ.wma</string>
     </SoundPath>
     <EngDesc>The normal tone.</EngDesc>
     <Tone />
@@ -2628,7 +2618,7 @@ one (generic word [e.g. the small one])
       <string> Shape</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทรง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทรง.wma</string>
     </SoundPath>
     <EngDesc>The letter combination ทร is usually pronounced as S</EngDesc>
     <Tone />
@@ -2646,7 +2636,7 @@ one (generic word [e.g. the small one])
       <string>Child</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เด็ก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เด็ก.wma</string>
     </SoundPath>
     <EngDesc>This is how you say a child.</EngDesc>
     <Tone />
@@ -2682,9 +2672,7 @@ one (generic word [e.g. the small one])
       <string>Me</string>
       <string> I</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฉัน.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>In Thai the gender of the speaking person is important. chan is used by women.</EngDesc>
     <Tone />
     <Chapter>Nouns, people and particles</Chapter>
@@ -2701,7 +2689,7 @@ one (generic word [e.g. the small one])
       <string>particle used by men</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ครับ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ครับ.wma</string>
     </SoundPath>
     <EngDesc>In Thai particles are used to show emotion and politness to the one you are speaking too.</EngDesc>
     <Tone />
@@ -2719,7 +2707,7 @@ one (generic word [e.g. the small one])
       <string>Particle used by women</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ค่ะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ค่ะ.wma</string>
     </SoundPath>
     <EngDesc>In Thai particles are used to show emotion and politness to the one you are speaking too. Ka is used by women.</EngDesc>
     <Tone />
@@ -2737,7 +2725,7 @@ one (generic word [e.g. the small one])
       <string>Morning</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เช้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เช้า.wma</string>
     </SoundPath>
     <EngDesc>06:00 untill 11:00</EngDesc>
     <Tone />
@@ -2755,7 +2743,7 @@ one (generic word [e.g. the small one])
       <string>Afternoon</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่าย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่าย.wma</string>
     </SoundPath>
     <EngDesc>13:00 untill 15:00</EngDesc>
     <Tone />
@@ -2773,7 +2761,7 @@ one (generic word [e.g. the small one])
       <string>Late afternoon</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เย็น.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เย็น.wma</string>
     </SoundPath>
     <EngDesc>16:00 untill 18:00</EngDesc>
     <Tone />
@@ -2791,7 +2779,7 @@ one (generic word [e.g. the small one])
       <string>Evening</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทุ่ม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทุ่ม.wma</string>
     </SoundPath>
     <EngDesc>19:00 untill 23:00</EngDesc>
     <Tone />
@@ -2809,7 +2797,7 @@ one (generic word [e.g. the small one])
       <string>After midnight</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตี.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตี.wma</string>
     </SoundPath>
     <EngDesc>Morning hours between 1:00 a.m. and 5:00 a.m.</EngDesc>
     <Tone />
@@ -2852,7 +2840,9 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Part of vowels</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อ.wma</string>
+    </SoundPath>
     <EngDesc>These 3 letters are usually part of a Vowel</EngDesc>
     <Tone>
       <string />
@@ -3011,7 +3001,9 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Stop sound dt-</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธ.wma</string>
+    </SoundPath>
     <EngDesc>The letters with the sounds j, t, s, and ch turn into dt.</EngDesc>
     <Tone>
       <string />
@@ -3030,7 +3022,7 @@ one (generic word [e.g. the small one])
       <string>Walk</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เดิน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เดิน.wma</string>
     </SoundPath>
     <EngDesc>In most cases the long vowel เออ changes to เิ when followed by another consonant. Therfor yuo should not write it as เดอน.</EngDesc>
     <Tone />
@@ -3064,7 +3056,7 @@ one (generic word [e.g. the small one])
       <string>Road</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ถนน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ถนน.wma</string>
     </SoundPath>
     <EngDesc>This word is hard to read for a foreigner as it only contains consonants, but in Thai ther are often a unwritten vowel with either the sound a or o.</EngDesc>
     <Tone />
@@ -3082,7 +3074,7 @@ one (generic word [e.g. the small one])
       <string>Frog</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กบ.wma</string>
     </SoundPath>
     <EngDesc>To say this word (and many other words) you say an o between the consonants.</EngDesc>
     <Tone />
@@ -3100,7 +3092,7 @@ one (generic word [e.g. the small one])
       <string>Person</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คน.wma</string>
     </SoundPath>
     <EngDesc>To say this word (and many other words) you say an o between the consonants.</EngDesc>
     <Tone />
@@ -3118,7 +3110,7 @@ one (generic word [e.g. the small one])
       <string>Market</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตลาด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตลาด.wma</string>
     </SoundPath>
     <EngDesc>Sometimes you have to add an additional a between consonants.</EngDesc>
     <Tone />
@@ -3136,7 +3128,7 @@ one (generic word [e.g. the small one])
       <string>Brain</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สมอง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สมอง.wma</string>
     </SoundPath>
     <EngDesc>Sometimes you have to add an additional a between consonants.</EngDesc>
     <Tone />
@@ -3154,7 +3146,7 @@ one (generic word [e.g. the small one])
       <string>Club (stick)</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตะบอง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตะบอง.wma</string>
     </SoundPath>
     <EngDesc>There are many words where the a is written.</EngDesc>
     <Tone />
@@ -3172,7 +3164,7 @@ one (generic word [e.g. the small one])
       <string>Clean</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สะอาด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สะอาด.wma</string>
     </SoundPath>
     <EngDesc>There are many words where thhe a is written.</EngDesc>
     <Tone />
@@ -3190,7 +3182,7 @@ one (generic word [e.g. the small one])
       <string>crocodile</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จระเข้.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จระเข้.wma</string>
     </SoundPath>
     <EngDesc>There are a few words with an additional aaw.</EngDesc>
     <Tone>
@@ -3277,7 +3269,7 @@ one (generic word [e.g. the small one])
       <string> also</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กะ.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the normal tone class and has a short vowel, making the word pronounced with a low tone.</EngDesc>
     <Tone />
@@ -3295,7 +3287,7 @@ one (generic word [e.g. the small one])
       <string>Frog</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กบ.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the normal tone class and has a stop sound, making the word pronounced with a low tone.</EngDesc>
     <Tone />
@@ -3332,7 +3324,7 @@ one (generic word [e.g. the small one])
       <string>Bird</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นก.wma</string>
     </SoundPath>
     <EngDesc>To pronounce this word you need to add an additional o between ม and ก.</EngDesc>
     <Tone>
@@ -3352,7 +3344,7 @@ one (generic word [e.g. the small one])
       <string>Crow</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กา.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the normal tone class and has a long vowel sound, making the word pronounced with a normal tone.</EngDesc>
     <Tone />
@@ -3370,7 +3362,7 @@ one (generic word [e.g. the small one])
       <string>Together</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กัน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กัน.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the normal tone class and has a nasal sound, making the word pronounced with a normal tone.</EngDesc>
     <Tone />
@@ -3388,7 +3380,7 @@ one (generic word [e.g. the small one])
       <string>None</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คะ.wma</string>
     </SoundPath>
     <EngDesc>[word added by a female speaker to the end of every question to convey politeness]  Consonant is of the low tone class and has a short vowel, making the word pronounced with a high tone.</EngDesc>
     <Tone />
@@ -3422,7 +3414,7 @@ one (generic word [e.g. the small one])
       <string>Color</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the high tone class and has a long vowel, making the word pronounced with a rising tone.</EngDesc>
     <Tone />
@@ -3442,7 +3434,7 @@ one (generic word [e.g. the small one])
       <string> knife edge</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สัน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สัน.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the high tone class and has a nasal sound, making the word pronounced with a rising tone.</EngDesc>
     <Tone />
@@ -3460,7 +3452,7 @@ one (generic word [e.g. the small one])
       <string>None</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คะ.wma</string>
     </SoundPath>
     <Tone />
     <Chapter>Tonal Language</Chapter>
@@ -3477,7 +3469,7 @@ one (generic word [e.g. the small one])
       <string>Think</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คิด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คิด.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the low tone class and has a short vowel and a stop sound, making the word pronounced with a high tone.</EngDesc>
     <Tone />
@@ -3498,7 +3490,7 @@ one (generic word [e.g. the small one])
       <string> to nip</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คีบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คีบ.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the low tone class and has a long vowel and a stop sound, making the word pronounced with a falling tone.</EngDesc>
     <Tone />
@@ -3522,7 +3514,7 @@ one (generic word [e.g. the small one])
       <string> that is</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คือ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คือ.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the low tone class and has a long vowel, making the word pronounced with the normal tone.</EngDesc>
     <Tone />
@@ -3541,7 +3533,7 @@ one (generic word [e.g. the small one])
       <string> or feel a need to scratch or sneeze</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คัน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คัน.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the low tone class and has a nasal sound, making the word pronounced with the normal tone.</EngDesc>
     <Tone />
@@ -3559,9 +3551,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Low (Second) tone</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม้เอก.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Name of the symbol for the low tone</EngDesc>
     <Tone>
       <string />
@@ -3580,9 +3570,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Falling (Third) tone</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม้โท.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Name of the symbol for the falling tone</EngDesc>
     <Tone>
       <string />
@@ -3620,9 +3608,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Rising (Fourth) tone</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม้จัตวา.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Name of the symbol for the rising tone</EngDesc>
     <Tone>
       <string />
@@ -3641,9 +3627,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Falling (Third) tone</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม้เอก.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>When the initial consonant is a low tone, the tone mark indicates this tone for the word.</EngDesc>
     <Tone>
       <string />
@@ -3662,9 +3646,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>High (Fourth) tone</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม้โท.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>This tone mark changes to the high tone instead of the falling tone when the consonant is a low tone.</EngDesc>
     <Tone>
       <string />
@@ -3715,7 +3697,7 @@ one (generic word [e.g. the small one])
       <string>Indicates the same as quotation</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฯ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฯ.wma</string>
     </SoundPath>
     <EngDesc>This mark indicates what should follow is understod. E.g. Bangkok, the 'City of Angels'.</EngDesc>
     <Tone />
@@ -3734,7 +3716,7 @@ one (generic word [e.g. the small one])
       <string> et cetera</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฯลฯ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฯลฯ.wma</string>
     </SoundPath>
     <EngDesc>This mark has the same meaning as so on or et cetera.</EngDesc>
     <Tone />
@@ -3752,7 +3734,7 @@ one (generic word [e.g. the small one])
       <string>Grass</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หญ้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หญ้า.wma</string>
     </SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word gets a falling tone.</EngDesc>
     <Tone />
@@ -3772,7 +3754,7 @@ one (generic word [e.g. the small one])
       <string> Rat</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนู.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนู.wma</string>
     </SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word get a rising tone.</EngDesc>
     <Tone />
@@ -3793,7 +3775,7 @@ one (generic word [e.g. the small one])
       <string> doesn't</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อย่า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อย่า.wma</string>
     </SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
     <Tone />
@@ -3813,7 +3795,7 @@ one (generic word [e.g. the small one])
       <string> crave for</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อยาก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อยาก.wma</string>
     </SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
     <Tone />
@@ -3839,7 +3821,7 @@ one (generic word [e.g. the small one])
       <string> method</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อย่าง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อย่าง.wma</string>
     </SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
     <Tone />
@@ -3860,7 +3842,7 @@ one (generic word [e.g. the small one])
       <string> stay</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อยู่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อยู่.wma</string>
     </SoundPath>
     <EngDesc>The initial consonant is silent and only affect the tone. This word get a low tone.</EngDesc>
     <Tone />
@@ -3880,7 +3862,7 @@ one (generic word [e.g. the small one])
       <string> silica sand</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทราย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทราย.wma</string>
     </SoundPath>
     <EngDesc>The letter combination ทร is usually pronounced as S</EngDesc>
     <Tone />
@@ -3898,7 +3880,7 @@ one (generic word [e.g. the small one])
       <string>scissors</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กรรไกร.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กรรไกร.wma</string>
     </SoundPath>
     <EngDesc>The letter combination รร can be pronounced as "an" or "a".</EngDesc>
     <Tone />
@@ -3923,7 +3905,7 @@ one (generic word [e.g. the small one])
       <string> common</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธรรมดา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธรรมดา.wma</string>
     </SoundPath>
     <EngDesc>The letter combination รร can be pronounced as "an" or "a".</EngDesc>
     <Tone />
@@ -3944,7 +3926,7 @@ one (generic word [e.g. the small one])
       <string> favor</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พร.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พร.wma</string>
     </SoundPath>
     <EngDesc>When ร is the closing sound it changes the vowel before it from an o (โอ) to an aaw (อ).</EngDesc>
     <Tone />
@@ -3962,7 +3944,7 @@ one (generic word [e.g. the small one])
       <string>arrow</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ศร.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ศร.wma</string>
     </SoundPath>
     <EngDesc>When ร is the closing sound it changes the vowel before it from an o (โอ) to an aaw (อ).</EngDesc>
     <Tone />
@@ -3984,7 +3966,7 @@ one (generic word [e.g. the small one])
       <string> vertical</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตรง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตรง.wma</string>
     </SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
@@ -4002,7 +3984,7 @@ one (generic word [e.g. the small one])
       <string>Hell</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นรก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นรก.wma</string>
     </SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
@@ -4025,7 +4007,7 @@ one (generic word [e.g. the small one])
       <string> phony</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปลอม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปลอม.wma</string>
     </SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
@@ -4044,7 +4026,7 @@ one (generic word [e.g. the small one])
       <string> marketplace</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตลาด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตลาด.wma</string>
     </SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
@@ -4062,7 +4044,7 @@ one (generic word [e.g. the small one])
       <string>water buffalo</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ควาย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ควาย.wma</string>
     </SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
@@ -4082,7 +4064,7 @@ one (generic word [e.g. the small one])
       <string> illuminated</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สว่าง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สว่าง.wma</string>
     </SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
@@ -4104,7 +4086,7 @@ one (generic word [e.g. the small one])
       <string>  human being</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คน.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for persons/occupations]</EngDesc>
     <Tone />
@@ -4131,7 +4113,7 @@ one (generic word [e.g. the small one])
       <string>  pedal</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คัน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คัน.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for vehicles;  cars;  umbrellas;  etc.]</EngDesc>
     <Tone />
@@ -4154,7 +4136,7 @@ one (generic word [e.g. the small one])
       <string> [things] itself</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตัว.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตัว.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for digits;  number;  bodies;  shirts;  pants;  suits;  animals;  fish;  germs;  chairs;  tables;  desks;  software title]</EngDesc>
     <Tone />
@@ -4177,7 +4159,7 @@ one (generic word [e.g. the small one])
       <string> blade</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ใบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ใบ.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for bottles;  drinking glasses;  backpacks;  money;  leaves;  sheets;  hats;  cards and other flat objects;  eggs];  [colloquial classifier for eggs]</EngDesc>
     <Tone />
@@ -4197,7 +4179,7 @@ one (generic word [e.g. the small one])
       <string> body of a plant</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลำ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลำ.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for long curved objects such as ships, airplanes, bamboo, etc.]</EngDesc>
     <Tone />
@@ -4225,7 +4207,7 @@ one (generic word [e.g. the small one])
       <string />
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สาย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สาย.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for roads, strings, wires, rivers, and other stringy things]; method; route; way; [of air] gust; [of rain] falling streaks; [of lightning] bolts; [of water in a stream] current.</EngDesc>
     <Tone />
@@ -4245,7 +4227,7 @@ one (generic word [e.g. the small one])
       <string> piece</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อัน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อัน.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for small things]</EngDesc>
     <Tone />
@@ -4267,7 +4249,7 @@ one (generic word [e.g. the small one])
       <string> duty</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\การ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\การ.wma</string>
     </SoundPath>
     <EngDesc>[placed before a verb or noun to create a noun which indicates a general activity, process, or state] the process of..., the activity of..., an enactment of..., the state of...</EngDesc>
     <Tone />
@@ -4290,7 +4272,7 @@ one (generic word [e.g. the small one])
       <string>  facts</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ความ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ความ.wma</string>
     </SoundPath>
     <EngDesc>[a prefix which converts an adjective or verb into a noun]</EngDesc>
     <Tone />
@@ -4328,7 +4310,7 @@ one (generic word [e.g. the small one])
       <string>  notion</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ความคิด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ความคิด.wma</string>
     </SoundPath>
     <EngDesc>[a prefix which converts an adjective or verb into a noun]</EngDesc>
     <Tone />
@@ -4349,7 +4331,7 @@ one (generic word [e.g. the small one])
       <string> hair [of the head]</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผม.wma</string>
     </SoundPath>
     <EngDesc>[a prefix which conveys the gender of the speaker] Men says pom.</EngDesc>
     <Tone />
@@ -4369,7 +4351,7 @@ one (generic word [e.g. the small one])
       <string />
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พี่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พี่.wma</string>
     </SoundPath>
     <EngDesc>[a polite pronoun for addressing an older sibling (including as oneself)] him; her; you; me</EngDesc>
     <Tone />
@@ -4389,7 +4371,7 @@ one (generic word [e.g. the small one])
       <string>  younger colleague</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\น้อง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\น้อง.wma</string>
     </SoundPath>
     <EngDesc>[noun of direct address to a younger person, e.g., a waitress] Miss. When unsure of the other persons age it is best to use (พี่) pee instead of (น้อง) naawng.</EngDesc>
     <Tone />
@@ -4408,7 +4390,7 @@ one (generic word [e.g. the small one])
       <string> men</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชาย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชาย.wma</string>
     </SoundPath>
     <EngDesc>This is how you adress another man or male.</EngDesc>
     <Tone />
@@ -4435,7 +4417,7 @@ one (generic word [e.g. the small one])
       <string> wench</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สาว.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สาว.wma</string>
     </SoundPath>
     <EngDesc>This is how you adress another woman or female.</EngDesc>
     <Tone />
@@ -4456,7 +4438,7 @@ one (generic word [e.g. the small one])
       <string> grandpa</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปู่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปู่.wma</string>
     </SoundPath>
     <EngDesc>Grandfather of the fathers side.</EngDesc>
     <Tone />
@@ -4474,7 +4456,7 @@ one (generic word [e.g. the small one])
       <string>maternal grandfather</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตา.wma</string>
     </SoundPath>
     <EngDesc>Grandfather of the mothers side.</EngDesc>
     <Tone />
@@ -4492,7 +4474,7 @@ one (generic word [e.g. the small one])
       <string>paternal grandmother</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ย่า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ย่า.wma</string>
     </SoundPath>
     <EngDesc>Grandmother of the fathers side.</EngDesc>
     <Tone />
@@ -4510,7 +4492,7 @@ one (generic word [e.g. the small one])
       <string>maternal grandmother</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยาย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยาย.wma</string>
     </SoundPath>
     <EngDesc>Grandmother of the mothers side.</EngDesc>
     <Tone />
@@ -4531,7 +4513,7 @@ one (generic word [e.g. the small one])
       <string>  great uncle</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลุง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลุง.wma</string>
     </SoundPath>
     <EngDesc>Elder  brother of either mother or father.</EngDesc>
     <Tone />
@@ -4550,7 +4532,7 @@ one (generic word [e.g. the small one])
       <string>  elder sister of parents</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ป้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ป้า.wma</string>
     </SoundPath>
     <EngDesc>Elder  Sister of either mother or father.</EngDesc>
     <Tone />
@@ -4571,7 +4553,7 @@ one (generic word [e.g. the small one])
       <string> younger brother of father</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อา.wma</string>
     </SoundPath>
     <EngDesc>younger sibling of father.</EngDesc>
     <Tone />
@@ -4592,7 +4574,7 @@ one (generic word [e.g. the small one])
       <string> younger brother of mother</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\น้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\น้า.wma</string>
     </SoundPath>
     <EngDesc>younger sibling of mother.</EngDesc>
     <Tone />
@@ -4610,7 +4592,7 @@ one (generic word [e.g. the small one])
       <string>Indicates polite question</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คะ.wma</string>
     </SoundPath>
     <EngDesc>[word added by a female speaker to the end of every question to convey politeness]</EngDesc>
     <Tone />
@@ -4644,7 +4626,7 @@ one (generic word [e.g. the small one])
       <string>Indicates mild question</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นะ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นะ.wma</string>
     </SoundPath>
     <EngDesc>[word added to the end of a sentence to soften it, make it polite, indicate pleading, disagreement, ordering, surprise or emphasis]</EngDesc>
     <Tone />
@@ -4665,7 +4647,7 @@ one (generic word [e.g. the small one])
       <string> "that’s just possible"</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มั้ง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มั้ง.wma</string>
     </SoundPath>
     <EngDesc>[particle indicating perhaps; that could be; possibly that just mentioned see]</EngDesc>
     <Tone />
@@ -4683,7 +4665,7 @@ one (generic word [e.g. the small one])
       <string>Indicates a simple statement</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ละ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ละ.wma</string>
     </SoundPath>
     <EngDesc>[a particle used at the end of a statement or question to add an imperative quality]</EngDesc>
     <Tone />
@@ -4719,7 +4701,7 @@ one (generic word [e.g. the small one])
       <string />
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หรอก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หรอก.wma</string>
     </SoundPath>
     <EngDesc>[word often used with statements of contradiction or negation]</EngDesc>
     <Tone />
@@ -4738,7 +4720,7 @@ one (generic word [e.g. the small one])
       <string>One</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนึ่ง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนึ่ง.wma</string>
     </SoundPath>
     <EngDesc>Thai digit one, 1</EngDesc>
     <Tone>
@@ -4759,7 +4741,7 @@ one (generic word [e.g. the small one])
       <string>Two</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สอง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สอง.wma</string>
     </SoundPath>
     <EngDesc>Thai digit two, 2</EngDesc>
     <Tone>
@@ -4779,9 +4761,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Three</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สาม.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Thai digit three, 3</EngDesc>
     <Tone>
       <string>Rising</string>
@@ -4801,7 +4781,7 @@ one (generic word [e.g. the small one])
       <string>Four</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่.wma</string>
     </SoundPath>
     <EngDesc>Thai digit four, 4</EngDesc>
     <Tone>
@@ -4822,7 +4802,7 @@ one (generic word [e.g. the small one])
       <string>Five</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฮ่า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฮ่า.wma</string>
     </SoundPath>
     <EngDesc>Thai digit five, 5</EngDesc>
     <Tone>
@@ -4843,7 +4823,7 @@ one (generic word [e.g. the small one])
       <string>Six</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หก.wma</string>
     </SoundPath>
     <EngDesc>Thai digit six, 6</EngDesc>
     <Tone>
@@ -4864,7 +4844,7 @@ one (generic word [e.g. the small one])
       <string>Seven</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เจ็ด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เจ็ด.wma</string>
     </SoundPath>
     <EngDesc>Thai digit seven, 7</EngDesc>
     <Tone>
@@ -4885,7 +4865,7 @@ one (generic word [e.g. the small one])
       <string>Eight</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แปด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แปด.wma</string>
     </SoundPath>
     <EngDesc>Thai digit eight, 8</EngDesc>
     <Tone>
@@ -4906,7 +4886,7 @@ one (generic word [e.g. the small one])
       <string>Nine</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เก้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เก้า.wma</string>
     </SoundPath>
     <EngDesc>Thai digit nine, 9</EngDesc>
     <Tone>
@@ -4945,7 +4925,7 @@ one (generic word [e.g. the small one])
       <string>One</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนึ่ง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนึ่ง.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity one</EngDesc>
     <Tone />
@@ -4964,7 +4944,7 @@ one (generic word [e.g. the small one])
       <string> 2</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สอง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สอง.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity two</EngDesc>
     <Tone />
@@ -4982,9 +4962,7 @@ one (generic word [e.g. the small one])
       <string>Three</string>
       <string> 3</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สาม.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>the number or quantity three</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -5002,7 +4980,7 @@ one (generic word [e.g. the small one])
       <string> 4</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity four.</EngDesc>
     <Tone />
@@ -5021,7 +4999,7 @@ one (generic word [e.g. the small one])
       <string> 5</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ห้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ห้า.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity five.</EngDesc>
     <Tone />
@@ -5040,7 +5018,7 @@ one (generic word [e.g. the small one])
       <string>  6</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หก.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity six.</EngDesc>
     <Tone />
@@ -5059,7 +5037,7 @@ one (generic word [e.g. the small one])
       <string> 7</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เจ็ด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เจ็ด.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity seven.</EngDesc>
     <Tone />
@@ -5078,7 +5056,7 @@ one (generic word [e.g. the small one])
       <string>  8</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แปด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แปด.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity eight.</EngDesc>
     <Tone />
@@ -5097,7 +5075,7 @@ one (generic word [e.g. the small one])
       <string> 9</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เก้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เก้า.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity nine.</EngDesc>
     <Tone />
@@ -5116,7 +5094,7 @@ one (generic word [e.g. the small one])
       <string>  10</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบ.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity ten.</EngDesc>
     <Tone />
@@ -5134,9 +5112,7 @@ one (generic word [e.g. the small one])
       <string>Eleven</string>
       <string>   11</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบเอ็ด.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>the number or quantity Eleven. the sound for one turns from neung to ed after 10 untill 100</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -5154,7 +5130,7 @@ one (generic word [e.g. the small one])
       <string>  12</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบสอง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบสอง.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity twelve</EngDesc>
     <Tone />
@@ -5173,7 +5149,7 @@ one (generic word [e.g. the small one])
       <string>  13</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบสาม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบสาม.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity thirteen</EngDesc>
     <Tone />
@@ -5192,7 +5168,7 @@ one (generic word [e.g. the small one])
       <string>  14</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบสี่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบสี่.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity fourteen.</EngDesc>
     <Tone />
@@ -5211,7 +5187,7 @@ one (generic word [e.g. the small one])
       <string>  15</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบห้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบห้า.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity fifteen.</EngDesc>
     <Tone />
@@ -5230,7 +5206,7 @@ one (generic word [e.g. the small one])
       <string>    16</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบหก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบหก.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity sixteen.</EngDesc>
     <Tone />
@@ -5249,7 +5225,7 @@ one (generic word [e.g. the small one])
       <string>   17</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบเจ็ด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบเจ็ด.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity seventeen.</EngDesc>
     <Tone />
@@ -5268,7 +5244,7 @@ one (generic word [e.g. the small one])
       <string>     18</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบแปด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบแปด.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity eighteen.</EngDesc>
     <Tone />
@@ -5287,7 +5263,7 @@ one (generic word [e.g. the small one])
       <string>  19</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบเก้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบเก้า.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity nineteen.</EngDesc>
     <Tone />
@@ -5306,7 +5282,7 @@ one (generic word [e.g. the small one])
       <string>   20</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยี่สิบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยี่สิบ.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity twenty.</EngDesc>
     <Tone />
@@ -5325,7 +5301,7 @@ one (generic word [e.g. the small one])
       <string> 21</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยี่สิบเอ็ด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยี่สิบเอ็ด.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity twenty one.</EngDesc>
     <Tone />
@@ -5344,7 +5320,7 @@ one (generic word [e.g. the small one])
       <string>  22</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยี่สิบสอง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยี่สิบสอง.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity twenty two.</EngDesc>
     <Tone />
@@ -5363,7 +5339,7 @@ one (generic word [e.g. the small one])
       <string>   23</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยี่สิบสาม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยี่สิบสาม.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity twenty three.</EngDesc>
     <Tone />
@@ -5382,7 +5358,7 @@ one (generic word [e.g. the small one])
       <string> 30</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สามสิบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สามสิบ.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity thirty.</EngDesc>
     <Tone />
@@ -5401,7 +5377,7 @@ one (generic word [e.g. the small one])
       <string>   40</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่สิบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่สิบ.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity fourty.</EngDesc>
     <Tone />
@@ -5420,7 +5396,7 @@ one (generic word [e.g. the small one])
       <string> 50</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ห้าสิบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ห้าสิบ.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity fifty.</EngDesc>
     <Tone />
@@ -5439,7 +5415,7 @@ one (generic word [e.g. the small one])
       <string> 60</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หกสิบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หกสิบ.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity sixty.</EngDesc>
     <Tone />
@@ -5458,7 +5434,7 @@ one (generic word [e.g. the small one])
       <string>    70</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เจ็ดสิบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เจ็ดสิบ.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity seventy.</EngDesc>
     <Tone />
@@ -5477,7 +5453,7 @@ one (generic word [e.g. the small one])
       <string> 80</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แปดสิบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แปดสิบ.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity eighty.</EngDesc>
     <Tone />
@@ -5496,7 +5472,7 @@ one (generic word [e.g. the small one])
       <string> 90</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เก้าสิบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เก้าสิบ.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity ninety.</EngDesc>
     <Tone />
@@ -5516,7 +5492,7 @@ one (generic word [e.g. the small one])
       <string> 100</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ร้อย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ร้อย.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity one hundred.</EngDesc>
     <Tone />
@@ -5536,7 +5512,7 @@ one (generic word [e.g. the small one])
       <string>   100</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนึ่งร้อย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนึ่งร้อย.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity one hundred.</EngDesc>
     <Tone />
@@ -5607,9 +5583,7 @@ one (generic word [e.g. the small one])
       <string>two hundred</string>
       <string> 200</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สองร้อย.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>the number or quantity two hundred.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -5626,9 +5600,7 @@ one (generic word [e.g. the small one])
       <string>Three hundred</string>
       <string>  300</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สามร้อย.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>the number or quantity three hundred.</EngDesc>
     <Tone />
     <Chapter>Numbers and Counting</Chapter>
@@ -5647,7 +5619,7 @@ one (generic word [e.g. the small one])
       <string>  1 000</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พัน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พัน.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity one thousand.</EngDesc>
     <Tone />
@@ -5666,7 +5638,7 @@ one (generic word [e.g. the small one])
       <string>10 000</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หมื่น.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หมื่น.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity ten thousand.</EngDesc>
     <Tone />
@@ -5685,7 +5657,7 @@ one (generic word [e.g. the small one])
       <string> 100 000</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แสน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แสน.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity of a hundred thousand.</EngDesc>
     <Tone />
@@ -5705,7 +5677,7 @@ one (generic word [e.g. the small one])
       <string> 1 000 000</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ล้าน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ล้าน.wma</string>
     </SoundPath>
     <EngDesc>the number or quantity of a million.</EngDesc>
     <Tone />
@@ -5756,9 +5728,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Day</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วัน.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>This is how you say day. [วัน ๆ] from day to day; day in and day out; each and every day</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -5777,7 +5747,7 @@ one (generic word [e.g. the small one])
       <string> to return (to)</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คืน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คืน.wma</string>
     </SoundPath>
     <EngDesc>This is how you say night. Can also be used as a verb to say give back (to); to return (to)</EngDesc>
     <Tone />
@@ -5803,7 +5773,7 @@ one (generic word [e.g. the small one])
       <string> halfway through...</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กลาง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กลาง.wma</string>
     </SoundPath>
     <EngDesc>กลาง means during or in the middle of.</EngDesc>
     <Tone />
@@ -5823,7 +5793,7 @@ one (generic word [e.g. the small one])
       <string> The middle of the day</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กลางวัน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กลางวัน.wma</string>
     </SoundPath>
     <EngDesc>Often means during the day.</EngDesc>
     <Tone />
@@ -5842,7 +5812,7 @@ one (generic word [e.g. the small one])
       <string> During the night</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กลางคืน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กลางคืน.wma</string>
     </SoundPath>
     <EngDesc>Often means during the night;</EngDesc>
     <Tone />
@@ -5863,7 +5833,7 @@ one (generic word [e.g. the small one])
       <string> when...</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตอน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตอน.wma</string>
     </SoundPath>
     <EngDesc>Means when or a periode of time.</EngDesc>
     <Tone />
@@ -5887,7 +5857,7 @@ one (generic word [e.g. the small one])
       <string> span</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ช่วง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ช่วง.wma</string>
     </SoundPath>
     <EngDesc>Means when or a periode of time. Also has other meanings.</EngDesc>
     <Tone />
@@ -5906,7 +5876,7 @@ one (generic word [e.g. the small one])
       <string> morning-time</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตอนเช้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตอนเช้า.wma</string>
     </SoundPath>
     <EngDesc>Most often refers to the morning.</EngDesc>
     <Tone />
@@ -5942,7 +5912,7 @@ one (generic word [e.g. the small one])
       <string> delayed</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สาย.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สาย.wma</string>
     </SoundPath>
     <EngDesc>late morning hours between 9:00 a.m. and noon</EngDesc>
     <Tone />
@@ -5960,7 +5930,7 @@ one (generic word [e.g. the small one])
       <string>How long will it take?</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นานเท่าไหร่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นานเท่าไหร่.wma</string>
     </SoundPath>
     <EngDesc>When you want to know how long something takes or how much time is necessary.</EngDesc>
     <Tone />
@@ -5978,7 +5948,7 @@ one (generic word [e.g. the small one])
       <string>What time is it?</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กี่โมงแล้ว.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กี่โมงแล้ว.wma</string>
     </SoundPath>
     <EngDesc>Asking what the time is currently, to property say it you should add lææo.</EngDesc>
     <Tone />
@@ -6012,9 +5982,7 @@ one (generic word [e.g. the small one])
       <string>just now</string>
       <string> a moment ago</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เมื่อกี้.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Used when you want to say that something just happend.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -6032,7 +6000,7 @@ one (generic word [e.g. the small one])
       <string>  throughout</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชั่ว.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชั่ว.wma</string>
     </SoundPath>
     <EngDesc>Used when you want to indicate that something happens during a time.</EngDesc>
     <Tone />
@@ -6051,7 +6019,7 @@ one (generic word [e.g. the small one])
       <string> o'clock</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โมง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โมง.wma</string>
     </SoundPath>
     <EngDesc>Used to indicate time or clock.</EngDesc>
     <Tone />
@@ -6069,7 +6037,7 @@ one (generic word [e.g. the small one])
       <string>hour</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชั่วโมง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชั่วโมง.wma</string>
     </SoundPath>
     <EngDesc>[in time; of time] an hour (when used as a quantity)</EngDesc>
     <Tone />
@@ -6087,7 +6055,7 @@ one (generic word [e.g. the small one])
       <string>a minute</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นาที.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นาที.wma</string>
     </SoundPath>
     <EngDesc>Used to say minut, and by adding a number in front we get things like 1 minute.</EngDesc>
     <Tone />
@@ -6108,7 +6076,7 @@ one (generic word [e.g. the small one])
       <string> ½</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ครึ่ง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ครึ่ง.wma</string>
     </SoundPath>
     <EngDesc>Used to indicate a half of something.</EngDesc>
     <Tone />
@@ -6131,7 +6099,7 @@ one (generic word [e.g. the small one])
       <string> more</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อีก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อีก.wma</string>
     </SoundPath>
     <EngDesc>Used to indicate another or an additional.</EngDesc>
     <Tone />
@@ -6150,7 +6118,7 @@ one (generic word [e.g. the small one])
       <string>12 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เที่ยงคืน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เที่ยงคืน.wma</string>
     </SoundPath>
     <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
     <Tone />
@@ -6169,7 +6137,7 @@ one (generic word [e.g. the small one])
       <string> 1 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตีหนึ่ง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตีหนึ่ง.wma</string>
     </SoundPath>
     <EngDesc>The first hours of a day are very easy to say.</EngDesc>
     <Tone />
@@ -6188,7 +6156,7 @@ one (generic word [e.g. the small one])
       <string>  2 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตีสอง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตีสอง.wma</string>
     </SoundPath>
     <EngDesc>The first hours of a day are very easy to say.</EngDesc>
     <Tone />
@@ -6207,7 +6175,7 @@ one (generic word [e.g. the small one])
       <string>   3 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตีสาม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตีสาม.wma</string>
     </SoundPath>
     <EngDesc>The first hours of a day are very easy to say.</EngDesc>
     <Tone />
@@ -6226,7 +6194,7 @@ one (generic word [e.g. the small one])
       <string>    4 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตีสี่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตีสี่.wma</string>
     </SoundPath>
     <EngDesc>The first hours of a day are very easy to say.</EngDesc>
     <Tone />
@@ -6245,7 +6213,7 @@ one (generic word [e.g. the small one])
       <string>     5 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตีห้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตีห้า.wma</string>
     </SoundPath>
     <EngDesc>The first hours of a day are very easy to say.</EngDesc>
     <Tone />
@@ -6264,7 +6232,7 @@ one (generic word [e.g. the small one])
       <string>  6 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หกโมงเช้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หกโมงเช้า.wma</string>
     </SoundPath>
     <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
     <Tone />
@@ -6300,7 +6268,7 @@ one (generic word [e.g. the small one])
       <string>  8 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แปดโมงเช้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แปดโมงเช้า.wma</string>
     </SoundPath>
     <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
     <Tone />
@@ -6319,7 +6287,7 @@ one (generic word [e.g. the small one])
       <string>   9 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เก้าโมงเช้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เก้าโมงเช้า.wma</string>
     </SoundPath>
     <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
     <Tone />
@@ -6338,7 +6306,7 @@ one (generic word [e.g. the small one])
       <string> 10 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบโมงเช้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิบโมงเช้า.wma</string>
     </SoundPath>
     <EngDesc>To say the next set of times you say the number, then hour/ o'clock and then if it is morning or evening.</EngDesc>
     <Tone />
@@ -6375,7 +6343,7 @@ one (generic word [e.g. the small one])
       <string>noon</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เที่ยงวัน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เที่ยงวัน.wma</string>
     </SoundPath>
     <EngDesc>Todo.</EngDesc>
     <Tone />
@@ -6394,7 +6362,7 @@ one (generic word [e.g. the small one])
       <string>1 p.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่ายโมง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่ายโมง.wma</string>
     </SoundPath>
     <EngDesc>บ่าย means the afternoon hours between 1:00 p.m. and 4:00 p.m.</EngDesc>
     <Tone />
@@ -6413,7 +6381,7 @@ one (generic word [e.g. the small one])
       <string>2 p.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่ายสองโมง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่ายสองโมง.wma</string>
     </SoundPath>
     <EngDesc>บ่าย means the afternoon hours between 1:00 p.m. and 4:00 p.m.</EngDesc>
     <Tone />
@@ -6432,7 +6400,7 @@ one (generic word [e.g. the small one])
       <string>3 p.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่ายสามโมง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่ายสามโมง.wma</string>
     </SoundPath>
     <EngDesc>บ่าย means the afternoon hours between 1:00 p.m. and 4:00 p.m.</EngDesc>
     <Tone />
@@ -6451,7 +6419,7 @@ one (generic word [e.g. the small one])
       <string>4 p.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่โมงเย็น.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่โมงเย็น.wma</string>
     </SoundPath>
     <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
     <Tone />
@@ -6470,7 +6438,7 @@ one (generic word [e.g. the small one])
       <string>5 p.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ห้าโมงเย็น.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ห้าโมงเย็น.wma</string>
     </SoundPath>
     <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
     <Tone />
@@ -6489,7 +6457,7 @@ one (generic word [e.g. the small one])
       <string>6 p.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หกโมงเย็น.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หกโมงเย็น.wma</string>
     </SoundPath>
     <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
     <Tone />
@@ -6508,7 +6476,7 @@ one (generic word [e.g. the small one])
       <string>7 p.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทุ่มหนึ่ง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทุ่มหนึ่ง.wma</string>
     </SoundPath>
     <EngDesc>To say the time you say the word for evening and a number. the evening is often said as one in the evening.</EngDesc>
     <Tone />
@@ -6527,7 +6495,7 @@ one (generic word [e.g. the small one])
       <string>8 p.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สองทุ่ม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สองทุ่ม.wma</string>
     </SoundPath>
     <EngDesc>To say the time you say the number and then the word for evening. This is said like two in the evening.</EngDesc>
     <Tone />
@@ -6546,7 +6514,7 @@ one (generic word [e.g. the small one])
       <string>9 p.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สามทุ่ม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สามทุ่ม.wma</string>
     </SoundPath>
     <EngDesc>To say the time you say the number and then the word for evening. This is said like three in the evening.</EngDesc>
     <Tone />
@@ -6565,7 +6533,7 @@ one (generic word [e.g. the small one])
       <string>10 p.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่ทุ่ม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่ทุ่ม.wma</string>
     </SoundPath>
     <EngDesc>To say the time you say the number and then the word for evening. This is said like four in the evening.</EngDesc>
     <Tone />
@@ -6585,7 +6553,7 @@ one (generic word [e.g. the small one])
       <string>midnight</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เที่ยงคืน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เที่ยงคืน.wma</string>
     </SoundPath>
     <EngDesc>To say the time you now add the time, word for clock and evening.</EngDesc>
     <Tone />
@@ -6706,7 +6674,7 @@ one (generic word [e.g. the small one])
       <string>6.30 a.m.</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หกโมงครึ่ง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หกโมงครึ่ง.wma</string>
     </SoundPath>
     <EngDesc>To say this you must think of it as 6 o'clock and half. The format therfor is number, word for hour and the word for half.</EngDesc>
     <Tone />
@@ -6826,7 +6794,7 @@ one (generic word [e.g. the small one])
       <string>Monday</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันจันทร์.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันจันทร์.wma</string>
     </SoundPath>
     <EngDesc>The thai days are named after the planets, monday is named after the moon. Simply translated monday in thai is day of the moon.</EngDesc>
     <Tone />
@@ -6844,7 +6812,7 @@ one (generic word [e.g. the small one])
       <string>Tuesday</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันอังคาร.mp3</string>
+      <string />
     </SoundPath>
     <EngDesc>The thai days are named after the planets, tuesday is named after mars. Simply translated tuesday in thai is day of mars.</EngDesc>
     <Tone />
@@ -6862,7 +6830,7 @@ one (generic word [e.g. the small one])
       <string>Wednesday</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันพุธ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันพุธ.wma</string>
     </SoundPath>
     <EngDesc>The thai days are named after the planets, tuesday is named after Mercury . Simply translated wednesday in thai is day of Mercury .</EngDesc>
     <Tone />
@@ -6879,9 +6847,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Thursday</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันพฤหัสบดี.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>The thai days are named after the planets, thursday is named after Jupiter . Simply translated thursday in thai is day of Jupiter.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -6898,7 +6864,7 @@ one (generic word [e.g. the small one])
       <string>Friday</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันศุกร์.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันศุกร์.wma</string>
     </SoundPath>
     <EngDesc>The thai days are named after the planets, friday is named after venus. Simply translated friday in thai is day of Venus.</EngDesc>
     <Tone />
@@ -6916,7 +6882,7 @@ one (generic word [e.g. the small one])
       <string>Saturday</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันเสาร์.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันเสาร์.wma</string>
     </SoundPath>
     <EngDesc>The thai days are named after the planets, saturday is named after Saturn. Simply translated saturday in thai is day of Saturn.</EngDesc>
     <Tone />
@@ -6934,7 +6900,7 @@ one (generic word [e.g. the small one])
       <string>Sunday</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันอาทิตย์.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันอาทิตย์.wma</string>
     </SoundPath>
     <EngDesc>The thai days are named after the planets, Sunday is named after the sun. simply translated sunday in thai is day of the sun.</EngDesc>
     <Tone />
@@ -6952,7 +6918,7 @@ one (generic word [e.g. the small one])
       <string>Date</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันที่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันที่.wma</string>
     </SoundPath>
     <EngDesc>The word for a date on a calendar.</EngDesc>
     <Tone />
@@ -6970,7 +6936,7 @@ one (generic word [e.g. the small one])
       <string>Today</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันนี้.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันนี้.wma</string>
     </SoundPath>
     <EngDesc>Simple translation means "day this".</EngDesc>
     <Tone />
@@ -6988,9 +6954,7 @@ one (generic word [e.g. the small one])
       <string>weekday</string>
       <string>work day</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันทำงาน.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Simplye translated into day to to work.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -7009,7 +6973,7 @@ one (generic word [e.g. the small one])
       <string>weekend</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันหยุด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันหยุด.wma</string>
     </SoundPath>
     <EngDesc>Simplye translated into day to to stop.</EngDesc>
     <Tone />
@@ -7026,9 +6990,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Buddhist Sabbath</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันพระ.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>The Buddhist Sabbath generally occurs once a week in accordance with the phases of the moon in the lunar calendar.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -7044,9 +7006,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Januray</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มกราคม.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>The pronunciation of this word illustrates reduplication, where a single written consonant serves as the final consonant of a syllable and is then pronounced again as the initial consonant of the following syllable.</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -7063,7 +7023,7 @@ one (generic word [e.g. the small one])
       <string>February</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กุมภาพันธ์.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กุมภาพันธ์.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7081,7 +7041,7 @@ one (generic word [e.g. the small one])
       <string>March</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มีนาคม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มีนาคม.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7099,7 +7059,7 @@ one (generic word [e.g. the small one])
       <string>April</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เมษายน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เมษายน.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7117,7 +7077,7 @@ one (generic word [e.g. the small one])
       <string>May</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พฤษภาคม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พฤษภาคม.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7135,7 +7095,7 @@ one (generic word [e.g. the small one])
       <string>June</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มิถุนายน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มิถุนายน.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7153,7 +7113,7 @@ one (generic word [e.g. the small one])
       <string>July</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กรกฎาคม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กรกฎาคม.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7171,7 +7131,7 @@ one (generic word [e.g. the small one])
       <string>August</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิงหาคม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สิงหาคม.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7189,7 +7149,7 @@ one (generic word [e.g. the small one])
       <string>September</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กันยายน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กันยายน.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7207,7 +7167,7 @@ one (generic word [e.g. the small one])
       <string>October</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตุลาคม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตุลาคม.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7225,7 +7185,7 @@ one (generic word [e.g. the small one])
       <string>November</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พฤศจิกายน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พฤศจิกายน.wma</string>
     </SoundPath>
     <EngDesc>The pronunciation of this word illustrates reduplication, where a single written consonant serves as the final consonant of a syllable and is then pronounced again as the initial consonant of the following syllable.</EngDesc>
     <Tone />
@@ -7243,7 +7203,7 @@ one (generic word [e.g. the small one])
       <string>December</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธันวาคม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธันวาคม.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7261,7 +7221,7 @@ one (generic word [e.g. the small one])
       <string>New Year's Day</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันขึ้นปีใหม่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันขึ้นปีใหม่.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7279,9 +7239,7 @@ one (generic word [e.g. the small one])
       <string>Magha Puja Day</string>
       <string>Makabucha Day</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันมาฆบูชา.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Held on the full moon of the third lunar month to commemorate the preaching of the Buddha to 1250 enlightened monks who came to hear him without prior summons</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -7297,9 +7255,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Day of Chakri</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันจักรี.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>King Rama I Day, commemorating the founder of the Chakri Dynasty, Rama I, on April 6</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -7332,9 +7288,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Coronation Day</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันฉัตรมงคล.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Coronation Day, a public holiday in Thailand on May 5, on which King and Queen commemorate their 1946 coronation</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -7350,9 +7304,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Royal Ploughing Day</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันพืชมงคล.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Royal Ploughing Day, to start the official rice planting season on the second week of May</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -7368,9 +7320,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Wisakabucha Day</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันวิสาขบูชา.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>The full moon in the 6th lunar month, which is considered the day of the Buddha’s birth, enlightenment and passing away</EngDesc>
     <Tone />
     <Chapter>Telling time</Chapter>
@@ -7403,7 +7353,7 @@ one (generic word [e.g. the small one])
       <string>Mothers day</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันแม่.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันแม่.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7421,7 +7371,7 @@ one (generic word [e.g. the small one])
       <string>Fathers day</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันพ่อ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันพ่อ.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7439,7 +7389,7 @@ one (generic word [e.g. the small one])
       <string>Red</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีแดง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีแดง.wma</string>
     </SoundPath>
     <EngDesc>สี (see) is the word for color. Traditionally women used to dress in red on Sundays.</EngDesc>
     <Tone />
@@ -7457,7 +7407,7 @@ one (generic word [e.g. the small one])
       <string>Yellow</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีเหลือง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีเหลือง.wma</string>
     </SoundPath>
     <EngDesc>สี (see) is the word for color. Traditionally women used to dress in yellow on mondays.</EngDesc>
     <Tone />
@@ -7475,7 +7425,7 @@ one (generic word [e.g. the small one])
       <string>Pink</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีชมพู.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีชมพู.wma</string>
     </SoundPath>
     <EngDesc>สี (see) is the word for color. Traditionally women used to dress in pink on Tuesday.</EngDesc>
     <Tone />
@@ -7493,7 +7443,7 @@ one (generic word [e.g. the small one])
       <string>Green</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีเขียว.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีเขียว.wma</string>
     </SoundPath>
     <EngDesc>สี (see) is the word for color. Traditionally women used to dress in green on wednesdays.</EngDesc>
     <Tone />
@@ -7511,7 +7461,7 @@ one (generic word [e.g. the small one])
       <string>Orange</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีส้ม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีส้ม.wma</string>
     </SoundPath>
     <EngDesc>สี (see) is the word for color. Traditionally women used to dress in orange on thursday.</EngDesc>
     <Tone />
@@ -7530,7 +7480,7 @@ one (generic word [e.g. the small one])
       <string>sky blue</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีฟ้า.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีฟ้า.wma</string>
     </SoundPath>
     <EngDesc>สี (see) is the word for color. Traditionally women used to dress in light blue on fridays.</EngDesc>
     <Tone />
@@ -7548,7 +7498,7 @@ one (generic word [e.g. the small one])
       <string>the color purple</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีม่วง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีม่วง.wma</string>
     </SoundPath>
     <EngDesc>สี (see) is the word for color. Traditionally women used to dress in purple on saturday.</EngDesc>
     <Tone />
@@ -7565,9 +7515,7 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>the color white</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีขาว.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>TODO</EngDesc>
     <Tone />
     <Chapter>Colors</Chapter>
@@ -7584,7 +7532,7 @@ one (generic word [e.g. the small one])
       <string>the color black</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีดำ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีดำ.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7602,7 +7550,7 @@ one (generic word [e.g. the small one])
       <string>the color dark blue</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีน้ำเงิน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีน้ำเงิน.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7620,7 +7568,7 @@ one (generic word [e.g. the small one])
       <string>the color brown</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีน้ำตาล.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีน้ำตาล.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7639,7 +7587,7 @@ one (generic word [e.g. the small one])
       <string>light brown</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีน้ำตาลอ่อน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีน้ำตาลอ่อน.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7657,7 +7605,7 @@ one (generic word [e.g. the small one])
       <string>The color gray</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีเทา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สีเทา.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
     <Tone />
@@ -7675,7 +7623,7 @@ one (generic word [e.g. the small one])
       <string>Frog</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กบ.wma</string>
     </SoundPath>
     <EngDesc>Low tone and unwritten o.</EngDesc>
     <Tone />
@@ -7693,7 +7641,7 @@ one (generic word [e.g. the small one])
       <string>Leg</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ขา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ขา.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a rising tone.</EngDesc>
     <Tone />
@@ -7717,7 +7665,7 @@ one (generic word [e.g. the small one])
       <string>sharp-witted</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คม.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a rising tone.</EngDesc>
     <Tone />
@@ -7737,7 +7685,7 @@ one (generic word [e.g. the small one])
       <string>taken aback</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\งง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\งง.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a normal tone and an additional o.</EngDesc>
     <Tone />
@@ -7760,7 +7708,7 @@ one (generic word [e.g. the small one])
       <string>till</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จน.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a normal tone and an additional o.</EngDesc>
     <Tone />
@@ -7781,7 +7729,7 @@ one (generic word [e.g. the small one])
       <string>to squirt in</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฉีด.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฉีด.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a low tone.</EngDesc>
     <Tone />
@@ -7799,9 +7747,7 @@ one (generic word [e.g. the small one])
       <string>to wash</string>
       <string>launder</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ซัก.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Pronounced with a high tone.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -7824,7 +7770,7 @@ one (generic word [e.g. the small one])
       <string>realm</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ดิน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ดิน.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
@@ -7843,9 +7789,7 @@ one (generic word [e.g. the small one])
       <string>to drop or pour down</string>
       <string>to fail</string>
     </EngWords>
-    <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตด.mp3</string>
-    </SoundPath>
+    <SoundPath />
     <EngDesc>Pronounced with a low tone and an additinal o.</EngDesc>
     <Tone />
     <Chapter>Easy words</Chapter>
@@ -7864,7 +7808,7 @@ one (generic word [e.g. the small one])
       <string>to hold together</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ถือ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ถือ.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a rising tone.</EngDesc>
     <Tone />
@@ -7885,7 +7829,7 @@ one (generic word [e.g. the small one])
       <string>put on makeup</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทา.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
@@ -7903,7 +7847,7 @@ one (generic word [e.g. the small one])
       <string>Bird</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นก.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นก.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a high tone and an additional o.</EngDesc>
     <Tone />
@@ -7921,7 +7865,7 @@ one (generic word [e.g. the small one])
       <string>to fly</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บิน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บิน.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
@@ -7939,7 +7883,7 @@ one (generic word [e.g. the small one])
       <string>Crab</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปู.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปู.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
@@ -7957,7 +7901,7 @@ one (generic word [e.g. the small one])
       <string>Rain</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฝน.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฝน.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a rising tone and an additional o.</EngDesc>
     <Tone />
@@ -7978,7 +7922,7 @@ one (generic word [e.g. the small one])
       <string>enough</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พอ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พอ.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
@@ -7997,7 +7941,7 @@ one (generic word [e.g. the small one])
       <string>[of a street or room] a corner</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มุม.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มุม.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a normal tone.</EngDesc>
     <Tone />
@@ -8017,7 +7961,7 @@ one (generic word [e.g. the small one])
       <string>bus</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\รถ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\รถ.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a high tone and an aditional o.</EngDesc>
     <Tone />
@@ -8035,7 +7979,7 @@ one (generic word [e.g. the small one])
       <string>circle</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วง.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วง.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a medium tone and an aditional o.</EngDesc>
     <Tone />
@@ -8078,7 +8022,7 @@ one (generic word [e.g. the small one])
       <string>swine</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หมู.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หมู.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a rising tone.</EngDesc>
     <Tone />
@@ -8096,7 +8040,7 @@ one (generic word [e.g. the small one])
       <string>cast netting used for fishing</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แห.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แห.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a rising tone.</EngDesc>
     <Tone />
@@ -8114,7 +8058,7 @@ one (generic word [e.g. the small one])
       <string> to bake</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อบ.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อบ.wma</string>
     </SoundPath>
     <EngDesc>Pronounced with a low tone.</EngDesc>
     <Tone />
@@ -8136,7 +8080,7 @@ one (generic word [e.g. the small one])
       <string>teapot</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กา.mp3</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กา.wma</string>
     </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said.</EngDesc>
     <Tone>
@@ -8157,7 +8101,9 @@ one (generic word [e.g. the small one])
       <string>to request</string>
       <string>a hook</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ขอ.wma</string>
+    </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said.</EngDesc>
     <Tone>
       <string>Middle</string>
@@ -8178,7 +8124,7 @@ one (generic word [e.g. the small one])
       <string>offspring;</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลูก.wma</string>
     </SoundPath>
     <EngDesc>ู is pronounced as  a falling uu.  child; offspring; son or daughter [including figurative usage for certain ideas]; cub; young animal, small ball; bulbous object; small round object; shortened form of ลูกบอล [e.g. football or football shot]</EngDesc>
     <Tone>
@@ -8203,7 +8149,7 @@ one (generic word [e.g. the small one])
       <string>pedal</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คัน.wma</string>
     </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said.</EngDesc>
     <Tone>
@@ -8228,7 +8174,7 @@ one (generic word [e.g. the small one])
       <string>gallbladder</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ดี.wma</string>
     </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said. </EngDesc>
     <Tone>
@@ -8250,7 +8196,7 @@ one (generic word [e.g. the small one])
       <string>maternal grandfather</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตา.wma</string>
     </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said.</EngDesc>
     <Tone>
@@ -8278,7 +8224,7 @@ one (generic word [e.g. the small one])
       <string>economical</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ถูก.wma</string>
     </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said.</EngDesc>
     <Tone>
@@ -8302,7 +8248,7 @@ one (generic word [e.g. the small one])
       <string>hair </string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผม.wma</string>
     </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said. Used by male speakers to say I, me or my.</EngDesc>
     <Tone>
@@ -8323,7 +8269,7 @@ one (generic word [e.g. the small one])
       <string>field officer</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พัน.wma</string>
     </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said. </EngDesc>
     <Tone>
@@ -8345,7 +8291,7 @@ one (generic word [e.g. the small one])
       <string>early evening</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เย็น.wma</string>
     </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said. </EngDesc>
     <Tone>
@@ -8371,7 +8317,7 @@ one (generic word [e.g. the small one])
       <string>a rice mill</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี.wma</string>
     </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said. </EngDesc>
     <Tone>
