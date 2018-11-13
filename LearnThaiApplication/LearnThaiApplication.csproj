@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD07F8B4-AAB0-4BB3-A807-DC188C585E23}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LearnThaiApplication</RootNamespace>
+    <AssemblyName>LearnThaiApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Thailand.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.8.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.8.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=1.8.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.8.4\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Chapter.cs" />
+    <Compile Include="Classes\UserSetting.cs" />
+    <Compile Include="ContentMan.xaml.cs">
+      <DependentUpon>ContentMan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Word.cs" />
+    <Compile Include="Classes\XmlSerialization.cs" />
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="ContentMan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Classes\ThaiBase.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Files\Media\Language\Thai_Chapter.xml" />
+    <Resource Include="Files\Media\Language\Thai_Consonant.xml" />
+    <Resource Include="Files\Media\Language\Thai_ThaiNumber.xml" />
+    <Resource Include="Files\Media\Language\Thai_Vowel.xml" />
+    <Resource Include="Files\Media\Language\Thai_Word.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\Media\Website\Consonants.html" />
+    <Content Include="Files\Media\Website\Consonants1.html" />
+    <Content Include="Files\Media\Website\Numbers.html" />
+    <Content Include="Files\Media\Website\Numbers1.html" />
+    <Content Include="Files\Media\Website\Vowel.html" />
+    <Content Include="Files\Media\Website\Vowel1.html" />
+    <Content Include="Files\Media\Website\Words.html" />
+    <Content Include="Files\Media\Website\Words1.html" />
+    <Content Include="Files\Media\Website\Words2.html" />
+    <Content Include="Files\Media\Website\Words3.html" />
+    <Resource Include="Thailand.ico" />
+    <Resource Include="Files\Media\Icon\Speaker.png" />
+    <Resource Include="Files\Media\Icon\Thailand.ico" />
+    <Resource Include="Files\Media\Icon\Thailand.png" />
+    <Content Include="Files\Media\Sound\กบ.mp3" />
+    <Content Include="Files\Media\Sound\กรกฎาคม.mp3" />
+    <Content Include="Files\Media\Sound\กรรไกร.mp3" />
+    <Content Include="Files\Media\Sound\กลาง.mp3" />
+    <Content Include="Files\Media\Sound\กลางคืน.mp3" />
+    <Content Include="Files\Media\Sound\กลางวัน.mp3" />
+    <Content Include="Files\Media\Sound\กลืน.mp3" />
+    <Content Include="Files\Media\Sound\กะ.mp3" />
+    <Content Include="Files\Media\Sound\กัน.mp3" />
+    <Content Include="Files\Media\Sound\กันยายน.mp3" />
+    <Content Include="Files\Media\Sound\กับ.mp3" />
+    <Content Include="Files\Media\Sound\กา.mp3" />
+    <Content Include="Files\Media\Sound\การ.mp3" />
+    <Content Include="Files\Media\Sound\กี่โมงแล้ว.mp3" />
+    <Content Include="Files\Media\Sound\กุมภาพันธ์.mp3" />
+    <Content Include="Files\Media\Sound\ขวด.mp3" />
+    <Content Include="Files\Media\Sound\ขา.mp3" />
+    <Content Include="Files\Media\Sound\คน.mp3" />
+    <Content Include="Files\Media\Sound\คม.mp3" />
+    <Content Include="Files\Media\Sound\ครับ.mp3" />
+    <Content Include="Files\Media\Sound\ครึ่ง.mp3" />
+    <Content Include="Files\Media\Sound\ความ.mp3" />
+    <Content Include="Files\Media\Sound\ความคิด.mp3" />
+    <Content Include="Files\Media\Sound\ควาย.mp3" />
+    <Content Include="Files\Media\Sound\คะ.mp3" />
+    <Content Include="Files\Media\Sound\คัน.mp3" />
+    <Content Include="Files\Media\Sound\คิด.mp3" />
+    <Content Include="Files\Media\Sound\คีบ.mp3" />
+    <Content Include="Files\Media\Sound\คืน.mp3" />
+    <Content Include="Files\Media\Sound\คือ.mp3" />
+    <Content Include="Files\Media\Sound\คุก.mp3" />
+    <Content Include="Files\Media\Sound\คุย.mp3" />
+    <Content Include="Files\Media\Sound\ค่ะ.mp3" />
+    <Content Include="Files\Media\Sound\งง.mp3" />
+    <Content Include="Files\Media\Sound\งู.mp3" />
+    <Content Include="Files\Media\Sound\จน.mp3" />
+    <Content Include="Files\Media\Sound\จระเข้.mp3" />
+    <Content Include="Files\Media\Sound\จอ.mp3" />
+    <Content Include="Files\Media\Sound\จาน.mp3" />
+    <Content Include="Files\Media\Sound\จุฬา.mp3" />
+    <Content Include="Files\Media\Sound\ฉัน.mp3" />
+    <Content Include="Files\Media\Sound\ฉิ่ง.mp3" />
+    <Content Include="Files\Media\Sound\ฉีด.mp3" />
+    <Content Include="Files\Media\Sound\ชฎา.mp3" />
+    <Content Include="Files\Media\Sound\ชั่ว.mp3" />
+    <Content Include="Files\Media\Sound\ชั่วโมง.mp3" />
+    <Content Include="Files\Media\Sound\ชาย.mp3" />
+    <Content Include="Files\Media\Sound\ช่วง.mp3" />
+    <Content Include="Files\Media\Sound\ช้าง.mp3" />
+    <Content Include="Files\Media\Sound\ซัก.mp3" />
+    <Content Include="Files\Media\Sound\ฐาน.mp3" />
+    <Content Include="Files\Media\Sound\ดิน.mp3" />
+    <Content Include="Files\Media\Sound\ตด.mp3" />
+    <Content Include="Files\Media\Sound\ตรง.mp3" />
+    <Content Include="Files\Media\Sound\ตลาด.mp3" />
+    <Content Include="Files\Media\Sound\ตอน.mp3" />
+    <Content Include="Files\Media\Sound\ตอนเช้า.mp3" />
+    <Content Include="Files\Media\Sound\ตะบอง.mp3" />
+    <Content Include="Files\Media\Sound\ตัว.mp3" />
+    <Content Include="Files\Media\Sound\ตั๋ว.mp3" />
+    <Content Include="Files\Media\Sound\ตา.mp3" />
+    <Content Include="Files\Media\Sound\ตี.mp3" />
+    <Content Include="Files\Media\Sound\ตีสอง.mp3" />
+    <Content Include="Files\Media\Sound\ตีสาม.mp3" />
+    <Content Include="Files\Media\Sound\ตีสี่.mp3" />
+    <Content Include="Files\Media\Sound\ตีหนึ่ง.mp3" />
+    <Content Include="Files\Media\Sound\ตีห้า.mp3" />
+    <Content Include="Files\Media\Sound\ตุลาคม.mp3" />
+    <Content Include="Files\Media\Sound\ถนน.mp3" />
+    <Content Include="Files\Media\Sound\ถือ.mp3" />
+    <Content Include="Files\Media\Sound\ถุง.mp3" />
+    <Content Include="Files\Media\Sound\ทรง.mp3" />
+    <Content Include="Files\Media\Sound\ทราย.mp3" />
+    <Content Include="Files\Media\Sound\ทหาร.mp3" />
+    <Content Include="Files\Media\Sound\ทา.mp3" />
+    <Content Include="Files\Media\Sound\ทาน.mp3" />
+    <Content Include="Files\Media\Sound\ทำ.mp3" />
+    <Content Include="Files\Media\Sound\ทุ่ม.mp3" />
+    <Content Include="Files\Media\Sound\ทุ่มหนึ่ง.mp3" />
+    <Content Include="Files\Media\Sound\ท่าน.mp3" />
+    <Content Include="Files\Media\Sound\ธง.mp3" />
+    <Content Include="Files\Media\Sound\ธรรมดา.mp3" />
+    <Content Include="Files\Media\Sound\ธันวาคม.mp3" />
+    <Content Include="Files\Media\Sound\นก.mp3" />
+    <Content Include="Files\Media\Sound\นรก.mp3" />
+    <Content Include="Files\Media\Sound\นอน.mp3" />
+    <Content Include="Files\Media\Sound\นะ.mp3" />
+    <Content Include="Files\Media\Sound\นั่ง.mp3" />
+    <Content Include="Files\Media\Sound\นาที.mp3" />
+    <Content Include="Files\Media\Sound\นานเท่าไหร่.mp3" />
+    <Content Include="Files\Media\Sound\น้อง.mp3" />
+    <Content Include="Files\Media\Sound\น้า.mp3" />
+    <Content Include="Files\Media\Sound\บาด.mp3" />
+    <Content Include="Files\Media\Sound\บิน.mp3" />
+    <Content Include="Files\Media\Sound\บ่อย.mp3" />
+    <Content Include="Files\Media\Sound\บ่าย.mp3" />
+    <Content Include="Files\Media\Sound\บ่ายสองโมง.mp3" />
+    <Content Include="Files\Media\Sound\บ่ายสามโมง.mp3" />
+    <Content Include="Files\Media\Sound\บ่ายโมง.mp3" />
+    <Content Include="Files\Media\Sound\ปฏัก.mp3" />
+    <Content Include="Files\Media\Sound\ปลอม.mp3" />
+    <Content Include="Files\Media\Sound\ปลา.mp3" />
+    <Content Include="Files\Media\Sound\ปู.mp3" />
+    <Content Include="Files\Media\Sound\ปู่.mp3" />
+    <Content Include="Files\Media\Sound\ป้า.mp3" />
+    <Content Include="Files\Media\Sound\ผม.mp3" />
+    <Content Include="Files\Media\Sound\ผลัวะ.mp3" />
+    <Content Include="Files\Media\Sound\ผึ้ง.mp3" />
+    <Content Include="Files\Media\Sound\ผู้เฒ่า.mp3" />
+    <Content Include="Files\Media\Sound\ฝน.mp3" />
+    <Content Include="Files\Media\Sound\ฝา.mp3" />
+    <Content Include="Files\Media\Sound\พร.mp3" />
+    <Content Include="Files\Media\Sound\พฤศจิกายน.mp3" />
+    <Content Include="Files\Media\Sound\พฤษภาคม.mp3" />
+    <Content Include="Files\Media\Sound\พอ.mp3" />
+    <Content Include="Files\Media\Sound\พัน.mp3" />
+    <Content Include="Files\Media\Sound\พาน.mp3" />
+    <Content Include="Files\Media\Sound\พี่.mp3" />
+    <Content Include="Files\Media\Sound\ฟัน.mp3" />
+    <Content Include="Files\Media\Sound\มกราคม.mp3" />
+    <Content Include="Files\Media\Sound\มณโฑ.mp3" />
+    <Content Include="Files\Media\Sound\มั้ง.mp3" />
+    <Content Include="Files\Media\Sound\มิถุนายน.mp3" />
+    <Content Include="Files\Media\Sound\มีนาคม.mp3" />
+    <Content Include="Files\Media\Sound\มือ.mp3" />
+    <Content Include="Files\Media\Sound\มุม.mp3" />
+    <Content Include="Files\Media\Sound\ม้า.mp3" />
+    <Content Include="Files\Media\Sound\ยักษ์.mp3" />
+    <Content Include="Files\Media\Sound\ยาย.mp3" />
+    <Content Include="Files\Media\Sound\ยี่สิบ.mp3" />
+    <Content Include="Files\Media\Sound\ยี่สิบสอง.mp3" />
+    <Content Include="Files\Media\Sound\ยี่สิบสาม.mp3" />
+    <Content Include="Files\Media\Sound\ยี่สิบเอ็ด.mp3" />
+    <Content Include="Files\Media\Sound\ย่า.mp3" />
+    <Content Include="Files\Media\Sound\รถ.mp3" />
+    <Content Include="Files\Media\Sound\ระฆัง.mp3" />
+    <Content Include="Files\Media\Sound\ร้อย.mp3" />
+    <Content Include="Files\Media\Sound\ฤทธ์.mp3" />
+    <Content Include="Files\Media\Sound\ฤๅษี.mp3" />
+    <Content Include="Files\Media\Sound\ละ.mp3" />
+    <Content Include="Files\Media\Sound\ลำ.mp3" />
+    <Content Include="Files\Media\Sound\ลิง.mp3" />
+    <Content Include="Files\Media\Sound\ลิ้น.mp3" />
+    <Content Include="Files\Media\Sound\ลุง.mp3" />
+    <Content Include="Files\Media\Sound\ลูก.mp3" />
+    <Content Include="Files\Media\Sound\ล้าน.mp3" />
+    <Content Include="Files\Media\Sound\วง.mp3" />
+    <Content Include="Files\Media\Sound\วัน.mp3" />
+    <Content Include="Files\Media\Sound\วันขึ้นปีใหม่.mp3" />
+    <Content Include="Files\Media\Sound\วันจักรี.mp3" />
+    <Content Include="Files\Media\Sound\วันจันทร์.mp3" />
+    <Content Include="Files\Media\Sound\วันฉัตรมงคล.mp3" />
+    <Content Include="Files\Media\Sound\วันทำงาน.mp3" />
+    <Content Include="Files\Media\Sound\วันที่.mp3" />
+    <Content Include="Files\Media\Sound\วันนี้.mp3" />
+    <Content Include="Files\Media\Sound\วันพระ.mp3" />
+    <Content Include="Files\Media\Sound\วันพฤหัสบดี.mp3" />
+    <Content Include="Files\Media\Sound\วันพืชมงคล.mp3" />
+    <Content Include="Files\Media\Sound\วันพุธ.mp3" />
+    <Content Include="Files\Media\Sound\วันพ่อ.mp3" />
+    <Content Include="Files\Media\Sound\วันมาฆบูชา.mp3" />
+    <Content Include="Files\Media\Sound\วันวิสาขบูชา.mp3" />
+    <Content Include="Files\Media\Sound\วันศุกร์.mp3" />
+    <Content Include="Files\Media\Sound\วันหยุด.mp3" />
+    <Content Include="Files\Media\Sound\วันอังคาร.mp3" />
+    <Content Include="Files\Media\Sound\วันอาทิตย์.mp3" />
+    <Content Include="Files\Media\Sound\วันเสาร์.mp3" />
+    <Content Include="Files\Media\Sound\วันแม่.mp3" />
+    <Content Include="Files\Media\Sound\ศร.mp3" />
+    <Content Include="Files\Media\Sound\สมอง.mp3" />
+    <Content Include="Files\Media\Sound\สว่าง.mp3" />
+    <Content Include="Files\Media\Sound\สอง.mp3" />
+    <Content Include="Files\Media\Sound\สองทุ่ม.mp3" />
+    <Content Include="Files\Media\Sound\สองร้อย.mp3" />
+    <Content Include="Files\Media\Sound\สะอาด.mp3" />
+    <Content Include="Files\Media\Sound\สัน.mp3" />
+    <Content Include="Files\Media\Sound\สาม.mp3" />
+    <Content Include="Files\Media\Sound\สามทุ่ม.mp3" />
+    <Content Include="Files\Media\Sound\สามร้อย.mp3" />
+    <Content Include="Files\Media\Sound\สามสิบ.mp3" />
+    <Content Include="Files\Media\Sound\สาย.mp3" />
+    <Content Include="Files\Media\Sound\สาว.mp3" />
+    <Content Include="Files\Media\Sound\สำเภา.mp3" />
+    <Content Include="Files\Media\Sound\สิงหาคม.mp3" />
+    <Content Include="Files\Media\Sound\สิบ.mp3" />
+    <Content Include="Files\Media\Sound\สิบสอง.mp3" />
+    <Content Include="Files\Media\Sound\สิบสาม.mp3" />
+    <Content Include="Files\Media\Sound\สิบสี่.mp3" />
+    <Content Include="Files\Media\Sound\สิบหก.mp3" />
+    <Content Include="Files\Media\Sound\สิบห้า.mp3" />
+    <Content Include="Files\Media\Sound\สิบเก้า.mp3" />
+    <Content Include="Files\Media\Sound\สิบเจ็ด.mp3" />
+    <Content Include="Files\Media\Sound\สิบเอ็ด.mp3" />
+    <Content Include="Files\Media\Sound\สิบแปด.mp3" />
+    <Content Include="Files\Media\Sound\สิบโมงเช้า.mp3" />
+    <Content Include="Files\Media\Sound\สี.mp3" />
+    <Content Include="Files\Media\Sound\สีขาว.mp3" />
+    <Content Include="Files\Media\Sound\สีชมพู.mp3" />
+    <Content Include="Files\Media\Sound\สีดำ.mp3" />
+    <Content Include="Files\Media\Sound\สีน้ำตาล.mp3" />
+    <Content Include="Files\Media\Sound\สีน้ำตาลอ่อน.mp3" />
+    <Content Include="Files\Media\Sound\สีน้ำเงิน.mp3" />
+    <Content Include="Files\Media\Sound\สีฟ้า.mp3" />
+    <Content Include="Files\Media\Sound\สีม่วง.mp3" />
+    <Content Include="Files\Media\Sound\สีส้ม.mp3" />
+    <Content Include="Files\Media\Sound\สีเขียว.mp3" />
+    <Content Include="Files\Media\Sound\สีเทา.mp3" />
+    <Content Include="Files\Media\Sound\สีเหลือง.mp3" />
+    <Content Include="Files\Media\Sound\สีแดง.mp3" />
+    <Content Include="Files\Media\Sound\สี่.mp3" />
+    <Content Include="Files\Media\Sound\สี่ทุ่ม.mp3" />
+    <Content Include="Files\Media\Sound\สี่สิบ.mp3" />
+    <Content Include="Files\Media\Sound\สี่โมงเย็น.mp3" />
+    <Content Include="Files\Media\Sound\หก.mp3" />
+    <Content Include="Files\Media\Sound\หกสิบ.mp3" />
+    <Content Include="Files\Media\Sound\หกโมงครึ่ง.mp3" />
+    <Content Include="Files\Media\Sound\หกโมงเช้า.mp3" />
+    <Content Include="Files\Media\Sound\หกโมงเย็น.mp3" />
+    <Content Include="Files\Media\Sound\หงส์.mp3" />
+    <Content Include="Files\Media\Sound\หญิง.mp3" />
+    <Content Include="Files\Media\Sound\หญ้า.mp3" />
+    <Content Include="Files\Media\Sound\หนึ่ง.mp3" />
+    <Content Include="Files\Media\Sound\หนึ่งร้อย.mp3" />
+    <Content Include="Files\Media\Sound\หนู.mp3" />
+    <Content Include="Files\Media\Sound\หมื่น.mp3" />
+    <Content Include="Files\Media\Sound\หมู.mp3" />
+    <Content Include="Files\Media\Sound\หรอก.mp3" />
+    <Content Include="Files\Media\Sound\หัวใจ.mp3" />
+    <Content Include="Files\Media\Sound\หิว.mp3" />
+    <Content Include="Files\Media\Sound\ห้า.mp3" />
+    <Content Include="Files\Media\Sound\ห้าสิบ.mp3" />
+    <Content Include="Files\Media\Sound\ห้าโมงเย็น.mp3" />
+    <Content Include="Files\Media\Sound\อบ.mp3" />
+    <Content Include="Files\Media\Sound\อยาก.mp3" />
+    <Content Include="Files\Media\Sound\อยู่.mp3" />
+    <Content Include="Files\Media\Sound\อย่า.mp3" />
+    <Content Include="Files\Media\Sound\อย่าง.mp3" />
+    <Content Include="Files\Media\Sound\อัน.mp3" />
+    <Content Include="Files\Media\Sound\อา.mp3" />
+    <Content Include="Files\Media\Sound\อีก.mp3" />
+    <Content Include="Files\Media\Sound\อ่าง.mp3" />
+    <Content Include="Files\Media\Sound\ฮ่า.mp3" />
+    <Content Include="Files\Media\Sound\ฯ.mp3" />
+    <Content Include="Files\Media\Sound\ฯลฯ.mp3" />
+    <Content Include="Files\Media\Sound\เกาะ.mp3" />
+    <Content Include="Files\Media\Sound\เกิน.mp3" />
+    <Content Include="Files\Media\Sound\เก้า.mp3" />
+    <Content Include="Files\Media\Sound\เก้าสิบ.mp3" />
+    <Content Include="Files\Media\Sound\เก้าโมงเช้า.mp3" />
+    <Content Include="Files\Media\Sound\เจ็ด.mp3" />
+    <Content Include="Files\Media\Sound\เจ็ดสิบ.mp3" />
+    <Content Include="Files\Media\Sound\เช้า.mp3" />
+    <Content Include="Files\Media\Sound\เฌอ.mp3" />
+    <Content Include="Files\Media\Sound\เณร.mp3" />
+    <Content Include="Files\Media\Sound\เดิน.mp3" />
+    <Content Include="Files\Media\Sound\เดี๊ยะ.mp3" />
+    <Content Include="Files\Media\Sound\เด็ก.mp3" />
+    <Content Include="Files\Media\Sound\เตะ.mp3" />
+    <Content Include="Files\Media\Sound\เต่า.mp3" />
+    <Content Include="Files\Media\Sound\เที่ยงคืน.mp3" />
+    <Content Include="Files\Media\Sound\เที่ยงวัน.mp3" />
+    <Content Include="Files\Media\Sound\เที่ยว.mp3" />
+    <Content Include="Files\Media\Sound\เบียร์.mp3" />
+    <Content Include="Files\Media\Sound\เป็ด.mp3" />
+    <Content Include="Files\Media\Sound\เผลอ.mp3" />
+    <Content Include="Files\Media\Sound\เพลง.mp3" />
+    <Content Include="Files\Media\Sound\เมษายน.mp3" />
+    <Content Include="Files\Media\Sound\เมีย.mp3" />
+    <Content Include="Files\Media\Sound\เมือง.mp3" />
+    <Content Include="Files\Media\Sound\เมื่อกี้.mp3" />
+    <Content Include="Files\Media\Sound\เยอะ.mp3" />
+    <Content Include="Files\Media\Sound\เย็น.mp3" />
+    <Content Include="Files\Media\Sound\เรา.mp3" />
+    <Content Include="Files\Media\Sound\เรือ.mp3" />
+    <Content Include="Files\Media\Sound\เร็ว.mp3" />
+    <Content Include="Files\Media\Sound\เสียงสามัญ.mp3" />
+    <Content Include="Files\Media\Sound\เหนื่อย.mp3" />
+    <Content Include="Files\Media\Sound\เอือะ.mp3" />
+    <Content Include="Files\Media\Sound\แกะ.mp3" />
+    <Content Include="Files\Media\Sound\แขน.mp3" />
+    <Content Include="Files\Media\Sound\แดง.mp3" />
+    <Content Include="Files\Media\Sound\แปด.mp3" />
+    <Content Include="Files\Media\Sound\แปดสิบ.mp3" />
+    <Content Include="Files\Media\Sound\แปดโมงเช้า.mp3" />
+    <Content Include="Files\Media\Sound\แสน.mp3" />
+    <Content Include="Files\Media\Sound\แห.mp3" />
+    <Content Include="Files\Media\Sound\โชค.mp3" />
+    <Content Include="Files\Media\Sound\โซ่.mp3" />
+    <Content Include="Files\Media\Sound\โต๊ะ.mp3" />
+    <Content Include="Files\Media\Sound\โมง.mp3" />
+    <Content Include="Files\Media\Sound\โยน.mp3" />
+    <Content Include="Files\Media\Sound\ใบ.mp3" />
+    <Content Include="Files\Media\Sound\ใบไม้.mp3" />
+    <Content Include="Files\Media\Sound\ใส่.mp3" />
+    <Content Include="Files\Media\Sound\ไก่.mp3" />
+    <Content Include="Files\Media\Sound\ไข่.mp3" />
+    <Content Include="Files\Media\Sound\ไม่.mp3" />
+    <Content Include="Files\Media\Sound\ไม้จัตวา.mp3" />
+    <Content Include="Files\Media\Sound\ไม้เอก.mp3" />
+    <Content Include="Files\Media\Sound\ไม้โท.mp3" />
+    <Resource Include="Files\Settings\DEBUG\LearnThaiApplication.Consonant.txt" />
+    <Resource Include="Files\Settings\DEBUG\LearnThaiApplication.ThaiNumber.txt" />
+    <Resource Include="Files\Settings\DEBUG\LearnThaiApplication.Vowel.txt" />
+    <Resource Include="Files\Settings\DEBUG\LearnThaiApplication.Word.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
