@@ -4026,7 +4026,7 @@ one (generic word [e.g. the small one])
       <string> marketplace</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตลาด.wma</string>
+      <string />
     </SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />

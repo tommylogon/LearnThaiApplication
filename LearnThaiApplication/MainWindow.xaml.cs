@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
@@ -950,7 +951,6 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void Randomized_Checked(object sender, RoutedEventArgs e)
         {
-
             RandomOn = (sender as CheckBox)?.IsChecked == true;
             ckb_LoopChapter.IsChecked = false;
             SetSettings();
@@ -975,7 +975,6 @@ namespace LearnThaiApplication
                 SelectedChapter = ((Chapter)cb_ManageOnChapter.SelectedItem).ChapterName;
             }
             FindWordWithChapter();
-
         }
 
         /// <summary>
@@ -1140,6 +1139,16 @@ namespace LearnThaiApplication
             }
 
             File.WriteAllText(DebugFilePath + "File.txt", fullText);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CheckSoundStatus_Clicked(object sender, RoutedEventArgs e)
+        {
+            CheckAllSoundStatuses();
         }
 
         #endregion Settings
@@ -1512,6 +1521,9 @@ namespace LearnThaiApplication
             list.Insert(newIndex, item);
         }
 
+        /// <summary>
+        ///
+        /// </summary>
         private void PopulateManageChapterCB()
         {
             cb_ManageOnChapter.ItemsSource = null;
@@ -1618,6 +1630,10 @@ namespace LearnThaiApplication
             HowToSubmit(true);
         }
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="isNew"></param>
         private void SubmitStyleChanger(bool isNew)
         {
             if (isNew)
@@ -1947,12 +1963,17 @@ namespace LearnThaiApplication
             try
             {
                 List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
+
                 foreach (string soundpath in soundPaths)
                 {
-                    var reader = new Mp3FileReader(soundpath);
-                    var waveOut = new WaveOut();
-                    waveOut.Init(reader);
-                    waveOut.Play();
+                    MediaPlayer player = new MediaPlayer();
+                    player.Open(new Uri(soundpath));
+                    player.Play();
+
+                    //var reader = new Mp3FileReader(soundpath);
+                    //var waveOut = new WaveOut();
+                    //waveOut.Init(reader);
+                    //waveOut.Play();
                 }
             }
             catch (Exception ex)
@@ -2060,6 +2081,7 @@ namespace LearnThaiApplication
         private bool SoundDownloader(string correctText, string soundDownloadPath)
         {
             string savePath = SoundFilePath + correctText + ".wma";
+
             string FullSoundPath = "http://www.thai-language.com" + soundDownloadPath;
 
             using (var client = new WebClient())
@@ -2085,7 +2107,7 @@ namespace LearnThaiApplication
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void SoundDownloader(object sender, RoutedEventArgs e)
+        private void StartSoundDownload(object sender, RoutedEventArgs e)
         {
             BackgroundWorker worker = new BackgroundWorker();
             worker.WorkerReportsProgress = true;
@@ -2093,8 +2115,6 @@ namespace LearnThaiApplication
             worker.ProgressChanged += worker_ProgressChanged;
 
             worker.RunWorkerAsync();
-
-            CheckAllSoundStatuses();
         }
 
         /// <summary>
@@ -2205,10 +2225,5 @@ namespace LearnThaiApplication
         }
 
         #endregion Sound
-
-        private void CheckSoundStatus_Clicked(object sender, RoutedEventArgs e)
-        {
-            CheckAllSoundStatuses();
-        }
     }
 }
