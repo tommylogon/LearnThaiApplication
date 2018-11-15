@@ -142,6 +142,7 @@
                     <Button Content="Set SoundPaths" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="135,367,0,0" Click="SetSoundPath_clicked" />
                     <Button Content="Print all words" HorizontalAlignment="Left" Margin="135,392,0,0" VerticalAlignment="Top" Width="75" Click="PrintAllWordsToFile" />
                     <ProgressBar Minimum="0" Maximum="100" Name="pbStatus" Margin="252,279,273,173" />
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="165,36,0,0" VerticalAlignment="Top" />
                 </Grid>
             </TabItem>
         </TabControl>

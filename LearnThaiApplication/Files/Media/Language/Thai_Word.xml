@@ -362,17 +362,17 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>ก</Name>
+    <Name>กอ จอ ฎอ ฏอ ดอ ตอ บอ ปอ ออ</Name>
     <ThaiScript>
-      <string>ก</string>
-      <string>จ</string>
-      <string>ฎ</string>
-      <string>ฏ</string>
-      <string>ด</string>
-      <string>ต</string>
-      <string>บ</string>
-      <string>ป</string>
-      <string>อ</string>
+      <string>กอ</string>
+      <string>จอ</string>
+      <string>ฎอ</string>
+      <string>ฏอ</string>
+      <string>ดอ</string>
+      <string>ตอ</string>
+      <string>บอ</string>
+      <string>ปอ</string>
+      <string>ออ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>go</string>
@@ -398,19 +398,19 @@
     <Chapter>Thai alphabet</Chapter>
   </Word>
   <Word>
-    <Name>ข</Name>
+    <Name>ขอ ฃอ ฉอ ฐอ ถอ ผอ ฝอ ศอ ษอ สอ หอ</Name>
     <ThaiScript>
-      <string>ข</string>
-      <string>ฃ</string>
-      <string>ฉ</string>
-      <string>ฐ</string>
-      <string>ถ</string>
-      <string>ผ</string>
-      <string>ฝ</string>
-      <string>ศ</string>
-      <string>ษ</string>
-      <string>ส</string>
-      <string>ห</string>
+      <string>ขอ</string>
+      <string>ฃอ</string>
+      <string>ฉอ</string>
+      <string>ฐอ</string>
+      <string>ถอ</string>
+      <string>ผอ</string>
+      <string>ฝอ</string>
+      <string>ศอ</string>
+      <string>ษอ</string>
+      <string>สอ</string>
+      <string>หอ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>ko</string>
@@ -428,7 +428,9 @@
     <EngWords>
       <string>High tone class</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string />
+    </SoundPath>
     <EngDesc>These are the consonants with the High tone class</EngDesc>
     <Tone>
       <string />
@@ -436,32 +438,32 @@
     <Chapter>Thai alphabet</Chapter>
   </Word>
   <Word>
-    <Name>ค</Name>
+    <Name>คอ ฅอ ฆอ งอ ชอ ซอ ฌอ ญอ ฑอ ฒอ ณอ ทอ ธอ นอ พอ ฟอ ภอ มอ ยอ รอ ลอ วอ ฬอ ฮอ</Name>
     <ThaiScript>
-      <string>ค</string>
-      <string>ฅ</string>
-      <string>ฆ</string>
-      <string>ง</string>
-      <string>ช</string>
-      <string>ซ</string>
-      <string>ฌ</string>
-      <string>ญ</string>
-      <string>ฑ</string>
-      <string>ฒ</string>
-      <string>ณ</string>
-      <string>ท</string>
-      <string>ธ</string>
-      <string>น</string>
-      <string>พ</string>
-      <string>ฟ</string>
-      <string>ภ</string>
-      <string>ม</string>
-      <string>ย</string>
-      <string>ร</string>
-      <string>ล</string>
-      <string>ว</string>
-      <string>ฬ</string>
-      <string>ฮ</string>
+      <string>คอ</string>
+      <string>ฅอ</string>
+      <string>ฆอ</string>
+      <string>งอ</string>
+      <string>ชอ</string>
+      <string>ซอ</string>
+      <string>ฌอ</string>
+      <string>ญอ</string>
+      <string>ฑอ</string>
+      <string>ฒอ</string>
+      <string>ณอ</string>
+      <string>ทอ</string>
+      <string>ธอ</string>
+      <string>นอ</string>
+      <string>พอ</string>
+      <string>ฟอ</string>
+      <string>ภอ</string>
+      <string>มอ</string>
+      <string>ยอ</string>
+      <string>รอ</string>
+      <string>ลอ</string>
+      <string>วอ</string>
+      <string>ฬอ</string>
+      <string>ฮอ</string>
     </ThaiScript>
     <ThaiFonet>
       <string>ko</string>
@@ -504,7 +506,7 @@
   <Word>
     <Name>ก</Name>
     <ThaiScript>
-      <string>ก</string>
+      <string>กอ</string>
       <string>ไก่</string>
     </ThaiScript>
     <ThaiFonet>
@@ -527,7 +529,7 @@
   <Word>
     <Name>ข</Name>
     <ThaiScript>
-      <string>ข</string>
+      <string>ขอ</string>
       <string>ไข่</string>
     </ThaiScript>
     <ThaiFonet>
@@ -549,7 +551,7 @@
   <Word>
     <Name>ฃ</Name>
     <ThaiScript>
-      <string>ฃ</string>
+      <string>ฃอ</string>
       <string>ขวด</string>
     </ThaiScript>
     <ThaiFonet>
@@ -572,7 +574,7 @@
   <Word>
     <Name>ค</Name>
     <ThaiScript>
-      <string>ค</string>
+      <string>คอ</string>
       <string>ควาย</string>
     </ThaiScript>
     <ThaiFonet>
@@ -595,7 +597,7 @@
   <Word>
     <Name>ฅ</Name>
     <ThaiScript>
-      <string>ฅ</string>
+      <string>ฅอ</string>
       <string>คน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -622,7 +624,7 @@
   <Word>
     <Name>ฆ</Name>
     <ThaiScript>
-      <string>ฆ</string>
+      <string>ฆอ</string>
       <string>ระฆัง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -646,7 +648,7 @@
   <Word>
     <Name>ง</Name>
     <ThaiScript>
-      <string>ง</string>
+      <string>งอ</string>
       <string>งู</string>
     </ThaiScript>
     <ThaiFonet>
@@ -669,7 +671,7 @@
   <Word>
     <Name>จ</Name>
     <ThaiScript>
-      <string>จ</string>
+      <string>จอ</string>
       <string>จาน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -693,7 +695,7 @@
   <Word>
     <Name>ฉ</Name>
     <ThaiScript>
-      <string>ฉ</string>
+      <string>ฉอ</string>
       <string>ฉิ่ง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -715,7 +717,7 @@
   <Word>
     <Name>ช</Name>
     <ThaiScript>
-      <string>ช</string>
+      <string>ชอ</string>
       <string>ช้าง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -738,7 +740,7 @@
   <Word>
     <Name>ซ</Name>
     <ThaiScript>
-      <string>ซ</string>
+      <string>ซอ</string>
       <string>โซ่</string>
     </ThaiScript>
     <ThaiFonet>
@@ -761,7 +763,7 @@
   <Word>
     <Name>ฌ</Name>
     <ThaiScript>
-      <string>ฌ</string>
+      <string>ฌอ</string>
       <string>เฌอ</string>
     </ThaiScript>
     <ThaiFonet>
@@ -784,7 +786,7 @@
   <Word>
     <Name>ญ</Name>
     <ThaiScript>
-      <string>ญ</string>
+      <string>ญอ</string>
       <string>หญิง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -808,7 +810,7 @@
   <Word>
     <Name>ฎ</Name>
     <ThaiScript>
-      <string>ฎ</string>
+      <string>ฎอ</string>
       <string>ชฎา</string>
     </ThaiScript>
     <ThaiFonet>
@@ -831,7 +833,7 @@
   <Word>
     <Name>ฏ</Name>
     <ThaiScript>
-      <string>ฏ</string>
+      <string>ฏอ</string>
       <string>ปฏัก</string>
     </ThaiScript>
     <ThaiFonet>
@@ -856,7 +858,7 @@
   <Word>
     <Name>ฐ</Name>
     <ThaiScript>
-      <string>ฐ</string>
+      <string>ฐอ</string>
       <string>ฐาน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -889,7 +891,7 @@
   <Word>
     <Name>ฑ</Name>
     <ThaiScript>
-      <string>ฑ</string>
+      <string>ฑอ</string>
       <string>มณโฑ</string>
     </ThaiScript>
     <ThaiFonet>
@@ -912,7 +914,7 @@
   <Word>
     <Name>ฒ</Name>
     <ThaiScript>
-      <string>ฒ</string>
+      <string>ฒอ</string>
       <string>ผู้เฒ่า</string>
     </ThaiScript>
     <ThaiFonet>
@@ -936,7 +938,7 @@
   <Word>
     <Name>ณ</Name>
     <ThaiScript>
-      <string>ณ</string>
+      <string>ณอ</string>
       <string>เณร</string>
     </ThaiScript>
     <ThaiFonet>
@@ -959,7 +961,7 @@
   <Word>
     <Name>ด</Name>
     <ThaiScript>
-      <string>ด</string>
+      <string>ดอ</string>
       <string>เด็ก</string>
     </ThaiScript>
     <ThaiFonet>
@@ -982,7 +984,7 @@
   <Word>
     <Name>ต</Name>
     <ThaiScript>
-      <string>ต</string>
+      <string>ตอ</string>
       <string>เต่า</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1005,7 +1007,7 @@
   <Word>
     <Name>ถ</Name>
     <ThaiScript>
-      <string>ถ</string>
+      <string>ถอ</string>
       <string>ถุง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1030,7 +1032,7 @@
   <Word>
     <Name>ท</Name>
     <ThaiScript>
-      <string>ท</string>
+      <string>ทอ</string>
       <string>ทหาร</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1057,7 +1059,7 @@
   <Word>
     <Name>ธ</Name>
     <ThaiScript>
-      <string>ธ</string>
+      <string>ธอ</string>
       <string>ธง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1080,7 +1082,7 @@
   <Word>
     <Name>น</Name>
     <ThaiScript>
-      <string>น</string>
+      <string>นอ</string>
       <string>หนู</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1109,7 +1111,7 @@
   <Word>
     <Name>บ</Name>
     <ThaiScript>
-      <string>บ</string>
+      <string>บอ</string>
       <string>ใบไม้</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1133,6 +1135,7 @@
   <Word>
     <Name>ป</Name>
     <ThaiScript>
+      <string>ปอ</string>
       <string>ปลา</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1155,6 +1158,7 @@
   <Word>
     <Name>ผ</Name>
     <ThaiScript>
+      <string>ผอ</string>
       <string>ผึ้ง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1177,6 +1181,7 @@
   <Word>
     <Name>ฝ</Name>
     <ThaiScript>
+      <string>ฝอ</string>
       <string>ฝา</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1200,7 +1205,7 @@
   <Word>
     <Name>พ</Name>
     <ThaiScript>
-      <string>พ</string>
+      <string>พอ</string>
       <string>พาน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1225,7 +1230,7 @@
   <Word>
     <Name>ฟ</Name>
     <ThaiScript>
-      <string>ฟ</string>
+      <string>ฟอ</string>
       <string>ฟัน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1253,7 +1258,7 @@
   <Word>
     <Name>ภ</Name>
     <ThaiScript>
-      <string>ภ</string>
+      <string>ภอ</string>
       <string>สำเภา</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1277,7 +1282,7 @@
   <Word>
     <Name>ม</Name>
     <ThaiScript>
-      <string>ม</string>
+      <string>มอ</string>
       <string>ม้า</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1300,7 +1305,7 @@
   <Word>
     <Name>ย</Name>
     <ThaiScript>
-      <string>ย</string>
+      <string>ยอ</string>
       <string>ยักษ์</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1335,7 +1340,7 @@
   <Word>
     <Name>ร</Name>
     <ThaiScript>
-      <string>ร</string>
+      <string>รอ</string>
       <string>เรือ</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1361,7 +1366,7 @@
   <Word>
     <Name>ล</Name>
     <ThaiScript>
-      <string>ล</string>
+      <string>ลอ</string>
       <string>ลิง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1383,7 +1388,7 @@
   <Word>
     <Name>ว</Name>
     <ThaiScript>
-      <string>ว</string>
+      <string>วอ</string>
       <string>เเหวน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1394,7 +1399,9 @@
     <EngWords>
       <string>Ring</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string />
+    </SoundPath>
     <EngDesc>a ring (worn on the finger), a circular metal washer</EngDesc>
     <Tone>
       <string>Rising</string>
@@ -1404,7 +1411,7 @@
   <Word>
     <Name>ศ</Name>
     <ThaiScript>
-      <string>ศ</string>
+      <string>ศอ</string>
       <string>ศาลา</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1429,7 +1436,7 @@
   <Word>
     <Name>ษ</Name>
     <ThaiScript>
-      <string>ษ</string>
+      <string>ษอ</string>
       <string>ฤๅษี</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1453,7 +1460,7 @@
   <Word>
     <Name>ส</Name>
     <ThaiScript>
-      <string>ส</string>
+      <string>สอ</string>
       <string>เสือ</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1476,7 +1483,7 @@
   <Word>
     <Name>ห</Name>
     <ThaiScript>
-      <string>ห</string>
+      <string>หอ</string>
       <string>หีบ</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1501,7 +1508,7 @@
   <Word>
     <Name>ฬ</Name>
     <ThaiScript>
-      <string>ฬ</string>
+      <string>ฬอ</string>
       <string>จุฬา</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1526,7 +1533,7 @@
   <Word>
     <Name>อ</Name>
     <ThaiScript>
-      <string>อ</string>
+      <string>ออ</string>
       <string>อ่าง</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1553,7 +1560,7 @@
   <Word>
     <Name>ฮ</Name>
     <ThaiScript>
-      <string>ฮ</string>
+      <string>ฮอ</string>
       <string>นกฮูก</string>
     </ThaiScript>
     <ThaiFonet>
@@ -1564,7 +1571,9 @@
     <EngWords>
       <string>Owl</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string />
+    </SoundPath>
     <EngDesc>oriental barn owl</EngDesc>
     <Tone>
       <string>High</string>

@@ -128,11 +128,9 @@ namespace LearnThaiApplication
                 SetPropertyOfGenericObject(word);
 
                 List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
-                string helpword = (string)GetValueFromValueList("ThaiHelpWord");
 
                 if (script.Count == 1)
                 {
-                    SetValueOfObject(helpword, "ThaiScript", word);
                 }
             }
         }
@@ -177,6 +175,7 @@ namespace LearnThaiApplication
         private void ChapterChanged(object sender, SelectionChangedEventArgs e)
         {
             CurrentFileIndex = 0;
+
             if (((ComboBox)sender).SelectedItem == null)
             {
             }
@@ -1125,17 +1124,24 @@ namespace LearnThaiApplication
 
             foreach (Word word in Words)
             {
-                SetPropertyOfGenericObject(word);
-
-                if (word.SoundPath.Count == 0)
+                foreach (string script in word.ThaiScript)
                 {
-                    List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
+                    string soundPath = SoundFilePath + script + ".wma";
 
-                    foreach (String s in script)
+                    if (!File.Exists(soundPath))
                     {
-                        fullText += s + "\r\n";
+                        fullText += script + "\r\n";
                     }
                 }
+
+                //if (word.SoundPath.Count == 0)
+                //{
+                //    List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
+
+                //    foreach (String s in script)
+                //    {
+                //    }
+                //}
             }
 
             File.WriteAllText(DebugFilePath + "File.txt", fullText);
@@ -1962,6 +1968,8 @@ namespace LearnThaiApplication
         {
             try
             {
+                SetPropertyOfGenericObject(DisplayList[CurrentFileIndex]);
+
                 List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
 
                 foreach (string soundpath in soundPaths)
@@ -1969,11 +1977,6 @@ namespace LearnThaiApplication
                     MediaPlayer player = new MediaPlayer();
                     player.Open(new Uri(soundpath));
                     player.Play();
-
-                    //var reader = new Mp3FileReader(soundpath);
-                    //var waveOut = new WaveOut();
-                    //waveOut.Init(reader);
-                    //waveOut.Play();
                 }
             }
             catch (Exception ex)
