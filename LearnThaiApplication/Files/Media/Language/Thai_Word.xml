@@ -389,7 +389,15 @@
       <string>Normal tone class</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฎอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฏอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ดอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ออ.wma</string>
     </SoundPath>
     <EngDesc>These are the consonants with the normal tone class</EngDesc>
     <Tone>
@@ -429,7 +437,16 @@
       <string>High tone class</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ขอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฃอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฉอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฐอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ถอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ศอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ษอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หอ.wma</string>
     </SoundPath>
     <EngDesc>These are the consonants with the High tone class</EngDesc>
     <Tone>
@@ -495,7 +512,30 @@
       <string>Low tone class</string>
     </EngWords>
     <SoundPath>
-      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฅอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฆอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\งอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ซอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฌอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ญอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฑอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฒอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ณอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฟอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ภอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\รอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฬอ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฮอ.wma</string>
     </SoundPath>
     <EngDesc>These are the consonants with the Low tone class</EngDesc>
     <Tone>
@@ -518,6 +558,7 @@
       <string>Chicken</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไก่.wma</string>
     </SoundPath>
     <EngDesc>[slang] women</EngDesc>
@@ -540,6 +581,7 @@
       <string>Egg</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ขอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไข่.wma</string>
     </SoundPath>
     <EngDesc>[sexual or colloquial slang] a man's testicle (ball)</EngDesc>
@@ -563,6 +605,7 @@
       <string>Bottle</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฃอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ขวด.wma</string>
     </SoundPath>
     <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ข. [numerical classifier for bottles and bottled substances]</EngDesc>
@@ -586,6 +629,7 @@
       <string>Water buffalo</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ควาย.wma</string>
     </SoundPath>
     <EngDesc>[slang] bufoon; ignoramus, Moron</EngDesc>
@@ -613,6 +657,7 @@
       <string>human being</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฅอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\คน.wma</string>
     </SoundPath>
     <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ค. [numerical classifier for persons/occupations], to stir; scramble; mix</EngDesc>
@@ -636,6 +681,7 @@
       <string>Bell</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฆอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ระฆัง.wma</string>
     </SoundPath>
     <EngDesc>a large bell</EngDesc>
@@ -660,6 +706,7 @@
       <string>Snake</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\งอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\งู.wma</string>
     </SoundPath>
     <EngDesc />
@@ -684,6 +731,7 @@
       <string>dish</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จาน.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for dishes (including satellite)]</EngDesc>
@@ -706,6 +754,7 @@
       <string>Cymbals</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฉอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฉิ่ง.wma</string>
     </SoundPath>
     <EngDesc>[a type of] small cymbal used in East and Southeast Asian music</EngDesc>
@@ -729,6 +778,7 @@
       <string>Elephant</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ช้าง.wma</string>
     </SoundPath>
     <EngDesc>[numerical classifier for royally enrolled elephants]</EngDesc>
@@ -752,6 +802,7 @@
       <string>motorcycle chain</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ซอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\โซ่.wma</string>
     </SoundPath>
     <EngDesc />
@@ -775,6 +826,7 @@
       <string>Thai tree</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฌอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เฌอ.wma</string>
     </SoundPath>
     <EngDesc>[a type of] small tree or bush</EngDesc>
@@ -799,6 +851,7 @@
       <string>Women</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ญอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หญิง.wma</string>
     </SoundPath>
     <EngDesc />
@@ -822,6 +875,7 @@
       <string>headdress</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฎอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ชฎา.wma</string>
     </SoundPath>
     <EngDesc>headress used in Thai classical dancing and theater</EngDesc>
@@ -847,6 +901,7 @@
       <string>javelin</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฏอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปฏัก.wma</string>
     </SoundPath>
     <EngDesc />
@@ -880,6 +935,7 @@
       <string>basis;</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฐอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฐาน.wma</string>
     </SoundPath>
     <EngDesc>[linguistics] origin of alphabet/Words, [adv] on the basis of</EngDesc>
@@ -903,6 +959,7 @@
       <string>The wife of a giant</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฑอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มณโฑ.wma</string>
     </SoundPath>
     <EngDesc>[a character in the Ramanyana epic,] the wife of a giant</EngDesc>
@@ -927,6 +984,7 @@
       <string>Elder</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฒอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผู้เฒ่า.wma</string>
     </SoundPath>
     <EngDesc> elder, respected old and wise person</EngDesc>
@@ -950,6 +1008,7 @@
       <string>Novice monk</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ณอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เณร.wma</string>
     </SoundPath>
     <EngDesc> [typically] below the age of twenty; title used to refer to a novice</EngDesc>
@@ -972,6 +1031,7 @@
       <string>Child</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ดอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เด็ก.wma</string>
     </SoundPath>
     <EngDesc>[fig.] a young person working in a subservient occupation</EngDesc>
@@ -996,6 +1056,7 @@
       <string>Turtle</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เต่า.wma</string>
     </SoundPath>
     <EngDesc>[adv] slowly; at a leisurely pace</EngDesc>
@@ -1021,6 +1082,7 @@
       <string>tube-like sack</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ถอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ถุง.wma</string>
     </SoundPath>
     <EngDesc> [numerical classifier for condoms, cysts, bags, pouches]</EngDesc>
@@ -1047,6 +1109,7 @@
       <string>soldier</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทหาร.wma</string>
     </SoundPath>
     <EngDesc />
@@ -1071,6 +1134,7 @@
       <string>Flag</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ธง.wma</string>
     </SoundPath>
     <EngDesc />
@@ -1098,6 +1162,7 @@
       <string>petite little thing</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนู.wma</string>
     </SoundPath>
     <EngDesc>[fairly impolite 2nd person pronoun used to call over a waitress in a restaurant and a girl or woman working in a nightclub, café or escort business] you, [1st person pronoun that a little girl, daughter or grown-up woman uses to refer to herself in a cute way, usually when speaking to her parents or elder relatives] I, myself, [2nd person pronoun used for calling a little girl or boy (usually หนู + the child's nickname) and implying the speaker's tender feeling towards the child] you, little boy, little girl, [1st person pronoun that a female servant and country girl or woman uses to to refer to herself when speaking to anyone] I, myself
@@ -1123,6 +1188,7 @@
       <string>Leaf</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\บอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ใบไม้.wma</string>
     </SoundPath>
     <EngDesc>leaf of a tree</EngDesc>
@@ -1147,6 +1213,7 @@
       <string>Fish</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ปลา.wma</string>
     </SoundPath>
     <EngDesc>[n, prop.n, colloq] year or zodiac sign of the Fish</EngDesc>
@@ -1170,6 +1237,7 @@
       <string>Bee</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผึ้ง.wma</string>
     </SoundPath>
     <EngDesc />
@@ -1219,6 +1287,7 @@
       <string>near</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\พาน.wma</string>
     </SoundPath>
     <EngDesc> tray on which items are offered to a Buddhist monk,  to foul by entangling; to lasso; to scrape up against; to interact with</EngDesc>
@@ -1247,6 +1316,7 @@
       <string>rip off</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฟอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฟัน.wma</string>
     </SoundPath>
     <EngDesc> to cut with downward blow, as with an axe or other sharp object, to struggle against or contend with, to work at doing something in order to get something accomplished or fix the situation, to overcharge; scam; rip off</EngDesc>
@@ -1270,6 +1340,7 @@
       <string>Sailboat</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ภอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สำเภา.wma</string>
     </SoundPath>
     <EngDesc> [certain type of] small sailing vessel used in Asia and Southeast Asia; junk; argosy</EngDesc>
@@ -1294,6 +1365,7 @@
       <string>Horse</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ม้า.wma</string>
     </SoundPath>
     <EngDesc />
@@ -1329,6 +1401,7 @@
       <string>vast</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ยักษ์.wma</string>
     </SoundPath>
     <EngDesc>[a character from the Ramayana epic, a] giant [or] demon</EngDesc>
@@ -1355,6 +1428,7 @@
       <string>vessel</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\รอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เรือ.wma</string>
     </SoundPath>
     <EngDesc>[chess] the rook</EngDesc>
@@ -1377,6 +1451,7 @@
       <string>Monkey</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลิง.wma</string>
     </SoundPath>
     <EngDesc />
@@ -1400,7 +1475,7 @@
       <string>Ring</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วอ.wma</string>
     </SoundPath>
     <EngDesc>a ring (worn on the finger), a circular metal washer</EngDesc>
     <Tone>
@@ -1424,6 +1499,7 @@
       <string>open-air gazebo</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ศอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ศาลา.wma</string>
     </SoundPath>
     <EngDesc>meeting hall (in a temple)</EngDesc>
@@ -1448,6 +1524,7 @@
       <string>Hermit</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ษอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฤๅษี.wma</string>
     </SoundPath>
     <EngDesc>ascetic; meditating recluse or hermit</EngDesc>
@@ -1472,6 +1549,7 @@
       <string>Tiger</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เสือ.wma</string>
     </SoundPath>
     <EngDesc />
@@ -1497,6 +1575,7 @@
       <string>trunk</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หีบ.wma</string>
     </SoundPath>
     <EngDesc />
@@ -1520,6 +1599,7 @@
       <string>the male kite</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฬอ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\จุฬา.wma</string>
     </SoundPath>
     <EngDesc>excellent; ravishing; beautiful; delicate
@@ -1549,6 +1629,7 @@
       <string>sink</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ออ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อ่าง.wma</string>
     </SoundPath>
     <EngDesc>[of speech] [is] stuttering; stammering, [numerical classifier for sinks, basins, bathtubs],  [sound of a] bullfrog</EngDesc>
@@ -1572,7 +1653,7 @@
       <string>Owl</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฮอ.wma</string>
     </SoundPath>
     <EngDesc>oriental barn owl</EngDesc>
     <Tone>
@@ -1904,6 +1985,7 @@
       <string>lie down.</string>
     </EngWords>
     <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\อ.wma</string>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\นอน.wma</string>
     </SoundPath>
     <EngDesc>อ is pronounced as a longer aaw, [is] prone</EngDesc>
@@ -4035,7 +4117,7 @@ one (generic word [e.g. the small one])
       <string> marketplace</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตลาด.wma</string>
     </SoundPath>
     <EngDesc>when the letters ร, ล or ว is the second consonant in a word it can either be pronounced together with the first consonant or with an additional a.</EngDesc>
     <Tone />
@@ -6821,7 +6903,7 @@ one (generic word [e.g. the small one])
       <string>Tuesday</string>
     </EngWords>
     <SoundPath>
-      <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\วันอังคาร.wma</string>
     </SoundPath>
     <EngDesc>The thai days are named after the planets, tuesday is named after mars. Simply translated tuesday in thai is day of mars.</EngDesc>
     <Tone />
@@ -8333,5 +8415,564 @@ one (generic word [e.g. the small one])
       <string>Rising</string>
     </Tone>
     <Chapter>Homonyms</Chapter>
+  </Word>
+  <Word>
+    <Name>ดี ตี</Name>
+    <ThaiScript>
+      <string>ดี</string>
+      <string>ตี</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>dee</string>
+      <string>dtee</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Good</string>
+      <string>Hit</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>These words almost sounds the same and therefor might be difficult to differentiate.</EngDesc>
+    <Tone>
+      <string />
+    </Tone>
+    <Chapter>Homophones</Chapter>
+  </Word>
+  <Word>
+    <Name>ไม่; ไหม้</Name>
+    <ThaiScript>
+      <string>ไม่</string>
+      <string>ไหม้</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>mai</string>
+      <string>mai</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>No</string>
+      <string>Hit</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>These words almost sounds the same and therefor might be difficult to differentiate.</EngDesc>
+    <Tone>
+      <string>Falling</string>
+    </Tone>
+    <Chapter>Homophones</Chapter>
+  </Word>
+  <Word>
+    <Name>ย่า, หญ้า</Name>
+    <ThaiScript>
+      <string>ย่า</string>
+      <string>หญ้า</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>yaa</string>
+      <string>yaa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>paternal grandmother</string>
+      <string>grass</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>These words almost sounds the same and therefor might be difficult to differentiate.</EngDesc>
+    <Tone>
+      <string>Falling</string>
+    </Tone>
+    <Chapter>Homophones</Chapter>
+  </Word>
+  <Word>
+    <Name>ศร, สอน</Name>
+    <ThaiScript>
+      <string>ศร</string>
+      <string>สอน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>saawn</string>
+      <string>saawn</string>
+      <string />
+    </ThaiFonet>
+    <EngWords>
+      <string>Arrow</string>
+      <string>to teach</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>These words almost sounds the same and therefor might be difficult to differentiate.</EngDesc>
+    <Tone>
+      <string>Rising</string>
+    </Tone>
+    <Chapter>Homophones</Chapter>
+  </Word>
+  <Word>
+    <Name>รถ รส รด</Name>
+    <ThaiScript>
+      <string>รถ</string>
+      <string>รส</string>
+      <string>รด</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>roht</string>
+      <string>roht</string>
+      <string>roht</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>car</string>
+      <string>Taste</string>
+      <string>to water plants</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>These words almost sounds the same and therefor might be difficult to differentiate.</EngDesc>
+    <Tone>
+      <string>High</string>
+    </Tone>
+    <Chapter>Homophones</Chapter>
+  </Word>
+  <Word>
+    <Name>ผมรูปหล่อ, ผม รูป หล่อ</Name>
+    <ThaiScript>
+      <string>ผมรูปหล่อ</string>
+      <string>ผม รูป หล่อ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>phohm ruup laaw</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>i (am) handsome</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>Words like ผม means both me and hair depending on the gender of the speaker</EngDesc>
+    <Tone>
+      <string>Rising</string>
+      <string>Falling</string>
+      <string>Low</string>
+    </Tone>
+    <Chapter>Words in special contexts</Chapter>
+  </Word>
+  <Word>
+    <Name>ฉัน สวย, ฉันสวย</Name>
+    <ThaiScript>
+      <string>ฉัน สวย</string>
+      <string>ฉันสวย</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>chan suay</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>i (am) pretty</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>Words like สวย change their meaing based on the speakers gender. </EngDesc>
+    <Tone>
+      <string>Rising</string>
+    </Tone>
+    <Chapter>Words in special contexts</Chapter>
+  </Word>
+  <Word>
+    <Name>ผม สวย, ผมสวย</Name>
+    <ThaiScript>
+      <string>ผม สวย</string>
+      <string>ผมสวย</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>phohm suay</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>(I have) beautiful hair</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>Words like ผม change their meaing based on the context. when a man says  phohm suay it means that he (thinks atleast) has beautiful hair.</EngDesc>
+    <Tone>
+      <string>Rising</string>
+    </Tone>
+    <Chapter>Words in special contexts</Chapter>
+  </Word>
+  <Word>
+    <Name>ฉัน มี ผม สวย, ฉันมีผมสวย</Name>
+    <ThaiScript>
+      <string>ฉัน มี ผม สวย</string>
+      <string>ฉันมีผมสวย</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>chan mee phohm suay</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>I have beautiful hair</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>Words like ผม change their meaing based on the context. A woman says that she has beautiful hair like this, quite diffrently from a man.</EngDesc>
+    <Tone>
+      <string>Rising</string>
+      <string>Middle</string>
+      <string>Rising</string>
+    </Tone>
+    <Chapter>Words in special contexts</Chapter>
+  </Word>
+  <Word>
+    <Name>กำแพง</Name>
+    <ThaiScript>
+      <string>กำแพง</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gam phaaeng</string>
+      <string>kamphaeng</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>exterior wall</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>The word for wall is diffrent based on the context. this is the sound of a wall outside.</EngDesc>
+    <Tone>
+      <string>Rising</string>
+    </Tone>
+    <Chapter>Words in special contexts</Chapter>
+  </Word>
+  <Word>
+    <Name>ฝาผนัง</Name>
+    <ThaiScript>
+      <string>ฝาผนัง</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>pha nang</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Interior wall</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>The word for wall is diffrent based on the context. this is the sound of a wall inside.</EngDesc>
+    <Tone>
+      <string>Low</string>
+      <string>Rising</string>
+    </Tone>
+    <Chapter>Words in special contexts</Chapter>
+  </Word>
+  <Word>
+    <Name>สระ ผม, สระผม</Name>
+    <ThaiScript>
+      <string>สระ ผม</string>
+      <string>สระผม</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>sara phohm</string>
+      <string>sa phohm</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>to wash hair</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>The word for washing or cleaning is diffrent based on the context. this is the sound of a washing your hair.</EngDesc>
+    <Tone>
+      <string>Low</string>
+      <string>Rising</string>
+    </Tone>
+    <Chapter>Words in special contexts</Chapter>
+  </Word>
+  <Word>
+    <Name>ล้าง มือ, ล้างมือ</Name>
+    <ThaiScript>
+      <string>ล้าง มือ</string>
+      <string>ล้างมือ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>laang meuu</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>to wash hands</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>The word for washing or cleaning is diffrent based on the context. this is the sound of a washing your hands.</EngDesc>
+    <Tone>
+      <string>High</string>
+      <string>Medium</string>
+    </Tone>
+    <Chapter>Words in special contexts</Chapter>
+  </Word>
+  <Word>
+    <Name>ซัก ผ้า, ซักผ้า</Name>
+    <ThaiScript>
+      <string>ซัก ผ้า</string>
+      <string>ซักผ้า</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>sak phaa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>to wash clothes</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>The word for washing or cleaning is diffrent based on the context. this is the sound of a washing your clothes.</EngDesc>
+    <Tone>
+      <string>High</string>
+      <string>Falling</string>
+    </Tone>
+    <Chapter>Words in special contexts</Chapter>
+  </Word>
+  <Word>
+    <Name>ก็</Name>
+    <ThaiScript>
+      <string>ก็</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gaaw</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>afterwards</string>
+      <string>also</string>
+      <string>then</string>
+      <string>too</string>
+      <string>as a result</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>[used in "neither... nor" pattern] not at all; by no means</EngDesc>
+    <Tone>
+      <string>Falling</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>ก็ ได้</Name>
+    <ThaiScript>
+      <string>ก็ ได้</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gaaw dai</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>ok</string>
+      <string>okay</string>
+      <string>alright</string>
+      <string>all right</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Falling</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>ก็ ตาม, ก็ตาม</Name>
+    <ThaiScript>
+      <string>ก็ ตาม</string>
+      <string>ก็ตาม</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gaaw dai</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>no matter</string>
+      <string>whatever</string>
+      <string>also</string>
+      <string>as well</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Falling</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>กลับ</Name>
+    <ThaiScript>
+      <string>กลับ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>glab</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>return</string>
+      <string>go back</string>
+      <string>turn</string>
+      <string>revoke</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Low</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>กลับ บ้าน, กลับบ้าน</Name>
+    <ThaiScript>
+      <string>กลับ บ้าน</string>
+      <string>กลับบ้าน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>glab baan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>return</string>
+      <string>go back</string>
+      <string>turn</string>
+      <string>revoke</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Low</string>
+      <string>Falling</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>กลับ หน้า, กลับหน้า</Name>
+    <ThaiScript>
+      <string>กลับ หน้า</string>
+      <string>กลับหน้า</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>glab naa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>turn inside out</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Low</string>
+      <string>Falling</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>กว่า</Name>
+    <ThaiScript>
+      <string>กลับ หน้า</string>
+      <string>กลับหน้า</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gwaa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>more than</string>
+      <string>over</string>
+      <string>till</string>
+      <string>until</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Low</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>มาก กว่า, มากกว่า</Name>
+    <ThaiScript>
+      <string>มาก กว่า</string>
+      <string>มากกว่า</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>maak gwaa</string>
+      <string>maakgwaa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>more than</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Falling</string>
+      <string>Low</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>สูง กว่า, สูงกว่า</Name>
+    <ThaiScript>
+      <string>สูง กว่า</string>
+      <string>สูงกว่า</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>suung gwaa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>[is] taller than...</string>
+      <string>higher than</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Rising</string>
+      <string>Low</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>ก่อน</Name>
+    <ThaiScript>
+      <string>ก่อน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gaawn</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>before</string>
+      <string>earlier</string>
+      <string>time gone by</string>
+      <string>prior to</string>
+      <string>in advance of</string>
+      <string>ahead of time</string>
+      <string>previously</string>
+      <string>formerly</string>
+      <string>initially</string>
+      <string>beforehand</string>
+      <string>firstly</string>
+      <string>now</string>
+      <string>ago</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Low</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
   </Word>
 </ArrayOfWord>

@@ -5,6 +5,11 @@
   <DisplayAllPropertiesInDescription>false</DisplayAllPropertiesInDescription>
   <RandomOn>false</RandomOn>
   <SkipIntro>false</SkipIntro>
+  <AutoPlaySounds>true</AutoPlaySounds>
   <WhatToDisplay>ThaiScript</WhatToDisplay>
-  <WhatToTrain>ThaiFonet</WhatToTrain>
+  <WhatToTrain>EngWords</WhatToTrain>
+  <Page1Chapter>0</Page1Chapter>
+  <Page2Chapter>0</Page2Chapter>
+  <Page3Chapter>0</Page3Chapter>
+  <Page4Chapter>0</Page4Chapter>
 </UserSetting>

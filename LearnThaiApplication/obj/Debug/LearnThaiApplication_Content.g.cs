@@ -386,5 +386,11 @@
     "%e0%b8%b2.mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("files/media/sound/%e0%b9%84%e0%b8%a1%e0%b9%89%e0%b9%80%e0%b8%ad%e0%b8%81.mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("files/media/sound/%e0%b9%84%e0%b8%a1%e0%b9%89%e0%b9%82%e0%b8%97.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("grpc_csharp_ext.x86.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("grpc_csharp_ext.x64.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("libgrpc_csharp_ext.x86.so")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("libgrpc_csharp_ext.x64.so")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("libgrpc_csharp_ext.x86.dylib")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("libgrpc_csharp_ext.x64.dylib")]
 
 

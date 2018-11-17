@@ -10,10 +10,12 @@ using System.Media;
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Google.Cloud.Speech.V1;
 
 namespace LearnThaiApplication
 {
@@ -64,6 +66,7 @@ namespace LearnThaiApplication
         private bool RandomOn { get; set; }
         private bool SubmitionIsNew { get; set; }
         private bool SkipIntro { get; set; }
+        private bool AutoPlay { get; set; }
 
         #endregion bools
 
@@ -390,7 +393,7 @@ namespace LearnThaiApplication
             string combinedStrings = null;
             foreach (string text in list)
             {
-                if (list.Last().Equals(text))
+                if (list.IndexOf(text) == list.Count - 1)
                 {
                     combinedStrings += text;
                 }
@@ -426,6 +429,10 @@ namespace LearnThaiApplication
         {
             ClearFields();
             PreTextChanger(1);
+            if (AutoPlay)
+            {
+                PlaySound(sender, e);
+            }
         }
 
         /// <summary>
@@ -494,6 +501,10 @@ namespace LearnThaiApplication
         {
             ClearFields();
             PreTextChanger(-1);
+            if (AutoPlay)
+            {
+                PlaySound(sender, e);
+            }
         }
 
         /// <summary>
@@ -844,6 +855,8 @@ namespace LearnThaiApplication
                 SkipIntro = settings.SkipIntro;
                 WhatToDisplay = settings.WhatToDisplay;
                 WhatToTrain = settings.WhatToTrain;
+                SkipIntro = settings.SkipIntro;
+                AutoPlay = settings.AutoPlaySounds;
             }
         }
 
@@ -955,6 +968,9 @@ namespace LearnThaiApplication
             SetSettings();
         }
 
+        /// <summary>
+        ///
+        /// </summary>
         private void ResetChapter()
         {
             if (TabIndex == 0)
@@ -1051,6 +1067,7 @@ namespace LearnThaiApplication
 
             lib_LoadedWords.DisplayMemberPath = "Name";
             cb_ManageOnChapter.DisplayMemberPath = "ChapterName";
+            cb_SelectList.DisplayMemberPath = "ChapterName";
             SetSettings();
         }
 
@@ -1066,7 +1083,8 @@ namespace LearnThaiApplication
             settings.WhatToTrain = WhatToTrain;
             settings.SkipIntro = SkipIntro;
             settings.DisplayAllPropertiesInDescription = DisplayAllPropertiesInDescription;
-
+            settings.SkipIntro = SkipIntro;
+            settings.AutoPlaySounds = AutoPlay;
             SaveSetting();
         }
 
@@ -1105,19 +1123,6 @@ namespace LearnThaiApplication
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void SetSoundPath_clicked(object sender, RoutedEventArgs e)
-        {
-            foreach (Word word in Words)
-            {
-                SetSoundPathToWord(word);
-            }
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void PrintAllWordsToFile(object sender, RoutedEventArgs e)
         {
             string fullText = "";
@@ -1133,15 +1138,6 @@ namespace LearnThaiApplication
                         fullText += script + "\r\n";
                     }
                 }
-
-                //if (word.SoundPath.Count == 0)
-                //{
-                //    List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
-
-                //    foreach (String s in script)
-                //    {
-                //    }
-                //}
             }
 
             File.WriteAllText(DebugFilePath + "File.txt", fullText);
@@ -1303,20 +1299,20 @@ namespace LearnThaiApplication
         {
             if (SubmitionIsNew)
             {
-                SubmitNewWord<Word>(Words, isQuick);
+                SubmitNewWord(isQuick);
             }
             else if (!SubmitionIsNew)
             {
-                SubmitUpdatedWord<Word>(Words, isQuick);
+                SubmitUpdatedWord(isQuick);
             }
             else
             {
                 MessageBox.Show("Select what you want to do");
             }
-
-            UpdateListBox();
             PopulateManageChapterCB();
 
+            FindWordWithChapter();
+            UpdateListBox();
             ClearFields();
         }
 
@@ -1373,29 +1369,19 @@ namespace LearnThaiApplication
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
         /// <returns></returns>
-        public bool SubmitFromForm<T>(List<T> list) where T : new()
+        public bool SubmitFromForm()
         {
-            Type whatIsT = typeof(T);
-
             textboxList = FormTextboxes();
 
-            foreach (T oldWord in list)
+            foreach (Word oldWord in Words)
             {
                 if (WordToLoad.Equals(oldWord))
                 {
                     SetPropertyOfGenericObject(oldWord);
 
-                    if (oldWord.GetType() == typeof(Word))
-                    {
-                        SetNewValuesFromForm(oldWord, textboxList);
-                        //SetNewValuesToOldWord(oldWord, whatIsT, txt_FirstSelectionProperty.Text, txt_SecondSelectionProperty.Text, txt_ThirdSelectionProperty.Text, txt_FourthSelectionProperty.Text, txt_FifthSelectionProperty.Text);
-                        return true;
-                    }
-                    else
-                    {
-                        SetNewValuesFromForm(oldWord, textboxList);
-                        return true;
-                    }
+                    SetNewValuesFromForm(oldWord, textboxList);
+
+                    return true;
                 }
             }
             return false;
@@ -1410,10 +1396,13 @@ namespace LearnThaiApplication
         {
             if (MessageBox.Show("Are you sure you want to delete the selected word?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
-                DeleteSelected<Word>(Words);
+                DeleteSelected(Words);
 
                 SaveAll();
             }
+
+            PopulateManageChapterCB();
+            FindWordWithChapter();
             UpdateListBox();
         }
 
@@ -1469,10 +1458,10 @@ namespace LearnThaiApplication
         /// </summary>
         /// <typeparam name="T">What type to use</typeparam>
         /// <param name="list">What list to delete from</param>
-        private void DeleteSelected<T>(List<T> list)
+        private void DeleteSelected(List<Word> list)
         {
             MessageBox.Show("tried to remove element " + list[lib_LoadedWords.SelectedIndex].ToString());
-            list.RemoveAt(lib_LoadedWords.SelectedIndex);
+            list.Remove((Word)lib_LoadedWords.SelectedItem);
         }
 
         /// <summary>
@@ -1533,7 +1522,9 @@ namespace LearnThaiApplication
         private void PopulateManageChapterCB()
         {
             cb_ManageOnChapter.ItemsSource = null;
+            cb_SelectList.ItemsSource = null;
 
+            cb_SelectList.ItemsSource = Chapters;
             cb_ManageOnChapter.ItemsSource = Chapters;
         }
 
@@ -1541,13 +1532,13 @@ namespace LearnThaiApplication
         /// Sets the values of the new word from the quickForm
         /// </summary>
         /// <param name="newWord"></param>
-        private void QuickSubmit(object newWord)
+        private void QuickSubmit(Word newWord)
         {
-            ((ThaiBase)newWord).ThaiScript = SplitStringToList(txt_FirstSelectionProperty.Text);
-            ((ThaiBase)newWord).ThaiFonet = SplitStringToList(txt_SecondSelectionProperty.Text);
-            ((ThaiBase)newWord).EngWords = SplitStringToList(txt_ThirdSelectionProperty.Text);
-            ((ThaiBase)newWord).EngDesc = txt_FourthSelectionProperty.Text;
-            ((ThaiBase)newWord).Tone = SplitStringToList(txt_FifthSelectionProperty.Text);
+            newWord.ThaiScript = SplitStringToList(txt_FirstSelectionProperty.Text);
+            newWord.ThaiFonet = SplitStringToList(txt_SecondSelectionProperty.Text);
+            newWord.EngWords = SplitStringToList(txt_ThirdSelectionProperty.Text);
+            newWord.EngDesc = txt_FourthSelectionProperty.Text;
+            newWord.Chapter = txt_FifthSelectionProperty.Text;
         }
 
         /// <summary>
@@ -1590,13 +1581,9 @@ namespace LearnThaiApplication
         /// </summary>
         /// <typeparam name="T">What type to work with</typeparam>
         /// <param name="list">What list to work with</param>
-        private void SubmitNewWord<T>(List<T> list, bool isQuick) where T : new()
+        private void SubmitNewWord(bool isQuick)
         {
-            Type whatIsT = typeof(T);
-
-            object newWord = null;
-
-            newWord = new Word();
+            Word newWord = new Word();
 
             SetPropertyOfGenericObject(newWord);
 
@@ -1611,9 +1598,9 @@ namespace LearnThaiApplication
 
             AddNewChapters();
 
-            list.Add((T)newWord);
+            Words.Add(newWord);
 
-            SaveFiles<T>(list);
+            SaveAll();
         }
 
         /// <summary>
@@ -1678,40 +1665,32 @@ namespace LearnThaiApplication
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
-        private void SubmitUpdatedWord<T>(List<T> list, bool isQuick) where T : new()
+        private void SubmitUpdatedWord(bool isQuick)
         {
-            Type whatIsT = typeof(T);
-
             if (!isQuick)
             {
                 textboxList = FormTextboxes();
             }
 
-            foreach (T oldWord in list)
+            foreach (Word oldWord in Words)
             {
                 if (WordToLoad.Equals(oldWord))
                 {
                     SetPropertyOfGenericObject(oldWord);
+
                     if (isQuick)
                     {
                         QuickSubmit(oldWord);
                     }
                     else
                     {
-                        if (oldWord.GetType() == typeof(Word))
-                        {
-                            SetNewValuesFromForm(oldWord, textboxList);
-                        }
-                        else
-                        {
-                            SetNewValuesFromForm(oldWord, textboxList);
-                        }
+                        SetNewValuesFromForm(oldWord, textboxList);
                     }
                     break;
                 }
             }
 
-            SaveFiles<T>(list);
+            SaveAll();
         }
 
         /// <summary>
@@ -1960,29 +1939,44 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
-        /// Plays the sound from the soundpath of the current word
+        ///
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void PlaySound(object sender, RoutedEventArgs e)
+        private void Worker_PlaySoundFile(object sender, DoWorkEventArgs e)
         {
+            MediaPlayer player = new MediaPlayer();
+
             try
             {
-                SetPropertyOfGenericObject(DisplayList[CurrentFileIndex]);
-
-                List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
-
-                foreach (string soundpath in soundPaths)
+                foreach (String soundPath in DisplayList[CurrentFileIndex].SoundPath)
                 {
-                    MediaPlayer player = new MediaPlayer();
-                    player.Open(new Uri(soundpath));
+                    int waitTime = 1000 + (DisplayList[CurrentFileIndex].ThaiScript.Count * 50);
+
+                    player.Open(new Uri(soundPath));
                     player.Play();
+
+                    Thread.Sleep(waitTime);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error:" + ex);
             }
+        }
+
+        /// <summary>
+        /// Plays the sound from the soundpath of the current word
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PlaySound(object sender, RoutedEventArgs e)
+        {
+            BackgroundWorker worker = new BackgroundWorker();
+            worker.WorkerReportsProgress = true;
+            worker.DoWork += Worker_PlaySoundFile;
+
+            worker.RunWorkerAsync();
         }
 
         /// <summary>
@@ -1996,7 +1990,7 @@ namespace LearnThaiApplication
             {
                 word.SoundPath.Clear();
             }
-
+            CheckAllSoundStatuses();
             SaveAll();
         }
 
@@ -2009,16 +2003,20 @@ namespace LearnThaiApplication
         {
             string soundPath = "";
 
-            foreach (string value in word.ThaiScript)
+            foreach (string script in word.ThaiScript)
             {
-                soundPath = SoundFilePath + value + ".wma";
+                soundPath = SoundFilePath + script + ".wma";
+
+                if (script == "กอ")
+                {
+                    bool stophere = true;
+                }
 
                 if (File.Exists(soundPath))
                 {
-                    if (word.SoundPath.Count == 0)
+                    if (word.SoundPath.Count != word.ThaiScript.Count && !word.SoundPath.Contains(soundPath))
                     {
                         word.SoundPath.Add(soundPath);
-                        return false;
                     }
                 }
             }
@@ -2114,7 +2112,7 @@ namespace LearnThaiApplication
         {
             BackgroundWorker worker = new BackgroundWorker();
             worker.WorkerReportsProgress = true;
-            worker.DoWork += worker_DoWork;
+            worker.DoWork += RunWebsiteFiles_DoWork;
             worker.ProgressChanged += worker_ProgressChanged;
 
             worker.RunWorkerAsync();
@@ -2186,7 +2184,28 @@ namespace LearnThaiApplication
             return false;
         }
 
-        private void worker_DoWork(object sender, DoWorkEventArgs e)
+        /// <summary>
+        /// Cycles trough all lists of words and then displays the result in a messagebox
+        /// </summary>
+        /// <param name="sender">The object that initiated the method</param>
+        /// <param name="e"></param>
+        private void CheckAllSoundStatuses()
+        {
+            string fullText = CheckSoundStatus<Word>(Words);
+
+            MessageBox.Show(fullText);
+        }
+
+        #endregion Sound
+
+        #region Async
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RunWebsiteFiles_DoWork(object sender, DoWorkEventArgs e)
         {
             List<string> websiteUrls = new List<string>();
             string line;
@@ -2210,23 +2229,77 @@ namespace LearnThaiApplication
             CheckAllSoundStatuses();
         }
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             pbStatus.Value = e.ProgressPercentage;
         }
 
         /// <summary>
-        /// Cycles trough all lists of words and then displays the result in a messagebox
+        ///
         /// </summary>
-        /// <param name="sender">The object that initiated the method</param>
+        /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void CheckAllSoundStatuses()
+        private void SetSoundPaths_DoWork(object sender, DoWorkEventArgs e)
         {
-            string fullText = CheckSoundStatus<Word>(Words);
+            double currentIndex;
+            double progress;
+            foreach (Word word in Words)
+            {
+                SetSoundPathToWord(word);
 
-            MessageBox.Show(fullText);
+                currentIndex = Words.IndexOf(word);
+                progress = (currentIndex / Words.Count) * 100;
+                (sender as BackgroundWorker).ReportProgress((int)progress);
+            }
+            SaveAll();
         }
 
-        #endregion Sound
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SetSoundPath_clicked(object sender, RoutedEventArgs e)
+        {
+            BackgroundWorker worker = new BackgroundWorker();
+            worker.WorkerReportsProgress = true;
+            worker.DoWork += SetSoundPaths_DoWork;
+            worker.ProgressChanged += worker_ProgressChanged;
+
+            worker.RunWorkerAsync();
+        }
+
+        #endregion Async
+
+        private void SkipMessage_Checked(object sender, RoutedEventArgs e)
+        {
+            if ((sender as CheckBox)?.IsChecked == true)
+            {
+                SkipIntro = true;
+            }
+            else
+            {
+                SkipIntro = false;
+            }
+            SetSettings();
+        }
+
+        private void AutoPlay_Checked(object sender, RoutedEventArgs e)
+        {
+            if ((sender as CheckBox)?.IsChecked == true)
+            {
+                AutoPlay = true;
+            }
+            else
+            {
+                AutoPlay = false;
+            }
+            SetSettings();
+        }
     }
 }
