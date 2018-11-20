@@ -1,12 +1,10 @@
 ﻿using HtmlAgilityPack;
 using LearnThaiApplication.Classes;
-using NAudio.Wave;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
-using System.Media;
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
@@ -15,7 +13,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using Google.Cloud.Speech.V1;
 
 namespace LearnThaiApplication
 {
@@ -1030,6 +1027,7 @@ namespace LearnThaiApplication
         {
             if (UserSettings.Count != 0)
             {
+                //DO NOTHING
             }
             else
             {
@@ -1040,29 +1038,58 @@ namespace LearnThaiApplication
                 {
                     ckb_DescBox_Page1.IsChecked = true;
                     ckb_DescBox_Page2.IsChecked = true;
+                    ckb_DescBox_Setting.IsChecked = true;
+                }
+                if (RandomOn)
+                {
+                    ckb_Randomized_Page1.IsChecked = RandomOn;
+                    ckb_Randomized_Page2.IsChecked = RandomOn;
+                    ckb_Randomized_Setting.IsChecked = RandomOn;
+                }
+                if (SkipIntro)
+                {
+                    ckb_SkipIntro.IsChecked = SkipIntro;
                 }
 
+                if (AutoPlay)
+                {
+                    ckb_AutoPlay.IsChecked = AutoPlay;
+                }
+                if (LoopChapter)
+                {
+                    ckb_LoopChapter.IsChecked = LoopChapter;
+                }
+                if (DisplayAllPropertiesInDescription)
+                {
+                    ckb_FullDesc.IsChecked = DisplayAllPropertiesInDescription;
+                }
                 rb_SubmitNew.IsChecked = true;
+
                 if (WhatToTrain == "ThaiFonet")
                 {
                     rb_TrainFonet_Page1.IsChecked = true;
                     rb_TrainFonet_Page2.IsChecked = true;
+                    rb_TrainFonet_Setting.IsChecked = true;
                 }
                 else if (WhatToTrain == "ThaiScript")
                 {
                     rb_TrainScript_Page1.IsChecked = true;
                     rb_TrainScript_Page2.IsChecked = true;
+                    rb_TrainScript_Setting.IsChecked = true;
                 }
                 else if (WhatToTrain == "EngWords")
                 {
                     rb_TrainEngWords_Page1.IsChecked = true;
                     rb_TrainEngWords_Page2.IsChecked = true;
+                    rb_TrainEngWords_Setting.IsChecked = true;
                 }
 
                 PopulateManageChapterCB();
 
                 cb_SymbolChapters.SelectedIndex = 0;
+                lbl_ChapterCount_Page2.Content = "Words in chapter: " + DisplayList.Count.ToString();
                 cb_Chapter_Page1.SelectedIndex = 0;
+                lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
             }
 
             lib_LoadedWords.DisplayMemberPath = "Name";

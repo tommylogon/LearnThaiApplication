@@ -8975,4 +8975,73 @@ one (generic word [e.g. the small one])
     </Tone>
     <Chapter>101 most used words</Chapter>
   </Word>
+  <Word>
+    <Name>ก่อนกำหนด</Name>
+    <ThaiScript>
+      <string>ก่อนกำหนด</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gaawn gam noht</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>early</string>
+      <string>before an appointed time</string>
+      <string>premature</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Low</string>
+      <string>Middle</string>
+      <string>Low</string>
+      <string />
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>กัน</Name>
+    <ThaiScript>
+      <string>กัน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Seperate</string>
+      <string>keep out</string>
+      <string>reserve</string>
+      <string>together</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>[a prefix used like the English suffix] "-proof"; to prevent, to obstruct or impede (the progress or entry of), to protect, prevent or keep (something from happening); make a definsive move</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>กันฝน</Name>
+    <ThaiScript>
+      <string>กันฝน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gan fohn</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>rainproof</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc>[is] rainproof</EngDesc>
+    <Tone>
+      <string>Middle</string>
+      <string>Rising</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
 </ArrayOfWord>

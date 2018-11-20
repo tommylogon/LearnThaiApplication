@@ -143,8 +143,8 @@
                     <Button Content="Print all words" HorizontalAlignment="Left" Margin="135,392,0,0" VerticalAlignment="Top" Width="75" Click="PrintAllWordsToFile" />
                     <ProgressBar Minimum="0" Maximum="100" Name="pbStatus" Margin="252,279,273,173" />
                     <Label Content="Toggle settings" HorizontalAlignment="Left" Margin="171,45,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                    <CheckBox Content="Auto play sounds" HorizontalAlignment="Left" Margin="171,148,0,0" VerticalAlignment="Top" Background="White" Foreground="#FFE6F8FF" Checked="AutoPlay_Checked" />
-                    <CheckBox Content="Skip intro message" HorizontalAlignment="Left" Margin="171,168,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="SkipMessage_Checked" />
+                    <CheckBox x:Name="ckb_AutoPlay" Content="Auto play sounds" HorizontalAlignment="Left" Margin="171,148,0,0" VerticalAlignment="Top" Background="White" Foreground="#FFE6F8FF" Checked="AutoPlay_Checked" Unchecked="AutoPlay_Checked" />
+                    <CheckBox x:Name="ckb_SkipIntro" Content="Skip intro message" HorizontalAlignment="Left" Margin="171,168,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="SkipMessage_Checked" Unchecked="SkipMessage_Checked" />
                 </Grid>
             </TabItem>
         </TabControl>
