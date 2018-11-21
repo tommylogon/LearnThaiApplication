@@ -13,6 +13,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Google.Cloud.Speech.V1;
 
 namespace LearnThaiApplication
 {
@@ -903,7 +904,10 @@ namespace LearnThaiApplication
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Welcome to Learn Thai!\r\nHere you can learn some of the basics of thai, including how to approximately pronounce thai words, what the thai words mean and the sounds they make with the help of audio clips.", "สวัสดีครับ");
+            if (!SkipIntro)
+            {
+                MessageBox.Show("Welcome to Learn Thai!\r\nHere you can learn some of the basics of thai, including how to approximately pronounce thai words, what the thai words mean and the sounds they make with the help of audio clips.", "สวัสดีครับ");
+            }
         }
 
         /// <summary>
@@ -2218,7 +2222,16 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void CheckAllSoundStatuses()
         {
-            string fullText = CheckSoundStatus<Word>(Words);
+            string fullText;
+
+            if (SelectedChapter == "All")
+            {
+                fullText = CheckSoundStatus<Word>(Words);
+            }
+            else
+            {
+                fullText = CheckSoundStatus<Word>(DisplayList);
+            }
 
             MessageBox.Show(fullText);
         }
@@ -2303,6 +2316,11 @@ namespace LearnThaiApplication
 
         #endregion Async
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SkipMessage_Checked(object sender, RoutedEventArgs e)
         {
             if ((sender as CheckBox)?.IsChecked == true)
@@ -2316,6 +2334,11 @@ namespace LearnThaiApplication
             SetSettings();
         }
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AutoPlay_Checked(object sender, RoutedEventArgs e)
         {
             if ((sender as CheckBox)?.IsChecked == true)
@@ -2327,6 +2350,93 @@ namespace LearnThaiApplication
                 AutoPlay = false;
             }
             SetSettings();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Seach_Clicked(object sender, RoutedEventArgs e)
+        {
+            Search(txt_SearchBar.Text);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="searchValue"></param>
+        private void Search(string searchValue)
+        {
+            List<Word> searchResults = new List<Word>();
+
+            List<Word> listToSeach;
+            lib_LoadedWords.ItemsSource = null;
+            if (SelectedChapter == "All")
+            {
+                listToSeach = Words;
+            }
+            else
+            {
+                listToSeach = DisplayList;
+            }
+
+            try
+            {
+                foreach (Word word in listToSeach)
+                {
+                    SetPropertyOfGenericObject(word);
+
+                    foreach (var value in ListOfValues)
+                    {
+                        if (value is List<string> sublist)
+                        {
+                            foreach (string s in sublist)
+                            {
+                                if (s.CaseInsensitiveContains(searchValue))
+                                {
+                                    searchResults.Add(word);
+                                    continue;
+                                }
+                            }
+                        }
+                        else if (((string)value).CaseInsensitiveContains(searchValue))
+                        {
+                            searchResults.Add(word);
+                            continue;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            LoadObjectsToLib<Word>(searchResults);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CheckSoundChapter_Changed(object sender, SelectionChangedEventArgs e)
+        {
+            if (((ComboBox)sender).SelectedItem is string)
+            {
+                SelectedChapter = (string)((ComboBox)sender).SelectedItem;
+            }
+            else if (((ComboBox)sender).SelectedItem is Chapter chap)
+            {
+                SelectedChapter = chap.ChapterName;
+            }
+            else if (((ComboBox)sender).SelectedItem is ComboBoxItem)
+            {
+                SelectedChapter = (string)((ComboBoxItem)((ComboBox)sender).SelectedItem).Content;
+            }
+
+            FindWordWithChapter();
         }
     }
 }

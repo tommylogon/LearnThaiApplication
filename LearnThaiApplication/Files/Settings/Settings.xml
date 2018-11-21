@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <UserSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <DescriptionOn>false</DescriptionOn>
+  <DescriptionOn>true</DescriptionOn>
   <LoopChapter>false</LoopChapter>
-  <DisplayAllPropertiesInDescription>false</DisplayAllPropertiesInDescription>
+  <DisplayAllPropertiesInDescription>true</DisplayAllPropertiesInDescription>
   <RandomOn>false</RandomOn>
-  <SkipIntro>false</SkipIntro>
-  <AutoPlaySounds>false</AutoPlaySounds>
+  <SkipIntro>true</SkipIntro>
+  <AutoPlaySounds>true</AutoPlaySounds>
   <WhatToDisplay>ThaiScript</WhatToDisplay>
-  <WhatToTrain>ThaiFonet</WhatToTrain>
+  <WhatToTrain>EngWords</WhatToTrain>
   <Page1Chapter>0</Page1Chapter>
   <Page2Chapter>0</Page2Chapter>
   <Page3Chapter>0</Page3Chapter>

@@ -4808,7 +4808,7 @@ one (generic word [e.g. the small one])
       <string>neung</string>
     </ThaiFonet>
     <EngWords>
-      <string>One</string>
+      <string>One,1</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หนึ่ง.wma</string>
@@ -4830,6 +4830,7 @@ one (generic word [e.g. the small one])
     </ThaiFonet>
     <EngWords>
       <string>Two</string>
+      <string>2</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สอง.wma</string>
@@ -4851,8 +4852,11 @@ one (generic word [e.g. the small one])
     </ThaiFonet>
     <EngWords>
       <string>Three</string>
+      <string>3</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string />
+    </SoundPath>
     <EngDesc>Thai digit three, 3</EngDesc>
     <Tone>
       <string>Rising</string>
@@ -4870,6 +4874,7 @@ one (generic word [e.g. the small one])
     </ThaiFonet>
     <EngWords>
       <string>Four</string>
+      <string>4</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สี่.wma</string>
@@ -4891,6 +4896,7 @@ one (generic word [e.g. the small one])
     </ThaiFonet>
     <EngWords>
       <string>Five</string>
+      <string>5</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฮ่า.wma</string>
@@ -4912,6 +4918,7 @@ one (generic word [e.g. the small one])
     </ThaiFonet>
     <EngWords>
       <string>Six</string>
+      <string>6</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\หก.wma</string>
@@ -4933,6 +4940,7 @@ one (generic word [e.g. the small one])
     </ThaiFonet>
     <EngWords>
       <string>Seven</string>
+      <string>7</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เจ็ด.wma</string>
@@ -4954,6 +4962,7 @@ one (generic word [e.g. the small one])
     </ThaiFonet>
     <EngWords>
       <string>Eight</string>
+      <string>8</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\แปด.wma</string>
@@ -4975,6 +4984,7 @@ one (generic word [e.g. the small one])
     </ThaiFonet>
     <EngWords>
       <string>Nine</string>
+      <string>9</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\เก้า.wma</string>
@@ -4995,9 +5005,12 @@ one (generic word [e.g. the small one])
       <string>soon</string>
     </ThaiFonet>
     <EngWords>
-      <string>Two</string>
+      <string>zero</string>
+      <string>0</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string />
+    </SoundPath>
     <EngDesc>Thai digit zero, 0</EngDesc>
     <Tone>
       <string>Rising</string>
@@ -9041,6 +9054,32 @@ one (generic word [e.g. the small one])
     <Tone>
       <string>Middle</string>
       <string>Rising</string>
+    </Tone>
+    <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <Name>ด้วยกัน, ด้ว ยกัน</Name>
+    <ThaiScript>
+      <string>ด้วยกัน</string>
+      <string>ด้วย กัน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>duay gan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>together with another person</string>
+      <string>with each other</string>
+      <string>along with</string>
+      <string>together with others</string>
+      <string>in company</string>
+    </EngWords>
+    <SoundPath>
+      <string />
+    </SoundPath>
+    <EngDesc />
+    <Tone>
+      <string>Falling</string>
+      <string>Middle</string>
     </Tone>
     <Chapter>101 most used words</Chapter>
   </Word>

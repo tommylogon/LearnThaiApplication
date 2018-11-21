@@ -136,6 +136,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Classes\Chapter.cs" />
+    <Compile Include="Classes\Extensions.cs" />
     <Compile Include="Classes\UserSetting.cs" />
     <Compile Include="ContentMan.xaml.cs">
       <DependentUpon>ContentMan.xaml</DependentUpon>
