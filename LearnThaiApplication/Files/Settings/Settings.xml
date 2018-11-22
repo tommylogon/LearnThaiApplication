@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <UserSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <DescriptionOn>true</DescriptionOn>
+  <DescriptionOn>false</DescriptionOn>
   <LoopChapter>false</LoopChapter>
-  <DisplayAllPropertiesInDescription>true</DisplayAllPropertiesInDescription>
+  <DisplayAllPropertiesInDescription>false</DisplayAllPropertiesInDescription>
   <RandomOn>false</RandomOn>
   <SkipIntro>true</SkipIntro>
-  <AutoPlaySounds>true</AutoPlaySounds>
+  <AutoPlaySounds>false</AutoPlaySounds>
   <WhatToDisplay>ThaiScript</WhatToDisplay>
   <WhatToTrain>EngWords</WhatToTrain>
   <Page1Chapter>0</Page1Chapter>

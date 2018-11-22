@@ -3642,7 +3642,9 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Low (Second) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม้เอก.wma</string>
+    </SoundPath>
     <EngDesc>Name of the symbol for the low tone</EngDesc>
     <Tone>
       <string />
@@ -3661,7 +3663,9 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Falling (Third) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม้โท.wma</string>
+    </SoundPath>
     <EngDesc>Name of the symbol for the falling tone</EngDesc>
     <Tone>
       <string />
@@ -3699,7 +3703,9 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Rising (Fourth) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม้จัตวา.wma</string>
+    </SoundPath>
     <EngDesc>Name of the symbol for the rising tone</EngDesc>
     <Tone>
       <string />
@@ -3718,7 +3724,9 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>Falling (Third) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม้เอก.wma</string>
+    </SoundPath>
     <EngDesc>When the initial consonant is a low tone, the tone mark indicates this tone for the word.</EngDesc>
     <Tone>
       <string />
@@ -3737,7 +3745,9 @@ one (generic word [e.g. the small one])
     <EngWords>
       <string>High (Fourth) tone</string>
     </EngWords>
-    <SoundPath />
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม้โท.wma</string>
+    </SoundPath>
     <EngDesc>This tone mark changes to the high tone instead of the falling tone when the consonant is a low tone.</EngDesc>
     <Tone>
       <string />
@@ -8445,6 +8455,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ดี.wma</string>
     </SoundPath>
     <EngDesc>These words almost sounds the same and therefor might be difficult to differentiate.</EngDesc>
     <Tone>
@@ -8468,6 +8479,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม่.wma</string>
     </SoundPath>
     <EngDesc>These words almost sounds the same and therefor might be difficult to differentiate.</EngDesc>
     <Tone>
@@ -8491,6 +8503,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ย่า.wma</string>
     </SoundPath>
     <EngDesc>These words almost sounds the same and therefor might be difficult to differentiate.</EngDesc>
     <Tone>
@@ -8515,6 +8528,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ศร.wma</string>
     </SoundPath>
     <EngDesc>These words almost sounds the same and therefor might be difficult to differentiate.</EngDesc>
     <Tone>
@@ -8541,6 +8555,8 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\รถ.wma</string>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\รด.wma</string>
     </SoundPath>
     <EngDesc>These words almost sounds the same and therefor might be difficult to differentiate.</EngDesc>
     <Tone>
@@ -8693,6 +8709,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สระผม.wma</string>
     </SoundPath>
     <EngDesc>The word for washing or cleaning is diffrent based on the context. this is the sound of a washing your hair.</EngDesc>
     <Tone>
@@ -8715,6 +8732,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ล้างมือ.wma</string>
     </SoundPath>
     <EngDesc>The word for washing or cleaning is diffrent based on the context. this is the sound of a washing your hands.</EngDesc>
     <Tone>
@@ -8737,6 +8755,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ซักผ้า.wma</string>
     </SoundPath>
     <EngDesc>The word for washing or cleaning is diffrent based on the context. this is the sound of a washing your clothes.</EngDesc>
     <Tone>
@@ -8856,6 +8875,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\กลับบ้าน.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -8925,6 +8945,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\มากกว่า.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -8948,6 +8969,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\สูงกว่า.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
@@ -9075,6 +9097,7 @@ one (generic word [e.g. the small one])
     </EngWords>
     <SoundPath>
       <string />
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\..\..\Files\Media\Sound\ด้วยกัน.wma</string>
     </SoundPath>
     <EngDesc />
     <Tone>
