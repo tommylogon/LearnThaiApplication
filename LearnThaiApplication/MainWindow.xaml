@@ -104,7 +104,6 @@
                     <Button x:Name="btn_SubmitNewWord" Content="Submit" HorizontalAlignment="Left" Margin="339,183,0,0" VerticalAlignment="Top" Width="76" Click="SubmitNewWordQuick" />
                     <ListBox x:Name="lib_LoadedWords" HorizontalAlignment="Left" Height="366" Margin="10,37,0,0" VerticalAlignment="Top" Width="193"  SelectionChanged="Lib_LoadedWords_SelectionChanged" />
                     <Button x:Name="btn_UpdateAll" Content="Cycle All Items" HorizontalAlignment="Left" Margin="339,242,0,0" VerticalAlignment="Top" Width="107" Click="CycleListboxItems" />
-                    <RadioButton x:Name="rb_words_Page3" Content="Words" HorizontalAlignment="Left" Margin="681,63,0,0" VerticalAlignment="Top" Checked="WhatToManage" Foreground="#FFE6F8FF" />
                     <Label Content="What kind of list do you want to load?" HorizontalAlignment="Left" Margin="681,37,0,0" VerticalAlignment="Top" Width="215" Foreground="#FFE6F8FF" />
 
                     <Label x:Name="lbl_Chapter_Insert" Content="Chapter" HorizontalAlignment="Left" Margin="209,151,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />

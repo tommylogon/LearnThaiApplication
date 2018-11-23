@@ -30,6 +30,13 @@ namespace LearnThaiApplication
         private void WindowSizeChanged(object sender, SizeChangedEventArgs e)
         {
             ((Viewbox)this.Content).Width = this.Width;
+            foreach (Control uiElement in ((StackPanel)((Viewbox)this.Content).Child).Children)
+            {
+                if (uiElement is TextBox tb)
+                {
+                    tb.Width = this.Width * 0.6;
+                }
+            }
         }
     }
 }

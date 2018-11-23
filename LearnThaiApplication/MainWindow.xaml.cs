@@ -953,6 +953,15 @@ namespace LearnThaiApplication
                 ResetChapter();
 
                 PreTextChanger(0);
+
+                if (MainWindow_tabController.SelectedIndex == 2)
+                {
+                    WhatListTLoad = Words;
+                    WhatTypeToUse = typeof(Word);
+
+                    ClearFields();
+                    UpdateListBox();
+                }
             }
         }
 
@@ -985,7 +994,6 @@ namespace LearnThaiApplication
             }
             else if (TabIndex == 2)
             {
-                rb_words_Page3.IsChecked = true;
                 cb_ManageOnChapter.SelectedIndex = 0;
                 SelectedChapter = ((Chapter)cb_ManageOnChapter.SelectedItem).ChapterName;
             }
@@ -1228,7 +1236,7 @@ namespace LearnThaiApplication
                 txt.Name = "txt_" + prop.Name;
                 txt.TextWrapping = TextWrapping.Wrap;
 
-                //txt.Width = 280;
+                txt.Width = 280;
                 txt.KeyUp += OnEnterKeyUpForm;
 
                 i++;
@@ -1919,10 +1927,6 @@ namespace LearnThaiApplication
                                     string value = CheckChildNode(tableData[tableDataIndex], true);
                                     if (!string.IsNullOrEmpty(value))
                                     {
-                                        if (value == "นั่ง")
-                                        {
-                                            bool test = false;
-                                        }
                                         correctText.Add(value);
                                         continue;
                                     }
@@ -2036,11 +2040,6 @@ namespace LearnThaiApplication
             foreach (string script in word.ThaiScript)
             {
                 soundPath = SoundFilePath + script + ".wma";
-
-                if (script == "กอ")
-                {
-                    bool stophere = true;
-                }
 
                 if (File.Exists(soundPath))
                 {
