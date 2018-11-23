@@ -1228,7 +1228,7 @@ namespace LearnThaiApplication
                 txt.Name = "txt_" + prop.Name;
                 txt.TextWrapping = TextWrapping.Wrap;
 
-                txt.Width = 280;
+                //txt.Width = 280;
                 txt.KeyUp += OnEnterKeyUpForm;
 
                 i++;
