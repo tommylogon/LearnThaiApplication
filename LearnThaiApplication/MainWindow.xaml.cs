@@ -69,16 +69,16 @@ namespace LearnThaiApplication
 
         #region strings
 
-        private string ImageFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Icon\";
-        private string LanguageFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Language\";
-        private string SettingsFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Settings\";
+        private string ImageFilePath { get; set; } = Environment.CurrentDirectory + @"\Files\Media\Icon\";
+        private string LanguageFilePath { get; set; } = Environment.CurrentDirectory + @"\Files\Media\Language\";
+        private string SettingsFilePath { get; set; } = Environment.CurrentDirectory + @"\Files\Settings\";
         private string RegexSplitString { get; set; } = @" ^\s|[\s;,]{2,}";
         private string SelectedChapter { get; set; }
         private string UserName { get; set; } = "Default";
         private string SelectedSymbolTypeToUse { get; set; }
-        private string SoundFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Sound\";
-        private string WebFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Media\Website\";
-        private string DebugFilePath { get; set; } = Environment.CurrentDirectory + @"\..\..\Files\Settings\DEBUG\";
+        private string SoundFilePath { get; set; } = Environment.CurrentDirectory + @"\Files\Media\Sound\";
+        private string WebFilePath { get; set; } = Environment.CurrentDirectory + @"\Files\Media\Website\";
+        private string DebugFilePath { get; set; } = Environment.CurrentDirectory + @"\Files\Settings\DEBUG\";
         private string WhatToDisplay { get; set; }
         private string WhatToTrain { get; set; }
 

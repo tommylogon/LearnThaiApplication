@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVowel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Vowel>
+    <Name>ั</Name>
+    <ThaiScript>
+      <string>ั</string>
+      <string>กับ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gap</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>And</string>
+      <string>Also</string>
+      <string>With</string>
+      <string>to</string>
+      <string>for</string>
+      <string>from</string>
+      <string>on</string>
+      <string>as</string>
+      <string>like</string>
+      <string>personally</string>
+      <string>oneself</string>
+      <string>in person</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\กับ.mp3</string>
+    </SoundPath>
+    <EngDesc>ั is pronounced as an short a. </EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>-า</Name>
+    <ThaiScript>
+      <string>-า</string>
+      <string>บาด</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>baat</string>
+      <string>bat</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>to cut</string>
+      <string>to wound</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\บาด.mp3</string>
+    </SoundPath>
+    <EngDesc>-า is pronounced as a long a.</EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>แ-ะ</Name>
+    <ThaiScript>
+      <string>แ-ะ</string>
+      <string>แกะ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gae</string>
+      <string>kae</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>sheep</string>
+      <string>to carve in</string>
+      <string>to chisel out</string>
+      <string>to take out</string>
+      <string>to engrave</string>
+      <string>remove (a shell</string>
+      <string>e.g.) to trace</string>
+      <string>track</string>
+      <string>hunt down</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\แกะ.mp3</string>
+    </SoundPath>
+    <EngDesc>แ-ะ is pronounced like a short æ.</EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>แ</Name>
+    <ThaiScript>
+      <string>แ</string>
+      <string>แดง</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>daaeng</string>
+      <string>daeng</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>red</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\แดง.mp3</string>
+    </SoundPath>
+    <EngDesc>Pronounced as a long æ. </EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เ-ะ</Name>
+    <ThaiScript>
+      <string>เ-ะ</string>
+      <string>เตะ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>dteh</string>
+      <string>te</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>kick</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เตะ.mp3</string>
+    </SoundPath>
+    <EngDesc>เ-ะ is pronounced like a short e.</EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เ-</Name>
+    <ThaiScript>
+      <string>เ-</string>
+      <string>เพลง</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>phlaehng</string>
+      <string>phleng</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Song</string>
+      <string>Music</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เพลง.mp3</string>
+    </SoundPath>
+    <EngDesc>เ- is pronounced as a long e. [numerical classifier for songs]</EngDesc>
+    <Tone>
+      <string>Middle</string>
+      <string />
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ิ</Name>
+    <ThaiScript>
+      <string>ิ</string>
+      <string>คิด</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khit</string>
+      <string>kid</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>think</string>
+      <string>consider</string>
+      <string>imagine</string>
+      <string>to compute</string>
+      <string>to count</string>
+      <string>to wonder</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\คิด.mp3</string>
+    </SoundPath>
+    <EngDesc>ิ is pronounced as a short i.  to think (that...),  to charge (a price)</EngDesc>
+    <Tone>
+      <string>High</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ี</Name>
+    <ThaiScript>
+      <string>ี</string>
+      <string>อีก</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>eek</string>
+      <string>ik</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>again</string>
+      <string>another</string>
+      <string>further</string>
+      <string />
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\อีก.mp3</string>
+    </SoundPath>
+    <EngDesc>pronounced like a long i or e. after a time; still, another; additional; more, against; next to, any more</EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>โ-ะ</Name>
+    <ThaiScript>
+      <string>โ-ะ</string>
+      <string>โต๊ะ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>dto</string>
+      <string>to</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Table</string>
+      <string>counter</string>
+      <string>bar</string>
+      <string>workbench</string>
+      <string>work surface</string>
+      <string>altar.</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\โต๊ะ.mp3</string>
+    </SoundPath>
+    <EngDesc>โ-ะ is pronounced as a shot o.</EngDesc>
+    <Tone>
+      <string>High</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>โ-</Name>
+    <ThaiScript>
+      <string>โ-</string>
+      <string>โชค</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>chohk</string>
+      <string>chok</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Luck</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\โชค.mp3</string>
+    </SoundPath>
+    <EngDesc>โ- is pronounced as a long o.</EngDesc>
+    <Tone>
+      <string>Falling</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เ-าะ</Name>
+    <ThaiScript>
+      <string>เ-าะ</string>
+      <string>เกาะ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gaw</string>
+      <string>ko</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>island</string>
+      <string>to hold</string>
+      <string>cling</string>
+      <string>arrest</string>
+      <string>catch</string>
+      <string>grab</string>
+      <string>take</string>
+      <string>perch</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เกาะ.mp3</string>
+    </SoundPath>
+    <EngDesc>เ-าะ is pronounced as a quick aw.</EngDesc>
+    <Tone>
+      <string>Low</string>
+      <string />
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>อ</Name>
+    <ThaiScript>
+      <string>อ</string>
+      <string>นอน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>naawn</string>
+      <string>non</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>sleep</string>
+      <string>asleep</string>
+      <string>sleeping</string>
+      <string>lie down.</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\นอน.mp3</string>
+    </SoundPath>
+    <EngDesc>อ is pronounced as a longer aaw, [is] prone</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เ-อะ</Name>
+    <ThaiScript>
+      <string>เ-อะ</string>
+      <string>เยอะ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>yuh</string>
+      <string>yoe</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>a lot</string>
+      <string>many</string>
+      <string>plenty</string>
+      <string>much plentifully</string>
+      <string>abundantly</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เยอะ.mp3</string>
+    </SoundPath>
+    <EngDesc>เ-อะ is pronounced as ø or ö. </EngDesc>
+    <Tone>
+      <string>High</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เ-อ</Name>
+    <ThaiScript>
+      <string>เ-อ</string>
+      <string>เผลอ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>phluuhr</string>
+      <string>phloe</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Reckless</string>
+      <string>incautious</string>
+      <string>rash</string>
+      <string>absent-minded</string>
+      <string>forgetful</string>
+      <string>unaware</string>
+      <string>off one's guard</string>
+      <string>error-prone</string>
+      <string>unintentional</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เผลอ.mp3</string>
+    </SoundPath>
+    <EngDesc>เ-อ is pronounced as a long ö, o forget; make a mistake</EngDesc>
+    <Tone>
+      <string>Rising</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ุ</Name>
+    <ThaiScript>
+      <string>ุ</string>
+      <string>จุฬา</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>joo laa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>kite</string>
+      <string>excellent</string>
+      <string>ravishing</string>
+      <string>beautiful</string>
+      <string>delicate</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\จุฬา.mp3</string>
+    </SoundPath>
+    <EngDesc>ุ is pronounced as a low oo.</EngDesc>
+    <Tone>
+      <string>Low</string>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ู</Name>
+    <ThaiScript>
+      <string>ู</string>
+      <string>ลูก</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>luuk</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Child</string>
+      <string>offspring;</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\ลูก.mp3</string>
+    </SoundPath>
+    <EngDesc>ู is pronounced as  a falling uu.  child; offspring; son or daughter [including figurative usage for certain ideas]; cub; young animal, small ball; bulbous object; small round object; shortened form of ลูกบอล [e.g. football or football shot]</EngDesc>
+    <Tone>
+      <string>Falling</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ึ</Name>
+    <ThaiScript>
+      <string>ึ</string>
+      <string>รึ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>reu</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>or</string>
+    </EngWords>
+    <SoundPath />
+    <EngDesc>ึ is pronounced as a high eu</EngDesc>
+    <Tone>
+      <string>High</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ื</Name>
+    <ThaiScript>
+      <string>ื</string>
+      <string>กลืน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gleuun</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Swallow</string>
+      <string>blend</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\กลืน.mp3</string>
+    </SoundPath>
+    <EngDesc>ื pronounced as a normal tone uu.</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ไ-</Name>
+    <ThaiScript>
+      <string>ไ-</string>
+      <string>ไม่</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>mai</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>not</string>
+      <string>no</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\ไม่.mp3</string>
+    </SoundPath>
+    <EngDesc>ไ- is pronounced as ai, ไม่ is pronounced with a falling tone. [auxiliary verb] does not; has not; is not</EngDesc>
+    <Tone>
+      <string>Falling</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ใ-</Name>
+    <ThaiScript>
+      <string>ใ-</string>
+      <string>ใส่</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>sai</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>to put in</string>
+      <string>add</string>
+      <string>wear</string>
+      <string>encase</string>
+      <string>on</string>
+      <string>at</string>
+      <string>toward</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\ใส่.mp3</string>
+    </SoundPath>
+    <EngDesc>ใ- is pronounced as ai.</EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ำ</Name>
+    <ThaiScript>
+      <string>ำ</string>
+      <string>ทำ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>tham</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Do</string>
+      <string>Make</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\ทำ.mp3</string>
+    </SoundPath>
+    <EngDesc>ำ is pronounced as am. to do or perform an action; to cause or effect a result, to make, produce, or implement (i.e. something tangible)</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เ-า</Name>
+    <ThaiScript>
+      <string>เ-า</string>
+      <string>เรา</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>rao</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>we</string>
+      <string>us</string>
+      <string>our</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เรา.mp3</string>
+    </SoundPath>
+    <EngDesc>เ-า is pronounced as ao. [the singular pronoun] I, me [see examples], [the second person pronoun] you [see example]</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เียะ</Name>
+    <ThaiScript>
+      <string>เียะ</string>
+      <string>เดี๊ยะ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>dia</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>very straight</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เดี๊ยะ.mp3</string>
+    </SoundPath>
+    <EngDesc>เียะ is pronounced as ia.</EngDesc>
+    <Tone>
+      <string>[of an object</string>
+      <string>i.e. a ruler] very straight</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เีย</Name>
+    <ThaiScript>
+      <string>เีย</string>
+      <string>เมีย</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>miia</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Wife</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เมีย.mp3</string>
+    </SoundPath>
+    <EngDesc>เีย is pronounced as iia.</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ัว</Name>
+    <ThaiScript>
+      <string>ัว</string>
+      <string>ตัว</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>dtuaa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Self</string>
+      <string>body</string>
+      <string>item</string>
+      <string>digit</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\ตัว.mp3</string>
+    </SoundPath>
+    <EngDesc>ัว is pronounced as ua. [of a person] self; himself; herself; yourself; themselves; [things] itself
+[of an insect or animal, or of a human carnally] a body
+[of an object] entity; item; body
+[orthography] number; digit; character; figure
+[2nd person pronoun, calling someone in a cute way] you
+[Thai prefix meaning] "doer"; [as in the English suffix] "-er" or "-or"
+(theatrical) character; (sports) player
+one (generic word [e.g. the small one])
+[numerical classifier for digits, number, bodies, shirts, pants, suits, animals, fish, germs, chairs, tables, desks, software title]</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ัวะ</Name>
+    <ThaiScript>
+      <string>ัวะ</string>
+      <string>ผลัวะ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>phlua</string>
+    </ThaiFonet>
+    <EngWords>
+      <string />
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\ผลัวะ.mp3</string>
+    </SoundPath>
+    <EngDesc>ัวะ is pronounced as ua. ผลัวะ means[onomatopoeic sound of a rock thrown into a bush or a flock of birds flying from a thicket]</EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เือะ</Name>
+    <ThaiScript>
+      <string>เือะ</string>
+      <string>เอือะ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>eua</string>
+    </ThaiFonet>
+    <EngWords>
+      <string />
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เอือะ.mp3</string>
+    </SoundPath>
+    <EngDesc>เือะ is pronounced as eua. เอือะ is the Thai vowel sound.</EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เือ</Name>
+    <ThaiScript>
+      <string>เือ</string>
+      <string>เรือ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>reuua</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>boat</string>
+      <string>ship</string>
+      <string>barge</string>
+      <string>vessel</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เรือ.mp3</string>
+    </SoundPath>
+    <EngDesc>เือ is pronounced as euua.</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ฦ</Name>
+    <ThaiScript>
+      <string>ฦ</string>
+      <string>ฦาชา</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>leuu chaa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>well-known</string>
+      <string>[is] well-known</string>
+      <string>celebrated</string>
+      <string>renowned</string>
+      <string>famous</string>
+    </EngWords>
+    <SoundPath />
+    <EngDesc>[ancient spelling of] ลือชา.</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ฦๅ</Name>
+    <ThaiScript>
+      <string>ฦๅ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>lüü</string>
+    </ThaiFonet>
+    <EngWords>
+      <string />
+    </EngWords>
+    <SoundPath />
+    <EngDesc>Uncommon vowel with  luu or lüü sound.</EngDesc>
+    <Tone>
+      <string />
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ฤ</Name>
+    <ThaiScript>
+      <string>ฤ</string>
+      <string>ฤทธ์</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>rit</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>prosperous</string>
+      <string>thriving</string>
+      <string>growing</string>
+      <string>rich</string>
+      <string>increasing</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฤทธ์.mp3</string>
+    </SoundPath>
+    <EngDesc>ฤ is pronounced as rü. ฤทธ์ also means thriving; growing; rich; increasing</EngDesc>
+    <Tone>
+      <string>High</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ฤๅ</Name>
+    <ThaiScript>
+      <string>ฤๅ</string>
+      <string>ฤๅษี</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>reuu see</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>ascetic</string>
+      <string>meditating recluse</string>
+      <string>hermit</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\ฤๅษี.mp3</string>
+    </SoundPath>
+    <EngDesc>ฤๅ is pronoun as reuu.</EngDesc>
+    <Tone>
+      <string>Middle</string>
+      <string>Rising</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>-อย</Name>
+    <ThaiScript>
+      <string>-อย</string>
+      <string>บ่อย</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>baawy</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>often</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\บ่อย.mp3</string>
+    </SoundPath>
+    <EngDesc>-อย is pronounced as aawy or åi. </EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เ็ว</Name>
+    <ThaiScript>
+      <string>เ็ว</string>
+      <string>เร็ว</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>reo</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>quick</string>
+      <string>quickly</string>
+      <string>fast</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เร็ว.mp3</string>
+    </SoundPath>
+    <EngDesc>เ็ว is pronounced as eo. [is] early</EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เียว</Name>
+    <ThaiScript>
+      <string>เียว</string>
+      <string>เที่ยว</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>thiaao</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>vacation</string>
+      <string>trip</string>
+      <string>vacation</string>
+      <string>holiday</string>
+      <string>pleasure tour</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เที่ยว.mp3</string>
+    </SoundPath>
+    <EngDesc>เียว is prononounced as iow or iaao. [is] early,  turn to do something, to party; to go out partying, [numerical classifier for trips]</EngDesc>
+    <Tone>
+      <string>Falling</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>เืยว</Name>
+    <ThaiScript>
+      <string>เืยว</string>
+      <string>เหนื่อย</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>neuuay</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Tired</string>
+      <string>fatigued</string>
+      <string>exhausted</string>
+      <string>beat</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\เหนื่อย.mp3</string>
+    </SoundPath>
+    <EngDesc>เืยว is pronounced as üai or uuay. </EngDesc>
+    <Tone>
+      <string>Low</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ิว</Name>
+    <ThaiScript>
+      <string>ิว</string>
+      <string>หิว</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>hiu</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>hungry</string>
+      <string>starved</string>
+      <string>starving</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\หิว.mp3</string>
+    </SoundPath>
+    <EngDesc>ิว is pronounced as iu. [is] hungry.</EngDesc>
+    <Tone>
+      <string>Rising</string>
+    </Tone>
+  </Vowel>
+  <Vowel>
+    <Name>ุย</Name>
+    <ThaiScript>
+      <string>ุย</string>
+      <string>คุย</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khuy</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>to chat</string>
+      <string>talk</string>
+    </EngWords>
+    <SoundPath>
+      <string>C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\bin\Debug\..\..\Files\Media\Sound\คุย.mp3</string>
+    </SoundPath>
+    <EngDesc>ุย is pronounced as ui or uy. </EngDesc>
+    <Tone>
+      <string>Middle</string>
+    </Tone>
+  </Vowel>
+</ArrayOfVowel>
