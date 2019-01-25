@@ -19,12 +19,12 @@ namespace LearnThaiApplication
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
         public MainWindow()
         {
             InitializeComponent();
-
+            this.DataContext = this;
             LoadSettings();
 
             LoadAllFiles();
@@ -50,7 +50,23 @@ namespace LearnThaiApplication
         private List<Word> DisplayList { get; set; } = new List<Word>();
         private List<PropertyInfo> ListOfProperties { get; set; } = new List<PropertyInfo>();
         private List<object> ListOfValues { get; set; } = new List<object>();
-        private List<Word> Words { get; set; } = new List<Word>();
+        private List<Word> words = new List<Word>();
+
+        public List<Word> Words
+        {
+            get
+            {
+                return words;
+            }
+            set
+            {
+                if (words != value)
+                {
+                    words = value;
+                    OnPropertyChanged("Words");
+                }
+            }
+        }
 
         #endregion lists
 
@@ -109,6 +125,8 @@ namespace LearnThaiApplication
         private Type WhatTypeToUse { get; set; }
         private IEnumerable<Window> Windows { get; set; }
         private UserSetting settings = new UserSetting();
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         #endregion others
 
@@ -2435,6 +2453,16 @@ namespace LearnThaiApplication
             }
 
             FindWordWithChapter();
+        }
+
+        // Create the OnPropertyChanged method to raise the event
+        protected void OnPropertyChanged(string name)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(name));
+            }
         }
     }
 }

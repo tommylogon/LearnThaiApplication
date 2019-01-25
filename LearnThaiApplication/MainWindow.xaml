@@ -123,6 +123,11 @@
                     <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left" Margin="133,9,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Seach_Clicked" />
                 </Grid>
             </TabItem>
+            <TabItem Header="New Content Man">
+                <Grid Background="#FF6DA5C4" Margin="0,-1,0,0">
+                    <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="465" Margin="10,10,0,0" VerticalAlignment="Top" Width="902" ItemsSource="{Binding Path=Words, Mode=OneWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" />
+                </Grid>
+            </TabItem>
             <TabItem Header="Settings">
                 <Grid Background="#FF6DA5C4" Margin="0,-1,1,0">
                     <Label Content="Current Path to language files is:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Foreground="#FFE6F8FF" />
