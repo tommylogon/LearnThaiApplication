@@ -8,9 +8,9 @@
         Title="MainWindow" Height="600" Width="1000">
 
     <Viewbox>
-        <TabControl x:Name="MainWindow_tabController" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Margin="0" Height="512" Width="928" Background="White" Foreground="Black" SelectionChanged="OnTabChanged">
+        <TabControl x:Name="MainWindow_tabController" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Background="White" Foreground="Black" SelectionChanged="OnTabChanged">
             <TabItem Header="Learn the language">
-                <Grid Background="#FF6DA5C4" Margin="0,3,0,-3">
+                <Grid Background="#FF6DA5C4" Margin="0">
                     <Label x:Name="lbl_Counter_Page1" Content="123" HorizontalAlignment="Left" Margin="110,142,0,0" VerticalAlignment="Top" Height="31" Width="38" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_DescBox_Page1" Content="Description" HorizontalAlignment="Left" Margin="16,274,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
                     <CheckBox x:Name="ckb_Randomized_Page1" Content="Randomize words" HorizontalAlignment="Left" Margin="16,254,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
@@ -125,7 +125,25 @@
             </TabItem>
             <TabItem Header="New Content Man">
                 <Grid Background="#FF6DA5C4" Margin="0,-1,0,0">
-                    <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="465" Margin="10,10,0,0" VerticalAlignment="Top" Width="902" ItemsSource="{Binding Path=Words, Mode=OneWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" />
+                    <DataGrid x:Name="dataGrid"
+                              HorizontalAlignment="Left"
+                              Height="465"
+                              Margin="10,10,0,0"
+                              VerticalAlignment="Top"
+                              Width="902"
+                              AutoGenerateColumns="False"
+                              ItemsSource="{Binding Path=Words, Mode=OneWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" AddingNewItem="NewItemAdded">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Chapter" Binding="{Binding Chapter}" />
+                            <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                            <DataGridTextColumn Header="Thai Script" Binding="{Binding ThaiScript_String}" />
+                            <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding ThaiFonet_String}" />
+                            <DataGridTextColumn Header="English meaning" Binding="{Binding EngWords_String}" />
+                            <DataGridTextColumn Header="Sound path" Binding="{Binding SoundPath_String}" />
+                            <DataGridTextColumn Header="Description" Width="120"  Binding="{Binding EngDesc}" />
+                            <DataGridTextColumn Header="Tone" Binding="{Binding Tone_String}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </Grid>
             </TabItem>
             <TabItem Header="Settings">

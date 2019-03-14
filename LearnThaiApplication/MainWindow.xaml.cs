@@ -36,7 +36,7 @@ namespace LearnThaiApplication
             Loaded += MainWindow_Loaded;
 
             ReadWebsiteFiles();
-
+            AppWindow = this;
             //WriteAllToFile();*/
         }
 
@@ -88,7 +88,7 @@ namespace LearnThaiApplication
         private string ImageFilePath { get; set; } = Environment.CurrentDirectory + @"\Files\Media\Icon\";
         private string LanguageFilePath { get; set; } = Environment.CurrentDirectory + @"\Files\Media\Language\";
         private string SettingsFilePath { get; set; } = Environment.CurrentDirectory + @"\Files\Settings\";
-        private string RegexSplitString { get; set; } = @" ^\s|[\s;,]{2,}";
+        private static string RegexSplitString { get; set; } = @" ^\s|[\s;,]{2,}";
         private string SelectedChapter { get; set; }
         private string UserName { get; set; } = "Default";
         private string SelectedSymbolTypeToUse { get; set; }
@@ -114,6 +114,7 @@ namespace LearnThaiApplication
         private object SelectedPropertyToValidate { get; set; }
         private object WhatListTLoad { get; set; }
         private object WordToLoad { get; set; }
+        public MainWindow AppWindow;
 
         #endregion objects
 
@@ -403,21 +404,28 @@ namespace LearnThaiApplication
         /// </summary>
         /// <param name="list">The list to use</param>
         /// <returns>String of words</returns>
-        private string ListToString(List<string> list)
+        public static string ListToString(List<string> list)
         {
-            string combinedStrings = null;
-            foreach (string text in list)
+            try
             {
-                if (list.IndexOf(text) == list.Count - 1)
+                string combinedStrings = null;
+                foreach (string text in list)
                 {
-                    combinedStrings += text;
+                    if (list.IndexOf(text) == list.Count - 1)
+                    {
+                        combinedStrings += text;
+                    }
+                    else
+                    {
+                        combinedStrings += text + "; ";
+                    }
                 }
-                else
-                {
-                    combinedStrings += text + "; ";
-                }
+                return combinedStrings;
             }
-            return combinedStrings;
+            catch
+            {
+                return null;
+            }
         }
 
         /// <summary>
@@ -425,11 +433,9 @@ namespace LearnThaiApplication
         /// </summary>
         /// <typeparam name="T">What type to use</typeparam>
         /// <param name="list">What list to use</param>
-        private void NextChapter<T>(List<T> list)
+        private void NextChapter(List<Word> list)
         {
-            Type objectType = typeof(T);
-
-            if (objectType == typeof(Word) && CurrentFileIndex >= list.Count)
+            if (CurrentFileIndex >= list.Count)
             {
                 cb_Chapter_Page1.SelectedIndex++;
             }
@@ -527,10 +533,8 @@ namespace LearnThaiApplication
         /// </summary>
         /// <typeparam name="T">What type to work with</typeparam>
         /// <param name="list">What list to work with</param>
-        private void SelectionChanged<T>(int selectedIndex)
+        private void SelectionChanged(int selectedIndex)
         {
-            Type whatIsT = typeof(T);
-
             if (selectedIndex != -1)
             {
                 WordToLoad = lib_LoadedWords.SelectedItem;
@@ -539,12 +543,12 @@ namespace LearnThaiApplication
 
                 FillFormTextBoxes();
 
-                txt_FirstSelectionProperty.Text = ListToString((List<String>)GetValueFromValueList("ThaiScript"));
-                txt_SecondSelectionProperty.Text = ListToString((List<String>)GetValueFromValueList("ThaiFonet"));
-                txt_ThirdSelectionProperty.Text = ListToString((List<String>)GetValueFromValueList("EngWords"));
-                txt_FourthSelectionProperty.Text = (String)GetValueFromValueList("EngDesc");
-                txt_FifthSelectionProperty.Text = (String)GetValueFromValueList("Chapter");
-                txb_Description_Page4.Text = (String)GetValueFromValueList("EngDesc");
+                txt_FirstSelectionProperty.Text = ListToString((List<string>)GetValueFromValueList("ThaiScript"));
+                txt_SecondSelectionProperty.Text = ListToString((List<string>)GetValueFromValueList("ThaiFonet"));
+                txt_ThirdSelectionProperty.Text = ListToString((List<string>)GetValueFromValueList("EngWords"));
+                txt_FourthSelectionProperty.Text = (string)GetValueFromValueList("EngDesc");
+                txt_FifthSelectionProperty.Text = (string)GetValueFromValueList("Chapter");
+                txb_Description_Page4.Text = (string)GetValueFromValueList("EngDesc");
             }
         }
 
@@ -582,7 +586,7 @@ namespace LearnThaiApplication
         ///Sets the properties of the object it recives.
         /// </summary>
         /// <param name="recived">what object to find properties for</param>
-        private void SetPropertyOfGenericObject(Object recived)
+        private void SetPropertyOfGenericObject(object recived)
         {
             ListOfProperties.Clear();
             ListOfValues.Clear();
@@ -630,7 +634,7 @@ namespace LearnThaiApplication
         /// </summary>
         /// <param name="textToSplit">String to split</param>
         /// <returns></returns>
-        private List<String> SplitStringToList(String textToSplit)
+        public static List<string> SplitStringToList(string textToSplit)
         {
             return Regex.Split(textToSplit, RegexSplitString).ToList<String>();
         }
@@ -699,11 +703,11 @@ namespace LearnThaiApplication
         {
             if (TabIndex == 0)
             {
-                ValidateAnswer<Word>(DisplayList, txt_Answear_Page1, txb_Status_Page1, txb_Description_page1);
+                ValidateAnswer(DisplayList, txt_Answear_Page1, txb_Status_Page1, txb_Description_page1);
             }
             else if (TabIndex == 1)
             {
-                ValidateAnswer<Word>(DisplayList, txt_Answear_Page2, txb_Status_Page2, txb_Description_page2);
+                ValidateAnswer(DisplayList, txt_Answear_Page2, txb_Status_Page2, txb_Description_page2);
             }
         }
 
@@ -716,7 +720,7 @@ namespace LearnThaiApplication
         /// <param name="textBlockStatus">What textblock to use for right or worng</param>
         /// <param name="textBlockDesc">What textblock to use for description</param>
         /// <param name="checkBoxDesc">What checkbox to use to check if description is on</param>
-        private void ValidateAnswer<T>(List<T> list, TextBox textboxAnswear, TextBlock textBlockStatus, TextBlock textBlockDesc)
+        private void ValidateAnswer(List<Word> list, TextBox textboxAnswear, TextBlock textBlockStatus, TextBlock textBlockDesc)
         {
             SetPropertyOfGenericObject(list[CurrentFileIndex]);
 
@@ -923,7 +927,7 @@ namespace LearnThaiApplication
         {
             if (!SkipIntro)
             {
-                MessageBox.Show("Welcome to Learn Thai!\r\nHere you can learn some of the basics of thai, including how to approximately pronounce thai words, what the thai words mean and the sounds they make with the help of audio clips.", "สวัสดีครับ");
+                MessageBox.Show("Welcome to Learn Thai!\r\n Here you can learn some of the basics of thai, including how to approximately pronounce thai words, what the thai words mean and the sounds they make with the help of audio clips.", "สวัสดีครับ");
             }
         }
 
@@ -1534,7 +1538,7 @@ namespace LearnThaiApplication
 
             if (WhatTypeToUse == typeof(Word))
             {
-                SelectionChanged<Word>(lib_LoadedWords.SelectedIndex);
+                SelectionChanged(lib_LoadedWords.SelectedIndex);
             }
         }
 
@@ -2024,8 +2028,10 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void PlaySound(object sender, RoutedEventArgs e)
         {
-            BackgroundWorker worker = new BackgroundWorker();
-            worker.WorkerReportsProgress = true;
+            BackgroundWorker worker = new BackgroundWorker
+            {
+                WorkerReportsProgress = true
+            };
             worker.DoWork += Worker_PlaySoundFile;
 
             worker.RunWorkerAsync();
@@ -2157,10 +2163,12 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void StartSoundDownload(object sender, RoutedEventArgs e)
         {
-            BackgroundWorker worker = new BackgroundWorker();
-            worker.WorkerReportsProgress = true;
+            BackgroundWorker worker = new BackgroundWorker
+            {
+                WorkerReportsProgress = true
+            };
             worker.DoWork += RunWebsiteFiles_DoWork;
-            worker.ProgressChanged += worker_ProgressChanged;
+            worker.ProgressChanged += Worker_ProgressChanged;
 
             worker.RunWorkerAsync();
         }
@@ -2290,7 +2298,7 @@ namespace LearnThaiApplication
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        private void Worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             pbStatus.Value = e.ProgressPercentage;
         }
@@ -2322,10 +2330,12 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void SetSoundPath_clicked(object sender, RoutedEventArgs e)
         {
-            BackgroundWorker worker = new BackgroundWorker();
-            worker.WorkerReportsProgress = true;
+            BackgroundWorker worker = new BackgroundWorker
+            {
+                WorkerReportsProgress = true
+            };
             worker.DoWork += SetSoundPaths_DoWork;
-            worker.ProgressChanged += worker_ProgressChanged;
+            worker.ProgressChanged += Worker_ProgressChanged;
 
             worker.RunWorkerAsync();
         }
@@ -2458,11 +2468,12 @@ namespace LearnThaiApplication
         // Create the OnPropertyChanged method to raise the event
         protected void OnPropertyChanged(string name)
         {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(name));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
+
+        private void NewItemAdded(object sender, AddingNewItemEventArgs e)
+        {
+            SaveAll();
         }
     }
 }
