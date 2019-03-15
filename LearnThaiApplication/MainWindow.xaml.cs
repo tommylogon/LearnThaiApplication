@@ -96,19 +96,22 @@ namespace LearnThaiApplication
         private string ImageFilePath = Environment.CurrentDirectory + @"\Files\Media\Icon\";
         private string LanguageFilePath = Environment.CurrentDirectory + @"\Files\Media\Language\";
         private string SettingsFilePath = Environment.CurrentDirectory + @"\Files\Settings\";
-        private static string RegexSplitString = @" ^\s|[\s;,]{2,}";
-        private string SelectedChapter;
-        private string UserName = "Default";
-        private string SelectedSymbolTypeToUse;
         private string SoundFilePath = Environment.CurrentDirectory + @"\Files\Media\Sound\";
         private string WebFilePath = Environment.CurrentDirectory + @"\Files\Media\Website\";
         private string DebugFilePath = Environment.CurrentDirectory + @"\Files\Settings\DEBUG\";
+        private static string RegexSplitString = @" ^\s|[\s;,]{2,}";
+
+        private string SelectedChapter;
+        private string UserName = "Default";
+        private string SelectedSymbolTypeToUse;
+        
         private string WhatToDisplay;
         private string WhatToTrain;
         private string thaiScript_String;
         private string descriptionText;
         private string result;
         private string answear;
+        private string searchString;
 
         #endregion strings
 
@@ -333,6 +336,22 @@ namespace LearnThaiApplication
             }
         }
 
+
+        public string SearchString
+        {
+            get
+            {
+                return SearchString;
+            }
+            set
+            {
+                if (SearchString != value)
+                {
+                    SearchString = value;
+                    OnPropertyChanged("SearchString");
+                }
+            }
+        }
         #endregion Notifiers
 
         #region others
@@ -2600,7 +2619,7 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void Seach_Clicked(object sender, RoutedEventArgs e)
         {
-            Search(txt_SearchBar.Text);
+            Search(searchString);
         }
 
         /// <summary>
@@ -2609,18 +2628,18 @@ namespace LearnThaiApplication
         /// <param name="searchValue"></param>
         private void Search(string searchValue)
         {
-            List<Word> searchResults = new List<Word>();
+            ObservableCollection<Word> searchResults = new ObservableCollection<Word>();
 
             List<Word> listToSeach;
-            lib_LoadedWords.ItemsSource = null;
-            if (SelectedChapter == "All")
-            {
-                listToSeach = new List<Word>(words);
-            }
-            else
-            {
-                listToSeach = DisplayList;
-            }
+
+            
+            
+                listToSeach = new List<Word>(Words);
+            
+            //else
+            //{
+            //    listToSeach = DisplayList;
+            //}
 
             try
             {
@@ -2653,8 +2672,8 @@ namespace LearnThaiApplication
             {
                 MessageBox.Show(ex.Message);
             }
-
-            LoadObjectsToLib<Word>(searchResults);
+            Words = searchResults;
+            //LoadObjectsToLib<Word>(searchResults);
         }
 
         /// <summary>

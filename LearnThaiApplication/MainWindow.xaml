@@ -122,20 +122,18 @@
                         <TextBlock x:Name="txb_Description_Page4" TextWrapping="Wrap" Text="TextBlock" Foreground="#FFE6F8FF" FontSize="24" />
                     </ScrollViewer>
                     <ComboBox x:Name="cb_ManageOnChapter" HorizontalAlignment="Left" Margin="683,83,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ChapterChanged" />
-                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-                    <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left" Margin="133,9,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Seach_Clicked" />
                 </Grid>
             </TabItem>
             <TabItem Header="New Content Man">
                 <Grid Background="#FF6DA5C4" Margin="0,-1,0,0">
                     <DataGrid x:Name="dataGrid"
                               HorizontalAlignment="Left"
-                              Margin="0"
+                              Margin="0,42,0,0"
                               VerticalAlignment="Top"
                               AutoGenerateColumns="False"
                               ItemsSource="{Binding Path=Words, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" 
                               AddingNewItem="NewItemAdded" 
-                              RowEditEnding="RowEditEnding" Height="527" Width="979">
+                              RowEditEnding="RowEditEnding" Height="485" Width="979">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter}" />
                             <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" />
@@ -143,16 +141,16 @@
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-                                        
+
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
-                            
+
                             <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding Path=ThaiFonet_String}">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-                                        
+
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
@@ -160,7 +158,7 @@
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-                                        
+
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
@@ -168,7 +166,7 @@
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-                                        
+
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
@@ -176,7 +174,7 @@
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-                                        
+
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
@@ -184,12 +182,14 @@
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-                                        
+
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
                         </DataGrid.Columns>
                     </DataGrid>
+                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" Text="{Binding SearchString}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+                    <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left" Margin="133,9,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Seach_Clicked" />
                 </Grid>
             </TabItem>
             <TabItem Header="Settings">
