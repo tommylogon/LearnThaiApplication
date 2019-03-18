@@ -14,7 +14,7 @@
                     <Label x:Name="lbl_Counter_Page1" Content="{Binding Path=CurrentFileIndex}" HorizontalAlignment="Left" Margin="110,142,0,0" VerticalAlignment="Top" Height="31" Width="38" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_DescBox_Page1" Content="Description" HorizontalAlignment="Left" Margin="10,193,0,0" IsChecked="{Binding Path=HasDescription}" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
                     <CheckBox x:Name="ckb_Randomized_Page1" Content="Randomize words" HorizontalAlignment="Left" Margin="10,173,0,0" IsChecked="{Binding Path=IsRandom}" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
-                    <TextBox x:Name="txt_Answear_Page1" HorizontalAlignment="Left" Height="28" Margin="290,150,0,0" TextWrapping="Wrap" Text="{Binding Path=Answear}" VerticalAlignment="Top" Width="150" KeyUp="OnKeyUp" />
+                    <TextBox x:Name="txt_Answear_Page1" HorizontalAlignment="Left" Height="28" Margin="290,150,0,0" TextWrapping="Wrap" Text="{Binding Mode=TwoWay, Path=Answear, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="150" KeyUp="OnKeyUp" />
                     <Button x:Name="btn_validate_Page1" Content="Check" HorizontalAlignment="Left" Height="24" Margin="318,183,0,0" VerticalAlignment="Top" Width="89" Click="ValidateAnswear" />
                     <Button x:Name="btn_Next_Word_Page1" Content="Next" HorizontalAlignment="Left" Height="24" Margin="412,183,0,0" VerticalAlignment="Top" Width="35" Click="NextWord" />
                     <Button x:Name="btn_Prev_Word_Page1" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="278,183,0,0" VerticalAlignment="Top" Width="35" Click="PrevWord" />
@@ -57,11 +57,11 @@
             </TabItem>
             <TabItem Header="Train Symbols">
                 <Grid Background="#FF6DA5C4">
-                    <TextBox x:Name="txt_Answear_Page2"  HorizontalAlignment="Left" Height="28" Margin="290,150,0,0" TextWrapping="Wrap" Text="{Binding Path=Answear}" VerticalAlignment="Top" Width="150" KeyUp="OnKeyUp" />
+                    <TextBox x:Name="txt_Answear_Page2"  HorizontalAlignment="Left" Height="28" Margin="290,150,0,0" TextWrapping="Wrap" Text="{Binding Mode=TwoWay, Path=Answear, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="150" KeyUp="OnKeyUp" />
                     <Button x:Name="btn_validate_Page2" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="318,183,0,0" VerticalAlignment="Top" Width="89" Click="ValidateAnswear" />
                     <Button x:Name="btn_Next_Word_Page2" Content="Next" HorizontalAlignment="Left" Height="24" Margin="412,183,0,0" VerticalAlignment="Top" Width="35" Click="NextWord" />
                     <Button x:Name="btn_Prev_Word_Page2" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="278,183,0,0" VerticalAlignment="Top" Width="35" Click="PrevWord" />
-                    <TextBlock x:Name="txb_Information_Page2" HorizontalAlignment="Left" Margin="0,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="191" Width="236" FontSize="16" Foreground="#FFE6F8FF"><Run Text="Here you can select between consonants or vowels." /><Run Text=" " /><LineBreak /><Run Text="You can also learn and practise prenounciations and numbers." /></TextBlock>
+                    <TextBlock x:Name="txb_Information_Page2" HorizontalAlignment="Left" Margin="10,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="191" Width="236" FontSize="16" Foreground="#FFE6F8FF"><Run Text="Here you can select between consonants or vowels." /><Run Text=" " /><LineBreak /><Run Text="You can also learn and practise prenounciations and numbers." /></TextBlock>
                     <CheckBox x:Name="ckb_DescBox_Page2" IsChecked="{Binding Path=HasDescription}" Content="Description" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
                     <CheckBox x:Name="ckb_Randomized_Page2" IsChecked="{Binding Path=IsRandom}" Content="Randomize words" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
                     <ScrollViewer HorizontalAlignment="Left" Height="135" Margin="329,10,0,0" VerticalAlignment="Top" Width="650">
@@ -131,13 +131,23 @@
                               Margin="0,42,0,0"
                               VerticalAlignment="Top"
                               AutoGenerateColumns="False"
-                              ItemsSource="{Binding Path=Words, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" 
+                              ItemsSource="{Binding Path=DisplayList, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" 
                               AddingNewItem="NewItemAdded" 
-                              RowEditEnding="RowEditEnding" Height="485" Width="979">
+                              RowEditEnding="RowEditEnding" Height="485" Width="979"
+                              SelectionMode="Single"
+                              SelectionUnit="Cell">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter}" />
-                            <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" />
-                            <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String}">
+                            <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter}" MaxWidth="150"/>
+                            <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" MaxWidth="150"/>
+                            <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String}" MaxWidth="150">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style>
+                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+
+                            <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding Path=ThaiFonet_String}" MaxWidth="150">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
@@ -145,8 +155,8 @@
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
-
-                            <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding Path=ThaiFonet_String}">
+                            
+                            <DataGridTextColumn Header="English meaning" Binding="{Binding Path=EngWords_String}" MaxWidth="250">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
@@ -154,41 +164,37 @@
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
-                            <DataGridTextColumn Header="English meaning" Binding="{Binding Path=EngWords_String}" >
+                            
+                            <DataGridTemplateColumn Header="Sound path" MaxWidth="250">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <ScrollViewer Height="35">
+                                            <TextBox Text="{Binding Path=SoundPath_String}"  TextWrapping="Wrap"/>
+                                        </ScrollViewer>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            
+                            <DataGridTemplateColumn Header="Description" MaxWidth="350">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <ScrollViewer Height="45">
+                                            <TextBox Text="{Binding Path=EngDesc}"  TextWrapping="Wrap"/>
+                                        </ScrollViewer>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTextColumn Header="Tone" Binding="{Binding Path=Tone_String}" MaxWidth="150">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
-                            <DataGridTextColumn Header="Sound path" Width="250" Binding="{Binding Path=SoundPath_String}">
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style>
-                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
-                            <DataGridTextColumn Header="Description" Width="250"  Binding="{Binding Path=EngDesc}" >
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style>
-                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
-                            <DataGridTextColumn Header="Tone" Binding="{Binding Path=Tone_String}" >
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style>
-                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" Text="{Binding SearchString}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="Seach_KeyUp" />
                     <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left" Margin="133,9,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Seach_Clicked" />
                 </Grid>
             </TabItem>

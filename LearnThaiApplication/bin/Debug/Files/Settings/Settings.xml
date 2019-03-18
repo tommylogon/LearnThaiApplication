@@ -2,7 +2,7 @@
 <UserSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <DescriptionOn>true</DescriptionOn>
   <LoopChapter>false</LoopChapter>
-  <DisplayAllPropertiesInDescription>true</DisplayAllPropertiesInDescription>
+  <DisplayAllPropertiesInDescription>false</DisplayAllPropertiesInDescription>
   <RandomOn>false</RandomOn>
   <SkipIntro>true</SkipIntro>
   <AutoPlaySounds>false</AutoPlaySounds>

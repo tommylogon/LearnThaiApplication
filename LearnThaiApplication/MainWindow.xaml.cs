@@ -50,10 +50,11 @@ namespace LearnThaiApplication
         private List<TextBox> textboxList;
         private ObservableCollection<Chapter> Chapters = new ObservableCollection<Chapter>();
         private List<UserSetting> UserSettings = new List<UserSetting>();
-        private List<Word> DisplayList = new List<Word>();
+        
         private List<PropertyInfo> ListOfProperties = new List<PropertyInfo>();
         private List<object> ListOfValues = new List<object>();
         private ObservableCollection<Word> words = new ObservableCollection<Word>();
+        private ObservableCollection<Word> displayList = new ObservableCollection<Word>();
 
         public ObservableCollection<Word> Words
         {
@@ -71,6 +72,22 @@ namespace LearnThaiApplication
             }
         }
 
+
+        public ObservableCollection<Word> DisplayList
+        {
+            get
+            {
+                return displayList;
+            }
+            set
+            {
+                if (displayList != value)
+                {
+                    displayList = value;
+                    OnPropertyChanged("DisplayList");
+                }
+            }
+        }
         private void ContentCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             SaveAll();
@@ -341,13 +358,13 @@ namespace LearnThaiApplication
         {
             get
             {
-                return SearchString;
+                return searchString;
             }
             set
             {
-                if (SearchString != value)
+                if (searchString != value)
                 {
-                    SearchString = value;
+                    searchString = value;
                     OnPropertyChanged("SearchString");
                 }
             }
@@ -376,11 +393,11 @@ namespace LearnThaiApplication
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
-        private void WriteWordToFile<T>(List<T> list) where T : new()
+        private void WriteWordToFile(List<Word> list)
         {
-            foreach (T word in list)
+            foreach (Word word in list)
             {
-                SetPropertyOfGenericObject(word);
+                
 
                 List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
 
@@ -492,7 +509,7 @@ namespace LearnThaiApplication
         /// <param name="list">List to use</param>
         /// <param name="nextValueToAdd">the next value to add (or subtract) from current file index</param>
         /// <param name="textBlockForScript">textblock to use for display</param>
-        private void CheckAndChangePosisionInList<T>(List<T> list, int nextValueToAdd)
+        private void CheckAndChangePosisionInList(ObservableCollection<Word> list, int nextValueToAdd)
         {
             if (IsRandom)
             {
@@ -884,7 +901,7 @@ namespace LearnThaiApplication
         /// <param name="checkBoxDescription">What checkbox to use</param>
         /// <param name="checkBoxRandom">what checkbox to use</param>
         /// <param name="movementValue">to move forward, backwards or stay in place in the list</param>
-        private void TextChanger<T>(List<T> list, int movementValue) where T : new()
+        private void TextChanger<T>(ObservableCollection<Word> list, int movementValue) where T : new()
         {
             if (list.Count == 0)
             {
@@ -894,7 +911,7 @@ namespace LearnThaiApplication
             {
                 Type whatIsT = typeof(T);
 
-                CheckAndChangePosisionInList<T>(list, movementValue);
+                CheckAndChangePosisionInList(list, movementValue);
 
                 SetPropertyOfGenericObject(list[CurrentFileIndex]);
 
@@ -955,7 +972,7 @@ namespace LearnThaiApplication
         /// <param name="textBlockStatus">What textblock to use for right or worng</param>
         /// <param name="textBlockDesc">What textblock to use for description</param>
         /// <param name="checkBoxDesc">What checkbox to use to check if description is on</param>
-        private void ValidateAnswer(List<Word> list)
+        private void ValidateAnswer(ObservableCollection<Word> list)
         {
             SetPropertyOfGenericObject(list[CurrentFileIndex]);
 
@@ -963,46 +980,52 @@ namespace LearnThaiApplication
 
             int rightAnswears = 0;
             int totalAnswears = 0;
-            List<string> answers = Regex.Split(Answear, RegexSplitString).ToList();
-
-            if (SelectedPropertyToValidate is List<String>)
+            if (string.IsNullOrEmpty(Answear))
             {
-                foreach (String correctWord in SelectedPropertyToValidate as List<string>)
-                {
-                    totalAnswears = ((List<string>)SelectedPropertyToValidate).Count;
-                    foreach (String answer in answers)
-                    {
-                        if (String.Equals(correctWord, answer, StringComparison.OrdinalIgnoreCase))
-                        {
-                            correctPoints++;
-                            rightAnswears++;
-                        }
-                    }
-                }
-            }
-            else if (string.Equals(Answear, (string)SelectedPropertyToValidate, StringComparison.OrdinalIgnoreCase))
-            {
-                totalAnswears = 1;
-                correctPoints++;
-                rightAnswears++;
-            }
-
-            if (rightAnswears != 0)
-            {
-                Result = "You got " + rightAnswears + " of " + totalAnswears + " correct!";
+                System.Windows.Forms.MessageBox.Show("Please enter an answear.");
             }
             else
             {
-                Result = "Sorry, try again!";
+                List<string> answers = Regex.Split(Answear, RegexSplitString).ToList();
+                if (SelectedPropertyToValidate is List<string>)
+                {
+                    foreach (string correctWord in SelectedPropertyToValidate as List<string>)
+                    {
+                        totalAnswears = ((List<string>)SelectedPropertyToValidate).Count;
+                        foreach (string answer in answers)
+                        {
+                            if (string.Equals(correctWord, answer, StringComparison.OrdinalIgnoreCase))
+                            {
+                                correctPoints++;
+                                rightAnswears++;
+                            }
+                        }
+                    }
+                }
+                else if (string.Equals(Answear, (string)SelectedPropertyToValidate, StringComparison.OrdinalIgnoreCase))
+                {
+                    totalAnswears = 1;
+                    correctPoints++;
+                    rightAnswears++;
+                }
+                if (rightAnswears != 0)
+                {
+                    Result = "You got " + rightAnswears + " of " + totalAnswears + " correct!";
+                }
+                else
+                {
+                    Result = "Sorry, try again!";
+                }
+
+                PopulateDescription();
+
+                lbl_Counter_Page2.Content = CurrentFileIndex;
+                lbl_Points.Content = "Points: " + CorrectPoints;
+                lbl_Points_Page2.Content = "Points: " + CorrectPoints;
             }
+            
 
-            PopulateDescription();
-
-            lbl_Counter_Page2.Content = CurrentFileIndex;
-            lbl_Points.Content = "Points: " + CorrectPoints;
-            lbl_Points_Page2.Content = "Points: " + CorrectPoints;
-            //txt_Answear_Page1.Text = "";
-            //txt_Answear_Page2.Text = "";
+            
         }
 
         #endregion Main
@@ -1131,6 +1154,11 @@ namespace LearnThaiApplication
         /// <param name="list">What list to load into</param>
         private void LoadFiles<T>(ObservableCollection<T> list) where T : new()
         {
+
+            if(list.Count > 0)
+            {
+                list.Clear();
+            }
             Type whatIsT = typeof(T);
 
             List<T> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml");
@@ -1141,7 +1169,7 @@ namespace LearnThaiApplication
             {
                 if (whatIsT != typeof(Chapter))
                 {
-                    SetPropertyOfGenericObject(wordFoundInFile);
+                    //SetPropertyOfGenericObject(wordFoundInFile);
                 }
                 list.Add(wordFoundInFile);
             }
@@ -1206,18 +1234,15 @@ namespace LearnThaiApplication
             if (TabIndex != MainWindow_tabController.SelectedIndex)
             {
                 TabIndex = MainWindow_tabController.SelectedIndex;
+                ClearFields();
                 CurrentFileIndex = 0;
                 ResetChapter();
 
                 PreTextChanger(0);
 
-                if (MainWindow_tabController.SelectedIndex == 2)
+                if (MainWindow_tabController.SelectedIndex == 3)
                 {
-                    WhatListTLoad = Words;
-                    WhatTypeToUse = typeof(Word);
-
-                    ClearFields();
-                    UpdateListBox();
+                    DisplayList = new ObservableCollection<Word>(Words);
                 }
             }
         }
@@ -1264,7 +1289,7 @@ namespace LearnThaiApplication
         {
             try
             {
-                SaveFiles<Word>(words);
+                SaveFiles<Word>(Words);
 
                 return true;
             }
@@ -1301,6 +1326,7 @@ namespace LearnThaiApplication
                 lbl_Counter_Page2.Content = CurrentFileIndex;
                 lbl_Counter_Page1.Content = CurrentFileIndex;
 
+                DisplayList = new ObservableCollection<Word>(Words);
                 //if (hasDescription)
                 //{
                 //    ckb_DescBox_Page1.IsChecked = true;
@@ -1591,10 +1617,9 @@ namespace LearnThaiApplication
         /// <param name="isQuick">checks if to submit from the full form of the quick form</param>
         public void HowToSubmit(bool isQuick)
         {
-            //if (SubmitionIsNew)
-            //{
-            //    SubmitNewWord(isQuick);
-            //}
+            
+                SubmitNewWord(isQuick);
+            
             //else if (!SubmitionIsNew)
             //{
             //    SubmitUpdatedWord(isQuick);
@@ -1781,9 +1806,9 @@ namespace LearnThaiApplication
         /// </summary>
         /// <typeparam name="T">What type to use</typeparam>
         /// <param name="list">What list to use</param>
-        private void LoadObjectsToLib<T>(List<T> list)
+        private void LoadObjectsToLib(ObservableCollection<Word> list)
         {
-            foreach (T word in list)
+            foreach (Word word in list)
             {
                 SetPropertyOfGenericObject(word);
 
@@ -2002,11 +2027,11 @@ namespace LearnThaiApplication
 
             if (SelectedChapter == "All")
             {
-                LoadObjectsToLib<Word>(new List<Word>(words));
+                //LoadObjectsToLib(new List<Word>(words));
             }
             else
             {
-                LoadObjectsToLib<Word>(DisplayList);
+                LoadObjectsToLib(DisplayList);
             }
         }
 
@@ -2085,13 +2110,13 @@ namespace LearnThaiApplication
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
         /// <returns></returns>
-        private string CheckSoundStatus<T>(List<T> list)
+        private string CheckSoundStatus(ObservableCollection<Word> list)
         {
             int hasSound = 0;
             int dosntHaveSound = 0;
             string fullText = "";
 
-            foreach (T word in list)
+            foreach (Word word in list)
             {
                 SetPropertyOfGenericObject(word);
                 List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
@@ -2120,7 +2145,7 @@ namespace LearnThaiApplication
                 }
             }
 
-            fullText += hasSound + " " + typeof(T).Name + " has sound, and " + dosntHaveSound + " dont. \r\n";
+            fullText += hasSound + " " + typeof(Word).Name + " has sound, and " + dosntHaveSound + " dont. \r\n";
             return fullText;
         }
 
@@ -2484,11 +2509,11 @@ namespace LearnThaiApplication
 
             if (SelectedChapter == "All")
             {
-                fullText = CheckSoundStatus<Word>(new List<Word>(words));
+                fullText = CheckSoundStatus(new ObservableCollection<Word>(words));
             }
             else
             {
-                fullText = CheckSoundStatus<Word>(DisplayList);
+                fullText = CheckSoundStatus(DisplayList);
             }
 
             MessageBox.Show(fullText);
@@ -2619,61 +2644,75 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void Seach_Clicked(object sender, RoutedEventArgs e)
         {
-            Search(searchString);
+            
+                
+            
+               Search();
+            
+            
         }
 
         /// <summary>
         ///
         /// </summary>
         /// <param name="searchValue"></param>
-        private void Search(string searchValue)
+        private void Search()
         {
+            DisplayList = new ObservableCollection<Word>(words);
             ObservableCollection<Word> searchResults = new ObservableCollection<Word>();
-
-            List<Word> listToSeach;
-
+            
+            List<Word> listToSeach=  new List<Word>(DisplayList);
             
             
-                listToSeach = new List<Word>(Words);
-            
-            //else
-            //{
-            //    listToSeach = DisplayList;
-            //}
 
             try
             {
+
+
                 foreach (Word word in listToSeach)
                 {
                     SetPropertyOfGenericObject(word);
 
-                    foreach (var value in ListOfValues)
-                    {
-                        if (value is List<string> sublist)
+                        foreach (var value in ListOfValues)
                         {
-                            foreach (string s in sublist)
-                            {
-                                if (s.CaseInsensitiveContains(searchValue))
-                                {
-                                    searchResults.Add(word);
-                                    continue;
-                                }
-                            }
-                        }
-                        else if (((string)value).CaseInsensitiveContains(searchValue))
+                        if (value == null)
                         {
-                            searchResults.Add(word);
                             continue;
                         }
-                    }
+                            if (value is List<string> sublist)
+                            {
+                                foreach (string s in sublist)
+                                {
+                                    if (s.CaseInsensitiveContains(searchString))
+                                    {
+                                    if (!searchResults.Contains(word))
+                                    {
+                                        searchResults.Add(word);
+                                        continue;
+                                    }
+                                        
+                                    }
+                                }
+                            }
+                            else if (((string)value).CaseInsensitiveContains(searchString))
+                            {
+                            if (!searchResults.Contains(word))
+                                {
+                                searchResults.Add(word);
+                                continue;
+                            }
+                                
+                            }
+                        }
+                    
+                    
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            Words = searchResults;
-            //LoadObjectsToLib<Word>(searchResults);
+            DisplayList = searchResults;
         }
 
         /// <summary>
@@ -2712,12 +2751,28 @@ namespace LearnThaiApplication
 
         private void NewItemAdded(object sender, AddingNewItemEventArgs e)
         {
-            SaveAll();
+            if(e.NewItem != null)
+            {
+                SaveAll();
+            }
+            
         }
 
         private void RowEditEnding(object sender, DataGridRowEditEndingEventArgs e)
         {
-            SaveAll();
+            
+                SaveAll();
+            
+            
+        }
+
+        private void Seach_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter)
+            {
+
+                Search();
+            }
         }
     }
 }

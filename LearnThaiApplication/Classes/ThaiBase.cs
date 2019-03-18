@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Xml.Serialization;
 
 namespace LearnThaiApplication
 {
@@ -46,6 +47,7 @@ namespace LearnThaiApplication
             }
         }
 
+        [XmlIgnore]
         public string ThaiScript_String
         {
             get
@@ -78,6 +80,7 @@ namespace LearnThaiApplication
             }
         }
 
+        [XmlIgnore]
         public string ThaiFonet_String
         {
             get
@@ -110,6 +113,7 @@ namespace LearnThaiApplication
             }
         }
 
+        [XmlIgnore]
         public string EngWords_String
         {
             get
@@ -142,6 +146,7 @@ namespace LearnThaiApplication
             }
         }
 
+        [XmlIgnore]
         public string SoundPath_String
         {
             get
@@ -190,6 +195,7 @@ namespace LearnThaiApplication
             }
         }
 
+        [XmlIgnore]
         public string Tone_String
         {
             get
