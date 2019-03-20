@@ -28,20 +28,25 @@ namespace LearnThaiApplication
         {
             InitializeComponent();
             this.DataContext = this;
-            LoadSettings();
-
-            LoadAllFiles();
-
-            SetInitialStates();
-
-            GetImage();
-
             Loaded += MainWindow_Loaded;
-
-            ReadWebsiteFiles();
             AppWindow = this;
+            
+            LoadSettings();        
+            LoadAllFiles();
+            SetInitialStates();
+            GetImage();                                   
             words.CollectionChanged += ContentCollectionChanged;
             displayList.CollectionChanged += ContentCollectionChanged;
+            if (currentUser == null)
+            {
+                currentUser = new User
+                {
+                    UserName = "Default",
+                    CompletedWords = new ObservableCollection<Word>()
+                };
+                Users.Add(currentUser);
+                SaveFiles<User>(Users, "Users");
+            }
         }
 
         #region Variables and properties
@@ -51,8 +56,7 @@ namespace LearnThaiApplication
         private ObservableCollection<Chapter> Chapters = new ObservableCollection<Chapter>();
         private ObservableCollection<Word> displayList = new ObservableCollection<Word>();
         private List<PropertyInfo> ListOfProperties = new List<PropertyInfo>();
-        private List<object> ListOfValues = new List<object>();
-        private List<TextBox> textboxList;
+        private List<object> ListOfValues = new List<object>();        
         private List<UserSetting> UserSettings = new List<UserSetting>();
         private ObservableCollection<Word> words = new ObservableCollection<Word>();
         public ObservableCollection<Word> DisplayList
@@ -70,7 +74,7 @@ namespace LearnThaiApplication
                 }
             }
         }
-
+        private ObservableCollection<User> users = new ObservableCollection<User>();
         public ObservableCollection<Word> Words
         {
             get
@@ -90,6 +94,23 @@ namespace LearnThaiApplication
         {
         }
 
+
+        public ObservableCollection<User> Users
+        {
+            get
+            {
+                return users;
+            }
+            set
+            {
+                if (users != value)
+                {
+                    users = value;
+                    OnPropertyChanged("Users");
+                }
+            }
+        }
+
         #endregion lists
 
         #region bools
@@ -101,6 +122,25 @@ namespace LearnThaiApplication
         private bool isRandom;
         private bool loopChapter = true;
         private bool skipIntro;
+        private bool showSaveLocation = false;
+
+
+
+        public bool ShowSaveLocation
+        {
+            get
+            {
+                return showSaveLocation;
+            }
+            set
+            {
+                if (showSaveLocation != value)
+                {
+                    showSaveLocation = value;
+                    OnPropertyChanged("ShowSaveLocation");
+                }
+            }
+        }
         #endregion bools
 
         #region strings
@@ -117,7 +157,7 @@ namespace LearnThaiApplication
         private string SettingsFilePath = Environment.CurrentDirectory + @"\Files\Settings\";
         private string SoundFilePath = Environment.CurrentDirectory + @"\Files\Media\Sound\";
         private string thaiScript_String;
-        private string UserName = "Default";
+        
         private string WebFilePath = Environment.CurrentDirectory + @"\Files\Media\Website\";
         private string WhatToDisplay;
         private string WhatToTrain;
@@ -131,7 +171,7 @@ namespace LearnThaiApplication
         #endregion ints
 
         #region objects
-
+        private User currentUser;
         public MainWindow AppWindow;
         private object SelectedPropertyToDisplay;
         private object SelectedPropertyToValidate;
@@ -375,7 +415,7 @@ namespace LearnThaiApplication
 
         private UserSetting settings = new UserSetting();
         private StackPanel sp = new StackPanel();
-        private ContentMan window;
+        
         public event PropertyChangedEventHandler PropertyChanged;
 
         private Random RandomIndex { get; set; } = new Random();
@@ -412,7 +452,7 @@ namespace LearnThaiApplication
                     Chapters.Add(newChapter);
                 }
             }
-            SaveFiles<Chapter>(Chapters);
+            SaveFiles<Chapter>(Chapters, "Thai_Chapters");
         }
 
         /// <summary>
@@ -872,6 +912,15 @@ namespace LearnThaiApplication
             }
             try
             {
+
+                if(currentUser.CompletedWords.Contains(list[CurrentFileIndex]))
+                {
+                    if (movementValue == 0)
+                    {
+                        movementValue++;
+                    }
+                    CheckAndChangePosisionInList(list, movementValue);
+                }
                 Type whatIsT = typeof(T);
 
                 CheckAndChangePosisionInList(list, movementValue);
@@ -945,7 +994,7 @@ namespace LearnThaiApplication
             int totalAnswears = 0;
             if (string.IsNullOrEmpty(Answear))
             {
-                System.Windows.Forms.MessageBox.Show("Please enter an answear.");
+                MessageBox.Show("Please enter an answear.");
             }
             else
             {
@@ -961,6 +1010,12 @@ namespace LearnThaiApplication
                             {
                                 correctPoints++;
                                 rightAnswears++;
+                                if (!currentUser.CompletedWords.Contains(list[CurrentFileIndex]))
+                                {
+                                    currentUser.CompletedWords.Add(list[CurrentFileIndex]);
+                                    SaveFiles<User>(Users, "Users");
+                                }
+                                
                             }
                         }
                     }
@@ -1066,9 +1121,27 @@ namespace LearnThaiApplication
         /// </summary>
         private void LoadAllFiles()
         {
-            LoadFiles<Chapter>(Chapters);
+            LoadFiles<Chapter>(Chapters, "Thai_Chapter");
 
-            LoadFiles<Word>(words);
+            LoadFiles<Word>(words, "Thai_Word");
+
+            CheckForUsers();
+
+
+        }
+
+        private void CheckForUsers()
+        {
+            foreach(var f in Directory.GetFiles(SettingsFilePath))
+            {
+                FileInfo fi = new FileInfo(f);
+                if (fi.Name.CaseInsensitiveContains("User_"))
+                {
+                    
+                    LoadFiles<User>(Users, fi.Name);
+                }
+            }
+            
         }
 
         /// <summary>
@@ -1076,7 +1149,7 @@ namespace LearnThaiApplication
         /// </summary>
         /// <typeparam name="T">What type to load</typeparam>
         /// <param name="list">What list to load into</param>
-        private void LoadFiles<T>(ObservableCollection<T> list) where T : new()
+        private void LoadFiles<T>(ObservableCollection<T> list, string fileName) where T : new()
         {
             if (list.Count > 0)
             {
@@ -1084,7 +1157,7 @@ namespace LearnThaiApplication
             }
             Type whatIsT = typeof(T);
 
-            List<T> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml");
+            List<T> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<T>>(LanguageFilePath + fileName + ".xml");
 
             List<T> newWordToAdd = new List<T>();
 
@@ -1266,7 +1339,7 @@ namespace LearnThaiApplication
         {
             try
             {
-                SaveFiles<Word>(Words);
+                SaveFiles<Word>(Words, "Thai_Word");
 
                 return true;
             }
@@ -1282,11 +1355,14 @@ namespace LearnThaiApplication
         /// </summary>
         /// <typeparam name="T">What type to work with</typeparam>
         /// <param name="list">What list to work with</param>
-        private void SaveFiles<T>(ObservableCollection<T> sourceList) where T : new()
+        private void SaveFiles<T>(ObservableCollection<T> sourceList, string fileName) where T : new()
         {
             Type whatIsT = typeof(T);
+
             List<T> list = new List<T>(sourceList);
-            XmlSerialization.WriteToXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml", list, false);
+
+            XmlSerialization.WriteToXmlFile<List<T>>(LanguageFilePath + fileName + ".xml", list, false);
+            //XmlSerialization.WriteToXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml", list, false);
         }
 
         /// <summary>
@@ -1389,71 +1465,8 @@ namespace LearnThaiApplication
         #endregion Settings
 
         #region Submit
-   
-        /// <summary>
-        /// Gets the textboxes from the full form and collects them in a list
-        /// </summary>
-        /// <returns></returns>
-        public List<TextBox> FormTextboxes()
-        {
-            List<TextBox> list = new List<TextBox>();
-            foreach (var element in sp.Children)
-            {
-                if (element is TextBox textBox)
-                {
-                    list.Add((TextBox)element);
-                }
-            }
-            return list;
-        }
 
-        /// <summary>
-        /// Submits a new word with the values from the full form.
-        /// </summary>
-        /// <param name="newWord"></param>
-        public void FullSubmitNewWord(object newWord)
-        {
-            textboxList = FormTextboxes();
 
-            foreach (TextBox txt in textboxList)
-            {
-                foreach (PropertyInfo prop in ListOfProperties)
-                {
-                    if (txt.Name == "txt_" + prop.Name)
-                    {
-                        SetValueOfObject(txt.Text, prop.Name, newWord);
-                        break;
-                    }
-                }
-            }
-        }
-
-        /// <summary>
-        /// sets the new values to the old words that already can be found in list
-        /// </summary>
-        /// <param name="oldWord">What word to change or add values</param>
-        /// <param name="textboxList">The TextBoxes to get values from</param>
-        public void SetNewValuesFromForm(Object oldWord, List<TextBox> textboxList)
-        {
-            foreach (TextBox tb in textboxList)
-            {
-                foreach (PropertyInfo prop in ListOfProperties)
-                {
-                    if (tb.Name == "txt_" + prop.Name)
-                    {
-                        if (prop.GetValue(oldWord) is List<string> x)
-                        {
-                            prop.SetValue(oldWord, SplitStringToList(tb.Text), null);
-                        }
-                        else
-                        {
-                            prop.SetValue(oldWord, tb.Text, null);
-                        }
-                        break;
-                    }
-                }
-            }
-        }
 
         /// <summary>
         ///
@@ -1599,6 +1612,7 @@ namespace LearnThaiApplication
             }
             DisplayList = searchResults;
         }
+
         /// <summary>
         /// Checks if supposed to submit a new or update a old word.
         /// </summary>
@@ -2192,6 +2206,12 @@ namespace LearnThaiApplication
                 var e = new PropertyChangedEventArgs(propertyName);
                 handler(this, e);
             }
+        }
+
+        private void ClearCurrentUserKnownWords(object sender, RoutedEventArgs e)
+        {
+            currentUser.CompletedWords.Clear();
+            SaveFiles<User>(Users, "Users");
         }
     }
 }
