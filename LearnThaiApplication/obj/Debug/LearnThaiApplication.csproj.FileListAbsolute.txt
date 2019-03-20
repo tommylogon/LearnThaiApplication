@@ -181,3 +181,7 @@ C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\obj\De
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\obj\Debug\LearnThaiApplication.exe
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\obj\Debug\LearnThaiApplication.pdb
 C:\Users\tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\bin\Debug\LearnThaiApplication.exe.manifest
+C:\Users\Tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\bin\Debug\LearnThaiApplication.application
+C:\Users\Tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\obj\Debug\LearnThaiApplication.exe.manifest
+C:\Users\Tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\obj\Debug\LearnThaiApplication.application

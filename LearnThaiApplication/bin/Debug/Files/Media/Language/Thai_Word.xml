@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfWord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Word>
-    <Name>นั่ง</Name>
     <ThaiScript>
       <string>นั่ง</string>
     </ThaiScript>
@@ -21,7 +20,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>แขน</Name>
     <ThaiScript>
       <string>แขน</string>
     </ThaiScript>
@@ -41,7 +39,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>หัวใจ</Name>
     <ThaiScript>
       <string>หัวใจ</string>
     </ThaiScript>
@@ -61,7 +58,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>สีดำ</Name>
     <ThaiScript>
       <string>สีดำ</string>
     </ThaiScript>
@@ -81,7 +77,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>เป็ด</Name>
     <ThaiScript>
       <string>เป็ด</string>
     </ThaiScript>
@@ -101,7 +96,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>เบียร์</Name>
     <ThaiScript>
       <string>เบียร์</string>
     </ThaiScript>
@@ -121,7 +115,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>ตี</Name>
     <ThaiScript>
       <string>ตี</string>
     </ThaiScript>
@@ -141,7 +134,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>เพลง</Name>
     <ThaiScript>
       <string>เพลง</string>
     </ThaiScript>
@@ -162,7 +154,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>กา</Name>
     <ThaiScript>
       <string>กา</string>
     </ThaiScript>
@@ -180,7 +171,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>หงส์</Name>
     <ThaiScript>
       <string>หงส์</string>
     </ThaiScript>
@@ -198,7 +188,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>ลิ้น</Name>
     <ThaiScript>
       <string>ลิ้น</string>
     </ThaiScript>
@@ -216,7 +205,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>โต๊ะ</Name>
     <ThaiScript>
       <string>โต๊ะ</string>
     </ThaiScript>
@@ -234,7 +222,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>เดิน</Name>
     <ThaiScript>
       <string>เดิน</string>
     </ThaiScript>
@@ -252,7 +239,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>จอ</Name>
     <ThaiScript>
       <string>จอ</string>
     </ThaiScript>
@@ -270,7 +256,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>คุก</Name>
     <ThaiScript>
       <string>คุก</string>
     </ThaiScript>
@@ -288,7 +273,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>โยน</Name>
     <ThaiScript>
       <string>โยน</string>
     </ThaiScript>
@@ -306,7 +290,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>ตั๋ว</Name>
     <ThaiScript>
       <string>ตั๋ว</string>
     </ThaiScript>
@@ -324,7 +307,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>มือ</Name>
     <ThaiScript>
       <string>มือ</string>
     </ThaiScript>
@@ -342,7 +324,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>เมือง</Name>
     <ThaiScript>
       <string>เมือง</string>
     </ThaiScript>
@@ -362,7 +343,6 @@
     <Chapter>Key to understanding Thai</Chapter>
   </Word>
   <Word>
-    <Name>กอ จอ ฎอ ฏอ ดอ ตอ บอ ปอ ออ</Name>
     <ThaiScript>
       <string>กอ</string>
       <string>จอ</string>
@@ -406,7 +386,6 @@
     <Chapter>Thai alphabet</Chapter>
   </Word>
   <Word>
-    <Name>ขอ ฃอ ฉอ ฐอ ถอ ผอ ฝอ ศอ ษอ สอ หอ</Name>
     <ThaiScript>
       <string>ขอ</string>
       <string>ฃอ</string>
@@ -455,7 +434,6 @@
     <Chapter>Thai alphabet</Chapter>
   </Word>
   <Word>
-    <Name>คอ ฅอ ฆอ งอ ชอ ซอ ฌอ ญอ ฑอ ฒอ ณอ ทอ ธอ นอ พอ ฟอ ภอ มอ ยอ รอ ลอ วอ ฬอ ฮอ</Name>
     <ThaiScript>
       <string>คอ</string>
       <string>ฅอ</string>
@@ -544,7 +522,6 @@
     <Chapter>Thai alphabet</Chapter>
   </Word>
   <Word>
-    <Name>ก</Name>
     <ThaiScript>
       <string>กอ</string>
       <string>ไก่</string>
@@ -568,7 +545,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ข</Name>
     <ThaiScript>
       <string>ขอ</string>
       <string>ไข่</string>
@@ -591,7 +567,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฃ</Name>
     <ThaiScript>
       <string>ฃอ</string>
       <string>ขวด</string>
@@ -615,7 +590,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ค</Name>
     <ThaiScript>
       <string>คอ</string>
       <string>ควาย</string>
@@ -639,7 +613,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฅ</Name>
     <ThaiScript>
       <string>ฅอ</string>
       <string>คน</string>
@@ -667,7 +640,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฆ</Name>
     <ThaiScript>
       <string>ฆอ</string>
       <string>ระฆัง</string>
@@ -692,7 +664,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ง</Name>
     <ThaiScript>
       <string>งอ</string>
       <string>งู</string>
@@ -716,7 +687,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>จ</Name>
     <ThaiScript>
       <string>จอ</string>
       <string>จาน</string>
@@ -741,7 +711,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฉ</Name>
     <ThaiScript>
       <string>ฉอ</string>
       <string>ฉิ่ง</string>
@@ -764,7 +733,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ช</Name>
     <ThaiScript>
       <string>ชอ</string>
       <string>ช้าง</string>
@@ -788,7 +756,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ซ</Name>
     <ThaiScript>
       <string>ซอ</string>
       <string>โซ่</string>
@@ -812,7 +779,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฌ</Name>
     <ThaiScript>
       <string>ฌอ</string>
       <string>เฌอ</string>
@@ -836,7 +802,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ญ</Name>
     <ThaiScript>
       <string>ญอ</string>
       <string>หญิง</string>
@@ -861,7 +826,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฎ</Name>
     <ThaiScript>
       <string>ฎอ</string>
       <string>ชฎา</string>
@@ -885,7 +849,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฏ</Name>
     <ThaiScript>
       <string>ฏอ</string>
       <string>ปฏัก</string>
@@ -911,7 +874,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฐ</Name>
     <ThaiScript>
       <string>ฐอ</string>
       <string>ฐาน</string>
@@ -945,7 +907,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฑ</Name>
     <ThaiScript>
       <string>ฑอ</string>
       <string>มณโฑ</string>
@@ -969,7 +930,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฒ</Name>
     <ThaiScript>
       <string>ฒอ</string>
       <string>ผู้เฒ่า</string>
@@ -994,7 +954,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ณ</Name>
     <ThaiScript>
       <string>ณอ</string>
       <string>เณร</string>
@@ -1018,7 +977,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ด</Name>
     <ThaiScript>
       <string>ดอ</string>
       <string>เด็ก</string>
@@ -1042,7 +1000,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ต</Name>
     <ThaiScript>
       <string>ตอ</string>
       <string>เต่า</string>
@@ -1066,7 +1023,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ถ</Name>
     <ThaiScript>
       <string>ถอ</string>
       <string>ถุง</string>
@@ -1092,7 +1048,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ท</Name>
     <ThaiScript>
       <string>ทอ</string>
       <string>ทหาร</string>
@@ -1120,7 +1075,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ธ</Name>
     <ThaiScript>
       <string>ธอ</string>
       <string>ธง</string>
@@ -1144,7 +1098,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>น</Name>
     <ThaiScript>
       <string>นอ</string>
       <string>หนู</string>
@@ -1174,7 +1127,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>บ</Name>
     <ThaiScript>
       <string>บอ</string>
       <string>ใบไม้</string>
@@ -1199,7 +1151,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ป</Name>
     <ThaiScript>
       <string>ปอ</string>
       <string>ปลา</string>
@@ -1223,7 +1174,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ผ</Name>
     <ThaiScript>
       <string>ผอ</string>
       <string>ผึ้ง</string>
@@ -1247,7 +1197,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฝ</Name>
     <ThaiScript>
       <string>ฝอ</string>
       <string>ฝา</string>
@@ -1271,7 +1220,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>พ</Name>
     <ThaiScript>
       <string>พอ</string>
       <string>พาน</string>
@@ -1297,7 +1245,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฟ</Name>
     <ThaiScript>
       <string>ฟอ</string>
       <string>ฟัน</string>
@@ -1326,7 +1273,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ภ</Name>
     <ThaiScript>
       <string>ภอ</string>
       <string>สำเภา</string>
@@ -1351,7 +1297,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ม</Name>
     <ThaiScript>
       <string>มอ</string>
       <string>ม้า</string>
@@ -1375,7 +1320,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ย</Name>
     <ThaiScript>
       <string>ยอ</string>
       <string>ยักษ์</string>
@@ -1411,7 +1355,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ร</Name>
     <ThaiScript>
       <string>รอ</string>
       <string>เรือ</string>
@@ -1438,7 +1381,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ล</Name>
     <ThaiScript>
       <string>ลอ</string>
       <string>ลิง</string>
@@ -1461,7 +1403,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ว</Name>
     <ThaiScript>
       <string>วอ</string>
       <string>เเหวน</string>
@@ -1484,7 +1425,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ศ</Name>
     <ThaiScript>
       <string>ศอ</string>
       <string>ศาลา</string>
@@ -1510,7 +1450,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ษ</Name>
     <ThaiScript>
       <string>ษอ</string>
       <string>ฤๅษี</string>
@@ -1535,7 +1474,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ส</Name>
     <ThaiScript>
       <string>สอ</string>
       <string>เสือ</string>
@@ -1559,7 +1497,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ห</Name>
     <ThaiScript>
       <string>หอ</string>
       <string>หีบ</string>
@@ -1585,7 +1522,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฬ</Name>
     <ThaiScript>
       <string>ฬอ</string>
       <string>จุฬา</string>
@@ -1611,7 +1547,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>อ</Name>
     <ThaiScript>
       <string>ออ</string>
       <string>อ่าง</string>
@@ -1639,7 +1574,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฮ</Name>
     <ThaiScript>
       <string>ฮอ</string>
       <string>นกฮูก</string>
@@ -1663,7 +1597,6 @@
     <Chapter>Consonants</Chapter>
   </Word>
   <Word>
-    <Name>ก</Name>
     <ThaiScript>
       <string>ก</string>
       <string>ด</string>
@@ -1685,7 +1618,6 @@
     <Chapter>Closing sounds of consonantss</Chapter>
   </Word>
   <Word>
-    <Name>ั</Name>
     <ThaiScript>
       <string>ั</string>
       <string>กับ</string>
@@ -1717,7 +1649,6 @@
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>-า</Name>
     <ThaiScript>
       <string>-า</string>
       <string>บาด</string>
@@ -1740,7 +1671,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>แ-ะ</Name>
     <ThaiScript>
       <string>แ-ะ</string>
       <string>แกะ</string>
@@ -1770,7 +1700,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>แ</Name>
     <ThaiScript>
       <string>แ</string>
       <string>แดง</string>
@@ -1792,7 +1721,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เ-ะ</Name>
     <ThaiScript>
       <string>เ-ะ</string>
       <string>เตะ</string>
@@ -1814,7 +1742,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เ-</Name>
     <ThaiScript>
       <string>เ-</string>
       <string>เพลง</string>
@@ -1838,7 +1765,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ิ</Name>
     <ThaiScript>
       <string>ิ</string>
       <string>คิด</string>
@@ -1865,7 +1791,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ี</Name>
     <ThaiScript>
       <string>ี</string>
       <string>อีก</string>
@@ -1890,7 +1815,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>โ-ะ</Name>
     <ThaiScript>
       <string>โ-ะ</string>
       <string>โต๊ะ</string>
@@ -1917,7 +1841,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>โ-</Name>
     <ThaiScript>
       <string>โ-</string>
       <string>โชค</string>
@@ -1939,7 +1862,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เ-าะ</Name>
     <ThaiScript>
       <string>เ-าะ</string>
       <string>เกาะ</string>
@@ -1969,7 +1891,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>อ</Name>
     <ThaiScript>
       <string>อ</string>
       <string>นอน</string>
@@ -1995,7 +1916,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เ-อะ</Name>
     <ThaiScript>
       <string>เ-อะ</string>
       <string>เยอะ</string>
@@ -2021,7 +1941,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เ-อ</Name>
     <ThaiScript>
       <string>เ-อ</string>
       <string>เผลอ</string>
@@ -2051,7 +1970,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ุ</Name>
     <ThaiScript>
       <string>ุ</string>
       <string>จุฬา</string>
@@ -2077,7 +1995,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ู</Name>
     <ThaiScript>
       <string>ู</string>
       <string>ลูก</string>
@@ -2099,7 +2016,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ึ</Name>
     <ThaiScript>
       <string>ึ</string>
       <string>รึ</string>
@@ -2118,7 +2034,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ื</Name>
     <ThaiScript>
       <string>ื</string>
       <string>กลืน</string>
@@ -2140,7 +2055,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ไ-</Name>
     <ThaiScript>
       <string>ไ-</string>
       <string>ไม่</string>
@@ -2162,7 +2076,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ใ-</Name>
     <ThaiScript>
       <string>ใ-</string>
       <string>ใส่</string>
@@ -2189,7 +2102,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ำ</Name>
     <ThaiScript>
       <string>ำ</string>
       <string>ทำ</string>
@@ -2211,7 +2123,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เ-า</Name>
     <ThaiScript>
       <string>เ-า</string>
       <string>เรา</string>
@@ -2234,7 +2145,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เียะ</Name>
     <ThaiScript>
       <string>เียะ</string>
       <string>เดี๊ยะ</string>
@@ -2256,7 +2166,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เีย</Name>
     <ThaiScript>
       <string>เีย</string>
       <string>เมีย</string>
@@ -2277,7 +2186,6 @@
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ัว</Name>
     <ThaiScript>
       <string>ัว</string>
       <string>ตัว</string>
@@ -2309,7 +2217,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ัวะ</Name>
     <ThaiScript>
       <string>ัวะ</string>
       <string>ผลัวะ</string>
@@ -2330,7 +2237,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เือะ</Name>
     <ThaiScript>
       <string>เือะ</string>
       <string>เอือะ</string>
@@ -2351,7 +2257,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เือ</Name>
     <ThaiScript>
       <string>เือ</string>
       <string>เรือ</string>
@@ -2375,7 +2280,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ฦ</Name>
     <ThaiScript>
       <string>ฦ</string>
       <string>ฦาชา</string>
@@ -2398,7 +2302,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ฦๅ</Name>
     <ThaiScript>
       <string>ฦๅ</string>
     </ThaiScript>
@@ -2416,7 +2319,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ฤ</Name>
     <ThaiScript>
       <string>ฤ</string>
       <string>ฤทธ์</string>
@@ -2441,7 +2343,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ฤๅ</Name>
     <ThaiScript>
       <string>ฤๅ</string>
       <string>ฤๅษี</string>
@@ -2465,7 +2366,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>-อย</Name>
     <ThaiScript>
       <string>-อย</string>
       <string>บ่อย</string>
@@ -2486,7 +2386,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เ็ว</Name>
     <ThaiScript>
       <string>เ็ว</string>
       <string>เร็ว</string>
@@ -2509,7 +2408,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เียว</Name>
     <ThaiScript>
       <string>เียว</string>
       <string>เที่ยว</string>
@@ -2534,7 +2432,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>เืยว</Name>
     <ThaiScript>
       <string>เืยว</string>
       <string>เหนื่อย</string>
@@ -2558,7 +2455,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ิว</Name>
     <ThaiScript>
       <string>ิว</string>
       <string>หิว</string>
@@ -2581,7 +2477,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ุย</Name>
     <ThaiScript>
       <string>ุย</string>
       <string>คุย</string>
@@ -2603,7 +2498,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>ทาน</Name>
     <ThaiScript>
       <string>ทาน</string>
     </ThaiScript>
@@ -2622,7 +2516,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>ท่าน</Name>
     <ThaiScript>
       <string>ท่าน</string>
     </ThaiScript>
@@ -2644,7 +2537,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>เกิน</Name>
     <ThaiScript>
       <string>เกิน</string>
     </ThaiScript>
@@ -2663,7 +2555,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>เสียงสามัญ</Name>
     <ThaiScript>
       <string>เสียงสามัญ</string>
     </ThaiScript>
@@ -2681,7 +2572,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>เสียงเอก</Name>
     <ThaiScript>
       <string>เสียงเอก</string>
     </ThaiScript>
@@ -2697,7 +2587,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>ทรง</Name>
     <ThaiScript>
       <string>ทรง</string>
     </ThaiScript>
@@ -2716,7 +2605,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>เด็ก</Name>
     <ThaiScript>
       <string>เด็ก</string>
     </ThaiScript>
@@ -2734,7 +2622,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>เด็กเด็ก</Name>
     <ThaiScript>
       <string>เด็กเด็ก</string>
     </ThaiScript>
@@ -2752,7 +2639,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ฉัน</Name>
     <ThaiScript>
       <string>ฉัน</string>
     </ThaiScript>
@@ -2769,7 +2655,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ครับ</Name>
     <ThaiScript>
       <string>ครับ</string>
     </ThaiScript>
@@ -2787,7 +2672,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ค่ะ</Name>
     <ThaiScript>
       <string>ค่ะ</string>
     </ThaiScript>
@@ -2805,7 +2689,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>เช้า</Name>
     <ThaiScript>
       <string>เช้า</string>
     </ThaiScript>
@@ -2823,7 +2706,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>บ่าย</Name>
     <ThaiScript>
       <string>บ่าย</string>
     </ThaiScript>
@@ -2841,7 +2723,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>เย็น</Name>
     <ThaiScript>
       <string>เย็น</string>
     </ThaiScript>
@@ -2859,7 +2740,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ทุ่ม</Name>
     <ThaiScript>
       <string>ทุ่ม</string>
     </ThaiScript>
@@ -2877,7 +2757,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ตี</Name>
     <ThaiScript>
       <string>ตี</string>
     </ThaiScript>
@@ -2895,7 +2774,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ง</Name>
     <ThaiScript>
       <string>ง</string>
       <string>น</string>
@@ -2917,7 +2795,6 @@ one (generic word [e.g. the small one])
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ย</Name>
     <ThaiScript>
       <string>ย</string>
       <string>ว</string>
@@ -2941,7 +2818,6 @@ one (generic word [e.g. the small one])
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฉ</Name>
     <ThaiScript>
       <string>ฉ</string>
       <string>ซ</string>
@@ -2964,7 +2840,6 @@ one (generic word [e.g. the small one])
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ญ</Name>
     <ThaiScript>
       <string>ญ</string>
       <string>ร</string>
@@ -2990,7 +2865,6 @@ one (generic word [e.g. the small one])
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ข</Name>
     <ThaiScript>
       <string>ข</string>
       <string>ค</string>
@@ -3014,7 +2888,6 @@ one (generic word [e.g. the small one])
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ผ</Name>
     <ThaiScript>
       <string>ผ</string>
       <string>พ</string>
@@ -3035,7 +2908,6 @@ one (generic word [e.g. the small one])
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>ฎ</Name>
     <ThaiScript>
       <string>ฎ</string>
       <string>ฏ</string>
@@ -3060,7 +2932,6 @@ one (generic word [e.g. the small one])
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>จ</Name>
     <ThaiScript>
       <string>จ</string>
       <string>ช</string>
@@ -3102,7 +2973,6 @@ one (generic word [e.g. the small one])
     <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
-    <Name>เดิน</Name>
     <ThaiScript>
       <string>เดิน</string>
     </ThaiScript>
@@ -3120,7 +2990,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>เค็ด</Name>
     <ThaiScript>
       <string>เค็ด</string>
     </ThaiScript>
@@ -3136,7 +3005,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>ถนน</Name>
     <ThaiScript>
       <string>ถนน</string>
     </ThaiScript>
@@ -3154,7 +3022,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>กบ</Name>
     <ThaiScript>
       <string>กบ</string>
     </ThaiScript>
@@ -3172,7 +3039,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>คน</Name>
     <ThaiScript>
       <string>คน</string>
     </ThaiScript>
@@ -3190,7 +3056,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>ตลาด</Name>
     <ThaiScript>
       <string>ตลาด</string>
     </ThaiScript>
@@ -3208,7 +3073,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>สมอง</Name>
     <ThaiScript>
       <string>สมอง</string>
     </ThaiScript>
@@ -3226,7 +3090,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>ตะบอง</Name>
     <ThaiScript>
       <string>ตะบอง</string>
     </ThaiScript>
@@ -3244,7 +3107,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>สะอาด</Name>
     <ThaiScript>
       <string>สะอาด</string>
     </ThaiScript>
@@ -3262,7 +3124,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>จระเข้</Name>
     <ThaiScript>
       <string>จระเข้</string>
     </ThaiScript>
@@ -3282,7 +3143,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>บริษัท</Name>
     <ThaiScript>
       <string>บริษัท</string>
     </ThaiScript>
@@ -3299,7 +3159,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>เสียงโท</Name>
     <ThaiScript>
       <string>เสียงโท</string>
     </ThaiScript>
@@ -3315,7 +3174,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>เสียงตรี</Name>
     <ThaiScript>
       <string>เสียงตรี</string>
     </ThaiScript>
@@ -3331,7 +3189,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>เสียงจัตวา</Name>
     <ThaiScript>
       <string>เสียงจัตวา</string>
     </ThaiScript>
@@ -3347,7 +3204,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>กะ</Name>
     <ThaiScript>
       <string>กะ</string>
     </ThaiScript>
@@ -3367,7 +3223,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>กบ</Name>
     <ThaiScript>
       <string>กบ</string>
     </ThaiScript>
@@ -3385,7 +3240,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>็ =</Name>
     <ThaiScript>
       <string>็ =</string>
       <string>ไม้ได่คู้</string>
@@ -3404,7 +3258,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>นก</Name>
     <ThaiScript>
       <string>นก</string>
     </ThaiScript>
@@ -3424,7 +3277,6 @@ one (generic word [e.g. the small one])
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
-    <Name>กา</Name>
     <ThaiScript>
       <string>กา</string>
     </ThaiScript>
@@ -3442,7 +3294,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>กัน</Name>
     <ThaiScript>
       <string>กัน</string>
     </ThaiScript>
@@ -3460,7 +3311,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>คะ</Name>
     <ThaiScript>
       <string>คะ</string>
     </ThaiScript>
@@ -3478,7 +3328,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>สูท</Name>
     <ThaiScript>
       <string>สูท</string>
     </ThaiScript>
@@ -3494,7 +3343,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>สี</Name>
     <ThaiScript>
       <string>สี</string>
     </ThaiScript>
@@ -3512,7 +3360,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>สัน</Name>
     <ThaiScript>
       <string>สัน</string>
     </ThaiScript>
@@ -3532,7 +3379,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>คะ</Name>
     <ThaiScript>
       <string>คะ</string>
     </ThaiScript>
@@ -3549,7 +3395,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>คิด</Name>
     <ThaiScript>
       <string>คิด</string>
     </ThaiScript>
@@ -3567,7 +3412,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>คีบ</Name>
     <ThaiScript>
       <string>คีบ</string>
     </ThaiScript>
@@ -3588,7 +3432,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>คือ</Name>
     <ThaiScript>
       <string>คือ</string>
     </ThaiScript>
@@ -3612,7 +3455,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>คัน</Name>
     <ThaiScript>
       <string>คัน</string>
     </ThaiScript>
@@ -3631,7 +3473,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>่ =</Name>
     <ThaiScript>
       <string>่ =</string>
       <string>ไม้เอก</string>
@@ -3652,7 +3493,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>้ =</Name>
     <ThaiScript>
       <string>้ =</string>
       <string>ไม้โท</string>
@@ -3673,7 +3513,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>๊ =</Name>
     <ThaiScript>
       <string>๊ =</string>
       <string>ไม้ดรี</string>
@@ -3692,7 +3531,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>๋ =</Name>
     <ThaiScript>
       <string>๋ =</string>
       <string>ไม้จัตวา</string>
@@ -3713,7 +3551,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>่ =</Name>
     <ThaiScript>
       <string>่ =</string>
       <string>ไม้เอก</string>
@@ -3734,7 +3571,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>้ =</Name>
     <ThaiScript>
       <string>้ =</string>
       <string>ไม้โท</string>
@@ -3755,7 +3591,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>์</Name>
     <ThaiScript>
       <string>์</string>
     </ThaiScript>
@@ -3771,7 +3606,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>ๆ</Name>
     <ThaiScript>
       <string>ๆ</string>
     </ThaiScript>
@@ -3787,7 +3621,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>ฯ</Name>
     <ThaiScript>
       <string>ฯ</string>
     </ThaiScript>
@@ -3805,7 +3638,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>ฯลฯ</Name>
     <ThaiScript>
       <string>ฯลฯ</string>
     </ThaiScript>
@@ -3824,7 +3656,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>หญ้า</Name>
     <ThaiScript>
       <string>หญ้า</string>
     </ThaiScript>
@@ -3842,7 +3673,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>หนู</Name>
     <ThaiScript>
       <string>หนู</string>
     </ThaiScript>
@@ -3862,7 +3692,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>อย่า</Name>
     <ThaiScript>
       <string>อย่า</string>
     </ThaiScript>
@@ -3883,7 +3712,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>อยาก</Name>
     <ThaiScript>
       <string>อยาก</string>
     </ThaiScript>
@@ -3903,7 +3731,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>อย่าง</Name>
     <ThaiScript>
       <string>อย่าง</string>
     </ThaiScript>
@@ -3929,7 +3756,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>อยู่</Name>
     <ThaiScript>
       <string>อยู่</string>
     </ThaiScript>
@@ -3950,7 +3776,6 @@ one (generic word [e.g. the small one])
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
-    <Name>ทราย</Name>
     <ThaiScript>
       <string>ทราย</string>
     </ThaiScript>
@@ -3970,7 +3795,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>กรรไกร</Name>
     <ThaiScript>
       <string>กรรไกร</string>
     </ThaiScript>
@@ -3988,7 +3812,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>ธรรมดา</Name>
     <ThaiScript>
       <string>ธรรมดา</string>
     </ThaiScript>
@@ -4013,7 +3836,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>พร</Name>
     <ThaiScript>
       <string>พร</string>
     </ThaiScript>
@@ -4034,7 +3856,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>ศร</Name>
     <ThaiScript>
       <string>ศร</string>
     </ThaiScript>
@@ -4052,7 +3873,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>ตรง</Name>
     <ThaiScript>
       <string>ตรง</string>
     </ThaiScript>
@@ -4074,7 +3894,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>นรก</Name>
     <ThaiScript>
       <string>นรก</string>
     </ThaiScript>
@@ -4092,7 +3911,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>ปลอม</Name>
     <ThaiScript>
       <string>ปลอม</string>
     </ThaiScript>
@@ -4115,7 +3933,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>ตลาด</Name>
     <ThaiScript>
       <string>ตลาด</string>
     </ThaiScript>
@@ -4134,7 +3951,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>ควาย</Name>
     <ThaiScript>
       <string>ควาย</string>
     </ThaiScript>
@@ -4152,7 +3968,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>สว่าง</Name>
     <ThaiScript>
       <string>สว่าง</string>
     </ThaiScript>
@@ -4172,7 +3987,6 @@ one (generic word [e.g. the small one])
     <Chapter>Special pronounciation</Chapter>
   </Word>
   <Word>
-    <Name>คน</Name>
     <ThaiScript>
       <string>คน</string>
     </ThaiScript>
@@ -4194,7 +4008,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>คัน</Name>
     <ThaiScript>
       <string>คัน</string>
     </ThaiScript>
@@ -4221,7 +4034,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ตัว</Name>
     <ThaiScript>
       <string>ตัว</string>
     </ThaiScript>
@@ -4244,7 +4056,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ใบ</Name>
     <ThaiScript>
       <string>ใบ</string>
     </ThaiScript>
@@ -4267,7 +4078,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ลำ</Name>
     <ThaiScript>
       <string>ลำ</string>
     </ThaiScript>
@@ -4287,7 +4097,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>สาย</Name>
     <ThaiScript>
       <string>สาย</string>
     </ThaiScript>
@@ -4315,7 +4124,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>อัน</Name>
     <ThaiScript>
       <string>อัน</string>
     </ThaiScript>
@@ -4335,7 +4143,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>การ</Name>
     <ThaiScript>
       <string>การ</string>
     </ThaiScript>
@@ -4357,7 +4164,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ความ</Name>
     <ThaiScript>
       <string>ความ</string>
     </ThaiScript>
@@ -4380,7 +4186,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>การเริ่ม</Name>
     <ThaiScript>
       <string>การเริ่ม</string>
     </ThaiScript>
@@ -4398,7 +4203,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ความคิด</Name>
     <ThaiScript>
       <string>ความคิด</string>
     </ThaiScript>
@@ -4418,7 +4222,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ผม</Name>
     <ThaiScript>
       <string>ผม</string>
     </ThaiScript>
@@ -4439,7 +4242,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>พี่</Name>
     <ThaiScript>
       <string>พี่</string>
     </ThaiScript>
@@ -4459,7 +4261,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>น้อง</Name>
     <ThaiScript>
       <string>น้อง</string>
     </ThaiScript>
@@ -4479,7 +4280,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ชาย</Name>
     <ThaiScript>
       <string>ชาย</string>
     </ThaiScript>
@@ -4498,7 +4298,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>สาว</Name>
     <ThaiScript>
       <string>สาว</string>
     </ThaiScript>
@@ -4525,7 +4324,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ปู่</Name>
     <ThaiScript>
       <string>ปู่</string>
     </ThaiScript>
@@ -4546,7 +4344,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ตา</Name>
     <ThaiScript>
       <string>ตา</string>
     </ThaiScript>
@@ -4564,7 +4361,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ย่า</Name>
     <ThaiScript>
       <string>ย่า</string>
     </ThaiScript>
@@ -4582,7 +4378,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ยาย</Name>
     <ThaiScript>
       <string>ยาย</string>
     </ThaiScript>
@@ -4600,7 +4395,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ลุง</Name>
     <ThaiScript>
       <string>ลุง</string>
     </ThaiScript>
@@ -4621,7 +4415,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ป้า</Name>
     <ThaiScript>
       <string>ป้า</string>
     </ThaiScript>
@@ -4640,7 +4433,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>อา</Name>
     <ThaiScript>
       <string>อา</string>
     </ThaiScript>
@@ -4661,7 +4453,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>น้า</Name>
     <ThaiScript>
       <string>น้า</string>
     </ThaiScript>
@@ -4682,7 +4473,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>คะ</Name>
     <ThaiScript>
       <string>คะ</string>
     </ThaiScript>
@@ -4700,7 +4490,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ซิ</Name>
     <ThaiScript>
       <string>ซิ</string>
     </ThaiScript>
@@ -4716,7 +4505,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>นะ</Name>
     <ThaiScript>
       <string>นะ</string>
     </ThaiScript>
@@ -4734,7 +4522,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>มั้ง</Name>
     <ThaiScript>
       <string>มั้ง</string>
     </ThaiScript>
@@ -4755,7 +4542,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ละ</Name>
     <ThaiScript>
       <string>ละ</string>
     </ThaiScript>
@@ -4773,7 +4559,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>ล่ะ</Name>
     <ThaiScript>
       <string>ล่ะ</string>
     </ThaiScript>
@@ -4789,7 +4574,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>หรอก</Name>
     <ThaiScript>
       <string>หรอก</string>
     </ThaiScript>
@@ -4809,7 +4593,6 @@ one (generic word [e.g. the small one])
     <Chapter>Nouns, people and particles</Chapter>
   </Word>
   <Word>
-    <Name>๑</Name>
     <ThaiScript>
       <string>๑</string>
       <string>หนึ่ง</string>
@@ -4830,7 +4613,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers</Chapter>
   </Word>
   <Word>
-    <Name>๒</Name>
     <ThaiScript>
       <string>๒</string>
       <string>สอง</string>
@@ -4852,7 +4634,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers</Chapter>
   </Word>
   <Word>
-    <Name>๓</Name>
     <ThaiScript>
       <string>๓</string>
       <string>สาม</string>
@@ -4872,7 +4653,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers</Chapter>
   </Word>
   <Word>
-    <Name>๔</Name>
     <ThaiScript>
       <string>๔</string>
       <string>สี่</string>
@@ -4894,7 +4674,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers</Chapter>
   </Word>
   <Word>
-    <Name>๕</Name>
     <ThaiScript>
       <string>๕</string>
       <string>ฮ่า</string>
@@ -4916,7 +4695,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers</Chapter>
   </Word>
   <Word>
-    <Name>๖</Name>
     <ThaiScript>
       <string>๖</string>
       <string>หก</string>
@@ -4938,7 +4716,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers</Chapter>
   </Word>
   <Word>
-    <Name>๗</Name>
     <ThaiScript>
       <string>๗</string>
       <string>เจ็ด</string>
@@ -4960,7 +4737,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers</Chapter>
   </Word>
   <Word>
-    <Name>๘</Name>
     <ThaiScript>
       <string>๘</string>
       <string>แปด</string>
@@ -4982,7 +4758,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers</Chapter>
   </Word>
   <Word>
-    <Name>๙</Name>
     <ThaiScript>
       <string>๙</string>
       <string>เก้า</string>
@@ -5004,7 +4779,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers</Chapter>
   </Word>
   <Word>
-    <Name>๐</Name>
     <ThaiScript>
       <string>๐</string>
       <string>สูน</string>
@@ -5024,7 +4798,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers</Chapter>
   </Word>
   <Word>
-    <Name>หนึ่ง</Name>
     <ThaiScript>
       <string>หนึ่ง</string>
     </ThaiScript>
@@ -5042,7 +4815,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สอง</Name>
     <ThaiScript>
       <string>สอง</string>
     </ThaiScript>
@@ -5061,7 +4833,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สาม</Name>
     <ThaiScript>
       <string>สาม</string>
     </ThaiScript>
@@ -5078,7 +4849,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สี่</Name>
     <ThaiScript>
       <string>สี่</string>
     </ThaiScript>
@@ -5097,7 +4867,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ห้า</Name>
     <ThaiScript>
       <string>ห้า</string>
     </ThaiScript>
@@ -5116,7 +4885,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>หก</Name>
     <ThaiScript>
       <string>หก</string>
     </ThaiScript>
@@ -5135,7 +4903,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>เจ็ด</Name>
     <ThaiScript>
       <string>เจ็ด</string>
     </ThaiScript>
@@ -5154,7 +4921,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>แปด</Name>
     <ThaiScript>
       <string>แปด</string>
     </ThaiScript>
@@ -5173,7 +4939,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>เก้า</Name>
     <ThaiScript>
       <string>เก้า</string>
     </ThaiScript>
@@ -5192,7 +4957,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สิบ</Name>
     <ThaiScript>
       <string>สิบ</string>
     </ThaiScript>
@@ -5211,7 +4975,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สิบเอ็ด</Name>
     <ThaiScript>
       <string>สิบเอ็ด</string>
     </ThaiScript>
@@ -5228,7 +4991,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สิบสอง</Name>
     <ThaiScript>
       <string>สิบสอง</string>
     </ThaiScript>
@@ -5247,7 +5009,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สิบสาม</Name>
     <ThaiScript>
       <string>สิบสาม</string>
     </ThaiScript>
@@ -5266,7 +5027,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สิบสี่</Name>
     <ThaiScript>
       <string>สิบสี่</string>
     </ThaiScript>
@@ -5285,7 +5045,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สิบห้า</Name>
     <ThaiScript>
       <string>สิบห้า</string>
     </ThaiScript>
@@ -5304,7 +5063,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สิบหก</Name>
     <ThaiScript>
       <string>สิบหก</string>
     </ThaiScript>
@@ -5323,7 +5081,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สิบเจ็ด</Name>
     <ThaiScript>
       <string>สิบเจ็ด</string>
     </ThaiScript>
@@ -5342,7 +5099,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สิบแปด</Name>
     <ThaiScript>
       <string>สิบแปด</string>
     </ThaiScript>
@@ -5361,7 +5117,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สิบเก้า</Name>
     <ThaiScript>
       <string>สิบเก้า</string>
     </ThaiScript>
@@ -5380,7 +5135,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ยี่สิบ</Name>
     <ThaiScript>
       <string>ยี่สิบ</string>
     </ThaiScript>
@@ -5399,7 +5153,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ยี่สิบเอ็ด</Name>
     <ThaiScript>
       <string>ยี่สิบเอ็ด</string>
     </ThaiScript>
@@ -5418,7 +5171,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ยี่สิบสอง</Name>
     <ThaiScript>
       <string>ยี่สิบสอง</string>
     </ThaiScript>
@@ -5437,7 +5189,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ยี่สิบสาม</Name>
     <ThaiScript>
       <string>ยี่สิบสาม</string>
     </ThaiScript>
@@ -5456,7 +5207,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สามสิบ</Name>
     <ThaiScript>
       <string>สามสิบ</string>
     </ThaiScript>
@@ -5475,7 +5225,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สี่สิบ</Name>
     <ThaiScript>
       <string>สี่สิบ</string>
     </ThaiScript>
@@ -5494,7 +5243,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ห้าสิบ</Name>
     <ThaiScript>
       <string>ห้าสิบ</string>
     </ThaiScript>
@@ -5513,7 +5261,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>หกสิบ</Name>
     <ThaiScript>
       <string>หกสิบ</string>
     </ThaiScript>
@@ -5532,7 +5279,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>เจ็ดสิบ</Name>
     <ThaiScript>
       <string>เจ็ดสิบ</string>
     </ThaiScript>
@@ -5551,7 +5297,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>แปดสิบ</Name>
     <ThaiScript>
       <string>แปดสิบ</string>
     </ThaiScript>
@@ -5570,7 +5315,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>เก้าสิบ</Name>
     <ThaiScript>
       <string>เก้าสิบ</string>
     </ThaiScript>
@@ -5589,7 +5333,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ร้อย</Name>
     <ThaiScript>
       <string>ร้อย</string>
     </ThaiScript>
@@ -5609,7 +5352,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>หนึ่งร้อย</Name>
     <ThaiScript>
       <string>หนึ่งร้อย</string>
     </ThaiScript>
@@ -5629,7 +5371,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ร้อยหนึ่ง</Name>
     <ThaiScript>
       <string>ร้อยหนึ่ง</string>
     </ThaiScript>
@@ -5646,7 +5387,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ร้อยสอง</Name>
     <ThaiScript>
       <string>ร้อยสอง</string>
     </ThaiScript>
@@ -5664,7 +5404,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ร้อยสาม</Name>
     <ThaiScript>
       <string>ร้อยสาม</string>
     </ThaiScript>
@@ -5682,7 +5421,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สองร้อย</Name>
     <ThaiScript>
       <string>สองร้อย</string>
     </ThaiScript>
@@ -5699,7 +5437,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>สามร้อย</Name>
     <ThaiScript>
       <string>สามร้อย</string>
     </ThaiScript>
@@ -5716,7 +5453,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>พัน</Name>
     <ThaiScript>
       <string>พัน</string>
     </ThaiScript>
@@ -5736,7 +5472,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>หมื่น</Name>
     <ThaiScript>
       <string>หมื่น</string>
     </ThaiScript>
@@ -5755,7 +5490,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>แสน</Name>
     <ThaiScript>
       <string>แสน</string>
     </ThaiScript>
@@ -5774,7 +5508,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>ล้าน</Name>
     <ThaiScript>
       <string>ล้าน</string>
     </ThaiScript>
@@ -5794,7 +5527,6 @@ one (generic word [e.g. the small one])
     <Chapter>Numbers and Counting</Chapter>
   </Word>
   <Word>
-    <Name>หกนาฬิกา</Name>
     <ThaiScript>
       <string>หกนาฬิกา</string>
     </ThaiScript>
@@ -5811,7 +5543,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>เจ็ดนาฬิกา</Name>
     <ThaiScript>
       <string>เจ็ดนาฬิกา</string>
     </ThaiScript>
@@ -5828,7 +5559,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วัน</Name>
     <ThaiScript>
       <string>วัน</string>
     </ThaiScript>
@@ -5844,7 +5574,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>คืน</Name>
     <ThaiScript>
       <string>คืน</string>
     </ThaiScript>
@@ -5864,7 +5593,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>กลาง</Name>
     <ThaiScript>
       <string>กลาง</string>
     </ThaiScript>
@@ -5890,7 +5618,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>กลางวัน</Name>
     <ThaiScript>
       <string>กลางวัน</string>
     </ThaiScript>
@@ -5910,7 +5637,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>กลางคืน</Name>
     <ThaiScript>
       <string>กลางคืน</string>
     </ThaiScript>
@@ -5929,7 +5655,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ตอน</Name>
     <ThaiScript>
       <string>ตอน</string>
     </ThaiScript>
@@ -5950,7 +5675,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ช่วง</Name>
     <ThaiScript>
       <string>ช่วง</string>
     </ThaiScript>
@@ -5974,7 +5698,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ตอนเช้า</Name>
     <ThaiScript>
       <string>ตอนเช้า</string>
     </ThaiScript>
@@ -5993,7 +5716,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ช่วงเช้า</Name>
     <ThaiScript>
       <string>ช่วงเช้า</string>
     </ThaiScript>
@@ -6010,7 +5732,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>สาย</Name>
     <ThaiScript>
       <string>สาย</string>
     </ThaiScript>
@@ -6029,7 +5750,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>นานเท่าไหร่</Name>
     <ThaiScript>
       <string>นานเท่าไหร่</string>
     </ThaiScript>
@@ -6047,7 +5767,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>กี่โมงแล้ว</Name>
     <ThaiScript>
       <string>กี่โมงแล้ว</string>
     </ThaiScript>
@@ -6065,7 +5784,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>เมื่อไร</Name>
     <ThaiScript>
       <string>เมื่อไร</string>
     </ThaiScript>
@@ -6081,7 +5799,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>เมื่อกี้</Name>
     <ThaiScript>
       <string>เมื่อกี้</string>
     </ThaiScript>
@@ -6098,7 +5815,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ชั่ว</Name>
     <ThaiScript>
       <string>ชั่ว</string>
     </ThaiScript>
@@ -6117,7 +5833,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>โมง</Name>
     <ThaiScript>
       <string>โมง</string>
     </ThaiScript>
@@ -6136,7 +5851,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ชั่วโมง</Name>
     <ThaiScript>
       <string>ชั่วโมง</string>
     </ThaiScript>
@@ -6154,7 +5868,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>นาที</Name>
     <ThaiScript>
       <string>นาที</string>
     </ThaiScript>
@@ -6172,7 +5885,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ครึ่ง</Name>
     <ThaiScript>
       <string>ครึ่ง</string>
     </ThaiScript>
@@ -6193,7 +5905,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>อีก</Name>
     <ThaiScript>
       <string>อีก</string>
     </ThaiScript>
@@ -6216,7 +5927,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>เที่ยงคืน</Name>
     <ThaiScript>
       <string>เที่ยงคืน</string>
     </ThaiScript>
@@ -6235,7 +5945,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ตีหนึ่ง</Name>
     <ThaiScript>
       <string>ตีหนึ่ง</string>
     </ThaiScript>
@@ -6254,7 +5963,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ตีสอง</Name>
     <ThaiScript>
       <string>ตีสอง</string>
     </ThaiScript>
@@ -6273,7 +5981,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ตีสาม</Name>
     <ThaiScript>
       <string>ตีสาม</string>
     </ThaiScript>
@@ -6292,7 +5999,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ตีสี่</Name>
     <ThaiScript>
       <string>ตีสี่</string>
     </ThaiScript>
@@ -6311,7 +6017,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ตีห้า</Name>
     <ThaiScript>
       <string>ตีห้า</string>
     </ThaiScript>
@@ -6330,7 +6035,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงเช้า</Name>
     <ThaiScript>
       <string>หกโมงเช้า</string>
     </ThaiScript>
@@ -6349,7 +6053,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>เจ็ดโมงเช้า</Name>
     <ThaiScript>
       <string>เจ็ดโมงเช้า</string>
     </ThaiScript>
@@ -6366,7 +6069,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>แปดโมงเช้า</Name>
     <ThaiScript>
       <string>แปดโมงเช้า</string>
     </ThaiScript>
@@ -6385,7 +6087,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>เก้าโมงเช้า</Name>
     <ThaiScript>
       <string>เก้าโมงเช้า</string>
     </ThaiScript>
@@ -6404,7 +6105,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>สิบโมงเช้า</Name>
     <ThaiScript>
       <string>สิบโมงเช้า</string>
     </ThaiScript>
@@ -6423,7 +6123,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>สิบเอ็ดโมงเช้า</Name>
     <ThaiScript>
       <string>สิบเอ็ดโมงเช้า</string>
     </ThaiScript>
@@ -6440,7 +6139,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>เที่ยงวัน</Name>
     <ThaiScript>
       <string>เที่ยงวัน</string>
     </ThaiScript>
@@ -6460,7 +6158,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>บ่ายโมง</Name>
     <ThaiScript>
       <string>บ่ายโมง</string>
     </ThaiScript>
@@ -6479,7 +6176,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>บ่ายสองโมง</Name>
     <ThaiScript>
       <string>บ่ายสองโมง</string>
     </ThaiScript>
@@ -6498,7 +6194,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>บ่ายสามโมง</Name>
     <ThaiScript>
       <string>บ่ายสามโมง</string>
     </ThaiScript>
@@ -6517,7 +6212,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>สี่โมงเย็น</Name>
     <ThaiScript>
       <string>สี่โมงเย็น</string>
     </ThaiScript>
@@ -6536,7 +6230,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ห้าโมงเย็น</Name>
     <ThaiScript>
       <string>ห้าโมงเย็น</string>
     </ThaiScript>
@@ -6555,7 +6248,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงเย็น</Name>
     <ThaiScript>
       <string>หกโมงเย็น</string>
     </ThaiScript>
@@ -6574,7 +6266,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ทุ่มหนึ่ง</Name>
     <ThaiScript>
       <string>ทุ่มหนึ่ง</string>
     </ThaiScript>
@@ -6593,7 +6284,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>สองทุ่ม</Name>
     <ThaiScript>
       <string>สองทุ่ม</string>
     </ThaiScript>
@@ -6612,7 +6302,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>สามทุ่ม</Name>
     <ThaiScript>
       <string>สามทุ่ม</string>
     </ThaiScript>
@@ -6631,7 +6320,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>สี่ทุ่ม</Name>
     <ThaiScript>
       <string>สี่ทุ่ม</string>
     </ThaiScript>
@@ -6650,7 +6338,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>เที่ยงคืน</Name>
     <ThaiScript>
       <string>เที่ยงคืน</string>
     </ThaiScript>
@@ -6670,7 +6357,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงห้านาที</Name>
     <ThaiScript>
       <string>หกโมงห้านาที</string>
     </ThaiScript>
@@ -6687,7 +6373,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงสิบนาที</Name>
     <ThaiScript>
       <string>หกโมงสิบนาที</string>
     </ThaiScript>
@@ -6704,7 +6389,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงสิบห้านาที</Name>
     <ThaiScript>
       <string>หกโมงสิบห้านาที</string>
     </ThaiScript>
@@ -6721,7 +6405,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงยี่สิบนาที</Name>
     <ThaiScript>
       <string>หกโมงยี่สิบนาที</string>
     </ThaiScript>
@@ -6738,7 +6421,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงยี่สิบห้านาที</Name>
     <ThaiScript>
       <string>หกโมงยี่สิบห้านาที</string>
     </ThaiScript>
@@ -6755,7 +6437,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงสามสิบนาที</Name>
     <ThaiScript>
       <string>หกโมงสามสิบนาที</string>
     </ThaiScript>
@@ -6772,7 +6453,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงครึ่ง</Name>
     <ThaiScript>
       <string>หกโมงครึ่ง</string>
     </ThaiScript>
@@ -6791,7 +6471,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงสามสิบห้านาที</Name>
     <ThaiScript>
       <string>หกโมงสามสิบห้านาที</string>
     </ThaiScript>
@@ -6808,7 +6487,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงสี่สิบนาที</Name>
     <ThaiScript>
       <string>หกโมงสี่สิบนาที</string>
     </ThaiScript>
@@ -6825,7 +6503,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงสี่สิบห้านาที</Name>
     <ThaiScript>
       <string>หกโมงสี่สิบห้านาที</string>
     </ThaiScript>
@@ -6842,7 +6519,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>อีกสิบห้านาทีเจ็ดโมง </Name>
     <ThaiScript>
       <string>อีกสิบห้านาทีเจ็ดโมง </string>
     </ThaiScript>
@@ -6859,7 +6535,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงห้าสิบนาที</Name>
     <ThaiScript>
       <string>หกโมงห้าสิบนาที</string>
     </ThaiScript>
@@ -6876,7 +6551,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>หกโมงห้าสิบห้านาที</Name>
     <ThaiScript>
       <string>หกโมงห้าสิบห้านาที</string>
     </ThaiScript>
@@ -6893,7 +6567,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันจันทร์</Name>
     <ThaiScript>
       <string>วันจันทร์</string>
     </ThaiScript>
@@ -6911,7 +6584,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันอังคาร</Name>
     <ThaiScript>
       <string>วันอังคาร</string>
     </ThaiScript>
@@ -6929,7 +6601,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันพุธ</Name>
     <ThaiScript>
       <string>วันพุธ</string>
     </ThaiScript>
@@ -6947,7 +6618,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันพฤหัสบดี</Name>
     <ThaiScript>
       <string>วันพฤหัสบดี</string>
     </ThaiScript>
@@ -6963,7 +6633,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันศุกร์</Name>
     <ThaiScript>
       <string>วันศุกร์</string>
     </ThaiScript>
@@ -6981,7 +6650,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันเสาร์</Name>
     <ThaiScript>
       <string>วันเสาร์</string>
     </ThaiScript>
@@ -6999,7 +6667,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันอาทิตย์</Name>
     <ThaiScript>
       <string>วันอาทิตย์</string>
     </ThaiScript>
@@ -7017,7 +6684,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันที่</Name>
     <ThaiScript>
       <string>วันที่</string>
     </ThaiScript>
@@ -7035,7 +6701,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันนี้</Name>
     <ThaiScript>
       <string>วันนี้</string>
     </ThaiScript>
@@ -7053,7 +6718,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันทำงาน</Name>
     <ThaiScript>
       <string>วันทำงาน</string>
     </ThaiScript>
@@ -7070,7 +6734,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันหยุด</Name>
     <ThaiScript>
       <string>วันหยุด</string>
     </ThaiScript>
@@ -7090,7 +6753,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันพระ</Name>
     <ThaiScript>
       <string>วันพระ</string>
     </ThaiScript>
@@ -7106,7 +6768,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>มกราคม</Name>
     <ThaiScript>
       <string>มกราคม</string>
     </ThaiScript>
@@ -7122,7 +6783,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>กุมภาพันธ์</Name>
     <ThaiScript>
       <string>กุมภาพันธ์</string>
     </ThaiScript>
@@ -7140,7 +6800,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>มีนาคม</Name>
     <ThaiScript>
       <string>มีนาคม</string>
     </ThaiScript>
@@ -7158,7 +6817,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>เมษายน</Name>
     <ThaiScript>
       <string>เมษายน</string>
     </ThaiScript>
@@ -7176,7 +6834,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>พฤษภาคม</Name>
     <ThaiScript>
       <string>พฤษภาคม</string>
     </ThaiScript>
@@ -7194,7 +6851,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>มิถุนายน</Name>
     <ThaiScript>
       <string>มิถุนายน</string>
     </ThaiScript>
@@ -7212,7 +6868,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>กรกฎาคม</Name>
     <ThaiScript>
       <string>กรกฎาคม</string>
     </ThaiScript>
@@ -7230,7 +6885,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>สิงหาคม</Name>
     <ThaiScript>
       <string>สิงหาคม</string>
     </ThaiScript>
@@ -7248,7 +6902,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>กันยายน</Name>
     <ThaiScript>
       <string>กันยายน</string>
     </ThaiScript>
@@ -7266,7 +6919,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ตุลาคม</Name>
     <ThaiScript>
       <string>ตุลาคม</string>
     </ThaiScript>
@@ -7284,7 +6936,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>พฤศจิกายน</Name>
     <ThaiScript>
       <string>พฤศจิกายน</string>
     </ThaiScript>
@@ -7302,7 +6953,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>ธันวาคม</Name>
     <ThaiScript>
       <string>ธันวาคม</string>
     </ThaiScript>
@@ -7320,7 +6970,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันขึ้นปีใหม่</Name>
     <ThaiScript>
       <string>วันขึ้นปีใหม่</string>
     </ThaiScript>
@@ -7338,7 +6987,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันมาฆบูชา</Name>
     <ThaiScript>
       <string>วันมาฆบูชา</string>
     </ThaiScript>
@@ -7355,7 +7003,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันจักรี</Name>
     <ThaiScript>
       <string>วันจักรี</string>
     </ThaiScript>
@@ -7371,7 +7018,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันสงกรานต์</Name>
     <ThaiScript>
       <string>วันสงกรานต์</string>
     </ThaiScript>
@@ -7388,7 +7034,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันฉัตรมงคล</Name>
     <ThaiScript>
       <string>วันฉัตรมงคล</string>
     </ThaiScript>
@@ -7404,7 +7049,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันพืชมงคล</Name>
     <ThaiScript>
       <string>วันพืชมงคล</string>
     </ThaiScript>
@@ -7420,7 +7064,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันวิสาขบูชา</Name>
     <ThaiScript>
       <string>วันวิสาขบูชา</string>
     </ThaiScript>
@@ -7436,7 +7079,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันอาสาฬหบูชา</Name>
     <ThaiScript>
       <string>วันอาสาฬหบูชา</string>
     </ThaiScript>
@@ -7452,7 +7094,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันแม่</Name>
     <ThaiScript>
       <string>วันแม่</string>
     </ThaiScript>
@@ -7470,7 +7111,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>วันพ่อ</Name>
     <ThaiScript>
       <string>วันพ่อ</string>
     </ThaiScript>
@@ -7488,7 +7128,6 @@ one (generic word [e.g. the small one])
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
-    <Name>สีแดง</Name>
     <ThaiScript>
       <string>สีแดง</string>
     </ThaiScript>
@@ -7506,7 +7145,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีเหลือง</Name>
     <ThaiScript>
       <string>สีเหลือง</string>
     </ThaiScript>
@@ -7524,7 +7162,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีชมพู</Name>
     <ThaiScript>
       <string>สีชมพู</string>
     </ThaiScript>
@@ -7542,7 +7179,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีเขียว</Name>
     <ThaiScript>
       <string>สีเขียว</string>
     </ThaiScript>
@@ -7560,7 +7196,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีส้ม</Name>
     <ThaiScript>
       <string>สีส้ม</string>
     </ThaiScript>
@@ -7578,7 +7213,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีฟ้า</Name>
     <ThaiScript>
       <string>สีฟ้า</string>
     </ThaiScript>
@@ -7597,7 +7231,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีม่วง</Name>
     <ThaiScript>
       <string>สีม่วง</string>
     </ThaiScript>
@@ -7615,7 +7248,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีขาว</Name>
     <ThaiScript>
       <string>สีขาว</string>
     </ThaiScript>
@@ -7631,7 +7263,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีดำ</Name>
     <ThaiScript>
       <string>สีดำ</string>
     </ThaiScript>
@@ -7649,7 +7280,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีน้ำเงิน</Name>
     <ThaiScript>
       <string>สีน้ำเงิน</string>
     </ThaiScript>
@@ -7667,7 +7297,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีน้ำตาล</Name>
     <ThaiScript>
       <string>สีน้ำตาล</string>
     </ThaiScript>
@@ -7685,7 +7314,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีน้ำตาลอ่อน</Name>
     <ThaiScript>
       <string>สีน้ำตาลอ่อน</string>
     </ThaiScript>
@@ -7704,7 +7332,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>สีเทา</Name>
     <ThaiScript>
       <string>สีเทา</string>
     </ThaiScript>
@@ -7722,7 +7349,6 @@ one (generic word [e.g. the small one])
     <Chapter>Colors</Chapter>
   </Word>
   <Word>
-    <Name>กบ</Name>
     <ThaiScript>
       <string>กบ</string>
     </ThaiScript>
@@ -7740,7 +7366,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>ขา</Name>
     <ThaiScript>
       <string>ขา</string>
     </ThaiScript>
@@ -7758,7 +7383,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>คม</Name>
     <ThaiScript>
       <string>คม</string>
     </ThaiScript>
@@ -7782,7 +7406,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>งง</Name>
     <ThaiScript>
       <string>งง</string>
     </ThaiScript>
@@ -7802,7 +7425,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>จน</Name>
     <ThaiScript>
       <string>จน</string>
     </ThaiScript>
@@ -7825,7 +7447,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>ฉีด</Name>
     <ThaiScript>
       <string>ฉีด</string>
     </ThaiScript>
@@ -7846,7 +7467,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>ซัก</Name>
     <ThaiScript>
       <string>ซัก</string>
     </ThaiScript>
@@ -7863,7 +7483,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>ดิน</Name>
     <ThaiScript>
       <string>ดิน</string>
     </ThaiScript>
@@ -7887,7 +7506,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>ตด</Name>
     <ThaiScript>
       <string>ตด</string>
     </ThaiScript>
@@ -7905,7 +7523,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>ถือ</Name>
     <ThaiScript>
       <string>ถือ</string>
     </ThaiScript>
@@ -7925,7 +7542,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>ทา</Name>
     <ThaiScript>
       <string>ทา</string>
     </ThaiScript>
@@ -7946,7 +7562,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>นก</Name>
     <ThaiScript>
       <string>นก</string>
     </ThaiScript>
@@ -7964,7 +7579,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>บิน</Name>
     <ThaiScript>
       <string>บิน</string>
     </ThaiScript>
@@ -7982,7 +7596,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>ปู</Name>
     <ThaiScript>
       <string>ปู</string>
     </ThaiScript>
@@ -8000,7 +7613,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>ฝน</Name>
     <ThaiScript>
       <string>ฝน</string>
     </ThaiScript>
@@ -8018,7 +7630,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>พอ</Name>
     <ThaiScript>
       <string>พอ</string>
     </ThaiScript>
@@ -8039,7 +7650,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>มุม</Name>
     <ThaiScript>
       <string>มุม</string>
     </ThaiScript>
@@ -8058,7 +7668,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>รถ</Name>
     <ThaiScript>
       <string>รถ</string>
     </ThaiScript>
@@ -8078,7 +7687,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>วง</Name>
     <ThaiScript>
       <string>วง</string>
     </ThaiScript>
@@ -8096,7 +7704,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>สุข</Name>
     <ThaiScript>
       <string>สุข</string>
     </ThaiScript>
@@ -8119,7 +7726,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>หมู</Name>
     <ThaiScript>
       <string>หมู</string>
     </ThaiScript>
@@ -8139,7 +7745,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>แห</Name>
     <ThaiScript>
       <string>แห</string>
     </ThaiScript>
@@ -8157,7 +7762,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>อบ</Name>
     <ThaiScript>
       <string>อบ</string>
     </ThaiScript>
@@ -8175,7 +7779,6 @@ one (generic word [e.g. the small one])
     <Chapter>Easy words</Chapter>
   </Word>
   <Word>
-    <Name>กา</Name>
     <ThaiScript>
       <string>กา</string>
     </ThaiScript>
@@ -8199,7 +7802,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homonyms</Chapter>
   </Word>
   <Word>
-    <Name>ขอ</Name>
     <ThaiScript>
       <string>ขอ</string>
     </ThaiScript>
@@ -8221,7 +7823,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homonyms</Chapter>
   </Word>
   <Word>
-    <Name>ลูก</Name>
     <ThaiScript>
       <string>ู</string>
       <string>ลูก</string>
@@ -8243,7 +7844,6 @@ one (generic word [e.g. the small one])
     <Chapter>Vowels</Chapter>
   </Word>
   <Word>
-    <Name>คัน</Name>
     <ThaiScript>
       <string>คัน</string>
     </ThaiScript>
@@ -8268,7 +7868,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homonyms</Chapter>
   </Word>
   <Word>
-    <Name>ดี</Name>
     <ThaiScript>
       <string>ดี</string>
     </ThaiScript>
@@ -8293,7 +7892,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homonyms</Chapter>
   </Word>
   <Word>
-    <Name>ตา</Name>
     <ThaiScript>
       <string>ตา</string>
     </ThaiScript>
@@ -8315,7 +7913,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homonyms</Chapter>
   </Word>
   <Word>
-    <Name>ถูก</Name>
     <ThaiScript>
       <string>ถูก</string>
     </ThaiScript>
@@ -8343,7 +7940,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homonyms</Chapter>
   </Word>
   <Word>
-    <Name>ผม</Name>
     <ThaiScript>
       <string>ผม</string>
     </ThaiScript>
@@ -8367,7 +7963,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homonyms</Chapter>
   </Word>
   <Word>
-    <Name>พัน</Name>
     <ThaiScript>
       <string>พัน</string>
     </ThaiScript>
@@ -8388,7 +7983,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homonyms</Chapter>
   </Word>
   <Word>
-    <Name>เย็น</Name>
     <ThaiScript>
       <string>เย็น</string>
     </ThaiScript>
@@ -8410,7 +8004,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homonyms</Chapter>
   </Word>
   <Word>
-    <Name>สี</Name>
     <ThaiScript>
       <string>สี</string>
     </ThaiScript>
@@ -8436,7 +8029,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homonyms</Chapter>
   </Word>
   <Word>
-    <Name>ดี ตี</Name>
     <ThaiScript>
       <string>ดี</string>
       <string>ตี</string>
@@ -8460,7 +8052,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homophones</Chapter>
   </Word>
   <Word>
-    <Name>ไม่; ไหม้</Name>
     <ThaiScript>
       <string>ไม่</string>
       <string>ไหม้</string>
@@ -8483,7 +8074,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homophones</Chapter>
   </Word>
   <Word>
-    <Name>ย่า, หญ้า</Name>
     <ThaiScript>
       <string>ย่า</string>
       <string>หญ้า</string>
@@ -8507,7 +8097,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homophones</Chapter>
   </Word>
   <Word>
-    <Name>ศร, สอน</Name>
     <ThaiScript>
       <string>ศร</string>
       <string>สอน</string>
@@ -8531,7 +8120,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homophones</Chapter>
   </Word>
   <Word>
-    <Name>รถ รส รด</Name>
     <ThaiScript>
       <string>รถ</string>
       <string>รส</string>
@@ -8558,7 +8146,6 @@ one (generic word [e.g. the small one])
     <Chapter>Homophones</Chapter>
   </Word>
   <Word>
-    <Name>ผมรูปหล่อ, ผม รูป หล่อ</Name>
     <ThaiScript>
       <string>ผมรูปหล่อ</string>
       <string>ผม รูป หล่อ</string>
@@ -8579,7 +8166,6 @@ one (generic word [e.g. the small one])
     <Chapter>Words in special contexts</Chapter>
   </Word>
   <Word>
-    <Name>ฉัน สวย, ฉันสวย</Name>
     <ThaiScript>
       <string>ฉัน สวย</string>
       <string>ฉันสวย</string>
@@ -8598,7 +8184,6 @@ one (generic word [e.g. the small one])
     <Chapter>Words in special contexts</Chapter>
   </Word>
   <Word>
-    <Name>ผม สวย, ผมสวย</Name>
     <ThaiScript>
       <string>ผม สวย</string>
       <string>ผมสวย</string>
@@ -8617,7 +8202,6 @@ one (generic word [e.g. the small one])
     <Chapter>Words in special contexts</Chapter>
   </Word>
   <Word>
-    <Name>ฉัน มี ผม สวย, ฉันมีผมสวย</Name>
     <ThaiScript>
       <string>ฉัน มี ผม สวย</string>
       <string>ฉันมีผมสวย</string>
@@ -8638,7 +8222,6 @@ one (generic word [e.g. the small one])
     <Chapter>Words in special contexts</Chapter>
   </Word>
   <Word>
-    <Name>กำแพง</Name>
     <ThaiScript>
       <string>กำแพง</string>
     </ThaiScript>
@@ -8659,7 +8242,6 @@ one (generic word [e.g. the small one])
     <Chapter>Words in special contexts</Chapter>
   </Word>
   <Word>
-    <Name>ฝาผนัง</Name>
     <ThaiScript>
       <string>ฝาผนัง</string>
     </ThaiScript>
@@ -8678,7 +8260,6 @@ one (generic word [e.g. the small one])
     <Chapter>Words in special contexts</Chapter>
   </Word>
   <Word>
-    <Name>สระ ผม, สระผม</Name>
     <ThaiScript>
       <string>สระ ผม</string>
       <string>สระผม</string>
@@ -8701,7 +8282,6 @@ one (generic word [e.g. the small one])
     <Chapter>Words in special contexts</Chapter>
   </Word>
   <Word>
-    <Name>ล้าง มือ, ล้างมือ</Name>
     <ThaiScript>
       <string>ล้าง มือ</string>
       <string>ล้างมือ</string>
@@ -8723,7 +8303,6 @@ one (generic word [e.g. the small one])
     <Chapter>Words in special contexts</Chapter>
   </Word>
   <Word>
-    <Name>ซัก ผ้า, ซักผ้า</Name>
     <ThaiScript>
       <string>ซัก ผ้า</string>
       <string>ซักผ้า</string>
@@ -8745,7 +8324,6 @@ one (generic word [e.g. the small one])
     <Chapter>Words in special contexts</Chapter>
   </Word>
   <Word>
-    <Name>ก็</Name>
     <ThaiScript>
       <string>ก็</string>
     </ThaiScript>
@@ -8769,7 +8347,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>ก็ ได้</Name>
     <ThaiScript>
       <string>ก็ ได้</string>
     </ThaiScript>
@@ -8790,7 +8367,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>ก็ ตาม, ก็ตาม</Name>
     <ThaiScript>
       <string>ก็ ตาม</string>
       <string>ก็ตาม</string>
@@ -8812,7 +8388,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>กลับ</Name>
     <ThaiScript>
       <string>กลับ</string>
     </ThaiScript>
@@ -8835,7 +8410,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>กลับ บ้าน, กลับบ้าน</Name>
     <ThaiScript>
       <string>กลับ บ้าน</string>
       <string>กลับบ้าน</string>
@@ -8860,7 +8434,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>กลับ หน้า, กลับหน้า</Name>
     <ThaiScript>
       <string>กลับ หน้า</string>
       <string>กลับหน้า</string>
@@ -8880,7 +8453,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>กว่า</Name>
     <ThaiScript>
       <string>กลับ หน้า</string>
       <string>กลับหน้า</string>
@@ -8902,7 +8474,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>มาก กว่า, มากกว่า</Name>
     <ThaiScript>
       <string>มาก กว่า</string>
       <string>มากกว่า</string>
@@ -8925,7 +8496,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>สูง กว่า, สูงกว่า</Name>
     <ThaiScript>
       <string>สูง กว่า</string>
       <string>สูงกว่า</string>
@@ -8948,7 +8518,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>ก่อน</Name>
     <ThaiScript>
       <string>ก่อน</string>
     </ThaiScript>
@@ -8980,7 +8549,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>ก่อนกำหนด</Name>
     <ThaiScript>
       <string>ก่อนกำหนด</string>
     </ThaiScript>
@@ -9005,7 +8573,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>กัน</Name>
     <ThaiScript>
       <string>กัน</string>
     </ThaiScript>
@@ -9028,7 +8595,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>กันฝน</Name>
     <ThaiScript>
       <string>กันฝน</string>
     </ThaiScript>
@@ -9049,7 +8615,6 @@ one (generic word [e.g. the small one])
     <Chapter>101 most used words</Chapter>
   </Word>
   <Word>
-    <Name>ด้วยกัน, ด้ว ยกัน</Name>
     <ThaiScript>
       <string>ด้วยกัน</string>
       <string>ด้วย กัน</string>
@@ -9073,5 +8638,10 @@ one (generic word [e.g. the small one])
       <string>Middle</string>
     </Tone>
     <Chapter>101 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>test</string>
+    </ThaiScript>
   </Word>
 </ArrayOfWord>

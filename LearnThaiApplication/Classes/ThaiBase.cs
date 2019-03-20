@@ -7,7 +7,7 @@ namespace LearnThaiApplication
 {
     public abstract class ThaiBase : INotifyPropertyChanged
     {
-        private string name;
+        
         private string engDesc;
         private List<string> thaiScript;
         private List<string> thaiFonet;
@@ -15,22 +15,7 @@ namespace LearnThaiApplication
         private List<string> soundPath;
         private List<string> tone;
 
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                if (name != value)
-                {
-                    name = value;
-                    OnPropertyChanged("Name");
-                }
-            }
-        }
-
+        
         public List<string> ThaiScript
         {
             get

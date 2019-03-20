@@ -139,7 +139,6 @@
                               SelectionUnit="CellOrRowHeader" RowEditEnding="RowEditEnding" KeyUp="DG_ConMan_KeyUp"  >
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150"/>
-                            <DataGridTextColumn Header="Name" Binding="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150"/>
                             <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>

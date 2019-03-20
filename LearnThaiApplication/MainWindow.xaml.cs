@@ -42,39 +42,19 @@ namespace LearnThaiApplication
             AppWindow = this;
             words.CollectionChanged += ContentCollectionChanged;
             displayList.CollectionChanged += ContentCollectionChanged;
-
-            //WriteAllToFile();*/
         }
 
         #region Variables and properties
 
         #region lists
 
-        private List<TextBox> textboxList;
         private ObservableCollection<Chapter> Chapters = new ObservableCollection<Chapter>();
-        private List<UserSetting> UserSettings = new List<UserSetting>();
-        
+        private ObservableCollection<Word> displayList = new ObservableCollection<Word>();
         private List<PropertyInfo> ListOfProperties = new List<PropertyInfo>();
         private List<object> ListOfValues = new List<object>();
+        private List<TextBox> textboxList;
+        private List<UserSetting> UserSettings = new List<UserSetting>();
         private ObservableCollection<Word> words = new ObservableCollection<Word>();
-        private ObservableCollection<Word> displayList = new ObservableCollection<Word>();
-
-        public ObservableCollection<Word> Words
-        {
-            get
-            {
-                return words;
-            }
-            set
-            {
-                if (words != value)
-                {
-                    words = value;
-                    OnPropertyChanged("Words");
-                }
-            }
-        }
-
         public ObservableCollection<Word> DisplayList
         {
             get
@@ -91,68 +71,70 @@ namespace LearnThaiApplication
             }
         }
 
+        public ObservableCollection<Word> Words
+        {
+            get
+            {
+                return words;
+            }
+            set
+            {
+                if (words != value)
+                {
+                    words = value;
+                    OnPropertyChanged("Words");
+                }
+            }
+        }
         private void ContentCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
-            
-            
         }
 
         #endregion lists
 
         #region bools
 
-        private bool hasDescription = true;
-        private bool displayAllPropertiesInDescription;
-        private bool isContinious;
-        private bool loopChapter = true;
-        private bool isRandom;
-        private bool submitionIsNew;
-        private bool skipIntro;
         private bool autoPlay;
-
+        private bool displayAllPropertiesInDescription;
+        private bool hasDescription = true;
+        private bool isContinious;
+        private bool isRandom;
+        private bool loopChapter = true;
+        private bool skipIntro;
         #endregion bools
 
         #region strings
 
+        private static string RegexSplitString = @" ^\s|[\s;,]{2,}";
+        private string answear;
+        private string DebugFilePath = Environment.CurrentDirectory + @"\Files\Settings\DEBUG\";
+        private string descriptionText;
         private string ImageFilePath = Environment.CurrentDirectory + @"\Files\Media\Icon\";
         private string LanguageFilePath = Environment.CurrentDirectory + @"\Files\Media\Language\";
+        private string result;
+        private string searchString;
+        private string SelectedChapter;
         private string SettingsFilePath = Environment.CurrentDirectory + @"\Files\Settings\";
         private string SoundFilePath = Environment.CurrentDirectory + @"\Files\Media\Sound\";
-        private string WebFilePath = Environment.CurrentDirectory + @"\Files\Media\Website\";
-        private string DebugFilePath = Environment.CurrentDirectory + @"\Files\Settings\DEBUG\";
-        private static string RegexSplitString = @" ^\s|[\s;,]{2,}";
-
-        private string SelectedChapter;
+        private string thaiScript_String;
         private string UserName = "Default";
-        private string SelectedSymbolTypeToUse;
-        
+        private string WebFilePath = Environment.CurrentDirectory + @"\Files\Media\Website\";
         private string WhatToDisplay;
         private string WhatToTrain;
-        private string thaiScript_String;
-        private string descriptionText;
-        private string result;
-        private string answear;
-        private string searchString;
-
         #endregion strings
 
         #region ints
 
         private static int correctPoints = 0;
         private static int currentFileIndex = 0;
-        private static int CurrentListBoxIndex = -1;
-        
 
         #endregion ints
 
         #region objects
 
+        public MainWindow AppWindow;
         private object SelectedPropertyToDisplay;
         private object SelectedPropertyToValidate;
-        private object WhatListTLoad;
-        private object WordToLoad;
-        public MainWindow AppWindow;
-
         private Word selectedWordDataGrid;
 
         public Word SelectedWordDG
@@ -174,6 +156,38 @@ namespace LearnThaiApplication
         #endregion objects
 
         #region Notifiers
+
+        public string Answear
+        {
+            get
+            {
+                return answear;
+            }
+            set
+            {
+                if (answear != value)
+                {
+                    answear = value;
+                    OnPropertyChanged("Answear");
+                }
+            }
+        }
+
+        public bool AutoPlay
+        {
+            get
+            {
+                return autoPlay;
+            }
+            set
+            {
+                if (autoPlay != value)
+                {
+                    autoPlay = value;
+                    OnPropertyChanged("AutoPlay");
+                }
+            }
+        }
 
         public string CorrectPoints
         {
@@ -197,50 +211,18 @@ namespace LearnThaiApplication
             }
         }
 
-        public bool HasDescription
+        public string DescriptionString
         {
             get
             {
-                return hasDescription;
+                return descriptionText;
             }
             set
             {
-                if (hasDescription != value)
+                if (descriptionText != value)
                 {
-                    hasDescription = value;
-                    OnPropertyChanged("HasDescription");
-                }
-            }
-        }
-
-        public bool IsRandom
-        {
-            get
-            {
-                return isRandom;
-            }
-            set
-            {
-                if (isRandom != value)
-                {
-                    isRandom = value;
-                    OnPropertyChanged("IsRandom");
-                }
-            }
-        }
-
-        public bool IsContinious
-        {
-            get
-            {
-                return isContinious;
-            }
-            set
-            {
-                if (isContinious != value)
-                {
-                    isContinious = value;
-                    OnPropertyChanged("IsContinious");
+                    descriptionText = value;
+                    OnPropertyChanged("DescriptionString");
                 }
             }
         }
@@ -262,18 +244,97 @@ namespace LearnThaiApplication
             }
         }
 
-        public bool AutoPlay
+        public bool HasDescription
         {
             get
             {
-                return autoPlay;
+                return hasDescription;
             }
             set
             {
-                if (autoPlay != value)
+                if (hasDescription != value)
                 {
-                    autoPlay = value;
-                    OnPropertyChanged("AutoPlay");
+                    hasDescription = value;
+                    OnPropertyChanged("HasDescription");
+                }
+            }
+        }
+
+        public bool IsContinious
+        {
+            get
+            {
+                return isContinious;
+            }
+            set
+            {
+                if (isContinious != value)
+                {
+                    isContinious = value;
+                    OnPropertyChanged("IsContinious");
+                }
+            }
+        }
+
+        public bool IsRandom
+        {
+            get
+            {
+                return isRandom;
+            }
+            set
+            {
+                if (isRandom != value)
+                {
+                    isRandom = value;
+                    OnPropertyChanged("IsRandom");
+                }
+            }
+        }
+        public bool LoopChapter
+        {
+            get
+            {
+                return loopChapter;
+            }
+            set
+            {
+                if (loopChapter != value)
+                {
+                    loopChapter = value;
+                    OnPropertyChanged("LoopChapter");
+                }
+            }
+        }
+
+        public string Result
+        {
+            get
+            {
+                return result;
+            }
+            set
+            {
+                if (result != value)
+                {
+                    result = value;
+                    OnPropertyChanged("Result");
+                }
+            }
+        }
+
+        public string SearchString
+        {
+            get
+            {
+                return searchString;
+            }
+            set
+            {
+                if (searchString != value)
+                {
+                    searchString = value;
+                    OnPropertyChanged("SearchString");
                 }
             }
         }
@@ -293,23 +354,6 @@ namespace LearnThaiApplication
                 }
             }
         }
-
-        public bool LoopChapter
-        {
-            get
-            {
-                return loopChapter;
-            }
-            set
-            {
-                if (loopChapter != value)
-                {
-                    loopChapter = value;
-                    OnPropertyChanged("LoopChapter");
-                }
-            }
-        }
-
         public string ThaiScriptString
         {
             get
@@ -325,110 +369,23 @@ namespace LearnThaiApplication
                 }
             }
         }
-
-        public string DescriptionString
-        {
-            get
-            {
-                return descriptionText;
-            }
-            set
-            {
-                if (descriptionText != value)
-                {
-                    descriptionText = value;
-                    OnPropertyChanged("DescriptionString");
-                }
-            }
-        }
-
-
-        public string Result
-        {
-            get
-            {
-                return result;
-            }
-            set
-            {
-                if (result != value)
-                {
-                    result = value;
-                    OnPropertyChanged("Result");
-                }
-            }
-        }
-
-
-        public string Answear
-        {
-            get
-            {
-                return answear;
-            }
-            set
-            {
-                if (answear != value)
-                {
-                    answear = value;
-                    OnPropertyChanged("Answear");
-                }
-            }
-        }
-
-
-        public string SearchString
-        {
-            get
-            {
-                return searchString;
-            }
-            set
-            {
-                if (searchString != value)
-                {
-                    searchString = value;
-                    OnPropertyChanged("SearchString");
-                }
-            }
-        }
         #endregion Notifiers
 
         #region others
 
+        private UserSetting settings = new UserSetting();
         private StackPanel sp = new StackPanel();
         private ContentMan window;
+        public event PropertyChangedEventHandler PropertyChanged;
+
         private Random RandomIndex { get; set; } = new Random();
         private Type WhatTypeToUse { get; set; }
         private IEnumerable<Window> Windows { get; set; }
-        private UserSetting settings = new UserSetting();
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
         #endregion others
 
         #endregion Variables and properties
 
         #region TestMethods
-
-        /// <summary>
-        /// Testmethod writing values from the lists to file.
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="list"></param>
-        private void WriteWordToFile(List<Word> list)
-        {
-            foreach (Word word in list)
-            {
-                
-
-                List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
-
-                if (script.Count == 1)
-                {
-                }
-            }
-        }
 
         /// <summary>
         ///
@@ -458,9 +415,64 @@ namespace LearnThaiApplication
             SaveFiles<Chapter>(Chapters);
         }
 
+        /// <summary>
+        /// Testmethod writing values from the lists to file.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        private void WriteWordToFile(List<Word> list)
+        {
+            foreach (Word word in list)
+            {
+                List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
+
+                if (script.Count == 1)
+                {
+                }
+            }
+        }
         #endregion TestMethods
 
         #region Main
+
+        /// <summary>
+        /// Turns the induvidual words into one string to display
+        /// </summary>
+        /// <param name="list">The list to use</param>
+        /// <returns>String of words</returns>
+        public static string ListToString(List<string> list)
+        {
+            try
+            {
+                string combinedStrings = null;
+                foreach (string text in list)
+                {
+                    if (list.IndexOf(text) == list.Count - 1)
+                    {
+                        combinedStrings += text;
+                    }
+                    else
+                    {
+                        combinedStrings += text + "; ";
+                    }
+                }
+                return combinedStrings;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Turns a string into a list of strings.
+        /// </summary>
+        /// <param name="textToSplit">String to split</param>
+        /// <returns></returns>
+        public static List<string> SplitStringToList(string textToSplit)
+        {
+            return Regex.Split(textToSplit, RegexSplitString).ToList<String>();
+        }
 
         /// <summary>
         /// Handles the combobox selection and updates the displayed data when a new chapter is selected.
@@ -519,10 +531,6 @@ namespace LearnThaiApplication
 
                 lbl_Counter_Page2.Content = CurrentFileIndex;
             }
-            //else if (TabIndex == 2)
-            //{
-            //    UpdateListBox();
-            //}
         }
 
         /// <summary>
@@ -674,36 +682,6 @@ namespace LearnThaiApplication
             }
             return null;
         }
-
-        /// <summary>
-        /// Turns the induvidual words into one string to display
-        /// </summary>
-        /// <param name="list">The list to use</param>
-        /// <returns>String of words</returns>
-        public static string ListToString(List<string> list)
-        {
-            try
-            {
-                string combinedStrings = null;
-                foreach (string text in list)
-                {
-                    if (list.IndexOf(text) == list.Count - 1)
-                    {
-                        combinedStrings += text;
-                    }
-                    else
-                    {
-                        combinedStrings += text + "; ";
-                    }
-                }
-                return combinedStrings;
-            }
-            catch
-            {
-                return null;
-            }
-        }
-
         /// <summary>
         /// Changes to the next chapter in the list
         /// </summary>
@@ -762,8 +740,6 @@ namespace LearnThaiApplication
                     DescriptionString += ListToString((List<string>)GetValueFromValueList("EngWords")) + "\r\n";
                     DescriptionString += (string)GetValueFromValueList("EngDesc");
                 }
-
-                //textBlockDescription.Text = GetValueFromValueList("ThaiFonet") + "\r\n" + EngWordsToString(GetValueFromValueList("EngWords")) + "\r\n" + GetValueFromValueList("EngDesc");
             }
         }
 
@@ -794,7 +770,6 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void PrevWord(object sender, RoutedEventArgs e)
         {
-            
             ClearFields();
             PreTextChanger(-1);
             if (AutoPlay)
@@ -802,30 +777,6 @@ namespace LearnThaiApplication
                 PlaySound(sender, e);
             }
         }
-
-        ///// <summary>
-        ///// Handles the selection changes in the listbox
-        ///// </summary>
-        ///// <typeparam name="T">What type to work with</typeparam>
-        ///// <param name="list">What list to work with</param>
-        //private void SelectionChanged(int selectedIndex)
-        //{
-        //    if (selectedIndex != -1)
-        //    {
-        //        WordToLoad = lib_LoadedWords.SelectedItem;
-
-        //        SetPropertyOfGenericObject(WordToLoad);
-
-        //        FillFormTextBoxes();
-
-        //        txt_FirstSelectionProperty.Text = ListToString((List<string>)GetValueFromValueList("ThaiScript"));
-        //        txt_SecondSelectionProperty.Text = ListToString((List<string>)GetValueFromValueList("ThaiFonet"));
-        //        txt_ThirdSelectionProperty.Text = ListToString((List<string>)GetValueFromValueList("EngWords"));
-        //        txt_FourthSelectionProperty.Text = (string)GetValueFromValueList("EngDesc");
-        //        txt_FifthSelectionProperty.Text = (string)GetValueFromValueList("Chapter");
-        //        txb_Description_Page4.Text = (string)GetValueFromValueList("EngDesc");
-        //    }
-        //}
 
         /// <summary>
         /// Selects what property the user is going to practice
@@ -903,17 +854,6 @@ namespace LearnThaiApplication
                 }
             }
         }
-
-        /// <summary>
-        /// Turns a string into a list of strings.
-        /// </summary>
-        /// <param name="textToSplit">String to split</param>
-        /// <returns></returns>
-        public static List<string> SplitStringToList(string textToSplit)
-        {
-            return Regex.Split(textToSplit, RegexSplitString).ToList<String>();
-        }
-
         /// <summary>
         /// Changes the content of textblocks tot he next or previous value.
         /// </summary>
@@ -1046,9 +986,6 @@ namespace LearnThaiApplication
                 lbl_Points.Content = "Points: " + CorrectPoints;
                 lbl_Points_Page2.Content = "Points: " + CorrectPoints;
             }
-            
-
-            
         }
 
         #endregion Main
@@ -1056,47 +993,40 @@ namespace LearnThaiApplication
         #region Settings
 
         /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AutoPlay_Checked(object sender, RoutedEventArgs e)
+        {
+            if ((sender as CheckBox)?.IsChecked == true)
+            {
+                AutoPlay = true;
+            }
+            else
+            {
+                AutoPlay = false;
+            }
+            SetSettings();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CheckSoundStatus_Clicked(object sender, RoutedEventArgs e)
+        {
+            CheckAllSoundStatuses();
+        }
+
+        /// <summary>
         /// Clears the textboxs and textblocks on the current tab
         /// </summary>
         private void ClearFields()
         {
-
             Result = "";
             Answear = "";
-
-            //    if (TabIndex == 0)
-            //    //{
-            //    //    txb_Description_page1.Text = "";
-            //    //    txb_ThaiScript_Page1.Text = "";
-            //    //    txb_Status_Page1.Text = "";
-            //    //    txt_Answear_Page1.Text = "";
-            //    }
-            //    else if (TabIndex == 1)
-            //    {
-            //        txb_ThaiScript_Page2.Text = "";
-            //        txb_Status_Page2.Text = "";
-            //        txb_Description_page2.Text = "";
-            //        txt_Answear_Page2.Text = "";
-            //    }
-            //    else if (TabIndex == 2)
-            //    {
-            //        if (ckb_AutoClean.IsChecked == true)
-            //        {
-            //            txt_FirstSelectionProperty.Text = "";
-            //            txt_SecondSelectionProperty.Text = "";
-            //            txt_ThirdSelectionProperty.Text = "";
-            //            txt_FourthSelectionProperty.Text = "";
-            //            txt_FifthSelectionProperty.Text = "";
-
-            //            if (textboxList.Count != 0)
-            //            {
-            //                foreach (TextBox txt in textboxList)
-            //                {
-            //                    txt.Text = "";
-            //                }
-            //            }
-            //        }
-            //    }
         }
 
         /// <summary>
@@ -1142,6 +1072,29 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
+        /// Load files to lists.
+        /// </summary>
+        /// <typeparam name="T">What type to load</typeparam>
+        /// <param name="list">What list to load into</param>
+        private void LoadFiles<T>(ObservableCollection<T> list) where T : new()
+        {
+            if (list.Count > 0)
+            {
+                list.Clear();
+            }
+            Type whatIsT = typeof(T);
+
+            List<T> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml");
+
+            List<T> newWordToAdd = new List<T>();
+
+            foreach (T wordFoundInFile in wordsFromFIle)
+            {
+                list.Add(wordFoundInFile);
+            }
+        }
+
+        /// <summary>
         ///
         /// </summary>
         private void LoadSettings()
@@ -1159,42 +1112,6 @@ namespace LearnThaiApplication
                 WhatToTrain = settings.WhatToTrain;
                 SkipIntro = settings.SkipIntro;
                 AutoPlay = settings.AutoPlaySounds;
-            }
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        private void SaveSetting()
-        {
-            XmlSerialization.WriteToXmlFile<UserSetting>(SettingsFilePath + "Settings.xml", settings, false);
-        }
-
-        /// <summary>
-        /// Load files to lists.
-        /// </summary>
-        /// <typeparam name="T">What type to load</typeparam>
-        /// <param name="list">What list to load into</param>
-        private void LoadFiles<T>(ObservableCollection<T> list) where T : new()
-        {
-
-            if(list.Count > 0)
-            {
-                list.Clear();
-            }
-            Type whatIsT = typeof(T);
-
-            List<T> wordsFromFIle = XmlSerialization.ReadFromXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml");
-
-            List<T> newWordToAdd = new List<T>();
-
-            foreach (T wordFoundInFile in wordsFromFIle)
-            {
-                if (whatIsT != typeof(Chapter))
-                {
-                    //SetPropertyOfGenericObject(wordFoundInFile);
-                }
-                list.Add(wordFoundInFile);
             }
         }
 
@@ -1229,7 +1146,6 @@ namespace LearnThaiApplication
                 if (TabIndex == 0 || TabIndex == 1)
                 {
                     ValidateAnswear(sender, e);
-                
                 }
             }
             else if (e.Key == Key.Right)
@@ -1268,6 +1184,31 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PrintAllWordsToFile(object sender, RoutedEventArgs e)
+        {
+            string fullText = "";
+
+            foreach (Word word in Words)
+            {
+                foreach (string script in word.ThaiScript)
+                {
+                    string soundPath = SoundFilePath + script + ".wma";
+
+                    if (!File.Exists(soundPath))
+                    {
+                        fullText += script + "\r\n";
+                    }
+                }
+            }
+
+            File.WriteAllText(DebugFilePath + "File.txt", fullText);
+        }
+
+        /// <summary>
         /// Check if random number is on, if on randomly jump around in the chapter. also disables loop chapter.
         /// </summary>
         /// <param name="sender"></param>
@@ -1276,6 +1217,26 @@ namespace LearnThaiApplication
         {
             LoopChapter = false;
             SetSettings();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        private void ReadWebsiteFiles()
+        {
+            List<string> websiteUrls = new List<string>();
+            string line;
+            StreamReader file = new StreamReader(WebFilePath + "Websites.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                websiteUrls.Add(line);
+            }
+            file.Close();
+
+            foreach (string s in websiteUrls)
+            {
+                Console.WriteLine(s);
+            }
         }
 
         /// <summary>
@@ -1293,7 +1254,7 @@ namespace LearnThaiApplication
                 cb_SymbolChapters.SelectedIndex = 0;
                 SelectedChapter = (string)((ComboBoxItem)cb_SymbolChapters.SelectedItem).Content;
             }
-            
+
             FindWordWithChapter();
         }
 
@@ -1329,6 +1290,23 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
+        ///
+        /// </summary>
+        private void SaveSetting()
+        {
+            XmlSerialization.WriteToXmlFile<UserSetting>(SettingsFilePath + "Settings.xml", settings, false);
+        }
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SaveSettings_Click(object sender, RoutedEventArgs e)
+        {
+            SaveSetting();
+        }
+
+        /// <summary>
         /// Sets the initial states for diffrent components.
         /// </summary>
         private void SetInitialStates()
@@ -1343,36 +1321,6 @@ namespace LearnThaiApplication
                 lbl_Counter_Page1.Content = CurrentFileIndex;
 
                 DisplayList = new ObservableCollection<Word>(Words);
-                //if (hasDescription)
-                //{
-                //    ckb_DescBox_Page1.IsChecked = true;
-                //    ckb_DescBox_Page2.IsChecked = true;
-                //    ckb_DescBox_Setting.IsChecked = true;
-                //}
-                //if (IsRandom)
-                //{
-                //    ckb_Randomized_Page1.IsChecked = RandomOn;
-                //    ckb_Randomized_Page2.IsChecked = RandomOn;
-                //    ckb_Randomized_Setting.IsChecked = RandomOn;
-                //}
-                //if (SkipIntro)
-                //{
-                //    ckb_SkipIntro.IsChecked = SkipIntro;
-                //}
-
-                //if (AutoPlay)
-                //{
-                //    ckb_AutoPlay.IsChecked = AutoPlay;
-                //}
-                //if (LoopChapter)
-                //{
-                //    ckb_LoopChapter.IsChecked = LoopChapter;
-                //}
-                //if (DisplayAllPropertiesInDescription)
-                //{
-                //    ckb_FullDesc.IsChecked = DisplayAllPropertiesInDescription;
-                //}
-                //rb_SubmitNew.IsChecked = true;
 
                 if (WhatToTrain == "ThaiFonet")
                 {
@@ -1401,8 +1349,6 @@ namespace LearnThaiApplication
                 lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
             }
 
-            //lib_LoadedWords.DisplayMemberPath = "Name";
-            //cb_ManageOnChapter.DisplayMemberPath = "ChapterName";
             cb_SelectList.DisplayMemberPath = "ChapterName";
             SetSettings();
         }
@@ -1423,172 +1369,27 @@ namespace LearnThaiApplication
             settings.AutoPlaySounds = AutoPlay;
             SaveSetting();
         }
-
         /// <summary>
         ///
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void SaveSettings_Click(object sender, RoutedEventArgs e)
+        private void SkipMessage_Checked(object sender, RoutedEventArgs e)
         {
-            SaveSetting();
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        private void ReadWebsiteFiles()
-        {
-            List<string> websiteUrls = new List<string>();
-            string line;
-            StreamReader file = new StreamReader(WebFilePath + "Websites.txt");
-            while ((line = file.ReadLine()) != null)
+            if ((sender as CheckBox)?.IsChecked == true)
             {
-                websiteUrls.Add(line);
+                SkipIntro = true;
             }
-            file.Close();
-
-            foreach (string s in websiteUrls)
+            else
             {
-                Console.WriteLine(s);
+                SkipIntro = false;
             }
+            SetSettings();
         }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void PrintAllWordsToFile(object sender, RoutedEventArgs e)
-        {
-            string fullText = "";
-
-            foreach (Word word in Words)
-            {
-                foreach (string script in word.ThaiScript)
-                {
-                    string soundPath = SoundFilePath + script + ".wma";
-
-                    if (!File.Exists(soundPath))
-                    {
-                        fullText += script + "\r\n";
-                    }
-                }
-            }
-
-            File.WriteAllText(DebugFilePath + "File.txt", fullText);
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CheckSoundStatus_Clicked(object sender, RoutedEventArgs e)
-        {
-            CheckAllSoundStatuses();
-        }
-
         #endregion Settings
 
         #region Submit
-
-        ///// <summary>
-        ///// Creates a submit form window
-        ///// </summary>
-        ///// <param name="continious">Checks if the form should use the continious methods</param>
-        //public void CreateFormWindow(bool continious)
-        //{
-        //    window = new ContentMan();
-        //    Viewbox wb = new Viewbox
-        //    {
-        //        Width = window.Width
-        //    };
-        //    sp = new StackPanel();
-
-        //    SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
-        //    int i = 0;
-
-        //    foreach (PropertyInfo prop in ListOfProperties)
-        //    {
-        //        var bc = new BrushConverter();
-        //        Label lbl = new Label
-        //        {
-        //            Content = prop.Name,
-        //            Foreground = (Brush)bc.ConvertFrom("#FFE5E5E5")
-        //        };
-
-        //        sp.Children.Add(lbl);
-        //        TextBox txt = new TextBox();
-        //        object txtContent = ListOfValues[i];
-
-        //        if (txtContent is List<String>)
-        //        {
-        //            txt.Text = ListToString(txtContent as List<String>);
-        //        }
-        //        else
-        //        {
-        //            txt.Text = (string)txtContent;
-        //        }
-
-        //        txt.Name = "txt_" + prop.Name;
-        //        txt.TextWrapping = TextWrapping.Wrap;
-
-        //        txt.Width = 280;
-        //        txt.KeyUp += OnEnterKeyUpForm;
-
-        //        i++;
-
-        //        sp.Children.Add(txt);
-        //    }
-
-        //    Button submitButton = new Button
-        //    {
-        //        Content = "Submit",
-        //        Name = "FormWindowButton"
-        //    };
-        //    if (continious)
-        //    {
-        //        submitButton.Click += SubmitAndContinue;
-        //    }
-        //    else
-        //    {
-        //        submitButton.Click += SubmitNewWordFull;
-        //    }
-
-        //    sp.Children.Add(submitButton);
-        //    wb.Child = sp;
-        //    window.Content = wb;
-
-        //    window.Show();
-        //}
-
-        /// <summary>
-        /// Fills the textboxes of the full submit form.
-        /// </summary>
-        public void FillFormTextBoxes()
-        {
-            textboxList = FormTextboxes();
-
-            foreach (TextBox txt in textboxList)
-            {
-                foreach (PropertyInfo prop in ListOfProperties)
-                {
-                    if (txt.Name == "txt_" + prop.Name)
-                    {
-                        if (prop.GetValue(WordToLoad) is List<string> x)
-                        {
-                            txt.Text = ListToString(x);
-                        }
-                        else
-                        {
-                            txt.Text = (String)prop.GetValue(WordToLoad);
-                        }
-                    }
-                }
-            }
-        }
-
+   
         /// <summary>
         /// Gets the textboxes from the full form and collects them in a list
         /// </summary>
@@ -1627,50 +1428,6 @@ namespace LearnThaiApplication
             }
         }
 
-        ///// <summary>
-        ///// Selects whether to submit a new or update a old word
-        ///// </summary>
-        ///// <param name="isQuick">checks if to submit from the full form of the quick form</param>
-        //public void HowToSubmit(bool isQuick)
-        //{
-            
-        //        SubmitNewWord(isQuick);
-            
-        //    //else if (!SubmitionIsNew)
-        //    //{
-        //    //    SubmitUpdatedWord(isQuick);
-        //    //}
-        //    //else
-        //    //{
-        //    //    MessageBox.Show("Select what you want to do");
-        //    //}
-        //    //PopulateManageChapterCB();
-
-        //    //FindWordWithChapter();
-        //    //UpdateListBox();
-        //    //ClearFields();
-        //}
-
-        ///// <summary>
-        ///// Checks for enter key up from the form.
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //public void OnEnterKeyUpForm(object sender, System.Windows.Input.KeyEventArgs e)
-        //{
-        //    if (e.Key == System.Windows.Input.Key.Enter)
-        //    {
-        //        if (IsContinious)
-        //        {
-        //            SubmitAndContinue(sender, e);
-        //        }
-        //        else
-        //        {
-        //            SubmitNewWordFull(sender, e);
-        //        }
-        //    }
-        //}
-
         /// <summary>
         /// sets the new values to the old words that already can be found in list
         /// </summary>
@@ -1699,269 +1456,149 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
-        /// Submits the values from the full form.
+        ///
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="list"></param>
-        /// <returns></returns>
-        public bool SubmitFromForm()
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DG_ConMan_KeyUp(object sender, KeyEventArgs e)
         {
-            textboxList = FormTextboxes();
-
-            foreach (Word oldWord in Words)
+            if (e.Key == Key.Delete)
             {
-                if (WordToLoad.Equals(oldWord))
+                try
                 {
-                    SetPropertyOfGenericObject(oldWord);
-
-                    SetNewValuesFromForm(oldWord, textboxList);
-
-                    return true;
+                    if (SelectedWordDG == null)
+                    {
+                        System.Windows.Forms.MessageBox.Show("Please select the full row you want to delete");
+                    }
+                    else if (MessageBox.Show("Do you really want to delete the word " + SelectedWordDG.ThaiScript_String + " ?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                    {
+                        Words.Remove(SelectedWordDG);
+                        SaveAll();
+                        if (string.IsNullOrEmpty(searchString))
+                        {
+                            DisplayList = Words;
+                        }
+                        else
+                        {
+                            Search();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.Forms.MessageBox.Show("Error: " + ex.Message, "Error");
                 }
             }
-            return false;
         }
-
-        /// <summary>
-        /// Select a object to delete and then save the remaining objects to file.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        
-
-        ///// <summary>
-        ///// Creates a non-continious form window.
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void Btn_FormWindow(object sender, RoutedEventArgs e)
-        //{
-        //    IsContinious = false;
-        //    CreateFormWindow(IsContinious);
-        //}
-
-        ///// <summary>
-        ///// Moves a object up or down the list.
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void Btn_ListMoveDown_Click(object sender, RoutedEventArgs e)
-        //{
-        //    int newIndex = lib_LoadedWords.SelectedIndex + 1;
-
-        //    SelectWhatToMove(newIndex);
-        //}
-
-        ///// <summary>
-        ///// Moves a object up or down the list.
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void Btn_ListMoveUp_Click(object sender, RoutedEventArgs e)
-        //{
-        //    int newIndex = lib_LoadedWords.SelectedIndex - 1;
-
-        //    SelectWhatToMove(newIndex);
-        //}
-
-        ///// <summary>
-        ///// Creates a continious submit update form.
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void CycleListboxItems(object sender, RoutedEventArgs e)
-        //{
-        //    IsContinious = true;
-        //    SubmitStyleChanger(false);
-        //    CreateFormWindow(IsContinious);
-        //}
-
-        ///// <summary>
-        ///// Deletes the selected word from
-        ///// </summary>
-        ///// <typeparam name="T">What type to use</typeparam>
-        ///// <param name="list">What list to delete from</param>
-        //private void DeleteSelected(List<Word> list)
-        //{
-        //    MessageBox.Show("tried to remove element " + list[lib_LoadedWords.SelectedIndex].ToString());
-        //    list.Remove((Word)lib_LoadedWords.SelectedItem);
-        //}
-
-        /// <summary>
-        /// Changes the textboxes for the content management to the selected object from the listbox.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        //private void Lib_LoadedWords_SelectionChanged(Object sender, SelectionChangedEventArgs e)
-        //{
-        //    if (lib_LoadedWords.SelectedIndex != -1)
-        //    {
-        //        CurrentListBoxIndex = lib_LoadedWords.SelectedIndex;
-        //    }
-
-        //    if (WhatTypeToUse == typeof(Word))
-        //    {
-        //        SelectionChanged(lib_LoadedWords.SelectedIndex);
-        //    }
-        //}
-
-        ///// <summary>
-        ///// Loads the content from the list into the listbox
-        ///// </summary>
-        ///// <typeparam name="T">What type to use</typeparam>
-        ///// <param name="list">What list to use</param>
-        //private void LoadObjectsToLib(ObservableCollection<Word> list)
-        //{
-        //    foreach (Word word in list)
-        //    {
-        //        SetPropertyOfGenericObject(word);
-
-        //        lib_LoadedWords.ItemsSource = list;
-
-        //        lib_LoadedWords.DisplayMemberPath = "Name";
-
-        //        break;
-        //    }
-        //}
-
-        ///// <summary>
-        ///// Moves the object in the selected list
-        ///// </summary>
-        ///// <typeparam name="T">What type to use</typeparam>
-        ///// <param name="list">What list to use</param>
-        ///// <param name="oldIndex">The old index of the selected word</param>
-        ///// <param name="newIndex">the new index of the selected word</param>
-        //private void MoveObjectInList<T>(List<T> list, int oldIndex, int newIndex)
-        //{
-        //    T item = list[lib_LoadedWords.SelectedIndex];
-
-        //    list.RemoveAt(oldIndex);
-        //    list.Insert(newIndex, item);
-        //}
 
         /// <summary>
         ///
         /// </summary>
         private void PopulateManageChapterCB()
         {
-            
             cb_SelectList.ItemsSource = null;
 
             cb_SelectList.ItemsSource = Chapters;
-            
         }
 
-        ///// <summary>
-        ///// Sets the values of the new word from the quickForm
-        ///// </summary>
-        ///// <param name="newWord"></param>
-        //private void QuickSubmit(Word newWord)
-        //{
-        //    newWord.ThaiScript = SplitStringToList(txt_FirstSelectionProperty.Text);
-        //    newWord.ThaiFonet = SplitStringToList(txt_SecondSelectionProperty.Text);
-        //    newWord.EngWords = SplitStringToList(txt_ThirdSelectionProperty.Text);
-        //    newWord.EngDesc = txt_FourthSelectionProperty.Text;
-        //    newWord.Chapter = txt_FifthSelectionProperty.Text;
-        //}
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RowEditEnding(object sender, DataGridRowEditEndingEventArgs e)
+        {
+            if (e.Row.Item != null)
+            {
+                if (!Words.Contains(e.Row.Item))
+                {
+                    Words.Add((Word)e.Row.Item);
+                }
+                SaveAll();
+            }
+        }
 
-        ///// <summary>
-        ///// Selects what to move and sends the object to be moved.
-        ///// </summary>
-        ///// <param name="newIndex">The new index for the selected word</param>
-        //private void SelectWhatToMove(int newIndex)
-        //{
-        //    MoveObjectInList<Word>(new List<Word>(words), lib_LoadedWords.SelectedIndex, newIndex);
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Seach_Clicked(object sender, RoutedEventArgs e)
+        {
+            Search();
+        }
 
-        //    UpdateListBox();
-        //    lib_LoadedWords.SelectedIndex = newIndex;
-        //}
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Seach_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Search();
+            }
+        }
 
-        ///// <summary>
-        ///// Submits a full word and then continiues to the next word, updating the full form textboxes.
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void SubmitAndContinue(object sender, RoutedEventArgs e)
-        //{
-        //    HowToSubmit(false);
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="searchValue"></param>
+        private void Search()
+        {
+            DisplayList = new ObservableCollection<Word>(words);
+            ObservableCollection<Word> searchResults = new ObservableCollection<Word>();
 
-        //    if (lib_LoadedWords.SelectedIndex != -1 && lib_LoadedWords.Items.Count != 0)
-        //    {
-        //        CurrentListBoxIndex = lib_LoadedWords.SelectedIndex;
-        //    }
-        //    CurrentListBoxIndex++;
-        //    lib_LoadedWords.SelectedIndex = CurrentListBoxIndex;
+            List<Word> listToSeach = new List<Word>(DisplayList);
+            if (searchString == null)
+            {
+                return;
+            }
 
-        //    SetPropertyOfGenericObject(lib_LoadedWords.SelectedItem);
+            try
+            {
+                foreach (Word word in listToSeach)
+                {
+                    SetPropertyOfGenericObject(word);
 
-        //    FillFormTextBoxes();
-
-        //    UpdateListBox();
-        //}
-
-        ///// <summary>
-        ///// Adds new words to the list.
-        ///// </summary>
-        ///// <typeparam name="T">What type to work with</typeparam>
-        ///// <param name="list">What list to work with</param>
-        //private void SubmitNewWord(bool isQuick)
-        //{
-        //    Word newWord = new Word();
-
-        //    SetPropertyOfGenericObject(newWord);
-
-        //    if (isQuick)
-        //    {
-        //        QuickSubmit(newWord);
-        //    }
-        //    else
-        //    {
-        //        FullSubmitNewWord(newWord);
-        //    }
-
-        //    AddNewChapters();
-
-        //    Words.Add(newWord);
-
-        //    SaveAll();
-        //}
-
-        ///// <summary>
-        ///// Submits all of the properties from the full form.
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void SubmitNewWordFull(object sender, RoutedEventArgs e)
-        //{
-        //    HowToSubmit(false);
-        //}
-
-        ///// <summary>
-        ///// Starts a quick submit of a new word
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void SubmitNewWordQuick(object sender, RoutedEventArgs e)
-        //{
-        //    HowToSubmit(true);
-        //}
-
-        ///// <summary>
-        /////
-        ///// </summary>
-        ///// <param name="isNew"></param>
-        //private void SubmitStyleChanger(bool isNew)
-        //{
-        //    if (isNew)
-        //    {
-        //        rb_SubmitNew.IsChecked = true;
-        //    }
-        //    else
-        //    {
-        //        rb_UpdateWord.IsChecked = true;
-        //    }
-        //}
-
+                    foreach (var value in ListOfValues)
+                    {
+                        if (value == null)
+                        {
+                            continue;
+                        }
+                        if (value is List<string> sublist)
+                        {
+                            foreach (string s in sublist)
+                            {
+                                if (s.CaseInsensitiveContains(searchString))
+                                {
+                                    if (!searchResults.Contains(word))
+                                    {
+                                        searchResults.Add(word);
+                                        continue;
+                                    }
+                                }
+                            }
+                        }
+                        else if (((string)value).CaseInsensitiveContains(searchString))
+                        {
+                            if (!searchResults.Contains(word))
+                            {
+                                searchResults.Add(word);
+                                continue;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            DisplayList = searchResults;
+        }
         /// <summary>
         /// Checks if supposed to submit a new or update a old word.
         /// </summary>
@@ -1982,80 +1619,30 @@ namespace LearnThaiApplication
             //    MessageBox.Show("Error: No submit style selected");
             //}
         }
-
-        ///// <summary>
-        ///// The first part of the process to update old words
-        ///// </summary>
-        ///// <typeparam name="T"></typeparam>
-        ///// <param name="list"></param>
-        //private void SubmitUpdatedWord(bool isQuick)
-        //{
-        //    if (!isQuick)
-        //    {
-        //        textboxList = FormTextboxes();
-        //    }
-
-        //    foreach (Word oldWord in Words)
-        //    {
-        //        if (WordToLoad.Equals(oldWord))
-        //        {
-        //            SetPropertyOfGenericObject(oldWord);
-
-        //            if (isQuick)
-        //            {
-        //                QuickSubmit(oldWord);
-        //            }
-        //            else
-        //            {
-        //                SetNewValuesFromForm(oldWord, textboxList);
-        //            }
-        //            break;
-        //        }
-        //    }
-
-        //    SaveAll();
-        //}
-
-        ///// <summary>
-        ///// Checks what list to load and loads it.
-        ///// </summary>
-        //private void UpdateListBox()
-        //{
-        //    if (WhatTypeToUse == null)
-        //    {
-        //        MessageBox.Show("Select a list to load from");
-        //        return;
-        //    }
-
-        //    lib_LoadedWords.ItemsSource = null;
-
-        //    if (SelectedChapter == "All")
-        //    {
-        //        //LoadObjectsToLib(new List<Word>(words));
-        //    }
-        //    else
-        //    {
-        //        LoadObjectsToLib(DisplayList);
-        //    }
-        //}
-
-        ///// <summary>
-        ///// Selects what conent to manage.
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void WhatToManage(object sender, RoutedEventArgs e)
-        //{
-        //    WhatListTLoad = Words;
-        //    WhatTypeToUse = typeof(Word);
-
-        //    ClearFields();
-        //    UpdateListBox();
-        //}
-
         #endregion Submit
 
         #region Sound
+
+        /// <summary>
+        /// Cycles trough all lists of words and then displays the result in a messagebox
+        /// </summary>
+        /// <param name="sender">The object that initiated the method</param>
+        /// <param name="e"></param>
+        private void CheckAllSoundStatuses()
+        {
+            string fullText;
+
+            if (SelectedChapter == "All")
+            {
+                fullText = CheckSoundStatus(new ObservableCollection<Word>(words));
+            }
+            else
+            {
+                fullText = CheckSoundStatus(DisplayList);
+            }
+
+            MessageBox.Show(fullText);
+        }
 
         /// <summary>
         /// Checks the childnodes and returns the properties from the html.
@@ -2108,6 +1695,28 @@ namespace LearnThaiApplication
             return null;
         }
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CheckSoundChapter_Changed(object sender, SelectionChangedEventArgs e)
+        {
+            if (((ComboBox)sender).SelectedItem is string)
+            {
+                SelectedChapter = (string)((ComboBox)sender).SelectedItem;
+            }
+            else if (((ComboBox)sender).SelectedItem is Chapter chap)
+            {
+                SelectedChapter = chap.ChapterName;
+            }
+            else if (((ComboBox)sender).SelectedItem is ComboBoxItem)
+            {
+                SelectedChapter = (string)((ComboBoxItem)((ComboBox)sender).SelectedItem).Content;
+            }
+
+            FindWordWithChapter();
+        }
         /// <summary>
         /// Cycles the list to find all words that have and dont have sounds.
         /// </summary>
@@ -2165,17 +1774,9 @@ namespace LearnThaiApplication
 
             HtmlDocument doc = web.Load(url);
 
-            //HtmlDocument doc = new HtmlDocument();
-
-            //doc.Load(url, Encoding.UTF8);
-
             List<string> correctText = new List<string>();
 
             List<string> soundPathList = new List<string>();
-
-            // var tableIndexTEST = webdoc.DocumentNode.SelectNodes("//table");
-
-            // var tabletest = doc.DocumentNode.SelectNodes("//table/tbody");
 
             int tableIndexMax = doc.DocumentNode.SelectNodes("//table").Count;
 
@@ -2254,33 +1855,6 @@ namespace LearnThaiApplication
                     MessageBox.Show("Error: " + ex.Message);
                 }
                 SaveAll();
-            }
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Worker_PlaySoundFile(object sender, DoWorkEventArgs e)
-        {
-            MediaPlayer player = new MediaPlayer();
-
-            try
-            {
-                foreach (String soundPath in DisplayList[CurrentFileIndex].SoundPath)
-                {
-                    int waitTime = 1000 + (DisplayList[CurrentFileIndex].ThaiScript.Count * 50);
-
-                    player.Open(new Uri(soundPath));
-                    player.Play();
-
-                    Thread.Sleep(waitTime);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error:" + ex);
             }
         }
 
@@ -2420,23 +1994,6 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
-        /// Starts looking for the soundpaths in the html files.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void StartSoundDownload(object sender, RoutedEventArgs e)
-        {
-            BackgroundWorker worker = new BackgroundWorker
-            {
-                WorkerReportsProgress = true
-            };
-            worker.DoWork += RunWebsiteFiles_DoWork;
-            worker.ProgressChanged += Worker_ProgressChanged;
-
-            worker.RunWorkerAsync();
-        }
-
-        /// <summary>
         /// Checks if the current word has a sound, and if not turns the button red.
         /// </summary>
         private void SpeakerStatus()
@@ -2483,6 +2040,23 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
+        /// Starts looking for the soundpaths in the html files.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StartSoundDownload(object sender, RoutedEventArgs e)
+        {
+            BackgroundWorker worker = new BackgroundWorker
+            {
+                WorkerReportsProgress = true
+            };
+            worker.DoWork += RunWebsiteFiles_DoWork;
+            worker.ProgressChanged += Worker_ProgressChanged;
+
+            worker.RunWorkerAsync();
+        }
+
+        /// <summary>
         /// Checks if a set of data exists in the selected HTMLnode
         /// </summary>
         /// <param name="attributesFromNode">The node to check</param>
@@ -2503,26 +2077,31 @@ namespace LearnThaiApplication
         }
 
         /// <summary>
-        /// Cycles trough all lists of words and then displays the result in a messagebox
+        ///
         /// </summary>
-        /// <param name="sender">The object that initiated the method</param>
+        /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void CheckAllSoundStatuses()
+        private void Worker_PlaySoundFile(object sender, DoWorkEventArgs e)
         {
-            string fullText;
+            MediaPlayer player = new MediaPlayer();
 
-            if (SelectedChapter == "All")
+            try
             {
-                fullText = CheckSoundStatus(new ObservableCollection<Word>(words));
-            }
-            else
-            {
-                fullText = CheckSoundStatus(DisplayList);
-            }
+                foreach (String soundPath in DisplayList[CurrentFileIndex].SoundPath)
+                {
+                    int waitTime = 1000 + (DisplayList[CurrentFileIndex].ThaiScript.Count * 50);
 
-            MessageBox.Show(fullText);
+                    player.Open(new Uri(soundPath));
+                    player.Play();
+
+                    Thread.Sleep(waitTime);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
+            }
         }
-
         #endregion Sound
 
         #region Async
@@ -2561,9 +2140,16 @@ namespace LearnThaiApplication
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        private void SetSoundPath_clicked(object sender, RoutedEventArgs e)
         {
-            pbStatus.Value = e.ProgressPercentage;
+            BackgroundWorker worker = new BackgroundWorker
+            {
+                WorkerReportsProgress = true
+            };
+            worker.DoWork += SetSoundPaths_DoWork;
+            worker.ProgressChanged += Worker_ProgressChanged;
+
+            worker.RunWorkerAsync();
         }
 
         /// <summary>
@@ -2591,156 +2177,11 @@ namespace LearnThaiApplication
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void SetSoundPath_clicked(object sender, RoutedEventArgs e)
+        private void Worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            BackgroundWorker worker = new BackgroundWorker
-            {
-                WorkerReportsProgress = true
-            };
-            worker.DoWork += SetSoundPaths_DoWork;
-            worker.ProgressChanged += Worker_ProgressChanged;
-
-            worker.RunWorkerAsync();
+            pbStatus.Value = e.ProgressPercentage;
         }
-
         #endregion Async
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void SkipMessage_Checked(object sender, RoutedEventArgs e)
-        {
-            if ((sender as CheckBox)?.IsChecked == true)
-            {
-                SkipIntro = true;
-            }
-            else
-            {
-                SkipIntro = false;
-            }
-            SetSettings();
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void AutoPlay_Checked(object sender, RoutedEventArgs e)
-        {
-            if ((sender as CheckBox)?.IsChecked == true)
-            {
-                AutoPlay = true;
-            }
-            else
-            {
-                AutoPlay = false;
-            }
-            SetSettings();
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Seach_Clicked(object sender, RoutedEventArgs e)
-        {
-            
-                
-            
-               Search();
-            
-            
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="searchValue"></param>
-        private void Search()
-        {
-            DisplayList = new ObservableCollection<Word>(words);
-            ObservableCollection<Word> searchResults = new ObservableCollection<Word>();
-            
-            List<Word> listToSeach=  new List<Word>(DisplayList);
-            
-            
-
-            try
-            {
-
-
-                foreach (Word word in listToSeach)
-                {
-                    SetPropertyOfGenericObject(word);
-
-                        foreach (var value in ListOfValues)
-                        {
-                        if (value == null)
-                        {
-                            continue;
-                        }
-                            if (value is List<string> sublist)
-                            {
-                                foreach (string s in sublist)
-                                {
-                                    if (s.CaseInsensitiveContains(searchString))
-                                    {
-                                    if (!searchResults.Contains(word))
-                                    {
-                                        searchResults.Add(word);
-                                        continue;
-                                    }
-                                        
-                                    }
-                                }
-                            }
-                            else if (((string)value).CaseInsensitiveContains(searchString))
-                            {
-                            if (!searchResults.Contains(word))
-                                {
-                                searchResults.Add(word);
-                                continue;
-                            }
-                                
-                            }
-                        }
-                    
-                    
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            DisplayList = searchResults;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CheckSoundChapter_Changed(object sender, SelectionChangedEventArgs e)
-        {
-            if (((ComboBox)sender).SelectedItem is string)
-            {
-                SelectedChapter = (string)((ComboBox)sender).SelectedItem;
-            }
-            else if (((ComboBox)sender).SelectedItem is Chapter chap)
-            {
-                SelectedChapter = chap.ChapterName;
-            }
-            else if (((ComboBox)sender).SelectedItem is ComboBoxItem)
-            {
-                SelectedChapter = (string)((ComboBoxItem)((ComboBox)sender).SelectedItem).Content;
-            }
-
-            FindWordWithChapter();
-        }
 
         // Create the OnPropertyChanged method to raise the event
         protected void OnPropertyChanged(string propertyName)
@@ -2750,67 +2191,6 @@ namespace LearnThaiApplication
             {
                 var e = new PropertyChangedEventArgs(propertyName);
                 handler(this, e);
-            }
-        }
-
-        
-
-        
-
-        private void Seach_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
-        {
-            if (e.Key == System.Windows.Input.Key.Enter)
-            {
-
-                Search();
-            }
-        }
-
-        private void RowEditEnding(object sender, DataGridRowEditEndingEventArgs e)
-        {
-            
-            if(e.Row.Item != null)
-            {
-
-                if (!Words.Contains(e.Row.Item))
-                {
-                    Words.Add((Word)e.Row.Item);
-                    
-                }
-                SaveAll();
-            }
-        }
-
-        private void DG_ConMan_KeyUp(object sender, KeyEventArgs e)
-        {
-            if(e.Key == Key.Delete)
-            {
-                try
-                {
-                    if (SelectedWordDG == null)
-                    {
-                        System.Windows.Forms.MessageBox.Show("Please select the full row you want to delete");
-                    }
-                    else if (MessageBox.Show("Do you really want to delete the word " + SelectedWordDG.ThaiScript_String + " ?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
-                    {
-                        Words.Remove(SelectedWordDG);
-                        SaveAll();
-                        if (string.IsNullOrEmpty(searchString))
-                        {
-                            DisplayList = Words;
-                        }
-                        else
-                        {
-                            Search();
-                        }
-                        
-                    }
-                }
-                catch(Exception ex)
-                {
-                    System.Windows.Forms.MessageBox.Show("Error: " + ex.Message, "Error");
-                }
-                
             }
         }
     }
