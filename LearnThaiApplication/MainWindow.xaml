@@ -91,7 +91,7 @@
                     <Label x:Name="lbl_ChapterCount_Page3" Content="Current word:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,142,0,0" Foreground="#FFE6F8FF" />
                 </Grid>
             </TabItem>
-            <TabItem Header="Add new content">
+            <!--<TabItem Header="Add new content">
                 <Grid Background="#FF6DA5C4" Margin="0,-1,0,0">
 
                     <TextBox x:Name="txt_FirstSelectionProperty" HorizontalAlignment="Left" Margin="339,45,0,0" TextWrapping="NoWrap" Text="TextBox" AcceptsReturn="False" VerticalAlignment="Top" Width="319" />
@@ -123,23 +123,24 @@
                     </ScrollViewer>
                     <ComboBox x:Name="cb_ManageOnChapter" HorizontalAlignment="Left" Margin="683,83,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ChapterChanged" />
                 </Grid>
-            </TabItem>
+            </TabItem>-->
             <TabItem Header="New Content Man">
                 <Grid Background="#FF6DA5C4" Margin="0,-1,0,0">
-                    <DataGrid x:Name="dataGrid"
+                    <DataGrid x:Name="dg_ContentManagement"
                               HorizontalAlignment="Left"
                               Margin="0,42,0,0"
+                              Height="485" Width="979"
                               VerticalAlignment="Top"
                               AutoGenerateColumns="False"
                               ItemsSource="{Binding Path=DisplayList, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" 
-                              AddingNewItem="NewItemAdded" 
-                              RowEditEnding="RowEditEnding" Height="485" Width="979"
-                              SelectionMode="Single"
-                              SelectionUnit="Cell">
+                              SelectedItem="{Binding Path=SelectedWordDG, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"                               
+                              CanUserDeleteRows="False"
+                              SelectionMode="Extended"
+                              SelectionUnit="CellOrRowHeader" RowEditEnding="RowEditEnding" KeyUp="DG_ConMan_KeyUp"  >
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter}" MaxWidth="150"/>
-                            <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" MaxWidth="150"/>
-                            <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String}" MaxWidth="150">
+                            <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150"/>
+                            <DataGridTextColumn Header="Name" Binding="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150"/>
+                            <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
@@ -147,7 +148,7 @@
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
 
-                            <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding Path=ThaiFonet_String}" MaxWidth="150">
+                            <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding Path=ThaiFonet_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
@@ -155,8 +156,8 @@
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
-                            
-                            <DataGridTextColumn Header="English meaning" Binding="{Binding Path=EngWords_String}" MaxWidth="250">
+
+                            <DataGridTextColumn Header="English meaning" Binding="{Binding Path=EngWords_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="250">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
@@ -169,7 +170,7 @@
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <ScrollViewer Height="35">
-                                            <TextBox Text="{Binding Path=SoundPath_String}"  TextWrapping="Wrap"/>
+                                            <TextBox Text="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap"/>
                                         </ScrollViewer>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
@@ -179,13 +180,13 @@
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <ScrollViewer Height="45">
-                                            <TextBox Text="{Binding Path=EngDesc}"  TextWrapping="Wrap"/>
+                                            <TextBox Text="{Binding Path=EngDesc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap"/>
                                         </ScrollViewer>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
 
-                            <DataGridTextColumn Header="Tone" Binding="{Binding Path=Tone_String}" MaxWidth="150">
+                            <DataGridTextColumn Header="Tone" Binding="{Binding Path=Tone_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
                                         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>

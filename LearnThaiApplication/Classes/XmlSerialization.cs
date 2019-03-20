@@ -32,7 +32,11 @@ namespace LearnThaiApplication
             {
                 writer?.Close();
             }
-            //MessageBox.Show(message, "Save file Location");
+            //if(ShowSaveLocationMessage)
+            //{
+                //MessageBox.Show(message, "Save file Location");
+            //}
+
         }
 
         /// <summary>
