@@ -30,35 +30,27 @@ namespace LearnThaiApplication
             this.DataContext = this;
             Loaded += MainWindow_Loaded;
             AppWindow = this;
-            
-            LoadSettings();        
+
+            LoadSettings();
             LoadAllFiles();
             SetInitialStates();
-            GetImage();                                   
+            GetImage();
             words.CollectionChanged += ContentCollectionChanged;
             displayList.CollectionChanged += ContentCollectionChanged;
-            if (currentUser == null)
-            {
-                currentUser = new User
-                {
-                    UserName = "Default",
-                    CompletedWords = new ObservableCollection<Word>()
-                };
-                Users.Add(currentUser);
-                SaveFiles<User>(Users, "Users");
-            }
+            //chapters.CollectionChanged += ChaptersCollectionChanged;
         }
 
         #region Variables and properties
 
         #region lists
 
-        private ObservableCollection<Chapter> Chapters = new ObservableCollection<Chapter>();
+        private ObservableCollection<Chapter> chapters = new ObservableCollection<Chapter>();
         private ObservableCollection<Word> displayList = new ObservableCollection<Word>();
         private List<PropertyInfo> ListOfProperties = new List<PropertyInfo>();
-        private List<object> ListOfValues = new List<object>();        
+        private List<object> ListOfValues = new List<object>();
         private List<UserSetting> UserSettings = new List<UserSetting>();
         private ObservableCollection<Word> words = new ObservableCollection<Word>();
+
         public ObservableCollection<Word> DisplayList
         {
             get
@@ -74,7 +66,9 @@ namespace LearnThaiApplication
                 }
             }
         }
+
         private ObservableCollection<User> users = new ObservableCollection<User>();
+
         public ObservableCollection<Word> Words
         {
             get
@@ -90,10 +84,26 @@ namespace LearnThaiApplication
                 }
             }
         }
+
         private void ContentCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
         }
 
+        public ObservableCollection<Chapter> Chapters
+        {
+            get
+            {
+                return chapters;
+            }
+            set
+            {
+                if (chapters != value)
+                {
+                    chapters = value;
+                    OnPropertyChanged("Chapters");
+                }
+            }
+        }
 
         public ObservableCollection<User> Users
         {
@@ -124,8 +134,6 @@ namespace LearnThaiApplication
         private bool skipIntro;
         private bool showSaveLocation = false;
 
-
-
         public bool ShowSaveLocation
         {
             get
@@ -141,6 +149,7 @@ namespace LearnThaiApplication
                 }
             }
         }
+
         #endregion bools
 
         #region strings
@@ -157,20 +166,39 @@ namespace LearnThaiApplication
         private string SettingsFilePath = Environment.CurrentDirectory + @"\Files\Settings\";
         private string SoundFilePath = Environment.CurrentDirectory + @"\Files\Media\Sound\";
         private string thaiScript_String;
-        
+
         private string WebFilePath = Environment.CurrentDirectory + @"\Files\Media\Website\";
         private string WhatToDisplay;
         private string WhatToTrain;
+
         #endregion strings
 
         #region ints
 
         private static int correctPoints = 0;
         private static int currentFileIndex = 0;
+        private int selectedChapterIndex = 0;
 
+
+        public int SelectedChapterIndex
+        {
+            get
+            {
+                return selectedChapterIndex;
+            }
+            set
+            {
+                if (selectedChapterIndex != value)
+                {
+                    selectedChapterIndex = value;
+                    OnPropertyChanged("SelectedChapterIndex");
+                }
+            }
+        }
         #endregion ints
 
         #region objects
+
         private User currentUser;
         public MainWindow AppWindow;
         private object SelectedPropertyToDisplay;
@@ -331,6 +359,7 @@ namespace LearnThaiApplication
                 }
             }
         }
+
         public bool LoopChapter
         {
             get
@@ -394,6 +423,7 @@ namespace LearnThaiApplication
                 }
             }
         }
+
         public string ThaiScriptString
         {
             get
@@ -409,18 +439,20 @@ namespace LearnThaiApplication
                 }
             }
         }
+
         #endregion Notifiers
 
         #region others
 
         private UserSetting settings = new UserSetting();
         private StackPanel sp = new StackPanel();
-        
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private Random RandomIndex { get; set; } = new Random();
         private Type WhatTypeToUse { get; set; }
         private IEnumerable<Window> Windows { get; set; }
+
         #endregion others
 
         #endregion Variables and properties
@@ -471,6 +503,7 @@ namespace LearnThaiApplication
                 }
             }
         }
+
         #endregion TestMethods
 
         #region Main
@@ -523,10 +556,7 @@ namespace LearnThaiApplication
         {
             CurrentFileIndex = 0;
 
-            if (((ComboBox)sender).SelectedItem == null)
-            {
-            }
-            else if (((ComboBox)sender).SelectedItem is string)
+            if (((ComboBox)sender).SelectedItem is string)
             {
                 SelectedChapter = (string)((ComboBox)sender).SelectedItem;
             }
@@ -536,13 +566,18 @@ namespace LearnThaiApplication
             }
             else if (((ComboBox)sender).SelectedItem is ComboBoxItem)
             {
-                SelectedChapter = (string)((ComboBoxItem)((ComboBox)sender).SelectedItem).Content;
+                SelectedChapter = Chapters[SelectedChapterIndex].ChapterName;
+                
             }
 
             FindWordWithChapter();
 
             if (TabIndex == 0)
             {
+                if(SelectedChapter == "All")
+                {
+                    SelectedChapterIndex++;
+                }
                 lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
 
                 if (DisplayList.Count > 0)
@@ -618,7 +653,7 @@ namespace LearnThaiApplication
                         CurrentFileIndex++;
                         if (CurrentFileIndex > list.Count - 1)
                         {
-                            cb_Chapter_Page1.SelectedIndex++;
+                            SelectedChapterIndex++;
                         }
                     }
                     else if (nextValueToAdd < 0)
@@ -626,13 +661,13 @@ namespace LearnThaiApplication
                         CurrentFileIndex--;
                         if (CurrentFileIndex < 0)
                         {
-                            if (cb_Chapter_Page1.SelectedIndex == 0)
+                            if (SelectedChapterIndex == 0)
                             {
-                                cb_Chapter_Page1.SelectedIndex = cb_Chapter_Page1.Items.Count - 1;
+                                SelectedChapterIndex = Chapters.Count - 1;
                             }
                             else
                             {
-                                cb_Chapter_Page1.SelectedIndex--;
+                                SelectedChapterIndex--;
                                 CurrentFileIndex = list.Count - 1;
                             }
                         }
@@ -647,6 +682,12 @@ namespace LearnThaiApplication
         private void FindWordWithChapter()
         {
             DisplayList.Clear();
+
+            if(SelectedChapter == "All")
+            {
+                DisplayList = new ObservableCollection<Word>(Words);
+                return;
+            }
 
             foreach (Word word in Words)
             {
@@ -722,6 +763,7 @@ namespace LearnThaiApplication
             }
             return null;
         }
+
         /// <summary>
         /// Changes to the next chapter in the list
         /// </summary>
@@ -731,7 +773,8 @@ namespace LearnThaiApplication
         {
             if (CurrentFileIndex >= list.Count)
             {
-                cb_Chapter_Page1.SelectedIndex++;
+                
+                SelectedChapterIndex++;
             }
         }
 
@@ -790,13 +833,14 @@ namespace LearnThaiApplication
         private void PreTextChanger(int change)
         {
             if (TabIndex == 0)
-            {
+            { 
                 TextChanger<Word>(DisplayList, change);
                 lbl_Counter_Page1.Content = CurrentFileIndex;
                 SpeakerStatus();
             }
             if (TabIndex == 1)
             {
+                
                 TextChanger<Word>(DisplayList, change);
                 lbl_Counter_Page2.Content = CurrentFileIndex;
                 SpeakerStatus();
@@ -894,6 +938,35 @@ namespace LearnThaiApplication
                 }
             }
         }
+
+        private bool CheckIfUserHasCompleted(IList<Word> list, Word wordTwo)
+        {
+            foreach (Word wordOne in list)
+            {
+                if (wordOne.ThaiScript_String == wordTwo.ThaiScript_String)
+                {
+                    if (wordOne.ThaiFonet_String == wordTwo.ThaiFonet_String)
+                    {
+                        if (wordOne.EngWords_String == wordTwo.EngWords_String)
+                        {
+                            if (wordOne.EngDesc == wordTwo.EngDesc)
+                            {
+                                if (wordOne.Chapter == wordTwo.Chapter)
+                                {
+                                    if (wordOne.SoundPath_String == wordTwo.SoundPath_String)
+                                    {
+                                        return true;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            return false;
+        }
+
         /// <summary>
         /// Changes the content of textblocks tot he next or previous value.
         /// </summary>
@@ -912,14 +985,28 @@ namespace LearnThaiApplication
             }
             try
             {
-
-                if(currentUser.CompletedWords.Contains(list[CurrentFileIndex]))
+                if (CheckIfUserHasCompleted(currentUser.CompletedWords, list[CurrentFileIndex + movementValue]))
                 {
-                    if (movementValue == 0)
+                    
+                    if(movementValue == 0)
                     {
-                        movementValue++;
+                        
+                        CurrentFileIndex++;
                     }
-                    CheckAndChangePosisionInList(list, movementValue);
+                    else if(movementValue == -1 && CurrentFileIndex < list.Count)
+                    {
+                        movementValue = 0;
+                        if (loopChapter)
+                        {
+                            currentFileIndex = list.Count - 1;
+                        }
+                        else
+                        {
+                            
+                            SelectedChapterIndex--;
+                        }
+                    }
+                    TextChanger<T>(list, movementValue);
                 }
                 Type whatIsT = typeof(T);
 
@@ -935,13 +1022,13 @@ namespace LearnThaiApplication
 
                     if (retrivedChapter == SelectedChapter)
                     {
-                        if (SelectedPropertyToDisplay is List<String> propertyIsList)
+                        if (SelectedPropertyToDisplay is List<string> propertyIsList)
                         {
                             ThaiScriptString = ListToString(propertyIsList);
                         }
                         else
                         {
-                            ThaiScriptString = (String)SelectedPropertyToDisplay;
+                            ThaiScriptString = (string)SelectedPropertyToDisplay;
                         }
                     }
                     else
@@ -1015,7 +1102,6 @@ namespace LearnThaiApplication
                                     currentUser.CompletedWords.Add(list[CurrentFileIndex]);
                                     SaveFiles<User>(Users, "Users");
                                 }
-                                
                             }
                         }
                     }
@@ -1126,22 +1212,23 @@ namespace LearnThaiApplication
             LoadFiles<Word>(words, "Thai_Word");
 
             CheckForUsers();
-
-
         }
 
         private void CheckForUsers()
         {
-            foreach(var f in Directory.GetFiles(SettingsFilePath))
+            LoadFiles<User>(Users, "Users");
+
+            currentUser = Users.First();
+            if (currentUser == null)
             {
-                FileInfo fi = new FileInfo(f);
-                if (fi.Name.CaseInsensitiveContains("User_"))
+                currentUser = new User
                 {
-                    
-                    LoadFiles<User>(Users, fi.Name);
-                }
+                    UserName = "Default",
+                    CompletedWords = new ObservableCollection<Word>()
+                };
+                Users.Add(currentUser);
+                SaveFiles<User>(Users, "Users");
             }
-            
         }
 
         /// <summary>
@@ -1246,8 +1333,11 @@ namespace LearnThaiApplication
                 ClearFields();
                 CurrentFileIndex = 0;
                 ResetChapter();
+                if(TabIndex == 1)
+                {
+                    PreTextChanger(0);
 
-                PreTextChanger(0);
+                }
 
                 if (MainWindow_tabController.SelectedIndex == 3)
                 {
@@ -1319,13 +1409,32 @@ namespace LearnThaiApplication
         {
             if (TabIndex == 0)
             {
-                cb_Chapter_Page1.SelectedIndex = 0;
-                SelectedChapter = (string)((ComboBoxItem)cb_Chapter_Page1.SelectedItem).Content;
+                SelectedChapterIndex = 0;
+                if (Chapters.Count != 0)
+                {
+                    if (SelectedChapter == "All")
+                    {
+                        SelectedChapter = Chapters[selectedChapterIndex++].ChapterName;
+                    }
+                    else
+                    {
+                        SelectedChapter = Chapters[SelectedChapterIndex].ChapterName;
+                    }
+                    
+                }
+               
             }
             else if (TabIndex == 1)
             {
-                cb_SymbolChapters.SelectedIndex = 0;
-                SelectedChapter = (string)((ComboBoxItem)cb_SymbolChapters.SelectedItem).Content;
+                SelectedChapterIndex= 0;
+                if (SelectedChapter == "All")
+                {
+                    SelectedChapter = Chapters[selectedChapterIndex++].ChapterName;
+                }
+                else
+                {
+                    SelectedChapter = Chapters[SelectedChapterIndex].ChapterName;
+                }
             }
 
             FindWordWithChapter();
@@ -1372,6 +1481,7 @@ namespace LearnThaiApplication
         {
             XmlSerialization.WriteToXmlFile<UserSetting>(SettingsFilePath + "Settings.xml", settings, false);
         }
+
         /// <summary>
         ///
         /// </summary>
@@ -1419,9 +1529,9 @@ namespace LearnThaiApplication
 
                 PopulateManageChapterCB();
 
-                cb_SymbolChapters.SelectedIndex = 0;
+                //cb_SymbolChapters.SelectedIndex = 0;
                 lbl_ChapterCount_Page2.Content = "Words in chapter: " + DisplayList.Count.ToString();
-                cb_Chapter_Page1.SelectedIndex = 0;
+                SelectedChapterIndex = 0;
                 lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
             }
 
@@ -1445,6 +1555,7 @@ namespace LearnThaiApplication
             settings.AutoPlaySounds = AutoPlay;
             SaveSetting();
         }
+
         /// <summary>
         ///
         /// </summary>
@@ -1462,11 +1573,10 @@ namespace LearnThaiApplication
             }
             SetSettings();
         }
+
         #endregion Settings
 
         #region Submit
-
-
 
         /// <summary>
         ///
@@ -1633,6 +1743,7 @@ namespace LearnThaiApplication
             //    MessageBox.Show("Error: No submit style selected");
             //}
         }
+
         #endregion Submit
 
         #region Sound
@@ -1731,6 +1842,7 @@ namespace LearnThaiApplication
 
             FindWordWithChapter();
         }
+
         /// <summary>
         /// Cycles the list to find all words that have and dont have sounds.
         /// </summary>
@@ -2116,6 +2228,7 @@ namespace LearnThaiApplication
                 MessageBox.Show("Error:" + ex);
             }
         }
+
         #endregion Sound
 
         #region Async
@@ -2195,6 +2308,7 @@ namespace LearnThaiApplication
         {
             pbStatus.Value = e.ProgressPercentage;
         }
+
         #endregion Async
 
         // Create the OnPropertyChanged method to raise the event
