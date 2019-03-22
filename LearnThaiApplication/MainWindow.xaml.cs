@@ -16,6 +16,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using static LearnThaiApplication.Classes.User;
 
 namespace LearnThaiApplication
 {
@@ -936,21 +937,39 @@ namespace LearnThaiApplication
             }
         }
 
-        private bool CheckIfUserHasCompleted(IList<Word> list, Word wordTwo)
+        private bool CheckIfUserHasCompleted(List<CompletedWord> list, Word wordTwo, bool justCheckWord)
         {
-            foreach (Word wordOne in list)
+
+            foreach (CompletedWord wordOne in list)
             {
-                if (wordOne.ThaiScript_String == wordTwo.ThaiScript_String)
+                if (wordOne.word.ThaiScript_String == wordTwo.ThaiScript_String)
                 {
-                    if (wordOne.ThaiFonet_String == wordTwo.ThaiFonet_String)
+                    if (wordOne.word.ThaiFonet_String == wordTwo.ThaiFonet_String)
                     {
-                        if (wordOne.EngWords_String == wordTwo.EngWords_String)
+                        if (wordOne.word.EngWords_String == wordTwo.EngWords_String)
                         {
-                            if (wordOne.EngDesc == wordTwo.EngDesc)
+                            if (wordOne.word.EngDesc == wordTwo.EngDesc)
                             {
-                                if (wordOne.Chapter == wordTwo.Chapter)
+                                if (wordOne.word.Chapter == wordTwo.Chapter)
                                 {
-                                    return true;
+                                    if (justCheckWord)
+                                    {
+                                        return true;
+                                    }
+
+                                    if (WhatToTrain == "ThaiFonet")
+                                    {
+                                        return wordOne.foneticCompleted;
+                                    }
+                                    else if (WhatToTrain == "ThaiScript")
+                                    {
+                                        return wordOne.scriptCompleted;
+                                    }
+                                    else if (WhatToTrain == "EngWords")
+                                    {
+                                        return wordOne.meaningCompleted;
+                                    }
+                                    
                                 }
                             }
                         }
@@ -963,7 +982,7 @@ namespace LearnThaiApplication
 
         private void CheckIfCompleted(ObservableCollection<Word> list, int movementValue)
         {
-            if (CheckIfUserHasCompleted(currentUser.CompletedWords, list[CurrentFileIndex]))
+            if (CheckIfUserHasCompleted(currentUser.CompletedWords, list[CurrentFileIndex], false))
             {
                 if (movementValue == 0)
                 {
@@ -1056,6 +1075,32 @@ namespace LearnThaiApplication
             }
         }
 
+        private int FindIndexInCompletedWords(List<CompletedWord> list, Word wordTwo)
+        {
+            foreach(CompletedWord wordOne in list)
+            {
+                if (wordOne.word.ThaiScript_String == wordTwo.ThaiScript_String)
+                {
+                    if (wordOne.word.ThaiFonet_String == wordTwo.ThaiFonet_String)
+                    {
+                        if (wordOne.word.EngWords_String == wordTwo.EngWords_String)
+                        {
+                            if (wordOne.word.EngDesc == wordTwo.EngDesc)
+                            {
+                                if (wordOne.word.Chapter == wordTwo.Chapter)
+                                {
+                                    return list.IndexOf(wordOne);
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return -1;
+        }
+
+
         /// <summary>
         /// Compares the written answear to the current words propterties.
         /// </summary>
@@ -1067,7 +1112,8 @@ namespace LearnThaiApplication
         /// <param name="checkBoxDesc">What checkbox to use to check if description is on</param>
         private void ValidateAnswer(ObservableCollection<Word> list)
         {
-            SetPropertyOfGenericObject(list[CurrentFileIndex]);
+            Word word = list[currentFileIndex];
+            SetPropertyOfGenericObject(word);
 
             SelectedPropertyToValidate = GetValueFromValueList(WhatToTrain);
 
@@ -1091,9 +1137,36 @@ namespace LearnThaiApplication
                             {
                                 correctPoints++;
                                 rightAnswears++;
-                                if (!currentUser.CompletedWords.Contains(list[CurrentFileIndex]))
+
+                                if(!CheckIfUserHasCompleted(currentUser.CompletedWords, word, true))
                                 {
-                                    currentUser.CompletedWords.Add(list[CurrentFileIndex]);
+                                    CompletedWord newCompleted = new CompletedWord
+                                    {
+                                        word = list[CurrentFileIndex]
+                                    };
+                                    currentUser.CompletedWords.Add(newCompleted);
+                                }
+
+
+                                if (!CheckIfUserHasCompleted(currentUser.CompletedWords, word, false))
+                                {
+
+                                    int  index = FindIndexInCompletedWords(currentUser.CompletedWords, word);
+
+                                    if (WhatToTrain == "ThaiFonet")
+                                    {
+                                        currentUser.CompletedWords[index].foneticCompleted=true;
+                                    }
+                                    else if (WhatToTrain == "ThaiScript")
+                                    {
+                                        currentUser.CompletedWords[index].scriptCompleted = true;
+                                    }
+                                    else if (WhatToTrain == "EngWords")
+                                    {
+
+                                        currentUser.CompletedWords[index].meaningCompleted = true;
+                                    }
+                                     
                                     SaveFiles<User>(Users, "Users");
                                 }
                             }
@@ -1218,7 +1291,7 @@ namespace LearnThaiApplication
                 currentUser = new User
                 {
                     UserName = "Default",
-                    CompletedWords = new ObservableCollection<Word>()
+                    CompletedWords = new List<CompletedWord>()
                 };
                 Users.Add(currentUser);
                 SaveFiles<User>(Users, "Users");
@@ -1327,7 +1400,7 @@ namespace LearnThaiApplication
                 ClearFields();
                 CurrentFileIndex = 0;
                 ResetChapter();
-                if (TabIndex == 1)
+                if (TabIndex == 0)
                 {
                     PreTextChanger(0);
                 }
@@ -2319,5 +2392,7 @@ namespace LearnThaiApplication
             currentUser.CompletedWords.Clear();
             SaveFiles<User>(Users, "Users");
         }
+
+        
     }
 }

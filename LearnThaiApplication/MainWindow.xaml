@@ -117,7 +117,7 @@
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <ScrollViewer Height="35">
-                                            <TextBox Text="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap" />
+                                            <TextBox x:Name="txt_Child_Sound"   Text="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap" />
                                         </ScrollViewer>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
@@ -126,8 +126,8 @@
                             <DataGridTemplateColumn Header="Description" MaxWidth="350">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <ScrollViewer Height="45">
-                                            <TextBox Text="{Binding Path=EngDesc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap" />
+                                        <ScrollViewer Height="45" FocusManager.FocusedElement="{Binding ElementName=txt_Child_Desc}" >
+                                            <TextBox x:Name="txt_Child_Desc" Text="{Binding Path=EngDesc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap" />
                                         </ScrollViewer>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>

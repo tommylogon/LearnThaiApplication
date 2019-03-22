@@ -1,23 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LearnThaiApplication.Classes
 {
     public class User : INotifyPropertyChanged
     {
         private string userName;
-        private ObservableCollection<Word> completedWords;
+
+        public class CompletedWord
+        {
+            public Word word;            
+            public bool scriptCompleted;
+            public bool foneticCompleted;
+            public bool meaningCompleted;
+        }
+
+        private List<CompletedWord> completedWords;
 
         public event PropertyChangedEventHandler PropertyChanged;
+
         public User()
         {
 
         }
+
         public string UserName
         {
             get
@@ -34,7 +40,7 @@ namespace LearnThaiApplication.Classes
             }
         }
 
-        public ObservableCollection<Word> CompletedWords
+        public List<CompletedWord> CompletedWords
         {
             get
             {
@@ -49,6 +55,7 @@ namespace LearnThaiApplication.Classes
                 }
             }
         }
+
         // Create the OnPropertyChanged method to raise the event
         protected void OnPropertyChanged(string name)
         {
