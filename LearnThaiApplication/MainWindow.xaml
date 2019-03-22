@@ -19,7 +19,7 @@
                     <Button x:Name="btn_Next_Word_Page1" Content="Next" HorizontalAlignment="Left" Height="24" Margin="412,183,0,0" VerticalAlignment="Top" Width="35" Click="NextWord" />
                     <Button x:Name="btn_Prev_Word_Page1" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="278,183,0,0" VerticalAlignment="Top" Width="35" Click="PrevWord" />
                     <TextBlock x:Name="txb_Status_Page1" HorizontalAlignment="Left" Margin="278,222,0,0" TextWrapping="Wrap" Text="{Binding Path=Result}" VerticalAlignment="Top" Height="35" Width="245" FontSize="24" Foreground="#FFE6F8FF" />
-                    <ComboBox x:Name="cb_Chapter_Page1" ItemsSource="{Binding Path=Chapters}" DisplayMemberPath="ChapterName" SelectedIndex="{Binding Path=SelectedChapterIndex, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="11,78,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="Content" SelectionChanged="ChapterChanged"/>
+                    <ComboBox x:Name="cb_Chapter_Page1" ItemsSource="{Binding Path=Chapters, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="ChapterName" SelectedIndex="{Binding Path=SelectedChapterIndex, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="11,78,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="Content" SelectionChanged="ChapterChanged" />
                     <Label x:Name="lbl_Chapter_Page1" Content="Chapter:" HorizontalAlignment="Left" Margin="11,47,0,0" VerticalAlignment="Top" Width="72" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_ChapterCount_Page1" Content="Words in chapter: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,116,0,0" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_TrainWhat_Page1" Content="What to train" HorizontalAlignment="Left" Margin="11,220,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
@@ -73,7 +73,7 @@
                     <Label x:Name="lbl_ChapterCount_Page3" Content="Current word:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,142,0,0" Foreground="#FFE6F8FF" />
                 </Grid>
             </TabItem>
-            
+
             <TabItem Header="New Content Man">
                 <Grid Background="#FF6DA5C4" Margin="0,-1,0,0">
                     <DataGrid x:Name="dg_ContentManagement"
@@ -82,17 +82,17 @@
                               Height="485" Width="979"
                               VerticalAlignment="Top"
                               AutoGenerateColumns="False"
-                              ItemsSource="{Binding Path=DisplayList, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" 
-                              SelectedItem="{Binding Path=SelectedWordDG, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"                               
+                              ItemsSource="{Binding Path=DisplayList, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
+                              SelectedItem="{Binding Path=SelectedWordDG, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"
                               CanUserDeleteRows="False"
                               SelectionMode="Extended"
-                              SelectionUnit="CellOrRowHeader" RowEditEnding="RowEditEnding" KeyUp="DG_ConMan_KeyUp"  >
+                              SelectionUnit="CellOrRowHeader" RowEditEnding="RowEditEnding" KeyUp="DG_ConMan_KeyUp">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150"/>
+                            <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150" />
                             <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
-                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
@@ -100,8 +100,7 @@
                             <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding Path=ThaiFonet_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
-                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-
+                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
@@ -109,8 +108,7 @@
                             <DataGridTextColumn Header="English meaning" Binding="{Binding Path=EngWords_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="250">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
-                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-
+                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
@@ -119,7 +117,7 @@
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <ScrollViewer Height="35">
-                                            <TextBox Text="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap"/>
+                                            <TextBox Text="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap" />
                                         </ScrollViewer>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
@@ -129,7 +127,7 @@
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <ScrollViewer Height="45">
-                                            <TextBox Text="{Binding Path=EngDesc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap"/>
+                                            <TextBox Text="{Binding Path=EngDesc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap" />
                                         </ScrollViewer>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
@@ -138,7 +136,7 @@
                             <DataGridTextColumn Header="Tone" Binding="{Binding Path=Tone_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style>
-                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
@@ -177,8 +175,8 @@
                     <CheckBox x:Name="ckb_setting_7_Copy2" IsChecked="{Binding IsContinious}" Content="setting" HorizontalAlignment="Left" Margin="300,128,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_setting_7_Copy3" IsChecked="{Binding IsContinious}" Content="setting" HorizontalAlignment="Left" Margin="300,148,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_setting_7_Copy4" IsChecked="{Binding IsContinious}" Content="setting" HorizontalAlignment="Left" Margin="300,168,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                    <ComboBox x:Name="comboBox" ItemsSource="{Binding Path=Users}" HorizontalAlignment="Left" Margin="859,9,0,0" VerticalAlignment="Top" Width="120"/>
-                    <Button x:Name="btn_ClearCurrentUserList" Content="Clear known words" HorizontalAlignment="Left" Margin="748,10,0,0" VerticalAlignment="Top" Width="106" Click="ClearCurrentUserKnownWords"/>
+                    <ComboBox x:Name="comboBox" ItemsSource="{Binding Path=Users}" HorizontalAlignment="Left" Margin="859,9,0,0" VerticalAlignment="Top" Width="120" />
+                    <Button x:Name="btn_ClearCurrentUserList" Content="Clear known words" HorizontalAlignment="Left" Margin="748,10,0,0" VerticalAlignment="Top" Width="106" Click="ClearCurrentUserKnownWords" />
                 </Grid>
             </TabItem>
         </TabControl>

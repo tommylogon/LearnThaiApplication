@@ -41,6 +41,99 @@
         </Tone>
         <Chapter>Key to understanding Thai</Chapter>
       </Word>
+      <Word>
+        <ThaiScript>
+          <string>นั่ง</string>
+        </ThaiScript>
+        <ThaiFonet>
+          <string>nang</string>
+        </ThaiFonet>
+        <EngWords>
+          <string>Sit</string>
+        </EngWords>
+        <SoundPath>
+          <string />
+        </SoundPath>
+        <EngDesc>The a (ั) is pronounced like in bar, car or cut</EngDesc>
+        <Tone>
+          <string />
+        </Tone>
+        <Chapter>Key to understanding Thai</Chapter>
+      </Word>
+      <Word>
+        <ThaiScript>
+          <string>แขน</string>
+        </ThaiScript>
+        <ThaiFonet>
+          <string>khaaen</string>
+        </ThaiFonet>
+        <EngWords>
+          <string>Arm</string>
+        </EngWords>
+        <SoundPath>
+          <string />
+        </SoundPath>
+        <EngDesc>The æ (แ) is pronounced like (british) bag, care or Rabbit</EngDesc>
+        <Tone>
+          <string>Key to understanding Thai</string>
+        </Tone>
+        <Chapter>Key to understanding Thai</Chapter>
+      </Word>
+      <Word>
+        <ThaiScript>
+          <string>คุก</string>
+        </ThaiScript>
+        <ThaiFonet>
+          <string>khook</string>
+        </ThaiFonet>
+        <EngWords>
+          <string>jail</string>
+        </EngWords>
+        <SoundPath>
+          <string />
+        </SoundPath>
+        <EngDesc>The oo (ุ) is pronounced like in butcher, put</EngDesc>
+        <Tone />
+        <Chapter>Key to understanding Thai</Chapter>
+      </Word>
+      <Word>
+        <ThaiScript>
+          <string>หัวใจ</string>
+        </ThaiScript>
+        <ThaiFonet>
+          <string>hua jai</string>
+        </ThaiFonet>
+        <EngWords>
+          <string>Heart</string>
+        </EngWords>
+        <SoundPath>
+          <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\หัวใจ.wma</string>
+        </SoundPath>
+        <EngDesc>The ai (ใ) is pronounced like in die, eye or Thai</EngDesc>
+        <Tone>
+          <string />
+        </Tone>
+        <Chapter>Key to understanding Thai</Chapter>
+      </Word>
+      <Word>
+        <ThaiScript>
+          <string>สีดำ</string>
+        </ThaiScript>
+        <ThaiFonet>
+          <string>see dam</string>
+        </ThaiFonet>
+        <EngWords>
+          <string>Black</string>
+        </EngWords>
+        <SoundPath>
+          <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\สีดำ.wma</string>
+        </SoundPath>
+        <EngDesc>The am (ำ) is pronounced like in (british) rum</EngDesc>
+        <Tone>
+          <string />
+        </Tone>
+        <Chapter>Key to understanding Thai</Chapter>
+      </Word>
     </CompletedWords>
   </User>
 </ArrayOfUser>
