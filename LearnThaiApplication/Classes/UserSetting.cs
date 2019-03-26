@@ -3,7 +3,7 @@
     public class UserSetting
     {
         public bool DescriptionOn { get; set; }
-        public bool IsContinious { get; set; }
+        public bool IsLooping { get; set; }
         public bool DisplayAllPropertiesInDescription { get; set; }
         public bool RandomOn { get; set; }
         public bool SkipIntro { get; set; }
@@ -18,7 +18,7 @@
         public UserSetting(bool descriptionOn, bool loopChapter, bool displayAllPropertiesInDescription, bool randomOn, bool skipIntro, string whatToDisplay, string whatToTrain)
         {
             DescriptionOn = descriptionOn;
-            IsContinious = loopChapter;
+            IsLooping = loopChapter;
             DisplayAllPropertiesInDescription = displayAllPropertiesInDescription;
             RandomOn = randomOn;
             SkipIntro = skipIntro;

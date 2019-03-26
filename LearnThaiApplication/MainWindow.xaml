@@ -150,7 +150,7 @@
                 <Grid Background="#FF6DA5C4" Margin="0">
                     <Label Content="Current Path to language files is:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Foreground="#FFE6F8FF" />
                     <TextBlock x:Name="txb_FilePath_Settings" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="196,15,0,0" Foreground="#FFE6F8FF" />
-                    <CheckBox x:Name="ckb_LoopChapter" IsChecked="{Binding Path=IsContinious}" Content="Loop chapter" HorizontalAlignment="Left" Margin="171,71,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_LoopChapter" IsChecked="{Binding Path=IsLooping}" Content="Loop chapter" HorizontalAlignment="Left" Margin="171,71,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <Button Content="Find sound files" HorizontalAlignment="Left" Margin="135,292,0,0" VerticalAlignment="Top" Width="90" Click="StartSoundDownload" RenderTransformOrigin="1.152,0.697" />
                     <Button Content="Check sound status" HorizontalAlignment="Left" Margin="135,317,0,0" VerticalAlignment="Top" Width="112" Click="CheckSoundStatus_Clicked" />
                     <ComboBox x:Name="cb_SelectList" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CheckSoundChapter_Changed" />
