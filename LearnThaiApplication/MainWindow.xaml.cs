@@ -38,7 +38,7 @@ namespace LearnThaiApplication
             GetImage();
             words.CollectionChanged += ContentCollectionChanged;
             displayList.CollectionChanged += ContentCollectionChanged;
-            //chapters.CollectionChanged += ChaptersCollectionChanged;
+            //chapters.CollectionChanged += ChaptersCollectionChanged;            
         }
 
         #region Variables and properties
@@ -125,15 +125,15 @@ namespace LearnThaiApplication
         #endregion lists
 
         #region bools
-
+        
         private bool autoPlay;
         private bool displayAllPropertiesInDescription;
-        private bool hasDescription = true;
-        private bool isContinious;
+        private bool hasDescription = true;        
         private bool isRandom;
-        private bool loopChapter = true;
+        private bool isContinious = true;
         private bool skipIntro;
         private bool showSaveLocation = false;
+        private bool skipCompleted = false;
 
         public bool ShowSaveLocation
         {
@@ -147,6 +147,120 @@ namespace LearnThaiApplication
                 {
                     showSaveLocation = value;
                     OnPropertyChanged("ShowSaveLocation");
+                }
+            }
+        }
+
+        public bool DisplayAll
+        {
+            get
+            {
+                return displayAllPropertiesInDescription;
+            }
+            set
+            {
+                if (displayAllPropertiesInDescription != value)
+                {
+                    displayAllPropertiesInDescription = value;
+                    HasDescription = value;
+                    OnPropertyChanged("DisplayAll");
+                }
+            }
+        }
+
+        public bool HasDescription
+        {
+            get
+            {
+                return hasDescription;
+            }
+            set
+            {
+                if (hasDescription != value)
+                {
+                    hasDescription = value;
+                    OnPropertyChanged("HasDescription");
+                }
+            }
+        }
+
+        public bool IsContinious
+        {
+            get
+            {
+                return isContinious;
+            }
+            set
+            {
+                if (isContinious != value)
+                {
+                    isContinious = value;
+                    OnPropertyChanged("IsContinious");
+                }
+            }
+        }
+
+        public bool IsRandom
+        {
+            get
+            {
+                return isRandom;
+            }
+            set
+            {
+                if (isRandom != value)
+                {
+                    isRandom = value;
+                    OnPropertyChanged("IsRandom");
+                }
+            }
+        }
+
+        public bool AutoPlay
+        {
+            get
+            {
+                return autoPlay;
+            }
+            set
+            {
+                if (autoPlay != value)
+                {
+                    autoPlay = value;
+                    OnPropertyChanged("AutoPlay");
+                }
+            }
+        }
+
+
+        public bool SkipCompleted
+        {
+            get
+            {
+                return skipCompleted;
+            }
+            set
+            {
+                if (skipCompleted != value)
+                {
+                    skipCompleted = value;
+                    OnPropertyChanged("SkipCompleted");
+                }
+            }
+        }
+
+        public bool SkipIntro
+        {
+            get
+            {
+                return skipIntro;
+            }
+            set
+            {
+                if (skipIntro != value)
+                {
+                    skipIntro = value;
+                    OnPropertyChanged("SkipIntro");
                 }
             }
         }
@@ -242,22 +356,6 @@ namespace LearnThaiApplication
             }
         }
 
-        public bool AutoPlay
-        {
-            get
-            {
-                return autoPlay;
-            }
-            set
-            {
-                if (autoPlay != value)
-                {
-                    autoPlay = value;
-                    OnPropertyChanged("AutoPlay");
-                }
-            }
-        }
-
         public string CorrectPoints
         {
             get
@@ -296,86 +394,6 @@ namespace LearnThaiApplication
             }
         }
 
-        public bool DisplayAll
-        {
-            get
-            {
-                return displayAllPropertiesInDescription;
-            }
-            set
-            {
-                if (displayAllPropertiesInDescription != value)
-                {
-                    displayAllPropertiesInDescription = value;
-                    HasDescription = value;
-                    OnPropertyChanged("DisplayAll");
-                }
-            }
-        }
-
-        public bool HasDescription
-        {
-            get
-            {
-                return hasDescription;
-            }
-            set
-            {
-                if (hasDescription != value)
-                {
-                    hasDescription = value;
-                    OnPropertyChanged("HasDescription");
-                }
-            }
-        }
-
-        public bool IsContinious
-        {
-            get
-            {
-                return isContinious;
-            }
-            set
-            {
-                if (isContinious != value)
-                {
-                    isContinious = value;
-                    OnPropertyChanged("IsContinious");
-                }
-            }
-        }
-
-        public bool IsRandom
-        {
-            get
-            {
-                return isRandom;
-            }
-            set
-            {
-                if (isRandom != value)
-                {
-                    isRandom = value;
-                    OnPropertyChanged("IsRandom");
-                }
-            }
-        }
-
-        public bool LoopChapter
-        {
-            get
-            {
-                return loopChapter;
-            }
-            set
-            {
-                if (loopChapter != value)
-                {
-                    loopChapter = value;
-                    OnPropertyChanged("LoopChapter");
-                }
-            }
-        }
 
         public string Result
         {
@@ -405,22 +423,6 @@ namespace LearnThaiApplication
                 {
                     searchString = value;
                     OnPropertyChanged("SearchString");
-                }
-            }
-        }
-
-        public bool SkipIntro
-        {
-            get
-            {
-                return skipIntro;
-            }
-            set
-            {
-                if (skipIntro != value)
-                {
-                    skipIntro = value;
-                    OnPropertyChanged("SkipIntro");
                 }
             }
         }
@@ -623,7 +625,7 @@ namespace LearnThaiApplication
             }
             else
             {
-                if (LoopChapter)
+                if (IsContinious)
                 {
                     if (nextValueToAdd > 0)
                     {
@@ -837,7 +839,7 @@ namespace LearnThaiApplication
                 lbl_Counter_Page1.Content = CurrentFileIndex;
                 SpeakerStatus();
             }
-            if (TabIndex == 1)
+            else if (TabIndex == 1)
             {
                 TextChanger(DisplayList, change);
                 lbl_Counter_Page2.Content = CurrentFileIndex;
@@ -991,7 +993,7 @@ namespace LearnThaiApplication
                 else if (movementValue == -1 && CurrentFileIndex < list.Count)
                 {
                     movementValue = 0;
-                    if (loopChapter)
+                    if (isContinious)
                     {
                         currentFileIndex = list.Count - 1;
                     }
@@ -1003,6 +1005,7 @@ namespace LearnThaiApplication
                 TextChanger(list, movementValue);
                 return;
             }
+            
         }
 
         /// <summary>
@@ -1026,6 +1029,7 @@ namespace LearnThaiApplication
                 CheckAndChangePosisionInList(list, movementValue);
 
                 CheckIfCompleted(list, movementValue);
+                
 
                 SetPropertyOfGenericObject(list[CurrentFileIndex]);
 
@@ -1046,7 +1050,8 @@ namespace LearnThaiApplication
                 }
                 else
                 {
-                    MessageBox.Show("There are no content with chapter" + SelectedChapter + " available right now.");
+
+                    Dispatcher.BeginInvoke(new Action(() => MessageBox.Show("There are no content with chapter" + SelectedChapter + " available right now.")));
                     return;
                 }
 
@@ -1331,7 +1336,7 @@ namespace LearnThaiApplication
                 settings = XmlSerialization.ReadFromXmlFile<UserSetting>(SettingsFilePath + "Settings.xml");
 
                 hasDescription = settings.DescriptionOn;
-                LoopChapter = settings.LoopChapter;
+                IsContinious = settings.IsContinious;
                 DisplayAll = settings.DisplayAllPropertiesInDescription;
                 IsRandom = settings.RandomOn;
                 SkipIntro = settings.SkipIntro;
@@ -1349,7 +1354,7 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void LoopChapter_Checked(object sender, RoutedEventArgs e)
         {
-            LoopChapter = (sender as CheckBox)?.IsChecked == true;
+            IsContinious = true;
             SetSettings();
         }
 
@@ -1398,14 +1403,14 @@ namespace LearnThaiApplication
             {
                 TabIndex = MainWindow_tabController.SelectedIndex;
                 ClearFields();
-                CurrentFileIndex = 0;
+                
                 ResetChapter();
                 if (TabIndex == 0)
                 {
                     PreTextChanger(0);
                 }
 
-                if (MainWindow_tabController.SelectedIndex == 3)
+                else if (MainWindow_tabController.SelectedIndex == 3)
                 {
                     DisplayList = new ObservableCollection<Word>(Words);
                 }
@@ -1444,7 +1449,7 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void Randomized_Checked(object sender, RoutedEventArgs e)
         {
-            LoopChapter = false;
+            IsContinious = false;
             SetSettings();
         }
 
@@ -1478,9 +1483,11 @@ namespace LearnThaiApplication
                 SelectedChapterIndex = 0;
                 if (Chapters.Count != 0)
                 {
+                    SelectedChapter = Chapters[SelectedChapterIndex].ChapterName;
                     if (SelectedChapter == "All")
                     {
-                        SelectedChapter = Chapters[selectedChapterIndex++].ChapterName;
+                        selectedChapterIndex++;
+                        SelectedChapter = Chapters[selectedChapterIndex].ChapterName;
                     }
                     else
                     {
@@ -1610,7 +1617,7 @@ namespace LearnThaiApplication
         {
             settings.DescriptionOn = hasDescription;
             settings.RandomOn = IsRandom;
-            settings.LoopChapter = LoopChapter;
+            settings.IsContinious = IsContinious;
             settings.WhatToDisplay = WhatToDisplay;
             settings.WhatToTrain = WhatToTrain;
             settings.SkipIntro = SkipIntro;
