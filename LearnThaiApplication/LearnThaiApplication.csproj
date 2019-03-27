@@ -127,6 +127,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Classes\Chapter.cs" />
+    <Compile Include="Classes\EnumMatchToBooleanConverter.cs" />
     <Compile Include="Classes\Extensions.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\UserSetting.cs" />

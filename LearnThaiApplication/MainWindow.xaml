@@ -3,10 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:LearnThaiApplication"
+        xmlns:local="clr-namespace:LearnThaiApplication.Classes"
         mc:Ignorable="d"
         Title="Learn Thai" Height="600" Width="1000">
-
+    <Window.Resources>
+        <local:EnumMatchToBooleanConverter x:Key="enumConverter" />
+    </Window.Resources>
     <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="0,0,0,-1">
         <TabControl x:Name="MainWindow_tabController" HorizontalAlignment="Left"  VerticalAlignment="Top"  Background="White" Foreground="Black" SelectionChanged="OnTabChanged" Width="995" Height="564">
             <TabItem Header="Learn the language" Margin="0,0,0,-2">
@@ -19,13 +21,13 @@
                     <Button x:Name="btn_Next_Word_Page1" Content="Next" HorizontalAlignment="Left" Height="24" Margin="412,183,0,0" VerticalAlignment="Top" Width="35" Click="NextWord" />
                     <Button x:Name="btn_Prev_Word_Page1" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="278,183,0,0" VerticalAlignment="Top" Width="35" Click="PrevWord" />
                     <TextBlock x:Name="txb_Status_Page1" HorizontalAlignment="Left" Margin="278,222,0,0" TextWrapping="Wrap" Text="{Binding Path=Result}" VerticalAlignment="Top" Height="35" Width="245" FontSize="24" Foreground="#FFE6F8FF" />
-                    <ComboBox x:Name="cb_Chapter_Page1" ItemsSource="{Binding Path=Chapters, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="ChapterName" SelectedIndex="{Binding Path=SelectedChapterIndex, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="11,78,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="Content" SelectionChanged="ChapterChanged" />
+                    <ComboBox x:Name="cb_Chapter_Page1" ItemsSource="{Binding Path=Chapters, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="ChapterName" SelectedIndex="{Binding Path=SelectedChapterIndex, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="11,78,0,0" VerticalAlignment="Top" Width="182" SelectedValuePath="Content" SelectionChanged="ChapterChanged" />
                     <Label x:Name="lbl_Chapter_Page1" Content="Chapter:" HorizontalAlignment="Left" Margin="11,47,0,0" VerticalAlignment="Top" Width="72" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_ChapterCount_Page1" Content="Words in chapter: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,116,0,0" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_TrainWhat_Page1" Content="What to train" HorizontalAlignment="Left" Margin="11,220,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainScript_Page1" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,251,0,0" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page1" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainEngWords_Page1" Content="English meanings" HorizontalAlignment="Left" Margin="11,271,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page1" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainFonet_Page1" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,291,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page1" Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainScript_Page1"  IsChecked="{Binding Path=TrainWhatChoosen, Mode=TwoWay, Converter={StaticResource enumConverter}, ConverterParameter=TrainScript}" GroupName="TrainScript" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,251,0,0" Checked="SelectWhatToPractice"  Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainEngWords_Page1" IsChecked="{Binding Path=TrainWhatChoosen, Mode=TwoWay, Converter={StaticResource enumConverter}, ConverterParameter=TrainMeaning}" GroupName="TrainMeaning" Content="English meanings" HorizontalAlignment="Left" Margin="11,271,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice"  Foreground="#FFE6F8FF" />
+                    <RadioButton x:Name="rb_TrainFonet_Page1" IsChecked="{Binding Path=TrainWhatChoosen, Mode=TwoWay, Converter={StaticResource enumConverter}, ConverterParameter=TrainFonet}" GroupName="TrainFonet" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,291,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice"  Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_ChapterCount_Page1_Copy" Content="Current word:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,142,0,0" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_Points" Content="{Binding Path=CorrectPoints}" HorizontalAlignment="Left" Margin="11,19,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                     <Button x:Name="btn_Speaker_Page1" Content="" Margin="461,169,0,0" Width="42" HorizontalAlignment="Left" VerticalAlignment="Top" Click="PlaySound" />
@@ -37,7 +39,7 @@
                     </ScrollViewer>
                 </Grid>
             </TabItem>
-            <TabItem Header="Train Symbols">
+            <!--<TabItem Header="Train Symbols">
                 <Grid Background="#FF6DA5C4">
                     <TextBox x:Name="txt_Answear_Page2"  HorizontalAlignment="Left" Height="28" Margin="290,150,0,0" TextWrapping="Wrap" Text="{Binding Mode=TwoWay, Path=Answear, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="150" KeyUp="OnKeyUp" />
                     <Button x:Name="btn_validate_Page2" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="318,183,0,0" VerticalAlignment="Top" Width="89" Click="ValidateAnswear" />
@@ -72,7 +74,7 @@
                     <Label x:Name="lbl_ChapterCount_Page2" Content="Words in chapter: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,116,0,0" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_ChapterCount_Page3" Content="Current word:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,142,0,0" Foreground="#FFE6F8FF" />
                 </Grid>
-            </TabItem>
+            </TabItem>-->
 
             <TabItem Header="New Content Man">
                 <Grid Background="#FF6DA5C4" Margin="0,-1,0,0">
@@ -126,7 +128,7 @@
                             <DataGridTemplateColumn Header="Description" MaxWidth="350">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <ScrollViewer Height="45" FocusManager.FocusedElement="{Binding ElementName=txt_Child_Desc}" >
+                                        <ScrollViewer Height="45" FocusManager.FocusedElement="{Binding ElementName=txt_Child_Desc}">
                                             <TextBox x:Name="txt_Child_Desc" Text="{Binding Path=EngDesc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap" />
                                         </ScrollViewer>
                                     </DataTemplate>
