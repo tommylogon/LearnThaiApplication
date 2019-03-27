@@ -286,60 +286,6 @@ namespace LearnThaiApplication
         private string WhatToDisplay;
         private string WhatToTrain;
 
-        #endregion strings
-
-        #region ints
-
-        private static int correctPoints = 0;
-        private static int currentFileIndex = 0;
-        private int selectedChapterIndex = 0;
-
-        public int SelectedChapterIndex
-        {
-            get
-            {
-                return selectedChapterIndex;
-            }
-            set
-            {
-                if (selectedChapterIndex != value)
-                {
-                    selectedChapterIndex = value;
-                    OnPropertyChanged("SelectedChapterIndex");
-                }
-            }
-        }
-
-        #endregion ints
-
-        #region objects
-
-        private User currentUser;
-        public MainWindow AppWindow;
-        private object SelectedPropertyToDisplay;
-        private object SelectedPropertyToValidate;
-        private Word selectedWordDataGrid;
-
-        public Word SelectedWordDG
-        {
-            get
-            {
-                return selectedWordDataGrid;
-            }
-            set
-            {
-                if (selectedWordDataGrid != value)
-                {
-                    selectedWordDataGrid = value;
-                    OnPropertyChanged("SelectedWordDG");
-                }
-            }
-        }
-
-        #endregion objects
-
-        #region Notifiers
-
         public string Answear
         {
             get
@@ -442,6 +388,94 @@ namespace LearnThaiApplication
                 }
             }
         }
+
+        #endregion strings
+
+        #region ints
+
+        private static int correctPoints = 0;
+        private static int currentFileIndex = 0;
+        private int selectedChapterIndex = 0;
+        private int tabIndex = 0;
+        private int movementValue;
+
+
+        public int TabIndex
+        {
+            get
+            {
+                return tabIndex;
+            }
+            set
+            {
+                if (tabIndex != value)
+                {
+                    tabIndex = value;
+                    OnPropertyChanged("TabIndex");
+                }
+            }
+        }
+
+        public int MovementValue
+        {
+            get
+            {
+                return movementValue;
+            }
+            set
+            {
+                if (movementValue != value) 
+                {
+                    movementValue = value;
+                    OnPropertyChanged("MovementValue");
+                }
+            }
+        }
+        public int SelectedChapterIndex
+        {
+            get
+            {
+                return selectedChapterIndex;
+            }
+            set
+            {
+                if (selectedChapterIndex != value)
+                {
+                    selectedChapterIndex = value;
+                    OnPropertyChanged("SelectedChapterIndex");
+                }
+            }
+        }
+
+        #endregion ints
+
+        #region objects
+
+        private User currentUser;
+        public MainWindow AppWindow;
+        private object SelectedPropertyToDisplay;
+        private object SelectedPropertyToValidate;
+        private Word selectedWordDataGrid;
+
+        public Word SelectedWordDG
+        {
+            get
+            {
+                return selectedWordDataGrid;
+            }
+            set
+            {
+                if (selectedWordDataGrid != value)
+                {
+                    selectedWordDataGrid = value;
+                    OnPropertyChanged("SelectedWordDG");
+                }
+            }
+        }
+
+        #endregion objects
+
+        #region Notifiers
 
         #endregion Notifiers
 
@@ -567,13 +601,14 @@ namespace LearnThaiApplication
             {
                 if (SelectedChapter == "All")
                 {
-                    SelectedChapterIndex++;
+                    SelectedChapterIndex+=MovementValue;
                 }
                 lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
 
                 if (DisplayList.Count > 0)
                 {
-                    TextChanger(DisplayList, 0);
+                    MovementValue = 0;
+                    TextChanger(DisplayList);
                 }
                 else
                 {
@@ -588,7 +623,8 @@ namespace LearnThaiApplication
 
                 if (DisplayList.Count > 0)
                 {
-                    TextChanger(DisplayList, 0);
+                    MovementValue = 0;
+                    TextChanger(DisplayList);
                 }
                 else
                 {
@@ -606,7 +642,7 @@ namespace LearnThaiApplication
         /// <param name="list">List to use</param>
         /// <param name="nextValueToAdd">the next value to add (or subtract) from current file index</param>
         /// <param name="textBlockForScript">textblock to use for display</param>
-        private void CheckAndChangePosisionInList(ObservableCollection<Word> list, int movementValue)
+        private void CheckAndChangePosisionInList(ObservableCollection<Word> list)
         {
             if (IsRandom)
             {
@@ -616,17 +652,17 @@ namespace LearnThaiApplication
             {
                 if (IsLooping)
                 {
-                    if (movementValue > 0)
+                    if (MovementValue > 0)
                     {
-                        CurrentFileIndex += movementValue;
+                        CurrentFileIndex += MovementValue;
                         if (CurrentFileIndex > list.Count-1)
                         {
                             CurrentFileIndex = 0;
                         }
                     }
-                    else if (movementValue < 0)
+                    else if (MovementValue < 0)
                     {
-                        CurrentFileIndex+=movementValue;
+                        CurrentFileIndex+= MovementValue;
 
                         if (CurrentFileIndex < 0)
                         {
@@ -636,7 +672,27 @@ namespace LearnThaiApplication
                 }
                 else
                 {
+                    if (MovementValue > 0)
+                    {
+                        CurrentFileIndex += MovementValue;
+                        if (CurrentFileIndex > list.Count - 1 && SelectedChapterIndex < Chapters.Count -1)
+                        {
+                            SelectedChapterIndex++;
+                        }
+                    }
+                    else if (MovementValue < 0)
+                    {
+                        CurrentFileIndex += MovementValue;
 
+                        if (CurrentFileIndex < 0)
+                        {
+                            SelectedChapterIndex--;
+                            if(SelectedChapterIndex == 0)
+                            {
+                                SelectedChapterIndex = Chapters.Count - 1;
+                            }
+                        }
+                    }
                 }
 
 
@@ -806,7 +862,8 @@ namespace LearnThaiApplication
         private void NextWord(object sender, RoutedEventArgs e)
         {
             ClearFields();
-            PreTextChanger(1);
+            MovementValue = 1;
+            PreTextChanger();
             if (AutoPlay)
             {
                 PlaySound(sender, e);
@@ -850,17 +907,17 @@ namespace LearnThaiApplication
         /// Checks what tab the user is on and updates the data on the current tab.
         /// </summary>
         /// <param name="change">how many places the index is going to change</param>
-        private void PreTextChanger(int change)
+        private void PreTextChanger()
         {
             if (TabIndex == 0)
             {
-                TextChanger(DisplayList, change);
+                TextChanger(DisplayList);
                 lbl_Counter_Page1.Content = CurrentFileIndex;
                 SpeakerStatus();
             }
             else if (TabIndex == 1)
             {
-                TextChanger(DisplayList, change);
+                TextChanger(DisplayList);
                 lbl_Counter_Page2.Content = CurrentFileIndex;
                 SpeakerStatus();
             }
@@ -874,7 +931,8 @@ namespace LearnThaiApplication
         private void PrevWord(object sender, RoutedEventArgs e)
         {
             ClearFields();
-            PreTextChanger(-1);
+            MovementValue = -1;
+            PreTextChanger();
             if (AutoPlay)
             {
                 PlaySound(sender, e);
@@ -908,7 +966,8 @@ namespace LearnThaiApplication
                 MessageBox.Show("Please select what to train", "ERROR");
             }
             SetSettings();
-            PreTextChanger(0);
+            MovementValue = 0;
+            PreTextChanger();
         }
 
         /// <summary>
@@ -1001,7 +1060,7 @@ namespace LearnThaiApplication
             return false;
         }
 
-        private bool CheckIfCompleted(ObservableCollection<Word> list, int movementValue)
+        private bool CheckIfCompleted(ObservableCollection<Word> list)
         {
             if (CheckIfUserHasCompleted(currentUser.CompletedWords, list[CurrentFileIndex], false))
             {
@@ -1009,9 +1068,9 @@ namespace LearnThaiApplication
                 {
                     CurrentFileIndex++;
                 }
-                else if (movementValue == -1 && CurrentFileIndex < list.Count)
+                else if (movementValue == -1 && CurrentFileIndex < 0)
                 {
-                    movementValue = 0;
+                    //movementValue = 0;
                     if (IsLooping)
                     {
                         CurrentFileIndex = list.Count - 1;
@@ -1029,25 +1088,7 @@ namespace LearnThaiApplication
             }
             return false;
         }
-
-        private void TextChanger_NEW(ObservableCollection<Word> list, int movementValue)
-        {
-            if(list.Count == 0)
-            {
-                return;
-            }
-            try
-            {
-                
-               
-
-
-            }
-            catch(Exception ex)
-            {
-
-            }
-        }
+        
 
         /// <summary>
         /// Changes the content of textblocks tot he next or previous value.
@@ -1059,19 +1100,23 @@ namespace LearnThaiApplication
         /// <param name="checkBoxDescription">What checkbox to use</param>
         /// <param name="checkBoxRandom">what checkbox to use</param>
         /// <param name="movementValue">to move forward, backwards or stay in place in the list</param>
-        private void TextChanger(ObservableCollection<Word> list, int movementValue)
+        private void TextChanger(ObservableCollection<Word> list)
         {
             if (list.Count == 0)
             {
                 return;
             }
+            else if (SelectedChapterIndex == 0)
+            {
+                SelectedChapterIndex++;
+            }
             try
             {
-                CheckAndChangePosisionInList(list, movementValue);
+                CheckAndChangePosisionInList(list);
 
-                if(CheckIfCompleted(list, movementValue))
+                if(CheckIfCompleted(list))
                 {
-                    TextChanger(list, movementValue);
+                    TextChanger(list);
                 }
                 
                 
@@ -1428,12 +1473,14 @@ namespace LearnThaiApplication
             else if (e.Key == Key.Right)
             {
                 ClearFields();
-                PreTextChanger(1);
+                MovementValue = 1;
+                PreTextChanger();
             }
             else if (e.Key == Key.Left)
             {
                 ClearFields();
-                PreTextChanger(-1);
+                MovementValue = -1;
+                PreTextChanger();
             }
         }
 
@@ -1452,7 +1499,8 @@ namespace LearnThaiApplication
                 ResetChapter();
                 if (TabIndex == 0)
                 {
-                    PreTextChanger(0);
+                    MovementValue = 0;
+                    PreTextChanger();
                 }
 
                 else if (MainWindow_tabController.SelectedIndex == 3)
