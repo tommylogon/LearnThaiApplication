@@ -33,51 +33,15 @@
                                  GroupName="TrainWhat" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,291,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice"  Foreground="#FFE6F8FF" />
                     <TextBlock x:Name="lbl_ChapterCount_Page1_Copy" Text="{Binding Path=CurrentWord}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,142,0,0" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_Points" Content="{Binding Path=CorrectPoints}" HorizontalAlignment="Left" Margin="11,19,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                    <Button x:Name="btn_Speaker_Page1" Content="" Margin="461,169,0,0" Width="42" HorizontalAlignment="Left" VerticalAlignment="Top" Click="PlaySound" />
+                    <Button x:Name="btn_Speaker_Page1" Content="" Margin="461,169,0,0" Width="42" HorizontalAlignment="Left" VerticalAlignment="Top" Click="PlaySound_Clicked" />
                     <ScrollViewer x:Name="scrvr_Description_page1" HorizontalAlignment="Left" Height="235" Margin="329,291,0,0" VerticalAlignment="Top" Width="650" Foreground="#FFE6F8FF">
-                        <TextBlock x:Name="txb_Description_page1" TextWrapping="Wrap" Text="{Binding Path=DescriptionString}" FontSize="24" />
+                        <TextBox x:Name="txb_Description_page1" TextWrapping="Wrap" IsReadOnly="True" Text="{Binding Path=DescriptionString}" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFE6F8FF" SelectionBrush="#FFA1E5E8" />
                     </ScrollViewer>
                     <ScrollViewer HorizontalAlignment="Left" Height="135" Margin="329,10,0,0" VerticalAlignment="Top" Width="650">
                         <TextBlock x:Name="txb_ThaiScript_Page1" TextWrapping="Wrap" Text="{Binding Path=ThaiScriptString}" Foreground="#FFE6F8FF" FontSize="48" />
                     </ScrollViewer>
                 </Grid>
             </TabItem>
-            <!--<TabItem Header="Train Symbols">
-                <Grid Background="#FF6DA5C4">
-                    <TextBox x:Name="txt_Answear_Page2"  HorizontalAlignment="Left" Height="28" Margin="290,150,0,0" TextWrapping="Wrap" Text="{Binding Mode=TwoWay, Path=Answear, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="150" KeyUp="OnKeyUp" />
-                    <Button x:Name="btn_validate_Page2" Content="Check" HorizontalAlignment="Left" Height="24.714" Margin="318,183,0,0" VerticalAlignment="Top" Width="89" Click="ValidateAnswear" />
-                    <Button x:Name="btn_Next_Word_Page2" Content="Next" HorizontalAlignment="Left" Height="24" Margin="412,183,0,0" VerticalAlignment="Top" Width="35" Click="NextWord" />
-                    <Button x:Name="btn_Prev_Word_Page2" Content="Prev" HorizontalAlignment="Left" Height="24" Margin="278,183,0,0" VerticalAlignment="Top" Width="35" Click="PrevWord" />
-                    <TextBlock x:Name="txb_Information_Page2" HorizontalAlignment="Left" Margin="10,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="191" Width="236" FontSize="16" Foreground="#FFE6F8FF"><Run Text="Here you can select between consonants or vowels." /><Run Text=" " /><LineBreak /><Run Text="You can also learn and practise prenounciations and numbers." /></TextBlock>
-                    <CheckBox x:Name="ckb_DescBox_Page2" IsChecked="{Binding Path=HasDescription}" Content="Description" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
-                    <CheckBox x:Name="ckb_Randomized_Page2" IsChecked="{Binding Path=IsRandom}" Content="Randomize words" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
-                    <ScrollViewer HorizontalAlignment="Left" Height="135" Margin="329,10,0,0" VerticalAlignment="Top" Width="650">
-                        <TextBlock x:Name="txb_ThaiScript_Page2" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="#FFE6F8FF" Text="{Binding Path=ThaiScriptString}" />
-                    </ScrollViewer>
-
-                    <TextBlock x:Name="txb_Status_Page2" HorizontalAlignment="Left" Margin="289,205,0,0" TextWrapping="Wrap" Text="{Binding Path=Result}" VerticalAlignment="Top" Height="38" Width="245" FontSize="24" Foreground="#FFE6F8FF" />
-                    <Label x:Name="lbl_TrainWhat_Page2" Content="What to train" HorizontalAlignment="Left" Margin="11,220,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainScript_Page2" Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,251,0,0" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page2" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainEngWords_Page2" Content="English meanings" HorizontalAlignment="Left" Margin="11,271,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page2" Foreground="#FFE6F8FF" />
-                    <RadioButton x:Name="rb_TrainFonet_Page2" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,291,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat_Page2" Foreground="#FFE6F8FF" />
-                    <Label x:Name="lbl_Points_Page2" Content="{Binding Path=CorrectPoints}" HorizontalAlignment="Left" Margin="11,19,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                    <ScrollViewer HorizontalAlignment="Left" Height="235" Margin="329,291,0,0" VerticalAlignment="Top" Width="650">
-                        <TextBlock x:Name="txb_Description_page2" TextWrapping="Wrap" Text="{Binding Path=DescriptionString}" Foreground="#FFE6F8FF" FontSize="24" />
-                    </ScrollViewer>
-                    <Button x:Name="btn_Speaker_Page2" Content="" Margin="461,169,0,0" Width="42" HorizontalAlignment="Left" VerticalAlignment="Top" Click="PlaySound" />
-                    <ComboBox x:Name="cb_SymbolChapters" HorizontalAlignment="Left" Margin="11,78,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ChapterChanged">
-                        <ComboBoxItem Content="Consonants" />
-                        <ComboBoxItem Content="Vowels" />
-                        <ComboBoxItem Content="Numbers" />
-                        <ComboBoxItem Content="Closing sounds" />
-                        <ComboBoxItem Content="Tones" />
-                    </ComboBox>
-                    <Label x:Name="lbl_Counter_Page2" Content="{Binding Path=CurrentFileIndex}" HorizontalAlignment="Left" Margin="110,142,0,0" VerticalAlignment="Top" Height="31" Width="38" Foreground="#FFE6F8FF" />
-                    <Label x:Name="lbl_Chapter_Page2" Content="Chapter:" HorizontalAlignment="Left" Margin="11,47,0,0" VerticalAlignment="Top" Width="72" Foreground="#FFE6F8FF" />
-                    <Label x:Name="lbl_ChapterCount_Page2" Content="Words in chapter: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,116,0,0" Foreground="#FFE6F8FF" />
-                    <Label x:Name="lbl_ChapterCount_Page3" Content="Current word:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,142,0,0" Foreground="#FFE6F8FF" />
-                </Grid>
-            </TabItem>-->
 
             <TabItem Header="Manage content">
                 <Grid Background="#FF6DA5C4" Margin="0,-1,0,0">
@@ -147,7 +111,7 @@
                             </DataGridTextColumn>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="Seach_KeyUp" />
+                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" KeyUp="Seach_KeyUp" Width="120"  />
                     <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left" Margin="133,9,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Seach_Clicked" />
                 </Grid>
             </TabItem>

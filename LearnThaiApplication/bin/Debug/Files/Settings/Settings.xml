@@ -7,7 +7,7 @@
   <SkipIntro>true</SkipIntro>
   <AutoPlaySounds>false</AutoPlaySounds>
   <WhatToDisplay>ThaiScript</WhatToDisplay>
-  <WhatToTrain>EngWords</WhatToTrain>
+  <WhatToTrain>ThaiFonet</WhatToTrain>
   <Page1Chapter>0</Page1Chapter>
   <Page2Chapter>0</Page2Chapter>
   <Page3Chapter>0</Page3Chapter>
