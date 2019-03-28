@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace LearnThaiApplication.Classes
+namespace LearnThaiApplication
 {
     public class User : INotifyPropertyChanged
     {
@@ -9,7 +9,7 @@ namespace LearnThaiApplication.Classes
 
         public class CompletedWord
         {
-            public Word word;            
+            public Word word;
             public bool scriptCompleted;
             public bool foneticCompleted;
             public bool meaningCompleted;
@@ -21,7 +21,6 @@ namespace LearnThaiApplication.Classes
 
         public User()
         {
-
         }
 
         public string UserName

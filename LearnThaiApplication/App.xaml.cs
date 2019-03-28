@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace LeanThaiApplication
+namespace LearnThaiApplication
 {
     /// <summary>
     /// Interaction logic for App.xaml

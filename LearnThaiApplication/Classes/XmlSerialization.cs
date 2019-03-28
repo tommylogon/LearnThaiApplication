@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Xml.Serialization;
 
 namespace LearnThaiApplication
@@ -34,9 +35,8 @@ namespace LearnThaiApplication
             }
             //if(ShowSaveLocationMessage)
             //{
-                //MessageBox.Show(message, "Save file Location");
+            //MessageBox.Show(message, "Save file Location");
             //}
-
         }
 
         /// <summary>
@@ -54,6 +54,10 @@ namespace LearnThaiApplication
                 var serializer = new XmlSerializer(typeof(T));
                 reader = new StreamReader(filePath);
                 return (T)serializer.Deserialize(reader);
+            }
+            catch (Exception ex)
+            {
+                return default(T);
             }
             finally
             {

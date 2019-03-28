@@ -61,7 +61,7 @@ namespace LearnThaiApplication.Properties
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Language.
+        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\Files\Media\Language.
         /// </summary>
         public static string LanguageFolder {
             get {
@@ -70,7 +70,7 @@ namespace LearnThaiApplication.Properties
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Sound.
+        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\Files\Media\Sound.
         /// </summary>
         public static string SoundPath {
             get {
@@ -89,7 +89,7 @@ namespace LearnThaiApplication.Properties
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Icon.
+        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\Files\Media\Icon.
         /// </summary>
         public static string SpeakerIcon {
             get {
@@ -118,7 +118,7 @@ namespace LearnThaiApplication.Properties
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LeanThaiApplication\Files\Media\Website.
+        ///   Looks up a localized string similar to C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\Files\Media\Website.
         /// </summary>
         public static string WebsitePath {
             get {

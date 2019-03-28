@@ -1,4 +1,4 @@
-﻿namespace LearnThaiApplication.Classes
+﻿namespace LearnThaiApplication
 {
     public class UserSetting
     {

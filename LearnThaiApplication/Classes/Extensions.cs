@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace LearnThaiApplication.Classes
+namespace LearnThaiApplication
 {
     public static class Extensions
     {

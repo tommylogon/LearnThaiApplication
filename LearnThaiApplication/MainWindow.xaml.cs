@@ -1,5 +1,4 @@
 ﻿using HtmlAgilityPack;
-using LearnThaiApplication.Classes;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,10 +12,11 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using static LearnThaiApplication.Classes.User;
+using static LearnThaiApplication.User;
 
 namespace LearnThaiApplication
 {
@@ -134,6 +134,57 @@ namespace LearnThaiApplication
         private bool skipIntro;
         private bool showSaveLocation = false;
         private bool skipCompleted = false;
+        private bool trainScript = false;
+        private bool trainFonet = false;
+        private bool trainWords = false;
+
+        public bool TrainScript
+        {
+            get
+            {
+                return trainScript;
+            }
+            set
+            {
+                if (trainScript != value)
+                {
+                    trainScript = value;
+                    OnPropertyChanged("TrainScript");
+                }
+            }
+        }
+
+        public bool TrainFonet
+        {
+            get
+            {
+                return trainFonet;
+            }
+            set
+            {
+                if (trainFonet != value)
+                {
+                    trainFonet = value;
+                    OnPropertyChanged("TrainFonet");
+                }
+            }
+        }
+
+        public bool TrainWords
+        {
+            get
+            {
+                return trainWords;
+            }
+            set
+            {
+                if (trainWords != value)
+                {
+                    trainWords = value;
+                    OnPropertyChanged("TrainWords");
+                }
+            }
+        }
 
         public bool ShowSaveLocation
         {
@@ -280,10 +331,60 @@ namespace LearnThaiApplication
         private string SettingsFilePath = Environment.CurrentDirectory + @"\Files\Settings\";
         private string SoundFilePath = Environment.CurrentDirectory + @"\Files\Media\Sound\";
         private string thaiScript_String;
-
+        private string trainWhatChoosen;
+        private string currentWord;
         private string WebFilePath = Environment.CurrentDirectory + @"\Files\Media\Website\";
         private string WhatToDisplay;
         private string WhatToTrain;
+        private string chapterCounter;
+
+        public string ChapterCounter
+        {
+            get
+            {
+                return chapterCounter;
+            }
+            set
+            {
+                if (chapterCounter != value)
+                {
+                    chapterCounter = value;
+                    OnPropertyChanged("ChapterCounter");
+                }
+            }
+        }
+
+        public string TrainWhatChoosen
+        {
+            get
+            {
+                return trainWhatChoosen;
+            }
+            set
+            {
+                if (trainWhatChoosen != value)
+                {
+                    trainWhatChoosen = value;
+                    OnPropertyChanged("TrainWhatChoosen");
+                }
+            }
+        }
+
+        public string CurrentWord
+        {
+            get
+            {
+                return currentWord;
+            }
+            set
+            {
+                if (currentWord != value)
+                {
+                    currentWord = value;
+                    OnPropertyChanged("CurrentWord");
+                }
+            }
+        }
 
         public string Answear
         {
@@ -454,6 +555,23 @@ namespace LearnThaiApplication
         private object SelectedPropertyToDisplay;
         private object SelectedPropertyToValidate;
         private Word selectedWordDataGrid;
+        private double progressValue;
+
+        public double ProgressValue
+        {
+            get
+            {
+                return progressValue;
+            }
+            set
+            {
+                if (progressValue != value)
+                {
+                    progressValue = value;
+                    OnPropertyChanged("ProgressValue");
+                }
+            }
+        }
 
         public Word SelectedWordDG
         {
@@ -594,12 +712,16 @@ namespace LearnThaiApplication
             {
                 if (SelectedChapter == "All")
                 {
-                    if (SelectedChapterIndex <= 0)
+                    if (SelectedChapterIndex <= 0 && MovementValue < 0)
                     {
                         SelectedChapterIndex = Chapters.Count - 1;
                     }
+                    else
+                    {
+                        SelectedChapterIndex++;
+                    }
                 }
-                lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
+                ChapterCounter = "Words in chapter: " + DisplayList.Count.ToString();
 
                 if (DisplayList.Count > 0)
                 {
@@ -611,24 +733,8 @@ namespace LearnThaiApplication
                     MessageBox.Show("There are no words in that category yet");
                 }
 
-                lbl_Counter_Page1.Content = CurrentFileIndex;
+                CurrentWord = "Current File in list: " + (CurrentFileIndex + 1);
             }
-            //else if (TabIndex == 1)
-            //{
-            //    lbl_ChapterCount_Page2.Content = "Words in chapter: " + DisplayList.Count.ToString();
-
-            //    if (DisplayList.Count > 0)
-            //    {
-            //        MovementValue = 0;
-            //        TextChanger();
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("There are no words in that category yet");
-            //    }
-
-            //    lbl_Counter_Page2.Content = CurrentFileIndex;
-            //}
         }
 
         /// <summary>
@@ -674,6 +780,10 @@ namespace LearnThaiApplication
                         if (CurrentFileIndex > DisplayList.Count - 1 && SelectedChapterIndex < Chapters.Count - 1)
                         {
                             SelectedChapterIndex++;
+                        }
+                        else
+                        {
+                            SelectedChapterIndex = 1;
                         }
                     }
                     else if (MovementValue < 0)
@@ -849,7 +959,7 @@ namespace LearnThaiApplication
             if (TabIndex == 0)
             {
                 TextChanger();
-                lbl_Counter_Page1.Content = CurrentFileIndex;
+                CurrentWord = "Current File in list: " + (CurrentFileIndex + 1);
                 SpeakerStatus();
             }
             //else if (TabIndex == 1)
@@ -883,24 +993,40 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void SelectWhatToPractice(object sender, RoutedEventArgs e)
         {
-            if ((string)((RadioButton)sender).Content == "Writhing Thai")
+            if (TrainScript)
             {
                 WhatToTrain = "ThaiScript";
                 WhatToDisplay = "EngWords";
             }
-            else if ((string)((RadioButton)sender).Content == "Pronounciations")
+            else if (TrainFonet)
             {
                 WhatToTrain = "ThaiFonet";
                 WhatToDisplay = "ThaiScript";
             }
-            else if ((string)((RadioButton)sender).Content == "English meanings")
+            else if (TrainWords)
             {
                 WhatToTrain = "EngWords";
                 WhatToDisplay = "ThaiScript";
             }
+            //if ((string)((RadioButton)sender).Content == "Writhing Thai")
+            //{
+            //    WhatToTrain = "ThaiScript";
+            //    WhatToDisplay = "EngWords";
+            //}
+            //else if ((string)((RadioButton)sender).Content == "Pronounciations")
+            //{
+            //    WhatToTrain = "ThaiFonet";
+            //    WhatToDisplay = "ThaiScript";
+            //}
+            //else if ((string)((RadioButton)sender).Content == "English meanings")
+            //{
+            //    WhatToTrain = "EngWords";
+            //    WhatToDisplay = "ThaiScript";
+            //}
             else
             {
                 MessageBox.Show("Please select what to train", "ERROR");
+                return;
             }
             SetSettings();
             MovementValue = 0;
@@ -1037,10 +1163,10 @@ namespace LearnThaiApplication
         /// <param name="movementValue">to move forward, backwards or stay in place in the list</param>
         private void TextChanger()
         {
-            if (DisplayList.Count == 0)
-            {
-                return;
-            }
+            //if (DisplayList.Count == 0)
+            //{
+            //    return;
+            //}
 
             try
             {
@@ -1592,27 +1718,21 @@ namespace LearnThaiApplication
             }
             else
             {
-                lbl_Counter_Page1.Content = CurrentFileIndex;
+                CurrentWord = "Current File in list: " + (CurrentFileIndex + 1);
 
                 DisplayList = new ObservableCollection<Word>(Words);
 
                 if (WhatToTrain == "ThaiFonet")
                 {
-                    rb_TrainFonet_Page1.IsChecked = true;
-
-                    rb_TrainFonet_Setting.IsChecked = true;
+                    TrainFonet = true;
                 }
                 else if (WhatToTrain == "ThaiScript")
                 {
-                    rb_TrainScript_Page1.IsChecked = true;
-
-                    rb_TrainScript_Setting.IsChecked = true;
+                    TrainScript = true;
                 }
                 else if (WhatToTrain == "EngWords")
                 {
-                    rb_TrainEngWords_Page1.IsChecked = true;
-
-                    rb_TrainEngWords_Setting.IsChecked = true;
+                    TrainWords = true;
                 }
 
                 PopulateManageChapterCB();
@@ -1620,7 +1740,7 @@ namespace LearnThaiApplication
                 //cb_SymbolChapters.SelectedIndex = 0;
 
                 SelectedChapterIndex = 0;
-                lbl_ChapterCount_Page1.Content = "Words in chapter: " + DisplayList.Count.ToString();
+                ChapterCounter = "Words in chapter: " + DisplayList.Count.ToString();
             }
 
             cb_SelectList.DisplayMemberPath = "ChapterName";
@@ -2377,9 +2497,9 @@ namespace LearnThaiApplication
                 SetSoundPathToWord(word);
 
                 currentIndex = Words.IndexOf(word);
-                progress = (currentIndex / Words.Count) * 100;
-                (sender as BackgroundWorker).ReportProgress((int)progress);
+                ProgressValue = (currentIndex / Words.Count) * 100;
             }
+            ProgressValue = 100;
             SaveAll();
         }
 
@@ -2390,7 +2510,10 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void Worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            pbStatus.Value = e.ProgressPercentage;
+            if (e.ProgressPercentage == 99.00)
+            {
+                Console.WriteLine("break");
+            }
         }
 
         #endregion Async
@@ -2408,8 +2531,27 @@ namespace LearnThaiApplication
 
         private void ClearCurrentUserKnownWords(object sender, RoutedEventArgs e)
         {
-            currentUser.CompletedWords.Clear();
-            SaveFiles<User>(Users, "Users");
+            if (MessageBox.Show("Do you really want remove all known words from your profile?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                currentUser.CompletedWords.Clear();
+                SaveFiles<User>(Users, "Users");
+            }
+        }
+
+        private void OnKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Right)
+            {
+                ClearFields();
+                MovementValue = 1;
+                PreTextChanger();
+            }
+            else if (e.Key == Key.Left)
+            {
+                ClearFields();
+                MovementValue = -1;
+                PreTextChanger();
+            }
         }
     }
 }
