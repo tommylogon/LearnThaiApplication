@@ -3090,7 +3090,9 @@ one (generic word [e.g. the small one])
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\สมอง.wma</string>
     </SoundPath>
     <EngDesc>Sometimes you have to add an additional a between consonants.</EngDesc>
-    <Tone />
+    <Tone>
+      <string>l;R</string>
+    </Tone>
     <Chapter>Thai vowels</Chapter>
   </Word>
   <Word>
@@ -3123,7 +3125,7 @@ one (generic word [e.g. the small one])
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\สะอาด.wma</string>
     </SoundPath>
-    <EngDesc>There are many words where thhe a is written.</EngDesc>
+    <EngDesc>There are many words where the a is written.</EngDesc>
     <Tone />
     <Chapter>Thai vowels</Chapter>
   </Word>
@@ -3302,7 +3304,7 @@ one (generic word [e.g. the small one])
       <string>กัน</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>gaa</string>
+      <string>gan</string>
     </ThaiFonet>
     <EngWords>
       <string>Together</string>
@@ -3311,7 +3313,9 @@ one (generic word [e.g. the small one])
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\กัน.wma</string>
     </SoundPath>
     <EngDesc>Consonant is of the normal tone class and has a nasal sound, making the word pronounced with a normal tone.</EngDesc>
-    <Tone />
+    <Tone>
+      <string>m</string>
+    </Tone>
     <Chapter>Tonal Language</Chapter>
   </Word>
   <Word>
@@ -3599,7 +3603,7 @@ one (generic word [e.g. the small one])
       <string>์</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>None found</string>
+      <string />
     </ThaiFonet>
     <EngWords>
       <string>Indicates silent Pronounciation</string>
@@ -3614,7 +3618,7 @@ one (generic word [e.g. the small one])
       <string>ๆ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>None found</string>
+      <string />
     </ThaiFonet>
     <EngWords>
       <string>Indicates repetition</string>
@@ -3629,7 +3633,7 @@ one (generic word [e.g. the small one])
       <string>ฯ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>None found</string>
+      <string />
     </ThaiFonet>
     <EngWords>
       <string>Indicates the same as quotation</string>
@@ -3646,7 +3650,7 @@ one (generic word [e.g. the small one])
       <string>ฯลฯ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>None found</string>
+      <string />
     </ThaiFonet>
     <EngWords>
       <string>so on</string>
@@ -6919,7 +6923,9 @@ one (generic word [e.g. the small one])
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\กันยายน.wma</string>
     </SoundPath>
     <EngDesc>TODO</EngDesc>
-    <Tone />
+    <Tone>
+      <string>m</string>
+    </Tone>
     <Chapter>Telling time</Chapter>
   </Word>
   <Word>
@@ -7787,7 +7793,7 @@ one (generic word [e.g. the small one])
       <string>กา</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>gan</string>
+      <string>gaa</string>
     </ThaiFonet>
     <EngWords>
       <string>crow</string>
@@ -7810,7 +7816,7 @@ one (generic word [e.g. the small one])
       <string>ขอ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>gan</string>
+      <string>khaaw</string>
     </ThaiFonet>
     <EngWords>
       <string>to ask for</string>
@@ -7822,7 +7828,7 @@ one (generic word [e.g. the small one])
     </SoundPath>
     <EngDesc>Words like these can have many meanings based on the context it is said.</EngDesc>
     <Tone>
-      <string>Middle</string>
+      <string>r</string>
     </Tone>
     <Chapter>Homonyms</Chapter>
   </Word>
@@ -8594,7 +8600,7 @@ one (generic word [e.g. the small one])
     </SoundPath>
     <EngDesc>[a prefix used like the English suffix] "-proof"; to prevent, to obstruct or impede (the progress or entry of), to protect, prevent or keep (something from happening); make a definsive move</EngDesc>
     <Tone>
-      <string>Middle</string>
+      <string>m</string>
     </Tone>
     <Chapter>101 most used words</Chapter>
   </Word>
@@ -8613,8 +8619,7 @@ one (generic word [e.g. the small one])
     </SoundPath>
     <EngDesc>[is] rainproof</EngDesc>
     <Tone>
-      <string>Middle</string>
-      <string>Rising</string>
+      <string>m;r</string>
     </Tone>
     <Chapter>101 most used words</Chapter>
   </Word>
@@ -8638,8 +8643,8 @@ one (generic word [e.g. the small one])
     </SoundPath>
     <EngDesc />
     <Tone>
-      <string>Falling</string>
-      <string>Middle</string>
+      <string>f;m</string>
+      <string />
     </Tone>
     <Chapter>101 most used words</Chapter>
   </Word>
