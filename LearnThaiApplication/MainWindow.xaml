@@ -40,9 +40,9 @@
                                  GroupName="TrainWhat" Content="Pronounciations" HorizontalAlignment="Left" Margin="11,291,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice"  Foreground="#FFE6F8FF" />
                     <TextBlock x:Name="lbl_ChapterCount_Page1_Copy" Text="{Binding Path=CurrentWord}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,142,0,0" Foreground="#FFE6F8FF" />
                     <Label x:Name="lbl_Points" Content="{Binding Path=CorrectPoints}" HorizontalAlignment="Left" Margin="11,19,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                    <Button x:Name="btn_Speaker_Page1" Content="" Margin="461,169,0,0" Width="42" HorizontalAlignment="Left" VerticalAlignment="Top" Click="PlaySound" />
+                    <Button x:Name="btn_Speaker_Page1" Content="" Margin="461,169,0,0" Width="42" HorizontalAlignment="Left" VerticalAlignment="Top" Click="PlaySound_Clicked" />
                     <ScrollViewer x:Name="scrvr_Description_page1" HorizontalAlignment="Left" Height="235" Margin="329,291,0,0" VerticalAlignment="Top" Width="650" Foreground="#FFE6F8FF">
-                        <TextBlock x:Name="txb_Description_page1" TextWrapping="Wrap" Text="{Binding Path=DescriptionString}" FontSize="24" />
+                        <TextBox x:Name="txb_Description_page1" TextWrapping="Wrap" IsReadOnly="True" Text="{Binding Path=DescriptionString}" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFE6F8FF" SelectionBrush="#FFA1E5E8" />
                     </ScrollViewer>
                     <ScrollViewer HorizontalAlignment="Left" Height="135" Margin="329,10,0,0" VerticalAlignment="Top" Width="650">
                         <TextBlock x:Name="txb_ThaiScript_Page1" TextWrapping="Wrap" Text="{Binding Path=ThaiScriptString}" Foreground="#FFE6F8FF" FontSize="48" />
@@ -118,7 +118,7 @@
                             </DataGridTextColumn>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="Seach_KeyUp" />
+                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" KeyUp="Seach_KeyUp" Width="120"  />
                     <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left" Margin="133,9,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Seach_Clicked" />
                 </Grid>
             </TabItem>

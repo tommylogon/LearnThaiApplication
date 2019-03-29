@@ -737,6 +737,26 @@ namespace LearnThaiApplication
             }
         }
 
+        private bool CheckIfChapterIsDone()
+        {
+            int counter = 0;
+            foreach (Word word in DisplayList)
+            {
+                if (CheckIfUserHasCompleted(currentUser.CompletedWords, word, false))
+                {
+                    counter++;
+                }
+            }
+            if (counter == DisplayList.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         /// <summary>
         ///Checks and changes the current file index.
         /// </summary>
@@ -780,10 +800,6 @@ namespace LearnThaiApplication
                         if (CurrentFileIndex > DisplayList.Count - 1 && SelectedChapterIndex < Chapters.Count - 1)
                         {
                             SelectedChapterIndex++;
-                        }
-                        else
-                        {
-                            SelectedChapterIndex = 1;
                         }
                     }
                     else if (MovementValue < 0)
@@ -913,7 +929,7 @@ namespace LearnThaiApplication
             PreTextChanger();
             if (AutoPlay)
             {
-                PlaySound(sender, e);
+                PlaySound();
             }
         }
 
@@ -982,7 +998,7 @@ namespace LearnThaiApplication
             PreTextChanger();
             if (AutoPlay)
             {
-                PlaySound(sender, e);
+                PlaySound();
             }
         }
 
@@ -1170,6 +1186,30 @@ namespace LearnThaiApplication
 
             try
             {
+                if (CheckIfChapterIsDone())
+                {
+                    if (MovementValue >= 0)
+                    {
+                        SelectedChapterIndex++;
+                        if (SelectedChapterIndex >= Chapters.Count)
+                        {
+                            SelectedChapterIndex = 1;
+                        }
+                    }
+                    else if (MovementValue < 0)
+                    {
+                        if (SelectedChapterIndex <= 1)
+                        {
+                            SelectedChapterIndex = Chapters.Count - 1;
+                        }
+                        else
+                        {
+                            SelectedChapterIndex--;
+                        }
+                    }
+
+                    return;
+                }
                 CheckAndChangePosisionInList();
 
                 if (DisplayList.Count != 0 && CheckIfCompleted())
@@ -1222,11 +1262,7 @@ namespace LearnThaiApplication
         {
             if (TabIndex == 0)
             {
-                ValidateAnswer(DisplayList);
-            }
-            else if (TabIndex == 1)
-            {
-                ValidateAnswer(DisplayList);
+                ValidateAnswer();
             }
         }
 
@@ -1254,6 +1290,29 @@ namespace LearnThaiApplication
             return -1;
         }
 
+        private void AddWordToCompleted(Word word)
+        {
+            CompletedWord newCompleted = new CompletedWord
+            {
+                word = DisplayList[CurrentFileIndex]
+            };
+            currentUser.CompletedWords.Add(newCompleted);
+            int index = FindIndexInCompletedWords(currentUser.CompletedWords, word);
+            if (WhatToTrain == "ThaiFonet")
+            {
+                currentUser.CompletedWords[index].foneticCompleted = true;
+            }
+            else if (WhatToTrain == "ThaiScript")
+            {
+                currentUser.CompletedWords[index].scriptCompleted = true;
+            }
+            else if (WhatToTrain == "EngWords")
+            {
+                currentUser.CompletedWords[index].meaningCompleted = true;
+            }
+            SaveFiles<User>(Users, "Users");
+        }
+
         /// <summary>
         /// Compares the written answear to the current words propterties.
         /// </summary>
@@ -1263,9 +1322,9 @@ namespace LearnThaiApplication
         /// <param name="textBlockStatus">What textblock to use for right or worng</param>
         /// <param name="textBlockDesc">What textblock to use for description</param>
         /// <param name="checkBoxDesc">What checkbox to use to check if description is on</param>
-        private void ValidateAnswer(ObservableCollection<Word> list)
+        private void ValidateAnswer()
         {
-            Word word = list[currentFileIndex];
+            Word word = DisplayList[currentFileIndex];
             SetPropertyOfGenericObject(word);
 
             SelectedPropertyToValidate = GetValueFromValueList(WhatToTrain);
@@ -1290,34 +1349,12 @@ namespace LearnThaiApplication
                             {
                                 correctPoints++;
                                 rightAnswears++;
-
-                                if (!CheckIfUserHasCompleted(currentUser.CompletedWords, word, true))
+                                if (rightAnswears == totalAnswears)
                                 {
-                                    CompletedWord newCompleted = new CompletedWord
+                                    if (!CheckIfUserHasCompleted(currentUser.CompletedWords, word, true))
                                     {
-                                        word = list[CurrentFileIndex]
-                                    };
-                                    currentUser.CompletedWords.Add(newCompleted);
-                                }
-
-                                if (!CheckIfUserHasCompleted(currentUser.CompletedWords, word, false))
-                                {
-                                    int index = FindIndexInCompletedWords(currentUser.CompletedWords, word);
-
-                                    if (WhatToTrain == "ThaiFonet")
-                                    {
-                                        currentUser.CompletedWords[index].foneticCompleted = true;
+                                        AddWordToCompleted(word);
                                     }
-                                    else if (WhatToTrain == "ThaiScript")
-                                    {
-                                        currentUser.CompletedWords[index].scriptCompleted = true;
-                                    }
-                                    else if (WhatToTrain == "EngWords")
-                                    {
-                                        currentUser.CompletedWords[index].meaningCompleted = true;
-                                    }
-
-                                    SaveFiles<User>(Users, "Users");
                                 }
                             }
                         }
@@ -1328,6 +1365,11 @@ namespace LearnThaiApplication
                     totalAnswears = 1;
                     correctPoints++;
                     rightAnswears++;
+
+                    if (!CheckIfUserHasCompleted(currentUser.CompletedWords, word, true))
+                    {
+                        AddWordToCompleted(word);
+                    }
                 }
                 if (rightAnswears != 0)
                 {
@@ -1497,6 +1539,11 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void LoopChapter_Checked(object sender, RoutedEventArgs e)
         {
+            if (IsLooping)
+            {
+                IsRandom = false;
+            }
+
             SetSettings();
         }
 
@@ -1527,12 +1574,20 @@ namespace LearnThaiApplication
                 ClearFields();
                 MovementValue = 1;
                 PreTextChanger();
+                if (AutoPlay)
+                {
+                    PlaySound();
+                }
             }
             else if (e.Key == Key.Left)
             {
                 ClearFields();
                 MovementValue = -1;
                 PreTextChanger();
+                if (AutoPlay)
+                {
+                    PlaySound();
+                }
             }
         }
 
@@ -1568,22 +1623,36 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void PrintAllWordsToFile(object sender, RoutedEventArgs e)
         {
-            string fullText = "";
-
-            foreach (Word word in Words)
+            try
             {
-                foreach (string script in word.ThaiScript)
-                {
-                    string soundPath = SoundFilePath + script + ".wma";
+                string fullText = "";
 
-                    if (!File.Exists(soundPath))
+                foreach (Word word in Words)
+                {
+                    foreach (string script in word.ThaiScript)
                     {
-                        fullText += script + "\r\n";
+                        string soundPath = SoundFilePath + script + ".wma";
+
+                        if (!File.Exists(soundPath))
+                        {
+                            fullText += script + "\r\n";
+                        }
                     }
                 }
+                if (!Directory.Exists(DebugFilePath))
+                {
+                    Directory.CreateDirectory(DebugFilePath);
+                }
+                if (!File.Exists(DebugFilePath + "File.txt"))
+                {
+                    File.Create(DebugFilePath + "File.txt");
+                }
+                File.WriteAllText(DebugFilePath + "File.txt", fullText);
             }
-
-            File.WriteAllText(DebugFilePath + "File.txt", fullText);
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         /// <summary>
@@ -1593,7 +1662,11 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void Randomized_Checked(object sender, RoutedEventArgs e)
         {
-            IsLooping = false;
+            if (IsRandom)
+            {
+                IsLooping = false;
+            }
+
             SetSettings();
         }
 
@@ -1879,13 +1952,10 @@ namespace LearnThaiApplication
         private void Search()
         {
             DisplayList = new ObservableCollection<Word>(words);
+
             ObservableCollection<Word> searchResults = new ObservableCollection<Word>();
 
             List<Word> listToSeach = new List<Word>(DisplayList);
-            if (searchString == null)
-            {
-                return;
-            }
 
             try
             {
@@ -2192,12 +2262,7 @@ namespace LearnThaiApplication
             }
         }
 
-        /// <summary>
-        /// Plays the sound from the soundpath of the current word
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void PlaySound(object sender, RoutedEventArgs e)
+        private void PlaySound()
         {
             BackgroundWorker worker = new BackgroundWorker
             {
@@ -2206,6 +2271,16 @@ namespace LearnThaiApplication
             worker.DoWork += Worker_PlaySoundFile;
 
             worker.RunWorkerAsync();
+        }
+
+        /// <summary>
+        /// Plays the sound from the soundpath of the current word
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PlaySound_Clicked(object sender, RoutedEventArgs e)
+        {
+            PlaySound();
         }
 
         /// <summary>
@@ -2552,6 +2627,12 @@ namespace LearnThaiApplication
                 MovementValue = -1;
                 PreTextChanger();
             }
+        }
+
+        private void SearchInputChanged(object sender, TextChangedEventArgs e)
+        {
+            //Search();
+            //((TextBox)sender).Focus();
         }
     }
 }
