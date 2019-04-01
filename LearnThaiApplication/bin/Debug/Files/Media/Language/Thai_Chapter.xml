@@ -9,6 +9,15 @@
   <Chapter>
     <ChapterName>Thai alphabet</ChapterName>
   </Chapter>
+    <Chapter>
+    <ChapterName>Consonants</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Vowels</ChapterName>
+  </Chapter>
+  <Chapter>
+    <ChapterName>Numbers</ChapterName>
+  </Chapter>
   <Chapter>
     <ChapterName>Closing sounds of consonants</ChapterName>
   </Chapter>
@@ -54,16 +63,5 @@
   <Chapter>
     <ChapterName>The body</ChapterName>
   </Chapter>
-  <Chapter>
-    <ChapterName>Consonants</ChapterName>
-  </Chapter>
-  <Chapter>
-    <ChapterName>Closing sounds of consonantss</ChapterName>
-  </Chapter>
-  <Chapter>
-    <ChapterName>Vowels</ChapterName>
-  </Chapter>
-  <Chapter>
-    <ChapterName>Numbers</ChapterName>
-  </Chapter>
+
 </ArrayOfChapter>

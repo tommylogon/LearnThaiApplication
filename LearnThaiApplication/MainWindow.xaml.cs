@@ -1331,6 +1331,8 @@ namespace LearnThaiApplication
 
             int rightAnswears = 0;
             int totalAnswears = 0;
+            int indexToRemove = -1;
+            bool removeCorrect = false;
             if (string.IsNullOrEmpty(Answear))
             {
                 MessageBox.Show("Please enter an answear.");
@@ -1340,13 +1342,19 @@ namespace LearnThaiApplication
                 List<string> answers = Regex.Split(Answear, RegexSplitString).ToList();
                 if (SelectedPropertyToValidate is List<string>)
                 {
+                    totalAnswears = ((List<string>)SelectedPropertyToValidate).Count;
                     foreach (string correctWord in SelectedPropertyToValidate as List<string>)
                     {
-                        totalAnswears = ((List<string>)SelectedPropertyToValidate).Count;
+                        if (removeCorrect)
+                        {
+                            answers.RemoveAt(indexToRemove);
+                        }
                         foreach (string answer in answers)
                         {
                             if (string.Equals(correctWord, answer, StringComparison.OrdinalIgnoreCase))
                             {
+                                removeCorrect = true;
+                                indexToRemove = answers.IndexOf(answer);
                                 correctPoints++;
                                 rightAnswears++;
                                 if (rightAnswears == totalAnswears)
@@ -1356,6 +1364,11 @@ namespace LearnThaiApplication
                                         AddWordToCompleted(word);
                                     }
                                 }
+                                break;
+                            }
+                            else
+                            {
+                                removeCorrect = false;
                             }
                         }
                     }

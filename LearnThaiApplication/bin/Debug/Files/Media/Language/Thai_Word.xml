@@ -139,7 +139,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>pleng</string>
-      <string>phlaehng</string>
     </ThaiFonet>
     <EngWords>
       <string>Music</string>
@@ -357,8 +356,8 @@
     <ThaiFonet>
       <string>go</string>
       <string>jo</string>
-      <string>cho</string>
-      <string>bo</string>
+      <string>do</string>
+      <string>do</string>
       <string>do</string>
       <string>dto</string>
       <string>bo</string>
@@ -403,9 +402,9 @@
       <string>ko</string>
       <string>ko</string>
       <string>cho</string>
-      <string>to</string>
-      <string>to</string>
-      <string>po</string>
+      <string>tho</string>
+      <string>tho</string>
+      <string>pho</string>
       <string>fo</string>
       <string>so</string>
       <string>so</string>
@@ -429,7 +428,7 @@
     </SoundPath>
     <EngDesc>These are the consonants with the High tone class</EngDesc>
     <Tone>
-      <string />
+      <string>r</string>
     </Tone>
     <Chapter>Thai alphabet</Chapter>
   </Word>
@@ -761,7 +760,8 @@
       <string>โซ่</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>sosooh</string>
+      <string>so</string>
+      <string>sooh</string>
       <string>so</string>
     </ThaiFonet>
     <EngWords>
@@ -1035,7 +1035,8 @@
     <EngWords>
       <string>bag</string>
       <string>pouch</string>
-      <string>tube-like sack</string>
+      <string>tube-like</string>
+      <string>sack</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ถอ.wma</string>
@@ -1112,7 +1113,8 @@
       <string>mice</string>
       <string>rat</string>
       <string>tiny</string>
-      <string>petite little thing</string>
+      <string>petite</string>
+      <string>little thing</string>
     </EngWords>
     <SoundPath>
       <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\นอ.wma</string>
@@ -1615,7 +1617,7 @@
     <Tone>
       <string />
     </Tone>
-    <Chapter>Closing sounds of consonantss</Chapter>
+    <Chapter>Closing sounds of consonants</Chapter>
   </Word>
   <Word>
     <ThaiScript>
