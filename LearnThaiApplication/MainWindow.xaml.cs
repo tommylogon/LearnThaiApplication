@@ -16,6 +16,7 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Microsoft.Speech.Recognition;
 using static LearnThaiApplication.User;
 
 namespace LearnThaiApplication
@@ -137,6 +138,8 @@ namespace LearnThaiApplication
         private bool trainScript = false;
         private bool trainFonet = false;
         private bool trainWords = false;
+        private static bool speechDone = false;
+        private static bool speechOn = true;
 
         public bool TrainScript
         {
@@ -556,6 +559,7 @@ namespace LearnThaiApplication
         private object SelectedPropertyToValidate;
         private Word selectedWordDataGrid;
         private double progressValue;
+        private SpeechRecognitionEngine sre;
 
         public double ProgressValue
         {
@@ -2646,6 +2650,10 @@ namespace LearnThaiApplication
         {
             //Search();
             //((TextBox)sender).Focus();
+        }
+
+        private void SetupSpeech()
+        {
         }
     }
 }
