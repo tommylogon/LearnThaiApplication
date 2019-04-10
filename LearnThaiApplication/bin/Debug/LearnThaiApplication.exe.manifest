@@ -62,7 +62,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zx5UCfHgC9RLG8dq4SmkiIKqDi3/k88lzDy4eDwnC3U=</dsig:DigestValue>
+        <dsig:DigestValue>FEhjzRyslbdZq4taMUfw75CDZUL0JRl00DzRsh7P44c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Speech.dll" size="686888">
+      <assemblyIdentity name="Microsoft.Speech" version="11.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>g8rCEPQgU8xioPerN/ESJ2F+VhXeGngGIEdrQuMl7ew=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

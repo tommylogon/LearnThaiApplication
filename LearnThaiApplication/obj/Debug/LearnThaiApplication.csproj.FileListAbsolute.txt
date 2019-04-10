@@ -145,3 +145,4 @@ C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\
 C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\obj\Debug\LearnThaiApplication.exe.manifest
 C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\obj\Debug\LearnThaiApplication.application
+C:\Users\Tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\bin\Debug\Microsoft.Speech.dll
