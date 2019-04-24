@@ -399,6 +399,128 @@
         <foneticCompleted>true</foneticCompleted>
         <meaningCompleted>false</meaningCompleted>
       </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>คุก</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>khook</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>jail</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\คุก.wma</string>
+          </SoundPath>
+          <EngDesc>The oo (ุ) is pronounced like in butcher, put</EngDesc>
+          <Tone />
+          <Chapter>Key to understanding Thai</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ตั๋ว</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>dtooa</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Ticket</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ตั๋ว.wma</string>
+          </SoundPath>
+          <EngDesc>The uaa (ัว) is pronounced like in tour, poor</EngDesc>
+          <Tone />
+          <Chapter>Key to understanding Thai</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>เมือง</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>meuuang</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>City</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\เมือง.wma</string>
+          </SoundPath>
+          <EngDesc>Simply has to be practised with sound</EngDesc>
+          <Tone>
+            <string />
+          </Tone>
+          <Chapter>Key to understanding Thai</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ขอ</string>
+            <string>ไข่</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>kho</string>
+            <string>khai</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Egg</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ขอ.wma</string>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ไข่.wma</string>
+          </SoundPath>
+          <EngDesc>[sexual or colloquial slang] a man's testicle (ball)</EngDesc>
+          <Tone>
+            <string>Low</string>
+          </Tone>
+          <Chapter>Consonants</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>กอ</string>
+            <string>ไก่</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>go</string>
+            <string>gai;</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Chicken</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\กอ.wma</string>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ไก่.wma</string>
+          </SoundPath>
+          <EngDesc>[slang] women</EngDesc>
+          <Tone>
+            <string>low</string>
+          </Tone>
+          <Chapter>Consonants</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
     </CompletedWords>
   </User>
 </ArrayOfUser>
