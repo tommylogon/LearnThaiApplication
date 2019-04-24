@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <UserSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <DescriptionOn>false</DescriptionOn>
+  <DescriptionOn>true</DescriptionOn>
   <IsLooping>false</IsLooping>
   <DisplayAllPropertiesInDescription>false</DisplayAllPropertiesInDescription>
-  <RandomOn>true</RandomOn>
+  <RandomOn>false</RandomOn>
   <SkipIntro>true</SkipIntro>
   <AutoPlaySounds>false</AutoPlaySounds>
+  <ShowSaveLocation>false</ShowSaveLocation>
+  <SkipCompletedWords>true</SkipCompletedWords>
+  <ActivateSpeechRecognition>true</ActivateSpeechRecognition>
   <WhatToDisplay>ThaiScript</WhatToDisplay>
   <WhatToTrain>ThaiFonet</WhatToTrain>
-  <Page1Chapter>0</Page1Chapter>
-  <Page2Chapter>0</Page2Chapter>
-  <Page3Chapter>0</Page3Chapter>
-  <Page4Chapter>0</Page4Chapter>
 </UserSetting>

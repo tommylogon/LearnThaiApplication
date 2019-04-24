@@ -47,6 +47,8 @@
                     <ScrollViewer HorizontalAlignment="Left" Height="135" Margin="329,10,0,0" VerticalAlignment="Top" Width="650">
                         <TextBlock x:Name="txb_ThaiScript_Page1" TextWrapping="Wrap" Text="{Binding Path=ThaiScriptString}" Foreground="#FFE6F8FF" FontSize="48" />
                     </ScrollViewer>
+                    <TextBlock x:Name="txb_SpeechResult" TextWrapping="Wrap" Text="{Binding Path=SpeechResult, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True, Mode=OneWay}" Foreground="#FFE6F8FF" FontSize="48" Margin="508,145,10,250" />
+                    <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="445,142,0,0" VerticalAlignment="Top" Width="75" Click="TestWordReco" />
                 </Grid>
             </TabItem>
 
@@ -118,7 +120,7 @@
                             </DataGridTextColumn>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" KeyUp="Seach_KeyUp" Width="120"  />
+                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" KeyUp="Seach_KeyUp" Width="120" />
                     <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left" Margin="133,9,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Seach_Clicked" />
                 </Grid>
             </TabItem>
@@ -132,7 +134,7 @@
                                TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"
                                Margin="196,15,0,0" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_LoopChapter" IsChecked="{Binding Path=IsLooping}" Content="Loop chapter"
-                              HorizontalAlignment="Left" Margin="171,71,0,0" VerticalAlignment="Top"
+                              HorizontalAlignment="Left" Margin="171,70,0,0" VerticalAlignment="Top"
                               Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <Button Content="Find sound files" HorizontalAlignment="Left" Margin="135,292,0,0"
                             VerticalAlignment="Top" Width="90" Click="StartSoundDownload" RenderTransformOrigin="1.152,0.697" />
@@ -145,10 +147,10 @@
                               VerticalAlignment="Top" Width="120" SelectionChanged="CheckSoundChapter_Changed" />
                     <CheckBox x:Name="ckb_DescBox_Setting"
                               IsChecked="{Binding Path=HasDescription}"
-                              Content="Description" HorizontalAlignment="Left" Margin="171,128,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
+                              Content="Description" HorizontalAlignment="Left" Margin="171,130,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
                     <CheckBox x:Name="ckb_Randomized_Setting"
                               IsChecked="{Binding Path=IsRandom}"
-                              Content="Randomize words" HorizontalAlignment="Left" Margin="171,108,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
+                              Content="Randomize words" HorizontalAlignment="Left" Margin="171,110,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
                     <Label x:Name="lbl_TrainWhat_Page2_Copy1" Content="What to train" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                     <RadioButton x:Name="rb_TrainScript_Setting"
                                  IsChecked="{Binding Path=TrainScript, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}"
@@ -161,7 +163,9 @@
                                  Content="Pronounciations" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
                     <Button Content="Delete sound paths" HorizontalAlignment="Left" Margin="135,342,0,0" VerticalAlignment="Top" Width="112" Click="RemoveSoundPath" />
                     <CheckBox x:Name="ckb_FullDesc"
-                              IsChecked="{Binding Path=DisplayAll}" Content="Full description?" HorizontalAlignment="Left" Margin="171,91,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="FullDesc_Checked" Unchecked="FullDesc_Checked" />
+                              IsChecked="{Binding Path=DisplayAll}"
+                              Content="Full description?" HorizontalAlignment="Left"
+                              Margin="171,90,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                     <Button x:Name="btn_SaveSettings" Content="Save settings" HorizontalAlignment="Left" Margin="811,447,0,0" VerticalAlignment="Top" Width="75" Click="SaveSettings_Click" />
                     <Button Content="Set SoundPaths" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="135,367,0,0" Click="SetSoundPath_clicked" />
                     <Button Content="Print all words" HorizontalAlignment="Left" Margin="135,392,0,0" VerticalAlignment="Top" Width="75" Click="PrintAllWordsToFile" />
@@ -169,17 +173,25 @@
                                  Value="{Binding Path=ProgressValue}" Name="pbStatus" Margin="252,279,273,173" />
                     <Label Content="Toggle settings" HorizontalAlignment="Left" Margin="171,45,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_AutoPlay"
-                              IsChecked="{Binding Path=AutoPlay}" Content="Auto play sounds" HorizontalAlignment="Left" Margin="171,148,0,0" VerticalAlignment="Top" Background="White" Foreground="#FFE6F8FF" Checked="AutoPlay_Checked" Unchecked="AutoPlay_Checked" />
+                              IsChecked="{Binding Path=AutoPlay}" Content="Auto play sounds"
+                              HorizontalAlignment="Left" Margin="171,150,0,0" VerticalAlignment="Top" Background="White" Foreground="#FFE6F8FF" Checked="AutoPlay_Checked" Unchecked="AutoPlay_Checked" />
                     <CheckBox x:Name="ckb_SkipIntro"
-                              IsChecked="{Binding Path=SkipIntro}" Content="Skip intro message" HorizontalAlignment="Left" Margin="171,168,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="SkipMessage_Checked" Unchecked="SkipMessage_Checked" />
+                              IsChecked="{Binding Path=SkipIntro}" Content="Skip intro message"
+                              HorizontalAlignment="Left" Margin="171,170,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="SkipMessage_Checked" Unchecked="SkipMessage_Checked" />
                     <CheckBox x:Name="ckb_showSaveLocation"
-                              IsChecked="{Binding Path=ShowSaveLocation}" Content="Show save location" HorizontalAlignment="Left" Margin="300,71,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                              IsChecked="{Binding Path=ShowSaveLocation}"
+                              Content="Show save location" HorizontalAlignment="Left"
+                              Margin="300,70,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_SkipCompletedWords"
-                              IsChecked="{Binding Path=SkipCompleted}" Content="Skip completed words" HorizontalAlignment="Left" Margin="300,91,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                    <CheckBox x:Name="ckb_setting_7_Copy1" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,108,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                    <CheckBox x:Name="ckb_setting_7_Copy2" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,128,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                    <CheckBox x:Name="ckb_setting_7_Copy3" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,148,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                    <CheckBox x:Name="ckb_setting_7_Copy4" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,168,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                              IsChecked="{Binding Path=SkipCompleted}"
+                              Content="Skip completed words" HorizontalAlignment="Left"
+                              Margin="300,90,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_Listen" IsChecked="{Binding Path=IsListening}"
+                              Content="Speach Recognition" HorizontalAlignment="Left"
+                              Margin="300,110,0,0" VerticalAlignment="Top" Checked="Listen_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_setting_7_Copy2" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,130,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_setting_7_Copy3" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,150,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_setting_7_Copy4" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,170,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <ComboBox x:Name="comboBox"
                               ItemsSource="{Binding Path=Users}" HorizontalAlignment="Left" Margin="859,9,0,0" VerticalAlignment="Top" Width="120" />
                     <Button x:Name="btn_ClearCurrentUserList" Content="Clear known words"  HorizontalAlignment="Left" Margin="748,10,0,0" VerticalAlignment="Top" Width="106" Click="ClearCurrentUserKnownWords" />

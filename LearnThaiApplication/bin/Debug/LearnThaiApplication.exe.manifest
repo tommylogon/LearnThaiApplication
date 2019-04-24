@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LearnThaiApplication.exe" size="6569880">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LearnThaiApplication.exe" size="6573976">
       <assemblyIdentity name="LearnThaiApplication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FEhjzRyslbdZq4taMUfw75CDZUL0JRl00DzRsh7P44c=</dsig:DigestValue>
+        <dsig:DigestValue>TGoJFJJDsAzhOVur9FmdUjzEeRWH5jfiYjSVx2cu1Ag=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>g8rCEPQgU8xioPerN/ESJ2F+VhXeGngGIEdrQuMl7ew=</dsig:DigestValue>
+        <dsig:DigestValue>xRFA9oCPJDOycaPZVLWTxah/DFSr0AJNbju4A2dcs4s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
