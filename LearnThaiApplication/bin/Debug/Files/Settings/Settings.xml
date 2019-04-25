@@ -8,7 +8,8 @@
   <AutoPlaySounds>false</AutoPlaySounds>
   <ShowSaveLocation>false</ShowSaveLocation>
   <SkipCompletedWords>true</SkipCompletedWords>
-  <ActivateSpeechRecognition>true</ActivateSpeechRecognition>
+  <ActivateSpeechRecognition>false</ActivateSpeechRecognition>
   <WhatToDisplay>ThaiScript</WhatToDisplay>
   <WhatToTrain>ThaiFonet</WhatToTrain>
+  <SelectedVoice>Microsoft Hazel Desktop</SelectedVoice>
 </UserSetting>

@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="LearnThaiApplication.exe.manifest" size="12438">
+    <dependentAssembly dependencyType="install" codebase="LearnThaiApplication.exe.manifest" size="13122">
       <assemblyIdentity name="LearnThaiApplication.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aUGNQeJH5aCX0VxTvqKW23Uj6hTHnkPZOVToVgD9V00=</dsig:DigestValue>
+        <dsig:DigestValue>eal8Xacul4+uE+U3Za1L5V5XYi2yJ2RbDCHNwg6MS34=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

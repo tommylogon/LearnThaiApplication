@@ -60,11 +60,11 @@
                               Height="485" Width="979"
                               VerticalAlignment="Top"
                               AutoGenerateColumns="False"
-                              ItemsSource="{Binding Path=DisplayList, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
-                              SelectedItem="{Binding Path=SelectedWordDG, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"
+                              ItemsSource="{Binding Path=SearchResults, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
+                              SelectedIndex="{Binding Path=ManagementIndex, Mode=TwoWay,NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
                               CanUserDeleteRows="False"
                               SelectionMode="Extended"
-                              SelectionUnit="CellOrRowHeader" RowEditEnding="RowEditEnding" KeyUp="DG_ConMan_KeyUp">
+                              SelectionUnit="CellOrRowHeader"  LoadingRow="Dg_ContentManagement_LoadingRow"  RowEditEnding="RowEditEnding" KeyUp="DG_ConMan_KeyUp">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="190" />
                             <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150">
@@ -120,8 +120,8 @@
                             </DataGridTextColumn>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23" Margin="8,9,0,0" Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" KeyUp="Seach_KeyUp" Width="120" />
-                    <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left" Margin="133,9,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Seach_Clicked" />
+                    <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23"  Margin="8,9,0,0" Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" KeyUp="Search_KeyUp" Width="120" />
+                    <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left" Margin="133,9,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Search_Clicked" />
                 </Grid>
             </TabItem>
             <TabItem Header="Settings">
@@ -193,12 +193,12 @@
                     <CheckBox x:Name="ckb_setting_7_Copy3" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,150,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_setting_7_Copy4" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,170,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <ComboBox x:Name="comboBox"
-                              ItemsSource="{Binding Path=Users}" HorizontalAlignment="Left" Margin="859,9,0,0" VerticalAlignment="Top" Width="120" />
+                              ItemsSource="{Binding Path=Users}" HorizontalAlignment="Left" Margin="859,9,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="UserName" SelectedItem="{Binding Path=CurrentUser,Mode=OneWay}" />
                     <Button x:Name="btn_ClearCurrentUserList" Content="Clear known words"  HorizontalAlignment="Left" Margin="748,10,0,0" VerticalAlignment="Top" Width="106" Click="ClearCurrentUserKnownWords" />
                     <ComboBox x:Name="cb_Voices"
-                              ItemsSource="{Binding Path=Voices}"
+                              ItemsSource="{Binding Path=Voices}" SelectionChanged="Cb_Voices_SelectionChanged" DisplayMemberPath="VoiceInfo.Name" SelectedItem="{Binding Path=CurrentVoice, Mode=OneWay}"
                               HorizontalAlignment="Left" Margin="859,84,0,0" VerticalAlignment="Top" Width="120" />
-                    <Label x:Name="label" Content="Voice" HorizontalAlignment="Left" Margin="816,80,0,0" VerticalAlignment="Top" />
+                    <Label x:Name="label" Content="Voice" HorizontalAlignment="Left" Margin="816,80,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                 </Grid>
             </TabItem>
         </TabControl>

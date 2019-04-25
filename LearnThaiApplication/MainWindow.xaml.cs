@@ -36,30 +36,13 @@ namespace LearnThaiApplication
             Loaded += MainWindow_Loaded;
             AppWindow = this;
 
-            ci = new CultureInfo("en-US");
-            sre = new SpeechRecognitionEngine(ci);
-            ss = new SpeechSynthesizer();
-            sre.SetInputToDefaultAudioDevice();
-            sre.SpeechRecognized += sre_SpeechRecogniced;
-            sre.RecognizeCompleted += sre_RecognizedCompleted;
-            sre.SpeechHypothesized += sre_SpeechHypotized;
-
-            var voices = ss.GetInstalledVoices();
-            ss.SelectVoice("Microsoft Zira Desktop");
-            ss.SetOutputToDefaultAudioDevice();
-            ss.Speak("Sa wat dee krap");
-
-            Grammar g_HelloGoodbye = GetHelloGoodbyeGrammar();
-
             LoadSettings();
             LoadAllFiles();
             SetInitialStates();
             GetImage();
             words.CollectionChanged += ContentCollectionChanged;
             displayList.CollectionChanged += ContentCollectionChanged;
-
-            Grammar g_AllInList = GetAllWordsGrammar();
-            sre.LoadGrammarAsync(g_AllInList);
+            SetupSpeech();
             //chapters.CollectionChanged += ChaptersCollectionChanged;
         }
 
@@ -69,10 +52,42 @@ namespace LearnThaiApplication
 
         private ObservableCollection<Chapter> chapters = new ObservableCollection<Chapter>();
         private ObservableCollection<Word> displayList = new ObservableCollection<Word>();
-
+        private ObservableCollection<Word> searchResults = new ObservableCollection<Word>();
         private List<UserSetting> UserSettings = new List<UserSetting>();
         private ObservableCollection<Word> words = new ObservableCollection<Word>();
-        private List<MediaPlayer> mediaPlayers = new List<MediaPlayer>();
+        private List<InstalledVoice> voices = new List<InstalledVoice>();
+
+        public ObservableCollection<Word> SearchResults
+        {
+            get
+            {
+                return searchResults;
+            }
+            set
+            {
+                if (searchResults != value)
+                {
+                    searchResults = value;
+                    OnPropertyChanged("SearchResults");
+                }
+            }
+        }
+
+        public List<InstalledVoice> Voices
+        {
+            get
+            {
+                return voices;
+            }
+            set
+            {
+                if (voices != value)
+                {
+                    voices = value;
+                    OnPropertyChanged("Voices");
+                }
+            }
+        }
 
         public ObservableCollection<Word> DisplayList
         {
@@ -374,9 +389,29 @@ namespace LearnThaiApplication
         private string thaiScript_String;
         private string trainWhatChoosen;
         private string currentWord;
-
         private string chapterCounter;
         private string speechResult;
+
+        public string SelectedVoice
+        {
+            get
+            {
+                return settings.SelectedVoice;
+            }
+            set
+            {
+                if (settings.SelectedVoice != value)
+                {
+                    settings.SelectedVoice = value;
+                    OnPropertyChanged("SelectedVoice");
+                    if (ss != null)
+                    {
+                        ss.SelectVoice(settings.SelectedVoice);
+                    }
+                    SaveSetting();
+                }
+            }
+        }
 
         public string WhatToTrain
         {
@@ -643,11 +678,19 @@ namespace LearnThaiApplication
         private User currentUser;
         public MainWindow AppWindow;
 
-        private Word selectedWordDataGrid;
+        private int selectedManagementIndex;
         private double progressValue;
         private static CultureInfo ci;
         private SpeechRecognitionEngine sre;
         private SpeechSynthesizer ss;
+
+        public InstalledVoice CurrentVoice
+        {
+            get
+            {
+                return Voices.First(v => v.VoiceInfo.Name == SelectedVoice);
+            }
+        }
 
         public double ProgressValue
         {
@@ -665,18 +708,18 @@ namespace LearnThaiApplication
             }
         }
 
-        public Word SelectedWordDG
+        public int ManagementIndex
         {
             get
             {
-                return selectedWordDataGrid;
+                return selectedManagementIndex;
             }
             set
             {
-                if (selectedWordDataGrid != value)
+                if (selectedManagementIndex != value)
                 {
-                    selectedWordDataGrid = value;
-                    OnPropertyChanged("SelectedWordDG");
+                    selectedManagementIndex = value;
+                    OnPropertyChanged("ManagementIndex");
                 }
             }
         }
@@ -788,7 +831,9 @@ namespace LearnThaiApplication
             SelectedChapter = Chapters[SelectedChapterIndex].ChapterName;
 
             FindWordWithChapter();
-
+            Grammar g_AllInList = GetGrammarFromDisplayList();
+            sre.UnloadAllGrammars();
+            sre.LoadGrammarAsync(g_AllInList);
             if (TabIndex == 0)
             {
                 if (SelectedChapter == "All")
@@ -1849,13 +1894,13 @@ namespace LearnThaiApplication
             {
                 try
                 {
-                    if (SelectedWordDG == null)
+                    if (ManagementIndex == -1)
                     {
                         System.Windows.Forms.MessageBox.Show("Please select the full row you want to delete");
                     }
-                    else if (MessageBox.Show("Do you really want to delete the word " + SelectedWordDG.ThaiScript_String + " ?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                    else if (MessageBox.Show("Do you really want to delete the word " + ((Word)dg_ContentManagement.SelectedItem).ThaiScript_String + " ?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
                     {
-                        Words.Remove(SelectedWordDG);
+                        Words.Remove(((Word)dg_ContentManagement.SelectedItem));
                         SaveAll();
                         if (string.IsNullOrEmpty(searchString))
                         {
@@ -1903,9 +1948,19 @@ namespace LearnThaiApplication
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Seach_Clicked(object sender, RoutedEventArgs e)
+        private void Search_Clicked(object sender, RoutedEventArgs e)
         {
-            Search();
+            if (SearchString != null)
+            {
+                txt_SearchBar.Background = Brushes.White;
+                Search();
+            }
+            else
+            {
+                txt_SearchBar.Background = Brushes.Red;
+
+                Search();
+            }
         }
 
         /// <summary>
@@ -1913,11 +1968,21 @@ namespace LearnThaiApplication
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Seach_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
+        private void Search_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
             {
-                Search();
+                if (SearchString != null)
+                {
+                    txt_SearchBar.Background = Brushes.White;
+                    Search();
+                }
+                else
+                {
+                    txt_SearchBar.Background = Brushes.Red;
+                    SelectedChapterIndex = 0;
+                    Search();
+                }
             }
         }
 
@@ -1927,43 +1992,50 @@ namespace LearnThaiApplication
         /// <param name="searchValue"></param>
         private void Search()
         {
-            DisplayList = new ObservableCollection<Word>(words);
-
-            ObservableCollection<Word> searchResults = new ObservableCollection<Word>();
-
-            List<Word> listToSeach = new List<Word>(DisplayList);
+            SearchResults.Clear();
+            List<Word> listToSeach = new List<Word>(Words);
 
             try
             {
-                foreach (Word word in listToSeach)
+                if (string.IsNullOrEmpty(SearchString))
                 {
-                    foreach (var prop in word.GetType().GetProperties())
+                    foreach (Word word in Words)
                     {
-                        var value = prop.GetValue(word);
-                        if (value == null)
+                        SearchResults.Add(word);
+                    }
+                }
+                else
+                {
+                    foreach (Word word in listToSeach)
+                    {
+                        foreach (var prop in word.GetType().GetProperties())
                         {
-                            continue;
-                        }
-                        if (value is List<string> sublist)
-                        {
-                            foreach (string s in sublist)
+                            var value = prop.GetValue(word);
+                            if (value == null)
                             {
-                                if (s.CaseInsensitiveContains(searchString))
+                                continue;
+                            }
+                            if (value is List<string> sublist)
+                            {
+                                foreach (string s in sublist)
                                 {
-                                    if (!searchResults.Contains(word))
+                                    if (s.CaseInsensitiveContains(searchString))
                                     {
-                                        searchResults.Add(word);
-                                        continue;
+                                        if (!SearchResults.Contains(word))
+                                        {
+                                            SearchResults.Add(word);
+                                            continue;
+                                        }
                                     }
                                 }
                             }
-                        }
-                        else if (((string)value).CaseInsensitiveContains(searchString))
-                        {
-                            if (!searchResults.Contains(word))
+                            else if (((string)value).CaseInsensitiveContains(searchString))
                             {
-                                searchResults.Add(word);
-                                continue;
+                                if (!SearchResults.Contains(word))
+                                {
+                                    SearchResults.Add(word);
+                                    continue;
+                                }
                             }
                         }
                     }
@@ -1973,7 +2045,6 @@ namespace LearnThaiApplication
             {
                 MessageBox.Show(ex.Message);
             }
-            DisplayList = searchResults;
         }
 
         /// <summary>
@@ -2633,17 +2704,44 @@ namespace LearnThaiApplication
 
         private void SetupSpeech()
         {
+            ci = new CultureInfo("en-US");
+            sre = new SpeechRecognitionEngine(ci);
+            ss = new SpeechSynthesizer();
+
             sre.SetInputToDefaultAudioDevice();
             sre.SpeechRecognized += sre_SpeechRecogniced;
-            Grammar g_HelloGoodbye = GetHelloGoodbyeGrammar();
-            Grammar g_SetTextBox = GetTextBoxGrammar();
-            sre.LoadGrammarAsync(g_HelloGoodbye);
-            sre.LoadGrammarAsync(g_SetTextBox);
-        }
+            sre.RecognizeCompleted += sre_RecognizedCompleted;
+            sre.SpeechHypothesized += sre_SpeechHypotized;
 
-        private Grammar GetTextBoxGrammar()
-        {
-            throw new NotImplementedException();
+            voices = ss.GetInstalledVoices().ToList();
+
+            if (string.IsNullOrEmpty(SelectedVoice))
+            {
+                SelectedVoice = voices.First(v => v.VoiceInfo.Name == "Microsoft Zira Desktop").VoiceInfo.Name;
+            }
+            ss.SelectVoice(SelectedVoice);
+            ss.SetOutputToDefaultAudioDevice();
+            if (ss.Voice.Culture.Name.CaseInsensitiveContains("en-"))
+            {
+                ss.SpeakAsync("Sa wat dee krap");
+            }
+            else if (ss.Voice.Culture.Name.CaseInsensitiveContains("th-"))
+            {
+                if (ss.Voice.Gender.ToString().CaseInsensitiveContains("male"))
+                {
+                    ss.SpeakAsync("สวัสดีครับ");
+                }
+                else
+                {
+                    ss.SpeakAsync("สวัสดีค่ะ");
+                }
+            }
+
+            Grammar g_HelloGoodbye = GetHelloGoodbyeGrammar();
+
+            Grammar g_AllInList = GetGrammarFromDisplayList();
+
+            sre.LoadGrammarAsync(g_AllInList);
         }
 
         private Grammar GetHelloGoodbyeGrammar()
@@ -2656,7 +2754,7 @@ namespace LearnThaiApplication
             return g_result;
         }
 
-        private Grammar GetAllWordsGrammar()
+        private Grammar GetGrammarFromDisplayList()
         {
             Choices ch_allChoices = new Choices();
 
@@ -2665,6 +2763,7 @@ namespace LearnThaiApplication
                 if (!string.IsNullOrEmpty(word.ThaiFonet_String))
                 {
                     ch_allChoices.Add(word.ThaiFonet_String.Replace(";", ""));
+                    ch_allChoices.Add(word.ThaiFonet_String);
                 }
             }
 
@@ -2675,15 +2774,23 @@ namespace LearnThaiApplication
 
         private void sre_SpeechRecogniced(object sender, SpeechRecognizedEventArgs e)
         {
-            string text = e.Result.Text;
+            string text = "";
             string procounc = "";
             foreach (var recognizedWord in e.Result.Words)
             {
+                text += recognizedWord.Text.Replace(";", " ");
                 procounc += recognizedWord.Pronunciation + " ";
             }
-
             float conf = e.Result.Confidence;
-            ss.SpeakAsync(text);
+            if (ss.Voice.Culture.Name.CaseInsensitiveContains("en-"))
+            {
+                ss.SpeakAsync(text);
+            }
+            else if (ss.Voice.Culture.Name == "th-TH")
+            {
+                ss.SpeakAsync(DisplayList[CurrentFileIndex].ThaiScript_String);
+            }
+
             SpeechResult = text + "\r\n " + procounc + " " + conf.ToString();
             if (DisplayList[CurrentFileIndex].ThaiFonet_String.Replace(";", "") == text)
             {
@@ -2702,7 +2809,7 @@ namespace LearnThaiApplication
         {
             string text = e.Result.Text;
             float conf = e.Result.Confidence;
-            SpeechResult = text + " " + conf.ToString() + "?";
+            SpeechResult = text + " " + conf.ToString() + " ?";
         }
 
         private void Listen_Checked(object sender, RoutedEventArgs e)
@@ -2722,11 +2829,29 @@ namespace LearnThaiApplication
             try
             {
                 sre.RecognizeAsyncStop();
-                sre.EmulateRecognizeAsync(DisplayList[CurrentFileIndex].ThaiFonet_String.Replace(";", ""));
+                sre.EmulateRecognizeAsync(DisplayList[CurrentFileIndex].ThaiFonet_String/*.Replace(";", "")*/);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Cb_Voices_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.AddedItems != null)
+            {
+                SelectedVoice = ((InstalledVoice)e.AddedItems[0]).VoiceInfo.Name;
+            }
+        }
+
+        private void Dg_ContentManagement_LoadingRow(object sender, DataGridRowEventArgs e)
+        {
+            if (SearchResults.Last() == e.Row.Item)
+            {
+                dg_ContentManagement.CurrentCell = new DataGridCellInfo(dg_ContentManagement.Items[0], dg_ContentManagement.Columns[0]);
+                dg_ContentManagement.SelectedCells.Clear();
+                dg_ContentManagement.SelectedCells.Add(dg_ContentManagement.CurrentCell);
             }
         }
     }
