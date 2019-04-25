@@ -45,7 +45,7 @@ namespace LearnThaiApplication
             sre.SpeechHypothesized += sre_SpeechHypotized;
 
             var voices = ss.GetInstalledVoices();
-
+            ss.SelectVoice("Microsoft Zira Desktop");
             ss.SetOutputToDefaultAudioDevice();
             ss.Speak("Sa wat dee krap");
 
@@ -58,7 +58,8 @@ namespace LearnThaiApplication
             words.CollectionChanged += ContentCollectionChanged;
             displayList.CollectionChanged += ContentCollectionChanged;
 
-            sre.LoadGrammarAsync(g_HelloGoodbye);
+            Grammar g_AllInList = GetAllWordsGrammar();
+            sre.LoadGrammarAsync(g_AllInList);
             //chapters.CollectionChanged += ChaptersCollectionChanged;
         }
 
@@ -68,8 +69,7 @@ namespace LearnThaiApplication
 
         private ObservableCollection<Chapter> chapters = new ObservableCollection<Chapter>();
         private ObservableCollection<Word> displayList = new ObservableCollection<Word>();
-        private List<PropertyInfo> ListOfProperties = new List<PropertyInfo>();
-        private List<object> ListOfValues = new List<object>();
+
         private List<UserSetting> UserSettings = new List<UserSetting>();
         private ObservableCollection<Word> words = new ObservableCollection<Word>();
         private List<MediaPlayer> mediaPlayers = new List<MediaPlayer>();
@@ -164,6 +164,7 @@ namespace LearnThaiApplication
                 {
                     settings.ActivateSpeechRecognition = value;
                     OnPropertyChanged("IsListening");
+                    SaveSetting();
                 }
             }
         }
@@ -641,8 +642,7 @@ namespace LearnThaiApplication
 
         private User currentUser;
         public MainWindow AppWindow;
-        private object SelectedPropertyToDisplay;
-        private object SelectedPropertyToValidate;
+
         private Word selectedWordDataGrid;
         private double progressValue;
         private static CultureInfo ci;
@@ -732,14 +732,6 @@ namespace LearnThaiApplication
         /// <param name="list"></param>
         private void WriteWordToFile(List<Word> list)
         {
-            foreach (Word word in list)
-            {
-                List<string> script = (List<string>)GetValueFromValueList("ThaiScript");
-
-                if (script.Count == 1)
-                {
-                }
-            }
         }
 
         #endregion TestMethods
@@ -811,12 +803,6 @@ namespace LearnThaiApplication
                     }
                 }
                 ChapterCounter = "Words in chapter: " + DisplayList.Count.ToString();
-                if (DisplayList.Count() != 0)
-                {
-                    Grammar g_AllInList = GetAllWordsGrammar();
-                    sre.UnloadAllGrammars();
-                    sre.LoadGrammarAsync(g_AllInList);
-                }
 
                 if (DisplayList.Count > 0)
                 {
@@ -943,6 +929,13 @@ namespace LearnThaiApplication
                     DisplayList.Add(word);
                 }
             }
+
+            //if (DisplayList.Count() != 0)
+            //{
+            //    Grammar g_AllInList = GetAllWordsGrammar();
+            //    sre.UnloadAllGrammars();
+            //    sre.LoadGrammarAsync(g_AllInList);
+            //}
         }
 
         /// <summary>
@@ -962,45 +955,6 @@ namespace LearnThaiApplication
             stackPnl1.Children.Add(img1);
 
             btn_Speaker_Page1.Content = stackPnl1;
-        }
-
-        /// <summary>
-        /// Gets the value from the property with a name equal to valueToGet
-        /// </summary>
-        /// <param name="valueToGet">The Name of the value to get</param>
-        /// <returns>Returns the value from the current object</returns>
-        private object GetValueFromValueList(string valueToGet)
-        {
-            object returnValue;
-
-            foreach (PropertyInfo prop in ListOfProperties)
-            {
-                if (prop.Name == valueToGet)
-                {
-                    return returnValue = ListOfValues[ListOfProperties.IndexOf(prop)];
-                }
-            }
-            return null;
-        }
-
-        /// <summary>
-        /// Gets the value from the vlaue list, but only if it the valueToCompare Eqists.
-        /// </summary>
-        /// <param name="valueToGet">The name of the value to get</param>
-        /// <param name="valueToCompare">the value that must be true for the value to get returned</param>
-        /// <returns>The requested property value</returns>
-        private object GetValueFromValueList(string valueToGet, string valueToCompare)
-        {
-            object returnValue;
-
-            foreach (PropertyInfo prop in ListOfProperties)
-            {
-                if (prop.Name == valueToGet && (string)ListOfValues[ListOfProperties.IndexOf(prop)] == valueToCompare)
-                {
-                    return returnValue = ListOfValues[ListOfProperties.IndexOf(prop)];
-                }
-            }
-            return null;
         }
 
         /// <summary>
@@ -1043,24 +997,24 @@ namespace LearnThaiApplication
                 DescriptionString = "";
                 if (DisplayAll)
                 {
-                    foreach (var value in ListOfValues)
+                    foreach (PropertyInfo prop in DisplayList[CurrentFileIndex].GetType().GetProperties())
                     {
-                        if (value is List<string> x)
+                        if (prop.GetValue(DisplayList[CurrentFileIndex]) is List<string> x)
                         {
                             DescriptionString += ListToString(x) + "\r\n";
                         }
                         else
                         {
-                            DescriptionString += value + "\r\n";
+                            DescriptionString += prop.GetValue(DisplayList[CurrentFileIndex]) + "\r\n";
                         }
                     }
                 }
                 else
                 {
-                    DescriptionString = ListToString((List<string>)GetValueFromValueList("ThaiScript")) + "\r\n";
-                    DescriptionString += ListToString((List<string>)GetValueFromValueList("ThaiFonet")) + "\r\n";
-                    DescriptionString += ListToString((List<string>)GetValueFromValueList("EngWords")) + "\r\n";
-                    DescriptionString += (string)GetValueFromValueList("EngDesc");
+                    DescriptionString = DisplayList[CurrentFileIndex].ThaiScript_String + "\r\n";
+                    DescriptionString += DisplayList[CurrentFileIndex].ThaiFonet_String + "\r\n";
+                    DescriptionString += DisplayList[CurrentFileIndex].EngWords_String + "\r\n";
+                    DescriptionString += DisplayList[CurrentFileIndex].EngDesc;
                 }
             }
         }
@@ -1133,53 +1087,6 @@ namespace LearnThaiApplication
             if (SelectedChapter != null)
             {
                 PreTextChanger();
-            }
-        }
-
-        /// <summary>
-        ///Sets the properties of the object it recives.
-        /// </summary>
-        /// <param name="recived">what object to find properties for</param>
-        private void SetPropertyOfGenericObject(object recived)
-        {
-            ListOfProperties.Clear();
-            ListOfValues.Clear();
-            if (recived != null)
-            {
-                foreach (PropertyInfo prop in recived.GetType().GetProperties().ToList<PropertyInfo>())
-                {
-                    if (prop != null)
-                    {
-                        ListOfProperties.Add(prop);
-
-                        ListOfValues.Add(prop.GetValue(recived));
-                    }
-                }
-            }
-        }
-
-        /// <summary>
-        /// Sets the selected value of the selected object to the new value.
-        /// </summary>
-        /// <param name="newValue">The new value for the object</param>
-        /// <param name="nameOfPropertyToChange">The name of the property to change</param>
-        /// <param name="objectToChange">What object to change</param>
-        private void SetValueOfObject(object newValue, string nameOfPropertyToChange, object objectToChange)
-        {
-            foreach (PropertyInfo prop in ListOfProperties)
-            {
-                if (prop.Name == nameOfPropertyToChange)
-                {
-                    if (prop.PropertyType == typeof(List<string>))
-                    {
-                        prop.SetValue(objectToChange, SplitStringToList((string)newValue), null);
-                    }
-                    else
-                    {
-                        prop.SetValue(objectToChange, newValue, null);
-                    }
-                    break;
-                }
             }
         }
 
@@ -1263,13 +1170,10 @@ namespace LearnThaiApplication
         /// <param name="movementValue">to move forward, backwards or stay in place in the list</param>
         private void TextChanger()
         {
-            //if (DisplayList.Count == 0)
-            //{
-            //    return;
-            //}
-
             try
             {
+                FindWordWithChapter();
+
                 if (SkipCompleted)
                 {
                     if (CheckIfChapterIsDone())
@@ -1313,21 +1217,19 @@ namespace LearnThaiApplication
                     return;
                 }
 
-                SetPropertyOfGenericObject(DisplayList[CurrentFileIndex]);
-
-                SelectedPropertyToDisplay = GetValueFromValueList(WhatToDisplay);
-
-                string retrivedChapter = (string)GetValueFromValueList("Chapter", SelectedChapter);
-
-                if (retrivedChapter == SelectedChapter)
+                if (DisplayList[CurrentFileIndex].Chapter == SelectedChapter)
                 {
-                    if (SelectedPropertyToDisplay is List<string> propertyIsList)
+                    if (WhatToDisplay == "ThaiScript")
                     {
-                        ThaiScriptString = ListToString(propertyIsList);
+                        ThaiScriptString = DisplayList[CurrentFileIndex].ThaiScript_String;
                     }
-                    else
+                    else if (WhatToDisplay == "ThaiFonet")
                     {
-                        ThaiScriptString = (string)SelectedPropertyToDisplay;
+                        ThaiScriptString = DisplayList[CurrentFileIndex].ThaiFonet_String;
+                    }
+                    else if (WhatToDisplay == "EngWords")
+                    {
+                        ThaiScriptString = DisplayList[CurrentFileIndex].EngWords_String;
                     }
                 }
                 else
@@ -1353,7 +1255,7 @@ namespace LearnThaiApplication
         {
             if (TabIndex == 0)
             {
-                ValidateAnswer();
+                ValidateAnswer(Answear);
             }
         }
 
@@ -1404,6 +1306,23 @@ namespace LearnThaiApplication
             SaveFiles<User>(Users, "Users");
         }
 
+        private object GetValueFromWord()
+        {
+            if (TrainScript)
+            {
+                return DisplayList[CurrentFileIndex].ThaiScript;
+            }
+            else if (TrainFonet)
+            {
+                return DisplayList[CurrentFileIndex].ThaiFonet;
+            }
+            else if (TrainWords)
+            {
+                return DisplayList[CurrentFileIndex].EngWords;
+            }
+            return null;
+        }
+
         /// <summary>
         /// Compares the written answear to the current words propterties.
         /// </summary>
@@ -1413,28 +1332,25 @@ namespace LearnThaiApplication
         /// <param name="textBlockStatus">What textblock to use for right or worng</param>
         /// <param name="textBlockDesc">What textblock to use for description</param>
         /// <param name="checkBoxDesc">What checkbox to use to check if description is on</param>
-        private void ValidateAnswer()
+        private void ValidateAnswer(string inputetAnswear)
         {
-            Word word = DisplayList[currentFileIndex];
-            SetPropertyOfGenericObject(word);
-
-            SelectedPropertyToValidate = GetValueFromValueList(WhatToTrain);
-
             int rightAnswears = 0;
             int totalAnswears = 0;
             int indexToRemove = -1;
             bool removeCorrect = false;
-            if (string.IsNullOrEmpty(Answear))
+            if (string.IsNullOrEmpty(inputetAnswear))
             {
                 MessageBox.Show("Please enter an answear.");
             }
             else
             {
-                List<string> answers = Regex.Split(Answear, RegexSplitString).ToList();
-                if (SelectedPropertyToValidate is List<string>)
+                List<string> answers = Regex.Split(inputetAnswear, RegexSplitString).ToList();
+
+                if (GetValueFromWord() is List<string> allAnswears)
                 {
-                    totalAnswears = ((List<string>)SelectedPropertyToValidate).Count;
-                    foreach (string correctWord in SelectedPropertyToValidate as List<string>)
+                    totalAnswears = allAnswears.Count();
+
+                    foreach (string correctWord in allAnswears)
                     {
                         if (removeCorrect)
                         {
@@ -1450,9 +1366,9 @@ namespace LearnThaiApplication
                                 rightAnswears++;
                                 if (rightAnswears == totalAnswears)
                                 {
-                                    if (!CheckIfUserHasCompleted(currentUser.CompletedWords, word, true))
+                                    if (!CheckIfUserHasCompleted(currentUser.CompletedWords, DisplayList[CurrentFileIndex], true))
                                     {
-                                        AddWordToCompleted(word);
+                                        AddWordToCompleted(DisplayList[CurrentFileIndex]);
                                     }
                                 }
                                 break;
@@ -1464,15 +1380,15 @@ namespace LearnThaiApplication
                         }
                     }
                 }
-                else if (string.Equals(Answear, (string)SelectedPropertyToValidate, StringComparison.OrdinalIgnoreCase))
+                else if (string.Equals(Answear, (string)GetValueFromWord(), StringComparison.OrdinalIgnoreCase))
                 {
                     totalAnswears = 1;
                     correctPoints++;
                     rightAnswears++;
 
-                    if (!CheckIfUserHasCompleted(currentUser.CompletedWords, word, true))
+                    if (!CheckIfUserHasCompleted(currentUser.CompletedWords, DisplayList[CurrentFileIndex], true))
                     {
-                        AddWordToCompleted(word);
+                        AddWordToCompleted(DisplayList[CurrentFileIndex]);
                     }
                 }
                 if (rightAnswears != 0)
@@ -1683,9 +1599,13 @@ namespace LearnThaiApplication
                 TabIndex = MainWindow_tabController.SelectedIndex;
                 ClearFields();
 
-                ResetChapter();
+                //ResetChapter();
                 if (TabIndex == 0)
                 {
+                    if (SelectedChapterIndex == 0)
+                    {
+                        SelectedChapterIndex = 1;
+                    }
                     MovementValue = 0;
                     PreTextChanger();
                 }
@@ -1954,9 +1874,6 @@ namespace LearnThaiApplication
             }
         }
 
-        /// <summary>
-        ///
-        /// </summary>
         private void PopulateManageChapterCB()
         {
             cb_SelectList.ItemsSource = null;
@@ -2020,10 +1937,9 @@ namespace LearnThaiApplication
             {
                 foreach (Word word in listToSeach)
                 {
-                    SetPropertyOfGenericObject(word);
-
-                    foreach (var value in ListOfValues)
+                    foreach (var prop in word.GetType().GetProperties())
                     {
+                        var value = prop.GetValue(word);
                         if (value == null)
                         {
                             continue;
@@ -2194,28 +2110,25 @@ namespace LearnThaiApplication
 
             foreach (Word word in list)
             {
-                SetPropertyOfGenericObject(word);
-                List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
-                foreach (string x in soundPaths)
+                foreach (string path in word.SoundPath)
                 {
-                    if (string.IsNullOrEmpty(x))
+                    if (string.IsNullOrEmpty(path))
                     {
                         dosntHaveSound++;
                     }
                     else
                     {
-                        if (File.Exists(x))
+                        if (File.Exists(path))
                         {
                             hasSound++;
                         }
                         else
                         {
                             dosntHaveSound++;
-                            SetValueOfObject("", "SoundPath", word);
                         }
                     }
                 }
-                if (soundPaths.Count == 0)
+                if (word.SoundPath.Count == 0)
                 {
                     dosntHaveSound++;
                 }
@@ -2410,11 +2323,7 @@ namespace LearnThaiApplication
                         }
                         foreach (Word word in list)
                         {
-                            SetPropertyOfGenericObject(word);
-
-                            List<string> ThaiScriptList = (List<string>)GetValueFromValueList("ThaiScript");
-
-                            bool result = ThaiScriptList.Contains(correctText[listIndex]);
+                            bool result = word.ThaiScript.Contains(correctText[listIndex]);
 
                             if (result)
                             {
@@ -2469,7 +2378,7 @@ namespace LearnThaiApplication
         {
             try
             {
-                List<string> soundPaths = (List<string>)GetValueFromValueList("SoundPath");
+                List<string> soundPaths = DisplayList[CurrentFileIndex].SoundPath;
 
                 if (soundPaths.Count == 0)
                 {
@@ -2776,6 +2685,10 @@ namespace LearnThaiApplication
             float conf = e.Result.Confidence;
             ss.SpeakAsync(text);
             SpeechResult = text + "\r\n " + procounc + " " + conf.ToString();
+            if (DisplayList[CurrentFileIndex].ThaiFonet_String.Replace(";", "") == text)
+            {
+                //ValidateAnswer(DisplayList[CurrentFileIndex].ThaiFonet_String);
+            }
         }
 
         private void sre_SpeechRecognitationRejected(object sender, SpeechRecognitionRejectedEventArgs e)
