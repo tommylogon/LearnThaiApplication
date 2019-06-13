@@ -521,6 +521,653 @@
         <foneticCompleted>true</foneticCompleted>
         <meaningCompleted>false</meaningCompleted>
       </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ทรง</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>song</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Form</string>
+            <string> Shape</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ทรง.wma</string>
+          </SoundPath>
+          <EngDesc>The letter combination ทร is usually pronounced as S</EngDesc>
+          <Tone />
+          <Chapter>Special pronounciation</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ทราย</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>saai</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>sand</string>
+            <string> granule</string>
+            <string> silica sand</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ทราย.wma</string>
+          </SoundPath>
+          <EngDesc>The letter combination ทร is usually pronounced as S</EngDesc>
+          <Tone />
+          <Chapter>Special pronounciation</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ธรรมดา</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>tham ma daa</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>[is] usual</string>
+            <string> ordinary</string>
+            <string> normal</string>
+            <string> average</string>
+            <string> plain</string>
+            <string> regular</string>
+            <string> natural</string>
+            <string> common</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ธรรมดา.wma</string>
+          </SoundPath>
+          <EngDesc>The letter combination รร can be pronounced as "an" or "a".</EngDesc>
+          <Tone />
+          <Chapter>Special pronounciation</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ฃอ</string>
+            <string>ขวด</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>kho</string>
+            <string>khuat</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Bottle</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ฃอ.wma</string>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ขวด.wma</string>
+          </SoundPath>
+          <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ข. [numerical classifier for bottles and bottled substances]</EngDesc>
+          <Tone>
+            <string>Low</string>
+          </Tone>
+          <Chapter>Consonants</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>คอ</string>
+            <string>ควาย</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>kho</string>
+            <string>khwaai;</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Water buffalo</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\คอ.wma</string>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ควาย.wma</string>
+          </SoundPath>
+          <EngDesc>[slang] bufoon; ignoramus, Moron</EngDesc>
+          <Tone>
+            <string>Middle</string>
+          </Tone>
+          <Chapter>Consonants</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ฅอ</string>
+            <string>คน</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>kho</string>
+            <string>khohn</string>
+            <string />
+          </ThaiFonet>
+          <EngWords>
+            <string>person</string>
+            <string>guy</string>
+            <string>people</string>
+            <string>man</string>
+            <string>human being</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ฅอ.wma</string>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\คน.wma</string>
+          </SoundPath>
+          <EngDesc>This letter is no longer used by everyday Thai, and is mostly replaced by ค. [numerical classifier for persons/occupations], to stir; scramble; mix</EngDesc>
+          <Tone>
+            <string>Middle</string>
+          </Tone>
+          <Chapter>Consonants</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ฆอ</string>
+            <string>ระฆัง</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>kho</string>
+            <string>ra khang</string>
+            <string />
+          </ThaiFonet>
+          <EngWords>
+            <string>Bell</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ฆอ.wma</string>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ระฆัง.wma</string>
+          </SoundPath>
+          <EngDesc>a large bell</EngDesc>
+          <Tone>
+            <string>High</string>
+            <string>Middle</string>
+          </Tone>
+          <Chapter>Consonants</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>งอ</string>
+            <string>งู</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>ngo</string>
+            <string>ngu</string>
+            <string />
+          </ThaiFonet>
+          <EngWords>
+            <string>Snake</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\งอ.wma</string>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\งู.wma</string>
+          </SoundPath>
+          <EngDesc />
+          <Tone>
+            <string>Middle</string>
+          </Tone>
+          <Chapter>Consonants</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>จอ</string>
+            <string>จาน</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>jo</string>
+            <string>jaan;</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>plate</string>
+            <string>dish</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\จอ.wma</string>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\จาน.wma</string>
+          </SoundPath>
+          <EngDesc>[numerical classifier for dishes (including satellite)]</EngDesc>
+          <Tone>
+            <string>Middle</string>
+          </Tone>
+          <Chapter>Consonants</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ฉอ</string>
+            <string>ฉิ่ง</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>cho</string>
+            <string>ching</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Cymbals</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ฉอ.wma</string>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ฉิ่ง.wma</string>
+          </SoundPath>
+          <EngDesc>[a type of] small cymbal used in East and Southeast Asian music</EngDesc>
+          <Tone>
+            <string>Low</string>
+          </Tone>
+          <Chapter>Consonants</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ชอ</string>
+            <string>ช้าง</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>cho</string>
+            <string>chaang;</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Elephant</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ชอ.wma</string>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ช้าง.wma</string>
+          </SoundPath>
+          <EngDesc>[numerical classifier for royally enrolled elephants]</EngDesc>
+          <Tone>
+            <string>High</string>
+          </Tone>
+          <Chapter>Consonants</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>บ่าย</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>baai</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Afternoon</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\บ่าย.wma</string>
+          </SoundPath>
+          <EngDesc>13:00 untill 15:00</EngDesc>
+          <Tone />
+          <Chapter>Telling time</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>เย็น</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>yen</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Late afternoon</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\เย็น.wma</string>
+          </SoundPath>
+          <EngDesc>16:00 untill 18:00</EngDesc>
+          <Tone />
+          <Chapter>Telling time</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>เช้า</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>chaao</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Morning</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\เช้า.wma</string>
+          </SoundPath>
+          <EngDesc>06:00 untill 11:00</EngDesc>
+          <Tone />
+          <Chapter>Telling time</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>ล้าน</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>laan</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>million</string>
+            <string> the number one million</string>
+            <string> 1 000 000</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ล้าน.wma</string>
+          </SoundPath>
+          <EngDesc>the number or quantity of a million.</EngDesc>
+          <Tone />
+          <Chapter>Numbers and Counting</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>๓</string>
+            <string>สาม</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>saam</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Three</string>
+            <string>3</string>
+          </EngWords>
+          <SoundPath />
+          <EngDesc>Thai digit three, 3</EngDesc>
+          <Tone>
+            <string>Rising</string>
+          </Tone>
+          <Chapter>Numbers</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>๒</string>
+            <string>สอง</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>saawng</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Two</string>
+            <string>2</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\สอง.wma</string>
+          </SoundPath>
+          <EngDesc>Thai digit two, 2</EngDesc>
+          <Tone>
+            <string>Rising</string>
+          </Tone>
+          <Chapter>Numbers</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>๗</string>
+            <string>เจ็ด</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>jet</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Seven</string>
+            <string>7</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\เจ็ด.wma</string>
+          </SoundPath>
+          <EngDesc>Thai digit seven, 7</EngDesc>
+          <Tone>
+            <string>Low</string>
+          </Tone>
+          <Chapter>Numbers</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>๕</string>
+            <string>ฮ่า</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>haa</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Five</string>
+            <string>5</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\ฮ่า.wma</string>
+          </SoundPath>
+          <EngDesc>Thai digit five, 5</EngDesc>
+          <Tone>
+            <string>Falling</string>
+          </Tone>
+          <Chapter>Numbers</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>๔</string>
+            <string>สี่</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>see</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Four</string>
+            <string>4</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\สี่.wma</string>
+          </SoundPath>
+          <EngDesc>Thai digit four, 4</EngDesc>
+          <Tone>
+            <string>Low</string>
+          </Tone>
+          <Chapter>Numbers</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>๖</string>
+            <string>หก</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>hook</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Six</string>
+            <string>6</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\หก.wma</string>
+          </SoundPath>
+          <EngDesc>Thai digit six, 6</EngDesc>
+          <Tone>
+            <string>Low</string>
+          </Tone>
+          <Chapter>Numbers</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>๐</string>
+            <string>สูน</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>soon</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>zero</string>
+            <string>0</string>
+          </EngWords>
+          <SoundPath />
+          <EngDesc>Thai digit zero, 0</EngDesc>
+          <Tone>
+            <string>Rising</string>
+          </Tone>
+          <Chapter>Numbers</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>๙</string>
+            <string>เก้า</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>gao</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Nine</string>
+            <string>9</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\เก้า.wma</string>
+          </SoundPath>
+          <EngDesc>Thai digit nine, 9</EngDesc>
+          <Tone>
+            <string>Falling</string>
+          </Tone>
+          <Chapter>Numbers</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>๖</string>
+            <string>หก</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>haawk</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Six</string>
+            <string>6</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\หก.wma</string>
+          </SoundPath>
+          <EngDesc>Thai digit six, 6</EngDesc>
+          <Tone>
+            <string>Low</string>
+          </Tone>
+          <Chapter>Numbers</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
+      <CompletedWord>
+        <word>
+          <ThaiScript>
+            <string>๘</string>
+            <string>แปด</string>
+          </ThaiScript>
+          <ThaiFonet>
+            <string>bpæt</string>
+          </ThaiFonet>
+          <EngWords>
+            <string>Eight</string>
+            <string>8</string>
+          </EngWords>
+          <SoundPath>
+            <string>C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Files\Media\Sound\แปด.wma</string>
+          </SoundPath>
+          <EngDesc>Thai digit eight, 8</EngDesc>
+          <Tone>
+            <string>Low</string>
+          </Tone>
+          <Chapter>Numbers</Chapter>
+        </word>
+        <scriptCompleted>false</scriptCompleted>
+        <foneticCompleted>true</foneticCompleted>
+        <meaningCompleted>false</meaningCompleted>
+      </CompletedWord>
     </CompletedWords>
   </User>
 </ArrayOfUser>

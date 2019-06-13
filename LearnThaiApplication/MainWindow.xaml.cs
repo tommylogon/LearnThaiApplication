@@ -166,6 +166,7 @@ namespace LearnThaiApplication
         private bool trainScript = false;
         private bool trainFonet = false;
         private bool trainWords = false;
+        private bool testWordReco = false;
 
         public bool IsListening
         {
@@ -2661,13 +2662,13 @@ namespace LearnThaiApplication
             }
             else if (e.Result != null)
             {
-                MessageBox.Show("Results: \r\n"
-                                + "Words: " + e.Result.Words + "\r\n"
-                                + "Text: " + e.Result.Text + "\r\n"
-                                + "Semantics: " + e.Result.Semantics + "\r\n"
-                                + "Replacement Words units: " + e.Result.ReplacementWordUnits + "\r\n"
-                                + "Homophones: " + e.Result.Homophones + "\r\n"
-                                + "Grammar: " + e.Result.Grammar + "\r\n");
+                //MessageBox.Show("Results: \r\n"
+                //                + "Words: " + e.Result.Words + "\r\n"
+                //                + "Text: " + e.Result.Text + "\r\n"
+                //                + "Semantics: " + e.Result.Semantics + "\r\n"
+                //                + "Replacement Words units: " + e.Result.ReplacementWordUnits + "\r\n"
+                //                + "Homophones: " + e.Result.Homophones + "\r\n"
+                //                + "Grammar: " + e.Result.Grammar + "\r\n");
             }
         }
 
@@ -2712,10 +2713,10 @@ namespace LearnThaiApplication
             sre.SpeechRecognized += sre_SpeechRecogniced;
             sre.RecognizeCompleted += sre_RecognizedCompleted;
             sre.SpeechHypothesized += sre_SpeechHypotized;
-
+            sre.EmulateRecognizeCompleted += Sre_EmulateRecognizeCompleted;
             voices = ss.GetInstalledVoices().ToList();
 
-            if (string.IsNullOrEmpty(SelectedVoice))
+            if (string.IsNullOrEmpty(SelectedVoice) | !Voices.Any(v => v.VoiceInfo.Name == SelectedVoice))
             {
                 SelectedVoice = voices.First(v => v.VoiceInfo.Name == "Microsoft Zira Desktop").VoiceInfo.Name;
             }
@@ -2742,6 +2743,15 @@ namespace LearnThaiApplication
             Grammar g_AllInList = GetGrammarFromDisplayList();
 
             sre.LoadGrammarAsync(g_AllInList);
+        }
+
+        private void Sre_EmulateRecognizeCompleted(object sender, EmulateRecognizeCompletedEventArgs e)
+        {
+            if (testWordReco)
+            {
+                sre.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            testWordReco = false;
         }
 
         private Grammar GetHelloGoodbyeGrammar()
@@ -2778,9 +2788,10 @@ namespace LearnThaiApplication
             string procounc = "";
             foreach (var recognizedWord in e.Result.Words)
             {
-                text += recognizedWord.Text.Replace(";", " ");
+                text += recognizedWord.Text.Replace(";", " ") + " ";
                 procounc += recognizedWord.Pronunciation + " ";
             }
+            text = text.Trim();
             float conf = e.Result.Confidence;
             if (ss.Voice.Culture.Name.CaseInsensitiveContains("en-"))
             {
@@ -2792,9 +2803,10 @@ namespace LearnThaiApplication
             }
 
             SpeechResult = text + "\r\n " + procounc + " " + conf.ToString();
-            if (DisplayList[CurrentFileIndex].ThaiFonet_String.Replace(";", "") == text)
+
+            if (DisplayList[CurrentFileIndex].ThaiFonet_String.Replace(";", "").Trim() == text & !testWordReco)
             {
-                //ValidateAnswer(DisplayList[CurrentFileIndex].ThaiFonet_String);
+                ValidateAnswer(DisplayList[CurrentFileIndex].ThaiFonet_String);
             }
         }
 
@@ -2829,6 +2841,7 @@ namespace LearnThaiApplication
             try
             {
                 sre.RecognizeAsyncStop();
+                testWordReco = true;
                 sre.EmulateRecognizeAsync(DisplayList[CurrentFileIndex].ThaiFonet_String/*.Replace(";", "")*/);
             }
             catch (Exception ex)
@@ -2847,11 +2860,14 @@ namespace LearnThaiApplication
 
         private void Dg_ContentManagement_LoadingRow(object sender, DataGridRowEventArgs e)
         {
-            if (SearchResults.Last() == e.Row.Item)
+            if (SearchResults.Count != 0)
             {
-                dg_ContentManagement.CurrentCell = new DataGridCellInfo(dg_ContentManagement.Items[0], dg_ContentManagement.Columns[0]);
-                dg_ContentManagement.SelectedCells.Clear();
-                dg_ContentManagement.SelectedCells.Add(dg_ContentManagement.CurrentCell);
+                if (SearchResults.Last() == e.Row.Item)
+                {
+                    dg_ContentManagement.CurrentCell = new DataGridCellInfo(dg_ContentManagement.Items[0], dg_ContentManagement.Columns[0]);
+                    dg_ContentManagement.SelectedCells.Clear();
+                    dg_ContentManagement.SelectedCells.Add(dg_ContentManagement.CurrentCell);
+                }
             }
         }
     }
