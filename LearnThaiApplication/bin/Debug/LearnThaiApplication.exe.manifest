@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LearnThaiApplication.exe" size="6576536">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LearnThaiApplication.exe" size="6577560">
       <assemblyIdentity name="LearnThaiApplication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gevFrmXedYYxNXi4C2jo5qR4Fn8ERyFpnjCokJpfbjA=</dsig:DigestValue>
+        <dsig:DigestValue>uQVjDhOvzRmjVgE5ubNqBsb8M/8XYsoflB0D635ooNc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

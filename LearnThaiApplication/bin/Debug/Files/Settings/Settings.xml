@@ -3,12 +3,12 @@
   <DescriptionOn>false</DescriptionOn>
   <IsLooping>false</IsLooping>
   <DisplayAllPropertiesInDescription>false</DisplayAllPropertiesInDescription>
-  <RandomOn>true</RandomOn>
+  <RandomOn>false</RandomOn>
   <SkipIntro>true</SkipIntro>
   <AutoPlaySounds>false</AutoPlaySounds>
   <ShowSaveLocation>false</ShowSaveLocation>
   <SkipCompletedWords>true</SkipCompletedWords>
-  <ActivateSpeechRecognition>true</ActivateSpeechRecognition>
+  <ActivateSpeechRecognition>false</ActivateSpeechRecognition>
   <WhatToDisplay>ThaiScript</WhatToDisplay>
   <WhatToTrain>ThaiFonet</WhatToTrain>
   <SelectedVoice>Microsoft Zira Desktop</SelectedVoice>

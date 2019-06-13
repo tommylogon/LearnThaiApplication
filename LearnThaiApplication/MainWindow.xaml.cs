@@ -56,6 +56,7 @@ namespace LearnThaiApplication
         private List<UserSetting> UserSettings = new List<UserSetting>();
         private ObservableCollection<Word> words = new ObservableCollection<Word>();
         private List<InstalledVoice> voices = new List<InstalledVoice>();
+        private List<MediaPlayer> players = new List<MediaPlayer>();
 
         public ObservableCollection<Word> SearchResults
         {
@@ -678,7 +679,7 @@ namespace LearnThaiApplication
 
         private User currentUser;
         public MainWindow AppWindow;
-
+        MediaPlayer player = new MediaPlayer();
         private int selectedManagementIndex;
         private double progressValue;
         private static CultureInfo ci;
@@ -1909,7 +1910,7 @@ namespace LearnThaiApplication
                         }
                         else
                         {
-                            Search();
+                            StartSearchWorker();
                         }
                     }
                 }
@@ -1954,15 +1955,17 @@ namespace LearnThaiApplication
             if (SearchString != null)
             {
                 txt_SearchBar.Background = Brushes.White;
-                Search();
+                StartSearchWorker();
             }
             else
             {
                 txt_SearchBar.Background = Brushes.Red;
 
-                Search();
+                StartSearchWorker();
             }
         }
+
+
 
         /// <summary>
         ///
@@ -1976,15 +1979,27 @@ namespace LearnThaiApplication
                 if (SearchString != null)
                 {
                     txt_SearchBar.Background = Brushes.White;
-                    Search();
+                    StartSearchWorker();
                 }
                 else
                 {
                     txt_SearchBar.Background = Brushes.Red;
                     SelectedChapterIndex = 0;
-                    Search();
+                    StartSearchWorker();
                 }
             }
+        }
+
+        private void StartSearchWorker()
+        {
+            BackgroundWorker bgw_Searcher = new BackgroundWorker();
+            bgw_Searcher.DoWork += SearchWorker_DoWork;
+            bgw_Searcher.RunWorkerAsync();
+        }
+
+        private void SearchWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            Search();
         }
 
         /// <summary>
@@ -1993,7 +2008,7 @@ namespace LearnThaiApplication
         /// <param name="searchValue"></param>
         private void Search()
         {
-            SearchResults.Clear();
+            Dispatcher.Invoke(() => SearchResults.Clear());
             List<Word> listToSeach = new List<Word>(Words);
 
             try
@@ -2002,7 +2017,7 @@ namespace LearnThaiApplication
                 {
                     foreach (Word word in Words)
                     {
-                        SearchResults.Add(word);
+                        Dispatcher.Invoke(() => SearchResults.Add(word));
                     }
                 }
                 else
@@ -2024,7 +2039,7 @@ namespace LearnThaiApplication
                                     {
                                         if (!SearchResults.Contains(word))
                                         {
-                                            SearchResults.Add(word);
+                                            Dispatcher.Invoke(() => SearchResults.Add(word));
                                             continue;
                                         }
                                     }
@@ -2034,7 +2049,7 @@ namespace LearnThaiApplication
                             {
                                 if (!SearchResults.Contains(word))
                                 {
-                                    SearchResults.Add(word);
+                                    Dispatcher.Invoke(() => SearchResults.Add(word));
                                     continue;
                                 }
                             }
@@ -2528,17 +2543,19 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void Worker_PlaySoundFile(object sender, DoWorkEventArgs e)
         {
-            MediaPlayer player = new MediaPlayer();
+            Dispatcher.Invoke(() => player.Stop());
+            
 
             try
             {
+
                 foreach (String soundPath in DisplayList[CurrentFileIndex].SoundPath)
                 {
                     //sre_RecognizeFromSoundFile(soundPath);
                     int waitTime = 1000 + (DisplayList[CurrentFileIndex].ThaiScript.Count * 50);
 
-                    player.Open(new Uri(soundPath));
-                    player.Play();
+                    Dispatcher.Invoke(() => player.Open(new Uri(soundPath)));
+                    Dispatcher.Invoke(() => player.Play());
 
                     Thread.Sleep(waitTime);
                 }
@@ -2722,21 +2739,25 @@ namespace LearnThaiApplication
             }
             ss.SelectVoice(SelectedVoice);
             ss.SetOutputToDefaultAudioDevice();
-            if (ss.Voice.Culture.Name.CaseInsensitiveContains("en-"))
+            if (IsListening)
             {
-                ss.SpeakAsync("Sa wat dee krap");
-            }
-            else if (ss.Voice.Culture.Name.CaseInsensitiveContains("th-"))
-            {
-                if (ss.Voice.Gender.ToString().CaseInsensitiveContains("male"))
+                if (ss.Voice.Culture.Name.CaseInsensitiveContains("en-"))
                 {
-                    ss.SpeakAsync("สวัสดีครับ");
+                    ss.SpeakAsync("Sa wat dee krap");
                 }
-                else
+                else if (ss.Voice.Culture.Name.CaseInsensitiveContains("th-"))
                 {
-                    ss.SpeakAsync("สวัสดีค่ะ");
+                    if (ss.Voice.Gender.ToString().CaseInsensitiveContains("male"))
+                    {
+                        ss.SpeakAsync("สวัสดีครับ");
+                    }
+                    else
+                    {
+                        ss.SpeakAsync("สวัสดีค่ะ");
+                    }
                 }
             }
+            
 
             Grammar g_HelloGoodbye = GetHelloGoodbyeGrammar();
 
