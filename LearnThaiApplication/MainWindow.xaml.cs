@@ -21,6 +21,7 @@ using System.Speech.AudioFormat;
 using System.Speech.Synthesis;
 using static LearnThaiApplication.User;
 using System.Globalization;
+using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace LearnThaiApplication
 {
@@ -36,7 +37,7 @@ namespace LearnThaiApplication
             Loaded += MainWindow_Loaded;
             AppWindow = this;
 
-            LoadSettings();
+            
             LoadAllFiles();
             SetInitialStates();
             GetImage();
@@ -57,7 +58,7 @@ namespace LearnThaiApplication
         private ObservableCollection<Word> words = new ObservableCollection<Word>();
         private List<InstalledVoice> voices = new List<InstalledVoice>();
         private List<MediaPlayer> players = new List<MediaPlayer>();
-
+        private ObservableCollection<User> users = new ObservableCollection<User>();
         public ObservableCollection<Word> SearchResults
         {
             get
@@ -106,7 +107,7 @@ namespace LearnThaiApplication
             }
         }
 
-        private ObservableCollection<User> users = new ObservableCollection<User>();
+       
 
         public ObservableCollection<Word> Words
         {
@@ -173,15 +174,15 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.ActivateSpeechRecognition;
+                return Properties.Settings.Default.ActivateSpeechRecognition;
             }
             set
             {
-                if (settings.ActivateSpeechRecognition != value)
+                if (Properties.Settings.Default.ActivateSpeechRecognition != value)
                 {
-                    settings.ActivateSpeechRecognition = value;
+                    Properties.Settings.Default.ActivateSpeechRecognition = value;
                     OnPropertyChanged("IsListening");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -238,15 +239,15 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.ShowSaveLocation;
+                return Properties.Settings.Default.ShowSaveLocation;
             }
             set
             {
-                if (settings.ShowSaveLocation != value)
+                if (Properties.Settings.Default.ShowSaveLocation != value)
                 {
-                    settings.ShowSaveLocation = value;
+                    Properties.Settings.Default.ShowSaveLocation = value;
                     OnPropertyChanged("ShowSaveLocation");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -255,16 +256,16 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.DisplayAllPropertiesInDescription;
+                return Properties.Settings.Default.DisplayAllPropertiesInDescription;
             }
             set
             {
-                if (settings.DisplayAllPropertiesInDescription != value)
+                if (Properties.Settings.Default.DisplayAllPropertiesInDescription != value)
                 {
-                    settings.DisplayAllPropertiesInDescription = value;
+                    Properties.Settings.Default.DisplayAllPropertiesInDescription = value;
                     HasDescription = value;
                     OnPropertyChanged("DisplayAll");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -273,15 +274,16 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.DescriptionOn;
+                return Properties.Settings.Default.DescriptionOn;
             }
             set
             {
-                if (settings.DescriptionOn != value)
+                if (Properties.Settings.Default.DescriptionOn != value)
                 {
-                    settings.DescriptionOn = value;
+                    Properties.Settings.Default.DescriptionOn = value;
                     OnPropertyChanged("HasDescription");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
+                    
                 }
             }
         }
@@ -290,15 +292,15 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.IsLooping;
+                return Properties.Settings.Default.IsLooping;
             }
             set
             {
-                if (settings.IsLooping != value)
+                if (Properties.Settings.Default.IsLooping != value)
                 {
-                    settings.IsLooping = value;
+                    Properties.Settings.Default.IsLooping = value;
                     OnPropertyChanged("IsLooping");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -307,15 +309,15 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.RandomOn;
+                return Properties.Settings.Default.RandomOn;
             }
             set
             {
-                if (settings.RandomOn != value)
+                if (Properties.Settings.Default.RandomOn != value)
                 {
-                    settings.RandomOn = value;
+                    Properties.Settings.Default.RandomOn = value;
                     OnPropertyChanged("IsRandom");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -324,15 +326,15 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.AutoPlaySounds;
+                return Properties.Settings.Default.AutoPlaySounds;
             }
             set
             {
-                if (settings.AutoPlaySounds != value)
+                if (Properties.Settings.Default.AutoPlaySounds != value)
                 {
-                    settings.AutoPlaySounds = value;
+                    Properties.Settings.Default.AutoPlaySounds = value;
                     OnPropertyChanged("AutoPlay");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -341,15 +343,15 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.SkipCompletedWords;
+                return Properties.Settings.Default.SkipCompletedWords;
             }
             set
             {
-                if (settings.SkipCompletedWords != value)
+                if (Properties.Settings.Default.SkipCompletedWords != value)
                 {
-                    settings.SkipCompletedWords = value;
+                    Properties.Settings.Default.SkipCompletedWords = value;
                     OnPropertyChanged("SkipCompleted");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -358,15 +360,15 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.SkipIntro;
+                return Properties.Settings.Default.SkipIntro;
             }
             set
             {
-                if (settings.SkipIntro != value)
+                if (Properties.Settings.Default.SkipIntro != value)
                 {
-                    settings.SkipIntro = value;
+                    Properties.Settings.Default.SkipIntro = value;
                     OnPropertyChanged("SkipIntro");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -379,10 +381,10 @@ namespace LearnThaiApplication
         private string answear;
         private string DebugFilePath = Environment.CurrentDirectory + @"\Files\Settings\DEBUG\";
         private string ImageFilePath = Environment.CurrentDirectory + @"\Files\Media\Icon\";
-        private string LanguageFilePath = Environment.CurrentDirectory + @"\Files\Media\Language\";
-        private string WebFilePath = Environment.CurrentDirectory + @"\Files\Media\Website\";
-        private string SettingsFilePath = Environment.CurrentDirectory + @"\Files\Settings\";
-        private string SoundFilePath = Environment.CurrentDirectory + @"\Files\Media\Sound\";
+        private string languageFilePath = Environment.CurrentDirectory + @"\Files\Media\Language\";
+        private string webFilePath = Environment.CurrentDirectory + @"\Files\Media\Website\";
+        
+        private string soundFilePath = Environment.CurrentDirectory + @"\Files\Media\Sound\";
 
         private string descriptionText;
         private string result;
@@ -394,23 +396,73 @@ namespace LearnThaiApplication
         private string chapterCounter;
         private string speechResult;
 
+        public string WebFilePath
+        {
+            get
+            {
+                return Properties.Settings.Default.WebFilePath;
+            }
+            set
+            {
+                if (Properties.Settings.Default.WebFilePath != value)
+                {
+                    Properties.Settings.Default.WebFilePath = value;
+                    OnPropertyChanged("WebFilePath");
+                    Properties.Settings.Default.Save();
+                }
+            }
+        }
+
+        public string LanguageFilePath
+        {
+            get
+            {
+                return Properties.Settings.Default.LanguageFilePath;
+            }
+            set
+            {
+                if (Properties.Settings.Default.LanguageFilePath != value)
+                {
+                    Properties.Settings.Default.LanguageFilePath = value;
+                    OnPropertyChanged("LanguageFilePath");
+                    Properties.Settings.Default.Save();
+                }
+            }
+        }
+
+        public string SoundFilePath
+        {
+            get
+            {
+                return Properties.Settings.Default.SoundFilePath;
+            }
+            set
+            {
+                if (Properties.Settings.Default.SoundFilePath != value)
+                {
+                    Properties.Settings.Default.SoundFilePath = value;
+                    OnPropertyChanged("SoundFilePath");
+                    Properties.Settings.Default.Save();
+                }
+            }
+        }
         public string SelectedVoice
         {
             get
             {
-                return settings.SelectedVoice;
+                return Properties.Settings.Default.SelectedVoice;
             }
             set
             {
-                if (settings.SelectedVoice != value)
+                if (Properties.Settings.Default.SelectedVoice != value)
                 {
-                    settings.SelectedVoice = value;
+                    Properties.Settings.Default.SelectedVoice = value;
                     OnPropertyChanged("SelectedVoice");
                     if (ss != null)
                     {
-                        ss.SelectVoice(settings.SelectedVoice);
+                        ss.SelectVoice(Properties.Settings.Default.SelectedVoice);
                     }
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -419,15 +471,15 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.WhatToTrain;
+                return Properties.Settings.Default.WhatToTrain;
             }
             set
             {
-                if (settings.WhatToTrain != value)
+                if (Properties.Settings.Default.WhatToTrain != value)
                 {
-                    settings.WhatToTrain = value;
+                    Properties.Settings.Default.WhatToTrain = value;
                     OnPropertyChanged("WhatToTrain");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -436,15 +488,15 @@ namespace LearnThaiApplication
         {
             get
             {
-                return settings.WhatToDisplay;
+                return Properties.Settings.Default.WhatToDisplay;
             }
             set
             {
-                if (settings.WhatToDisplay != value)
+                if (Properties.Settings.Default.WhatToDisplay != value)
                 {
-                    settings.WhatToDisplay = value;
+                    Properties.Settings.Default.WhatToDisplay = value;
                     OnPropertyChanged("WhatToDisplay");
-                    SaveSetting();
+                    Properties.Settings.Default.Save();
                 }
             }
         }
@@ -673,6 +725,42 @@ namespace LearnThaiApplication
             }
         }
 
+        public int W_Width
+        {
+            get
+            {
+                return Properties.Settings.Default.Window_Width;
+            }
+            set
+            {
+                if(Properties.Settings.Default.Window_Width != value)
+                {
+                    Properties.Settings.Default.Window_Width = value;
+                    OnPropertyChanged("W_Width");
+                    Properties.Settings.Default.Save();
+
+                }
+            }
+        }
+        public int W_Height
+        {
+            get
+            {
+                return Properties.Settings.Default.Window_Height;
+            }
+            set
+            {
+                if (Properties.Settings.Default.Window_Height != value)
+                {
+                    Properties.Settings.Default.Window_Height = value;
+                    OnPropertyChanged("W_Height");
+                    Properties.Settings.Default.Save();
+
+                }
+            }
+        }
+
+
         #endregion ints
 
         #region objects
@@ -730,7 +818,7 @@ namespace LearnThaiApplication
 
         #region others
 
-        private UserSetting settings = new UserSetting();
+        
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -1519,6 +1607,19 @@ namespace LearnThaiApplication
         /// </summary>
         private void LoadAllFiles()
         {
+            if (string.IsNullOrEmpty(LanguageFilePath))
+            {
+                LanguageFilePath = languageFilePath;
+            }
+            if (string.IsNullOrEmpty(SoundFilePath))
+            {
+                SoundFilePath = soundFilePath;
+            }
+            if (string.IsNullOrWhiteSpace(WebFilePath))
+            {
+                WebFilePath = WebFilePath;
+            }
+
             LoadFiles<Chapter>(Chapters, "Thai_Chapter");
 
             LoadFiles<Word>(words, "Thai_Word");
@@ -1566,16 +1667,7 @@ namespace LearnThaiApplication
             }
         }
 
-        /// <summary>
-        ///
-        /// </summary>
-        private void LoadSettings()
-        {
-            if (File.Exists(SettingsFilePath + "settings.xml"))
-            {
-                settings = XmlSerialization.ReadFromXmlFile<UserSetting>(SettingsFilePath + "Settings.xml");
-            }
-        }
+        
 
         /// <summary>
         /// Sets loopChapter to true or false and allows the user to continiue to the next chaper automaticaly at the end of the last chapter.
@@ -1807,13 +1899,7 @@ namespace LearnThaiApplication
             //XmlSerialization.WriteToXmlFile<List<T>>(LanguageFilePath + "Thai_" + whatIsT.Name + ".xml", list, false);
         }
 
-        /// <summary>
-        ///
-        /// </summary>
-        private void SaveSetting()
-        {
-            XmlSerialization.WriteToXmlFile<UserSetting>(SettingsFilePath + "Settings.xml", settings, false);
-        }
+        
 
         /// <summary>
         ///
@@ -1822,7 +1908,7 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void SaveSettings_Click(object sender, RoutedEventArgs e)
         {
-            SaveSetting();
+            Properties.Settings.Default.Save();
         }
 
         /// <summary>
@@ -1837,6 +1923,7 @@ namespace LearnThaiApplication
             else
             {
                 CurrentWord = "Current File in list: " + (CurrentFileIndex + 1);
+                SearchString = "";
 
                 DisplayList = new ObservableCollection<Word>(Words);
 
@@ -2008,54 +2095,38 @@ namespace LearnThaiApplication
         /// <param name="searchValue"></param>
         private void Search()
         {
-            Dispatcher.Invoke(() => SearchResults.Clear());
-            List<Word> listToSeach = new List<Word>(Words);
 
             try
             {
                 if (string.IsNullOrEmpty(SearchString))
                 {
-                    foreach (Word word in Words)
-                    {
-                        Dispatcher.Invoke(() => SearchResults.Add(word));
-                    }
+                    SearchResults = Words;
                 }
                 else
                 {
-                    foreach (Word word in listToSeach)
+                    ObservableCollection<Word> result = new ObservableCollection<Word>();
+                    SearchResults = result;
+                    foreach (var word in Words)
                     {
-                        foreach (var prop in word.GetType().GetProperties())
+                        foreach (var property in word.GetType().GetProperties())
                         {
-                            var value = prop.GetValue(word);
-                            if (value == null)
+                            var value = property.GetValue(word);
+
+                            if (value != null)
                             {
-                                continue;
-                            }
-                            if (value is List<string> sublist)
-                            {
-                                foreach (string s in sublist)
+                                value = value.ToString();
+                                if (((string)value).CaseInsensitiveContains(SearchString))
                                 {
-                                    if (s.CaseInsensitiveContains(searchString))
+                                    if (!result.Contains(word))
                                     {
-                                        if (!SearchResults.Contains(word))
-                                        {
-                                            Dispatcher.Invoke(() => SearchResults.Add(word));
-                                            continue;
-                                        }
+                                        result.Add(word);
                                     }
-                                }
-                            }
-                            else if (((string)value).CaseInsensitiveContains(searchString))
-                            {
-                                if (!SearchResults.Contains(word))
-                                {
-                                    Dispatcher.Invoke(() => SearchResults.Add(word));
-                                    continue;
                                 }
                             }
                         }
                     }
                 }
+                
             }
             catch (Exception ex)
             {
@@ -2787,20 +2858,29 @@ namespace LearnThaiApplication
 
         private Grammar GetGrammarFromDisplayList()
         {
-            Choices ch_allChoices = new Choices();
-
-            foreach (Word word in DisplayList)
+            try
             {
-                if (!string.IsNullOrEmpty(word.ThaiFonet_String))
-                {
-                    ch_allChoices.Add(word.ThaiFonet_String.Replace(";", ""));
-                    ch_allChoices.Add(word.ThaiFonet_String);
-                }
-            }
+                Choices ch_allChoices = new Choices();
 
-            GrammarBuilder gb_result = new GrammarBuilder(ch_allChoices);
-            Grammar g_result = new Grammar(gb_result);
-            return g_result;
+                foreach (Word word in DisplayList)
+                {
+                    if (!string.IsNullOrEmpty(word.ThaiFonet_String))
+                    {
+                        ch_allChoices.Add(word.ThaiFonet_String.Replace(";", ""));
+                        ch_allChoices.Add(word.ThaiFonet_String);
+                    }
+                }
+
+                GrammarBuilder gb_result = new GrammarBuilder(ch_allChoices);
+                Grammar g_result = new Grammar(gb_result);
+                return g_result;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+                return null;
+            }
+            
         }
 
         private void sre_SpeechRecogniced(object sender, SpeechRecognizedEventArgs e)
@@ -2881,14 +2961,50 @@ namespace LearnThaiApplication
 
         private void Dg_ContentManagement_LoadingRow(object sender, DataGridRowEventArgs e)
         {
-            if (SearchResults.Count != 0)
+            //if (SearchResults.Count != 0)
+            //{
+            //    if (SearchResults.Last() == e.Row.Item)
+            //    {
+            //        dg_ContentManagement.CurrentCell = new DataGridCellInfo(dg_ContentManagement.Items[0], dg_ContentManagement.Columns[0]);
+            //        dg_ContentManagement.SelectedCells.Clear();
+            //        dg_ContentManagement.SelectedCells.Add(dg_ContentManagement.CurrentCell);
+            //    }
+            //}
+        }
+
+        private void LanguagePath_Clicked(object sender, RoutedEventArgs e)
+        {
+            SelectPath("Language");
+        }
+
+        private void SoundPath_Clicked(object sender, RoutedEventArgs e)
+        {
+            SelectPath("Sound");
+        }
+
+        private void WebFilePath_Clicked(object sender, RoutedEventArgs e)
+        {
+            SelectPath("Web");
+        }
+        private void SelectPath(string targetPath)
+        {
+
+            CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
-                if (SearchResults.Last() == e.Row.Item)
-                {
-                    dg_ContentManagement.CurrentCell = new DataGridCellInfo(dg_ContentManagement.Items[0], dg_ContentManagement.Columns[0]);
-                    dg_ContentManagement.SelectedCells.Clear();
-                    dg_ContentManagement.SelectedCells.Add(dg_ContentManagement.CurrentCell);
-                }
+                if (targetPath == "Language")
+                    {
+                        LanguageFilePath = dialog.FileName;
+                    }
+                else if (targetPath == "Sound")
+                    {
+
+                    }
+                else if (targetPath == "Web")
+                    {
+
+                    }
+
             }
         }
     }

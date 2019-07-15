@@ -356,7 +356,7 @@
     <ThaiFonet>
       <string>gaaw</string>
       <string>jaaw</string>
-      <string>daww</string>
+      <string>daaw</string>
       <string>daaw</string>
       <string>daaw</string>
       <string>dtaaw</string>
@@ -8329,7 +8329,7 @@ one (generic word [e.g. the small one])
     <Tone>
       <string>Falling</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
@@ -8349,11 +8349,10 @@ one (generic word [e.g. the small one])
     <Tone>
       <string>Falling</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>ก็ ตาม</string>
       <string>ก็ตาม</string>
     </ThaiScript>
     <ThaiFonet>
@@ -8370,7 +8369,7 @@ one (generic word [e.g. the small one])
     <Tone>
       <string>Falling</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
@@ -8392,11 +8391,10 @@ one (generic word [e.g. the small one])
     <Tone>
       <string>Low</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>กลับ บ้าน</string>
       <string>กลับบ้าน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -8416,11 +8414,10 @@ one (generic word [e.g. the small one])
       <string>Low</string>
       <string>Falling</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>กลับ หน้า</string>
       <string>กลับหน้า</string>
     </ThaiScript>
     <ThaiFonet>
@@ -8435,11 +8432,10 @@ one (generic word [e.g. the small one])
       <string>Low</string>
       <string>Falling</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>กลับ หน้า</string>
       <string>กลับหน้า</string>
     </ThaiScript>
     <ThaiFonet>
@@ -8456,11 +8452,10 @@ one (generic word [e.g. the small one])
     <Tone>
       <string>Low</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>มาก กว่า</string>
       <string>มากกว่า</string>
     </ThaiScript>
     <ThaiFonet>
@@ -8478,11 +8473,10 @@ one (generic word [e.g. the small one])
       <string>Falling</string>
       <string>Low</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>สูง กว่า</string>
       <string>สูงกว่า</string>
     </ThaiScript>
     <ThaiFonet>
@@ -8500,7 +8494,7 @@ one (generic word [e.g. the small one])
       <string>Rising</string>
       <string>Low</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
@@ -8531,7 +8525,7 @@ one (generic word [e.g. the small one])
     <Tone>
       <string>Low</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
@@ -8555,7 +8549,7 @@ one (generic word [e.g. the small one])
       <string>Low</string>
       <string />
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
@@ -8577,7 +8571,7 @@ one (generic word [e.g. the small one])
     <Tone>
       <string>m</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
@@ -8596,11 +8590,10 @@ one (generic word [e.g. the small one])
     <Tone>
       <string>m;r</string>
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>ด้วยกัน</string>
       <string>ด้วย กัน</string>
     </ThaiScript>
     <ThaiFonet>
@@ -8621,6 +8614,3203 @@ one (generic word [e.g. the small one])
       <string>f;m</string>
       <string />
     </Tone>
-    <Chapter>101 most used words</Chapter>
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>กับ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gab</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>and</string>
+      <string>by</string>
+      <string>together</string>
+      <string>with;</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>กับข้าว</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gab khaao</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>dish</string>
+      <string>meal</string>
+      <string>food (Thai food to be served and eaten with rice)</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เกี่ยวกับ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>giow</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>[is] involved</string>
+      <string>concerned</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>การ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gaan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>do</string>
+      <string>make act of doing</string>
+      <string>making</string>
+      <string>task</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>การขนส่ง</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gaan khohn sohng</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>transportation</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>การบ้าน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>gaan baan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>homework</string>
+      <string>having sex</string>
+      <string>performing conjugal duties</string>
+      <string>servicing one's spouse sexually</string>
+    </EngWords>
+    <SoundPath />
+    <EngDesc>having sex; performing conjugal duties; servicing one's spouse sexually</EngDesc>
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เกิด</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>geert</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>born</string>
+      <string>arise</string>
+      <string>begin</string>
+      <string>occur</string>
+      <string>originate;</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เกิดขึ้น</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>geerth kheun</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>to occur</string>
+      <string>to happen</string>
+      <string>to come about</string>
+      <string>to take place</string>
+      <string>to arise</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เกิดผล</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>geerth phohn</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Yield result</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ของ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khaawng</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>thing</string>
+      <string>goods</string>
+      <string>possession</string>
+      <string>belonging</string>
+      <string>item</string>
+      <string>stuff</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ของกิน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khaawng gin</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>foodstuffs</string>
+      <string>things to eat;</string>
+    </EngWords>
+    <SoundPath />
+    <Tone>
+      <string>r,m</string>
+    </Tone>
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ของขวัญ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khaawng khwan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>gift</string>
+      <string>present</string>
+      <string>gratuity</string>
+    </EngWords>
+    <SoundPath />
+    <Tone>
+      <string>r</string>
+      <string>r</string>
+    </Tone>
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เขา</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khao</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>[Formal] he</string>
+      <string>she</string>
+      <string>him</string>
+      <string>her</string>
+      <string>they</string>
+      <string>them</string>
+    </EngWords>
+    <SoundPath />
+    <Tone>
+      <string>r</string>
+    </Tone>
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เขาเอง</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khao aehng</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>himself</string>
+      <string>herself</string>
+      <string>themselves</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เข้า</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khao</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>go in</string>
+      <string>access</string>
+      <string>enter</string>
+      <string>get along with</string>
+      <string />
+    </EngWords>
+    <SoundPath />
+    <Tone>
+      <string>f</string>
+    </Tone>
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เข้ากัน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khao gan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>conform</string>
+      <string>harmonize</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เข้าร่วม</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khao ruaam</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>join</string>
+      <string>participate</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คน</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>kon</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>people</string>
+      <string>perosn</string>
+      <string>man</string>
+      <string>human</string>
+      <string>stir</string>
+      <string>mix</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คนบ้า</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>kon baa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Crasy person</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คนเดียว</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khohn diaao</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>alone</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ครั้ง</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khrang</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>time</string>
+      <string>turn occation</string>
+      <string>episode</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ครั้งที่แล้ว</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khrang thee laaeo</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>last time</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ครั้งแรก</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khrang raaek</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>First time</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ความ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khwaam</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>matter</string>
+      <string>fact</string>
+      <string>case</string>
+      <string>content</string>
+      <string>subject</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ควาทจริง</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>Khwaam jing</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>truth</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ความสำคัญ</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>khwaam sam khan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>importance</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คิด</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>kid</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>think</string>
+      <string>imagine</string>
+      <string>consider</string>
+      <string>estimate</string>
+      <string>guess;</string>
+    </EngWords>
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คิดถึง</string>
+    </ThaiScript>
+    <ThaiFonet>
+      <string>kid tung</string>
+    </ThaiFonet>
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ติดผิด</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คือ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>กล่าวตือ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คือว่า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คุณ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คุณนาย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คุณภาพ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>งาน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>งานฉลอง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>จน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>จนแต้ม</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>จนใจ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>จะ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ควรจะ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>น่าจะ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>จาก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>จากกัน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>จากไป</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>จึง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>จึงเรียนมาเพื่อทราบ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ฉัน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ดิฉัน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ฉันรักคุณ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ชีวิต</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ชีงิตจริง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ชีงิตแต่งงาน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เช่น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เช่นนี้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เช่นเคย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ใช้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ใช้ได้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ใช้เวลา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ซึ่ง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ซึ่งกันและกัน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ซึ่งหน้า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ด้วย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ด้วยกัน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ด้าน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ด้านขวา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ด้านซ้าย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ดี</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ดีกว่า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>กีขึ้น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ดู</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ดูตัว</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ดูแล</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เด็ก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เด้กวัยร่น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เด็กเสิร์ฟ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>โดย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>โดยง่าย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>โดยเร็ว</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ได้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ได้คิด</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ได้ยิน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ได้รับ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ได้รับงิน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ได้รับอนุญาต</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ต่อ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ต่อเวลา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ต้อง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ต้องการ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ต้องตา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ตัวตลก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ตัวอย่าง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ต่าง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ต่างหู</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ต่างประเทศ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ตาม</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ตามสบาย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ตามหา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แต่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แต่ก่อน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แต่ละ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ถ้า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ถ้างั้น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ถ้าแม้ง่า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ถึง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ถึงเวลา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มายถึง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ถูก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ถูกต้อง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทั้ง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทั้งคืน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มั้งสอง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทาง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทางการ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทางหลวง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทำ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มำม่า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทำงาน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทำให้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทำให้ตรง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทำให้เสร็จ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ที่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ที่สาม</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทุก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทุกคน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ทุกอย่าง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไทย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คนไทย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ประเทศไทย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เธอ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ของเธอ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ผมรักเธอ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>นะ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>รอสักครูนะ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>นั้น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แค่นั้นแหละ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อย่างนั้น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>นาย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>นายจ้าง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>นายทุน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>นำ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>นำมา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>นำสมัย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>นี้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>นี้แหละ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เช่นนี้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ใน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ในกรณี</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ในไม่ช้า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>บอก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>บอกข่าง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>บอกผล</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>บาง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>บางครั้ง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>บางอย่าง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>บ้าน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>บ้านเกิค</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>บ้านนอก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แบบ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แบบฟอร์ม</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ประเทศ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ประเทศไทย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ประเทศลาง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ปี</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ปีนี็</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ปีหน้า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เป็นน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เป็นจริง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เป็นได็</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไป</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไปมา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไปหา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ผม</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ผมหล่อ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ผมสวย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ผู้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ผู้ชาย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ผู้หญิง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>พระ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>พระพุทธ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>พูด</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>พูดครง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>พูดมาก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เพราะ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เพราะว่า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เพราะอะไร</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เพึ่อ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เพื่อที่จะ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เพื่อให้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มัน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มันเงา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มันฝรั่ง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มาจาก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มาช้า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มาก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มากขึ้น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มี</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มีชื่อ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>มีผล</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เมื่อ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เมื่อกี่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เมื่อไร</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไม่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไม่ดี</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไม่เอา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ยัง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ยังไง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ยังไม่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>รับ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>รับทราบ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>รับปาก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>รู้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>รู้จัก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>รู้แล้ว</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>รเา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>พวกเรา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เราเอง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เรรื่อง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เรื่องจริง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เรื่องสำคัญ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ลง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ลงชื่อ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เลย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เลยกำหนด</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เลยขอบเขต</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แล้ว</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แล้วก็</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แล้วจเอกัน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>และ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ดำและขาว</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>และอื่มอื่ม</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>วัน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>วันที่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>งันหยุด</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ว่า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ว่าจ้าง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ว่าแต่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เวลา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เวลาปิด</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เวลาเปิด</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไว้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไว้ใจ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไว้หน้า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ส่วน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ส่วนดัว</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>สอง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>สองแถว</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>สองเท่า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>สามารถ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คงามสามารถ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>สามารถได่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>สิ่ง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>สิ่งจำเป็นน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>สิ่งสำคัณ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>หน้า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>หน้าต่าง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>หนึ่ง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>หนึ่งต่อหนึ่ง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>หยึ่งในสี่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>หรือ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>หรือไม่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เห็น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เห็นด้งย</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เห็นว่า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เหมือน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เหมือนกัน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เหมิอนเดิม</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แห่ง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>บางแห่ง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>แห่งชาติ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ให้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ให่เช่า</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ให่ทาง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อย่าง</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อย่างนี้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อย่างไร</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อยู่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อยู่ที่</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อยู่ร่วม</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ออก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ออกจาก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ออกผล</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อะไร</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ไม่มีอะไร</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อะไรก็ได้</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อาจ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อาจจะ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อาจจหาญ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อีก</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อีกที</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อีกไม่นาน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>อื่น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ก่อนอื่น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>คนอื่น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เอา</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เอาคืน</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>เอาละ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ขึ้น</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ขึ้นกาบ</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <EngDesc />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
+  </Word>
+  <Word>
+    <ThaiScript>
+      <string>ขึ้นศาล</string>
+    </ThaiScript>
+    <ThaiFonet />
+    <EngWords />
+    <SoundPath />
+    <Tone />
+    <Chapter>111 most used words</Chapter>
   </Word>
 </ArrayOfWord>

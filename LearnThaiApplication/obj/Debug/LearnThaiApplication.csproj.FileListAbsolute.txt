@@ -142,7 +142,8 @@ C:\Users\Tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\obj\De
 C:\Users\Tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\obj\Debug\LearnThaiApplication.application
 C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\LearnThaiApplication.exe.manifest
 C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\LearnThaiApplication.application
-C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\obj\Debug\LearnThaiApplication.exe.manifest
 C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\obj\Debug\LearnThaiApplication.application
 C:\Users\Tommy\Documents\GitHub\LearnThaiApplication\LearnThaiApplication\bin\Debug\Microsoft.Speech.dll
+C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\tommy\source\repos\LearnThaiApplication\LearnThaiApplication\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll

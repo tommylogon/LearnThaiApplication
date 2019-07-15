@@ -8,8 +8,8 @@
         mc:Ignorable="d"
         Title="Learn Thai" Height="600" Width="1000">
 
-    <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="0,0,0,-1">
-        <TabControl x:Name="MainWindow_tabController" HorizontalAlignment="Left"  VerticalAlignment="Top"  Background="White" Foreground="Black" SelectionChanged="OnTabChanged" Width="995" Height="564">
+    <Viewbox x:Name="VB_Main" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="0,0,0,-1">
+        <TabControl x:Name="MainWindow_tabController" HorizontalAlignment="Left"  VerticalAlignment="Top"  Background="White" Foreground="Black" SelectionChanged="OnTabChanged" Width="{Binding Path=W_Width}" Height="{Binding Path=W_Height}">
             <TabItem Header="Learn the language" Margin="0,0,0,-2">
                 <Grid Background="#FF6DA5C4" Margin="0">
                     <CheckBox x:Name="ckb_DescBox_Page1" Content="Description" HorizontalAlignment="Left" Margin="10,193,0,0"
@@ -54,11 +54,11 @@
             </TabItem>
 
             <TabItem Header="Manage content">
-                <Grid Background="#FF6DA5C4" Margin="0,-1,0,0">
+                <Grid Background="#FF6DA5C4">
                     <DataGrid x:Name="dg_ContentManagement"
                               HorizontalAlignment="Left"
                               Margin="0,42,0,0"
-                              Height="485" Width="979"
+                              
                               VerticalAlignment="Top"
                               AutoGenerateColumns="False"
                               ItemsSource="{Binding Path=SearchResults, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
@@ -127,79 +127,105 @@
             </TabItem>
             <TabItem Header="Settings">
                 <Grid Background="#FF6DA5C4" Margin="0">
-                    <Label Content="Current Path to language files is:"
-                           HorizontalAlignment="Left"
-                           VerticalAlignment="Top" Margin="10,10,0,0" Foreground="#FFE6F8FF" />
-                    <TextBlock x:Name="txb_FilePath_Settings"
-                               HorizontalAlignment="Left"
-                               TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"
-                               Margin="196,15,0,0" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_LoopChapter" IsChecked="{Binding Path=IsLooping}" Content="Loop chapter"
-                              HorizontalAlignment="Left" Margin="171,70,0,0" VerticalAlignment="Top"
+                              HorizontalAlignment="Left" Margin="171,308,0,0" VerticalAlignment="Top"
                               Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                    <Button Content="Find sound files" HorizontalAlignment="Left" Margin="135,292,0,0"
-                            VerticalAlignment="Top" Width="90" Click="StartSoundDownload" RenderTransformOrigin="1.152,0.697" />
-                    <Button Content="Check sound status" HorizontalAlignment="Left" Margin="135,317,0,0"
-                            VerticalAlignment="Top" Width="112" Click="CheckSoundStatus_Clicked" />
+                    <Button Content="Find sound files" HorizontalAlignment="Left" Margin="10,0,0,110"
+                            VerticalAlignment="Bottom" Width="90" Click="StartSoundDownload" RenderTransformOrigin="1.152,0.697" />
+                    <Button Content="Check sound status" HorizontalAlignment="Left" Margin="9,0,0,60"
+                            VerticalAlignment="Bottom" Width="112" Click="CheckSoundStatus_Clicked" />
                     <ComboBox x:Name="cb_SelectList" HorizontalAlignment="Left"
                               ItemsSource="{Binding Path=Chapters, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
                               SelectedIndex="{Binding Path=SelectedChapterIndex, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
-                              Margin="10,290,0,0"
-                              VerticalAlignment="Top" Width="120" SelectionChanged="CheckSoundChapter_Changed" />
+                              Margin="126,0,0,160"
+                              VerticalAlignment="Bottom" Width="120" SelectionChanged="CheckSoundChapter_Changed" />
                     <CheckBox x:Name="ckb_DescBox_Setting"
                               IsChecked="{Binding Path=HasDescription}"
-                              Content="Description" HorizontalAlignment="Left" Margin="171,130,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
+                              Content="Description" HorizontalAlignment="Left" Margin="171,368,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
                     <CheckBox x:Name="ckb_Randomized_Setting"
                               IsChecked="{Binding Path=IsRandom}"
-                              Content="Randomize words" HorizontalAlignment="Left" Margin="171,110,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
-                    <Label x:Name="lbl_TrainWhat_Page2_Copy1" Content="What to train" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
+                              Content="Randomize words" HorizontalAlignment="Left" Margin="171,348,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
+                    <Label x:Name="lbl_TrainWhat_Page2_Copy1" Content="What to train" HorizontalAlignment="Left" Margin="10,278,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                     <RadioButton x:Name="rb_TrainScript_Setting"
                                  IsChecked="{Binding Path=TrainScript, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}"
-                                 Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,71,0,0" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
+                                 Content="Writhing Thai" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,309,0,0" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
                     <RadioButton x:Name="rb_TrainEngWords_Setting"
                                  IsChecked="{Binding Path=TrainWords, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}"
-                                 Content="English meanings" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
+                                 Content="English meanings" HorizontalAlignment="Left" Margin="10,329,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
                     <RadioButton x:Name="rb_TrainFonet_Setting"
                                  IsChecked="{Binding Path=TrainFonet, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}"
-                                 Content="Pronounciations" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
-                    <Button Content="Delete sound paths" HorizontalAlignment="Left" Margin="135,342,0,0" VerticalAlignment="Top" Width="112" Click="RemoveSoundPath" />
+                                 Content="Pronounciations" HorizontalAlignment="Left" Margin="10,349,0,0" VerticalAlignment="Top" Checked="SelectWhatToPractice" GroupName="TrainWhat" Foreground="#FFE6F8FF" />
+                    <Button Content="Delete sound paths" HorizontalAlignment="Left" Margin="9,0,0,85" VerticalAlignment="Bottom" Width="112" Click="RemoveSoundPath" />
                     <CheckBox x:Name="ckb_FullDesc"
                               IsChecked="{Binding Path=DisplayAll}"
                               Content="Full description?" HorizontalAlignment="Left"
-                              Margin="171,90,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
+                              Margin="171,328,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                     <Button x:Name="btn_SaveSettings" Content="Save settings" HorizontalAlignment="Left" Margin="811,447,0,0" VerticalAlignment="Top" Width="75" Click="SaveSettings_Click" />
-                    <Button Content="Set SoundPaths" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="135,367,0,0" Click="SetSoundPath_clicked" />
-                    <Button Content="Print all words" HorizontalAlignment="Left" Margin="135,392,0,0" VerticalAlignment="Top" Width="75" Click="PrintAllWordsToFile" />
+                    <Button Content="Set SoundPaths" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Margin="10,0,0,135" Click="SetSoundPath_clicked" />
+                    <Button Content="Print all words" HorizontalAlignment="Left" Margin="10,0,0,160" VerticalAlignment="Bottom" Width="75" Click="PrintAllWordsToFile" />
                     <ProgressBar Minimum="0" Maximum="100"
-                                 Value="{Binding Path=ProgressValue}" Name="pbStatus" Margin="252,279,273,173" />
-                    <Label Content="Toggle settings" HorizontalAlignment="Left" Margin="171,45,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
+                                 Value="{Binding Path=ProgressValue}" Name="pbStatus" Margin="10,0,10,10" VerticalAlignment="Bottom" Height="45" />
+                    <Label Content="Toggle settings" HorizontalAlignment="Left" Margin="171,283,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_AutoPlay"
                               IsChecked="{Binding Path=AutoPlay}" Content="Auto play sounds"
-                              HorizontalAlignment="Left" Margin="171,150,0,0" VerticalAlignment="Top" Background="White" Foreground="#FFE6F8FF" Checked="AutoPlay_Checked" Unchecked="AutoPlay_Checked" />
+                              HorizontalAlignment="Left" Margin="171,388,0,0" VerticalAlignment="Top" Background="White" Foreground="#FFE6F8FF" Checked="AutoPlay_Checked" Unchecked="AutoPlay_Checked" />
                     <CheckBox x:Name="ckb_SkipIntro"
                               IsChecked="{Binding Path=SkipIntro}" Content="Skip intro message"
-                              HorizontalAlignment="Left" Margin="171,170,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="SkipMessage_Checked" Unchecked="SkipMessage_Checked" />
+                              HorizontalAlignment="Left" Margin="171,408,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="SkipMessage_Checked" Unchecked="SkipMessage_Checked" />
                     <CheckBox x:Name="ckb_showSaveLocation"
                               IsChecked="{Binding Path=ShowSaveLocation}"
                               Content="Show save location" HorizontalAlignment="Left"
-                              Margin="300,70,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                              Margin="300,308,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_SkipCompletedWords"
                               IsChecked="{Binding Path=SkipCompleted}"
                               Content="Skip completed words" HorizontalAlignment="Left"
-                              Margin="300,90,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                              Margin="300,328,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <CheckBox x:Name="ckb_Listen" IsChecked="{Binding Path=IsListening}"
                               Content="Speach Recognition" HorizontalAlignment="Left"
-                              Margin="300,110,0,0" VerticalAlignment="Top" Checked="Listen_Checked" Unchecked="Listen_Checked" Foreground="#FFE6F8FF" />
-                    <CheckBox x:Name="ckb_setting_7_Copy2" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,130,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                    <CheckBox x:Name="ckb_setting_7_Copy3" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,150,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                    <CheckBox x:Name="ckb_setting_7_Copy4" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,170,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                              Margin="300,348,0,0" VerticalAlignment="Top" Checked="Listen_Checked" Unchecked="Listen_Checked" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_setting_7_Copy2" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,368,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_setting_7_Copy3" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,388,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                    <CheckBox x:Name="ckb_setting_7_Copy4" IsChecked="False" Content="setting" HorizontalAlignment="Left" Margin="300,408,0,0" VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                     <ComboBox x:Name="comboBox"
-                              ItemsSource="{Binding Path=Users}" HorizontalAlignment="Left" Margin="859,9,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="UserName" SelectedItem="{Binding Path=CurrentUser,Mode=OneWay}" />
-                    <Button x:Name="btn_ClearCurrentUserList" Content="Clear known words"  HorizontalAlignment="Left" Margin="748,10,0,0" VerticalAlignment="Top" Width="106" Click="ClearCurrentUserKnownWords" />
+                              ItemsSource="{Binding Path=Users}" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="UserName" SelectedItem="{Binding Path=CurrentUser,Mode=OneWay}" />
+                    <Button x:Name="btn_ClearCurrentUserList" Content="Clear known words"  HorizontalAlignment="Right" Margin="0,11,135,0" VerticalAlignment="Top" Width="106" Click="ClearCurrentUserKnownWords" />
                     <ComboBox x:Name="cb_Voices"
                               ItemsSource="{Binding Path=Voices}" SelectionChanged="Cb_Voices_SelectionChanged" DisplayMemberPath="VoiceInfo.Name" SelectedItem="{Binding Path=CurrentVoice, Mode=OneWay}"
-                              HorizontalAlignment="Left" Margin="859,84,0,0" VerticalAlignment="Top" Width="120" />
-                    <Label x:Name="label" Content="Voice" HorizontalAlignment="Left" Margin="816,80,0,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
+                              HorizontalAlignment="Right" Margin="0,80,32,0" VerticalAlignment="Top" Width="120" />
+                    <Label x:Name="label" Content="Voice" HorizontalAlignment="Right" Margin="0,84,212,0" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
+                    <TextBox x:Name="txt_WinWidth" HorizontalAlignment="Right" Height="23" Margin="0,112,32,0" TextWrapping="Wrap" Text="{Binding  Path=W_Width}" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txt_WinHeight" HorizontalAlignment="Right" Height="23" Margin="0,138,32,0" TextWrapping="Wrap" Text="{Binding  Path=W_Height}" VerticalAlignment="Top" Width="120"/>
+
+                    <Label Content="Window height;" HorizontalAlignment="Right" Margin="0,135,157,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
+                    <Label Content="Windows Width" HorizontalAlignment="Right" Margin="0,111,157,0" VerticalAlignment="Top" Foreground="#FFE6F8FF"/>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <StackPanel HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top"  >
+                        <WrapPanel>
+                            <Label Content="Language Path:"  HorizontalAlignment="Left"   VerticalAlignment="Top" Width="100"  Foreground="#FFE6F8FF" />
+                            <TextBox HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding LanguageFilePath}" VerticalAlignment="Top" Height="23" MinWidth="120"/>
+                            <Button Content="Browse" Click="LanguagePath_Clicked"/>
+                        </WrapPanel>
+                        <WrapPanel>
+                            <Label Content="Sound Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Foreground="#FFE6F8FF" />
+                            <TextBox HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="{Binding SoundFilePath}" VerticalAlignment="Top" MinWidth="120"/>
+                            <Button Content="Browse" Click="SoundPath_Clicked"/>
+                        </WrapPanel>
+                        
+                        <WrapPanel>
+                            <Label Content="Web File Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100"  Foreground="#FFE6F8FF" />
+                            <TextBox HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="{Binding WebFilePath}" VerticalAlignment="Top" MinWidth="120"/>
+                            <Button Content="Browse" Click="WebFilePath_Clicked"/>
+                        </WrapPanel>
+                        
+                    </StackPanel>
                 </Grid>
             </TabItem>
         </TabControl>
