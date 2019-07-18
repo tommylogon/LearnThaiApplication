@@ -1630,7 +1630,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>baat</string>
-      <string>bat</string>
     </ThaiFonet>
     <EngWords>
       <string>to cut</string>
@@ -1652,7 +1651,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>gae</string>
-      <string>kae</string>
     </ThaiFonet>
     <EngWords>
       <string>sheep</string>
@@ -1681,7 +1679,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>daaeng</string>
-      <string>daeng</string>
     </ThaiFonet>
     <EngWords>
       <string>red</string>
@@ -1702,7 +1699,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>dteh</string>
-      <string>te</string>
     </ThaiFonet>
     <EngWords>
       <string>kick</string>
@@ -1723,7 +1719,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>phlaehng</string>
-      <string>phleng</string>
     </ThaiFonet>
     <EngWords>
       <string>Song</string>
@@ -1745,7 +1740,6 @@
       <string>คิด</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>khit</string>
       <string>kid</string>
     </ThaiFonet>
     <EngWords>
@@ -1772,7 +1766,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>eek</string>
-      <string>ik</string>
     </ThaiFonet>
     <EngWords>
       <string>again</string>
@@ -1796,7 +1789,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>dto</string>
-      <string>to</string>
     </ThaiFonet>
     <EngWords>
       <string>Table</string>
@@ -1822,7 +1814,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>chohk</string>
-      <string>chok</string>
     </ThaiFonet>
     <EngWords>
       <string>Luck</string>
@@ -1843,7 +1834,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>gaw</string>
-      <string>ko</string>
     </ThaiFonet>
     <EngWords>
       <string>island</string>
@@ -1872,7 +1862,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>naawn</string>
-      <string>non</string>
     </ThaiFonet>
     <EngWords>
       <string>sleep</string>
@@ -1897,7 +1886,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>yuh</string>
-      <string>yoe</string>
     </ThaiFonet>
     <EngWords>
       <string>a lot</string>
@@ -1922,7 +1910,6 @@
     </ThaiScript>
     <ThaiFonet>
       <string>phluuhr</string>
-      <string>phloe</string>
     </ThaiFonet>
     <EngWords>
       <string>Reckless</string>
@@ -6588,7 +6575,7 @@ one (generic word [e.g. the small one])
       <string>วันพุธ</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>wan phoot</string>
+      <string>wan phood</string>
     </ThaiFonet>
     <EngWords>
       <string>Wednesday</string>
@@ -6605,7 +6592,7 @@ one (generic word [e.g. the small one])
       <string>วันพฤหัสบดี</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>wan phreu hat sa baaw dee</string>
+      <string>wan pheu ri had</string>
     </ThaiFonet>
     <EngWords>
       <string>Thursday</string>
@@ -6654,7 +6641,7 @@ one (generic word [e.g. the small one])
       <string>วันอาทิตย์</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>wan aa thit</string>
+      <string>wan aa thid</string>
     </ThaiFonet>
     <EngWords>
       <string>Sunday</string>
@@ -6721,7 +6708,7 @@ one (generic word [e.g. the small one])
       <string>วันหยุด</string>
     </ThaiScript>
     <ThaiFonet>
-      <string>wan yoot</string>
+      <string>wan yood</string>
     </ThaiFonet>
     <EngWords>
       <string>holiday</string>
@@ -9067,16 +9054,26 @@ one (generic word [e.g. the small one])
     <ThaiFonet>
       <string>kid tung</string>
     </ThaiFonet>
-    <EngWords />
+    <EngWords>
+      <string> to think about</string>
+      <string>to have longing for</string>
+      <string>to miss</string>
+    </EngWords>
     <SoundPath />
-    <Tone />
+    <EngDesc>[of a person] to think about; to have longing for; to miss</EngDesc>
+    <Tone>
+      <string>H</string>
+      <string>R</string>
+    </Tone>
     <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>ติดผิด</string>
+      <string>คิดผิด</string>
     </ThaiScript>
-    <ThaiFonet />
+    <ThaiFonet>
+      <string>miss spelled</string>
+    </ThaiFonet>
     <EngWords />
     <SoundPath />
     <Tone />
@@ -9086,18 +9083,33 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>คือ</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>kheuu</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>namely</string>
+      <string>as follows</string>
+      <string>thus</string>
+      <string>as in</string>
+      <string>to wit</string>
+      <string>simply</string>
+      <string>that is</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>กล่าวตือ</string>
+      <string>กล่าวคือ</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>glaao kheuu</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>That is</string>
+      <string>Nameley</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9106,8 +9118,12 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>คือว่า</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>kheuu waa</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Not sure</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9116,8 +9132,14 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>คุณ</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>khoon</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>You</string>
+      <string>your</string>
+      <string>kindness</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9126,8 +9148,14 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>คุณนาย</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>khoon naai</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Mrs</string>
+      <string>mr</string>
+      <string>madam</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9136,8 +9164,12 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>คุณภาพ</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>khon na phaap</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Quality</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9146,8 +9178,16 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>งาน</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>ngaan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Work</string>
+      <string>Job</string>
+      <string>Duy</string>
+      <string>business</string>
+      <string>function</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9156,8 +9196,13 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>งานฉลอง</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>ngaan cha laawng</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Festival</string>
+      <string>party</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9166,8 +9211,21 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>จน</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>john</string>
+    </ThaiFonet>
+    <EngWords>
+      <string> until</string>
+      <string>up until</string>
+      <string>as far as</string>
+      <string>up to</string>
+      <string>to</string>
+      <string>till</string>
+      <string>poor</string>
+      <string>penniless</string>
+      <string>having nothing</string>
+      <string>impoverished</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9176,8 +9234,16 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>จนแต้ม</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>john dtaaem</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>[is] cornered</string>
+      <string>maneuvered</string>
+      <string>checkmated</string>
+      <string>stalled</string>
+      <string>held at bay</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9186,8 +9252,14 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>จนใจ</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>john jai</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>[is] baffled</string>
+      <string>confused</string>
+      <string>at a loss to understand</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9196,9 +9268,15 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>จะ</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>ja</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Will</string>
+      <string>Shall</string>
+    </EngWords>
     <SoundPath />
+    <EngDesc>[imminent aspect marker], [auxiliary verb indicating future tense—must be used with another verb] will; shall</EngDesc>
     <Tone />
     <Chapter>111 most used words</Chapter>
   </Word>
@@ -9206,8 +9284,13 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>ควรจะ</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>khuaan ja</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>ought to</string>
+      <string />
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9216,8 +9299,12 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>น่าจะ</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>naa ja</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Is worthy of</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9226,8 +9313,15 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>จาก</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>jaak</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>from</string>
+      <string>[is] away from</string>
+      <string>to leave</string>
+      <string>go away from</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9236,8 +9330,14 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>จากกัน</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>jaak gan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>to separate from</string>
+      <string>part</string>
+      <string>depart</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9246,8 +9346,15 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>จากไป</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>jaak bpai</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>to abandon</string>
+      <string>leave</string>
+      <string>to pass away</string>
+      <string>die</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9256,8 +9363,14 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>จึง</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>jeung</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Tus</string>
+      <string>therfore</string>
+      <string>so</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9266,8 +9379,13 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>จึงเรียนมาเพื่อทราบ</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>jeung riian maa pheuua saap</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>please be informed accordingly</string>
+      <string>presented for your consideration</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9276,9 +9394,16 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>ฉัน</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>chan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>I</string>
+      <string>Me</string>
+      <string>My</string>
+    </EngWords>
     <SoundPath />
+    <EngDesc>[used by females in an informal setting—also used by males with intimate friends or lovers] I, me, my</EngDesc>
     <Tone />
     <Chapter>111 most used words</Chapter>
   </Word>
@@ -9286,9 +9411,16 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>ดิฉัน</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>di chan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>[Informa] I</string>
+      <string>Me</string>
+      <string>My</string>
+    </EngWords>
     <SoundPath />
+    <EngDesc>[used by female speakers in a formal setting] I; me; my</EngDesc>
     <Tone />
     <Chapter>111 most used words</Chapter>
   </Word>
@@ -9296,8 +9428,12 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>ฉันรักคุณ</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>chan rak khoon</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>I love you</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9306,28 +9442,40 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>ชีวิต</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>chee wit</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Life</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>ชีงิตจริง</string>
+      <string>ชีวิตจริง</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>chee wit jing</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Real life</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
-      <string>ชีงิตแต่งงาน</string>
+      <string>ชีวิตแต่งงาน</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>chee wit dtaeng ngaan</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>Merried life</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9336,18 +9484,32 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>เช่น</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>chen</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>example</string>
+      <string>sample</string>
+      <string>specimen</string>
+    </EngWords>
     <SoundPath />
-    <Tone />
+    <Tone>
+      <string>F</string>
+    </Tone>
     <Chapter>111 most used words</Chapter>
   </Word>
   <Word>
     <ThaiScript>
       <string>เช่นนี้</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>chen nee</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>such</string>
+      <string>such as</string>
+      <string>like this</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9356,8 +9518,12 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>เช่นเคย</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>chen kheeuy</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>as usual</string>
+    </EngWords>
     <SoundPath />
     <Tone />
     <Chapter>111 most used words</Chapter>
@@ -9366,9 +9532,22 @@ one (generic word [e.g. the small one])
     <ThaiScript>
       <string>ใช้</string>
     </ThaiScript>
-    <ThaiFonet />
-    <EngWords />
+    <ThaiFonet>
+      <string>chai</string>
+    </ThaiFonet>
+    <EngWords>
+      <string>to use</string>
+      <string>to employ or exploit an object</string>
+      <string>to utilize</string>
+      <string>to resort to</string>
+      <string>to implement</string>
+      <string>[of money</string>
+      <string>time] to spend</string>
+      <string>pay</string>
+      <string>to use up</string>
+    </EngWords>
     <SoundPath />
+    <EngDesc>[of money, time] to spend; pay; to use up</EngDesc>
     <Tone />
     <Chapter>111 most used words</Chapter>
   </Word>

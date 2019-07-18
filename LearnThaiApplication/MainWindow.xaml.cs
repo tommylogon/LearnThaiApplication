@@ -729,7 +729,7 @@ namespace LearnThaiApplication
         {
             get
             {
-                if (Properties.Settings.Default.Window_Width < 600 | Properties.Settings.Default.Window_Width > 3000)
+                if (Properties.Settings.Default.Window_Width < 600 | Properties.Settings.Default.Window_Width > 1500)
                 {
                     Properties.Settings.Default.Window_Width = 600;
                 }
@@ -739,8 +739,10 @@ namespace LearnThaiApplication
             {
                 if(Properties.Settings.Default.Window_Width != value & value > 600)
                 {
+                    
                     Properties.Settings.Default.Window_Width = value;
                     OnPropertyChanged("W_Width");
+                   
                     Properties.Settings.Default.Save();
 
                 }
@@ -750,7 +752,7 @@ namespace LearnThaiApplication
         {
             get
             {
-                if(Properties.Settings.Default.Window_Height < 400 | Properties.Settings.Default.Window_Height > 3000)
+                if(Properties.Settings.Default.Window_Height < 400 | Properties.Settings.Default.Window_Height > 1500)
                 {
                     Properties.Settings.Default.Window_Height = 400;
                 }
@@ -760,8 +762,12 @@ namespace LearnThaiApplication
             {
                 if (Properties.Settings.Default.Window_Height != value & value > 400)
                 {
+                    double height = value;
+                    double witdh = height * 0.5625;
+                    
                     Properties.Settings.Default.Window_Height = value;
                     OnPropertyChanged("W_Height");
+                    //W_Width = (int)witdh;
                     Properties.Settings.Default.Save();
 
                 }
@@ -929,9 +935,18 @@ namespace LearnThaiApplication
             SelectedChapter = Chapters[SelectedChapterIndex].ChapterName;
 
             FindWordWithChapter();
-            Grammar g_AllInList = GetGrammarFromDisplayList();
-            sre.UnloadAllGrammars();
-            sre.LoadGrammarAsync(g_AllInList);
+            try
+            {
+                Grammar g_AllInList = GetGrammarFromDisplayList();
+                sre.UnloadAllGrammars();
+                sre.LoadGrammarAsync(g_AllInList);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            
             if (TabIndex == 0)
             {
                 if (SelectedChapter == "All")
@@ -1315,6 +1330,7 @@ namespace LearnThaiApplication
         {
             try
             {
+                SpeechResult = "";
                 FindWordWithChapter();
 
                 if (SkipCompleted)
@@ -1481,72 +1497,86 @@ namespace LearnThaiApplication
             int totalAnswears = 0;
             int indexToRemove = -1;
             bool removeCorrect = false;
-            if (string.IsNullOrEmpty(inputetAnswear))
+            try
             {
-                MessageBox.Show("Please enter an answear.");
-            }
-            else
-            {
-                List<string> answers = Regex.Split(inputetAnswear, RegexSplitString).ToList();
-
-                if (GetValueFromWord() is List<string> allAnswears)
+                if (string.IsNullOrEmpty(inputetAnswear))
                 {
-                    totalAnswears = allAnswears.Count();
-
-                    foreach (string correctWord in allAnswears)
-                    {
-                        if (removeCorrect)
-                        {
-                            answers.RemoveAt(indexToRemove);
-                        }
-                        foreach (string answer in answers)
-                        {
-                            if (string.Equals(correctWord, answer, StringComparison.OrdinalIgnoreCase))
-                            {
-                                removeCorrect = true;
-                                indexToRemove = answers.IndexOf(answer);
-                                correctPoints++;
-                                rightAnswears++;
-                                if (rightAnswears == totalAnswears)
-                                {
-                                    if (!CheckIfUserHasCompleted(currentUser.CompletedWords, DisplayList[CurrentFileIndex], true))
-                                    {
-                                        AddWordToCompleted(DisplayList[CurrentFileIndex]);
-                                    }
-                                }
-                                break;
-                            }
-                            else
-                            {
-                                removeCorrect = false;
-                            }
-                        }
-                    }
-                }
-                else if (string.Equals(Answear, (string)GetValueFromWord(), StringComparison.OrdinalIgnoreCase))
-                {
-                    totalAnswears = 1;
-                    correctPoints++;
-                    rightAnswears++;
-
-                    if (!CheckIfUserHasCompleted(currentUser.CompletedWords, DisplayList[CurrentFileIndex], true))
-                    {
-                        AddWordToCompleted(DisplayList[CurrentFileIndex]);
-                    }
-                }
-                if (rightAnswears != 0)
-                {
-                    Result = "You got " + rightAnswears + " of " + totalAnswears + " correct!";
+                    MessageBox.Show("Please enter an answear.");
                 }
                 else
                 {
-                    Result = "Sorry, try again!";
+                    List<string> answers = Regex.Split(inputetAnswear, RegexSplitString).ToList();
+
+                    if (GetValueFromWord() is List<string> allAnswears)
+                    {
+                        totalAnswears = allAnswears.Count();
+
+                        foreach (string correctWord in allAnswears)
+                        {
+                            if (removeCorrect)
+                            {
+                                answers.RemoveAt(indexToRemove);
+                                removeCorrect = false;
+                            }
+                            if(answers.Count() == 0)
+                            {
+                                break;
+                            }
+                            foreach (string answer in answers)
+                            {
+                                if (string.Equals(correctWord, answer, StringComparison.OrdinalIgnoreCase))
+                                {
+                                    removeCorrect = true;
+                                    indexToRemove = answers.IndexOf(answer);
+                                    correctPoints++;
+                                    rightAnswears++;
+                                    if (rightAnswears == totalAnswears)
+                                    {
+                                        if (!CheckIfUserHasCompleted(currentUser.CompletedWords, DisplayList[CurrentFileIndex], true))
+                                        {
+                                            AddWordToCompleted(DisplayList[CurrentFileIndex]);
+                                        }
+                                    }
+                                    break;
+                                }
+                                else
+                                {
+                                    removeCorrect = false;
+                                }
+                            }
+                        }
+                    }
+                    else if (string.Equals(Answear, (string)GetValueFromWord(), StringComparison.OrdinalIgnoreCase))
+                    {
+                        totalAnswears = 1;
+                        correctPoints++;
+                        rightAnswears++;
+
+                        if (!CheckIfUserHasCompleted(currentUser.CompletedWords, DisplayList[CurrentFileIndex], true))
+                        {
+                            AddWordToCompleted(DisplayList[CurrentFileIndex]);
+                        }
+                    }
+                    if (rightAnswears != 0)
+                    {
+                        Result = "You got " + rightAnswears + " of " + totalAnswears + " correct!";
+                    }
+                    else
+                    {
+                        Result = "Sorry, try again!";
+                    }
+
+                    PopulateDescription();
+
+                    lbl_Points.Content = "Points: " + CorrectPoints;
                 }
-
-                PopulateDescription();
-
-                lbl_Points.Content = "Points: " + CorrectPoints;
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error" + ex.Message);
+            }
+            
         }
 
         #endregion Main
