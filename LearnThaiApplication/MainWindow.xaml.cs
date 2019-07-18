@@ -729,11 +729,15 @@ namespace LearnThaiApplication
         {
             get
             {
+                if (Properties.Settings.Default.Window_Width < 600 | Properties.Settings.Default.Window_Width > 3000)
+                {
+                    Properties.Settings.Default.Window_Width = 600;
+                }
                 return Properties.Settings.Default.Window_Width;
             }
             set
             {
-                if(Properties.Settings.Default.Window_Width != value)
+                if(Properties.Settings.Default.Window_Width != value & value > 600)
                 {
                     Properties.Settings.Default.Window_Width = value;
                     OnPropertyChanged("W_Width");
@@ -746,11 +750,15 @@ namespace LearnThaiApplication
         {
             get
             {
+                if(Properties.Settings.Default.Window_Height < 400 | Properties.Settings.Default.Window_Height > 3000)
+                {
+                    Properties.Settings.Default.Window_Height = 400;
+                }
                 return Properties.Settings.Default.Window_Height;
             }
             set
             {
-                if (Properties.Settings.Default.Window_Height != value)
+                if (Properties.Settings.Default.Window_Height != value & value > 400)
                 {
                     Properties.Settings.Default.Window_Height = value;
                     OnPropertyChanged("W_Height");
