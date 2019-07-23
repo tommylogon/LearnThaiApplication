@@ -385,7 +385,7 @@ namespace LearnThaiApplication
         private string webFilePath = Environment.CurrentDirectory + @"\Files\Media\Website\";
         
         private string soundFilePath = Environment.CurrentDirectory + @"\Files\Media\Sound\";
-
+        private string correctPointsText;
         private string descriptionText;
         private string result;
         private string searchString;
@@ -585,7 +585,16 @@ namespace LearnThaiApplication
         {
             get
             {
-                return "Points: " + correctPoints;
+                return correctPointsText;
+            }
+            set
+            {
+                if (correctPointsText != value)
+                {
+                    correctPointsText = value;
+                    OnPropertyChanged("CorrectPoints");
+                }
+                    
             }
         }
 
@@ -932,6 +941,7 @@ namespace LearnThaiApplication
         private void ChapterChanged(object sender, SelectionChangedEventArgs e)
         {
             CurrentFileIndex = 0;
+            correctPoints=0;
             SelectedChapter = Chapters[SelectedChapterIndex].ChapterName;
 
             FindWordWithChapter();
@@ -979,11 +989,15 @@ namespace LearnThaiApplication
         private bool CheckIfChapterIsDone()
         {
             int counter = 0;
+            correctPoints = 0;
+            CorrectPoints = "Points: " + correctPoints;
             foreach (Word word in DisplayList)
             {
                 if (CheckIfUserHasCompleted(currentUser.CompletedWords, word, false))
                 {
                     counter++;
+                    correctPoints++;
+                    CorrectPoints = "Points: " + correctPoints;
                 }
             }
             if (counter == DisplayList.Count)
@@ -1567,8 +1581,9 @@ namespace LearnThaiApplication
                     }
 
                     PopulateDescription();
+                    CorrectPoints = "Points: " + correctPoints;
 
-                    lbl_Points.Content = "Points: " + CorrectPoints;
+
                 }
             }
             catch (Exception ex)
@@ -2578,27 +2593,24 @@ namespace LearnThaiApplication
 
                 if (soundPaths.Count == 0)
                 {
-                    if (TabIndex == 0)
-                    {
+                    
                         btn_Speaker_Page1.Background = Brushes.Red;
-                    }
+                    
                 }
                 foreach (string value in soundPaths)
                 {
                     if (string.IsNullOrEmpty(value) || !File.Exists(value))
                     {
-                        if (TabIndex == 0)
-                        {
+                        
                             btn_Speaker_Page1.Background = Brushes.Red;
-                        }
+                        
                     }
                     else
                     {
                         var bc = new BrushConverter();
-                        if (TabIndex == 0)
-                        {
-                            btn_Speaker_Page1.Background = (Brush)bc.ConvertFrom("#FFDDDDDD");
-                        }
+                        
+                            btn_Speaker_Page1.Background = Brushes.Azure;
+                        
                     }
                 }
             }
@@ -3028,6 +3040,7 @@ namespace LearnThaiApplication
         {
 
             CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+            dialog.IsFolderPicker = true;
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
                 if (targetPath == "Language")
@@ -3044,6 +3057,16 @@ namespace LearnThaiApplication
                     }
 
             }
+        }
+
+        private void ClearWord_Clicked(object sender, RoutedEventArgs e)
+        {
+            AddWordToCompleted(DisplayList[CurrentFileIndex]);
+            ClearFields();
+            MovementValue = 1;
+            PreTextChanger();
+            correctPoints++;
+            CorrectPoints = "Points: " + correctPoints;
         }
     }
 }

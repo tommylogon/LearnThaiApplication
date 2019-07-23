@@ -12,7 +12,7 @@
         
             <TabControl x:Name="MainWindow_tabController" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left"  VerticalAlignment="Top"  Background="White" Foreground="Black" SelectionChanged="OnTabChanged" Width="{Binding Path=W_Width}" Height="{Binding Path=W_Height}">
                 <TabItem Header="Learn the language" Margin="0,0,0,-2">
-                    <Grid Background="#FF6DA5C4" >
+                <Grid Background="#35736a" >
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="450"/>
                             <ColumnDefinition Width="*"/>
@@ -46,7 +46,7 @@
                                Text="{Binding Path=ChapterCounter }" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFE6F8FF" />
 
 
-                            <TextBlock x:Name="lbl_ChapterCount" Grid.Column="1" Grid.Row="3" Text="{Binding Path=CurrentWord}" HorizontalAlignment="Left" VerticalAlignment="Top"  Foreground="#FFE6F8FF" />
+                            <TextBlock x:Name="lbl_ChapterCount" Grid.Column="1" Grid.Row="3" Text="{Binding Path=CurrentWord}"   Foreground="#FFE6F8FF" />
                             <StackPanel Grid.Column="0" Grid.Row="4">
                                 <CheckBox x:Name="ckb_DescBox"  Content="Description" HorizontalAlignment="Left" 
                               IsChecked="{Binding Path=HasDescription}" VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
@@ -73,7 +73,7 @@
 
                         </Grid>
 
-                        <ScrollViewer Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left"   VerticalAlignment="Center"  Width="600">
+                        <ScrollViewer Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2"  >
                             <TextBlock x:Name="txb_ThaiScript_Page1" TextWrapping="Wrap" Text="{Binding Path=ThaiScriptString}" Foreground="#FFE6F8FF" FontSize="48" />
                         </ScrollViewer>
 
@@ -88,25 +88,44 @@
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-                            <TextBox x:Name="txt_Answear_Page1" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="28"  TextWrapping="Wrap"
-                             Text="{Binding Mode=TwoWay, Path=Answear, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="150"  KeyUp="OnKeyUp" />
-                            <WrapPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center">
-                                <Button x:Name="btn_Prev_Word_Page1"  Content="Prev" HorizontalAlignment="Left" Height="24"  VerticalAlignment="Top" Width="35" Click="PrevWord" />
-                                <Button x:Name="btn_validate_Page1"  Content="Check" HorizontalAlignment="Left" Height="24"  VerticalAlignment="Top" Width="89" Click="ValidateAnswear" />
-                                <Button x:Name="btn_Next_Word_Page1"  Content="Next" HorizontalAlignment="Left" Height="24"  VerticalAlignment="Top" Width="35" Click="NextWord" />
+                            
+                            <TextBox x:Name="txt_Answear_Page1" Grid.Column="0" Grid.Row="0"   TextWrapping="Wrap"
+                             Text="{Binding Mode=TwoWay, Path=Answear, UpdateSourceTrigger=PropertyChanged}"   KeyUp="OnKeyUp" />
+                            <Grid Grid.Column="0" Grid.Row="1" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                                <Button x:Name="btn_Prev_Word"  Content="Prev" Grid.Column="0"  Click="PrevWord"  Background="Azure"/>
+                            <Button x:Name="btn_validate"  Content="Check" Grid.Column="1"  Click="ValidateAnswear"  Background="Azure"/>
+                            <Button x:Name="btn_Next_Word"  Content="Next" Grid.Column="2"  Click="NextWord" Background="Azure"/>
 
-                            </WrapPanel>
+                            </Grid>
 
-                            <TextBlock x:Name="txb_Status_Page1" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center"  TextWrapping="Wrap"
-                               Text="{Binding Path=Result}" VerticalAlignment="Top" Height="35" Width="245" FontSize="24" Foreground="#FFE6F8FF" />
-                            <WrapPanel Grid.Row="0" Grid.Column="2">
-                                <Button x:Name="btn_Speaker_Page1" Content=""   Width="42" HorizontalAlignment="Center" VerticalAlignment="Top" Click="PlaySound_Clicked" />
-                                <Button x:Name="button" Content="Listen to word"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Click="TestWordReco" Height="19" />
-                            </WrapPanel>
+                            <TextBlock x:Name="txb_Status_Page1" Grid.Column="0" Grid.Row="2"   TextWrapping="Wrap"
+                               Text="{Binding Path=Result}"   FontSize="24" Foreground="#FFE6F8FF" />
+                            <Grid Grid.Row="0" Grid.Column="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                            <Button x:Name="btn_Speaker_Page1" Content=""  Grid.Column="0" Grid.Row="0"  Click="PlaySound_Clicked" Background="Azure"/>
+                            <Button x:Name="button" Content="Listen to word"  Grid.Column="1" Grid.Row="0"   Click="TestWordReco"  Background="Azure"/>
+                            <Button Content="Clear this word" Grid.Column="0" Grid.Row="2" Background="Azure" Click="ClearWord_Clicked"/>
+                            </Grid>
 
                         </Grid>
 
-                        <ScrollViewer x:Name="scrvr_Description_page1" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Height="235"  VerticalAlignment="Top" Width="650" Foreground="#FFE6F8FF">
+                        <ScrollViewer x:Name="scrvr_Description_page1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2"  Foreground="#FFE6F8FF">
                             <TextBox x:Name="txb_Description_page1" TextWrapping="Wrap" IsReadOnly="True" Text="{Binding Path=DescriptionString}" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFE6F8FF" SelectionBrush="#FFA1E5E8" />
                         </ScrollViewer>
 
@@ -129,10 +148,10 @@
                         </Grid.RowDefinitions>
 
                         <DataGrid x:Name="dg_ContentManagement"
-                              HorizontalAlignment="Left"
+                              
                               Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
                               
-                              VerticalAlignment="top"
+                              
                               AutoGenerateColumns="False"
                               ItemsSource="{Binding Path=SearchResults, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
                               SelectedIndex="{Binding Path=ManagementIndex, Mode=TwoWay,NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
@@ -141,10 +160,12 @@
                               SelectionUnit="CellOrRowHeader"  LoadingRow="Dg_ContentManagement_LoadingRow"  RowEditEnding="RowEditEnding" KeyUp="DG_ConMan_KeyUp">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="190" />
-                                <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="150">
+                                <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontSize="42" MaxWidth="200">
                                     <DataGridTextColumn.ElementStyle>
                                         <Style>
                                             <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                            <Setter Property="TextBlock.FontSize" Value="42" />
+                                            
                                         </Style>
                                     </DataGridTextColumn.ElementStyle>
                                 </DataGridTextColumn>
@@ -165,15 +186,7 @@
                                     </DataGridTextColumn.ElementStyle>
                                 </DataGridTextColumn>
 
-                                <DataGridTemplateColumn Header="Sound path" MaxWidth="250">
-                                    <DataGridTemplateColumn.CellTemplate>
-                                        <DataTemplate>
-                                            <ScrollViewer Height="35">
-                                                <TextBox x:Name="txt_Child_Sound"   Text="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap" />
-                                            </ScrollViewer>
-                                        </DataTemplate>
-                                    </DataGridTemplateColumn.CellTemplate>
-                                </DataGridTemplateColumn>
+                                
 
                                 <DataGridTemplateColumn Header="Description" MaxWidth="350">
                                     <DataGridTemplateColumn.CellTemplate>
@@ -192,12 +205,28 @@
                                         </Style>
                                     </DataGridTextColumn.ElementStyle>
                                 </DataGridTextColumn>
-                            </DataGrid.Columns>
+
+                            <DataGridTemplateColumn Header="Sound path" MaxWidth="250">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <ScrollViewer Height="35">
+                                            <TextBox x:Name="txt_Child_Sound"   Text="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap" />
+                                        </ScrollViewer>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                                
+                        </DataGrid.Columns>
                         </DataGrid>
-                        <WrapPanel Grid.Column="0" Grid.Row="0">
-                            <TextBox x:Name="txt_SearchBar" HorizontalAlignment="Left" Height="23"   Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" KeyUp="Search_KeyUp" Width="120" />
-                            <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="70" Height="23" Click="Search_Clicked" />
-                        </WrapPanel>
+                    <Grid Grid.Column="0" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <TextBox x:Name="txt_SearchBar" Grid.Column="0"   Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap"  KeyUp="Search_KeyUp"  />
+                        <Button x:Name="btn_Search" Content="Search"  Grid.Column="1" Click="Search_Clicked" Background="Azure"/>
+                        </Grid>
 
                     </Grid>
                 </TabItem>
@@ -206,7 +235,7 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
@@ -215,24 +244,35 @@
 
                         </Grid.RowDefinitions>
 
-                        <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left"  VerticalAlignment="Top"  Margin="10">
-                            <WrapPanel>
-                                <Label Content="Language Path:"  HorizontalAlignment="Left"   VerticalAlignment="Top" Width="100"  Foreground="#FFE6F8FF" />
-                                <TextBox HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding LanguageFilePath}" VerticalAlignment="Top" Height="23" MinWidth="120"/>
-                                <Button Content="Browse" Click="LanguagePath_Clicked"/>
-                            </WrapPanel>
-                            <WrapPanel>
-                                <Label Content="Sound Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Foreground="#FFE6F8FF" />
-                                <TextBox HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="{Binding SoundFilePath}" VerticalAlignment="Top" MinWidth="120"/>
-                                <Button Content="Browse" Click="SoundPath_Clicked"/>
-                            </WrapPanel>
+                        <Grid Grid.Column="0" Grid.Row="0"   Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
 
-                            <WrapPanel>
-                                <Label Content="Web File Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100"  Foreground="#FFE6F8FF" />
-                                <TextBox HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="{Binding WebFilePath}" VerticalAlignment="Top" MinWidth="120"/>
-                                <Button Content="Browse" Click="WebFilePath_Clicked"/>
-                            </WrapPanel>
-                        </StackPanel>
+                            </Grid.RowDefinitions>
+                            
+                        <Label Content="Language Path:"  Grid.Column="0"  Grid.Row="0" Foreground="#FFE6F8FF" />
+                        <TextBox  Grid.Column="1" Grid.Row="0" TextWrapping="Wrap" Text="{Binding LanguageFilePath}"  MinWidth="120"/>
+                        <Button Content="Browse" Grid.Column="2"  Grid.Row="0" Click="LanguagePath_Clicked" Background="Azure"/>
+
+
+                        <Label Grid.Column="0"  Grid.Row="1" Content="Sound Path:"  Foreground="#FFE6F8FF" />
+                        <TextBox Grid.Column="1"  Grid.Row="1"   TextWrapping="Wrap" Text="{Binding SoundFilePath}" MinWidth="120"/>
+                        <Button Grid.Column="2"  Grid.Row="1" Content="Browse" Click="SoundPath_Clicked" Background="Azure"/>
+
+
+
+                        <Label Grid.Column="0"  Grid.Row="2" Content="Web File Path:"   Foreground="#FFE6F8FF" />
+                        <TextBox Grid.Column="1"  Grid.Row="2"   TextWrapping="Wrap" Text="{Binding WebFilePath}"  MinWidth="120"/>
+                        <Button Grid.Column="2"  Grid.Row="2" Content="Browse" Click="WebFilePath_Clicked" Background="Azure"/>
+                            
+                        </Grid>
 
                         <StackPanel Grid.Column="0" Grid.Row="1" Margin="10">
                             <Label x:Name="lbl_TrainWhat_Page2_Copy1" Content="What to train" HorizontalAlignment="Left"  VerticalAlignment="Top" Foreground="#FFE6F8FF" />
@@ -265,14 +305,14 @@
                               SelectedIndex="{Binding Path=SelectedChapterIndex, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
                              
                               VerticalAlignment="Bottom" Width="120" SelectionChanged="CheckSoundChapter_Changed" />
-                            <Button Grid.Column="1" Grid.Row="0" Content="Find sound files" HorizontalAlignment="Left" 
+                        <Button Grid.Column="1" Grid.Row="0" Content="Find sound files" HorizontalAlignment="Left"  Background="Azure"
                             VerticalAlignment="Bottom" Width="90" Click="StartSoundDownload"  />
-                            <Button Content="Check sound status" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" 
+                        <Button Content="Check sound status" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Background="Azure"
                             VerticalAlignment="Bottom" Width="112" Click="CheckSoundStatus_Clicked" />
 
-                            <Button Content="Delete sound paths" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="2"  VerticalAlignment="Bottom" Width="112" Click="RemoveSoundPath" />
-                            <Button Content="Set SoundPaths" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="3" Width="75"  Click="SetSoundPath_clicked" />
-                            <Button Content="Print all words" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="4" Width="75" Click="PrintAllWordsToFile" />
+                        <Button Content="Delete sound paths" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="2"  VerticalAlignment="Bottom" Width="112" Click="RemoveSoundPath" Background="Azure"/>
+                        <Button Content="Set SoundPaths" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="3" Width="75"  Click="SetSoundPath_clicked" Background="Azure"/>
+                        <Button Content="Print all words" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="4" Width="75" Click="PrintAllWordsToFile" Background="Azure"/>
                             <ProgressBar Minimum="0" Maximum="100" Grid.ColumnSpan="2" Grid.Row="5" Margin="0,5,0,0"
                                  Value="{Binding Path=ProgressValue}" Name="pbStatus"  VerticalAlignment="Bottom" Height="45" />
                         </Grid>
@@ -291,40 +331,19 @@
                                 <RowDefinition Height="15"/>
                                 <RowDefinition Height="15"/>
                             </Grid.RowDefinitions>
-                            <Label Grid.Column="0" Grid.Row="0" Content="Toggle settings" HorizontalAlignment="Left"  VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                            <CheckBox Grid.Column="0" Grid.Row="1" x:Name="ckb_LoopChapter" IsChecked="{Binding Path=IsLooping}" Content="Loop chapter"
-                              HorizontalAlignment="Left"  VerticalAlignment="Top"
-                              Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                            <CheckBox x:Name="ckb_DescBox_Setting" Grid.Column="1" Grid.Row="1"
-                              IsChecked="{Binding Path=HasDescription}"
-                              Content="Description" HorizontalAlignment="Left"  VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
-                            <CheckBox x:Name="ckb_Randomized_Setting" Grid.Column="0" Grid.Row="2"
-                              IsChecked="{Binding Path=IsRandom}"
-                              Content="Randomize words" HorizontalAlignment="Left"  VerticalAlignment="Top"  Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
-                            <CheckBox x:Name="ckb_FullDesc" Grid.Column="1" Grid.Row="2"
-                              IsChecked="{Binding Path=DisplayAll}"
-                              Content="Full description?" HorizontalAlignment="Left"
-                              VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                            <CheckBox x:Name="ckb_AutoPlay" Grid.Column="0" Grid.Row="3"
-                              IsChecked="{Binding Path=AutoPlay}" Content="Auto play sounds"
-                              HorizontalAlignment="Left"  VerticalAlignment="Top" Background="White" Foreground="#FFE6F8FF" Checked="AutoPlay_Checked" Unchecked="AutoPlay_Checked" />
-                            <CheckBox x:Name="ckb_SkipIntro" Grid.Column="1" Grid.Row="3"
-                              IsChecked="{Binding Path=SkipIntro}" Content="Skip intro message"
-                              HorizontalAlignment="Left"  VerticalAlignment="Top" Foreground="#FFE6F8FF" Checked="SkipMessage_Checked" Unchecked="SkipMessage_Checked" />
-                            <CheckBox x:Name="ckb_showSaveLocation" Grid.Column="0" Grid.Row="4"
-                              IsChecked="{Binding Path=ShowSaveLocation}"
-                              Content="Show save location" HorizontalAlignment="Left"
-                               VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                            <CheckBox x:Name="ckb_SkipCompletedWords" Grid.Column="1" Grid.Row="4"
-                              IsChecked="{Binding Path=SkipCompleted}"
-                              Content="Skip completed words" HorizontalAlignment="Left"
-                               VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                            <CheckBox x:Name="ckb_Listen" IsChecked="{Binding Path=IsListening}" Grid.Column="0" Grid.Row="5"
-                              Content="Speach Recognition" HorizontalAlignment="Left"
-                               VerticalAlignment="Top" Checked="Listen_Checked" Unchecked="Listen_Checked" Foreground="#FFE6F8FF" />
-                            <CheckBox x:Name="ckb_setting_7_Copy2" IsChecked="False" Grid.Column="1" Grid.Row="5" Content="setting" HorizontalAlignment="Left"  VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                            <CheckBox x:Name="ckb_setting_7_Copy3" IsChecked="False" Grid.Column="0" Grid.Row="6" Content="setting" HorizontalAlignment="Left"  VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
-                            <CheckBox x:Name="ckb_setting_7_Copy4" IsChecked="False" Grid.Column="1" Grid.Row="6" Content="setting" HorizontalAlignment="Left"  VerticalAlignment="Top" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                            <Label Grid.Column="0" Grid.Row="0" Content="Toggle settings"  Foreground="#FFE6F8FF" />
+                            <CheckBox Grid.Column="0" Grid.Row="1" x:Name="ckb_LoopChapter" IsChecked="{Binding Path=IsLooping}" Content="Loop chapter" HorizontalAlignment="Left"  VerticalAlignment="Top"                              Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                            <CheckBox x:Name="ckb_DescBox_Setting" Grid.Column="1" Grid.Row="1"      IsChecked="{Binding Path=HasDescription}"                              Content="Description"   Foreground="#FFE6F8FF" Checked="DescriptionBox_Checked" Unchecked="DescriptionBox_Checked" />
+                            <CheckBox x:Name="ckb_Randomized_Setting" Grid.Column="0" Grid.Row="2"          IsChecked="{Binding Path=IsRandom}"                              Content="Randomize words"   Foreground="#FFE6F8FF" Checked="Randomized_Checked" Unchecked="Randomized_Checked" />
+                            <CheckBox x:Name="ckb_FullDesc" Grid.Column="1" Grid.Row="2"       IsChecked="{Binding Path=DisplayAll}"                              Content="Full description?"  Foreground="#FFE6F8FF" />
+                            <CheckBox x:Name="ckb_AutoPlay" Grid.Column="0" Grid.Row="3" IsChecked="{Binding Path=AutoPlay}" Content="Auto play sounds" Background="White" Foreground="#FFE6F8FF" Checked="AutoPlay_Checked" Unchecked="AutoPlay_Checked" />
+                            <CheckBox x:Name="ckb_SkipIntro" Grid.Column="1" Grid.Row="3" IsChecked="{Binding Path=SkipIntro}" Content="Skip intro message" HorizontalAlignment="Left"  Foreground="#FFE6F8FF" Checked="SkipMessage_Checked" Unchecked="SkipMessage_Checked" />
+                            <CheckBox x:Name="ckb_showSaveLocation" Grid.Column="0" Grid.Row="4" IsChecked="{Binding Path=ShowSaveLocation}" Content="Show save location" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                            <CheckBox x:Name="ckb_SkipCompletedWords" Grid.Column="1" Grid.Row="4" IsChecked="{Binding Path=SkipCompleted}" Content="Skip completed words" Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                            <CheckBox x:Name="ckb_Listen" IsChecked="{Binding Path=IsListening}" Grid.Column="0" Grid.Row="5" Content="Speach Recognition"  Checked="Listen_Checked" Unchecked="Listen_Checked" Foreground="#FFE6F8FF" />
+                            <CheckBox x:Name="ckb_setting_7_Copy2" IsChecked="False" Grid.Column="1" Grid.Row="5" Content="setting"  Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                            <CheckBox x:Name="ckb_setting_7_Copy3" IsChecked="False" Grid.Column="0" Grid.Row="6" Content="setting"  Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
+                            <CheckBox x:Name="ckb_setting_7_Copy4" IsChecked="False" Grid.Column="1" Grid.Row="6" Content="setting"  Checked="LoopChapter_Checked" Unchecked="LoopChapter_Checked" Foreground="#FFE6F8FF" />
                         </Grid>
 
                         <Grid Grid.Column="2" Grid.Row="0" Margin="5" HorizontalAlignment="Right">
@@ -342,14 +361,12 @@
 
                             </Grid.RowDefinitions>
 
-                            <Button Grid.Column="0" Grid.Row="0" x:Name="btn_ClearCurrentUserList" Content="Clear known words"  HorizontalAlignment="Left"  VerticalAlignment="Top"    Click="ClearCurrentUserKnownWords" />
-                            <ComboBox x:Name="comboBox" Grid.Column="1" Grid.Row="0"  HorizontalAlignment="Left"  VerticalAlignment="Top"
-                              ItemsSource="{Binding Path=Users}"   Width="120" DisplayMemberPath="UserName" SelectedItem="{Binding Path=CurrentUser,Mode=OneWay}" />
+                        <Button Grid.Column="0" Grid.Row="0" x:Name="btn_ClearCurrentUserList" Content="Clear known words"     Click="ClearCurrentUserKnownWords" Background="Azure"/>
+                            <ComboBox x:Name="comboBox" Grid.Column="1" Grid.Row="0"  ItemsSource="{Binding Path=Users}"    DisplayMemberPath="UserName" SelectedItem="{Binding Path=CurrentUser,Mode=OneWay}" Background="Azure"/>
 
-                            <Label x:Name="label" Grid.Column="0" Grid.Row="1" Content="Voice" HorizontalAlignment="Left"  VerticalAlignment="Top" Foreground="#FFE6F8FF" />
-                            <ComboBox x:Name="cb_Voices" Grid.Column="1" Grid.Row="1"
-                              ItemsSource="{Binding Path=Voices}" SelectionChanged="Cb_Voices_SelectionChanged" DisplayMemberPath="VoiceInfo.Name" SelectedItem="{Binding Path=CurrentVoice, Mode=OneWay}"
-                              HorizontalAlignment="Left"  VerticalAlignment="Top" Width="120" />
+                            <Label x:Name="label" Grid.Column="0" Grid.Row="1" Content="Voice"  Foreground="#FFE6F8FF" />
+                        <ComboBox x:Name="cb_Voices" Grid.Column="1" Grid.Row="1" ItemsSource="{Binding Path=Voices}" Background="Azure" SelectionChanged="Cb_Voices_SelectionChanged" DisplayMemberPath="VoiceInfo.Name" SelectedItem="{Binding Path=CurrentVoice, Mode=OneWay}"
+                               />
 
 
                             
