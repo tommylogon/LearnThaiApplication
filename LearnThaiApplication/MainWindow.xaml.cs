@@ -2114,6 +2114,7 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void Search_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
         {
+            StartSearchWorker();
             if (e.Key == Key.Enter)
             {
                 if (SearchString != null)
@@ -2134,9 +2135,38 @@ namespace LearnThaiApplication
         {
             BackgroundWorker bgw_Searcher = new BackgroundWorker();
             bgw_Searcher.DoWork += SearchWorker_DoWork;
+            bgw_Searcher.RunWorkerCompleted += Bgw_Searcher_RunWorkerCompleted;
             bgw_Searcher.RunWorkerAsync();
+
+            
+            
         }
 
+        private void Bgw_Searcher_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            ColorSearchRows();
+        }
+
+        private void ColorSearchRows()
+        {
+            //for (int i = 0; i < dg_ContentManagement.Items.Count; i++)
+            //{
+            //    var row = dg_ContentManagement.ItemContainerGenerator.ContainerFromIndex(i);
+            //    if (row != null)
+            //    {
+            //        DataGridRow dgr = (DataGridRow)row;
+            //        int index = dgr.GetIndex();
+            //        if (index % 2 == 0)
+            //        {
+            //            dgr.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#353e73"));
+            //        }
+            //        else
+            //        {
+            //            dgr.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#397335"));
+            //        }
+            //    }
+            //}
+        }
         private void SearchWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             Search();
@@ -2159,9 +2189,9 @@ namespace LearnThaiApplication
                 {
                     ObservableCollection<Word> result = new ObservableCollection<Word>();
                     SearchResults = result;
-                    foreach (var word in Words)
+                    foreach (Word word in Words)
                     {
-                        foreach (var property in word.GetType().GetProperties())
+                        foreach (PropertyInfo property in word.GetType().GetProperties())
                         {
                             var value = property.GetValue(word);
 
@@ -2172,13 +2202,14 @@ namespace LearnThaiApplication
                                 {
                                     if (!result.Contains(word))
                                     {
-                                        result.Add(word);
+                                        Dispatcher.Invoke(()=> result.Add(word));
                                     }
                                 }
                             }
                         }
                     }
                 }
+                
                 
             }
             catch (Exception ex)
@@ -3067,6 +3098,10 @@ namespace LearnThaiApplication
             PreTextChanger();
             correctPoints++;
             CorrectPoints = "Points: " + correctPoints;
+            if (AutoPlay)
+            {
+                PlaySound();
+            }
         }
     }
 }
