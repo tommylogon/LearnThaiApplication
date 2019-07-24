@@ -29,8 +29,26 @@
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Azure"/>
                 </Style>
+                <Style x:Key="TextBoxCustomStyle" TargetType="TextBox">
+                    <Setter Property="Foreground" Value="#FFE6F8FF"/>
+                </Style>
                 <Style x:Key="CustomCellStyle" TargetType="DataGridCell">
-                    
+                    <Setter Property="FontSize" Value="42"/>
+                    <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsEditing" Value="True">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="DataGridCell">
+                                        <TextBox Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content.Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="#353e73" Foreground="#FFE6F8FF" TextWrapping="Wrap" FontSize="42" />
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+                <Style x:Key="DG_TBStyle" TargetType="TextBlock">
+                    <Setter Property="TextWrapping" Value="Wrap"/>
                 </Style>
             </TabControl.Resources>
                 <TabItem Header="Learn the language" Margin="0,0,0,-2">
@@ -150,7 +168,7 @@
                         </Grid>
 
                         <ScrollViewer x:Name="scrvr_Description_page1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2"  >
-                            <TextBox x:Name="txb_Description_page1" TextWrapping="Wrap" IsReadOnly="True" Text="{Binding Path=DescriptionString}" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}"  SelectionBrush="#FFA1E5E8" />
+                        <TextBox x:Name="txb_Description_page1" TextWrapping="Wrap" IsReadOnly="True" Text="{Binding Path=DescriptionString}" FontSize="24" Style="{StaticResource TextBoxCustomStyle}" Background="{x:Null}" BorderBrush="{x:Null}"  SelectionBrush="#FFA1E5E8" />
                         </ScrollViewer>
 
 
@@ -181,17 +199,24 @@
                               SelectedIndex="{Binding Path=ManagementIndex, Mode=TwoWay,NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
                               CanUserDeleteRows="False"
                               SelectionMode="Extended"
-                                  
+                                  Foreground="#FFE6F8FF"
                               SelectionUnit="CellOrRowHeader"  LoadingRow="Dg_ContentManagement_LoadingRow"  RowEditEnding="RowEditEnding" KeyUp="DG_ConMan_KeyUp">
-                            
+                        <DataGrid.Resources>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="Foreground" Value="Black"/>
+                            </Style>
+                        </DataGrid.Resources>
                         <DataGrid.CellStyle>
-                            <Style  TargetType="DataGridCell">
+                            
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                                
                                 <Style.Triggers>
                                     <Trigger Property="IsEditing" Value="True">
                                         <Setter Property="Template">
                                             <Setter.Value>
                                                 <ControlTemplate TargetType="DataGridCell">
-                                                    <TextBox Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content.Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="#353e73" FontSize="30" />
+                                                    <TextBox Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content.Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Foreground="#FFE6F8FF" TextWrapping="Wrap" Background="#353e73" />
                                                 </ControlTemplate>
                                             </Setter.Value>
                                         </Setter>
@@ -200,86 +225,23 @@
                             </Style>
                         </DataGrid.CellStyle>
                             
+                            
                             <DataGrid.Columns>
 
-                            <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MaxWidth="190" >
-                                
-                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}" MaxWidth="190" />
 
-                            <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  FontSize="42"  MaxWidth="350">
-                                    <DataGridTextColumn.ElementStyle>
-                                    <Style>
-                                        <Setter Property="TextBox.TextWrapping" Value="Wrap" />
-                                        <Setter Property="TextBox.FontSize" Value="42" />
-                                    </Style>
-                                    </DataGridTextColumn.ElementStyle>
-                                <DataGridTextColumn.CellStyle>
-                                    <Style TargetType="DataGridCell">
-                                        <Style.Triggers>
-                                            <Trigger Property="IsEditing" Value="True">
-                                                <Setter Property="Template">
-                                                    <Setter.Value>
-                                                        <ControlTemplate TargetType="DataGridCell">
-                                                            <TextBox Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content.Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="#353e73" FontSize="30" />
-                                                        </ControlTemplate>
-                                                    </Setter.Value>
-                                                </Setter>
-                                            </Trigger>
-                                        </Style.Triggers>
-                                        
-                                    </Style>
-                                </DataGridTextColumn.CellStyle>
-                                </DataGridTextColumn>
+                            <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}"  CellStyle="{StaticResource CustomCellStyle}"  MaxWidth="350" />
 
-                            <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding Path=ThaiFonet_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxWidth="150">
-                                    <DataGridTextColumn.ElementStyle>
-                                        <Style>
-                                        <Setter Property="TextBox.TextWrapping" Value="Wrap" />
-                                        
-                                    </Style>
-                                    </DataGridTextColumn.ElementStyle>
-                                </DataGridTextColumn>
+                            <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding Path=ThaiFonet_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}" MaxWidth="150"/>
 
-                            <DataGridTextColumn Header="English meaning" Binding="{Binding Path=EngWords_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxWidth="250">
-                                    <DataGridTextColumn.ElementStyle>
-                                        <Style>
-                                        <Setter Property="TextBox.TextWrapping" Value="Wrap" />
-                                        
-                                    </Style>
-                                    </DataGridTextColumn.ElementStyle>
-                                </DataGridTextColumn>
+                            <DataGridTextColumn Header="English meaning" Binding="{Binding Path=EngWords_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}" MaxWidth="250"/>
 
-                            <DataGridTextColumn Header="Description" Binding="{Binding Path=EngDesc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxWidth="250">
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style>
-                                        <Setter Property="TextBox.TextWrapping" Value="Wrap" />
-                                        
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Description" Binding="{Binding Path=EngDesc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}"  MaxWidth="250"/>
 
+                            <DataGridTextColumn Header="Tone" Binding="{Binding Path=Tone_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}"  MaxWidth="150"/>
 
+                            <DataGridTextColumn Header="Sound Path" Binding="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}"  Visibility="{Binding Path=SoundPathCellVisability, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}"  MaxWidth="450"/>
 
-                            <DataGridTextColumn Header="Tone" Binding="{Binding Path=Tone_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxWidth="150">
-                                    <DataGridTextColumn.ElementStyle>
-                                        <Style>
-                                        <Setter Property="TextBox.TextWrapping" Value="Wrap" />
-                                        
-                                    </Style>
-                                    </DataGridTextColumn.ElementStyle>
-                                </DataGridTextColumn>
-
-                            <DataGridTextColumn Header="Sound Path" Binding="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  Visibility="{Binding Path=IsChecked,ElementName=ckb_EnableSoundPath,Converter={StaticResource b2v}}"  MaxWidth="450">
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style>
-                                        <Setter Property="TextBox.TextWrapping" Value="Wrap" />
-                                        
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
-
-                            
-                                
                         </DataGrid.Columns>
                         </DataGrid>
                     <Grid Grid.Column="0" Grid.Row="0">
@@ -291,7 +253,7 @@
                         
                         <TextBox x:Name="txt_SearchBar" Grid.Column="0"   Text="{Binding SearchString, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap"  KeyUp="Search_KeyUp"  />
                         <Button x:Name="btn_Search" Content="Search"  Grid.Column="1" Click="Search_Clicked" />
-                        <CheckBox x:Name="ckb_EnableSoundPath" Grid.Column="2" Content="Show sound path"   />
+                        <CheckBox x:Name="ckb_EnableSoundPath" Grid.Column="2" Content="Show sound path"  IsChecked="{Binding Path=HideSoundPath}"/>
                     </Grid>
 
                     </Grid>

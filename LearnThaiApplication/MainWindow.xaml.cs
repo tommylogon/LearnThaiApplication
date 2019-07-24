@@ -169,7 +169,34 @@ namespace LearnThaiApplication
         private bool trainFonet = false;
         private bool trainWords = false;
         private bool testWordReco = false;
+        private bool hideSoundPath = true;
 
+
+
+        public bool HideSoundPath
+        {
+            get
+            {
+                return hideSoundPath;
+                
+            }
+            set
+            {
+                if (hideSoundPath != value)
+                {
+                    hideSoundPath = value;
+                    if (hideSoundPath)
+                    {
+                        SoundPathCellVisability = Visibility.Hidden;
+                    }
+                    else
+                    {
+                        SoundPathCellVisability = Visibility.Visible;
+                    }
+                    OnPropertyChanged("HideSoundPath");
+                }
+            }
+        }
         public bool IsListening
         {
             get
@@ -796,7 +823,23 @@ namespace LearnThaiApplication
         private static CultureInfo ci;
         private SpeechRecognitionEngine sre;
         private SpeechSynthesizer ss;
+        private Visibility soundPath_CellVisability;
 
+        public Visibility SoundPathCellVisability
+        {
+            get
+            {
+                return soundPath_CellVisability;
+            }
+            set
+            {
+                if(soundPath_CellVisability != value)
+                {
+                    soundPath_CellVisability = value;
+                    OnPropertyChanged("SoundPathCellVisability");
+                }
+            }
+        }
         public InstalledVoice CurrentVoice
         {
             get
