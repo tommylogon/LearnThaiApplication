@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
+using System.Diagnostics;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
@@ -1883,6 +1884,7 @@ namespace LearnThaiApplication
                     File.Create(DebugFilePath + "File.txt");
                 }
                 File.WriteAllText(DebugFilePath + "File.txt", fullText);
+                Process.Start(DebugFilePath);
             }
             catch (Exception ex)
             {
@@ -2772,26 +2774,35 @@ namespace LearnThaiApplication
         /// <param name="e"></param>
         private void RunWebsiteFiles_DoWork(object sender, DoWorkEventArgs e)
         {
-            List<string> websiteUrls = new List<string>();
-            string line;
-            StreamReader file = new StreamReader(WebFilePath + "Websites.txt");
-            while ((line = file.ReadLine()) != null)
+            try
             {
-                websiteUrls.Add(line);
-            }
+                List<string> websiteUrls = new List<string>();
+                string line;
+                StreamReader file = new StreamReader(WebFilePath + "Websites.txt");
+                while ((line = file.ReadLine()) != null)
+                {
+                    websiteUrls.Add(line);
+                }
 
-            file.Close();
-            double length = websiteUrls.Count;
-            double current = 0;
-            foreach (string s in websiteUrls)
+                file.Close();
+                double length = websiteUrls.Count;
+                double current = 0;
+                foreach (string s in websiteUrls)
+                {
+                    DownloadSoundProcess(new List<Word>(words), s);
+                    current++;
+                    ProgressValue = (current / length) * 100;
+                }
+
+                ProgressValue = 100;
+                CheckAllSoundStatuses();
+            }
+            catch (Exception ex)
             {
-                DownloadSoundProcess(new List<Word>(words), s);
-                current++;
-                double done = (current / length) * 100;
-                (sender as BackgroundWorker).ReportProgress((int)done);
-            }
 
-            CheckAllSoundStatuses();
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            
         }
 
         /// <summary>
@@ -3115,11 +3126,17 @@ namespace LearnThaiApplication
 
             CommonOpenFileDialog dialog = new CommonOpenFileDialog();
             dialog.IsFolderPicker = true;
+            
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
+                string path = dialog.FileName;
+                if (path.Last() != '\\')
+                {
+                    path =  dialog.FileName + "\\";
+                }
                 if (targetPath == "Language")
                     {
-                        LanguageFilePath = dialog.FileName;
+                        LanguageFilePath = path;
                     }
                 else if (targetPath == "Sound")
                     {
@@ -3127,7 +3144,7 @@ namespace LearnThaiApplication
                     }
                 else if (targetPath == "Web")
                     {
-
+                    WebFilePath = path;
                     }
 
             }

@@ -35,21 +35,8 @@
                 <Style x:Key="CustomCellStyle" TargetType="DataGridCell">
                     <Setter Property="FontSize" Value="42"/>
                     <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-                    <Style.Triggers>
-                        <Trigger Property="IsEditing" Value="True">
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="DataGridCell">
-                                        <TextBox Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content.Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="#353e73" Foreground="#FFE6F8FF" TextWrapping="Wrap" FontSize="42" />
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                        </Trigger>
-                    </Style.Triggers>
                 </Style>
-                <Style x:Key="DG_TBStyle" TargetType="TextBlock">
-                    <Setter Property="TextWrapping" Value="Wrap"/>
-                </Style>
+                
             </TabControl.Resources>
                 <TabItem Header="Learn the language" Margin="0,0,0,-2">
                 <Grid Background="#35736a" >
@@ -206,41 +193,24 @@
                                 <Setter Property="Foreground" Value="Black"/>
                             </Style>
                         </DataGrid.Resources>
-                        <DataGrid.CellStyle>
-                            
-                            <Style TargetType="DataGridCell">
-                                <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-                                
-                                <Style.Triggers>
-                                    <Trigger Property="IsEditing" Value="True">
-                                        <Setter Property="Template">
-                                            <Setter.Value>
-                                                <ControlTemplate TargetType="DataGridCell">
-                                                    <TextBox Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content.Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Foreground="#FFE6F8FF" TextWrapping="Wrap" Background="#353e73" />
-                                                </ControlTemplate>
-                                            </Setter.Value>
-                                        </Setter>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </DataGrid.CellStyle>
+                       
                             
                             
                             <DataGrid.Columns>
 
-                            <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}" MaxWidth="190" />
+                            <DataGridTextColumn Header="Chapter" Binding="{Binding Path=Chapter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxWidth="190" />
 
-                            <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}"  CellStyle="{StaticResource CustomCellStyle}"  MaxWidth="350" />
+                            <DataGridTextColumn Header="Thai Script" Binding="{Binding Path=ThaiScript_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   CellStyle="{StaticResource CustomCellStyle}"  MaxWidth="350" />
 
-                            <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding Path=ThaiFonet_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}" MaxWidth="150"/>
+                            <DataGridTextColumn Header="Thai Fonetical" Binding="{Binding Path=ThaiFonet_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxWidth="150"/>
 
-                            <DataGridTextColumn Header="English meaning" Binding="{Binding Path=EngWords_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}" MaxWidth="250"/>
+                            <DataGridTextColumn Header="English meaning" Binding="{Binding Path=EngWords_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  MaxWidth="250"/>
 
-                            <DataGridTextColumn Header="Description" Binding="{Binding Path=EngDesc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}"  MaxWidth="250"/>
+                            <DataGridTextColumn Header="Description" Binding="{Binding Path=EngDesc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   MaxWidth="250"/>
 
-                            <DataGridTextColumn Header="Tone" Binding="{Binding Path=Tone_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}"  MaxWidth="150"/>
+                            <DataGridTextColumn Header="Tone" Binding="{Binding Path=Tone_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   MaxWidth="150"/>
 
-                            <DataGridTextColumn Header="Sound Path" Binding="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ElementStyle="{StaticResource DG_TBStyle}"  Visibility="{Binding Path=SoundPathCellVisability, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}"  MaxWidth="450"/>
+                            <DataGridTextColumn Header="Sound Path" Binding="{Binding Path=SoundPath_String, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   Visibility="{Binding Path=SoundPathCellVisability, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True}"  MaxWidth="450"/>
 
                         </DataGrid.Columns>
                         </DataGrid>
