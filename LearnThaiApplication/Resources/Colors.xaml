@@ -1,0 +1,53 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Primary Palette -->
+    <Color x:Key="PrimaryBackgroundColor">#2D2D30</Color>
+    <Color x:Key="SecondaryBackgroundColor">#35736a</Color> <!-- Existing background, kept for now -->
+    <Color x:Key="TertiaryBackgroundColor">#353e73</Color> <!-- Existing DataGrid row background -->
+    
+    <Color x:Key="PrimaryForegroundColor">#F0F0F0</Color> <!-- Light Gray for general text -->
+    <Color x:Key="SecondaryForegroundColor">#FFE6F8FF</Color> <!-- Existing light blueish text -->
+    <Color x:Key="DisabledForegroundColor">#888888</Color>
+
+    <Color x:Key="AccentColor1">#007ACC</Color> <!-- A modern blue for accents -->
+    <Color x:Key="AccentColor2">#FF8C00</Color> <!-- Dark Orange for alternative accents -->
+
+    <!-- Control Specific Colors -->
+    <Color x:Key="ButtonBackgroundColor">#007ACC</Color>
+    <Color x:Key="ButtonForegroundColor">#FFFFFF</Color>
+    <Color x:Key="ButtonMouseOverBackgroundColor">#005A9E</Color>
+    <Color x:Key="ButtonPressedBackgroundColor">#003D6C</Color>
+    
+    <Color x:Key="TextBoxBackgroundColor">#3C3C3C</Color>
+    <Color x:Key="TextBoxBorderColor">#505050</Color>
+    <Color x:Key="TextBoxFocusedBorderColor">#007ACC</Color>
+
+    <Color x:Key="DataGridHeaderBackgroundColor">#3C3C3C</Color>
+    <Color x:Key="DataGridHeaderForegroundColor">#F0F0F0</Color>
+
+    <!-- SolidColorBrushes -->
+    <SolidColorBrush x:Key="PrimaryBackgroundBrush" Color="{StaticResource PrimaryBackgroundColor}"/>
+    <SolidColorBrush x:Key="SecondaryBackgroundBrush" Color="{StaticResource SecondaryBackgroundColor}"/>
+    <SolidColorBrush x:Key="TertiaryBackgroundBrush" Color="{StaticResource TertiaryBackgroundColor}"/>
+
+    <SolidColorBrush x:Key="PrimaryForegroundBrush" Color="{StaticResource PrimaryForegroundColor}"/>
+    <SolidColorBrush x:Key="SecondaryForegroundBrush" Color="{StaticResource SecondaryForegroundColor}"/>
+    <SolidColorBrush x:Key="DisabledForegroundBrush" Color="{StaticResource DisabledForegroundColor}"/>
+
+    <SolidColorBrush x:Key="Accent1Brush" Color="{StaticResource AccentColor1}"/>
+    <SolidColorBrush x:Key="Accent2Brush" Color="{StaticResource AccentColor2}"/>
+
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{StaticResource ButtonBackgroundColor}"/>
+    <SolidColorBrush x:Key="ButtonForegroundBrush" Color="{StaticResource ButtonForegroundColor}"/>
+    <SolidColorBrush x:Key="ButtonMouseOverBackgroundBrush" Color="{StaticResource ButtonMouseOverBackgroundColor}"/>
+    <SolidColorBrush x:Key="ButtonPressedBackgroundBrush" Color="{StaticResource ButtonPressedBackgroundColor}"/>
+
+    <SolidColorBrush x:Key="TextBoxBackgroundBrush" Color="{StaticResource TextBoxBackgroundColor}"/>
+    <SolidColorBrush x:Key="TextBoxBorderBrush" Color="{StaticResource TextBoxBorderColor}"/>
+    <SolidColorBrush x:Key="TextBoxFocusedBorderBrush" Color="{StaticResource TextBoxFocusedBorderColor}"/>
+    
+    <SolidColorBrush x:Key="DataGridHeaderBackgroundBrush" Color="{StaticResource DataGridHeaderBackgroundColor}"/>
+    <SolidColorBrush x:Key="DataGridHeaderForegroundBrush" Color="{StaticResource DataGridHeaderForegroundColor}"/>
+
+</ResourceDictionary>
