@@ -4,5 +4,24 @@
              xmlns:local="clr-namespace:LearnThaiApplication"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Order matters: Colors and Typography should ideally come first -->
+                <ResourceDictionary Source="Resources/Colors.xaml"/>
+                <ResourceDictionary Source="Resources/Typography.xaml"/>
+                <ResourceDictionary Source="Resources/ButtonStyles.xaml"/>
+                <ResourceDictionary Source="Resources/TextBoxStyles.xaml"/>
+                <ResourceDictionary Source="Resources/ComboBoxStyles.xaml"/>
+                <ResourceDictionary Source="Resources/CheckBoxStyles.xaml"/>
+                <ResourceDictionary Source="Resources/RadioButtonStyles.xaml"/>
+                <ResourceDictionary Source="Resources/LabelStyles.xaml"/>
+                <ResourceDictionary Source="Resources/DataGridStyles.xaml"/>
+                <ResourceDictionary Source="Resources/TabControlStyles.xaml"/>
+                <ResourceDictionary Source="Resources/ScrollViewerStyles.xaml"/>
+                <ResourceDictionary Source="Resources/ProgressBarStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <BooleanToVisibilityConverter x:Key="b2v" />
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
